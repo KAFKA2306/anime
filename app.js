@@ -36,6 +36,7 @@ const state = {
   works: [],
   currentYear: null,
   metadataAvailable: false,
+  favoritesAvailableCount: 0,
 };
 
 function formatNumber(value) {
@@ -59,6 +60,10 @@ function normalizeTitle(value) {
 
 function normalizeText(value) {
   return String(value || '').normalize('NFKC').trim().toLocaleLowerCase('ja');
+}
+
+function normalizeLookupTitle(value) {
+  return normalizeText(normalizeTitle(value)).replace(/\s+/g, ' ');
 }
 
 function firstValue(record, keys) {
@@ -97,9 +102,26 @@ function matchesPreferenceExclusion(work) {
     || tags.includes(normalizeText(preferenceProfile.tag));
 }
 
+function hasFavoritesCount(work) {
+  return work.favorites_count !== null
+    && work.favorites_count !== undefined
+    && work.favorites_count !== ''
+    && Number.isFinite(Number(work.favorites_count));
+}
+
+function ensureFavoritesSortOptions() {
+  if (elements.sortSelect.querySelector('option[value="favorites-desc"]')) return;
+
+  const descending = new Option('気になる登録数 多い順', 'favorites-desc');
+  const ascending = new Option('気になる登録数 少ない順', 'favorites-asc');
+  elements.sortSelect.prepend(ascending);
+  elements.sortSelect.prepend(descending);
+}
+
 function setBusy(isBusy) {
   elements.loadingState.hidden = !isBusy;
   elements.yearSelect.disabled = isBusy;
+  elements.sortSelect.disabled = isBusy;
 }
 
 function setError(message = '') {
@@ -110,26 +132,54 @@ function setError(message = '') {
 function syncUrl() {
   const url = new URL(window.location.href);
   url.searchParams.set('year', String(state.currentYear));
+
   const query = elements.searchInput.value.trim();
   if (query) url.searchParams.set('q', query);
   else url.searchParams.delete('q');
+
+  const sort = elements.sortSelect.value;
+  if (sort && sort !== 'favorites-desc') url.searchParams.set('sort', sort);
+  else url.searchParams.delete('sort');
+
   history.replaceState(null, '', url);
 }
 
 function renderMetadataNotice() {
+  const favoritesNote = state.favoritesAvailableCount
+    ? ` 気になる登録数は${formatNumber(state.favoritesAvailableCount)}作品で利用できます。`
+    : ' この年度には気になる登録数データがありません。';
+
   if (state.metadataAvailable) {
     elements.preferenceToggle.disabled = false;
-    elements.metadataNotice.textContent = '属性データを検出しました。除外条件は「いずれかに一致」で適用されます。';
+    elements.metadataNotice.textContent = `属性データを検出しました。除外条件は「いずれかに一致」で適用されます。${favoritesNote}`;
     return;
   }
 
   elements.preferenceToggle.disabled = true;
-  elements.metadataNotice.textContent = '現在の取得データには原作ルーツ・主ジャンル・正規タグが未収録のため、嗜好除外は保留しています。作品名だけから推定除外はしません。';
+  elements.metadataNotice.textContent = `現在の取得データには原作ルーツ・主ジャンル・正規タグが未収録のため、嗜好除外は保留しています。作品名だけから推定除外はしません。${favoritesNote}`;
+}
+
+function compareFavorites(a, b, direction) {
+  const aKnown = hasFavoritesCount(a);
+  const bKnown = hasFavoritesCount(b);
+  if (aKnown !== bKnown) return aKnown ? -1 : 1;
+  if (!aKnown) return 0;
+
+  const difference = Number(a.favorites_count) - Number(b.favorites_count);
+  if (difference !== 0) return difference * direction;
+  return normalizeTitle(a.title).localeCompare(normalizeTitle(b.title), 'ja');
 }
 
 function sortedWorks(works) {
   const mode = elements.sortSelect.value;
   if (mode === 'official') return works;
+
+  if (mode === 'favorites-desc') {
+    return [...works].sort((a, b) => compareFavorites(a, b, -1));
+  }
+  if (mode === 'favorites-asc') {
+    return [...works].sort((a, b) => compareFavorites(a, b, 1));
+  }
 
   const direction = mode === 'title-desc' ? -1 : 1;
   return [...works].sort((a, b) => (
@@ -148,9 +198,29 @@ function filteredWorks() {
   });
 }
 
+function buildFavoritesRanks() {
+  const ranked = state.works
+    .filter(hasFavoritesCount)
+    .sort((a, b) => compareFavorites(a, b, -1));
+
+  const ranks = new Map();
+  let previousCount = null;
+  let currentRank = 0;
+
+  ranked.forEach((work, index) => {
+    const count = Number(work.favorites_count);
+    if (count !== previousCount) currentRank = index + 1;
+    ranks.set(work.work_id || normalizeLookupTitle(work.title), currentRank);
+    previousCount = count;
+  });
+
+  return ranks;
+}
+
 function renderWorks() {
   const filtered = filteredWorks();
   const sorted = sortedWorks(filtered);
+  const favoritesRanks = buildFavoritesRanks();
   const excludedCount = state.metadataAvailable && elements.preferenceToggle.checked
     ? state.works.filter(matchesPreferenceExclusion).length
     : 0;
@@ -158,7 +228,11 @@ function renderWorks() {
   elements.workGrid.replaceChildren();
   elements.emptyState.hidden = sorted.length !== 0;
   elements.visibleCount.textContent = formatNumber(sorted.length);
-  elements.resultSummary.textContent = `${formatNumber(sorted.length)} / ${formatNumber(state.works.length)}件表示${excludedCount ? `・嗜好除外 ${formatNumber(excludedCount)}件` : ''}`;
+  elements.resultSummary.textContent = [
+    `${formatNumber(sorted.length)} / ${formatNumber(state.works.length)}件表示`,
+    `登録数データ ${formatNumber(state.favoritesAvailableCount)}件`,
+    excludedCount ? `嗜好除外 ${formatNumber(excludedCount)}件` : '',
+  ].filter(Boolean).join('・');
 
   const fragment = document.createDocumentFragment();
   for (const work of sorted) {
@@ -166,6 +240,11 @@ function renderWorks() {
     const link = card.querySelector('.work-card__link');
     const image = card.querySelector('.work-card__image');
     const title = normalizeTitle(work.title);
+    const rankKey = work.work_id || normalizeLookupTitle(title);
+    const rank = favoritesRanks.get(rankKey);
+    const favoritesText = hasFavoritesCount(work)
+      ? `#${rank} · 気になる登録 ${formatNumber(work.favorites_count)}件`
+      : '気になる登録数 不明';
 
     link.href = work.detail_url || work.source_tag_url || '#';
     link.setAttribute('aria-label', `${title}を公式ページで確認`);
@@ -175,11 +254,35 @@ function renderWorks() {
 
     card.querySelector('.work-card__year').textContent = `${work.year || state.currentYear}年`;
     card.querySelector('.work-card__title').textContent = title;
-    card.querySelector('.work-card__meta').textContent = `作品ID ${work.work_id || '—'} · 公式ページ ↗`;
+    card.querySelector('.work-card__meta').textContent = `${favoritesText} · 作品ID ${work.work_id || '—'} · 公式ページ ↗`;
     fragment.append(card);
   }
   elements.workGrid.append(fragment);
   syncUrl();
+}
+
+async function loadFavoritesMap(year) {
+  try {
+    const response = await fetch(`./data/likes/${year}.tsv`, { cache: 'no-cache' });
+    if (!response.ok) return new Map();
+
+    const text = await response.text();
+    const lines = text.split(/\r?\n/).filter(Boolean);
+    if (lines.length < 2) return new Map();
+
+    const map = new Map();
+    for (const line of lines.slice(1)) {
+      const separatorIndex = line.lastIndexOf('\t');
+      if (separatorIndex < 1) continue;
+      const title = line.slice(0, separatorIndex);
+      const count = Number(line.slice(separatorIndex + 1));
+      if (!Number.isFinite(count)) continue;
+      map.set(normalizeLookupTitle(title), count);
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
 }
 
 async function loadYear(year) {
@@ -195,13 +298,24 @@ async function loadYear(year) {
     const response = await fetch(`./data/by-year/${state.currentYear}.json`, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    state.works = Array.isArray(payload.works) ? payload.works : [];
+    const favoritesMap = await loadFavoritesMap(state.currentYear);
+    const officialWorks = Array.isArray(payload.works) ? payload.works : [];
+
+    state.works = officialWorks.map((work) => {
+      const count = favoritesMap.get(normalizeLookupTitle(work.title));
+      return {
+        ...work,
+        favorites_count: Number.isFinite(count) ? count : null,
+      };
+    });
+    state.favoritesAvailableCount = state.works.filter(hasFavoritesCount).length;
     state.metadataAvailable = state.works.some(hasPreferenceMetadata);
     elements.sourceLink.href = payload.source_url || state.manifest?.source?.tag_selector_url || '#';
     renderMetadataNotice();
     renderWorks();
   } catch (error) {
     state.works = [];
+    state.favoritesAvailableCount = 0;
     elements.visibleCount.textContent = '0';
     elements.resultSummary.textContent = '';
     setError(`${state.currentYear}年の作品データを読み込めませんでした。${error instanceof Error ? ` (${error.message})` : ''}`);
@@ -221,6 +335,7 @@ function populateYears(years) {
 }
 
 async function initialize() {
+  ensureFavoritesSortOptions();
   setBusy(true);
   setError();
 
@@ -244,8 +359,11 @@ async function initialize() {
     const defaultYear = years.includes(requestedYear)
       ? requestedYear
       : (years.includes(2024) ? 2024 : Math.max(...years));
+    const requestedSort = params.get('sort');
+    const validSort = requestedSort && elements.sortSelect.querySelector(`option[value="${CSS.escape(requestedSort)}"]`);
 
     elements.searchInput.value = params.get('q') || '';
+    elements.sortSelect.value = validSort ? requestedSort : 'favorites-desc';
     elements.yearSelect.value = String(defaultYear);
     await loadYear(defaultYear);
   } catch (error) {
