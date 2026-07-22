@@ -68,7 +68,13 @@ jobs:
           retention-days: 14
 
       - name: Commit updated data
-        if: github.event_name == 'push' && github.ref_name != 'main' && env.DANIME_YEAR == ''
+        if: >-
+          env.DANIME_YEAR == '' &&
+          (
+            github.event_name == 'schedule' ||
+            github.event_name == 'workflow_dispatch' ||
+            (github.event_name == 'push' && github.ref_name != 'main')
+          )
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
