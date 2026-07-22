@@ -10,7 +10,7 @@ export function normalizeText(value) {
 }
 
 export function parseYear(value) {
-  const match = normalizeText(value).match(/(?:^|\D)((?:19|20)\d{2})年(?:アニメ)?(?:$|\D)/);
+  const match = normalizeText(value).match(/(?:^|\D)((?:19|20)\d{2})年(?!代)(?:アニメ)?(?:$|\D)/);
   return match ? Number(match[1]) : null;
 }
 
