@@ -24,11 +24,15 @@ test('manga publication credit is not mislabeled as web novel', () => {
   assert.equal(result.value, '漫画');
 });
 
-test('high fantasy needs official fantasy plus explicit world signal', () => {
+test('high fantasy needs official fantasy plus a strong world signal', () => {
   assert.equal(inferPrimaryGenre({
     officialGenres: ['SF/ファンタジー', 'アクション/バトル'],
     synopsis: '異世界に召喚された冒険者が魔王に挑む。',
   }).value, '異世界・ハイファンタジー');
+  assert.equal(inferPrimaryGenre({
+    officialGenres: ['SF/ファンタジー', '恋愛/ラブコメ'],
+    synopsis: '現代の学校で魔法を学ぶ少年少女の物語。',
+  }).value, 'SF・ファンタジー');
   assert.equal(inferPrimaryGenre({
     officialGenres: ['SF/ファンタジー', '恋愛/ラブコメ'],
     synopsis: '芸能界で真相を追う兄妹の物語。',
@@ -52,8 +56,11 @@ test('original credit extraction stops at next staff separator', () => {
   assert.equal(extractOriginalCredit('原作:作者名（電撃文庫刊）／監督:監督名'), '作者名(電撃文庫刊)');
 });
 
-test('official detail parser extracts auditable metadata', () => {
+test('official detail parser uses only the selected work genre section', () => {
   const parsed = parseOfficialDetailText(`
+グローバルナビゲーション
+コメディ/ギャグ
+恋愛/ラブコメ
 あらすじ ／ ジャンル
 異世界に召喚された冒険者が魔王に挑む。
 SF/ファンタジー
