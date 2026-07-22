@@ -4,7 +4,20 @@
 
 ## 現在のフェーズ
 
-まず、全年度の公式データ取得基盤を実装します。UI、嗜好フィルター、グラフ、GitHub Pages は取得データの完全性を確認した後に追加します。
+全年度の公式データ取得基盤と初回スナップショットを作成済みです。次のフェーズで、正規タグ、嗜好フィルター、動的グラフ、GitHub Pages UIを追加します。
+
+## 初回取得結果
+
+2026年7月22日のライブ取得・検証結果:
+
+- 公式の完全一致年タグ: 66年度（1945年〜2026年）
+- 正規作品数: 7,539件
+- 年度所属レコード数: 7,541件
+- 空年度: 0
+- 年内の作品ID重複: 0
+- タイトル欠損: 0
+
+最新値は `data/manifest.json` を正とします。
 
 ## 生成データ
 
@@ -43,5 +56,6 @@ DANIME_YEAR=2024 npm run acquire
 ## 一次情報
 
 - 年別タグ選択: https://animestore.docomo.ne.jp/animestore/tag_sel_pc
-- 2024年タグ: https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0021150
+- 2024年タグ: https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0019675
+- 2025年タグ: https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0021150
 - dアニメストア利用規約: https://animestore.docomo.ne.jp/animestore/CF/acceptable_use_policy_pc
