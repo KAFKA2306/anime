@@ -6,7 +6,7 @@
   "description": "Canonical d Anime Store year-tag catalogue acquisition pipeline",
   "scripts": {
     "acquire:raw": "node scripts/acquire-danime.mjs",
-    "acquire": "node scripts/acquire-danime.mjs",
+    "acquire": "node scripts/acquire-danime.mjs && node scripts/stabilize-generated-data.mjs",
     "validate": "node scripts/validate-data.mjs",
     "test": "node --test tests/*.test.mjs"
   },
