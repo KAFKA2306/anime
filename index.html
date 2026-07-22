@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="dアニメストアの公式年別タグを基にした、年別アニメ作品ブラウザ">
+  <meta name="theme-color" content="#0f172a">
+  <title>Anime Catalogue | 年別作品ブラウザ</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalogue">作品一覧へ移動</a>
+
+  <header class="hero">
+    <div class="hero__inner">
+      <div>
+        <p class="eyebrow">OFFICIAL CATALOGUE VIEW</p>
+        <h1>年別アニメ作品ブラウザ</h1>
+        <p class="lead">dアニメストアの公開年別タグから取得した作品を、検索・並び替え・嗜好条件で確認します。</p>
+      </div>
+      <a id="sourceLink" class="source-link" href="https://animestore.docomo.ne.jp/animestore/tag_sel_pc" target="_blank" rel="noreferrer">公式データ元 ↗</a>
+    </div>
+  </header>
+
+  <main id="catalogue" class="shell">
+    <section class="summary" aria-label="データ概要">
+      <article class="metric">
+        <span class="metric__label">収録作品</span>
+        <strong id="totalWorks" class="metric__value">—</strong>
+      </article>
+      <article class="metric">
+        <span class="metric__label">収録年度</span>
+        <strong id="yearCount" class="metric__value">—</strong>
+      </article>
+      <article class="metric">
+        <span class="metric__label">最終取得</span>
+        <strong id="generatedAt" class="metric__value metric__value--date">—</strong>
+      </article>
+      <article class="metric">
+        <span class="metric__label">表示中</span>
+        <strong id="visibleCount" class="metric__value">—</strong>
+      </article>
+    </section>
+
+    <section class="control-panel" aria-label="作品絞り込み">
+      <div class="control-grid">
+        <label class="field">
+          <span>年度</span>
+          <select id="yearSelect" aria-label="年度を選択"></select>
+        </label>
+
+        <label class="field field--search">
+          <span>作品名検索</span>
+          <input id="searchInput" type="search" inputmode="search" placeholder="例：攻殻機動隊" autocomplete="off">
+        </label>
+
+        <label class="field">
+          <span>並び順</span>
+          <select id="sortSelect">
+            <option value="official">公式掲載順</option>
+            <option value="title-asc">作品名 A→Z</option>
+            <option value="title-desc">作品名 Z→A</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="preference-box">
+        <div>
+          <p class="preference-box__title">嗜好除外プロファイル</p>
+          <p class="preference-box__description">次の属性のいずれかに一致する作品を除外します。</p>
+          <div class="chips" aria-label="除外条件">
+            <span>原作：Web小説（なろう・カクヨム系）</span>
+            <span>主ジャンル：異世界・ハイファンタジー</span>
+            <span>正規タグ：バトル・アクション</span>
+          </div>
+        </div>
+        <label class="toggle">
+          <input id="preferenceToggle" type="checkbox" checked>
+          <span>除外を適用</span>
+        </label>
+      </div>
+      <p id="metadataNotice" class="notice" role="status"></p>
+    </section>
+
+    <section class="catalogue-head">
+      <div>
+        <p id="yearKicker" class="eyebrow">YEAR</p>
+        <h2 id="yearTitle">作品一覧</h2>
+      </div>
+      <p id="resultSummary" class="result-summary" aria-live="polite"></p>
+    </section>
+
+    <div id="loadingState" class="state-card" aria-live="polite">作品データを読み込んでいます…</div>
+    <div id="errorState" class="state-card state-card--error" hidden></div>
+    <div id="emptyState" class="state-card" hidden>条件に一致する作品がありません。</div>
+    <section id="workGrid" class="work-grid" aria-label="作品一覧"></section>
+  </main>
+
+  <footer class="footer">
+    <p>公開カタログ情報を表示しています。配信状況・作品情報の最終確認は公式ページで行ってください。</p>
+    <a href="https://github.com/KAFKA2306/anime" target="_blank" rel="noreferrer">GitHub repository ↗</a>
+  </footer>
+
+  <template id="workCardTemplate">
+    <article class="work-card">
+      <a class="work-card__link" target="_blank" rel="noreferrer">
+        <div class="work-card__image-wrap">
+          <img class="work-card__image" loading="lazy" decoding="async" alt="">
+          <div class="work-card__image-fallback" aria-hidden="true">NO IMAGE</div>
+        </div>
+        <div class="work-card__body">
+          <p class="work-card__year"></p>
+          <h3 class="work-card__title"></h3>
+          <p class="work-card__meta"></p>
+        </div>
+      </a>
+    </article>
+  </template>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
