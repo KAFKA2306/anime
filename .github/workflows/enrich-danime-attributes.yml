@@ -34,6 +34,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: danime-attribute-write-${{ github.ref }}
@@ -112,3 +113,26 @@ jobs:
             git commit -m 'Enrich official anime attributes [skip ci]'
             git push
           fi
+
+      - name: Report enrichment result to pull request
+        if: always() && github.event_name == 'push' && github.actor != 'github-actions[bot]'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          PR_NUMBER=$(gh pr list --head "$GITHUB_REF_NAME" --state open --json number --jq '.[0].number // empty')
+          if [[ -z "$PR_NUMBER" ]]; then
+            echo 'No open pull request for this branch.'
+            exit 0
+          fi
+          if [[ -f diagnostics/attribute-enrichment.json ]]; then
+            REQUESTED=$(jq -r '.requested_count // 0' diagnostics/attribute-enrichment.json)
+            COMPLETED=$(jq -r '.completed_count // 0' diagnostics/attribute-enrichment.json)
+            FAILED=$(jq -r '.failed_count // 0' diagnostics/attribute-enrichment.json)
+          else
+            REQUESTED=0
+            COMPLETED=0
+            FAILED=0
+          fi
+          gh pr comment "$PR_NUMBER" --body "Attribute enrichment run \`${GITHUB_RUN_ID}\`: **${JOB_STATUS}**. Requested: ${REQUESTED}; completed: ${COMPLETED}; failed: ${FAILED}."
