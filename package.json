@@ -1,13 +1,12 @@
 {
   "name": "kafka2306-anime",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Canonical d Anime Store year-tag catalogue acquisition pipeline",
   "scripts": {
     "acquire:raw": "node scripts/acquire-danime.mjs",
-    "canonicalize": "node scripts/canonicalize-from-official-json.mjs",
-    "acquire": "npm run acquire:raw && npm run canonicalize",
+    "acquire": "node scripts/acquire-danime.mjs",
     "validate": "node scripts/validate-data.mjs",
     "test": "node --test tests/*.test.mjs"
   },
