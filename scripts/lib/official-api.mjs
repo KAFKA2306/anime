@@ -18,9 +18,16 @@ export function buildOfficialListUrl({ tagId, start = 0, length = 20, cacheBust 
   return url.toString();
 }
 
+export function canonicalOfficialListUrl(value) {
+  const url = new URL(value, OFFICIAL_ORIGIN);
+  url.searchParams.delete('_');
+  url.hash = '';
+  return url.toString();
+}
+
 export function isExactOfficialListUrl(value, expectedTagId) {
   try {
-    const url = new URL(value);
+    const url = new URL(value, OFFICIAL_ORIGIN);
     return url.origin === OFFICIAL_ORIGIN
       && url.pathname === OFFICIAL_LIST_PATH
       && tagIdFromUrl(url) === expectedTagId;
@@ -97,10 +104,11 @@ export function parseOfficialListDocument(document, { expectedTagId, requestUrl 
     throw new Error(`${context}: resultCd=${document.resultCd ?? 'missing'}.`);
   }
 
-  const sourceUrl = document.selfLink ?? requestUrl;
-  if (!isExactOfficialListUrl(sourceUrl, expectedTagId)) {
+  const rawSourceUrl = document.selfLink ?? requestUrl;
+  if (!isExactOfficialListUrl(rawSourceUrl, expectedTagId)) {
     throw new Error(`${context}: selfLink does not match the requested exact tag.`);
   }
+  const sourceUrl = canonicalOfficialListUrl(rawSourceUrl);
 
   const data = document.data;
   if (!data || typeof data !== 'object') throw new Error(`${context}: data is missing.`);
