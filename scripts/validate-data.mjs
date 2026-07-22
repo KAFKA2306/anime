@@ -26,16 +26,21 @@ function isNonNegativeInteger(value) {
 async function readLikesTsv(year) {
   const text = await readFile(path.join(DATA_DIR, 'likes', `${year}.tsv`), 'utf8');
   const lines = text.split(/\r?\n/).filter(Boolean);
-  if (lines[0] !== 'title\tfavorites_count') fail(`${year} likes TSV has an invalid header.`);
+  if (lines[0] !== 'work_id\ttitle\tfavorites_count') {
+    fail(`${year} likes TSV has an invalid header.`);
+  }
+
   const map = new Map();
   for (const line of lines.slice(1)) {
-    const separator = line.lastIndexOf('\t');
-    if (separator < 1) fail(`${year} likes TSV has a malformed row.`);
-    const title = line.slice(0, separator);
-    const count = Number(line.slice(separator + 1));
-    if (!Number.isInteger(count) || count < 0) fail(`${year} likes TSV has an invalid count.`);
-    if (map.has(title)) fail(`${year} likes TSV contains duplicate title ${title}.`);
-    map.set(title, count);
+    const columns = line.split('\t');
+    if (columns.length !== 3) fail(`${year} likes TSV has a malformed row.`);
+    const [workId, title, countText] = columns;
+    const count = Number(countText);
+    if (!workId || !title || !Number.isInteger(count) || count < 0) {
+      fail(`${year} likes TSV has an invalid row.`);
+    }
+    if (map.has(workId)) fail(`${year} likes TSV contains duplicate work_id ${workId}.`);
+    map.set(workId, { title, count });
   }
   return map;
 }
@@ -131,7 +136,9 @@ async function main() {
       if (!isNonNegativeInteger(work.favorite_count) || !isNonNegativeInteger(work.my_list_count)) {
         fail(`${file} work ${work.work_id} has missing official counters.`);
       }
-      if (likes.get(work.title) !== work.favorite_count) {
+
+      const exported = likes.get(work.work_id);
+      if (!exported || exported.title !== work.title || exported.count !== work.favorite_count) {
         fail(`${file} work ${work.work_id} disagrees with the generated likes TSV.`);
       }
       if (ids.has(work.work_id)) fail(`${file} contains duplicate work_id ${work.work_id}.`);
