@@ -1,5 +1,7 @@
+import { createHash } from 'node:crypto';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { isExactOfficialListUrl, stableWorkContent } from './lib/official-api.mjs';
 
 const DATA_DIR = path.resolve('data');
 
@@ -11,6 +13,33 @@ function fail(message) {
   throw new Error(message);
 }
 
+function contentHash(works) {
+  return createHash('sha256')
+    .update(JSON.stringify(works.map(stableWorkContent)))
+    .digest('hex');
+}
+
+function isNonNegativeInteger(value) {
+  return Number.isInteger(value) && value >= 0;
+}
+
+async function readLikesTsv(year) {
+  const text = await readFile(path.join(DATA_DIR, 'likes', `${year}.tsv`), 'utf8');
+  const lines = text.split(/\r?\n/).filter(Boolean);
+  if (lines[0] !== 'title\tfavorites_count') fail(`${year} likes TSV has an invalid header.`);
+  const map = new Map();
+  for (const line of lines.slice(1)) {
+    const separator = line.lastIndexOf('\t');
+    if (separator < 1) fail(`${year} likes TSV has a malformed row.`);
+    const title = line.slice(0, separator);
+    const count = Number(line.slice(separator + 1));
+    if (!Number.isInteger(count) || count < 0) fail(`${year} likes TSV has an invalid count.`);
+    if (map.has(title)) fail(`${year} likes TSV contains duplicate title ${title}.`);
+    map.set(title, count);
+  }
+  return map;
+}
+
 async function main() {
   const manifest = await readJson(path.join(DATA_DIR, 'manifest.json'));
   const works = await readJson(path.join(DATA_DIR, 'works.json'));
@@ -19,6 +48,9 @@ async function main() {
     .filter((name) => /^\d{4}\.json$/.test(name))
     .sort();
 
+  if (manifest.schema_version !== '2.0.0') {
+    fail(`Unsupported manifest schema_version=${manifest.schema_version}.`);
+  }
   if (manifest.year_count !== yearFiles.length || manifest.year_count !== yearTags.length) {
     fail('Manifest, source year tags, and generated year files have different year counts.');
   }
@@ -29,8 +61,11 @@ async function main() {
 
   const canonicalIds = new Set();
   for (const work of works) {
-    if (!work.work_id || !work.canonical_id || !work.title) {
+    if (!work.work_id || !work.canonical_id || !work.title || !work.detail_url) {
       fail('Canonical work has a missing required field.');
+    }
+    if (!isNonNegativeInteger(work.favorite_count) || !isNonNegativeInteger(work.my_list_count)) {
+      fail(`Canonical work ${work.work_id} has missing official counters.`);
     }
     if (canonicalIds.has(work.work_id)) fail(`Duplicate canonical work_id: ${work.work_id}`);
     canonicalIds.add(work.work_id);
@@ -44,6 +79,7 @@ async function main() {
   for (const file of yearFiles) {
     const payload = await readJson(path.join(DATA_DIR, 'by-year', file));
     discoveredYears.push(payload.year);
+    if (payload.schema_version !== '2.0.0') fail(`${file} has an unsupported schema version.`);
     if (!Array.isArray(payload.works) || payload.works.length === 0) {
       fail(`${file} contains no works.`);
     }
@@ -54,12 +90,22 @@ async function main() {
     if (payload.official_json_count !== payload.count) {
       fail(`${file} official JSON count=${payload.official_json_count}, canonical count=${payload.count}.`);
     }
+    if (payload.content_sha256 !== contentHash(payload.works)) {
+      fail(`${file} content_sha256 does not match stable official content.`);
+    }
 
     const stats = manifest.acquisition?.[String(payload.year)];
-    if (!stats || stats.work_count !== payload.count ||
+    if (!stats || stats.transport !== 'direct-official-json' ||
+        stats.work_count !== payload.count ||
         stats.declared_work_count !== payload.count ||
-        stats.official_json_work_count !== payload.count) {
+        stats.official_json_work_count !== payload.count ||
+        stats.content_sha256 !== payload.content_sha256) {
       fail(`${file} disagrees with manifest acquisition statistics.`);
+    }
+
+    const likes = await readLikesTsv(payload.year);
+    if (likes.size !== payload.works.length) {
+      fail(`${file} and data/likes/${payload.year}.tsv have different row counts.`);
     }
 
     const ids = new Set();
@@ -68,12 +114,25 @@ async function main() {
         fail(`${file} has a work with missing required fields.`);
       }
       if (work.year !== payload.year) fail(`${file} contains mismatched year ${work.year}.`);
-      if (work.title_source !== 'official-json') {
-        fail(`${file} work ${work.work_id} title is not sourced from official JSON.`);
+      if (work.source_tag_id !== payload.source_tag_id) {
+        fail(`${file} work ${work.work_id} has a mismatched source tag.`);
+      }
+      if (work.title_source !== 'official-json' || work.count_source !== 'official-json') {
+        fail(`${file} work ${work.work_id} is not fully sourced from official JSON.`);
+      }
+      if (!isExactOfficialListUrl(work.title_source_url, payload.source_tag_id) ||
+          !isExactOfficialListUrl(work.count_source_url, payload.source_tag_id)) {
+        fail(`${file} work ${work.work_id} has invalid official provenance URLs.`);
       }
       if (!Array.isArray(work.extraction_sources) ||
           !work.extraction_sources.includes('official-json')) {
         fail(`${file} work ${work.work_id} lacks official JSON extraction evidence.`);
+      }
+      if (!isNonNegativeInteger(work.favorite_count) || !isNonNegativeInteger(work.my_list_count)) {
+        fail(`${file} work ${work.work_id} has missing official counters.`);
+      }
+      if (likes.get(work.title) !== work.favorite_count) {
+        fail(`${file} work ${work.work_id} disagrees with the generated likes TSV.`);
       }
       if (ids.has(work.work_id)) fail(`${file} contains duplicate work_id ${work.work_id}.`);
       if (!canonicalIds.has(work.work_id)) {
@@ -101,13 +160,15 @@ async function main() {
     'empty_years',
     'official_count_mismatches',
     'non_official_titles',
+    'missing_official_favorite_counts',
+    'missing_official_my_list_counts',
   ]) {
     if (integrity[field] !== 0) fail(`Manifest integrity field ${field} is not zero.`);
   }
 
   console.log(
     `Validated ${works.length} canonical works across ${yearFiles.length} years ` +
-      `(${membershipCount} memberships), all matched to official JSON maxCount.`,
+      `(${membershipCount} memberships), including official favorite and my-list counts.`,
   );
 }
 
