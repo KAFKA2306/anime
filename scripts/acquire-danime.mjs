@@ -7,7 +7,6 @@ import {
   TAG_SELECTOR_URL,
   mergeCanonical,
   normalizeText,
-  parseYear,
   sanitizeTitle,
   tagIdFromUrl,
   workIdFromUrl,
@@ -17,6 +16,7 @@ const OUTPUT_DIR = path.resolve('data');
 const DIAGNOSTICS_DIR = path.resolve('diagnostics');
 const RATE_LIMIT_MS = Number(process.env.DANIME_RATE_LIMIT_MS ?? 1200);
 const MAX_LIST_PAGES = Number(process.env.DANIME_MAX_LIST_PAGES ?? 100);
+const MIN_EXPECTED_YEAR_TAGS = Number(process.env.DANIME_MIN_YEAR_TAGS ?? 60);
 const ONLY_YEAR = process.env.DANIME_YEAR ? Number(process.env.DANIME_YEAR) : null;
 const ACQUIRED_AT = new Date().toISOString();
 
@@ -24,7 +24,7 @@ const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, mil
 
 function absoluteUrl(value) {
   try {
-    return new URL(value, OFFICIAL_ORIGIN).toString();
+    return value ? new URL(value, OFFICIAL_ORIGIN).toString() : null;
   } catch {
     return null;
   }
@@ -46,23 +46,23 @@ function inferWorksFromJson(node, sourceUrl, output = [], depth = 0) {
   const linkedId = [node.url, node.link, node.href, node.detailUrl, node.detail_url]
     .map(workIdFromUrl)
     .find(Boolean);
-  const workId = directId && /^[A-Za-z0-9_-]+$/.test(String(directId)) ? String(directId) : linkedId;
+  const workId = directId && /^[A-Za-z0-9_-]+$/.test(String(directId))
+    ? String(directId)
+    : linkedId;
   const title = sanitizeTitle(node.workTitle ?? node.workName ?? node.title ?? node.name ?? null);
 
   if (workId && title) {
-    const detailUrl = absoluteUrl(
-      node.detailUrl ?? node.detail_url ?? node.url ?? node.link ?? node.href ??
-        `/animestore/ci_pc?workId=${encodeURIComponent(workId)}`,
-    );
-    const imageUrl = absoluteUrl(
-      node.imageUrl ?? node.image_url ?? node.thumbnailUrl ?? node.thumbnail_url ??
-        node.mainVisualUrl ?? node.jacketImageUrl ?? null,
-    );
     output.push({
       work_id: workId,
       title,
-      detail_url: detailUrl,
-      image_url: imageUrl,
+      detail_url: absoluteUrl(
+        node.detailUrl ?? node.detail_url ?? node.url ?? node.link ?? node.href ??
+          `/animestore/ci_pc?workId=${encodeURIComponent(workId)}`,
+      ),
+      image_url: absoluteUrl(
+        node.imageUrl ?? node.image_url ?? node.thumbnailUrl ?? node.thumbnail_url ??
+          node.mainVisualUrl ?? node.jacketImageUrl ?? null,
+      ),
       extraction_method: 'official-json',
       extraction_source_url: sourceUrl,
     });
@@ -86,7 +86,8 @@ function dedupeWorks(works) {
       map.set(workId, {
         work_id: workId,
         title,
-        detail_url: absoluteUrl(candidate.detail_url) ?? `${OFFICIAL_ORIGIN}/animestore/ci_pc?workId=${workId}`,
+        detail_url: absoluteUrl(candidate.detail_url) ??
+          `${OFFICIAL_ORIGIN}/animestore/ci_pc?workId=${encodeURIComponent(workId)}`,
         image_url: absoluteUrl(candidate.image_url),
         extraction_method: candidate.extraction_method ?? 'dom',
         extraction_source_url: absoluteUrl(candidate.extraction_source_url),
@@ -114,93 +115,82 @@ async function ensureDirectories() {
 
 async function savePageDiagnostics(page, label) {
   const safe = label.replace(/[^A-Za-z0-9_-]+/g, '-');
-  await writeFile(path.join(DIAGNOSTICS_DIR, 'pages', `${safe}.html`), await page.content(), 'utf8');
-  await page.screenshot({ path: path.join(DIAGNOSTICS_DIR, 'pages', `${safe}.png`), fullPage: true });
+  await writeFile(
+    path.join(DIAGNOSTICS_DIR, 'pages', `${safe}.html`),
+    await page.content(),
+    'utf8',
+  );
+  await page.screenshot({
+    path: path.join(DIAGNOSTICS_DIR, 'pages', `${safe}.png`),
+    fullPage: false,
+    animations: 'disabled',
+  }).catch((error) => {
+    console.warn(`Diagnostic screenshot skipped for ${label}: ${error.message}`);
+  });
 }
 
 async function discoverYearTags(page) {
-  await page.goto(TAG_SELECTOR_URL, { waitUntil: 'domcontentloaded', timeout: 90_000 });
+  const response = await page.goto(TAG_SELECTOR_URL, {
+    waitUntil: 'domcontentloaded',
+    timeout: 90_000,
+  });
+  if (!response || response.status() >= 400) {
+    throw new Error(`Official tag selector returned ${response?.status() ?? 'no response'}.`);
+  }
   await page.waitForTimeout(3500);
   await savePageDiagnostics(page, 'tag-selector');
 
-  const raw = await page.evaluate(() => {
-    const results = [];
-    const push = (year, tagId, url, label, method) => {
-      if (!year || !tagId) return;
-      results.push({ year: Number(year), tag_id: tagId, url, label, discovery_method: method });
-    };
+  const raw = await page.locator('a[href*="tag_pc?tagId="]').evaluateAll((anchors) =>
+    anchors.map((anchor) => ({
+      label: String(anchor.textContent ?? '').replace(/\s+/g, ' ').trim(),
+      href: anchor.href,
+    })),
+  );
 
-    const yearFrom = (text) => {
-      const match = String(text ?? '').replace(/\s+/g, ' ').match(/(?:^|\D)((?:19|20)\d{2})年(?:アニメ)?(?:$|\D)/);
-      return match ? Number(match[1]) : null;
-    };
-    const tagFrom = (text) => {
-      const match = String(text ?? '').match(/(?:tagId=|tagId%3D|['\"])(T\d{7})(?:['\"&]|$)/);
-      return match ? match[1] : null;
-    };
-
-    for (const element of document.querySelectorAll('a, option, [data-tag-id], [data-tagid], [onclick*="tagId"]')) {
-      const label = [
-        element.textContent,
-        element.getAttribute('aria-label'),
-        element.getAttribute('title'),
-        element.getAttribute('alt'),
-      ].filter(Boolean).join(' ');
-      const rawUrl = element.getAttribute('href') ?? element.getAttribute('value') ?? element.getAttribute('onclick') ?? '';
-      const year = yearFrom(label);
-      const tagId = element.getAttribute('data-tag-id') ?? element.getAttribute('data-tagid') ?? tagFrom(rawUrl);
-      if (year && tagId) {
-        const url = rawUrl.includes('tag_pc') ? new URL(rawUrl, location.origin).toString() :
-          `${location.origin}/animestore/tag_pc?tagId=${tagId}`;
-        push(year, tagId, url, label.trim(), 'element');
-      }
-    }
-
-    const html = document.documentElement.innerHTML.replace(/&amp;/g, '&');
-    const patterns = [
-      /((?:19|20)\d{2})年(?:アニメ)?.{0,500}?(T\d{7})/gsi,
-      /(T\d{7}).{0,500}?((?:19|20)\d{2})年(?:アニメ)?/gsi,
-    ];
-    for (const [index, pattern] of patterns.entries()) {
-      for (const match of html.matchAll(pattern)) {
-        const year = index === 0 ? match[1] : match[2];
-        const tagId = index === 0 ? match[2] : match[1];
-        push(year, tagId, `${location.origin}/animestore/tag_pc?tagId=${tagId}`, `${year}年アニメ`, 'html-regex');
-      }
-    }
-    return results;
-  });
-
-  const map = new Map();
+  const byYear = new Map();
   for (const candidate of raw) {
-    const year = parseYear(`${candidate.year}年`);
-    const tagId = candidate.tag_id ?? tagIdFromUrl(candidate.url);
-    if (!year || !tagId || year < 1900 || year > 2099) continue;
-    const normalized = {
+    const match = normalizeText(candidate.label).match(/^((?:19|20)\d{2})年$/u);
+    if (!match) continue;
+    const year = Number(match[1]);
+    const tagId = tagIdFromUrl(candidate.href);
+    if (!tagId) continue;
+
+    const existing = byYear.get(year);
+    if (existing && existing.tag_id !== tagId) {
+      throw new Error(`Conflicting official tag IDs for ${year}: ${existing.tag_id}, ${tagId}`);
+    }
+    byYear.set(year, {
       year,
       tag_id: tagId,
-      label: normalizeText(candidate.label) || `${year}年アニメ`,
+      label: `${year}年`,
       url: `${OFFICIAL_ORIGIN}/animestore/tag_pc?tagId=${tagId}`,
-      discovery_method: candidate.discovery_method,
-    };
-    const existing = map.get(year);
-    if (!existing || existing.discovery_method === 'html-regex') map.set(year, normalized);
-  }
-
-  // User-provided official URL: 2024 year tag. Retained as an auditable fallback only.
-  if (!map.has(2024)) {
-    map.set(2024, {
-      year: 2024,
-      tag_id: 'T0021150',
-      label: '2024年アニメ',
-      url: `${OFFICIAL_ORIGIN}/animestore/tag_pc?tagId=T0021150`,
-      discovery_method: 'user-provided-fallback',
+      discovery_method: 'exact-official-anchor',
     });
   }
 
-  return [...map.values()]
-    .filter((item) => !ONLY_YEAR || item.year === ONLY_YEAR)
-    .sort((a, b) => a.year - b.year);
+  const allTags = [...byYear.values()].sort((a, b) => a.year - b.year);
+  if (ONLY_YEAR) {
+    const selected = allTags.filter((item) => item.year === ONLY_YEAR);
+    if (selected.length !== 1) throw new Error(`Official exact-year tag not found for ${ONLY_YEAR}.`);
+    return selected;
+  }
+
+  const currentYear = new Date().getUTCFullYear();
+  const years = allTags.map((item) => item.year);
+  if (allTags.length < MIN_EXPECTED_YEAR_TAGS) {
+    throw new Error(`Only ${allTags.length} exact-year tags found; expected at least ${MIN_EXPECTED_YEAR_TAGS}.`);
+  }
+  if (!years.includes(currentYear)) {
+    throw new Error(`Current year ${currentYear} is absent from the official exact-year tags.`);
+  }
+  if (Math.min(...years) > 1950) {
+    throw new Error(`Historical coverage is unexpectedly truncated at ${Math.min(...years)}.`);
+  }
+
+  console.log(
+    `Discovered ${allTags.length} exact-year tags (${Math.min(...years)}-${Math.max(...years)}).`,
+  );
+  return allTags;
 }
 
 async function exhaustDynamicList(page) {
@@ -211,9 +201,10 @@ async function exhaustDynamicList(page) {
     const before = await page.locator('a[href*="workId="]').count();
     let clicked = false;
 
-    const candidates = page.getByRole('button', { name: /もっと見る|さらに表示|続きを表示|次へ/i });
-    const buttonCount = await candidates.count();
-    for (let index = 0; index < buttonCount; index += 1) {
+    const candidates = page.getByRole('button', {
+      name: /もっと見る|さらに表示|続きを表示|次へ/i,
+    });
+    for (let index = 0; index < await candidates.count(); index += 1) {
       const button = candidates.nth(index);
       if (await button.isVisible().catch(() => false)) {
         await button.click({ timeout: 3000 }).catch(() => undefined);
@@ -243,22 +234,25 @@ async function extractDomWorks(page) {
     const records = [];
     for (const anchor of document.querySelectorAll('a[href*="workId="]')) {
       const detailUrl = new URL(anchor.getAttribute('href'), location.origin).toString();
-      const url = new URL(detailUrl);
-      const workId = url.searchParams.get('workId');
+      const workId = new URL(detailUrl).searchParams.get('workId');
       if (!workId) continue;
 
-      const container = anchor.closest('li, article, [class*="item"], [class*="work"], [class*="card"], [class*="list"]');
+      const container = anchor.closest(
+        'li, article, [class*="item"], [class*="work"], [class*="card"], [class*="list"]',
+      );
       const image = anchor.querySelector('img') ?? container?.querySelector('img');
-      const titleElement = container?.querySelector('[class*="title"], [class*="ttl"], [class*="name"], h2, h3, h4');
-      const titleCandidates = [
+      const titleElement = container?.querySelector(
+        '[class*="title"], [class*="ttl"], [class*="name"], h2, h3, h4',
+      );
+      const title = [
         anchor.getAttribute('aria-label'),
         anchor.getAttribute('title'),
         image?.getAttribute('alt'),
         titleElement?.textContent,
         anchor.textContent,
-      ].map(clean).filter(Boolean);
-      const title = titleCandidates.find((value) => value.length <= 240) ?? null;
-      const imageUrl = image?.currentSrc || image?.src || image?.getAttribute('data-src') || image?.getAttribute('data-original') || null;
+      ].map(clean).find((value) => value && value.length <= 240) ?? null;
+      const imageUrl = image?.currentSrc || image?.src ||
+        image?.getAttribute('data-src') || image?.getAttribute('data-original') || null;
 
       records.push({
         work_id: workId,
@@ -283,7 +277,8 @@ async function paginationLinks(page, tagId) {
       if (!url.pathname.endsWith('/tag_pc')) continue;
       if (url.searchParams.get('tagId') !== expectedTagId) continue;
       const text = String(anchor.textContent ?? '').trim();
-      const hasPagingParam = [...url.searchParams.keys()].some((key) => /page|offset|start|limit|index/i.test(key));
+      const hasPagingParam = [...url.searchParams.keys()]
+        .some((key) => /page|offset|start|limit|index/i.test(key));
       const looksLikePager = hasPagingParam || /^(?:次へ|前へ|\d+|>|<|»|«)$/u.test(text);
       if (looksLikePager) links.push(url.toString());
     }
@@ -291,34 +286,46 @@ async function paginationLinks(page, tagId) {
   }, tagId);
 }
 
-async function acquireYear(page, tag, networkWorksByYear) {
+async function acquireYear(page, tag, networkWorksByYear, setActiveYear) {
   const queue = [tag.url];
   const visited = new Set();
   const domWorks = [];
 
-  while (queue.length > 0 && visited.size < MAX_LIST_PAGES) {
-    const url = queue.shift();
-    if (visited.has(url)) continue;
-    visited.add(url);
+  try {
+    while (queue.length > 0 && visited.size < MAX_LIST_PAGES) {
+      const url = queue.shift();
+      if (visited.has(url)) continue;
+      visited.add(url);
 
-    page.__activeYear = tag.year;
-    const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90_000 });
-    if (!response || response.status() >= 400) {
-      throw new Error(`${tag.year}: official tag page returned ${response?.status() ?? 'no response'}: ${url}`);
+      setActiveYear(tag.year);
+      const response = await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: 90_000,
+      });
+      if (!response || response.status() >= 400) {
+        throw new Error(
+          `${tag.year}: official tag page returned ${response?.status() ?? 'no response'}: ${url}`,
+        );
+      }
+      await page.waitForTimeout(2500);
+      await exhaustDynamicList(page);
+      domWorks.push(...await extractDomWorks(page));
+
+      const links = await paginationLinks(page, tag.tag_id);
+      for (const link of links) {
+        if (!visited.has(link) && !queue.includes(link)) queue.push(link);
+      }
+      await sleep(RATE_LIMIT_MS);
     }
-    await page.waitForTimeout(2500);
-    await exhaustDynamicList(page);
-    domWorks.push(...await extractDomWorks(page));
-
-    const links = await paginationLinks(page, tag.tag_id);
-    for (const link of links) if (!visited.has(link) && !queue.includes(link)) queue.push(link);
-
-    await savePageDiagnostics(page, `${tag.year}-${visited.size}`);
-    await sleep(RATE_LIMIT_MS);
+  } catch (error) {
+    await savePageDiagnostics(page, `${tag.year}-failure`).catch(() => undefined);
+    throw error;
   }
 
-  const networkWorks = networkWorksByYear.get(tag.year) ?? [];
-  const works = dedupeWorks([...domWorks, ...networkWorks]).map((work) => ({
+  const works = dedupeWorks([
+    ...domWorks,
+    ...(networkWorksByYear.get(tag.year) ?? []),
+  ]).map((work) => ({
     ...work,
     year: tag.year,
     source_tag_id: tag.tag_id,
@@ -327,6 +334,7 @@ async function acquireYear(page, tag, networkWorksByYear) {
   }));
 
   if (works.length === 0) {
+    await savePageDiagnostics(page, `${tag.year}-empty`).catch(() => undefined);
     throw new Error(`${tag.year}: no works extracted from official tag ${tag.tag_id}`);
   }
   return { works, pages_visited: visited.size };
@@ -345,39 +353,59 @@ async function main() {
   const responseTasks = [];
   const networkWorksByYear = new Map();
   const networkManifest = [];
+  let activeYear = null;
 
   context.on('response', (response) => {
     const task = (async () => {
       const url = response.url();
       const contentType = response.headers()['content-type'] ?? '';
-      const year = page.__activeYear;
-      if (!year || !url.startsWith(OFFICIAL_ORIGIN) || !contentType.includes('json') || response.status() >= 400) return;
+      const year = activeYear;
+      if (!year || !url.startsWith(OFFICIAL_ORIGIN) ||
+          !contentType.includes('json') || response.status() >= 400) return;
       try {
         const text = await response.text();
         if (text.length > 8_000_000) return;
         const parsed = JSON.parse(text);
-        const hash = shortHash(url);
-        const relative = path.join('network', `${year}-${hash}.json`);
-        await writeFile(path.join(DIAGNOSTICS_DIR, relative), JSON.stringify(parsed, null, 2), 'utf8');
         const inferred = inferWorksFromJson(parsed, url);
-        networkWorksByYear.set(year, [...(networkWorksByYear.get(year) ?? []), ...inferred]);
-        networkManifest.push({ year, url, status: response.status(), file: relative, inferred_work_count: inferred.length });
+        if (inferred.length > 0) {
+          const relative = path.join('network', `${year}-${shortHash(url)}.json`);
+          await writeFile(
+            path.join(DIAGNOSTICS_DIR, relative),
+            JSON.stringify(parsed, null, 2),
+            'utf8',
+          );
+          networkWorksByYear.set(year, [
+            ...(networkWorksByYear.get(year) ?? []),
+            ...inferred,
+          ]);
+          networkManifest.push({
+            year,
+            url,
+            status: response.status(),
+            file: relative,
+            inferred_work_count: inferred.length,
+          });
+        }
       } catch {
-        // Non-JSON or unreadable response despite its content-type; page DOM remains authoritative.
+        // DOM extraction remains authoritative if a JSON response is unreadable.
       }
     })();
     responseTasks.push(task);
   });
 
-  let yearTags;
   try {
-    yearTags = await discoverYearTags(page);
-    if (yearTags.length === 0) throw new Error('No exact year tags were discovered on the official tag selector page.');
-
+    const yearTags = await discoverYearTags(page);
     const byYear = {};
     const acquisitionStats = {};
-    for (const tag of yearTags) {
-      const result = await acquireYear(page, tag, networkWorksByYear);
+    const acquisitionOrder = [...yearTags].sort((a, b) => b.year - a.year);
+
+    for (const tag of acquisitionOrder) {
+      const result = await acquireYear(
+        page,
+        tag,
+        networkWorksByYear,
+        (year) => { activeYear = year; },
+      );
       byYear[tag.year] = result.works;
       acquisitionStats[tag.year] = {
         tag_id: tag.tag_id,
@@ -388,6 +416,7 @@ async function main() {
       console.log(`${tag.year}: ${result.works.length} works from ${result.pages_visited} page(s)`);
     }
 
+    activeYear = null;
     await Promise.allSettled(responseTasks);
 
     const canonicalWorks = mergeCanonical(byYear);
@@ -423,13 +452,33 @@ async function main() {
         count: byYear[tag.year].length,
         works: byYear[tag.year],
       };
-      await writeFile(path.join(OUTPUT_DIR, 'by-year', `${tag.year}.json`), JSON.stringify(payload, null, 2) + '\n', 'utf8');
+      await writeFile(
+        path.join(OUTPUT_DIR, 'by-year', `${tag.year}.json`),
+        `${JSON.stringify(payload, null, 2)}\n`,
+        'utf8',
+      );
     }
 
-    await writeFile(path.join(OUTPUT_DIR, 'works.json'), JSON.stringify(canonicalWorks, null, 2) + '\n', 'utf8');
-    await writeFile(path.join(OUTPUT_DIR, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');
-    await writeFile(path.join(OUTPUT_DIR, 'source', 'year-tags.json'), JSON.stringify(yearTags, null, 2) + '\n', 'utf8');
-    await writeFile(path.join(DIAGNOSTICS_DIR, 'network-manifest.json'), JSON.stringify(networkManifest, null, 2) + '\n', 'utf8');
+    await writeFile(
+      path.join(OUTPUT_DIR, 'works.json'),
+      `${JSON.stringify(canonicalWorks, null, 2)}\n`,
+      'utf8',
+    );
+    await writeFile(
+      path.join(OUTPUT_DIR, 'manifest.json'),
+      `${JSON.stringify(manifest, null, 2)}\n`,
+      'utf8',
+    );
+    await writeFile(
+      path.join(OUTPUT_DIR, 'source', 'year-tags.json'),
+      `${JSON.stringify(yearTags, null, 2)}\n`,
+      'utf8',
+    );
+    await writeFile(
+      path.join(DIAGNOSTICS_DIR, 'network-manifest.json'),
+      `${JSON.stringify(networkManifest, null, 2)}\n`,
+      'utf8',
+    );
   } finally {
     await browser.close();
   }
