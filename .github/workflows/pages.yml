@@ -42,16 +42,18 @@ jobs:
           test -s app.js
           test -s data/manifest.json
           test -d data/by-year
+          test -s data/likes/2024.tsv
           node --check app.js
           python -m json.tool data/manifest.json > /dev/null
 
       - name: Build Pages artifact
         run: |
           rm -rf _site
-          mkdir -p _site/data/by-year
+          mkdir -p _site/data/by-year _site/data/likes
           cp index.html styles.css app.js _site/
           cp data/manifest.json _site/data/
           cp data/by-year/*.json _site/data/by-year/
+          cp data/likes/*.tsv _site/data/likes/
           touch _site/.nojekyll
 
       - name: Configure Pages
