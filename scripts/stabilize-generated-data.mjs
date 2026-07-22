@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const DATA_DIR = path.resolve('data');
@@ -19,7 +19,9 @@ async function main() {
 
   const filenames = (await readdir(path.join(DATA_DIR, 'by-year')))
     .filter((name) => /^\d{4}\.json$/.test(name));
+  await mkdir(path.join(DATA_DIR, 'likes'), { recursive: true });
   let removed = 0;
+  let exported = 0;
 
   for (const filename of filenames) {
     const file = path.join(DATA_DIR, 'by-year', filename);
@@ -31,9 +33,23 @@ async function main() {
       }
     }
     await writeJson(file, payload);
+
+    const rows = [
+      'work_id\ttitle\tfavorites_count',
+      ...(payload.works ?? []).map((work) =>
+        `${work.work_id}\t${work.title}\t${work.favorite_count}`),
+    ];
+    await writeFile(
+      path.join(DATA_DIR, 'likes', `${payload.year}.tsv`),
+      `${rows.join('\n')}\n`,
+      'utf8',
+    );
+    exported += payload.works?.length ?? 0;
   }
 
-  console.log(`Removed ${removed} volatile per-work acquisition timestamps.`);
+  console.log(
+    `Removed ${removed} volatile per-work timestamps and exported ${exported} ID-keyed favorite rows.`,
+  );
 }
 
 main().catch((error) => {
