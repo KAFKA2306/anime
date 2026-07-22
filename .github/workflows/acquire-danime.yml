@@ -83,7 +83,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No catalogue changes.'
           else
-            git commit -m 'Update official dAnime catalogue and counters [skip ci]'
+            git commit -m 'Update official dAnime catalogue and counters'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
