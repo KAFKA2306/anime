@@ -1,0 +1,87 @@
+name: Acquire dAnime year catalogue
+
+on:
+  push:
+    branches:
+      - main
+      - agent/acquire-danime-years
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: Optional single year to diagnose
+        required: false
+        type: string
+  schedule:
+    - cron: '17 20 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: danime-acquisition-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  acquire:
+    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DANIME_YEAR: ${{ inputs.year }}
+      DANIME_RATE_LIMIT_MS: '1200'
+      DANIME_MAX_LIST_PAGES: '100'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Test catalogue utilities
+        run: npm test
+
+      - name: Acquire official year data
+        run: npm run acquire
+
+      - name: Validate generated data
+        run: npm run validate
+
+      - name: Upload acquisition diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: danime-acquisition-${{ github.run_id }}
+          path: |
+            data/
+            diagnostics/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Commit updated data
+        if: >-
+          env.DANIME_YEAR == '' &&
+          (
+            github.event_name == 'schedule' ||
+            github.event_name == 'workflow_dispatch' ||
+            (github.event_name == 'push' && github.ref_name != 'main')
+          )
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if git diff --cached --quiet; then
+            echo 'No catalogue changes.'
+          else
+            git commit -m 'Update official dAnime year catalogue [skip ci]'
+            git push
+          fi
