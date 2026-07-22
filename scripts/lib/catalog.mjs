@@ -41,7 +41,9 @@ export function sanitizeTitle(value) {
     .trim();
 
   if (!text || text.length > 240) return null;
-  if (/^(?:ホーム|ログイン|メニュー|すべて見る|次へ|前へ|見放題|レンタル)$/u.test(text)) return null;
+  if (/^(?:ホーム|ログイン|メニュー|すべて見る|次へ|前へ|見放題|レンタル)$/u.test(text)) {
+    return null;
+  }
   return text;
 }
 
@@ -59,6 +61,11 @@ export function mergeCanonical(byYear) {
         years: [],
         detail_url: work.detail_url,
         image_url: work.image_url ?? null,
+        favorite_count: work.favorite_count ?? null,
+        my_list_count: work.my_list_count ?? null,
+        work_type_list: work.work_type_list ?? [],
+        vod_type: work.vod_type ?? null,
+        age_limit_type: work.age_limit_type ?? null,
         source: 'dアニメストア',
       };
 
@@ -67,6 +74,16 @@ export function mergeCanonical(byYear) {
         current.title_aliases.push(work.title);
       }
       if (!current.image_url && work.image_url) current.image_url = work.image_url;
+      if (Number.isInteger(work.favorite_count)) {
+        current.favorite_count = current.favorite_count == null
+          ? work.favorite_count
+          : Math.max(current.favorite_count, work.favorite_count);
+      }
+      if (Number.isInteger(work.my_list_count)) {
+        current.my_list_count = current.my_list_count == null
+          ? work.my_list_count
+          : Math.max(current.my_list_count, work.my_list_count);
+      }
       map.set(work.work_id, current);
     }
   }
