@@ -20,7 +20,7 @@ export const OFFICIAL_GENRES = [...OFFICIAL_GENRE_MAP.keys()];
 
 const WEB_NOVEL_PLATFORMS = [
   '小説家になろう', 'カクヨム', 'アルファポリス', 'エブリスタ',
-  'ノベルアップ+', 'ノベルアップ＋', '魔法のiらんど', 'pixiv', 'Arcadia', 'ハーメルン',
+  'ノベルアップ+', 'ノベルアップ＋', '魔法のiらんど', 'pixiv小説', 'Arcadia', 'ハーメルン',
 ];
 const MANGA_SIGNALS = [
   'コミックス', 'コミック', '漫画', '少年ジャンプ', 'ヤングジャンプ',
@@ -138,11 +138,15 @@ export function buildAttributeRecord({
   const origin = inferSourceOrigin({ staffText, originalCredit });
   const primary = inferPrimaryGenre({ officialGenres: genres, title, synopsis });
   const tags = inferCanonicalTags({ officialGenres: genres, primaryGenre: primary.value });
+  const normalizedProductionYear = productionYear !== null && productionYear !== undefined && productionYear !== ''
+    && Number.isInteger(Number(productionYear))
+    ? Number(productionYear)
+    : null;
   return {
     schema_version: '1.0.0', work_id: String(workId),
     attribute_source_url: detailUrl, attribute_fetched_at: fetchedAt,
     official_genres: genres,
-    production_year: Number.isInteger(Number(productionYear)) ? Number(productionYear) : null,
+    production_year: normalizedProductionYear,
     original_credit: originalCredit, source_origin: origin.value,
     primary_genre: primary.value, canonical_tags: tags,
     attribute_confidence: {
