@@ -103,7 +103,10 @@ function matchesPreferenceExclusion(work) {
 }
 
 function hasFavoritesCount(work) {
-  return Number.isFinite(Number(work.favorites_count));
+  return work.favorites_count !== null
+    && work.favorites_count !== undefined
+    && work.favorites_count !== ''
+    && Number.isFinite(Number(work.favorites_count));
 }
 
 function ensureFavoritesSortOptions() {
