@@ -5,7 +5,9 @@
   "type": "module",
   "description": "Canonical d Anime Store year-tag catalogue acquisition pipeline",
   "scripts": {
-    "acquire": "node scripts/acquire-danime.mjs",
+    "acquire:raw": "node scripts/acquire-danime.mjs",
+    "canonicalize": "node scripts/canonicalize-from-official-json.mjs",
+    "acquire": "npm run acquire:raw && npm run canonicalize",
     "validate": "node scripts/validate-data.mjs",
     "test": "node --test tests/*.test.mjs"
   },
