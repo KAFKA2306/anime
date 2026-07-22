@@ -1,0 +1,77 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - index.html
+      - styles.css
+      - app.js
+      - data/**
+      - .github/workflows/pages.yml
+  pull_request:
+    paths:
+      - index.html
+      - styles.css
+      - app.js
+      - data/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate static application
+        run: |
+          test -s index.html
+          test -s styles.css
+          test -s app.js
+          test -s data/manifest.json
+          test -d data/by-year
+          node --check app.js
+          python -m json.tool data/manifest.json > /dev/null
+
+      - name: Build Pages artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site/data/by-year
+          cp index.html styles.css app.js _site/
+          cp data/manifest.json _site/data/
+          cp data/by-year/*.json _site/data/by-year/
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
