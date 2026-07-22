@@ -17,6 +17,11 @@ test('explicit web platform is classified as web novel origin', () => {
   assert.deepEqual(result.matched_terms, ['小説家になろう']);
 });
 
+test('generic pixiv credit is not enough to infer web novel', () => {
+  const result = inferSourceOrigin({ staffText: '原作:作者名（pixivコミック掲載）／監督:監督名' });
+  assert.equal(result.value, '漫画');
+});
+
 test('manga publication credit is not mislabeled as web novel', () => {
   const result = inferSourceOrigin({
     staffText: '原作:赤坂アカ×横槍メンゴ（集英社ヤングジャンプコミックス刊）／監督:平牧大輔',
@@ -50,6 +55,16 @@ test('official action genre becomes canonical battle/action tag', () => {
   assert.deepEqual(record.canonical_tags, ['バトル・アクション', 'ドラマ・青春']);
   assert.equal(record.primary_genre, 'バトル・アクション');
   assert.equal(record.source_origin, '漫画');
+  assert.equal(record.production_year, 2024);
+});
+
+test('missing production year remains null', () => {
+  const record = buildAttributeRecord({
+    workId: '2', title: '年不明',
+    detailUrl: 'https://animestore.docomo.ne.jp/animestore/ci_pc?workId=2',
+    officialGenres: ['ドラマ/青春'],
+  });
+  assert.equal(record.production_year, null);
 });
 
 test('original credit extraction stops at next staff separator', () => {
