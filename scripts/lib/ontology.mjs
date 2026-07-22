@@ -32,7 +32,7 @@ const NOVEL_SIGNALS = ['文庫', 'ノベル', '小説', 'ブックス', 'BOOKS']
 const GAME_SIGNALS = ['ゲーム', 'スマートフォンゲーム', 'アプリゲーム', 'ブラウザゲーム'];
 const HIGH_FANTASY_SIGNALS = [
   '異世界', '転生', '転移', '召喚', '勇者', '魔王', '冒険者', 'ダンジョン',
-  'ギルド', '剣と魔法', '魔法', '魔術', '精霊', 'エルフ', 'ドラゴン', '竜族', '聖女', '賢者',
+  'ギルド', '剣と魔法', 'エルフ', 'ドワーフ', '聖女', '賢者',
 ];
 
 function normalize(value) {
@@ -96,7 +96,7 @@ export function inferCanonicalTags({ officialGenres = [], primaryGenre = null } 
   return unique(tags);
 }
 
-export function parseOfficialDetailText(bodyText, anchorLabels = []) {
+export function parseOfficialDetailText(bodyText) {
   const lines = String(bodyText ?? '').normalize('NFKC').split(/\r?\n/u)
     .map((line) => line.replace(/\s+/g, ' ').trim()).filter(Boolean);
   const synopsisStart = lines.findIndex((line) => /あらすじ\s*[／/]\s*ジャンル/u.test(line));
@@ -104,7 +104,7 @@ export function parseOfficialDetailText(bodyText, anchorLabels = []) {
     ? lines.findIndex((line, index) => index > synopsisStart && /^(?:シリーズ[／/]関連|キャスト\s*[／/]\s*スタッフ)/u.test(line))
     : -1;
   const section = synopsisStart >= 0 ? lines.slice(synopsisStart + 1, synopsisEnd >= 0 ? synopsisEnd : undefined) : [];
-  const officialGenres = normalizeOfficialGenres([...(Array.isArray(anchorLabels) ? anchorLabels : []), ...section]);
+  const officialGenres = normalizeOfficialGenres(section);
   const firstGenre = section.findIndex((line) => OFFICIAL_GENRE_MAP.has(line));
   const synopsis = normalize((firstGenre >= 0 ? section.slice(0, firstGenre) : section).join(' '));
   const staffStart = lines.findIndex((line) => /^\[スタッフ\]$/u.test(line));
