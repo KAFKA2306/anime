@@ -37,6 +37,7 @@ const state = {
   currentYear: null,
   metadataAvailable: false,
   favoritesAvailableCount: 0,
+  favoritesSource: 'none',
 };
 
 function formatNumber(value) {
@@ -103,19 +104,20 @@ function matchesPreferenceExclusion(work) {
 }
 
 function hasFavoritesCount(work) {
-  return work.favorites_count !== null
-    && work.favorites_count !== undefined
-    && work.favorites_count !== ''
-    && Number.isFinite(Number(work.favorites_count));
+  return work.favorite_count !== null
+    && work.favorite_count !== undefined
+    && work.favorite_count !== ''
+    && Number.isFinite(Number(work.favorite_count));
 }
 
 function ensureFavoritesSortOptions() {
   if (elements.sortSelect.querySelector('option[value="favorites-desc"]')) return;
-
-  const descending = new Option('気になる登録数 多い順', 'favorites-desc');
-  const ascending = new Option('気になる登録数 少ない順', 'favorites-asc');
-  elements.sortSelect.prepend(ascending);
-  elements.sortSelect.prepend(descending);
+  elements.sortSelect.prepend(
+    new Option('気になる登録数 少ない順', 'favorites-asc'),
+  );
+  elements.sortSelect.prepend(
+    new Option('気になる登録数 多い順', 'favorites-desc'),
+  );
 }
 
 function setBusy(isBusy) {
@@ -145,8 +147,13 @@ function syncUrl() {
 }
 
 function renderMetadataNotice() {
+  const countSource = state.favoritesSource === 'official-json'
+    ? '公式JSONの気になる登録数'
+    : state.favoritesSource === 'legacy-tsv'
+      ? '互換TSVの気になる登録数'
+      : '気になる登録数';
   const favoritesNote = state.favoritesAvailableCount
-    ? ` 気になる登録数は${formatNumber(state.favoritesAvailableCount)}作品で利用できます。`
+    ? ` ${countSource}を${formatNumber(state.favoritesAvailableCount)}作品で利用できます。`
     : ' この年度には気になる登録数データがありません。';
 
   if (state.metadataAvailable) {
@@ -163,9 +170,9 @@ function compareFavorites(a, b, direction) {
   const aKnown = hasFavoritesCount(a);
   const bKnown = hasFavoritesCount(b);
   if (aKnown !== bKnown) return aKnown ? -1 : 1;
-  if (!aKnown) return 0;
+  if (!aKnown) return normalizeTitle(a.title).localeCompare(normalizeTitle(b.title), 'ja');
 
-  const difference = Number(a.favorites_count) - Number(b.favorites_count);
+  const difference = Number(a.favorite_count) - Number(b.favorite_count);
   if (difference !== 0) return difference * direction;
   return normalizeTitle(a.title).localeCompare(normalizeTitle(b.title), 'ja');
 }
@@ -173,7 +180,6 @@ function compareFavorites(a, b, direction) {
 function sortedWorks(works) {
   const mode = elements.sortSelect.value;
   if (mode === 'official') return works;
-
   if (mode === 'favorites-desc') {
     return [...works].sort((a, b) => compareFavorites(a, b, -1));
   }
@@ -202,25 +208,22 @@ function buildFavoritesRanks() {
   const ranked = state.works
     .filter(hasFavoritesCount)
     .sort((a, b) => compareFavorites(a, b, -1));
-
   const ranks = new Map();
   let previousCount = null;
   let currentRank = 0;
 
   ranked.forEach((work, index) => {
-    const count = Number(work.favorites_count);
+    const count = Number(work.favorite_count);
     if (count !== previousCount) currentRank = index + 1;
-    ranks.set(work.work_id || normalizeLookupTitle(work.title), currentRank);
+    ranks.set(work.work_id, currentRank);
     previousCount = count;
   });
-
   return ranks;
 }
 
 function renderWorks() {
-  const filtered = filteredWorks();
-  const sorted = sortedWorks(filtered);
-  const favoritesRanks = buildFavoritesRanks();
+  const sorted = sortedWorks(filteredWorks());
+  const ranks = buildFavoritesRanks();
   const excludedCount = state.metadataAvailable && elements.preferenceToggle.checked
     ? state.works.filter(matchesPreferenceExclusion).length
     : 0;
@@ -240,10 +243,8 @@ function renderWorks() {
     const link = card.querySelector('.work-card__link');
     const image = card.querySelector('.work-card__image');
     const title = normalizeTitle(work.title);
-    const rankKey = work.work_id || normalizeLookupTitle(title);
-    const rank = favoritesRanks.get(rankKey);
     const favoritesText = hasFavoritesCount(work)
-      ? `#${rank} · 気になる登録 ${formatNumber(work.favorites_count)}件`
+      ? `#${ranks.get(work.work_id)} · 気になる登録 ${formatNumber(work.favorite_count)}件`
       : '気になる登録数 不明';
 
     link.href = work.detail_url || work.source_tag_url || '#';
@@ -261,27 +262,30 @@ function renderWorks() {
   syncUrl();
 }
 
-async function loadFavoritesMap(year) {
+async function loadLegacyFavorites(year) {
   try {
     const response = await fetch(`./data/likes/${year}.tsv`, { cache: 'no-cache' });
-    if (!response.ok) return new Map();
+    if (!response.ok) return { byId: new Map(), byTitle: new Map() };
+    const lines = (await response.text()).split(/\r?\n/).filter(Boolean);
+    const byId = new Map();
+    const byTitle = new Map();
 
-    const text = await response.text();
-    const lines = text.split(/\r?\n/).filter(Boolean);
-    if (lines.length < 2) return new Map();
-
-    const map = new Map();
     for (const line of lines.slice(1)) {
-      const separatorIndex = line.lastIndexOf('\t');
-      if (separatorIndex < 1) continue;
-      const title = line.slice(0, separatorIndex);
-      const count = Number(line.slice(separatorIndex + 1));
-      if (!Number.isFinite(count)) continue;
-      map.set(normalizeLookupTitle(title), count);
+      const columns = line.split('\t');
+      if (columns.length === 3) {
+        const [workId, title, countText] = columns;
+        const count = Number(countText);
+        if (workId && Number.isFinite(count)) byId.set(workId, count);
+        if (title && Number.isFinite(count)) byTitle.set(normalizeLookupTitle(title), count);
+      } else if (columns.length === 2) {
+        const [title, countText] = columns;
+        const count = Number(countText);
+        if (title && Number.isFinite(count)) byTitle.set(normalizeLookupTitle(title), count);
+      }
     }
-    return map;
+    return { byId, byTitle };
   } catch {
-    return new Map();
+    return { byId: new Map(), byTitle: new Map() };
   }
 }
 
@@ -298,16 +302,22 @@ async function loadYear(year) {
     const response = await fetch(`./data/by-year/${state.currentYear}.json`, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    const favoritesMap = await loadFavoritesMap(state.currentYear);
     const officialWorks = Array.isArray(payload.works) ? payload.works : [];
+    const hasEmbeddedCounts = officialWorks.every(hasFavoritesCount);
+    const legacy = hasEmbeddedCounts
+      ? { byId: new Map(), byTitle: new Map() }
+      : await loadLegacyFavorites(state.currentYear);
 
     state.works = officialWorks.map((work) => {
-      const count = favoritesMap.get(normalizeLookupTitle(work.title));
+      if (hasFavoritesCount(work)) return work;
+      const fallback = legacy.byId.get(work.work_id)
+        ?? legacy.byTitle.get(normalizeLookupTitle(work.title));
       return {
         ...work,
-        favorites_count: Number.isFinite(count) ? count : null,
+        favorite_count: Number.isFinite(fallback) ? fallback : null,
       };
     });
+    state.favoritesSource = hasEmbeddedCounts ? 'official-json' : 'legacy-tsv';
     state.favoritesAvailableCount = state.works.filter(hasFavoritesCount).length;
     state.metadataAvailable = state.works.some(hasPreferenceMetadata);
     elements.sourceLink.href = payload.source_url || state.manifest?.source?.tag_selector_url || '#';
@@ -316,6 +326,7 @@ async function loadYear(year) {
   } catch (error) {
     state.works = [];
     state.favoritesAvailableCount = 0;
+    state.favoritesSource = 'none';
     elements.visibleCount.textContent = '0';
     elements.resultSummary.textContent = '';
     setError(`${state.currentYear}年の作品データを読み込めませんでした。${error instanceof Error ? ` (${error.message})` : ''}`);
@@ -360,7 +371,8 @@ async function initialize() {
       ? requestedYear
       : (years.includes(2024) ? 2024 : Math.max(...years));
     const requestedSort = params.get('sort');
-    const validSort = requestedSort && elements.sortSelect.querySelector(`option[value="${CSS.escape(requestedSort)}"]`);
+    const validSort = requestedSort
+      && elements.sortSelect.querySelector(`option[value="${CSS.escape(requestedSort)}"]`);
 
     elements.searchInput.value = params.get('q') || '';
     elements.sortSelect.value = validSort ? requestedSort : 'favorites-desc';
