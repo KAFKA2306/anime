@@ -21,12 +21,14 @@ test('parses official identifiers and exact years', () => {
   assert.equal(workIdFromUrl('/animestore/ci_pc?workId=12345'), '12345');
 });
 
-test('merges duplicate work IDs into canonical year memberships', () => {
+test('merges duplicate work IDs into canonical year memberships and counters', () => {
   const result = mergeCanonical({
-    2023: [{ work_id: 'A1', title: '作品A', detail_url: 'https://example.test/A1', image_url: null }],
-    2024: [{ work_id: 'A1', title: '作品A', detail_url: 'https://example.test/A1', image_url: 'https://example.test/A1.jpg' }],
+    2023: [{ work_id: 'A1', title: '作品A', detail_url: 'https://example.test/A1', image_url: null, favorite_count: 10, my_list_count: 8 }],
+    2024: [{ work_id: 'A1', title: '作品A', detail_url: 'https://example.test/A1', image_url: 'https://example.test/A1.jpg', favorite_count: 12, my_list_count: 9 }],
   });
   assert.equal(result.length, 1);
   assert.deepEqual(result[0].years, [2023, 2024]);
   assert.equal(result[0].image_url, 'https://example.test/A1.jpg');
+  assert.equal(result[0].favorite_count, 12);
+  assert.equal(result[0].my_list_count, 9);
 });
