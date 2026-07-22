@@ -25,9 +25,10 @@ The official staff credit is examined in the following order.
 
 ### 主ジャンル
 
-1. Preserve the order of genres shown on the official detail page.
+1. Preserve the order of genres shown inside the selected work's official `あらすじ／ジャンル` section. Page-wide navigation labels are ignored.
 2. Normally normalize the first official genre as the primary genre.
-3. Assign `異世界・ハイファンタジー` only when the official genres include `SF/ファンタジー` and the title or official synopsis contains an explicit world-setting signal such as `異世界`, `転生`, `召喚`, `勇者`, `魔王`, `冒険者`, `ダンジョン`, or `魔法`.
+3. Assign `異世界・ハイファンタジー` only when the official genres include `SF/ファンタジー` and the title or official synopsis contains a strong world-setting signal such as `異世界`, `転生`, `転移`, `召喚`, `勇者`, `魔王`, `冒険者`, `ダンジョン`, `ギルド`, `剣と魔法`, `エルフ`, or `ドワーフ`.
+4. Generic terms such as `魔法`, `魔術`, `精霊`, or `ドラゴン` alone are insufficient because they also occur in contemporary or low-fantasy works.
 
 ### 正規タグ
 
