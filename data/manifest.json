@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-22T11:10:15.202Z",
+  "generated_at": "2026-07-22T23:20:36.912Z",
   "source": {
     "name": "dアニメストア",
     "operator": "株式会社NTTドコモ",
@@ -77,8 +77,8 @@
     2026
   ],
   "year_count": 66,
-  "canonical_work_count": 7539,
-  "membership_count": 7541,
+  "canonical_work_count": 7540,
+  "membership_count": 7542,
   "acquisition": {
     "1945": {
       "tag_id": "T0015540",
@@ -615,9 +615,9 @@
       "tag_id": "T0013405",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013405",
       "pages_visited": 1,
-      "work_count": 313,
-      "declared_work_count": 313,
-      "official_json_work_count": 313,
+      "work_count": 314,
+      "declared_work_count": 314,
+      "official_json_work_count": 314,
       "official_json_response_count": 16
     },
     "2021": {
@@ -681,5 +681,17 @@
     "empty_years": 0,
     "official_count_mismatches": 0,
     "non_official_titles": 0
+  },
+  "attributes": {
+    "schema_version": "1.0.0",
+    "cache_record_count": 0,
+    "applied_canonical_count": 0,
+    "applied_membership_count": 0,
+    "fields": [
+      "source_origin",
+      "primary_genre",
+      "canonical_tags"
+    ],
+    "policy": "Official detail metadata plus deterministic, auditable rules; unknown values remain null."
   }
 }
