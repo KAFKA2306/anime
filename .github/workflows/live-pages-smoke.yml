@@ -15,13 +15,23 @@ on:
 
 permissions:
   contents: read
+  pages: read
 
 jobs:
   verify-live:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Pages propagation
-        run: sleep 45
+      - name: Inspect GitHub Pages source configuration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages" \
+            | jq '{html_url, status, build_type, source, public}'
 
       - name: Verify production HTML and assets
         shell: bash
@@ -30,26 +40,30 @@ jobs:
           base="https://kafka2306.github.io/anime"
           tmp="$(mktemp -d)"
 
-          curl --fail --silent --show-error --location \
-            --retry 15 --retry-all-errors --retry-delay 6 \
-            -D "$tmp/index.headers" \
-            "$base/?smoke=${GITHUB_SHA}" -o "$tmp/index.html"
-          sed -n '1,30p' "$tmp/index.headers"
-          grep -nE 'theme-color|app-build|<title>|stylesheet' "$tmp/index.html" || true
-          grep -F '2026-07-23-pastel-watercolor-2' "$tmp/index.html"
+          matched=false
+          for attempt in $(seq 1 36); do
+            curl --fail --silent --show-error --location \
+              "$base/?smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/index.html"
+            if grep -Fq '2026-07-23-pastel-watercolor-2' "$tmp/index.html"; then
+              matched=true
+              break
+            fi
+            echo "Live site has not propagated yet (attempt ${attempt})."
+            sleep 10
+          done
+          test "$matched" = true
+
           grep -F 'id="yearSelect"' "$tmp/index.html"
           grep -F 'id="searchInput"' "$tmp/index.html"
           grep -F 'id="workGrid"' "$tmp/index.html"
 
           curl --fail --silent --show-error --location \
-            --retry 15 --retry-all-errors --retry-delay 6 \
             "$base/styles.css?smoke=${GITHUB_SHA}" -o "$tmp/styles.css"
           grep -F -- '--lavender:' "$tmp/styles.css"
           grep -F -- '--rose:' "$tmp/styles.css"
           grep -F -- '--mint:' "$tmp/styles.css"
 
           curl --fail --silent --show-error --location \
-            --retry 15 --retry-all-errors --retry-delay 6 \
             "$base/data/manifest.json?smoke=${GITHUB_SHA}" -o "$tmp/manifest.json"
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
