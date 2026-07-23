@@ -1,6 +1,9 @@
 name: Verify live GitHub Pages
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/live-pages-smoke.yml
   push:
     branches:
       - main
@@ -21,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Pages propagation
+        if: github.event_name == 'push'
         run: sleep 45
 
       - name: Verify production HTML and assets
