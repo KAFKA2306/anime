@@ -1,0 +1,138 @@
+# Evidence-backed, deterministic attribute enrichment
+name: Enrich dAnime attributes
+
+on:
+  push:
+    branches:
+      - agent/attribute-enrichment-v3
+    paths:
+      - .github/workflows/enrich-danime-attributes.yml
+      - package.json
+      - scripts/enrich-official-details.mjs
+      - scripts/apply-attributes.mjs
+      - scripts/lib/ontology.mjs
+      - tests/ontology.test.mjs
+  workflow_dispatch:
+    inputs:
+      year:
+        description: Optional year to enrich; blank processes missing works across all years
+        required: false
+        default: '2024'
+        type: string
+      limit:
+        description: Maximum works; 0 means all selected works
+        required: false
+        default: '0'
+        type: string
+      refresh:
+        description: Re-fetch existing attribute records
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: '43 19 * * 3'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: danime-attribute-write-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  enrich:
+    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Test ontology rules
+        run: npm test
+
+      - name: Resolve enrichment scope
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            echo "DANIME_ENRICH_YEAR=2024" >> "$GITHUB_ENV"
+            echo "DANIME_ENRICH_LIMIT=0" >> "$GITHUB_ENV"
+            echo "DANIME_ENRICH_REFRESH=0" >> "$GITHUB_ENV"
+          elif [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "DANIME_ENRICH_YEAR=" >> "$GITHUB_ENV"
+            echo "DANIME_ENRICH_LIMIT=500" >> "$GITHUB_ENV"
+            echo "DANIME_ENRICH_REFRESH=0" >> "$GITHUB_ENV"
+          else
+            echo "DANIME_ENRICH_YEAR=${{ inputs.year }}" >> "$GITHUB_ENV"
+            echo "DANIME_ENRICH_LIMIT=${{ inputs.limit }}" >> "$GITHUB_ENV"
+            if [[ "${{ inputs.refresh }}" == "true" ]]; then
+              echo "DANIME_ENRICH_REFRESH=1" >> "$GITHUB_ENV"
+            else
+              echo "DANIME_ENRICH_REFRESH=0" >> "$GITHUB_ENV"
+            fi
+          fi
+          echo "DANIME_ENRICH_CONCURRENCY=2" >> "$GITHUB_ENV"
+          echo "DANIME_ENRICH_RATE_LIMIT_MS=900" >> "$GITHUB_ENV"
+
+      - name: Enrich official detail attributes
+        run: npm run attributes:enrich
+
+      - name: Validate catalogue
+        run: npm run validate
+
+      - name: Upload enrichment diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: danime-attribute-enrichment-${{ github.run_id }}
+          path: diagnostics/attribute-enrichment.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Commit enriched attributes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add attributes data
+          if git diff --cached --quiet; then
+            echo 'No attribute changes.'
+          else
+            git commit -m 'Enrich official anime attributes [skip ci]'
+            git push
+          fi
+
+      - name: Report enrichment result to pull request
+        if: always() && github.event_name == 'push' && github.actor != 'github-actions[bot]'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          PR_NUMBER=$(gh pr list --head "$GITHUB_REF_NAME" --state open --json number --jq '.[0].number // empty')
+          if [[ -z "$PR_NUMBER" ]]; then
+            echo 'No open pull request for this branch.'
+            exit 0
+          fi
+          if [[ -f diagnostics/attribute-enrichment.json ]]; then
+            REQUESTED=$(jq -r '.requested_count // 0' diagnostics/attribute-enrichment.json)
+            COMPLETED=$(jq -r '.completed_count // 0' diagnostics/attribute-enrichment.json)
+            FAILED=$(jq -r '.failed_count // 0' diagnostics/attribute-enrichment.json)
+          else
+            REQUESTED=0
+            COMPLETED=0
+            FAILED=0
+          fi
+          gh pr comment "$PR_NUMBER" --body "Attribute enrichment run \`${GITHUB_RUN_ID}\`: **${JOB_STATUS}**. Requested: ${REQUESTED}; completed: ${COMPLETED}; failed: ${FAILED}."
