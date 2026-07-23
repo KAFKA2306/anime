@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26789",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26789",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2024,
+  "original_credit": "春原ロビンソン・ひらけい(集英社「少年ジャンプ+」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "少年ジャンプ"
+      ],
+      "evidence_text": "春原ロビンソン・ひらけい(集英社「少年ジャンプ+」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26789"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "魔王"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26789"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26789"
+    }
+  }
+}

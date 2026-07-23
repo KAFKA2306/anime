@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27012",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27012",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル"
+  ],
+  "production_year": 2024,
+  "original_credit": "川上泰樹・伏瀬・みっつばー『転生したらスライムだった件』(講談社「月刊少年シリウス」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "バトル・アクション"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "月刊少年"
+      ],
+      "evidence_text": "川上泰樹・伏瀬・みっつばー『転生したらスライムだった件』(講談社「月刊少年シリウス」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27012"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "matched_terms": [
+        "転生",
+        "魔王"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27012"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27012"
+    }
+  }
+}

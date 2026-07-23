@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26819",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26819",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2024,
+  "original_credit": "加藤和恵(集英社「ジャンプSQ.」連載)",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "加藤和恵(集英社「ジャンプSQ.」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26819"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26819"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26819"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27227",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27227",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "橋本 悠(集英社「少年ジャンプ+」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "少年ジャンプ"
+      ],
+      "evidence_text": "橋本 悠(集英社「少年ジャンプ+」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27227"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27227"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27227"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27028",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27028",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "古宮九時(電撃の新文芸",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "古宮九時(電撃の新文芸",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27028"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27028"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27028"
+    }
+  }
+}

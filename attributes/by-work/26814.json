@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26814",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26814",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "めいびい(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "めいびい(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26814"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "異世界",
+        "勇者"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26814"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26814"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27381",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27381",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "しげの秀一(講談社「ヤングマガジン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "バトル・アクション",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マガジン",
+        "ヤングマガジン"
+      ],
+      "evidence_text": "しげの秀一(講談社「ヤングマガジン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27381"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27381"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "スポーツ/競技",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27381"
+    }
+  }
+}

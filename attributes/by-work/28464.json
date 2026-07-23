@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28464",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28464",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2024,
+  "original_credit": "尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28464"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28464"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28464"
+    }
+  }
+}

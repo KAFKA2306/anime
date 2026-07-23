@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27367",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27367",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "日常/ほのぼの"
+  ],
+  "production_year": 2024,
+  "original_credit": "蒼星きまま(徳間書店 COMIC リュウ)",
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "canonical_tags": [
+    "日常・ほのぼの"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "蒼星きまま(徳間書店 COMIC リュウ)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27367"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27367"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27367"
+    }
+  }
+}

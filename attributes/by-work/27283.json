@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27283",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "龍幸伸(集英社「少年ジャンプ+」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "少年ジャンプ"
+      ],
+      "evidence_text": "龍幸伸(集英社「少年ジャンプ+」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
+    }
+  }
+}

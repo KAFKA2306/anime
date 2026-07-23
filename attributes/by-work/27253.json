@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27253",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27253",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2024,
+  "original_credit": "「こうしす!」 OPAP-JP contributors (https:",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "「こうしす!」 OPAP-JP contributors (https:",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27253"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27253"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27253"
+    }
+  }
+}
