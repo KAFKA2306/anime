@@ -5,6 +5,7 @@ import {
   extractOriginalCredit,
   inferPrimaryGenre,
   inferSourceOrigin,
+  normalizeOfficialGenres,
   parseOfficialDetailText,
 } from '../scripts/lib/ontology.mjs';
 
@@ -67,6 +68,13 @@ test('missing production year remains null', () => {
   assert.equal(record.production_year, null);
 });
 
+test('concatenated official genre labels preserve source order', () => {
+  assert.deepEqual(
+    normalizeOfficialGenres(['説明文 SF/ファンタジー アクション/バトル 恋愛/ラブコメ']),
+    ['SF/ファンタジー', 'アクション/バトル', '恋愛/ラブコメ'],
+  );
+});
+
 test('original credit extraction stops at next staff separator', () => {
   assert.equal(extractOriginalCredit('原作:作者名（電撃文庫刊）／監督:監督名'), '作者名(電撃文庫刊)');
 });
@@ -78,8 +86,7 @@ test('official detail parser uses only the selected work genre section', () => {
 恋愛/ラブコメ
 あらすじ ／ ジャンル
 異世界に召喚された冒険者が魔王に挑む。
-SF/ファンタジー
-アクション/バトル
+SF/ファンタジー アクション/バトル
 シリーズ／関連のアニメ作品
 キャスト ／ スタッフ
 [スタッフ]
