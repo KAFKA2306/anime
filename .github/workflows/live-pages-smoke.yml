@@ -1,6 +1,9 @@
 name: Verify live GitHub Pages
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/live-pages-smoke.yml
   push:
     branches:
       - main
