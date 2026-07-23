@@ -8,6 +8,11 @@ const elements = {
   sortSelect: document.querySelector('#sortSelect'),
   preferenceToggle: document.querySelector('#preferenceToggle'),
   metadataNotice: document.querySelector('#metadataNotice'),
+  recommendationSection: document.querySelector('#recommendations'),
+  recommendationGrid: document.querySelector('#recommendationGrid'),
+  recommendationStatus: document.querySelector('#recommendationStatus'),
+  historySummary: document.querySelector('#historySummary'),
+  resetHistoryButton: document.querySelector('#resetHistoryButton'),
   yearKicker: document.querySelector('#yearKicker'),
   yearTitle: document.querySelector('#yearTitle'),
   resultSummary: document.querySelector('#resultSummary'),
@@ -19,6 +24,10 @@ const elements = {
   cardTemplate: document.querySelector('#workCardTemplate'),
 };
 
+const STORAGE_KEY = 'kafka2306-anime-click-history-v1';
+const HISTORY_LIMIT = 100;
+const RECOMMENDATION_LIMIT = 6;
+
 const preferenceProfile = {
   origin: 'Web小説（なろう・カクヨム系）',
   genre: '異世界・ハイファンタジー',
@@ -29,6 +38,7 @@ const metadataKeys = {
   origin: ['source_origin', 'origin_root', 'original_source', '原作ルーツ'],
   genre: ['primary_genre', 'main_genre', 'genre', '主ジャンル'],
   tags: ['canonical_tags', 'normalized_tags', 'tags', '正規タグ'],
+  facets: ['ontology_facets'],
 };
 
 const state = {
@@ -38,6 +48,7 @@ const state = {
   metadataAvailable: false,
   favoritesAvailableCount: 0,
   favoritesSource: 'none',
+  clickHistory: loadClickHistory(),
 };
 
 function formatNumber(value) {
@@ -77,7 +88,7 @@ function firstValue(record, keys) {
 }
 
 function toArray(value) {
-  if (Array.isArray(value)) return value;
+  if (Array.isArray(value)) return value.filter(Boolean);
   if (value === null || value === undefined || value === '') return [];
   return String(value)
     .split(/[、,|/]/)
@@ -85,18 +96,47 @@ function toArray(value) {
     .filter(Boolean);
 }
 
+function unique(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function ontologyFacetValues(work) {
+  const facets = firstValue(work, metadataKeys.facets);
+  if (!facets || typeof facets !== 'object' || Array.isArray(facets)) return [];
+  return Object.entries(facets)
+    .filter(([facet]) => facet !== 'source')
+    .flatMap(([, values]) => toArray(values));
+}
+
+function workTags(work, limit = Number.POSITIVE_INFINITY) {
+  const origin = firstValue(work, metadataKeys.origin);
+  const primaryGenre = firstValue(work, metadataKeys.genre);
+  const canonicalTags = toArray(firstValue(work, metadataKeys.tags));
+  const facetTags = ontologyFacetValues(work);
+  return unique([
+    origin ? `原作:${origin}` : null,
+    primaryGenre,
+    ...canonicalTags,
+    ...facetTags,
+  ]).slice(0, limit);
+}
+
 function hasPreferenceMetadata(work) {
   return Boolean(
     firstValue(work, metadataKeys.origin)
     || firstValue(work, metadataKeys.genre)
-    || firstValue(work, metadataKeys.tags),
+    || firstValue(work, metadataKeys.tags)
+    || ontologyFacetValues(work).length,
   );
 }
 
 function matchesPreferenceExclusion(work) {
   const origin = normalizeText(firstValue(work, metadataKeys.origin));
   const genre = normalizeText(firstValue(work, metadataKeys.genre));
-  const tags = toArray(firstValue(work, metadataKeys.tags)).map(normalizeText);
+  const tags = unique([
+    ...toArray(firstValue(work, metadataKeys.tags)),
+    ...ontologyFacetValues(work),
+  ]).map(normalizeText);
 
   return origin === normalizeText(preferenceProfile.origin)
     || genre === normalizeText(preferenceProfile.genre)
@@ -158,12 +198,12 @@ function renderMetadataNotice() {
 
   if (state.metadataAvailable) {
     elements.preferenceToggle.disabled = false;
-    elements.metadataNotice.textContent = `属性データを検出しました。除外条件は「いずれかに一致」で適用されます。${favoritesNote}`;
+    elements.metadataNotice.textContent = `属性オントロジーを検出しました。除外条件は「いずれかに一致」で適用されます。${favoritesNote}`;
     return;
   }
 
   elements.preferenceToggle.disabled = true;
-  elements.metadataNotice.textContent = `現在の取得データには原作ルーツ・主ジャンル・正規タグが未収録のため、嗜好除外は保留しています。作品名だけから推定除外はしません。${favoritesNote}`;
+  elements.metadataNotice.textContent = `現在の取得データには属性オントロジーが未収録のため、嗜好除外は保留しています。作品名だけから推定除外はしません。${favoritesNote}`;
 }
 
 function compareFavorites(a, b, direction) {
@@ -198,7 +238,8 @@ function filteredWorks() {
   const applyPreference = elements.preferenceToggle.checked && state.metadataAvailable;
 
   return state.works.filter((work) => {
-    const matchesSearch = !query || normalizeText(normalizeTitle(work.title)).includes(query);
+    const searchable = `${normalizeTitle(work.title)} ${workTags(work, 20).join(' ')}`;
+    const matchesSearch = !query || normalizeText(searchable).includes(query);
     const excluded = applyPreference && matchesPreferenceExclusion(work);
     return matchesSearch && !excluded;
   });
@@ -215,10 +256,188 @@ function buildFavoritesRanks() {
   ranked.forEach((work, index) => {
     const count = Number(work.favorite_count);
     if (count !== previousCount) currentRank = index + 1;
-    ranks.set(work.work_id, currentRank);
+    ranks.set(String(work.work_id), currentRank);
     previousCount = count;
   });
   return ranks;
+}
+
+function loadClickHistory() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .filter((entry) => entry && entry.work_id && entry.title && Number.isFinite(Number(entry.count)))
+      .map((entry) => ({
+        work_id: String(entry.work_id),
+        title: String(entry.title),
+        year: Number(entry.year) || null,
+        tags: unique(toArray(entry.tags).map(String)).slice(0, 20),
+        count: Math.max(1, Number(entry.count)),
+        clicked_at: String(entry.clicked_at || ''),
+      }))
+      .sort((a, b) => Date.parse(b.clicked_at) - Date.parse(a.clicked_at))
+      .slice(0, HISTORY_LIMIT);
+  } catch {
+    return [];
+  }
+}
+
+function saveClickHistory() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.clickHistory.slice(0, HISTORY_LIMIT)));
+  } catch {
+    // Browsers may deny storage in private or restricted contexts. Recommendations still work in-memory.
+  }
+}
+
+function recordWorkClick(work) {
+  const workId = String(work.work_id || '');
+  if (!workId) return;
+  const existing = state.clickHistory.find((entry) => entry.work_id === workId);
+  const record = {
+    work_id: workId,
+    title: normalizeTitle(work.title),
+    year: Number(work.year || state.currentYear) || null,
+    tags: workTags(work, 20),
+    count: (existing?.count || 0) + 1,
+    clicked_at: new Date().toISOString(),
+  };
+  state.clickHistory = [record, ...state.clickHistory.filter((entry) => entry.work_id !== workId)]
+    .slice(0, HISTORY_LIMIT);
+  saveClickHistory();
+  renderRecommendations();
+}
+
+function buildPreferenceWeights() {
+  const weights = new Map();
+  const now = Date.now();
+  for (const entry of state.clickHistory) {
+    const clickedAt = Date.parse(entry.clicked_at);
+    const ageDays = Number.isFinite(clickedAt) ? Math.max(0, (now - clickedAt) / 86_400_000) : 365;
+    const recency = 1 + Math.exp(-ageDays / 45);
+    const clickWeight = Math.log2(Number(entry.count) + 1) * recency;
+    for (const tag of entry.tags) {
+      const key = normalizeText(tag);
+      if (!key) continue;
+      const current = weights.get(key) || { label: tag, weight: 0 };
+      current.weight += clickWeight;
+      weights.set(key, current);
+    }
+  }
+  return weights;
+}
+
+function recommendationCandidates() {
+  const applyPreference = elements.preferenceToggle.checked && state.metadataAvailable;
+  const candidates = state.works.filter((work) => !(applyPreference && matchesPreferenceExclusion(work)));
+  const preferenceWeights = buildPreferenceWeights();
+  const maxPopularity = Math.max(1, ...candidates.map((work) => (
+    hasFavoritesCount(work) ? Math.log1p(Number(work.favorite_count)) : 0
+  )));
+  const historyById = new Map(state.clickHistory.map((entry) => [entry.work_id, entry]));
+
+  return candidates.map((work) => {
+    const tags = workTags(work, 20);
+    const shared = tags
+      .map((tag) => ({ tag, weight: preferenceWeights.get(normalizeText(tag))?.weight || 0 }))
+      .filter(({ weight }) => weight > 0)
+      .sort((a, b) => b.weight - a.weight);
+    const affinity = shared.reduce((sum, item) => sum + item.weight, 0);
+    const popularity = hasFavoritesCount(work)
+      ? Math.log1p(Number(work.favorite_count)) / maxPopularity
+      : 0;
+    const priorClicks = historyById.get(String(work.work_id))?.count || 0;
+    const exploration = priorClicks ? -Math.min(1.5, priorClicks * 0.35) : 0.35;
+    const score = (affinity * 2.5) + (popularity * 2) + exploration;
+    const reason = shared.length
+      ? `閲覧傾向「${shared[0].tag}」と一致`
+      : hasFavoritesCount(work)
+        ? `気になる登録 ${formatNumber(work.favorite_count)}件`
+        : '未閲覧作品から選出';
+    return { work, score, reason };
+  }).sort((a, b) => b.score - a.score
+    || compareFavorites(a.work, b.work, -1)
+    || normalizeTitle(a.work.title).localeCompare(normalizeTitle(b.work.title), 'ja'));
+}
+
+function renderTagChips(container, tags) {
+  container.replaceChildren(...tags.map((tag) => {
+    const chip = document.createElement('span');
+    chip.textContent = tag;
+    return chip;
+  }));
+  container.hidden = tags.length === 0;
+}
+
+function createWorkCard(work, ranks, { reason = '', recommendation = false } = {}) {
+  const card = elements.cardTemplate.content.cloneNode(true);
+  const article = card.querySelector('.work-card');
+  const link = card.querySelector('.work-card__link');
+  const image = card.querySelector('.work-card__image');
+  const title = normalizeTitle(work.title);
+  const rank = ranks.get(String(work.work_id));
+  const favoritesText = hasFavoritesCount(work)
+    ? `気になる ${formatNumber(work.favorite_count)}件${rank ? ` · #${rank}` : ''}`
+    : '気になる —';
+
+  if (recommendation) article.classList.add('work-card--recommendation');
+  link.href = work.detail_url || work.source_tag_url || '#';
+  link.setAttribute('aria-label', `${title}を公式ページで確認`);
+  link.addEventListener('click', () => recordWorkClick(work));
+
+  if (work.image_url) {
+    image.src = work.image_url;
+    image.alt = `${title}の作品画像`;
+    image.addEventListener('error', () => image.remove(), { once: true });
+  } else {
+    image.remove();
+  }
+
+  card.querySelector('.work-card__year').textContent = `${work.year || state.currentYear}年`;
+  card.querySelector('.work-card__title').textContent = title;
+  card.querySelector('.work-card__meta').textContent = favoritesText;
+  renderTagChips(card.querySelector('.work-card__tags'), workTags(work, recommendation ? 4 : 5));
+
+  const reasonElement = card.querySelector('.work-card__reason');
+  reasonElement.textContent = reason;
+  reasonElement.hidden = !reason;
+  return card;
+}
+
+function renderHistorySummary() {
+  elements.historySummary.replaceChildren();
+  const totalClicks = state.clickHistory.reduce((sum, entry) => sum + Number(entry.count), 0);
+  elements.resetHistoryButton.disabled = totalClicks === 0;
+
+  if (!totalClicks) {
+    elements.historySummary.textContent = '作品を開くと、このブラウザ内に閲覧傾向が保存されます。';
+    return;
+  }
+
+  const label = document.createElement('span');
+  label.textContent = `最近見た（計${formatNumber(totalClicks)}クリック）`;
+  elements.historySummary.append(label);
+  for (const entry of state.clickHistory.slice(0, 5)) {
+    const chip = document.createElement('span');
+    chip.className = 'history-chip';
+    chip.textContent = `${entry.title}${entry.count > 1 ? ` ×${entry.count}` : ''}`;
+    elements.historySummary.append(chip);
+  }
+}
+
+function renderRecommendations() {
+  renderHistorySummary();
+  const ranks = buildFavoritesRanks();
+  const recommendations = recommendationCandidates().slice(0, RECOMMENDATION_LIMIT);
+  const totalClicks = state.clickHistory.reduce((sum, entry) => sum + Number(entry.count), 0);
+  elements.recommendationStatus.textContent = totalClicks
+    ? 'このブラウザのクリック履歴と作品オントロジーを照合して順位付けしています。履歴は外部送信しません。'
+    : 'クリック履歴がないため、現在は「気になる登録数」を中心に表示しています。';
+  elements.recommendationGrid.replaceChildren(...recommendations.map(({ work, reason }) => (
+    createWorkCard(work, ranks, { reason, recommendation: true })
+  )));
+  elements.recommendationSection.hidden = recommendations.length === 0;
 }
 
 function renderWorks() {
@@ -238,27 +457,9 @@ function renderWorks() {
   ].filter(Boolean).join('・');
 
   const fragment = document.createDocumentFragment();
-  for (const work of sorted) {
-    const card = elements.cardTemplate.content.cloneNode(true);
-    const link = card.querySelector('.work-card__link');
-    const image = card.querySelector('.work-card__image');
-    const title = normalizeTitle(work.title);
-    const favoritesText = hasFavoritesCount(work)
-      ? `#${ranks.get(work.work_id)} · 気になる登録 ${formatNumber(work.favorite_count)}件`
-      : '気になる登録数 不明';
-
-    link.href = work.detail_url || work.source_tag_url || '#';
-    link.setAttribute('aria-label', `${title}を公式ページで確認`);
-    image.src = work.image_url || '';
-    image.alt = `${title}の作品画像`;
-    image.addEventListener('error', () => image.remove(), { once: true });
-
-    card.querySelector('.work-card__year').textContent = `${work.year || state.currentYear}年`;
-    card.querySelector('.work-card__title').textContent = title;
-    card.querySelector('.work-card__meta').textContent = `${favoritesText} · 作品ID ${work.work_id || '—'} · 公式ページ ↗`;
-    fragment.append(card);
-  }
+  for (const work of sorted) fragment.append(createWorkCard(work, ranks));
   elements.workGrid.append(fragment);
+  renderRecommendations();
   syncUrl();
 }
 
@@ -310,7 +511,7 @@ async function loadYear(year) {
 
     state.works = officialWorks.map((work) => {
       if (hasFavoritesCount(work)) return work;
-      const fallback = legacy.byId.get(work.work_id)
+      const fallback = legacy.byId.get(String(work.work_id))
         ?? legacy.byTitle.get(normalizeLookupTitle(work.title));
       return {
         ...work,
@@ -329,6 +530,7 @@ async function loadYear(year) {
     state.favoritesSource = 'none';
     elements.visibleCount.textContent = '0';
     elements.resultSummary.textContent = '';
+    elements.recommendationSection.hidden = true;
     setError(`${state.currentYear}年の作品データを読み込めませんでした。${error instanceof Error ? ` (${error.message})` : ''}`);
   } finally {
     setBusy(false);
@@ -388,5 +590,10 @@ elements.yearSelect.addEventListener('change', (event) => loadYear(event.target.
 elements.searchInput.addEventListener('input', renderWorks);
 elements.sortSelect.addEventListener('change', renderWorks);
 elements.preferenceToggle.addEventListener('change', renderWorks);
+elements.resetHistoryButton.addEventListener('click', () => {
+  state.clickHistory = [];
+  saveClickHistory();
+  renderRecommendations();
+});
 
 initialize();
