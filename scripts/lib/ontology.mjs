@@ -35,6 +35,36 @@ const HIGH_FANTASY_SIGNALS = [
   'ギルド', '剣と魔法', 'エルフ', 'ドワーフ', '聖女', '賢者',
 ];
 
+const ONTOLOGY_RULES = {
+  setting: [
+    ['異世界', ['異世界', '転生', '転移', '召喚']],
+    ['学園', ['学園', '学校', '高校', '中学校', '大学', '部活']],
+    ['宇宙', ['宇宙', '銀河', '惑星', '星間']],
+    ['歴史・時代劇', ['戦国', '江戸', '幕末', '平安', '明治', '時代劇']],
+    ['終末・ディストピア', ['終末', '世界崩壊', '文明崩壊', 'ディストピア', '荒廃した世界']],
+  ],
+  theme: [
+    ['友情・仲間', ['友情', '仲間', '絆']],
+    ['成長・挑戦', ['成長', '挑戦', '夢を目指', '青春']],
+    ['家族', ['家族', '親子', '兄弟', '姉妹']],
+    ['恋愛', ['恋愛', '恋する', '恋心', 'ラブコメ']],
+    ['音楽・アイドル', ['音楽', 'バンド', 'アイドル', 'ライブ活動']],
+    ['料理・グルメ', ['料理', 'グルメ', '食堂', 'レストラン', '菓子']],
+    ['推理・謎解き', ['推理', '謎解き', '探偵', '事件を追']],
+    ['政治・戦略', ['政治', '国家', '戦略', '軍略', '領土']],
+    ['サバイバル', ['サバイバル', '生き残', 'デスゲーム']],
+    ['職業・仕事', ['仕事', '職場', '会社員', '働く']],
+  ],
+  motif: [
+    ['魔法', ['魔法', '魔術', '魔導']],
+    ['ロボット・メカ', ['ロボット', 'メカ', '機動兵器']],
+    ['怪異・妖怪', ['怪異', '妖怪', '幽霊', '鬼', '呪い']],
+    ['犯罪・警察', ['警察', '刑事', '犯罪', '捜査']],
+    ['医療', ['医療', '病院', '医師', '医者', '看護師']],
+    ['ゲーム世界', ['ゲーム世界', 'VRMMO', 'オンラインゲーム', 'ゲーム内']],
+  ],
+};
+
 function normalize(value) {
   return String(value ?? '').normalize('NFKC')
     .replace(/\u00a0/g, ' ').replace(/[\t\r\n]+/g, ' ')
@@ -99,10 +129,58 @@ export function inferPrimaryGenre({ officialGenres = [], title = '', synopsis = 
   };
 }
 
-export function inferCanonicalTags({ officialGenres = [], primaryGenre = null } = {}) {
-  const tags = normalizeOfficialGenres(officialGenres).map((genre) => OFFICIAL_GENRE_MAP.get(genre));
-  if (primaryGenre === '異世界・ハイファンタジー') tags.unshift(primaryGenre);
-  return unique(tags);
+function deriveOntology({ officialGenres = [], title = '', synopsis = '', sourceOrigin = null, primaryGenre = null } = {}) {
+  const canonicalOfficialGenres = normalizeOfficialGenres(officialGenres)
+    .map((genre) => OFFICIAL_GENRE_MAP.get(genre))
+    .filter(Boolean);
+  const text = `${title} ${synopsis}`;
+  const evidence = {};
+  const inferred = {};
+
+  for (const [facet, rules] of Object.entries(ONTOLOGY_RULES)) {
+    const values = [];
+    const matches = {};
+    for (const [tag, terms] of rules) {
+      const found = matchedTerms(text, terms);
+      if (!found.length) continue;
+      values.push(tag);
+      matches[tag] = found;
+    }
+    inferred[facet] = unique(values);
+    evidence[facet] = matches;
+  }
+
+  const formatTags = canonicalOfficialGenres.filter((tag) => [
+    'ショート', '2.5次元舞台', 'ライブ・ラジオ・その他',
+  ].includes(tag));
+
+  const facets = {
+    source: sourceOrigin ? [sourceOrigin] : [],
+    genre: unique([primaryGenre, ...canonicalOfficialGenres]),
+    setting: inferred.setting,
+    theme: inferred.theme,
+    motif: unique([...inferred.motif, ...canonicalOfficialGenres.filter((tag) => tag === 'ロボット・メカ')]),
+    format: formatTags,
+  };
+
+  return { facets, evidence };
+}
+
+export function inferOntologyFacets(input = {}) {
+  return deriveOntology(input).facets;
+}
+
+export function inferCanonicalTags({
+  officialGenres = [], primaryGenre = null, title = '', synopsis = '', sourceOrigin = null,
+} = {}) {
+  const { facets } = deriveOntology({ officialGenres, primaryGenre, title, synopsis, sourceOrigin });
+  return unique([
+    ...facets.genre,
+    ...facets.setting,
+    ...facets.theme,
+    ...facets.motif,
+    ...facets.format,
+  ]);
 }
 
 export function parseOfficialDetailText(bodyText) {
@@ -146,21 +224,39 @@ export function buildAttributeRecord({
   const originalCredit = extractOriginalCredit(staffText);
   const origin = inferSourceOrigin({ staffText, originalCredit });
   const primary = inferPrimaryGenre({ officialGenres: genres, title, synopsis });
-  const tags = inferCanonicalTags({ officialGenres: genres, primaryGenre: primary.value });
+  const ontology = deriveOntology({
+    officialGenres: genres,
+    title,
+    synopsis,
+    sourceOrigin: origin.value,
+    primaryGenre: primary.value,
+  });
+  const tags = inferCanonicalTags({
+    officialGenres: genres,
+    primaryGenre: primary.value,
+    title,
+    synopsis,
+    sourceOrigin: origin.value,
+  });
   const normalizedProductionYear = productionYear !== null && productionYear !== undefined && productionYear !== ''
     && Number.isInteger(Number(productionYear))
     ? Number(productionYear)
     : null;
+  const hasDerivedOntology = Object.values(ontology.facets)
+    .some((values) => values.some((value) => !ontology.facets.genre.includes(value) && value !== origin.value));
+
   return {
-    schema_version: '1.0.0', work_id: String(workId),
+    schema_version: '1.1.0', work_id: String(workId),
     attribute_source_url: detailUrl, attribute_fetched_at: fetchedAt,
     official_genres: genres,
     production_year: normalizedProductionYear,
     original_credit: originalCredit, source_origin: origin.value,
     primary_genre: primary.value, canonical_tags: tags,
+    ontology_facets: ontology.facets,
     attribute_confidence: {
       source_origin: origin.confidence, primary_genre: primary.confidence,
-      canonical_tags: genres.length ? 'verified' : 'unknown',
+      canonical_tags: hasDerivedOntology ? 'derived' : (genres.length ? 'verified' : 'unknown'),
+      ontology_facets: hasDerivedOntology ? 'derived' : (genres.length ? 'verified' : 'unknown'),
     },
     attribute_evidence: {
       source_origin: {
@@ -172,7 +268,12 @@ export function buildAttributeRecord({
         matched_terms: primary.matched_terms, source_url: detailUrl,
       },
       canonical_tags: {
-        rule_id: 'tags.official-genre-normalization', official_genres: genres, source_url: detailUrl,
+        rule_id: 'tags.official-plus-ontology-v1', official_genres: genres, source_url: detailUrl,
+      },
+      ontology_facets: {
+        rule_id: 'ontology.keyword-plus-official-metadata-v1',
+        matched_terms: ontology.evidence,
+        source_url: detailUrl,
       },
     },
   };
