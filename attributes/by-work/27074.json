@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27074",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27074",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理",
+    "アクション/バトル"
+  ],
+  "production_year": 2025,
+  "original_credit": "枢やな(掲載 月刊「Gファンタジー」スクウェア・エニックス刊)",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ホラー・サスペンス・ミステリー",
+    "バトル・アクション"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "枢やな(掲載 月刊「Gファンタジー」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27074"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理",
+        "アクション/バトル"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27074"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理",
+        "アクション/バトル"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27074"
+    }
+  }
+}

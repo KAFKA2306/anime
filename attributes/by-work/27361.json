@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27361",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "歴史/戦記",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "安田剛士「青のミブロ」(講談社「週刊少年マガジン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "歴史・戦記",
+  "canonical_tags": [
+    "歴史・戦記",
+    "バトル・アクション",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "マガジン"
+      ],
+      "evidence_text": "安田剛士「青のミブロ」(講談社「週刊少年マガジン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "歴史/戦記",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "歴史/戦記",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
+    }
+  }
+}

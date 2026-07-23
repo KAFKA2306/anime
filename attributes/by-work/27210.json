@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27210",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27210",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2024,
+  "original_credit": "野田 宏",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "野田 宏",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27210"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転移",
+        "勇者",
+        "冒険者"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27210"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27210"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27198",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "燦々SUN(株式会社KADOKAWA 角川スニーカー文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "燦々SUN(株式会社KADOKAWA 角川スニーカー文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
+    }
+  }
+}

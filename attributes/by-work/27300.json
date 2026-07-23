@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27300",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27300",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "手島史詞「魔王の俺が奴隷エルフを嫁にしたんだが、どう愛でればいい?」(HJ文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "手島史詞「魔王の俺が奴隷エルフを嫁にしたんだが、どう愛でればいい?」(HJ文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27300"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "魔王",
+        "エルフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27300"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27300"
+    }
+  }
+}

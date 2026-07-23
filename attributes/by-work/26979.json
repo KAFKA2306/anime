@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26979",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26979",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "未来人A『転生貴族、鑑定スキルで成り上がる〜弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた〜』(講談社「Kラノベブックス」刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ブックス"
+      ],
+      "evidence_text": "未来人A『転生貴族、鑑定スキルで成り上がる〜弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた〜』(講談社「Kラノベブックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26979"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26979"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26979"
+    }
+  }
+}

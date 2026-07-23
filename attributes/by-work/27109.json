@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27109",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27109",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2024,
+  "original_credit": "水無月静琉(アルファポリス刊)",
+  "source_origin": "Web小説（なろう・カクヨム系）",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "日常・ほのぼの"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-web-platform",
+      "matched_terms": [
+        "アルファポリス"
+      ],
+      "evidence_text": "水無月静琉(アルファポリス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27109"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生",
+        "冒険者",
+        "ギルド"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27109"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27109"
+    }
+  }
+}

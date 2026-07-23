@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26749",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26749",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2024,
+  "original_credit": "森川 侑 (掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "コメディ・ギャグ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "森川 侑 (掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26749"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26749"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26749"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28480",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28480",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2024,
+  "original_credit": "漆原侑来『桃源暗鬼』(秋田書店「週刊少年チャンピオン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "チャンピオン"
+      ],
+      "evidence_text": "漆原侑来『桃源暗鬼』(秋田書店「週刊少年チャンピオン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28480"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28480"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28480"
+    }
+  }
+}

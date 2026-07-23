@@ -681,5 +681,17 @@
     "empty_years": 0,
     "official_count_mismatches": 0,
     "non_official_titles": 0
+  },
+  "attributes": {
+    "schema_version": "1.0.0",
+    "cache_record_count": 397,
+    "applied_canonical_count": 397,
+    "applied_membership_count": 397,
+    "fields": [
+      "source_origin",
+      "primary_genre",
+      "canonical_tags"
+    ],
+    "policy": "Official detail metadata plus deterministic, auditable rules; unknown values remain null."
   }
 }

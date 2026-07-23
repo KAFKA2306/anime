@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28490",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28490",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2024,
+  "original_credit": "イケメン役者育成ゲーム『A3!(エースリー)』",
+  "source_origin": "ゲーム",
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-game-credit",
+      "matched_terms": [
+        "ゲーム"
+      ],
+      "evidence_text": "イケメン役者育成ゲーム『A3!(エースリー)』",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28490"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28490"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28490"
+    }
+  }
+}

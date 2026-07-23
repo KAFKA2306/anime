@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28341",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28341",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "空知英秋(集英社 ジャンプコミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "バトル・アクション",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "空知英秋(集英社 ジャンプコミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28341"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28341"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28341"
+    }
+  }
+}

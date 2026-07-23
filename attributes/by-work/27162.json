@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27162",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27162",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2024,
+  "original_credit": "七斗七(KADOKAWA ファンタジア文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "日常・ほのぼの"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "七斗七(KADOKAWA ファンタジア文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27162"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27162"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27162"
+    }
+  }
+}

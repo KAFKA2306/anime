@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26740",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ショート"
+  ],
+  "production_year": 2024,
+  "original_credit": "綿涙粉緒「名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~」(HJノベルス",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "ショート"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "綿涙粉緒「名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~」(HJノベルス",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ショート"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生",
+        "エルフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
+    }
+  }
+}

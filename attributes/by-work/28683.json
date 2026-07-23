@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28683",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28683",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "ライブ/ラジオ/etc."
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ライブ・ラジオ・その他",
+  "canonical_tags": [
+    "ライブ・ラジオ・その他"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28683"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28683"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28683"
+    }
+  }
+}

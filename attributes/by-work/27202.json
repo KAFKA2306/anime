@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27202",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27202",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2024,
+  "original_credit": "ブシロード、伊藤 彰",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF・ファンタジー",
+    "キッズ・ファミリー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ブシロード、伊藤 彰",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27202"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27202"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27202"
+    }
+  }
+}

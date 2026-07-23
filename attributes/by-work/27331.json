@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27331",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27331",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "ショート",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2024,
+  "original_credit": "タカラトミー",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "キッズ・ファミリー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "タカラトミー",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27331"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27331"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27331"
+    }
+  }
+}

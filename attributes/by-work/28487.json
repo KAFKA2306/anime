@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28487",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28487",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2024,
+  "original_credit": "神永 学 「心霊探偵八雲 INITIAL FILE 魂の素数」(講談社刊)",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "神永 学 「心霊探偵八雲 INITIAL FILE 魂の素数」(講談社刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28487"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28487"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28487"
+    }
+  }
+}

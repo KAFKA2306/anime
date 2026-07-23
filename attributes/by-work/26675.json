@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26675",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26675",
+  "attribute_fetched_at": "2026-07-23T00:10:53.127Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2024,
+  "original_credit": "ほのぼのる500『最弱テイマーはゴミ拾いの旅を始めました。』(TOブックス刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ブックス"
+      ],
+      "evidence_text": "ほのぼのる500『最弱テイマーはゴミ拾いの旅を始めました。』(TOブックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26675"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26675"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26675"
+    }
+  }
+}
