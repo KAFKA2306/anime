@@ -25,7 +25,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -37,6 +37,7 @@ jobs:
 
       - name: Validate static application
         run: |
+          set -euo pipefail
           test -s index.html
           test -s styles.css
           test -s app.js
@@ -45,6 +46,10 @@ jobs:
           test -s data/likes/2024.tsv
           node --check app.js
           python -m json.tool data/manifest.json > /dev/null
+          grep -F '2026-07-23-pastel-watercolor-1' index.html
+          grep -F -- '--lavender:' styles.css
+          grep -F -- '--rose:' styles.css
+          grep -F -- '--mint:' styles.css
 
       - name: Build Pages artifact
         run: |
@@ -62,7 +67,7 @@ jobs:
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
