@@ -47,8 +47,17 @@ function matchedTerms(text, terms) {
 }
 
 export function normalizeOfficialGenres(values) {
-  return unique((Array.isArray(values) ? values : []).map(normalize)
-    .filter((value) => OFFICIAL_GENRE_MAP.has(value)));
+  const found = [];
+  for (const rawValue of Array.isArray(values) ? values : []) {
+    const value = normalize(rawValue);
+    if (!value) continue;
+    const matches = OFFICIAL_GENRES
+      .map((genre) => ({ genre, index: value.indexOf(genre) }))
+      .filter(({ index }) => index >= 0)
+      .sort((left, right) => left.index - right.index || left.genre.localeCompare(right.genre, 'ja'));
+    found.push(...matches.map(({ genre }) => genre));
+  }
+  return unique(found);
 }
 
 export function extractOriginalCredit(staffText) {
@@ -105,8 +114,8 @@ export function parseOfficialDetailText(bodyText) {
     : -1;
   const section = synopsisStart >= 0 ? lines.slice(synopsisStart + 1, synopsisEnd >= 0 ? synopsisEnd : undefined) : [];
   const officialGenres = normalizeOfficialGenres(section);
-  const firstGenre = section.findIndex((line) => OFFICIAL_GENRE_MAP.has(line));
-  const synopsis = normalize((firstGenre >= 0 ? section.slice(0, firstGenre) : section).join(' '));
+  const firstGenreLine = section.findIndex((line) => normalizeOfficialGenres([line]).length > 0);
+  const synopsis = normalize((firstGenreLine >= 0 ? section.slice(0, firstGenreLine) : section).join(' '));
   const staffStart = lines.findIndex((line) => /^\[スタッフ\]$/u.test(line));
   const yearStart = lines.findIndex((line, index) => index > staffStart && /^\[製作年\]$/u.test(line));
   const staffText = staffStart >= 0
