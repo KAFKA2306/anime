@@ -16,7 +16,7 @@
       <div>
         <p class="eyebrow">OFFICIAL CATALOGUE VIEW</p>
         <h1>年別アニメ作品ブラウザ</h1>
-        <p class="lead">dアニメストアの公開年別タグから取得した作品を、検索・並び替え・嗜好条件で確認します。</p>
+        <p class="lead">dアニメストアの公開年別タグから取得した作品を、検索・並び替え・属性オントロジー・ブラウザ内の閲覧傾向で確認します。</p>
       </div>
       <a id="sourceLink" class="source-link" href="https://animestore.docomo.ne.jp/animestore/tag_sel_pc" target="_blank" rel="noreferrer">公式データ元 ↗</a>
     </div>
@@ -50,8 +50,8 @@
         </label>
 
         <label class="field field--search">
-          <span>作品名検索</span>
-          <input id="searchInput" type="search" inputmode="search" placeholder="例：攻殻機動隊" autocomplete="off">
+          <span>作品名・タグ検索</span>
+          <input id="searchInput" type="search" inputmode="search" placeholder="例：攻殻機動隊、学園、音楽" autocomplete="off">
         </label>
 
         <label class="field">
@@ -80,6 +80,19 @@
         </label>
       </div>
       <p id="metadataNotice" class="notice" role="status"></p>
+    </section>
+
+    <section id="recommendations" class="recommendations" aria-labelledby="recommendationTitle" hidden>
+      <div class="recommendations__head">
+        <div>
+          <p class="eyebrow">HOT RECOMMEND</p>
+          <h2 id="recommendationTitle">あなたへのおすすめ</h2>
+          <p id="recommendationStatus" class="recommendations__description"></p>
+        </div>
+        <button id="resetHistoryButton" class="secondary-button" type="button">閲覧履歴をリセット</button>
+      </div>
+      <div id="historySummary" class="history-summary" aria-live="polite"></div>
+      <div id="recommendationGrid" class="recommendation-grid"></div>
     </section>
 
     <section class="catalogue-head">
@@ -111,7 +124,9 @@
         <div class="work-card__body">
           <p class="work-card__year"></p>
           <h3 class="work-card__title"></h3>
+          <div class="work-card__tags chips" aria-label="作品タグ"></div>
           <p class="work-card__meta"></p>
+          <p class="work-card__reason" hidden></p>
         </div>
       </a>
     </article>
