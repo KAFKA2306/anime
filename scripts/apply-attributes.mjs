@@ -6,7 +6,7 @@ const ATTRIBUTE_DIR = path.resolve('attributes', 'by-work');
 const ATTRIBUTE_FIELDS = [
   'attribute_source_url', 'attribute_fetched_at', 'official_genres',
   'production_year', 'original_credit', 'source_origin', 'primary_genre',
-  'canonical_tags', 'attribute_confidence', 'attribute_evidence',
+  'canonical_tags', 'ontology_facets', 'attribute_confidence', 'attribute_evidence',
 ];
 
 async function readJson(file) { return JSON.parse(await readFile(file, 'utf8')); }
@@ -74,12 +74,13 @@ async function main() {
   const manifestPath = path.join(DATA_DIR, 'manifest.json');
   const manifest = await readJson(manifestPath);
   manifest.attributes = {
-    schema_version: '1.0.0',
+    schema_version: '1.1.0',
     cache_record_count: attributes.size,
     applied_canonical_count: appliedCanonicalCount,
     applied_membership_count: appliedMembershipCount,
-    fields: ['source_origin', 'primary_genre', 'canonical_tags'],
-    policy: 'Official detail metadata plus deterministic, auditable rules; unknown values remain null.',
+    fields: ['source_origin', 'primary_genre', 'canonical_tags', 'ontology_facets'],
+    ontology_facets: ['source', 'genre', 'setting', 'theme', 'motif', 'format'],
+    policy: 'Official detail metadata plus deterministic, auditable rules; unknown values remain null or empty.',
   };
   await writeJson(manifestPath, manifest);
 
