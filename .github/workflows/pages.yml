@@ -20,16 +20,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -51,8 +49,9 @@ jobs:
           grep -F -- '--rose:' styles.css
           grep -F -- '--mint:' styles.css
 
-      - name: Build Pages artifact
+      - name: Build Pages site
         run: |
+          set -euo pipefail
           rm -rf _site
           mkdir -p _site/data/by-year _site/data/likes
           cp index.html styles.css app.js _site/
@@ -61,24 +60,18 @@ jobs:
           cp data/likes/*.tsv _site/data/likes/
           touch _site/.nojekyll
 
-      - name: Configure Pages
+      - name: Publish the configured gh-pages source
         if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-
-  deploy:
-    if: github.event_name != 'pull_request'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd _site
+          git init
+          git checkout -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Deploy ${GITHUB_SHA}"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin gh-pages
