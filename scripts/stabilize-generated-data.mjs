@@ -1,0 +1,58 @@
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+
+const DATA_DIR = path.resolve('data');
+
+async function readJson(file) {
+  return JSON.parse(await readFile(file, 'utf8'));
+}
+
+async function writeJson(file, value) {
+  await writeFile(file, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+}
+
+async function main() {
+  if (process.env.DANIME_YEAR) {
+    console.log('Single-year diagnostic mode: generated snapshot stabilization skipped.');
+    return;
+  }
+
+  const filenames = (await readdir(path.join(DATA_DIR, 'by-year')))
+    .filter((name) => /^\d{4}\.json$/.test(name));
+  await mkdir(path.join(DATA_DIR, 'likes'), { recursive: true });
+  let removed = 0;
+  let exported = 0;
+
+  for (const filename of filenames) {
+    const file = path.join(DATA_DIR, 'by-year', filename);
+    const payload = await readJson(file);
+    for (const work of payload.works ?? []) {
+      if (Object.hasOwn(work, 'acquired_at')) {
+        delete work.acquired_at;
+        removed += 1;
+      }
+    }
+    await writeJson(file, payload);
+
+    const rows = [
+      'work_id\ttitle\tfavorites_count',
+      ...(payload.works ?? []).map((work) =>
+        `${work.work_id}\t${work.title}\t${work.favorite_count}`),
+    ];
+    await writeFile(
+      path.join(DATA_DIR, 'likes', `${payload.year}.tsv`),
+      `${rows.join('\n')}\n`,
+      'utf8',
+    );
+    exported += payload.works?.length ?? 0;
+  }
+
+  console.log(
+    `Removed ${removed} volatile per-work timestamps and exported ${exported} ID-keyed favorite rows.`,
+  );
+}
+
+main().catch((error) => {
+  console.error(error.stack ?? error);
+  process.exitCode = 1;
+});

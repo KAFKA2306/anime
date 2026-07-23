@@ -4,12 +4,11 @@ on:
   push:
     branches:
       - main
-      - agent/acquire-danime-years
   pull_request:
   workflow_dispatch:
     inputs:
       year:
-        description: Optional single year to diagnose
+        description: Optional single year to diagnose without modifying data/
         required: false
         type: string
   schedule:
@@ -30,7 +29,11 @@ jobs:
     env:
       DANIME_YEAR: ${{ inputs.year }}
       DANIME_RATE_LIMIT_MS: '1200'
-      DANIME_MAX_LIST_PAGES: '100'
+      DANIME_API_PAGE_SIZE: '20'
+      DANIME_MAX_API_PAGES: '500'
+      DANIME_MAX_RETRIES: '5'
+      DANIME_REQUEST_TIMEOUT_MS: '45000'
+      DANIME_MAX_TOTAL_DROP_RATIO: '0.10'
 
     steps:
       - uses: actions/checkout@v4
@@ -54,6 +57,7 @@ jobs:
         run: npm run acquire
 
       - name: Validate generated data
+        if: env.DANIME_YEAR == ''
         run: npm run validate
 
       - name: Upload acquisition diagnostics
@@ -67,14 +71,11 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Commit updated data
+      - name: Commit updated official data
         if: >-
           env.DANIME_YEAR == '' &&
-          (
-            github.event_name == 'schedule' ||
-            github.event_name == 'workflow_dispatch' ||
-            (github.event_name == 'push' && github.ref_name != 'main')
-          )
+          github.event_name != 'pull_request' &&
+          github.ref_name == 'main'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -82,6 +83,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No catalogue changes.'
           else
-            git commit -m 'Update official dAnime year catalogue [skip ci]'
-            git push
+            git commit -m 'Update official dAnime catalogue and counters'
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi

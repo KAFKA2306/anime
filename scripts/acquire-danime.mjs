@@ -1,114 +1,78 @@
 import { chromium } from 'playwright';
 import { createHash } from 'node:crypto';
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import {
+  mkdir,
+  readFile,
+  rename,
+  rm,
+  stat,
+  writeFile,
+} from 'node:fs/promises';
 import path from 'node:path';
 import {
   OFFICIAL_ORIGIN,
   TAG_SELECTOR_URL,
   mergeCanonical,
   normalizeText,
-  sanitizeTitle,
   tagIdFromUrl,
-  workIdFromUrl,
 } from './lib/catalog.mjs';
+import {
+  buildOfficialListUrl,
+  parseOfficialListDocument,
+  stableWorkContent,
+} from './lib/official-api.mjs';
 
-const OUTPUT_DIR = path.resolve('data');
-const DIAGNOSTICS_DIR = path.resolve('diagnostics');
+const FINAL_DATA_DIR = path.resolve('data');
+const FINAL_DIAGNOSTICS_DIR = path.resolve('diagnostics');
+const RUN_ROOT = path.resolve('.tmp', `danime-${Date.now()}-${process.pid}`);
+const OUTPUT_DIR = path.join(RUN_ROOT, 'data');
+const DIAGNOSTICS_DIR = path.join(RUN_ROOT, 'diagnostics');
 const RATE_LIMIT_MS = Number(process.env.DANIME_RATE_LIMIT_MS ?? 1200);
-const MAX_LIST_PAGES = Number(process.env.DANIME_MAX_LIST_PAGES ?? 100);
+const PAGE_SIZE = Number(process.env.DANIME_API_PAGE_SIZE ?? 20);
+const MAX_API_PAGES = Number(process.env.DANIME_MAX_API_PAGES ?? 500);
+const MAX_RETRIES = Number(process.env.DANIME_MAX_RETRIES ?? 5);
+const REQUEST_TIMEOUT_MS = Number(process.env.DANIME_REQUEST_TIMEOUT_MS ?? 45_000);
 const MIN_EXPECTED_YEAR_TAGS = Number(process.env.DANIME_MIN_YEAR_TAGS ?? 60);
+const CONTINUOUS_START_YEAR = Number(process.env.DANIME_CONTINUOUS_START_YEAR ?? 1962);
+const MAX_TOTAL_DROP_RATIO = Number(process.env.DANIME_MAX_TOTAL_DROP_RATIO ?? 0.10);
 const ONLY_YEAR = process.env.DANIME_YEAR ? Number(process.env.DANIME_YEAR) : null;
 const ACQUIRED_AT = new Date().toISOString();
 
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
-function absoluteUrl(value) {
+function sha256(value) {
+  return createHash('sha256').update(value).digest('hex');
+}
+
+function contentHash(works) {
+  return sha256(JSON.stringify(works.map(stableWorkContent)));
+}
+
+async function exists(target) {
   try {
-    return value ? new URL(value, OFFICIAL_ORIGIN).toString() : null;
-  } catch {
-    return null;
+    await stat(target);
+    return true;
+  } catch (error) {
+    if (error?.code === 'ENOENT') return false;
+    throw error;
   }
 }
 
-function shortHash(value) {
-  return createHash('sha256').update(value).digest('hex').slice(0, 16);
+async function readJsonIfExists(file) {
+  if (!await exists(file)) return null;
+  return JSON.parse(await readFile(file, 'utf8'));
 }
 
-function inferWorksFromJson(node, sourceUrl, output = [], depth = 0) {
-  if (depth > 12 || node == null) return output;
-  if (Array.isArray(node)) {
-    for (const item of node) inferWorksFromJson(item, sourceUrl, output, depth + 1);
-    return output;
-  }
-  if (typeof node !== 'object') return output;
-
-  const directId = node.workId ?? node.workID ?? node.work_id ?? null;
-  const linkedId = [node.url, node.link, node.href, node.detailUrl, node.detail_url]
-    .map(workIdFromUrl)
-    .find(Boolean);
-  const workId = directId && /^[A-Za-z0-9_-]+$/.test(String(directId))
-    ? String(directId)
-    : linkedId;
-  const title = sanitizeTitle(node.workTitle ?? node.workName ?? node.title ?? node.name ?? null);
-
-  if (workId && title) {
-    output.push({
-      work_id: workId,
-      title,
-      detail_url: absoluteUrl(
-        node.detailUrl ?? node.detail_url ?? node.url ?? node.link ?? node.href ??
-          `/animestore/ci_pc?workId=${encodeURIComponent(workId)}`,
-      ),
-      image_url: absoluteUrl(
-        node.imageUrl ?? node.image_url ?? node.thumbnailUrl ?? node.thumbnail_url ??
-          node.mainVisualUrl ?? node.jacketImageUrl ?? null,
-      ),
-      extraction_method: 'official-json',
-      extraction_source_url: sourceUrl,
-    });
-  }
-
-  for (const value of Object.values(node)) {
-    if (value && typeof value === 'object') inferWorksFromJson(value, sourceUrl, output, depth + 1);
-  }
-  return output;
+async function writeJson(file, value) {
+  await mkdir(path.dirname(file), { recursive: true });
+  await writeFile(file, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
-function dedupeWorks(works) {
-  const map = new Map();
-  for (const candidate of works) {
-    const workId = candidate.work_id ?? workIdFromUrl(candidate.detail_url);
-    const title = sanitizeTitle(candidate.title);
-    if (!workId || !title) continue;
-
-    const current = map.get(workId);
-    if (!current) {
-      map.set(workId, {
-        work_id: workId,
-        title,
-        detail_url: absoluteUrl(candidate.detail_url) ??
-          `${OFFICIAL_ORIGIN}/animestore/ci_pc?workId=${encodeURIComponent(workId)}`,
-        image_url: absoluteUrl(candidate.image_url),
-        extraction_method: candidate.extraction_method ?? 'dom',
-        extraction_source_url: absoluteUrl(candidate.extraction_source_url),
-      });
-      continue;
-    }
-
-    if ((!current.title || current.title.startsWith('work:')) && title) current.title = title;
-    if (!current.image_url && candidate.image_url) current.image_url = absoluteUrl(candidate.image_url);
-    if (current.extraction_method !== 'dom' && candidate.extraction_method === 'dom') {
-      current.extraction_method = 'dom';
-    }
-  }
-  return [...map.values()].sort((a, b) => a.title.localeCompare(b.title, 'ja'));
-}
-
-async function ensureDirectories() {
-  await rm(OUTPUT_DIR, { recursive: true, force: true });
-  await rm(DIAGNOSTICS_DIR, { recursive: true, force: true });
+async function prepareRunDirectories() {
+  await rm(RUN_ROOT, { recursive: true, force: true });
   await mkdir(path.join(OUTPUT_DIR, 'by-year'), { recursive: true });
   await mkdir(path.join(OUTPUT_DIR, 'source'), { recursive: true });
+  await mkdir(path.join(OUTPUT_DIR, 'likes'), { recursive: true });
   await mkdir(path.join(DIAGNOSTICS_DIR, 'pages'), { recursive: true });
   await mkdir(path.join(DIAGNOSTICS_DIR, 'network'), { recursive: true });
 }
@@ -137,7 +101,7 @@ async function discoverYearTags(page) {
   if (!response || response.status() >= 400) {
     throw new Error(`Official tag selector returned ${response?.status() ?? 'no response'}.`);
   }
-  await page.waitForTimeout(3500);
+  await page.waitForTimeout(2500);
   await savePageDiagnostics(page, 'tag-selector');
 
   const raw = await page.locator('a[href*="tag_pc?tagId="]').evaluateAll((anchors) =>
@@ -155,9 +119,9 @@ async function discoverYearTags(page) {
     const tagId = tagIdFromUrl(candidate.href);
     if (!tagId) continue;
 
-    const existing = byYear.get(year);
-    if (existing && existing.tag_id !== tagId) {
-      throw new Error(`Conflicting official tag IDs for ${year}: ${existing.tag_id}, ${tagId}`);
+    const current = byYear.get(year);
+    if (current && current.tag_id !== tagId) {
+      throw new Error(`Conflicting official tag IDs for ${year}: ${current.tag_id}, ${tagId}`);
     }
     byYear.set(year, {
       year,
@@ -172,315 +136,385 @@ async function discoverYearTags(page) {
   if (ONLY_YEAR) {
     const selected = allTags.filter((item) => item.year === ONLY_YEAR);
     if (selected.length !== 1) throw new Error(`Official exact-year tag not found for ${ONLY_YEAR}.`);
-    return selected;
+    return { tags: selected, warnings: [] };
   }
 
-  const currentYear = new Date().getUTCFullYear();
-  const years = allTags.map((item) => item.year);
   if (allTags.length < MIN_EXPECTED_YEAR_TAGS) {
     throw new Error(`Only ${allTags.length} exact-year tags found; expected at least ${MIN_EXPECTED_YEAR_TAGS}.`);
   }
-  if (!years.includes(currentYear)) {
-    throw new Error(`Current year ${currentYear} is absent from the official exact-year tags.`);
+
+  const years = allTags.map((item) => item.year);
+  const maxYear = Math.max(...years);
+  const currentYear = new Date().getUTCFullYear();
+  const warnings = [];
+  if (maxYear < currentYear - 1) {
+    throw new Error(`Newest official exact-year tag is ${maxYear}; current year is ${currentYear}.`);
   }
-  if (Math.min(...years) > 1950) {
-    throw new Error(`Historical coverage is unexpectedly truncated at ${Math.min(...years)}.`);
+  if (maxYear === currentYear - 1) {
+    warnings.push(`Current-year tag ${currentYear} is not published yet; newest exact tag is ${maxYear}.`);
+  }
+  if (maxYear > currentYear + 1) {
+    throw new Error(`Unexpected future year tag ${maxYear}.`);
   }
 
-  console.log(
-    `Discovered ${allTags.length} exact-year tags (${Math.min(...years)}-${Math.max(...years)}).`,
-  );
-  return allTags;
+  for (let year = CONTINUOUS_START_YEAR; year <= maxYear; year += 1) {
+    if (!byYear.has(year)) throw new Error(`Official exact-year coverage has a gap at ${year}.`);
+  }
+
+  console.log(`Discovered ${allTags.length} exact-year tags (${Math.min(...years)}-${maxYear}).`);
+  return { tags: allTags, warnings };
 }
 
-async function exhaustDynamicList(page) {
-  let stableRounds = 0;
-  let previousCount = -1;
+class RateLimiter {
+  #nextAllowedAt = 0;
 
-  for (let round = 0; round < 80 && stableRounds < 4; round += 1) {
-    const before = await page.locator('a[href*="workId="]').count();
-    let clicked = false;
+  async wait() {
+    const now = Date.now();
+    const delay = Math.max(0, this.#nextAllowedAt - now);
+    if (delay > 0) await sleep(delay);
+    this.#nextAllowedAt = Date.now() + RATE_LIMIT_MS;
+  }
+}
 
-    const candidates = page.getByRole('button', {
-      name: /もっと見る|さらに表示|続きを表示|次へ/i,
+function isRetryableStatus(status) {
+  return status === 408 || status === 425 || status === 429 || status >= 500;
+}
+
+async function fetchJsonWithRetry(request, limiter, url, referer, label) {
+  let lastError = null;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt += 1) {
+    await limiter.wait();
+    try {
+      const response = await request.get(url, {
+        timeout: REQUEST_TIMEOUT_MS,
+        failOnStatusCode: false,
+        headers: {
+          accept: 'application/json, text/plain, */*',
+          referer,
+          'x-requested-with': 'XMLHttpRequest',
+        },
+      });
+      const status = response.status();
+      const text = await response.text();
+      if (status >= 200 && status < 300) {
+        try {
+          return { document: JSON.parse(text), status, headers: response.headers() };
+        } catch (error) {
+          throw new Error(`${label}: invalid JSON (${error.message}).`);
+        }
+      }
+      if (!isRetryableStatus(status)) {
+        throw new Error(`${label}: HTTP ${status}; ${text.slice(0, 200)}`);
+      }
+      lastError = new Error(`${label}: retryable HTTP ${status}.`);
+    } catch (error) {
+      lastError = error;
+    }
+
+    if (attempt < MAX_RETRIES) {
+      const backoff = Math.min(30_000, 1000 * (2 ** (attempt - 1))) + Math.floor(Math.random() * 500);
+      console.warn(`${label}: attempt ${attempt}/${MAX_RETRIES} failed; retrying in ${backoff}ms.`);
+      await sleep(backoff);
+    }
+  }
+  throw lastError ?? new Error(`${label}: request failed.`);
+}
+
+async function acquireOfficialYear(request, limiter, tag) {
+  const works = new Map();
+  const responseRecords = [];
+  let declaredCount = null;
+  let start = 0;
+  let pageNumber = 0;
+
+  while (pageNumber < MAX_API_PAGES) {
+    const requestUrl = buildOfficialListUrl({
+      tagId: tag.tag_id,
+      start,
+      length: PAGE_SIZE,
+      cacheBust: `${Date.now()}${pageNumber}`,
     });
-    for (let index = 0; index < await candidates.count(); index += 1) {
-      const button = candidates.nth(index);
-      if (await button.isVisible().catch(() => false)) {
-        await button.click({ timeout: 3000 }).catch(() => undefined);
-        clicked = true;
-        break;
-      }
+    const label = `${tag.year} start=${start}`;
+    const result = await fetchJsonWithRetry(request, limiter, requestUrl, tag.url, label);
+    const parsed = parseOfficialListDocument(result.document, {
+      expectedTagId: tag.tag_id,
+      requestUrl,
+    });
+
+    if (declaredCount === null) declaredCount = parsed.maxCount;
+    if (declaredCount !== parsed.maxCount) {
+      throw new Error(`${tag.year}: maxCount changed during pagination (${declaredCount} -> ${parsed.maxCount}).`);
     }
 
-    await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
-    await page.waitForTimeout(clicked ? 1800 : 900);
-    const after = await page.locator('a[href*="workId="]').count();
+    const diagnosticFile = path.join('network', `${tag.year}-start-${String(start).padStart(5, '0')}.json`);
+    await writeJson(path.join(DIAGNOSTICS_DIR, diagnosticFile), result.document);
+    responseRecords.push({
+      start,
+      count: parsed.count,
+      max_count: parsed.maxCount,
+      status: result.status,
+      source_url: parsed.sourceUrl,
+      file: diagnosticFile,
+    });
 
-    if (after <= before && after === previousCount) stableRounds += 1;
-    else stableRounds = 0;
-    previousCount = after;
+    let added = 0;
+    for (const work of parsed.works) {
+      const current = works.get(work.work_id);
+      if (current && current.title !== work.title) {
+        throw new Error(`${tag.year}: conflicting titles for work ${work.work_id}.`);
+      }
+      if (!current) added += 1;
+      works.set(work.work_id, {
+        ...work,
+        year: tag.year,
+        source_tag_id: tag.tag_id,
+        source_tag_url: tag.url,
+        acquired_at: ACQUIRED_AT,
+      });
+    }
+
+    if (works.size >= declaredCount) break;
+    if (parsed.count === 0 || added === 0) {
+      throw new Error(`${tag.year}: pagination made no progress at start=${start}.`);
+    }
+    start += PAGE_SIZE;
+    pageNumber += 1;
+  }
+
+  if (declaredCount === null) throw new Error(`${tag.year}: no official JSON response.`);
+  if (works.size !== declaredCount) {
+    throw new Error(`${tag.year}: acquired ${works.size} unique works, official maxCount=${declaredCount}.`);
+  }
+
+  const ordered = [...works.values()].sort((a, b) => a.title.localeCompare(b.title, 'ja'));
+  return {
+    works: ordered,
+    declared_count: declaredCount,
+    response_count: responseRecords.length,
+    responses: responseRecords,
+    content_sha256: contentHash(ordered),
+  };
+}
+
+function buildChangeSummary(previousManifest, previousByYear, nextByYear) {
+  const summary = {
+    previous_generated_at: previousManifest?.generated_at ?? null,
+    added_memberships: 0,
+    removed_memberships: 0,
+    title_changes: 0,
+    favorite_count_changes: 0,
+    years: {},
+  };
+
+  for (const [yearKey, nextWorks] of Object.entries(nextByYear)) {
+    const previousWorks = previousByYear[yearKey] ?? [];
+    const previousMap = new Map(previousWorks.map((work) => [work.work_id, work]));
+    const nextMap = new Map(nextWorks.map((work) => [work.work_id, work]));
+    const added = [...nextMap.keys()].filter((id) => !previousMap.has(id));
+    const removed = [...previousMap.keys()].filter((id) => !nextMap.has(id));
+    let titleChanges = 0;
+    let favoriteChanges = 0;
+    for (const [id, next] of nextMap) {
+      const previous = previousMap.get(id);
+      if (!previous) continue;
+      if (previous.title !== next.title) titleChanges += 1;
+      if (previous.favorite_count !== next.favorite_count) favoriteChanges += 1;
+    }
+    summary.added_memberships += added.length;
+    summary.removed_memberships += removed.length;
+    summary.title_changes += titleChanges;
+    summary.favorite_count_changes += favoriteChanges;
+    summary.years[yearKey] = {
+      previous_count: previousWorks.length,
+      next_count: nextWorks.length,
+      added_work_ids: added,
+      removed_work_ids: removed,
+      title_changes: titleChanges,
+      favorite_count_changes: favoriteChanges,
+    };
+  }
+  return summary;
+}
+
+async function readPreviousSnapshot(yearTags) {
+  const manifest = await readJsonIfExists(path.join(FINAL_DATA_DIR, 'manifest.json'));
+  const byYear = {};
+  for (const tag of yearTags) {
+    const payload = await readJsonIfExists(path.join(FINAL_DATA_DIR, 'by-year', `${tag.year}.json`));
+    if (payload?.works) byYear[tag.year] = payload.works;
+  }
+  return { manifest, byYear };
+}
+
+function validateDropGuard(previousManifest, nextMembershipCount) {
+  const previous = Number(previousManifest?.membership_count ?? 0);
+  if (!previous) return;
+  const dropRatio = (previous - nextMembershipCount) / previous;
+  if (dropRatio > MAX_TOTAL_DROP_RATIO) {
+    throw new Error(
+      `Membership count dropped ${(dropRatio * 100).toFixed(2)}%, exceeding ` +
+      `DANIME_MAX_TOTAL_DROP_RATIO=${MAX_TOTAL_DROP_RATIO}.`,
+    );
   }
 }
 
-async function extractDomWorks(page) {
-  return page.evaluate(() => {
-    const clean = (value) => String(value ?? '')
-      .replace(/\u00a0/g, ' ')
-      .replace(/[\t\r\n]+/g, ' ')
-      .replace(/\s{2,}/g, ' ')
-      .trim();
-
-    const records = [];
-    for (const anchor of document.querySelectorAll('a[href*="workId="]')) {
-      const detailUrl = new URL(anchor.getAttribute('href'), location.origin).toString();
-      const workId = new URL(detailUrl).searchParams.get('workId');
-      if (!workId) continue;
-
-      const container = anchor.closest(
-        'li, article, [class*="item"], [class*="work"], [class*="card"], [class*="list"]',
-      );
-      const image = anchor.querySelector('img') ?? container?.querySelector('img');
-      const titleElement = container?.querySelector(
-        '[class*="title"], [class*="ttl"], [class*="name"], h2, h3, h4',
-      );
-      const title = [
-        anchor.getAttribute('aria-label'),
-        anchor.getAttribute('title'),
-        image?.getAttribute('alt'),
-        titleElement?.textContent,
-        anchor.textContent,
-      ].map(clean).find((value) => value && value.length <= 240) ?? null;
-      const imageUrl = image?.currentSrc || image?.src ||
-        image?.getAttribute('data-src') || image?.getAttribute('data-original') || null;
-
-      records.push({
-        work_id: workId,
-        title,
-        detail_url: detailUrl,
-        image_url: imageUrl ? new URL(imageUrl, location.origin).toString() : null,
-        extraction_method: 'dom',
-        extraction_source_url: location.href,
-      });
-    }
-    return records;
-  });
-}
-
-async function paginationLinks(page, tagId) {
-  return page.evaluate((expectedTagId) => {
-    const links = [];
-    for (const anchor of document.querySelectorAll('a[href]')) {
-      const raw = anchor.getAttribute('href');
-      if (!raw) continue;
-      const url = new URL(raw, location.origin);
-      if (!url.pathname.endsWith('/tag_pc')) continue;
-      if (url.searchParams.get('tagId') !== expectedTagId) continue;
-      const text = String(anchor.textContent ?? '').trim();
-      const hasPagingParam = [...url.searchParams.keys()]
-        .some((key) => /page|offset|start|limit|index/i.test(key));
-      const looksLikePager = hasPagingParam || /^(?:次へ|前へ|\d+|>|<|»|«)$/u.test(text);
-      if (looksLikePager) links.push(url.toString());
-    }
-    return [...new Set(links)];
-  }, tagId);
-}
-
-async function acquireYear(page, tag, networkWorksByYear, setActiveYear) {
-  const queue = [tag.url];
-  const visited = new Set();
-  const domWorks = [];
-
+async function promoteDirectory(staged, target) {
+  const backup = `${target}.backup-${process.pid}`;
+  await rm(backup, { recursive: true, force: true });
+  const hadTarget = await exists(target);
+  if (hadTarget) await rename(target, backup);
   try {
-    while (queue.length > 0 && visited.size < MAX_LIST_PAGES) {
-      const url = queue.shift();
-      if (visited.has(url)) continue;
-      visited.add(url);
-
-      setActiveYear(tag.year);
-      const response = await page.goto(url, {
-        waitUntil: 'domcontentloaded',
-        timeout: 90_000,
-      });
-      if (!response || response.status() >= 400) {
-        throw new Error(
-          `${tag.year}: official tag page returned ${response?.status() ?? 'no response'}: ${url}`,
-        );
-      }
-      await page.waitForTimeout(2500);
-      await exhaustDynamicList(page);
-      domWorks.push(...await extractDomWorks(page));
-
-      const links = await paginationLinks(page, tag.tag_id);
-      for (const link of links) {
-        if (!visited.has(link) && !queue.includes(link)) queue.push(link);
-      }
-      await sleep(RATE_LIMIT_MS);
-    }
+    await rename(staged, target);
+    await rm(backup, { recursive: true, force: true });
   } catch (error) {
-    await savePageDiagnostics(page, `${tag.year}-failure`).catch(() => undefined);
+    await rm(target, { recursive: true, force: true });
+    if (hadTarget && await exists(backup)) await rename(backup, target);
     throw error;
   }
+}
 
-  const works = dedupeWorks([
-    ...domWorks,
-    ...(networkWorksByYear.get(tag.year) ?? []),
-  ]).map((work) => ({
-    ...work,
+async function writeSingleYearDiagnostic(tag, result) {
+  const targetDir = path.join(FINAL_DIAGNOSTICS_DIR, 'single-year');
+  await mkdir(targetDir, { recursive: true });
+  await writeJson(path.join(targetDir, `${tag.year}.json`), {
+    generated_at: ACQUIRED_AT,
     year: tag.year,
     source_tag_id: tag.tag_id,
-    source_tag_url: tag.url,
-    acquired_at: ACQUIRED_AT,
-  }));
-
-  if (works.length === 0) {
-    await savePageDiagnostics(page, `${tag.year}-empty`).catch(() => undefined);
-    throw new Error(`${tag.year}: no works extracted from official tag ${tag.tag_id}`);
-  }
-  return { works, pages_visited: visited.size };
+    source_url: tag.url,
+    declared_count: result.declared_count,
+    response_count: result.response_count,
+    content_sha256: result.content_sha256,
+    works: result.works,
+  });
+  console.log(`${tag.year}: live diagnostic acquired ${result.works.length} official works; data/ was not modified.`);
 }
 
 async function main() {
-  await ensureDirectories();
+  await prepareRunDirectories();
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     locale: 'ja-JP',
     timezoneId: 'Asia/Tokyo',
-    userAgent: 'KAFKA2306-anime-catalogue/0.1 (+https://github.com/KAFKA2306/anime; public metadata only)',
+    userAgent: 'KAFKA2306-anime-catalogue/0.2 (+https://github.com/KAFKA2306/anime; public metadata only)',
     viewport: { width: 1440, height: 1000 },
   });
   const page = await context.newPage();
-  const responseTasks = [];
-  const networkWorksByYear = new Map();
-  const networkManifest = [];
-  let activeYear = null;
-
-  context.on('response', (response) => {
-    const task = (async () => {
-      const url = response.url();
-      const contentType = response.headers()['content-type'] ?? '';
-      const year = activeYear;
-      if (!year || !url.startsWith(OFFICIAL_ORIGIN) ||
-          !contentType.includes('json') || response.status() >= 400) return;
-      try {
-        const text = await response.text();
-        if (text.length > 8_000_000) return;
-        const parsed = JSON.parse(text);
-        const inferred = inferWorksFromJson(parsed, url);
-        if (inferred.length > 0) {
-          const relative = path.join('network', `${year}-${shortHash(url)}.json`);
-          await writeFile(
-            path.join(DIAGNOSTICS_DIR, relative),
-            JSON.stringify(parsed, null, 2),
-            'utf8',
-          );
-          networkWorksByYear.set(year, [
-            ...(networkWorksByYear.get(year) ?? []),
-            ...inferred,
-          ]);
-          networkManifest.push({
-            year,
-            url,
-            status: response.status(),
-            file: relative,
-            inferred_work_count: inferred.length,
-          });
-        }
-      } catch {
-        // DOM extraction remains authoritative if a JSON response is unreadable.
-      }
-    })();
-    responseTasks.push(task);
-  });
 
   try {
-    const yearTags = await discoverYearTags(page);
+    const discovery = await discoverYearTags(page);
+    const limiter = new RateLimiter();
+    const acquisitionOrder = [...discovery.tags].sort((a, b) => b.year - a.year);
     const byYear = {};
     const acquisitionStats = {};
-    const acquisitionOrder = [...yearTags].sort((a, b) => b.year - a.year);
 
     for (const tag of acquisitionOrder) {
-      const result = await acquireYear(
-        page,
-        tag,
-        networkWorksByYear,
-        (year) => { activeYear = year; },
-      );
+      const result = await acquireOfficialYear(context.request, limiter, tag);
       byYear[tag.year] = result.works;
       acquisitionStats[tag.year] = {
         tag_id: tag.tag_id,
         source_url: tag.url,
-        pages_visited: result.pages_visited,
+        transport: 'direct-official-json',
+        api_endpoint: '/animestore/rest/WS000106',
+        api_page_size: PAGE_SIZE,
+        official_json_response_count: result.response_count,
+        declared_work_count: result.declared_count,
+        official_json_work_count: result.works.length,
         work_count: result.works.length,
+        content_sha256: result.content_sha256,
       };
-      console.log(`${tag.year}: ${result.works.length} works from ${result.pages_visited} page(s)`);
+      console.log(`${tag.year}: ${result.works.length} works from ${result.response_count} official JSON response(s).`);
     }
 
-    activeYear = null;
-    await Promise.allSettled(responseTasks);
+    if (ONLY_YEAR) {
+      await writeSingleYearDiagnostic(acquisitionOrder[0], {
+        works: byYear[ONLY_YEAR],
+        declared_count: acquisitionStats[ONLY_YEAR].declared_work_count,
+        response_count: acquisitionStats[ONLY_YEAR].official_json_response_count,
+        content_sha256: acquisitionStats[ONLY_YEAR].content_sha256,
+      });
+      return;
+    }
 
     const canonicalWorks = mergeCanonical(byYear);
+    const membershipCount = Object.values(byYear).reduce((sum, works) => sum + works.length, 0);
+    const previous = await readPreviousSnapshot(discovery.tags);
+    validateDropGuard(previous.manifest, membershipCount);
+    const changeSummary = buildChangeSummary(previous.manifest, previous.byYear, byYear);
+
     const manifest = {
-      schema_version: '1.0.0',
+      schema_version: '2.0.0',
       generated_at: ACQUIRED_AT,
       source: {
         name: 'dアニメストア',
         operator: '株式会社NTTドコモ',
         official_origin: OFFICIAL_ORIGIN,
         tag_selector_url: TAG_SELECTOR_URL,
+        official_list_api: `${OFFICIAL_ORIGIN}/animestore/rest/WS000106`,
         scope: 'Public catalogue metadata from exact year tags; no video, login-only data, reviews, or user data.',
       },
-      discovered_years: yearTags.map((tag) => tag.year),
-      year_count: yearTags.length,
+      discovered_years: discovery.tags.map((tag) => tag.year),
+      year_count: discovery.tags.length,
       canonical_work_count: canonicalWorks.length,
-      membership_count: Object.values(byYear).reduce((sum, works) => sum + works.length, 0),
+      membership_count: membershipCount,
       acquisition: acquisitionStats,
+      warnings: discovery.warnings,
       integrity: {
         duplicate_work_ids_within_year: 0,
         missing_titles: 0,
         empty_years: 0,
+        official_count_mismatches: 0,
+        non_official_titles: 0,
+        missing_official_favorite_counts: 0,
+        missing_official_my_list_counts: 0,
       },
     };
 
-    for (const tag of yearTags) {
-      const payload = {
-        schema_version: '1.0.0',
+    for (const tag of discovery.tags) {
+      const works = byYear[tag.year];
+      await writeJson(path.join(OUTPUT_DIR, 'by-year', `${tag.year}.json`), {
+        schema_version: '2.0.0',
         year: tag.year,
         source_tag_id: tag.tag_id,
         source_url: tag.url,
         generated_at: ACQUIRED_AT,
-        count: byYear[tag.year].length,
-        works: byYear[tag.year],
-      };
+        declared_count: works.length,
+        official_json_count: works.length,
+        count: works.length,
+        content_sha256: acquisitionStats[tag.year].content_sha256,
+        works,
+      });
+      const likesTsv = [
+        'title\tfavorites_count',
+        ...works.map((work) => `${work.title}\t${work.favorite_count}`),
+      ].join('\n');
       await writeFile(
-        path.join(OUTPUT_DIR, 'by-year', `${tag.year}.json`),
-        `${JSON.stringify(payload, null, 2)}\n`,
+        path.join(OUTPUT_DIR, 'likes', `${tag.year}.tsv`),
+        `${likesTsv}\n`,
         'utf8',
       );
     }
 
-    await writeFile(
-      path.join(OUTPUT_DIR, 'works.json'),
-      `${JSON.stringify(canonicalWorks, null, 2)}\n`,
-      'utf8',
-    );
-    await writeFile(
-      path.join(OUTPUT_DIR, 'manifest.json'),
-      `${JSON.stringify(manifest, null, 2)}\n`,
-      'utf8',
-    );
-    await writeFile(
-      path.join(OUTPUT_DIR, 'source', 'year-tags.json'),
-      `${JSON.stringify(yearTags, null, 2)}\n`,
-      'utf8',
-    );
-    await writeFile(
-      path.join(DIAGNOSTICS_DIR, 'network-manifest.json'),
-      `${JSON.stringify(networkManifest, null, 2)}\n`,
-      'utf8',
-    );
-  } finally {
+    await writeJson(path.join(OUTPUT_DIR, 'works.json'), canonicalWorks);
+    await writeJson(path.join(OUTPUT_DIR, 'manifest.json'), manifest);
+    await writeJson(path.join(OUTPUT_DIR, 'source', 'year-tags.json'), discovery.tags);
+    await writeJson(path.join(DIAGNOSTICS_DIR, 'change-summary.json'), changeSummary);
+    await writeJson(path.join(DIAGNOSTICS_DIR, 'run.json'), {
+      generated_at: ACQUIRED_AT,
+      rate_limit_ms: RATE_LIMIT_MS,
+      api_page_size: PAGE_SIZE,
+      max_retries: MAX_RETRIES,
+      request_timeout_ms: REQUEST_TIMEOUT_MS,
+      membership_count: membershipCount,
+      canonical_work_count: canonicalWorks.length,
+    });
+
     await browser.close();
+    await promoteDirectory(OUTPUT_DIR, FINAL_DATA_DIR);
+    await promoteDirectory(DIAGNOSTICS_DIR, FINAL_DIAGNOSTICS_DIR);
+    console.log(`Promoted ${canonicalWorks.length} canonical works across ${discovery.tags.length} years.`);
+  } finally {
+    if (browser.isConnected()) await browser.close();
+    await rm(RUN_ROOT, { recursive: true, force: true });
   }
 }
 
