@@ -9,8 +9,8 @@ const ONLY_YEAR = process.env.DANIME_ENRICH_YEAR ? Number(process.env.DANIME_ENR
 const LIMIT = Number(process.env.DANIME_ENRICH_LIMIT ?? (ONLY_YEAR ? 0 : 500));
 const CONCURRENCY = Math.max(1, Math.min(4, Number(process.env.DANIME_ENRICH_CONCURRENCY ?? 2)));
 const RATE_LIMIT_MS = Math.max(300, Number(process.env.DANIME_ENRICH_RATE_LIMIT_MS ?? 900));
-const MAX_PASSES = Math.max(1, Math.min(4, Number(process.env.DANIME_ENRICH_MAX_PASSES ?? 3)));
-const PAGE_ATTEMPTS = Math.max(1, Math.min(4, Number(process.env.DANIME_ENRICH_PAGE_ATTEMPTS ?? 3)));
+const MAX_PASSES = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_MAX_PASSES ?? 2)));
+const PAGE_ATTEMPTS = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_PAGE_ATTEMPTS ?? 2)));
 const REFRESH = process.env.DANIME_ENRICH_REFRESH === '1';
 const FETCHED_AT = new Date().toISOString();
 const OFFICIAL_ORIGIN = 'https://animestore.docomo.ne.jp';
@@ -66,14 +66,10 @@ async function extractFromPage(page, work, detailUrl) {
         throw new Error(`HTTP ${response?.status() ?? 'no response'}`);
       }
 
-      await page.getByText(/あらすじ\s*[／/]\s*ジャンル/u).first()
-        .waitFor({ state: 'attached', timeout: 15_000 })
-        .catch(() => null);
       await page.waitForTimeout(750);
-
       const bodyText = await page.locator('body').innerText({ timeout: 15_000 });
       const parsed = parseOfficialDetailText(bodyText);
-      const linkedGenres = await visibleOfficialGenreLinks(page);
+      const linkedGenres = parsed.officialGenres.length ? [] : await visibleOfficialGenreLinks(page);
       const officialGenres = parsed.officialGenres.length ? parsed.officialGenres : linkedGenres;
       const record = buildAttributeRecord({
         workId: work.work_id,
@@ -97,9 +93,7 @@ async function extractFromPage(page, work, detailUrl) {
       return record;
     } catch (error) {
       lastReason = error instanceof Error ? error.message : String(error);
-      if (attempt < PAGE_ATTEMPTS) {
-        await sleep(1_500 * attempt);
-      }
+      if (attempt < PAGE_ATTEMPTS) await sleep(1_000 * attempt);
     }
   }
 
@@ -152,7 +146,7 @@ async function createContext(browser) {
     locale: 'ja-JP',
     timezoneId: 'Asia/Tokyo',
     viewport: { width: 1280, height: 900 },
-    userAgent: 'KAFKA2306-anime-attribute-enricher/1.1 (+https://github.com/KAFKA2306/anime; official public metadata only)',
+    userAgent: 'KAFKA2306-anime-attribute-enricher/1.2 (+https://github.com/KAFKA2306/anime; official public metadata only)',
   });
 }
 
@@ -192,7 +186,7 @@ async function main() {
       console.log(`Attribute enrichment pass ${pass}/${MAX_PASSES}: ${remaining.length} works.`);
       finalFailures = await runPass(browser, remaining, stats, pass);
       remaining = finalFailures.map((failure) => failure.work);
-      if (remaining.length && pass < MAX_PASSES) await sleep(3_000 * pass);
+      if (remaining.length && pass < MAX_PASSES) await sleep(2_000 * pass);
     }
   } finally {
     await browser.close();
