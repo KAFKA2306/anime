@@ -1,30 +1,39 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "year": 1945,
   "source_tag_id": "T0015540",
   "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540",
-  "generated_at": "2026-07-22T11:10:15.202Z",
+  "generated_at": "2026-07-23T00:01:03.284Z",
+  "declared_count": 1,
+  "official_json_count": 1,
   "count": 1,
+  "content_sha256": "ba01c8081ad387ff7abbd47a17ff65845e941c3dae94c657d24af8ec42140e90",
   "works": [
     {
       "work_id": "24515",
       "title": "桃太郎 海の神兵 デジタル修正版",
       "detail_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24515",
       "image_url": "https://cs1.animestore.docomo.ne.jp/anime/2/45/15/1gQuoA/24515_1_2.png?1611644454000",
-      "extraction_method": "dom",
-      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540",
+      "favorite_count": 1610,
+      "my_list_count": 1215,
+      "work_type_list": [
+        "anime"
+      ],
+      "work_icons": [],
+      "vod_type": "svod",
+      "age_limit_type": "0",
+      "extraction_method": "official-json-direct",
+      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0015540",
+      "title_source": "official-json",
+      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0015540",
+      "count_source": "official-json",
+      "count_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0015540",
+      "extraction_sources": [
+        "official-json"
+      ],
       "year": 1945,
       "source_tag_id": "T0015540",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540",
-      "acquired_at": "2026-07-22T11:10:15.202Z",
-      "title_source": "official-json",
-      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0015540&_=1784719445989",
-      "extraction_sources": [
-        "dom",
-        "official-json"
-      ]
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540"
     }
-  ],
-  "declared_count": 1,
-  "official_json_count": 1
+  ]
 }

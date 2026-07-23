@@ -1,30 +1,39 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "year": 1964,
   "source_tag_id": "T0014746",
   "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746",
-  "generated_at": "2026-07-22T11:10:15.202Z",
+  "generated_at": "2026-07-23T00:01:03.284Z",
+  "declared_count": 1,
+  "official_json_count": 1,
   "count": 1,
+  "content_sha256": "118adbc032c9bffd5047c04c4dcd937fe853217fd3ae3843d7dafd6540e01da1",
   "works": [
     {
       "work_id": "24080",
       "title": "鉄腕アトム　宇宙の勇者",
       "detail_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24080",
       "image_url": "https://cs1.animestore.docomo.ne.jp/anime/2/40/80/aGBFPQ/24080_1_2.png?1596073092000",
-      "extraction_method": "dom",
-      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746",
+      "favorite_count": 689,
+      "my_list_count": 681,
+      "work_type_list": [
+        "anime"
+      ],
+      "work_icons": [],
+      "vod_type": "svod",
+      "age_limit_type": "0",
+      "extraction_method": "official-json-direct",
+      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014746",
+      "title_source": "official-json",
+      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014746",
+      "count_source": "official-json",
+      "count_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014746",
+      "extraction_sources": [
+        "official-json"
+      ],
       "year": 1964,
       "source_tag_id": "T0014746",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746",
-      "acquired_at": "2026-07-22T11:10:15.202Z",
-      "title_source": "official-json",
-      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014746&_=1784719420695",
-      "extraction_sources": [
-        "dom",
-        "official-json"
-      ]
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746"
     }
-  ],
-  "declared_count": 1,
-  "official_json_count": 1
+  ]
 }

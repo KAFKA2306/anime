@@ -1,11 +1,12 @@
 {
-  "schema_version": "1.0.0",
-  "generated_at": "2026-07-22T11:10:15.202Z",
+  "schema_version": "2.0.0",
+  "generated_at": "2026-07-23T00:01:03.284Z",
   "source": {
     "name": "dアニメストア",
     "operator": "株式会社NTTドコモ",
     "official_origin": "https://animestore.docomo.ne.jp",
     "tag_selector_url": "https://animestore.docomo.ne.jp/animestore/tag_sel_pc",
+    "official_list_api": "https://animestore.docomo.ne.jp/animestore/rest/WS000106",
     "scope": "Public catalogue metadata from exact year tags; no video, login-only data, reviews, or user data."
   },
   "discovered_years": [
@@ -77,609 +78,810 @@
     2026
   ],
   "year_count": 66,
-  "canonical_work_count": 7539,
-  "membership_count": 7541,
+  "canonical_work_count": 7540,
+  "membership_count": 7542,
   "acquisition": {
     "1945": {
       "tag_id": "T0015540",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540",
-      "pages_visited": 1,
-      "work_count": 1,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 1,
       "official_json_work_count": 1,
-      "official_json_response_count": 1
+      "work_count": 1,
+      "content_sha256": "ba01c8081ad387ff7abbd47a17ff65845e941c3dae94c657d24af8ec42140e90"
     },
     "1962": {
       "tag_id": "T0014688",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014688",
-      "pages_visited": 1,
-      "work_count": 1,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 1,
       "official_json_work_count": 1,
-      "official_json_response_count": 1
+      "work_count": 1,
+      "content_sha256": "f8adc7a39f218973d9d7a30cd6ebd0fd041d35f2fcc01072c22f48e02048e60d"
     },
     "1963": {
       "tag_id": "T0014799",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014799",
-      "pages_visited": 1,
-      "work_count": 1,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 1,
       "official_json_work_count": 1,
-      "official_json_response_count": 1
+      "work_count": 1,
+      "content_sha256": "7de4fdb3034f7104bec16ed12a410f608eb0252189cda0e1e986305ba8abdba5"
     },
     "1964": {
       "tag_id": "T0014746",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746",
-      "pages_visited": 1,
-      "work_count": 1,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 1,
       "official_json_work_count": 1,
-      "official_json_response_count": 1
+      "work_count": 1,
+      "content_sha256": "118adbc032c9bffd5047c04c4dcd937fe853217fd3ae3843d7dafd6540e01da1"
     },
     "1965": {
       "tag_id": "T0004851",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004851",
-      "pages_visited": 1,
-      "work_count": 4,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 4,
       "official_json_work_count": 4,
-      "official_json_response_count": 1
+      "work_count": 4,
+      "content_sha256": "eaae123a2e00740cf4d3a1d32ab12bdabe6527380468a848437c2be36f901357"
     },
     "1966": {
       "tag_id": "T0011240",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0011240",
-      "pages_visited": 1,
-      "work_count": 2,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 2,
       "official_json_work_count": 2,
-      "official_json_response_count": 1
+      "work_count": 2,
+      "content_sha256": "2178090a717d692766e83cbdc88a0ef8a73eab660b5741058baa711dbe59135b"
     },
     "1967": {
       "tag_id": "T0004850",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004850",
-      "pages_visited": 1,
-      "work_count": 5,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 5,
       "official_json_work_count": 5,
-      "official_json_response_count": 1
+      "work_count": 5,
+      "content_sha256": "5d5b9695b5a6d7d877af5ee9cf4144041b2ebccefc3f04caafd63a708b055491"
     },
     "1968": {
       "tag_id": "T0013890",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
-      "pages_visited": 1,
-      "work_count": 5,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 5,
       "official_json_work_count": 5,
-      "official_json_response_count": 1
+      "work_count": 5,
+      "content_sha256": "cedf1e697deab4474bd5302d0311d5d74733b822a626989dbf0b248240ca5b6f"
     },
     "1969": {
       "tag_id": "T0004863",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004863",
-      "pages_visited": 1,
-      "work_count": 8,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 8,
       "official_json_work_count": 8,
-      "official_json_response_count": 1
+      "work_count": 8,
+      "content_sha256": "35502a2c51450211d1b90c9365b6b16ff8541f6f872e8d9eae17851ba84078b9"
     },
     "1970": {
       "tag_id": "T0004864",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004864",
-      "pages_visited": 1,
-      "work_count": 8,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 8,
       "official_json_work_count": 8,
-      "official_json_response_count": 1
+      "work_count": 8,
+      "content_sha256": "b8bd1362b31e6293a93ba887df75944a3bf7a70920b1b5abc1204e0d376c9fb2"
     },
     "1971": {
       "tag_id": "T0011185",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0011185",
-      "pages_visited": 1,
-      "work_count": 9,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 9,
       "official_json_work_count": 9,
-      "official_json_response_count": 1
+      "work_count": 9,
+      "content_sha256": "ddf00335a8b9377185c1a9aaf47f2726593c9f54ff532242ca0f80675172c822"
     },
     "1972": {
       "tag_id": "T0007303",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0007303",
-      "pages_visited": 1,
-      "work_count": 7,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 7,
       "official_json_work_count": 7,
-      "official_json_response_count": 1
+      "work_count": 7,
+      "content_sha256": "d7945ff6f195d3899855fe5b1c81b4e8128bbabde9064ef9c7e77a88e1f78805"
     },
     "1973": {
       "tag_id": "T0004861",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004861",
-      "pages_visited": 1,
-      "work_count": 10,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 10,
       "official_json_work_count": 10,
-      "official_json_response_count": 1
+      "work_count": 10,
+      "content_sha256": "df911d0f4cfaf7669fecbca7a1fc41d2cd15acee4c30bcb721ca0029f8be3236"
     },
     "1974": {
       "tag_id": "T0004860",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004860",
-      "pages_visited": 1,
-      "work_count": 11,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 11,
       "official_json_work_count": 11,
-      "official_json_response_count": 1
+      "work_count": 11,
+      "content_sha256": "85704e295ba9ad2c329b0151b93fae996239b2ed0f205d2a3f430ff4a55a50f3"
     },
     "1975": {
       "tag_id": "T0007304",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0007304",
-      "pages_visited": 1,
-      "work_count": 14,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 14,
       "official_json_work_count": 14,
-      "official_json_response_count": 1
+      "work_count": 14,
+      "content_sha256": "ff935afd05788d46ad12f6332819167fef932018794d1ef72b0c8eceb7a0c34a"
     },
     "1976": {
       "tag_id": "T0007302",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0007302",
-      "pages_visited": 1,
-      "work_count": 9,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 9,
       "official_json_work_count": 9,
-      "official_json_response_count": 1
+      "work_count": 9,
+      "content_sha256": "f831a816027eeba6a505749a27a56ea451081950e202d95c7276438132dd5cff"
     },
     "1977": {
       "tag_id": "T0004865",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004865",
-      "pages_visited": 1,
-      "work_count": 19,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 19,
       "official_json_work_count": 19,
-      "official_json_response_count": 1
+      "work_count": 19,
+      "content_sha256": "6413816b6d50f46b2b3565f02342141becee6b98017b51ed5eecc85a00dd8fde"
     },
     "1978": {
       "tag_id": "T0004862",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004862",
-      "pages_visited": 1,
-      "work_count": 18,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 1,
       "declared_work_count": 18,
       "official_json_work_count": 18,
-      "official_json_response_count": 1
+      "work_count": 18,
+      "content_sha256": "22887d72db166b7a1c028789d06df8c82e96d413539564be39421c58179ffc18"
     },
     "1979": {
       "tag_id": "T0004866",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004866",
-      "pages_visited": 1,
-      "work_count": 21,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 21,
       "official_json_work_count": 21,
-      "official_json_response_count": 2
+      "work_count": 21,
+      "content_sha256": "da71dea3648c21fd1b2f44f5c751954c5dfde123d8259246d8288117d2d978d4"
     },
     "1980": {
       "tag_id": "T0004839",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004839",
-      "pages_visited": 1,
-      "work_count": 29,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 29,
       "official_json_work_count": 29,
-      "official_json_response_count": 2
+      "work_count": 29,
+      "content_sha256": "553dc4695372224aca5579ceb8245ba828fa6f44572030c7d26f8fffdc21123a"
     },
     "1981": {
       "tag_id": "T0004838",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004838",
-      "pages_visited": 1,
-      "work_count": 27,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 27,
       "official_json_work_count": 27,
-      "official_json_response_count": 2
+      "work_count": 27,
+      "content_sha256": "9378440d777a9d7675ace3efb8cdeec345da36e27f93aa6104bd796de3dd5a3a"
     },
     "1982": {
       "tag_id": "T0004859",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004859",
-      "pages_visited": 1,
-      "work_count": 26,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 26,
       "official_json_work_count": 26,
-      "official_json_response_count": 2
+      "work_count": 26,
+      "content_sha256": "5742cb0cc2d188fcca7651b952bc547e8746024f95f2ad143bd5319500e30929"
     },
     "1983": {
       "tag_id": "T0004828",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004828",
-      "pages_visited": 1,
-      "work_count": 33,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 33,
       "official_json_work_count": 33,
-      "official_json_response_count": 2
+      "work_count": 33,
+      "content_sha256": "ff63e16d695e9a874ade06fbd4e72805591ddc66292106ddffe08cf7efceab25"
     },
     "1984": {
       "tag_id": "T0004836",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004836",
-      "pages_visited": 1,
-      "work_count": 29,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 29,
       "official_json_work_count": 29,
-      "official_json_response_count": 2
+      "work_count": 29,
+      "content_sha256": "30a1a347577f7a59fa37eb29682ee8641330205b75207892704df492ccbd9409"
     },
     "1985": {
       "tag_id": "T0004857",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004857",
-      "pages_visited": 1,
-      "work_count": 33,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 33,
       "official_json_work_count": 33,
-      "official_json_response_count": 2
+      "work_count": 33,
+      "content_sha256": "3240050a45164e03814304cc1064cf923a8bb8c07d75e93d3d52da575d44d1eb"
     },
     "1986": {
       "tag_id": "T0004846",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004846",
-      "pages_visited": 1,
-      "work_count": 36,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 36,
       "official_json_work_count": 36,
-      "official_json_response_count": 2
+      "work_count": 36,
+      "content_sha256": "59bab79ec94b7aabbb1a7fe41c0737458d5c91f92fe32f40016552fed34a8905"
     },
     "1987": {
       "tag_id": "T0004855",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004855",
-      "pages_visited": 1,
-      "work_count": 29,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 29,
       "official_json_work_count": 29,
-      "official_json_response_count": 2
+      "work_count": 29,
+      "content_sha256": "64bd38f596ef9a57e4d1ca46e2a9e1d7c3aa83d751de8c21616c4c762aee5f65"
     },
     "1988": {
       "tag_id": "T0004848",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004848",
-      "pages_visited": 1,
-      "work_count": 40,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 40,
       "official_json_work_count": 40,
-      "official_json_response_count": 2
+      "work_count": 40,
+      "content_sha256": "65ebc9c428194058ad087d5831d2d53afdb6a13a5cf6d3ed1e292b387df6d4cd"
     },
     "1989": {
       "tag_id": "T0004847",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004847",
-      "pages_visited": 1,
-      "work_count": 54,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 54,
       "official_json_work_count": 54,
-      "official_json_response_count": 3
+      "work_count": 54,
+      "content_sha256": "eea6dbc4bf66109b5ade23448240fba968d2e357195fd5bc4c75ee440e422366"
     },
     "1990": {
       "tag_id": "T0004856",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004856",
-      "pages_visited": 1,
-      "work_count": 32,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 32,
       "official_json_work_count": 32,
-      "official_json_response_count": 2
+      "work_count": 32,
+      "content_sha256": "1ddb65348de26b99a617bb08c8bc45f7efc8d8205e351bc96761c101a72f8220"
     },
     "1991": {
       "tag_id": "T0004837",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004837",
-      "pages_visited": 1,
-      "work_count": 36,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 36,
       "official_json_work_count": 36,
-      "official_json_response_count": 2
+      "work_count": 36,
+      "content_sha256": "592f383bda66c00466a49b869616bae6e917846be10846ed37b4c95f857fcb6a"
     },
     "1992": {
       "tag_id": "T0004843",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004843",
-      "pages_visited": 1,
-      "work_count": 43,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 43,
       "official_json_work_count": 43,
-      "official_json_response_count": 3
+      "work_count": 43,
+      "content_sha256": "247e3bdca56da3ec66c8beb69e50604e4c21775e4b295491a70557b69d384c05"
     },
     "1993": {
       "tag_id": "T0004858",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004858",
-      "pages_visited": 1,
-      "work_count": 40,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 2,
       "declared_work_count": 40,
       "official_json_work_count": 40,
-      "official_json_response_count": 2
+      "work_count": 40,
+      "content_sha256": "9031938264d781bdbe345e75af8955db28fe646e58b4c9ce1f9b544df580fa73"
     },
     "1994": {
       "tag_id": "T0004854",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004854",
-      "pages_visited": 1,
-      "work_count": 47,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 47,
       "official_json_work_count": 47,
-      "official_json_response_count": 3
+      "work_count": 47,
+      "content_sha256": "bd99be01853bd753df7bba83b2b6957a6af0fb83a18009352f8bd611c994af7d"
     },
     "1995": {
       "tag_id": "T0004853",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004853",
-      "pages_visited": 1,
-      "work_count": 47,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 47,
       "official_json_work_count": 47,
-      "official_json_response_count": 3
+      "work_count": 47,
+      "content_sha256": "46cd67c7a4114435bf8253f842edc6146746bb6ebeff9f424b08ba6e981859d9"
     },
     "1996": {
       "tag_id": "T0004852",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004852",
-      "pages_visited": 1,
-      "work_count": 46,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 46,
       "official_json_work_count": 46,
-      "official_json_response_count": 3
+      "work_count": 46,
+      "content_sha256": "9fe66326548d4999760012f1b7b6e440e219a20a89438d56f685fb3483bf3350"
     },
     "1997": {
       "tag_id": "T0004845",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004845",
-      "pages_visited": 1,
-      "work_count": 58,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 58,
       "official_json_work_count": 58,
-      "official_json_response_count": 3
+      "work_count": 58,
+      "content_sha256": "69f4cb02c39e9c2d9ef9eaad171c0ab805ee226981190f07931e9cfe9380000b"
     },
     "1998": {
       "tag_id": "T0004833",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004833",
-      "pages_visited": 1,
-      "work_count": 51,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 51,
       "official_json_work_count": 51,
-      "official_json_response_count": 3
+      "work_count": 51,
+      "content_sha256": "7e255ad568f5f9878f1f6aa7aa6b239ebb3a9f93fb9cb9fa5610212d9afe3562"
     },
     "1999": {
       "tag_id": "T0004824",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004824",
-      "pages_visited": 1,
-      "work_count": 57,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 57,
       "official_json_work_count": 57,
-      "official_json_response_count": 3
+      "work_count": 57,
+      "content_sha256": "16f15a5cc0fad72c0d66373c0ebfcd25c3c0df95ed9a7ce31bda3e30b6b6ea50"
     },
     "2000": {
       "tag_id": "T0004849",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004849",
-      "pages_visited": 1,
-      "work_count": 55,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 3,
       "declared_work_count": 55,
       "official_json_work_count": 55,
-      "official_json_response_count": 3
+      "work_count": 55,
+      "content_sha256": "a81bab90f6a8055590f6b33eee4c541497104521836ab0bf983c76e58a0e0d62"
     },
     "2001": {
       "tag_id": "T0004841",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004841",
-      "pages_visited": 1,
-      "work_count": 100,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 5,
       "declared_work_count": 100,
       "official_json_work_count": 100,
-      "official_json_response_count": 5
+      "work_count": 100,
+      "content_sha256": "bf47ac31619a77696eb73af78936745c996f69efb9388f76846b5db727f4106c"
     },
     "2002": {
       "tag_id": "T0004825",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004825",
-      "pages_visited": 1,
-      "work_count": 110,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 6,
       "declared_work_count": 110,
       "official_json_work_count": 110,
-      "official_json_response_count": 6
+      "work_count": 110,
+      "content_sha256": "a2e755e13bb2d71e44da99b8b6f48bc3e6470c8dd4bd35f8776b111a71c8fa4c"
     },
     "2003": {
       "tag_id": "T0004842",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004842",
-      "pages_visited": 1,
-      "work_count": 94,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 5,
       "declared_work_count": 94,
       "official_json_work_count": 94,
-      "official_json_response_count": 5
+      "work_count": 94,
+      "content_sha256": "8e5a337aa84c58850b4ad02cba4a92fd163e2c4bc05b04412261ea58c9654d19"
     },
     "2004": {
       "tag_id": "T0004844",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004844",
-      "pages_visited": 1,
-      "work_count": 128,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 7,
       "declared_work_count": 128,
       "official_json_work_count": 128,
-      "official_json_response_count": 7
+      "work_count": 128,
+      "content_sha256": "fac9ca533fd0f46549af9c3a7bbc8a0ab058015801a7d280b3e9704153a4b1ae"
     },
     "2005": {
       "tag_id": "T0004840",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004840",
-      "pages_visited": 1,
-      "work_count": 143,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 8,
       "declared_work_count": 143,
       "official_json_work_count": 143,
-      "official_json_response_count": 8
+      "work_count": 143,
+      "content_sha256": "72d43dbd48eaec85b43a52df33d46cf4dbb305014c628a8914497649a8d1db20"
     },
     "2006": {
       "tag_id": "T0004831",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004831",
-      "pages_visited": 1,
-      "work_count": 174,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 9,
       "declared_work_count": 174,
       "official_json_work_count": 174,
-      "official_json_response_count": 9
+      "work_count": 174,
+      "content_sha256": "5295221624ba062a7728e70824cd626455b35cdd1e674271b26ef05a868e05d6"
     },
     "2007": {
       "tag_id": "T0004832",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004832",
-      "pages_visited": 1,
-      "work_count": 195,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 10,
       "declared_work_count": 195,
       "official_json_work_count": 195,
-      "official_json_response_count": 10
+      "work_count": 195,
+      "content_sha256": "9ec2e215c899e84f98e00e7f1119752a333cb14e11a77968a3748892591bd3db"
     },
     "2008": {
       "tag_id": "T0004830",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004830",
-      "pages_visited": 1,
-      "work_count": 169,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 9,
       "declared_work_count": 169,
       "official_json_work_count": 169,
-      "official_json_response_count": 9
+      "work_count": 169,
+      "content_sha256": "6c3aea133e234403957ec4f3dabf2bec23cfee301b7153982c5875f601587797"
     },
     "2009": {
       "tag_id": "T0004834",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004834",
-      "pages_visited": 1,
-      "work_count": 150,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 8,
       "declared_work_count": 150,
       "official_json_work_count": 150,
-      "official_json_response_count": 8
+      "work_count": 150,
+      "content_sha256": "2885e36b9e0488dd2d33186efcaad60d412d6ea0d723a505cf06f53135f7405b"
     },
     "2010": {
       "tag_id": "T0004822",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004822",
-      "pages_visited": 1,
-      "work_count": 156,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 8,
       "declared_work_count": 156,
       "official_json_work_count": 156,
-      "official_json_response_count": 8
+      "work_count": 156,
+      "content_sha256": "58924c47c6c09b194941b1ad04403ba60b31db9fcc5eedbc016c5031351a4dc0"
     },
     "2011": {
       "tag_id": "T0004827",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004827",
-      "pages_visited": 1,
-      "work_count": 182,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 10,
       "declared_work_count": 182,
       "official_json_work_count": 182,
-      "official_json_response_count": 10
+      "work_count": 182,
+      "content_sha256": "f04dbfacf22ff460ce29b1c8a8ec9a81da9eb86becea40544451d5ba9fa6953d"
     },
     "2012": {
       "tag_id": "T0004835",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004835",
-      "pages_visited": 1,
-      "work_count": 202,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 11,
       "declared_work_count": 202,
       "official_json_work_count": 202,
-      "official_json_response_count": 11
+      "work_count": 202,
+      "content_sha256": "3bf8bd90c6017a06ab24db0b09f11e453bab2906af4d412ba22aadaddab03134"
     },
     "2013": {
       "tag_id": "T0004826",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004826",
-      "pages_visited": 1,
-      "work_count": 240,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 12,
       "declared_work_count": 240,
       "official_json_work_count": 240,
-      "official_json_response_count": 12
+      "work_count": 240,
+      "content_sha256": "4b16018709807d7fb23f589ff6a8794fcc153872171e7434f245b6d2610db4de"
     },
     "2014": {
       "tag_id": "T0004823",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004823",
-      "pages_visited": 1,
-      "work_count": 264,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 14,
       "declared_work_count": 264,
       "official_json_work_count": 264,
-      "official_json_response_count": 14
+      "work_count": 264,
+      "content_sha256": "8debf328f36007932b0ebcbae9cd8f8f357903f8d78a188dc56abfce8a0aac60"
     },
     "2015": {
       "tag_id": "T0004829",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004829",
-      "pages_visited": 1,
-      "work_count": 293,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 15,
       "declared_work_count": 293,
       "official_json_work_count": 293,
-      "official_json_response_count": 15
+      "work_count": 293,
+      "content_sha256": "24cbc99bd0b685956a6d020e373ab64239f0913bfb11d1cf03468b211a416a31"
     },
     "2016": {
       "tag_id": "T0007957",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0007957",
-      "pages_visited": 1,
-      "work_count": 362,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 19,
       "declared_work_count": 362,
       "official_json_work_count": 362,
-      "official_json_response_count": 19
+      "work_count": 362,
+      "content_sha256": "e97de0edeb0780155806111dc0fd0ff0092208e8d8cc5e1b82c774f94a40c882"
     },
     "2017": {
       "tag_id": "T0009634",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0009634",
-      "pages_visited": 1,
-      "work_count": 349,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 18,
       "declared_work_count": 349,
       "official_json_work_count": 349,
-      "official_json_response_count": 18
+      "work_count": 349,
+      "content_sha256": "0cd43e8de17b1d99341507e1b08fe4d13ee0b19f3f286dc471a17307283f6a28"
     },
     "2018": {
       "tag_id": "T0011025",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0011025",
-      "pages_visited": 1,
-      "work_count": 397,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 20,
       "declared_work_count": 397,
       "official_json_work_count": 397,
-      "official_json_response_count": 20
+      "work_count": 397,
+      "content_sha256": "af7a0ddcc905c0d8ad94ec44c3fe79e0d466837a233d8befc3dd406dc139caf8"
     },
     "2019": {
       "tag_id": "T0012282",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0012282",
-      "pages_visited": 1,
-      "work_count": 407,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 21,
       "declared_work_count": 407,
       "official_json_work_count": 407,
-      "official_json_response_count": 21
+      "work_count": 407,
+      "content_sha256": "becf41f2ef74837d8b00cf112d49fa3f71e3a5bda2d0c0007f64367f64dd8cb8"
     },
     "2020": {
       "tag_id": "T0013405",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013405",
-      "pages_visited": 1,
-      "work_count": 313,
-      "declared_work_count": 313,
-      "official_json_work_count": 313,
-      "official_json_response_count": 16
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 16,
+      "declared_work_count": 314,
+      "official_json_work_count": 314,
+      "work_count": 314,
+      "content_sha256": "7c45dccdcddd677f129b8d5a7da12e3d4491513960bafc67c50f97bdc4074fdc"
     },
     "2021": {
       "tag_id": "T0015372",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015372",
-      "pages_visited": 1,
-      "work_count": 415,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 21,
       "declared_work_count": 415,
       "official_json_work_count": 415,
-      "official_json_response_count": 21
+      "work_count": 415,
+      "content_sha256": "f07cda0279e7908abbeda5fd2b169d75ffd1cb99306a113da235e4fcbc0629e1"
     },
     "2022": {
       "tag_id": "T0016529",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0016529",
-      "pages_visited": 1,
-      "work_count": 382,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 20,
       "declared_work_count": 382,
       "official_json_work_count": 382,
-      "official_json_response_count": 20
+      "work_count": 382,
+      "content_sha256": "351371e80282f26a9ba91f2b97860c0b2e3bfcc48972594e7df5160123331476"
     },
     "2023": {
       "tag_id": "T0017900",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0017900",
-      "pages_visited": 1,
-      "work_count": 397,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 20,
       "declared_work_count": 397,
       "official_json_work_count": 397,
-      "official_json_response_count": 20
+      "work_count": 397,
+      "content_sha256": "2241213e96b385700cf05d4fca87eb1ce7bd683b36fceb28ad5c753395b4a6d1"
     },
     "2024": {
       "tag_id": "T0019675",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0019675",
-      "pages_visited": 1,
-      "work_count": 397,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 20,
       "declared_work_count": 397,
       "official_json_work_count": 397,
-      "official_json_response_count": 20
+      "work_count": 397,
+      "content_sha256": "28975d30730b1908af247cb447bc01243a6e16cd6f24dacfc22555e2470426b4"
     },
     "2025": {
       "tag_id": "T0021150",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0021150",
-      "pages_visited": 1,
-      "work_count": 307,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 16,
       "declared_work_count": 307,
       "official_json_work_count": 307,
-      "official_json_response_count": 16
+      "work_count": 307,
+      "content_sha256": "4008f484f3dfedbdd847826e31ee10ada9cc1cd665ec6da200e3735b69e562e8"
     },
     "2026": {
       "tag_id": "T0022893",
       "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0022893",
-      "pages_visited": 1,
-      "work_count": 213,
+      "transport": "direct-official-json",
+      "api_endpoint": "/animestore/rest/WS000106",
+      "api_page_size": 20,
+      "official_json_response_count": 11,
       "declared_work_count": 213,
       "official_json_work_count": 213,
-      "official_json_response_count": 11
+      "work_count": 213,
+      "content_sha256": "517a1a14b36aa004ec36b6c34d722b98eca25ad2965f5acc45c86a1d8d851c44"
     }
   },
+  "warnings": [],
   "integrity": {
     "duplicate_work_ids_within_year": 0,
     "missing_titles": 0,
     "empty_years": 0,
     "official_count_mismatches": 0,
-    "non_official_titles": 0
+    "non_official_titles": 0,
+    "missing_official_favorite_counts": 0,
+    "missing_official_my_list_counts": 0
   }
 }
