@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   buildAttributeRecord,
   extractOriginalCredit,
+  inferOntologyFacets,
   inferPrimaryGenre,
   inferSourceOrigin,
   normalizeOfficialGenres,
@@ -52,6 +53,36 @@ test('official action genre becomes canonical battle/action tag', () => {
   assert.deepEqual(record.canonical_tags, ['バトル・アクション', 'ドラマ・青春']);
   assert.equal(record.source_origin, '漫画');
   assert.equal(record.production_year, 2024);
+  assert.deepEqual(record.ontology_facets.source, ['漫画']);
+});
+
+test('ontology facets classify setting, theme and motif independently', () => {
+  const facets = inferOntologyFacets({
+    officialGenres: ['SF/ファンタジー', 'ドラマ/青春'],
+    title: '星空学園バンド',
+    synopsis: '宇宙の学園で仲間と音楽に挑戦し、魔法の謎を追う。',
+    sourceOrigin: '漫画',
+    primaryGenre: 'SF・ファンタジー',
+  });
+  assert.deepEqual(facets.source, ['漫画']);
+  assert.deepEqual(facets.setting, ['学園', '宇宙']);
+  assert.deepEqual(facets.theme, ['友情・仲間', '成長・挑戦', '音楽・アイドル']);
+  assert.deepEqual(facets.motif, ['魔法']);
+});
+
+test('derived ontology tags are included in canonical tags', () => {
+  const record = buildAttributeRecord({
+    workId: '3', title: '異世界厨房',
+    detailUrl: 'https://animestore.docomo.ne.jp/animestore/ci_pc?workId=3',
+    officialGenres: ['SF/ファンタジー', '日常/ほのぼの'],
+    synopsis: '異世界の食堂で仲間と料理を作る。',
+    staffText: '原作:作者（電撃文庫刊）／監督:監督名',
+  });
+  assert.deepEqual(record.canonical_tags, [
+    '異世界・ハイファンタジー', 'SF・ファンタジー', '日常・ほのぼの',
+    '異世界', '友情・仲間', '料理・グルメ',
+  ]);
+  assert.equal(record.schema_version, '1.1.0');
 });
 
 test('missing production year remains null', () => {
