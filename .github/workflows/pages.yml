@@ -46,7 +46,7 @@ jobs:
           test -s data/likes/2024.tsv
           node --check app.js
           python -m json.tool data/manifest.json > /dev/null
-          grep -F '2026-07-23-pastel-watercolor-1' index.html
+          grep -F '2026-07-23-pastel-watercolor-2' index.html
           grep -F -- '--lavender:' styles.css
           grep -F -- '--rose:' styles.css
           grep -F -- '--mint:' styles.css

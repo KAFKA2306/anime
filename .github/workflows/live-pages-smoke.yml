@@ -1,13 +1,6 @@
 name: Verify live GitHub Pages
 
 on:
-  pull_request:
-    paths:
-      - index.html
-      - styles.css
-      - app.js
-      - data/**
-      - .github/workflows/live-pages-smoke.yml
   push:
     branches:
       - main
@@ -16,6 +9,7 @@ on:
       - styles.css
       - app.js
       - data/**
+      - .github/workflows/pages.yml
       - .github/workflows/live-pages-smoke.yml
   workflow_dispatch:
 
@@ -26,9 +20,8 @@ jobs:
   verify-live:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Pages propagation on main
-        if: github.event_name == 'push'
-        run: sleep 30
+      - name: Wait for Pages propagation
+        run: sleep 45
 
       - name: Verify production HTML and assets
         shell: bash
@@ -38,22 +31,25 @@ jobs:
           tmp="$(mktemp -d)"
 
           curl --fail --silent --show-error --location \
-            --retry 10 --retry-all-errors --retry-delay 6 \
+            --retry 15 --retry-all-errors --retry-delay 6 \
+            -D "$tmp/index.headers" \
             "$base/?smoke=${GITHUB_SHA}" -o "$tmp/index.html"
-          grep -F '2026-07-23-pastel-watercolor-1' "$tmp/index.html"
+          sed -n '1,30p' "$tmp/index.headers"
+          grep -nE 'theme-color|app-build|<title>|stylesheet' "$tmp/index.html" || true
+          grep -F '2026-07-23-pastel-watercolor-2' "$tmp/index.html"
           grep -F 'id="yearSelect"' "$tmp/index.html"
           grep -F 'id="searchInput"' "$tmp/index.html"
           grep -F 'id="workGrid"' "$tmp/index.html"
 
           curl --fail --silent --show-error --location \
-            --retry 10 --retry-all-errors --retry-delay 6 \
+            --retry 15 --retry-all-errors --retry-delay 6 \
             "$base/styles.css?smoke=${GITHUB_SHA}" -o "$tmp/styles.css"
           grep -F -- '--lavender:' "$tmp/styles.css"
           grep -F -- '--rose:' "$tmp/styles.css"
           grep -F -- '--mint:' "$tmp/styles.css"
 
           curl --fail --silent --show-error --location \
-            --retry 10 --retry-all-errors --retry-delay 6 \
+            --retry 15 --retry-all-errors --retry-delay 6 \
             "$base/data/manifest.json?smoke=${GITHUB_SHA}" -o "$tmp/manifest.json"
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
