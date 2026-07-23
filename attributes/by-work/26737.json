@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26737",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26737",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2024,
+  "original_credit": "くろかた(MFブックス",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "コメディ・ギャグ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ブックス"
+      ],
+      "evidence_text": "くろかた(MFブックス",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26737"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "異世界",
+        "召喚",
+        "勇者",
+        "魔王"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26737"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26737"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27033",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2024,
+  "original_credit": "matoba(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "SF・ファンタジー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "matoba(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
+    }
+  }
+}

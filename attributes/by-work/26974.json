@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26974",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26974",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2024,
+  "original_credit": "暁なつめ(株式会社KADOKAWA角川スニーカー文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "暁なつめ(株式会社KADOKAWA角川スニーカー文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26974"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生",
+        "魔王",
+        "冒険者"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26974"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26974"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27064",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27064",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": "にいさとる『WIND BREAKER』(講談社『マガジンポケット』連載)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マガジン"
+      ],
+      "evidence_text": "にいさとる『WIND BREAKER』(講談社『マガジンポケット』連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27064"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27064"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27064"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27386",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27386",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 2024,
+  "original_credit": "和月伸宏『るろうに剣心 -明治剣客浪漫譚-』(集英社 ジャンプコミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "歴史・戦記"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "和月伸宏『るろうに剣心 -明治剣客浪漫譚-』(集英社 ジャンプコミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27386"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27386"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27386"
+    }
+  }
+}

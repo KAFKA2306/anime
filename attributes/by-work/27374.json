@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27374",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27374",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "若木民喜「結婚するって、本当ですか 365 Days To The Wedding」(小学館「ビッグスピリッツコミックス」刊)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "若木民喜「結婚するって、本当ですか 365 Days To The Wedding」(小学館「ビッグスピリッツコミックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27374"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27374"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27374"
+    }
+  }
+}

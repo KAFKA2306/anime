@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27629",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "四葉夕卜・小川亮(講談社「ヤングマガジン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マガジン",
+        "ヤングマガジン"
+      ],
+      "evidence_text": "四葉夕卜・小川亮(講談社「ヤングマガジン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
+    }
+  }
+}

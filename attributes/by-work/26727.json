@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26727",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26727",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "アズマサワヨシ(「電撃マオウ」連載",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "アズマサワヨシ(「電撃マオウ」連載",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26727"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26727"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26727"
+    }
+  }
+}

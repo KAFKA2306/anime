@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "27382",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27382",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ショート"
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ショート"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27382"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27382"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27382"
+    }
+  }
+}

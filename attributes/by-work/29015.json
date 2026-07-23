@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "29015",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29015",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "敷村良子 「がんばっていきまっしょい」(幻冬舎文庫)(松山市主催第4回坊っちゃん文学賞大賞受賞作品)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ドラマ・青春"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "敷村良子 「がんばっていきまっしょい」(幻冬舎文庫)(松山市主催第4回坊っちゃん文学賞大賞受賞作品)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29015"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29015"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29015"
+    }
+  }
+}

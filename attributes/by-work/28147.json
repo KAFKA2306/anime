@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "28147",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28147",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "キッズ・ファミリー"
+  ],
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28147"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28147"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28147"
+    }
+  }
+}

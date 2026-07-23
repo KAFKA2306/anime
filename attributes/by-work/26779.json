@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "26779",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26779",
+  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2024,
+  "original_credit": "硝音あや『百千さん家のあやかし王子』(あすかコミックスDX",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "恋愛・ラブコメ"
+  ],
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "硝音あや『百千さん家のあやかし王子』(あすかコミックスDX",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26779"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26779"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-genre-normalization",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26779"
+    }
+  }
+}
