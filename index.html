@@ -5,8 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="dアニメストアの公式年別タグを基にした、年別アニメ作品ブラウザ">
   <meta name="theme-color" content="#0f172a">
+  <meta name="app-build" content="2026-07-23-tag-visibility-1">
   <title>Anime Catalogue | 年別作品ブラウザ</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=20260723-tag-visibility-1">
+  <style>
+    .work-card__tags:not([hidden]) {
+      display: flex;
+      align-items: center;
+      padding: 0.48rem;
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 10px;
+      background: rgba(14, 165, 233, 0.07);
+    }
+    .work-card__tags:not([hidden])::before {
+      content: "TAGS";
+      flex: 0 0 auto;
+      margin-right: 0.12rem;
+      color: #7dd3fc;
+      font-size: 0.58rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+    .work-card__tags span {
+      border-color: rgba(125, 211, 252, 0.36);
+      color: #e0f2fe;
+      background: rgba(14, 165, 233, 0.16);
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#catalogue">作品一覧へ移動</a>
@@ -132,6 +159,6 @@
     </article>
   </template>
 
-  <script type="module" src="./app.js"></script>
+  <script type="module" src="./app.js?v=20260723-tag-visibility-1"></script>
 </body>
 </html>
