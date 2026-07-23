@@ -40,18 +40,46 @@ jobs:
 
           curl --fail --silent --show-error --location \
             --retry 10 --retry-all-errors --retry-delay 6 \
+            -D "$tmp/index.headers" \
             "$base/?smoke=${GITHUB_SHA}" -o "$tmp/index.html"
-          grep -F '2026-07-23-pastel-watercolor-1' "$tmp/index.html"
-          grep -F 'id="yearSelect"' "$tmp/index.html"
-          grep -F 'id="searchInput"' "$tmp/index.html"
-          grep -F 'id="workGrid"' "$tmp/index.html"
+
+          echo "=== Live response headers ==="
+          sed -n '1,30p' "$tmp/index.headers"
+          echo "=== Live page identity ==="
+          grep -nE 'theme-color|app-build|<title>|stylesheet' "$tmp/index.html" || true
+
+          INDEX="$tmp/index.html" python - <<'PY'
+          import os
+          from pathlib import Path
+
+          text = Path(os.environ["INDEX"]).read_text(encoding="utf-8")
+          expected = [
+              "2026-07-23-pastel-watercolor-1",
+              'id="yearSelect"',
+              'id="searchInput"',
+              'id="workGrid"',
+          ]
+          missing = [marker for marker in expected if marker not in text]
+          if missing:
+              raise SystemExit(f"Missing live HTML markers: {missing}")
+          PY
 
           curl --fail --silent --show-error --location \
             --retry 10 --retry-all-errors --retry-delay 6 \
             "$base/styles.css?smoke=${GITHUB_SHA}" -o "$tmp/styles.css"
-          grep -F -- '--lavender:' "$tmp/styles.css"
-          grep -F -- '--rose:' "$tmp/styles.css"
-          grep -F -- '--mint:' "$tmp/styles.css"
+          echo "=== Live design tokens ==="
+          grep -nE -- '--(blue|lavender|rose|mint|apricot):' "$tmp/styles.css" || true
+
+          CSS="$tmp/styles.css" python - <<'PY'
+          import os
+          from pathlib import Path
+
+          text = Path(os.environ["CSS"]).read_text(encoding="utf-8")
+          expected = ["--lavender:", "--rose:", "--mint:"]
+          missing = [marker for marker in expected if marker not in text]
+          if missing:
+              raise SystemExit(f"Missing live CSS tokens: {missing}")
+          PY
 
           curl --fail --silent --show-error --location \
             --retry 10 --retry-all-errors --retry-delay 6 \
