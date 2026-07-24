@@ -1,0 +1,23 @@
+name: Verify live Pages browser E2E
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/e2e.mjs
+      - scripts/record-e2e.sh
+      - .github/workflows/live-pages-browser-e2e.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          npm install --no-save --no-package-lock playwright
+          npx playwright install --with-deps chromium
+          node scripts/e2e.mjs
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/record-e2e.sh
