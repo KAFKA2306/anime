@@ -2,22 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="dアニメストアの公式年別タグを基にした、年別アニメ作品ブラウザ">
   <meta name="theme-color" content="#fbfaf7">
-  <meta name="app-build" content="2026-07-23-pastel-watercolor-2">
+  <meta name="app-build" content="2026-07-24-tag-ranking-1">
   <title>Anime Catalogue | 年別作品ブラウザ</title>
   <link rel="stylesheet" href="./styles.css?v=20260723-pastel-watercolor-2">
+  <link rel="stylesheet" href="./tag-ranking.css?v=20260724-tag-ranking-1">
 </head>
 <body>
-  <a class="skip-link" href="#catalogue">作品一覧へ移動</a>
+  <a class="skip-link" href="#catalogueList">作品一覧へ移動</a>
 
   <header class="hero">
     <div class="hero__inner">
       <div>
         <p class="eyebrow">OFFICIAL CATALOGUE VIEW</p>
         <h1>年別アニメ作品ブラウザ</h1>
-        <p class="lead">dアニメストアの公開年別タグから取得した作品を、検索・並び替え・属性オントロジー・ブラウザ内の閲覧傾向で確認します。</p>
+        <p class="lead">公式カタログの「気になる」登録数と属性タグを、年度別・タグ別ランキングで確認できます。</p>
       </div>
       <a id="sourceLink" class="source-link" href="https://animestore.docomo.ne.jp/animestore/tag_sel_pc" target="_blank" rel="noreferrer">公式データ元 ↗</a>
     </div>
@@ -31,23 +32,31 @@
       <article class="metric"><span class="metric__label">表示中</span><strong id="visibleCount" class="metric__value">—</strong></article>
     </section>
 
-    <section class="control-panel" aria-label="作品絞り込み">
-      <div class="control-grid">
-        <label class="field"><span>年度</span><select id="yearSelect" aria-label="年度を選択"></select></label>
-        <label class="field field--search"><span>作品名・タグ検索</span><input id="searchInput" type="search" inputmode="search" placeholder="例：攻殻機動隊、学園、音楽" autocomplete="off"></label>
-        <label class="field"><span>並び順</span><select id="sortSelect"><option value="official">公式掲載順</option><option value="title-asc">作品名 A→Z</option><option value="title-desc">作品名 Z→A</option></select></label>
-      </div>
-
-      <div class="preference-box">
-        <div>
-          <p class="preference-box__title">嗜好除外プロファイル</p>
-          <p class="preference-box__description">次の属性のいずれかに一致する作品を除外します。</p>
-          <div class="chips" aria-label="除外条件"><span>原作：Web小説（なろう・カクヨム系）</span><span>主ジャンル：異世界・ハイファンタジー</span><span>正規タグ：バトル・アクション</span></div>
+    <details id="filterPanel" class="control-panel responsive-control" open>
+      <summary class="responsive-control__summary"><span>検索・絞り込み</span><span id="filterSummary">2024年</span></summary>
+      <div class="responsive-control__body">
+        <div class="control-grid">
+          <label class="field"><span>年度</span><select id="yearSelect" aria-label="年度を選択"></select></label>
+          <label class="field field--search"><span>作品名・タグ検索</span><input id="searchInput" type="search" inputmode="search" placeholder="例：攻殻機動隊、学園、音楽" autocomplete="off"></label>
+          <label class="field"><span>並び順</span><select id="sortSelect"><option value="official">公式掲載順</option><option value="title-asc">作品名 A→Z</option><option value="title-desc">作品名 Z→A</option></select></label>
         </div>
-        <label class="toggle"><input id="preferenceToggle" type="checkbox" checked><span>除外を適用</span></label>
+
+        <div id="activeFilterBar" class="active-filter" hidden>
+          <div><span class="active-filter__label">TAG RANKING</span><strong id="activeFilterText"></strong></div>
+          <button id="clearFilterButton" class="secondary-button active-filter__clear" type="button">タグを解除</button>
+        </div>
+
+        <div class="preference-box">
+          <div>
+            <p class="preference-box__title">嗜好除外プロファイル</p>
+            <p class="preference-box__description">次の属性のいずれかに一致する作品を除外します。</p>
+            <div class="chips preference-chips" aria-label="除外条件"><span>原作：Web小説（なろう・カクヨム系）</span><span>主ジャンル：異世界・ハイファンタジー</span><span>正規タグ：バトル・アクション</span></div>
+          </div>
+          <label class="toggle"><input id="preferenceToggle" type="checkbox" checked><span>除外を適用</span></label>
+        </div>
+        <p id="metadataNotice" class="notice" role="status"></p>
       </div>
-      <p id="metadataNotice" class="notice" role="status"></p>
-    </section>
+    </details>
 
     <section id="recommendations" class="recommendations" aria-labelledby="recommendationTitle" hidden>
       <div class="recommendations__head">
@@ -58,7 +67,7 @@
       <div id="recommendationGrid" class="recommendation-grid"></div>
     </section>
 
-    <section class="catalogue-head">
+    <section id="catalogueList" class="catalogue-head" tabindex="-1">
       <div><p id="yearKicker" class="eyebrow">YEAR</p><h2 id="yearTitle">作品一覧</h2></div>
       <p id="resultSummary" class="result-summary" aria-live="polite"></p>
     </section>
@@ -66,8 +75,14 @@
     <div id="loadingState" class="state-card" aria-live="polite">作品データを読み込んでいます…</div>
     <div id="errorState" class="state-card state-card--error" hidden></div>
     <div id="emptyState" class="state-card" hidden>条件に一致する作品がありません。</div>
-    <section id="workGrid" class="work-grid" aria-label="作品一覧"></section>
+    <section id="workGrid" class="work-grid" aria-label="作品一覧" aria-busy="false"></section>
   </main>
+
+  <div class="mobile-status" aria-live="polite">
+    <span id="mobileStatusText">読み込み中…</span>
+    <button id="mobileClearButton" type="button" hidden>タグ解除</button>
+    <a href="#catalogueList" aria-label="作品一覧の先頭へ移動">↑</a>
+  </div>
 
   <footer class="footer">
     <p>公開カタログ情報を表示しています。配信状況・作品情報の最終確認は公式ページで行ってください。</p>
@@ -77,12 +92,13 @@
   <template id="workCardTemplate">
     <article class="work-card">
       <a class="work-card__link" target="_blank" rel="noreferrer">
-        <div class="work-card__image-wrap"><img class="work-card__image" loading="lazy" decoding="async" alt=""><div class="work-card__image-fallback" aria-hidden="true">NO IMAGE</div></div>
+        <div class="work-card__image-wrap"><img class="work-card__image" loading="lazy" decoding="async" fetchpriority="low" width="640" height="360" alt=""><div class="work-card__image-fallback" aria-hidden="true">NO IMAGE</div></div>
         <div class="work-card__body"><p class="work-card__year"></p><h3 class="work-card__title"></h3><div class="work-card__tags chips" aria-label="作品タグ"></div><p class="work-card__meta"></p><p class="work-card__reason" hidden></p></div>
       </a>
     </article>
   </template>
 
   <script type="module" src="./app.js?v=20260723-pastel-watercolor-2"></script>
+  <script type="module" src="./tag-ranking.js?v=20260724-tag-ranking-1"></script>
 </body>
 </html>

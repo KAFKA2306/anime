@@ -8,6 +8,8 @@ on:
       - index.html
       - styles.css
       - app.js
+      - tag-ranking.css
+      - tag-ranking.js
       - data/**
       - .github/workflows/pages.yml
   pull_request:
@@ -15,6 +17,8 @@ on:
       - index.html
       - styles.css
       - app.js
+      - tag-ranking.css
+      - tag-ranking.js
       - data/**
       - .github/workflows/pages.yml
   workflow_dispatch:
@@ -39,22 +43,36 @@ jobs:
           test -s index.html
           test -s styles.css
           test -s app.js
+          test -s tag-ranking.css
+          test -s tag-ranking.js
           test -s data/manifest.json
           test -d data/by-year
           test -s data/likes/2024.tsv
           node --check app.js
+          node --check tag-ranking.js
           python -m json.tool data/manifest.json > /dev/null
-          grep -F '2026-07-23-pastel-watercolor-2' index.html
+          grep -F '2026-07-24-tag-ranking-1' index.html
+          grep -F 'tag-ranking.css' index.html
+          grep -F 'tag-ranking.js' index.html
+          grep -F 'id="activeFilterBar"' index.html
+          grep -F 'id="mobileStatusText"' index.html
+          grep -F 'class="work-card__link"' index.html
           grep -F -- '--lavender:' styles.css
           grep -F -- '--rose:' styles.css
           grep -F -- '--mint:' styles.css
+          grep -F 'normalize(tag) === normalize(activeTag)' tag-ranking.js
+          grep -F 'タグ内 #' tag-ranking.js
+          grep -F "url.searchParams.set('tag'" tag-ranking.js
+          grep -F 'content-visibility:auto' tag-ranking.css
+          grep -F '.responsive-control' tag-ranking.css
+          grep -F '.mobile-status' tag-ranking.css
 
       - name: Build Pages site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir -p _site/data/by-year _site/data/likes
-          cp index.html styles.css app.js _site/
+          cp index.html styles.css app.js tag-ranking.css tag-ranking.js _site/
           cp data/manifest.json _site/data/
           cp data/by-year/*.json _site/data/by-year/
           cp data/likes/*.tsv _site/data/likes/

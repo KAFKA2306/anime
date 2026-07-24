@@ -1,9 +1,6 @@
 name: Verify live GitHub Pages
 
 on:
-  pull_request:
-    paths:
-      - .github/workflows/live-pages-smoke.yml
   push:
     branches:
       - main
@@ -11,6 +8,8 @@ on:
       - index.html
       - styles.css
       - app.js
+      - tag-ranking.css
+      - tag-ranking.js
       - data/**
       - .github/workflows/pages.yml
       - .github/workflows/live-pages-smoke.yml
@@ -46,8 +45,8 @@ jobs:
           matched=false
           for attempt in $(seq 1 36); do
             curl --fail --silent --show-error --location \
-              "$base/?smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/index.html"
-            if grep -Fq '2026-07-23-pastel-watercolor-2' "$tmp/index.html"; then
+              "$base/?year=2024&tag=SF%E3%83%BB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC&smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/index.html"
+            if grep -Fq '2026-07-24-tag-ranking-1' "$tmp/index.html"; then
               matched=true
               break
             fi
@@ -59,6 +58,10 @@ jobs:
           grep -F 'id="yearSelect"' "$tmp/index.html"
           grep -F 'id="searchInput"' "$tmp/index.html"
           grep -F 'id="workGrid"' "$tmp/index.html"
+          grep -F 'id="activeFilterBar"' "$tmp/index.html"
+          grep -F 'id="mobileStatusText"' "$tmp/index.html"
+          grep -F 'tag-ranking.css' "$tmp/index.html"
+          grep -F 'tag-ranking.js' "$tmp/index.html"
 
           curl --fail --silent --show-error --location \
             "$base/styles.css?smoke=${GITHUB_SHA}" -o "$tmp/styles.css"
@@ -67,7 +70,24 @@ jobs:
           grep -F -- '--mint:' "$tmp/styles.css"
 
           curl --fail --silent --show-error --location \
+            "$base/tag-ranking.css?smoke=${GITHUB_SHA}" -o "$tmp/tag-ranking.css"
+          grep -F 'content-visibility:auto' "$tmp/tag-ranking.css"
+          grep -F '.responsive-control' "$tmp/tag-ranking.css"
+          grep -F '.mobile-status' "$tmp/tag-ranking.css"
+
+          curl --fail --silent --show-error --location \
+            "$base/app.js?smoke=${GITHUB_SHA}" -o "$tmp/app.js"
+          node --check "$tmp/app.js"
+
+          curl --fail --silent --show-error --location \
+            "$base/tag-ranking.js?smoke=${GITHUB_SHA}" -o "$tmp/tag-ranking.js"
+          node --check "$tmp/tag-ranking.js"
+          grep -F 'normalize(tag) === normalize(activeTag)' "$tmp/tag-ranking.js"
+          grep -F 'タグ内 #' "$tmp/tag-ranking.js"
+          grep -F "url.searchParams.set('tag'" "$tmp/tag-ranking.js"
+
+          curl --fail --silent --show-error --location \
             "$base/data/manifest.json?smoke=${GITHUB_SHA}" -o "$tmp/manifest.json"
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
-          echo "Live Pages smoke test passed: $base/"
+          echo "Live Pages smoke test passed: $base/?year=2024&tag=SF・ファンタジー"
