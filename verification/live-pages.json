@@ -8,10 +8,31 @@
   "verified_at": "2026-07-24T15:20:03Z",
   "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30104814359",
   "checks": [
-    "production HTML build marker",
-    "year/search/grid/filter/mobile controls",
-    "base and tag-ranking CSS",
     "app.js and tag-ranking.js syntax and feature markers",
-    "data/manifest.json parse"
-  ]
+    "base and tag-ranking CSS",
+    "data/manifest.json parse",
+    "production HTML build marker",
+    "real Chromium tag click, URL transition, exact-match ranking and 390px responsive layout",
+    "year/search/grid/filter/mobile controls"
+  ],
+  "browser_e2e": {
+    "browser": "Chromium via Playwright",
+    "selected_tag": "原作:ライトノベル・小説",
+    "url_tag": "原作:ライトノベル・小説",
+    "ranking": {
+      "visible": 17,
+      "exact": true,
+      "descending": true,
+      "ranks": true
+    },
+    "viewport_390x844": {
+      "mobile": "flex",
+      "filter": "flex",
+      "columns": 1,
+      "overflow": false
+    }
+  },
+  "browser_verification_commit": "35c699f1065a45ad7362aa74d72c5fbaec5c539d",
+  "browser_verified_at": "2026-07-24T15:30:32Z",
+  "browser_workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30105524653"
 }
