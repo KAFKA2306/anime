@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "site": "https://kafka2306.github.io/anime/?year=2024",
+  "tag_example": "SF・ファンタジー",
+  "build": "2026-07-24-tag-ranking-1",
+  "deployed_source_commit": "06c79c88d6b4f6882a83167011e0bf764da00a2d",
+  "verification_workflow_commit": "a1e44018f926e05e9258a86634498af3f89a8de7",
+  "verified_at": "2026-07-24T15:20:03Z",
+  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30104814359",
+  "checks": [
+    "production HTML build marker",
+    "year/search/grid/filter/mobile controls",
+    "base and tag-ranking CSS",
+    "app.js and tag-ranking.js syntax and feature markers",
+    "data/manifest.json parse"
+  ]
+}
