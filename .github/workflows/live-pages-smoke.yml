@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: read
 
 jobs:
@@ -91,3 +91,40 @@ jobs:
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
           echo "Live Pages smoke test passed: $base/?year=2024&tag=SF・ファンタジー"
+
+      - name: Record verified deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          deployment_message="$(gh api "repos/${GITHUB_REPOSITORY}/commits/gh-pages" --jq '.commit.message')"
+          deployed_source_commit="${deployment_message#Deploy }"
+          verified_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          marker="$(mktemp)"
+          cat > "$marker" <<JSON
+          {
+            "status": "passed",
+            "site": "https://kafka2306.github.io/anime/?year=2024",
+            "tag_example": "SF・ファンタジー",
+            "build": "2026-07-24-tag-ranking-1",
+            "deployed_source_commit": "${deployed_source_commit}",
+            "verification_workflow_commit": "${GITHUB_SHA}",
+            "verified_at": "${verified_at}",
+            "workflow_run": "${run_url}",
+            "checks": [
+              "production HTML build marker",
+              "year/search/grid/filter/mobile controls",
+              "base and tag-ranking CSS",
+              "app.js and tag-ranking.js syntax and feature markers",
+              "data/manifest.json parse"
+            ]
+          }
+          JSON
+          encoded="$(base64 -w 0 "$marker")"
+          current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/contents/verification/live-pages.json?ref=main" --jq '.sha' 2>/dev/null || true)"
+          args=(--method PUT "repos/${GITHUB_REPOSITORY}/contents/verification/live-pages.json" -f message="Record live Pages verification for ${deployed_source_commit}" -f content="$encoded" -f branch=main)
+          if [[ -n "$current_sha" ]]; then
+            args+=(-f sha="$current_sha")
+          fi
+          gh api "${args[@]}" --jq '{commit: .commit.html_url, content: .content.html_url}'
