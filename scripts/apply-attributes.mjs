@@ -40,6 +40,7 @@ async function main() {
   const yearDir = path.join(DATA_DIR, 'by-year');
   const yearFiles = (await readdir(yearDir)).filter((name) => /^\d{4}\.json$/u.test(name)).sort();
   let appliedMembershipCount = 0;
+  const coverageByYear = {};
 
   for (const filename of yearFiles) {
     const file = path.join(yearDir, filename);
@@ -57,6 +58,7 @@ async function main() {
       total_count: payload.works.length,
       coverage_ratio: payload.works.length ? enrichedCount / payload.works.length : 0,
     };
+    coverageByYear[String(payload.year)] = payload.attribute_coverage;
     await writeJson(file, payload);
   }
 
@@ -71,6 +73,8 @@ async function main() {
   });
   await writeJson(worksPath, enrichedWorks);
 
+  const attributeRecords = [...attributes.values()];
+  const sourceClassifiedCount = attributeRecords.filter((record) => record.source_origin).length;
   const manifestPath = path.join(DATA_DIR, 'manifest.json');
   const manifest = await readJson(manifestPath);
   manifest.attributes = {
@@ -78,6 +82,10 @@ async function main() {
     cache_record_count: attributes.size,
     applied_canonical_count: appliedCanonicalCount,
     applied_membership_count: appliedMembershipCount,
+    coverage_ratio: works.length ? appliedCanonicalCount / works.length : 0,
+    source_classified_count: sourceClassifiedCount,
+    source_unknown_count: attributes.size - sourceClassifiedCount,
+    by_year: coverageByYear,
     fields: ['source_origin', 'primary_genre', 'canonical_tags', 'ontology_facets'],
     ontology_facets: ['source', 'genre', 'setting', 'theme', 'motif', 'format'],
     policy: 'Official detail metadata plus deterministic, auditable rules; unknown values remain null or empty.',
