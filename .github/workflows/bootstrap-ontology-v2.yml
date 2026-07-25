@@ -28,7 +28,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Reconstruct reviewed implementation
         run: |
@@ -40,7 +39,7 @@ jobs:
 
       - name: Install dependencies and Chromium
         run: |
-          npm ci
+          npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
 
       - name: Test ontology rules
