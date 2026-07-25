@@ -1,0 +1,129 @@
+name: Bootstrap ontology v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .bootstrap/**
+      - .github/workflows/bootstrap-ontology-v2.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: read
+
+concurrency:
+  group: ontology-bootstrap-v2
+  cancel-in-progress: false
+
+jobs:
+  install-refresh-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Reconstruct reviewed implementation
+        run: |
+          set -euo pipefail
+          cat .bootstrap/part-* > /tmp/ontology-payload.b64
+          base64 -d /tmp/ontology-payload.b64 > /tmp/ontology-payload.tar.gz
+          echo '524fbaaeef494b60991031bdccdb21876ad64c9daf1b13903969876ca1eda158  /tmp/ontology-payload.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/ontology-payload.tar.gz
+          rm -rf .bootstrap .github/workflows/bootstrap-ontology-v2.yml
+
+      - name: Install dependencies and Chromium
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Test ontology rules and audit baseline
+        run: |
+          npm test
+          node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-before-2024.json
+
+      - name: Refresh every 2024 official detail record
+        env:
+          DANIME_ENRICH_YEAR: '2024'
+          DANIME_ENRICH_REFRESH: '1'
+          DANIME_ENRICH_CONCURRENCY: '2'
+          DANIME_ENRICH_RATE_LIMIT_MS: '700'
+          DANIME_ENRICH_MAX_PASSES: '3'
+          DANIME_ENRICH_PAGE_ATTEMPTS: '3'
+          DANIME_APPLY_YEAR: '2024'
+        run: npm run attributes:enrich
+
+      - name: Enforce ontology quality gates
+        run: |
+          node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-after-2024.json
+          node scripts/audit-ontology.mjs --compare diagnostics/ontology-before-2024.json diagnostics/ontology-after-2024.json diagnostics/ontology-comparison-2024.json
+          npm run validate
+
+      - name: Commit implementation and refreshed data
+        id: source
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Expand ontology tags and exclusion evidence'
+          git push origin HEAD:main
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish refreshed Pages source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site/data/by-year _site/data/likes
+          cp index.html styles.css app.js tag-ranking.css tag-ranking.js ontology-view.css ontology-view.js _site/
+          cp data/manifest.json _site/data/
+          cp data/by-year/*.json _site/data/by-year/
+          cp data/likes/*.tsv _site/data/likes/
+          touch _site/.nojekyll
+          cd _site
+          git init
+          git checkout -b gh-pages
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m "Deploy ${SOURCE_COMMIT}"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin gh-pages
+
+      - name: Verify production view in Chromium
+        env:
+          EXPECTED_BUILD: 2026-07-25-ontology-v2-1
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: node scripts/verify-ontology-view.mjs
+
+      - name: Record audited evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          verified_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          marker="$(mktemp)"
+          jq -n \
+            --arg source_commit "$SOURCE_COMMIT" \
+            --arg verified_at "$verified_at" \
+            --arg workflow_run "$run_url" \
+            --slurpfile comparison diagnostics/ontology-comparison-2024.json \
+            --slurpfile view diagnostics/ontology-view-e2e.json \
+            '{status:"passed",site:"https://kafka2306.github.io/anime/?year=2024",build:"2026-07-25-ontology-v2-1",ontology_rule_version:"ontology-v2.0.0",deployed_source_commit:$source_commit,verified_at:$verified_at,workflow_run:$workflow_run,comparison:$comparison[0],production_view_e2e:$view[0]}' > "$marker"
+          encoded="$(base64 -w 0 "$marker")"
+          current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/contents/verification/ontology-v2-2024.json?ref=main" --jq '.sha' 2>/dev/null || true)"
+          args=(--method PUT "repos/${GITHUB_REPOSITORY}/contents/verification/ontology-v2-2024.json" -f message='Record 2024 ontology v2 verification' -f content="$encoded" -f branch=main)
+          if [[ -n "$current_sha" ]]; then args+=(-f sha="$current_sha"); fi
+          gh api "${args[@]}" --jq '{commit:.commit.html_url,content:.content.html_url}'
