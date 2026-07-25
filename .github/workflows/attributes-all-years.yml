@@ -1,0 +1,123 @@
+name: Backfill all-year anime attributes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/attributes-all-years.yml
+      - scripts/enrich-official-details.mjs
+      - scripts/export-shard-attributes.mjs
+      - scripts/verify-attribute-coverage.mjs
+      - scripts/apply-attributes.mjs
+      - scripts/lib/ontology.mjs
+      - scripts/lib/sharding.mjs
+      - tests/sharding.test.mjs
+      - package.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anime-all-year-attributes
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    env:
+      DANIME_ENRICH_SHARD_COUNT: '16'
+      DANIME_ENRICH_SHARD_INDEX: ${{ matrix.shard }}
+      DANIME_ENRICH_LIMIT: '0'
+      DANIME_ENRICH_CONCURRENCY: '2'
+      DANIME_ENRICH_RATE_LIMIT_MS: '1000'
+      DANIME_ENRICH_MAX_PASSES: '3'
+      DANIME_ENRICH_PAGE_ATTEMPTS: '3'
+      DANIME_ENRICH_FAIL_ON_UNRESOLVED: '1'
+      DANIME_ATTRIBUTE_EXPORT_DIR: dist-attributes
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies and Chromium
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Test deterministic ontology and sharding rules
+        run: npm test
+
+      - name: Enrich this catalogue shard from official detail pages
+        run: node scripts/enrich-official-details.mjs
+
+      - name: Export and verify this shard
+        run: npm run attributes:export-shard
+
+      - name: Upload verified shard
+        uses: actions/upload-artifact@v4
+        with:
+          name: anime-attributes-shard-${{ matrix.shard }}
+          path: dist-attributes/
+          if-no-files-found: error
+          retention-days: 7
+
+  integrate:
+    needs: enrich
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Replace the cache with the complete verified shard set
+        run: |
+          rm -rf attributes/by-work diagnostics/shards
+          mkdir -p attributes/by-work diagnostics/shards
+
+      - name: Download and merge verified shards
+        uses: actions/download-artifact@v4
+        with:
+          pattern: anime-attributes-shard-*
+          path: .
+          merge-multiple: true
+
+      - name: Apply all attributes to canonical and yearly data
+        run: npm run attributes:apply
+
+      - name: Validate catalogue and 100 percent attribute coverage
+        run: |
+          npm run validate
+          npm run attributes:verify
+
+      - name: Commit complete all-year tags
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add attributes data diagnostics/attribute-coverage.json
+          if git diff --cached --quiet; then
+            echo 'All-year attributes are already complete.'
+            exit 0
+          fi
+          git commit -m 'Tag all anime years from official details'
+          git pull --rebase origin main
+          git push origin HEAD:main
