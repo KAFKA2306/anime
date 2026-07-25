@@ -1,16 +1,16 @@
 {
   "status": "passed",
-  "site": "https://kafka2306.github.io/anime/?year=2024",
-  "tag_example": "SF・ファンタジー",
-  "build": "2026-07-24-tag-ranking-1",
+  "site": "https://kafka2306.github.io/anime/?year=2026",
+  "build": "2026-07-25-all-years-tags-1",
   "deployed_source_commit": "fba8d8ade1e78532d03928534dd10c9c794d5427",
-  "verification_workflow_commit": "fba8d8ade1e78532d03928534dd10c9c794d5427",
-  "verified_at": "2026-07-25T10:19:55Z",
-  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30154274462",
+  "verification_workflow_commit": "bb774bf6f206a6ee2ca9872a5d31d3d6dac9d85f",
+  "verified_at": "2026-07-25T10:25:51Z",
+  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30154445644",
   "checks": [
-    "production HTML build marker",
-    "year/search/grid/filter/mobile controls",
-    "base and tag-ranking CSS",
+    "production HTML exact build marker",
+    "2026 year/search/grid/filter/mobile controls",
+    "wrapped multi-line card tags",
+    "no per-card horizontal tag scrolling",
     "app.js and tag-ranking.js syntax and feature markers",
     "data/manifest.json parse"
   ]
