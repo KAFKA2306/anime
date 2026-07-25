@@ -2,16 +2,19 @@ import { chromium } from 'playwright';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { OFFICIAL_GENRES, buildAttributeRecord, parseOfficialDetailText } from './lib/ontology.mjs';
+import { parseShardConfig, selectShard } from './lib/sharding.mjs';
 
 const DATA_DIR = path.resolve('data');
 const ATTRIBUTE_DIR = path.resolve('attributes', 'by-work');
 const ONLY_YEAR = process.env.DANIME_ENRICH_YEAR ? Number(process.env.DANIME_ENRICH_YEAR) : null;
-const LIMIT = Number(process.env.DANIME_ENRICH_LIMIT ?? (ONLY_YEAR ? 0 : 500));
+const SHARD = parseShardConfig();
+const LIMIT = Number(process.env.DANIME_ENRICH_LIMIT ?? (ONLY_YEAR || SHARD.count > 1 ? 0 : 500));
 const CONCURRENCY = Math.max(1, Math.min(4, Number(process.env.DANIME_ENRICH_CONCURRENCY ?? 2)));
 const RATE_LIMIT_MS = Math.max(300, Number(process.env.DANIME_ENRICH_RATE_LIMIT_MS ?? 900));
 const MAX_PASSES = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_MAX_PASSES ?? 2)));
 const PAGE_ATTEMPTS = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_PAGE_ATTEMPTS ?? 2)));
 const REFRESH = process.env.DANIME_ENRICH_REFRESH === '1';
+const FAIL_ON_UNRESOLVED = process.env.DANIME_ENRICH_FAIL_ON_UNRESOLVED === '1';
 const FETCHED_AT = new Date().toISOString();
 const OFFICIAL_ORIGIN = 'https://animestore.docomo.ne.jp';
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -33,10 +36,10 @@ function normalizedDetailUrl(work) {
 }
 
 async function listCandidates() {
-  if (ONLY_YEAR) {
-    return (await readJson(path.join(DATA_DIR, 'by-year', `${ONLY_YEAR}.json`))).works;
-  }
-  return readJson(path.join(DATA_DIR, 'works.json'));
+  const candidates = ONLY_YEAR
+    ? (await readJson(path.join(DATA_DIR, 'by-year', `${ONLY_YEAR}.json`))).works
+    : await readJson(path.join(DATA_DIR, 'works.json'));
+  return selectShard(candidates, SHARD);
 }
 
 async function existingAttributeIds() {
@@ -139,7 +142,7 @@ async function createContext(browser) {
     locale: 'ja-JP',
     timezoneId: 'Asia/Tokyo',
     viewport: { width: 1280, height: 900 },
-    userAgent: 'KAFKA2306-anime-attribute-enricher/1.2 (+https://github.com/KAFKA2306/anime; official public metadata only)',
+    userAgent: 'KAFKA2306-anime-attribute-enricher/1.3 (+https://github.com/KAFKA2306/anime; official public metadata only)',
   });
 }
 
@@ -166,7 +169,7 @@ async function main() {
   let pending = candidates.filter((work) => REFRESH || !existing.has(String(work.work_id)));
   if (LIMIT > 0) pending = pending.slice(0, LIMIT);
   if (!pending.length) {
-    console.log('No missing attribute records.');
+    console.log(`No missing attribute records in shard ${SHARD.index}/${SHARD.count}.`);
     return;
   }
 
@@ -176,7 +179,7 @@ async function main() {
   let finalFailures = [];
   try {
     for (let pass = 1; pass <= MAX_PASSES && remaining.length; pass += 1) {
-      console.log(`Attribute enrichment pass ${pass}/${MAX_PASSES}: ${remaining.length} works.`);
+      console.log(`Attribute enrichment pass ${pass}/${MAX_PASSES}: ${remaining.length} works in shard ${SHARD.index}/${SHARD.count}.`);
       finalFailures = await runPass(browser, remaining, stats, pass);
       remaining = finalFailures.map((failure) => failure.work);
       if (remaining.length && pass < MAX_PASSES) await sleep(2_000 * pass);
@@ -187,9 +190,12 @@ async function main() {
 
   const serializableFailures = finalFailures.map(({ work: _work, ...failure }) => failure);
   await mkdir(path.resolve('diagnostics'), { recursive: true });
-  await writeJson(path.resolve('diagnostics', 'attribute-enrichment.json'), {
+  await writeJson(path.resolve('diagnostics', `attribute-enrichment-shard-${SHARD.index}.json`), {
     generated_at: FETCHED_AT,
     requested_year: ONLY_YEAR,
+    shard_index: SHARD.index,
+    shard_count: SHARD.count,
+    candidate_count: candidates.length,
     requested_count: pending.length,
     completed_count: stats.completed,
     failed_count: serializableFailures.length,
@@ -199,6 +205,9 @@ async function main() {
   });
   if (!stats.completed) {
     throw new Error(`Attribute enrichment produced no records from ${pending.length} works.`);
+  }
+  if (FAIL_ON_UNRESOLVED && serializableFailures.length) {
+    throw new Error(`Attribute enrichment left ${serializableFailures.length} unresolved works in shard ${SHARD.index}.`);
   }
   console.log(`Enriched ${stats.completed} works; ${serializableFailures.length} unresolved failures recorded.`);
 }
