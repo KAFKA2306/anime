@@ -51,7 +51,7 @@ jobs:
           node --check app.js
           node --check tag-ranking.js
           python -m json.tool data/manifest.json > /dev/null
-          grep -F '2026-07-24-tag-ranking-1' index.html
+          grep -F '2026-07-25-all-years-tags-1' index.html
           grep -F 'tag-ranking.css' index.html
           grep -F 'tag-ranking.js' index.html
           grep -F 'id="activeFilterBar"' index.html
@@ -63,9 +63,16 @@ jobs:
           grep -F 'normalize(tag) === normalize(activeTag)' tag-ranking.js
           grep -F 'タグ内 #' tag-ranking.js
           grep -F "url.searchParams.set('tag'" tag-ranking.js
-          grep -F 'content-visibility:auto' tag-ranking.css
+          grep -F 'content-visibility: auto' tag-ranking.css
           grep -F '.responsive-control' tag-ranking.css
           grep -F '.mobile-status' tag-ranking.css
+          grep -F 'flex-wrap: wrap' tag-ranking.css
+          grep -F 'overflow: visible' tag-ranking.css
+          grep -F 'white-space: normal' tag-ranking.css
+          if grep -F '.work-card>.work-card__tags' tag-ranking.css | grep -F 'overflow-x:auto'; then
+            echo 'Per-card horizontal tag scrolling must not return.' >&2
+            exit 1
+          fi
 
       - name: Build Pages site
         run: |

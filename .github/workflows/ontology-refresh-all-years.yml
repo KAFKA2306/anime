@@ -1,0 +1,341 @@
+name: Refresh ontology for all years
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/ontology-refresh-all-years.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ontology-refresh-all-years
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: matrix
+        name: Balance years into refresh shards
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE' >> "$GITHUB_OUTPUT"
+          import fs from 'node:fs';
+
+          const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
+          const years = manifest.discovered_years.map(Number).filter(Number.isFinite);
+          const shardCount = Math.min(12, years.length);
+          const shards = Array.from({ length: shardCount }, (_, index) => ({
+            id: String(index + 1).padStart(2, '0'),
+            years: [],
+            workCount: 0,
+          }));
+
+          years
+            .map((year) => ({ year, count: Number(manifest.acquisition?.[year]?.work_count || 0) }))
+            .sort((a, b) => b.count - a.count || b.year - a.year)
+            .forEach(({ year, count }) => {
+              const target = [...shards].sort((a, b) => a.workCount - b.workCount || a.id.localeCompare(b.id))[0];
+              target.years.push(year);
+              target.workCount += count;
+            });
+
+          const include = shards.map((shard) => ({
+            id: shard.id,
+            years: shard.years.sort((a, b) => a - b).join(','),
+            work_count: shard.workCount,
+          }));
+          console.log(`matrix=${JSON.stringify({ include })}`);
+          NODE
+
+  enrich:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies and Chromium
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Refresh official detail attributes
+        env:
+          SHARD_YEARS: ${{ matrix.years }}
+          DANIME_ENRICH_REFRESH: '1'
+          DANIME_ENRICH_CONCURRENCY: '2'
+          DANIME_ENRICH_RATE_LIMIT_MS: '1000'
+          DANIME_ENRICH_MAX_PASSES: '3'
+          DANIME_ENRICH_PAGE_ATTEMPTS: '3'
+        run: |
+          set -euo pipefail
+          rm -rf attributes/by-work diagnostics/attribute-enrichment*.json
+          mkdir -p attributes/by-work diagnostics
+          IFS=',' read -r -a years <<< "$SHARD_YEARS"
+          for year in "${years[@]}"; do
+            echo "Refreshing ${year} official detail records"
+            DANIME_ENRICH_YEAR="$year" node scripts/enrich-official-details.mjs
+            YEAR="$year" node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const year = Number(process.env.YEAR);
+          const diagnostic = JSON.parse(fs.readFileSync('diagnostics/attribute-enrichment.json', 'utf8'));
+          if (diagnostic.requested_year !== year) throw new Error(`Unexpected diagnostic year: ${diagnostic.requested_year}`);
+          if (diagnostic.failed_count !== 0) throw new Error(`${year}: ${diagnostic.failed_count} official detail pages remain unresolved`);
+          if (diagnostic.completed_count !== diagnostic.requested_count) {
+            throw new Error(`${year}: completed ${diagnostic.completed_count}/${diagnostic.requested_count}`);
+          }
+          fs.renameSync(
+            'diagnostics/attribute-enrichment.json',
+            `diagnostics/attribute-enrichment-${year}.json`,
+          );
+          NODE
+          done
+
+      - name: Upload refreshed shard
+        uses: actions/upload-artifact@v4
+        with:
+          name: ontology-shard-${{ matrix.id }}
+          path: |
+            attributes/by-work/*.json
+            diagnostics/attribute-enrichment-*.json
+          if-no-files-found: error
+          retention-days: 3
+
+  materialize-and-publish:
+    needs: enrich
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Download all refreshed attributes
+        uses: actions/download-artifact@v4
+        with:
+          pattern: ontology-shard-*
+          path: /tmp/ontology-shards
+          merge-multiple: true
+
+      - name: Apply complete ontology to latest catalogue
+        id: source
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          npm install --no-audit --no-fund
+
+          materialize() {
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf attributes/by-work
+            mkdir -p attributes/by-work verification
+            cp /tmp/ontology-shards/attributes/by-work/*.json attributes/by-work/
+            npm test
+            npm run attributes:apply
+            npm run validate
+            node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+
+          const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
+          const attributeFiles = fs.readdirSync('attributes/by-work').filter((name) => name.endsWith('.json'));
+          const incompleteYears = [];
+          let membershipCount = 0;
+
+          for (const year of manifest.discovered_years) {
+            const payload = JSON.parse(fs.readFileSync(path.join('data/by-year', `${year}.json`), 'utf8'));
+            const coverage = payload.attribute_coverage || {};
+            membershipCount += payload.works.length;
+            if (coverage.enriched_count !== payload.works.length || coverage.coverage_ratio !== 1) {
+              incompleteYears.push({
+                year,
+                enriched_count: coverage.enriched_count ?? 0,
+                total_count: payload.works.length,
+              });
+            }
+          }
+
+          const expectedCanonical = Number(manifest.canonical_work_count);
+          if (attributeFiles.length !== expectedCanonical) {
+            throw new Error(`Attribute cache coverage ${attributeFiles.length}/${expectedCanonical}`);
+          }
+          if (manifest.attributes?.applied_canonical_count !== expectedCanonical) {
+            throw new Error(`Canonical application coverage ${manifest.attributes?.applied_canonical_count}/${expectedCanonical}`);
+          }
+          if (manifest.attributes?.applied_membership_count !== membershipCount) {
+            throw new Error(`Membership application coverage ${manifest.attributes?.applied_membership_count}/${membershipCount}`);
+          }
+          if (incompleteYears.length) {
+            throw new Error(`Incomplete year coverage: ${JSON.stringify(incompleteYears)}`);
+          }
+
+          const verification = {
+            status: 'static-audit-passed',
+            generated_at: new Date().toISOString(),
+            site: 'https://kafka2306.github.io/anime/',
+            build: '2026-07-25-all-years-tags-1',
+            canonical_work_count: expectedCanonical,
+            membership_count: membershipCount,
+            attribute_cache_record_count: attributeFiles.length,
+            applied_canonical_count: manifest.attributes.applied_canonical_count,
+            applied_membership_count: manifest.attributes.applied_membership_count,
+            fully_enriched_year_count: manifest.discovered_years.length,
+            discovered_years: manifest.discovered_years,
+            production_verified: false,
+          };
+          fs.writeFileSync('verification/ontology-all-years.json', `${JSON.stringify(verification, null, 2)}\n`);
+          NODE
+          }
+
+          pushed=false
+          for attempt in 1 2 3; do
+            echo "Materialization attempt ${attempt}"
+            materialize
+            git add attributes/by-work data/by-year data/works.json data/manifest.json verification/ontology-all-years.json
+            if git diff --cached --quiet; then
+              echo 'No ontology changes to commit.'
+              pushed=true
+              break
+            fi
+            git commit -m 'Apply ontology tags to every catalogue year'
+            if git push origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            echo 'main advanced during materialization; rebuilding on the latest catalogue.'
+          done
+          test "$pushed" = true
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish complete Pages source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site/data/by-year _site/data/likes
+          cp index.html styles.css app.js tag-ranking.css tag-ranking.js _site/
+          cp data/manifest.json _site/data/
+          cp data/by-year/*.json _site/data/by-year/
+          cp data/likes/*.tsv _site/data/likes/
+          touch _site/.nojekyll
+          cd _site
+          git init
+          git checkout -b gh-pages
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m "Deploy ${SOURCE_COMMIT}"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin gh-pages
+
+      - name: Verify production coverage and card tag layout
+        env:
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          npx playwright install --with-deps chromium
+          ready=false
+          for attempt in $(seq 1 36); do
+            if curl -fsS "https://kafka2306.github.io/anime/data/manifest.json?attempt=${attempt}" > /tmp/live-manifest.json; then
+              if node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const manifest = JSON.parse(fs.readFileSync('/tmp/live-manifest.json', 'utf8'));
+          if (manifest.attributes?.applied_canonical_count !== manifest.canonical_work_count) process.exit(1);
+          NODE
+              then
+                ready=true
+                break
+              fi
+            fi
+            sleep 10
+          done
+          test "$ready" = true
+
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { chromium } from 'playwright';
+
+          const browser = await chromium.launch({ headless: true });
+          const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+          const years = [2026, 2024, 1970];
+          const results = [];
+
+          for (const year of years) {
+            await page.goto(`https://kafka2306.github.io/anime/?year=${year}&verify=${Date.now()}`, {
+              waitUntil: 'networkidle',
+              timeout: 90_000,
+            });
+            await page.waitForSelector('#workGrid .work-card', { timeout: 30_000 });
+            await page.waitForSelector('#workGrid .work-card .tag-chip', { timeout: 30_000 });
+            const result = await page.evaluate(() => {
+              const cards = [...document.querySelectorAll('#workGrid .work-card')];
+              const tagBoxes = cards.map((card) => card.querySelector('.work-card__tags')).filter(Boolean);
+              return {
+                card_count: cards.length,
+                tagged_card_count: tagBoxes.filter((box) => box.querySelector('.tag-chip')).length,
+                horizontal_scroll_box_count: tagBoxes.filter((box) => {
+                  const style = getComputedStyle(box);
+                  return style.overflowX === 'auto' || style.overflowX === 'scroll';
+                }).length,
+              };
+            });
+            if (result.tagged_card_count !== result.card_count) {
+              throw new Error(`${year}: tagged cards ${result.tagged_card_count}/${result.card_count}`);
+            }
+            if (result.horizontal_scroll_box_count !== 0) {
+              throw new Error(`${year}: ${result.horizontal_scroll_box_count} tag boxes still scroll horizontally`);
+            }
+            results.push({ year, ...result });
+          }
+
+          await browser.close();
+          fs.writeFileSync('/tmp/production-view.json', `${JSON.stringify({ years: results }, null, 2)}\n`);
+          NODE
+
+      - name: Record production verification
+        env:
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git reset --hard origin/main
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const file = 'verification/ontology-all-years.json';
+          const verification = JSON.parse(fs.readFileSync(file, 'utf8'));
+          verification.status = 'passed';
+          verification.production_verified = true;
+          verification.production_verified_at = new Date().toISOString();
+          verification.deployed_source_commit = process.env.SOURCE_COMMIT;
+          verification.workflow_run = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+          verification.production_view = JSON.parse(fs.readFileSync('/tmp/production-view.json', 'utf8'));
+          fs.writeFileSync(file, `${JSON.stringify(verification, null, 2)}\n`);
+          NODE
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add verification/ontology-all-years.json
+          git commit -m 'Record all-year ontology production verification'
+          git push origin HEAD:main
