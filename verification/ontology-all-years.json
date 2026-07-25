@@ -1,5 +1,5 @@
 {
-  "status": "static-audit-passed",
+  "status": "passed",
   "generated_at": "2026-07-25T11:06:49.039Z",
   "site": "https://kafka2306.github.io/anime/",
   "build": "2026-07-25-all-years-tags-1",
@@ -77,5 +77,30 @@
     2025,
     2026
   ],
-  "production_verified": false
+  "production_verified": true,
+  "production_verified_at": "2026-07-25T11:07:37.945Z",
+  "deployed_source_commit": "8aff57efc1855469ff5538d08c02c087469a9336",
+  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30154274496",
+  "production_view": {
+    "years": [
+      {
+        "year": 2026,
+        "card_count": 139,
+        "tagged_card_count": 139,
+        "horizontal_scroll_box_count": 0
+      },
+      {
+        "year": 2024,
+        "card_count": 258,
+        "tagged_card_count": 258,
+        "horizontal_scroll_box_count": 0
+      },
+      {
+        "year": 1970,
+        "card_count": 8,
+        "tagged_card_count": 8,
+        "horizontal_scroll_box_count": 0
+      }
+    ]
+  }
 }
