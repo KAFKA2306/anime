@@ -1,0 +1,30 @@
+name: Probe Actions runs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/actions-probe.yml
+      - verification/actions-probe-trigger.txt
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record recent runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          marker="$(mktemp)"
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs?per_page=30" \
+            --jq '{generated_at: now | todate, runs: [.workflow_runs[] | {id,name,status,conclusion,event,head_sha,created_at,updated_at,html_url}]}' > "$marker"
+          encoded="$(base64 -w 0 "$marker")"
+          current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/contents/verification/actions-probe.json?ref=main" --jq '.sha' 2>/dev/null || true)"
+          args=(--method PUT "repos/${GITHUB_REPOSITORY}/contents/verification/actions-probe.json" -f message='Record Actions run probe' -f content="$encoded" -f branch=main)
+          if [[ -n "$current_sha" ]]; then args+=(-f sha="$current_sha"); fi
+          gh api "${args[@]}" --jq '.commit.html_url'
