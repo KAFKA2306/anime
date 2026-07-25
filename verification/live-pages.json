@@ -3,36 +3,15 @@
   "site": "https://kafka2306.github.io/anime/?year=2024",
   "tag_example": "SF・ファンタジー",
   "build": "2026-07-24-tag-ranking-1",
-  "deployed_source_commit": "06c79c88d6b4f6882a83167011e0bf764da00a2d",
-  "verification_workflow_commit": "a1e44018f926e05e9258a86634498af3f89a8de7",
-  "verified_at": "2026-07-24T15:20:03Z",
-  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30104814359",
+  "deployed_source_commit": "fba8d8ade1e78532d03928534dd10c9c794d5427",
+  "verification_workflow_commit": "fba8d8ade1e78532d03928534dd10c9c794d5427",
+  "verified_at": "2026-07-25T10:19:55Z",
+  "workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30154274462",
   "checks": [
-    "app.js and tag-ranking.js syntax and feature markers",
-    "base and tag-ranking CSS",
-    "data/manifest.json parse",
     "production HTML build marker",
-    "real Chromium tag click, URL transition, exact-match ranking and 390px responsive layout",
-    "year/search/grid/filter/mobile controls"
-  ],
-  "browser_e2e": {
-    "browser": "Chromium via Playwright",
-    "selected_tag": "原作:ライトノベル・小説",
-    "url_tag": "原作:ライトノベル・小説",
-    "ranking": {
-      "visible": 17,
-      "exact": true,
-      "descending": true,
-      "ranks": true
-    },
-    "viewport_390x844": {
-      "mobile": "flex",
-      "filter": "flex",
-      "columns": 1,
-      "overflow": false
-    }
-  },
-  "browser_verification_commit": "35c699f1065a45ad7362aa74d72c5fbaec5c539d",
-  "browser_verified_at": "2026-07-24T15:30:32Z",
-  "browser_workflow_run": "https://github.com/KAFKA2306/anime/actions/runs/30105524653"
+    "year/search/grid/filter/mobile controls",
+    "base and tag-ranking CSS",
+    "app.js and tag-ranking.js syntax and feature markers",
+    "data/manifest.json parse"
+  ]
 }
