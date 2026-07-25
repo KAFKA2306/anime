@@ -37,17 +37,14 @@ jobs:
           base64 -d /tmp/ontology-payload.b64 > /tmp/ontology-payload.tar.gz
           echo '524fbaaeef494b60991031bdccdb21876ad64c9daf1b13903969876ca1eda158  /tmp/ontology-payload.tar.gz' | sha256sum -c -
           tar -xzf /tmp/ontology-payload.tar.gz
-          rm -rf .bootstrap .github/workflows/bootstrap-ontology-v2.yml
 
       - name: Install dependencies and Chromium
         run: |
           npm ci
           npx playwright install --with-deps chromium
 
-      - name: Test ontology rules and audit baseline
-        run: |
-          npm test
-          node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-before-2024.json
+      - name: Test ontology rules
+        run: npm test
 
       - name: Refresh every 2024 official detail record
         env:
@@ -57,24 +54,69 @@ jobs:
           DANIME_ENRICH_RATE_LIMIT_MS: '700'
           DANIME_ENRICH_MAX_PASSES: '3'
           DANIME_ENRICH_PAGE_ATTEMPTS: '3'
-          DANIME_APPLY_YEAR: '2024'
-        run: npm run attributes:enrich
+        run: node scripts/enrich-official-details.mjs
 
-      - name: Enforce ontology quality gates
+      - name: Preserve reviewed code and refreshed official-detail attributes
         run: |
-          node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-after-2024.json
-          node scripts/audit-ontology.mjs --compare diagnostics/ontology-before-2024.json diagnostics/ontology-after-2024.json diagnostics/ontology-comparison-2024.json
-          npm run validate
+          set -euo pipefail
+          node --input-type=module <<'NODE' > /tmp/attribute-files.txt
+          import fs from 'node:fs';
+          const payload = JSON.parse(fs.readFileSync('data/by-year/2024.json', 'utf8'));
+          for (const work of payload.works) console.log(`attributes/by-work/${work.work_id}.json`);
+          NODE
+          cat > /tmp/implementation-files.txt <<'FILES'
+          README.md
+          package.json
+          index.html
+          app.js
+          ontology-view.css
+          ontology-view.js
+          scripts/apply-attributes.mjs
+          scripts/audit-ontology.mjs
+          scripts/enrich-official-details.mjs
+          scripts/lib/ontology.mjs
+          scripts/validate-data.mjs
+          scripts/verify-ontology-view.mjs
+          tests/ontology.test.mjs
+          docs/ontology-v2.md
+          .github/workflows/ontology-refresh-2024.yml
+          .github/workflows/pages.yml
+          .github/workflows/live-pages-smoke.yml
+          FILES
+          cat /tmp/implementation-files.txt /tmp/attribute-files.txt > /tmp/overlay-files.txt
+          tar -czf /tmp/ontology-v2-overlay.tar.gz -T /tmp/overlay-files.txt
 
-      - name: Commit implementation and refreshed data
+      - name: Apply onto latest official counters, audit, and push atomically
         id: source
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Expand ontology tags and exclusion evidence'
-          git push origin HEAD:main
+          pushed=false
+          for attempt in 1 2 3; do
+            echo "Materialization attempt ${attempt}"
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
+            tar -xzf /tmp/ontology-v2-overlay.tar.gz
+            rm -rf .bootstrap .github/workflows/bootstrap-ontology-v2.yml
+
+            npm test
+            node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-before-2024.json
+            DANIME_APPLY_YEAR=2024 npm run attributes:apply
+            node scripts/audit-ontology.mjs --year 2024 --output diagnostics/ontology-after-2024.json
+            node scripts/audit-ontology.mjs --compare diagnostics/ontology-before-2024.json diagnostics/ontology-after-2024.json diagnostics/ontology-comparison-2024.json
+            npm run validate
+
+            git add -A
+            git commit -m 'Expand ontology tags and exclusion evidence'
+            if git push origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            echo 'main advanced while materializing; retrying on latest official counters.'
+          done
+          test "$pushed" = true
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Build and publish refreshed Pages source
@@ -96,7 +138,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add --all
-          git commit -m "Deploy ${SOURCE_COMMIT}"
+          git commit -m "Deploy ${SOURCE_COMMIT="
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push --force origin gh-pages
 
