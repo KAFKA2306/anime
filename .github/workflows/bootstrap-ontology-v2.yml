@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: ontology-bootstrap-v2
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   install-refresh-publish:
