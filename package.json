@@ -8,6 +8,7 @@
     "acquire:raw": "node scripts/acquire-danime.mjs",
     "attributes:apply": "node scripts/apply-attributes.mjs",
     "attributes:enrich": "node scripts/enrich-official-details.mjs && npm run attributes:apply",
+    "attributes:verify": "node scripts/verify-attribute-coverage.mjs",
     "acquire": "node scripts/acquire-danime.mjs && node scripts/stabilize-generated-data.mjs && npm run attributes:apply",
     "validate": "node scripts/validate-data.mjs",
     "test": "node --test tests/*.test.mjs"
