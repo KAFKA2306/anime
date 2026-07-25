@@ -1,0 +1,80 @@
+name: Audit all-year anime tags
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/audit-all-year-tags.yml
+  workflow_run:
+    workflows:
+      - Refresh ontology for all years
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anime-tag-coverage-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Check whether the all-year materialization is ready
+        id: readiness
+        run: |
+          node --input-type=module <<'NODE' >> "$GITHUB_OUTPUT"
+          import fs from 'node:fs';
+          const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
+          const ready = manifest.attributes?.cache_record_count === manifest.canonical_work_count
+            && manifest.attributes?.applied_canonical_count === manifest.canonical_work_count;
+          console.log(`ready=${ready}`);
+          NODE
+
+      - name: Install dependencies
+        if: steps.readiness.outputs.ready == 'true'
+        run: npm install --no-audit --no-fund
+
+      - name: Apply and verify every official-detail attribute
+        if: steps.readiness.outputs.ready == 'true'
+        run: |
+          set -euo pipefail
+          npm test
+          npm run attributes:apply
+          npm run validate
+          npm run attributes:verify
+
+      - name: Commit auditable coverage evidence
+        if: steps.readiness.outputs.ready == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/manifest.json data/by-year data/works.json diagnostics/attribute-coverage.json
+          if git diff --cached --quiet; then
+            echo 'Strict tag coverage evidence is already current.'
+            exit 0
+          fi
+          git commit -m 'Record strict all-year tag coverage'
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Report pending materialization
+        if: steps.readiness.outputs.ready != 'true'
+        run: echo 'All-year attribute materialization is not complete yet; no partial evidence was committed.'

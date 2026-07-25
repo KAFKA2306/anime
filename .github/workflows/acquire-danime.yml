@@ -1,10 +1,6 @@
 name: Acquire dAnime year catalogue
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
   workflow_dispatch:
     inputs:
       year:
@@ -23,9 +19,8 @@ concurrency:
 
 jobs:
   acquire:
-    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     env:
       DANIME_YEAR: ${{ inputs.year }}
       DANIME_RATE_LIMIT_MS: '1200'
@@ -34,6 +29,11 @@ jobs:
       DANIME_MAX_RETRIES: '5'
       DANIME_REQUEST_TIMEOUT_MS: '45000'
       DANIME_MAX_TOTAL_DROP_RATIO: '0.10'
+      DANIME_ENRICH_LIMIT: '0'
+      DANIME_ENRICH_CONCURRENCY: '2'
+      DANIME_ENRICH_RATE_LIMIT_MS: '1000'
+      DANIME_ENRICH_MAX_PASSES: '3'
+      DANIME_ENRICH_PAGE_ATTEMPTS: '3'
 
     steps:
       - uses: actions/checkout@v4
@@ -44,21 +44,26 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
+      - name: Install dependencies and Chromium
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
 
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
-
-      - name: Test catalogue utilities
+      - name: Test catalogue and ontology utilities
         run: npm test
 
       - name: Acquire official year data
         run: npm run acquire
 
-      - name: Validate generated data
+      - name: Enrich every newly discovered work from official details
         if: env.DANIME_YEAR == ''
-        run: npm run validate
+        run: npm run attributes:enrich
+
+      - name: Validate catalogue and strict all-year tag coverage
+        if: env.DANIME_YEAR == ''
+        run: |
+          npm run validate
+          npm run attributes:verify
 
       - name: Upload acquisition diagnostics
         if: always()
@@ -71,19 +76,19 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Commit updated official data
+      - name: Commit updated official data and attributes
         if: >-
           env.DANIME_YEAR == '' &&
-          github.event_name != 'pull_request' &&
           github.ref_name == 'main'
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data
+          git add data attributes diagnostics/attribute-coverage.json
           if git diff --cached --quiet; then
-            echo 'No catalogue changes.'
+            echo 'No catalogue or attribute changes.'
           else
-            git commit -m 'Update official dAnime catalogue and counters'
+            git commit -m 'Update official dAnime catalogue, counters, and tags'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
