@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "26787",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26787",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル"
@@ -13,12 +13,29 @@
   "primary_genre": "SF・ファンタジー",
   "canonical_tags": [
     "SF・ファンタジー",
-    "バトル・アクション"
+    "バトル・アクション",
+    "怪異・妖怪"
   ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,11 +57,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26787"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26787"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "呪い"
+          ]
+        }
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26787"
     }
   }

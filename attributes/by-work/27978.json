@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27978",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27978",
+  "attribute_fetched_at": "2026-07-25T10:21:27.736Z",
+  "official_genres": [
+    "キッズ/ファミリー"
+  ],
+  "production_year": 1994,
+  "original_credit": "たかしよいち",
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "たかしよいち",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27978"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27978"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27978"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27978"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11178",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178",
+  "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "official_genres": [
+    "ドラマ/青春",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2011,
+  "original_credit": "宇仁田ゆみ",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "日常・ほのぼの"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "宇仁田ゆみ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24140",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24140",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2019,
+  "original_credit": "今泉潤",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "異世界",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "今泉潤",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24140"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "異世界",
+        "召喚"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24140"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24140"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "召喚"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24140"
+    }
+  }
+}

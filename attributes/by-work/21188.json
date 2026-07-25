@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "21188",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21188",
+  "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "official_genres": [
+    "アクション/バトル",
+    "スポーツ/競技",
+    "ドラマ/青春"
+  ],
+  "production_year": 2016,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "スポーツ・競技",
+    "ドラマ・青春",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "スポーツ・競技",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21188"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21188"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21188"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21188"
+    }
+  }
+}

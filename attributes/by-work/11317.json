@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11317",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11317",
+  "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2013,
+  "original_credit": "橙乃ままれ",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "ドラマ・青春",
+    "異世界",
+    "学園",
+    "友情・仲間",
+    "ゲーム世界"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "異世界",
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "ゲーム世界"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "橙乃ままれ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11317"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "異世界",
+        "ギルド"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11317"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11317"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界"
+          ],
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {
+          "ゲーム世界": [
+            "オンラインゲーム"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11317"
+    }
+  }
+}

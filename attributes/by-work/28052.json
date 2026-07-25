@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28052",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28052",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2023,
+  "original_credit": "鴨志田 一(電撃文庫刊 「『青春ブタ野郎』シリーズ」)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "鴨志田 一(電撃文庫刊 「『青春ブタ野郎』シリーズ」)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28052"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28052"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28052"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28052"
+    }
+  }
+}

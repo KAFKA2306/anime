@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26600",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26600",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2023,
+  "original_credit": "小林湖底(GA文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "魔法",
+    "怪異・妖怪",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "魔法",
+      "怪異・妖怪",
+      "犯罪・警察"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "小林湖底(GA文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26600"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26600"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26600"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ],
+          "怪異・妖怪": [
+            "鬼"
+          ],
+          "犯罪・警察": [
+            "犯罪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26600"
+    }
+  }
+}

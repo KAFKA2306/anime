@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "26823",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -13,12 +13,30 @@
   "primary_genre": "バトル・アクション",
   "canonical_tags": [
     "バトル・アクション",
-    "歴史・戦記"
+    "歴史・戦記",
+    "歴史・時代劇",
+    "犯罪・警察"
   ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [
+      "犯罪・警察"
+    ],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,11 +55,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "明治"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "犯罪・警察": [
+            "警察"
+          ]
+        }
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     }
   }

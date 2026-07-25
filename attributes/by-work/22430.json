@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22430",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 2018,
+  "original_credit": "「恋愛幕末カレシ~時の彼方で花咲く恋~」(フリュー)",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "歴史・戦記",
+    "歴史・時代劇"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "「恋愛幕末カレシ~時の彼方で花咲く恋~」(フリュー)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "幕末"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
+    }
+  }
+}

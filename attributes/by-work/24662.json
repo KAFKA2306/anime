@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24662",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24662",
+  "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "official_genres": [
+    "アクション/バトル",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2005,
+  "original_credit": "大暮維人(Oh!great) 集英社刊",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "SF・ファンタジー",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "大暮維人(Oh!great) 集英社刊",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24662"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24662"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24662"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24662"
+    }
+  }
+}

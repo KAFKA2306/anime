@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10582",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10582",
+  "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "official_genres": [
+    "ショート",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2007,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "コメディ・ギャグ",
+    "家族",
+    "ロボット・メカ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10582"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10582"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10582"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "家族"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10582"
+    }
+  }
+}

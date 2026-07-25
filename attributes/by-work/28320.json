@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28320",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28320",
+  "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2001,
+  "original_credit": "吸血鬼ハンターシリーズ「D-妖殺行」菊地秀行(朝日新聞出版刊)",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "家族",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "吸血鬼ハンターシリーズ「D-妖殺行」菊地秀行(朝日新聞出版刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28320"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28320"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28320"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "兄弟"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28320"
+    }
+  }
+}

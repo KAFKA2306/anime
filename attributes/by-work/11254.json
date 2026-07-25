@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11254",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254",
+  "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 1991,
+  "original_credit": "ゆでたまご",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "宇宙",
+    "友情・仲間",
+    "成長・挑戦",
+    "サバイバル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦",
+      "サバイバル"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ゆでたまご",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情",
+            "絆"
+          ],
+          "成長・挑戦": [
+            "成長"
+          ],
+          "サバイバル": [
+            "サバイバル"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
+    }
+  }
+}

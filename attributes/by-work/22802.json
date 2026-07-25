@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22802",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22802",
+  "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ"
+  ],
+  "production_year": 2007,
+  "original_credit": "鬼頭莫宏(小学館「IKKICOMIX」刊行)",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ロボット・メカ",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "ロボット・メカ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "鬼頭莫宏(小学館「IKKICOMIX」刊行)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22802"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22802"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22802"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22802"
+    }
+  }
+}

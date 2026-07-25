@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28525",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28525",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2023,
+  "original_credit": "稲垣理一郎・Boichi 「Dr.STONE」(集英社 ジャンプ コミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "稲垣理一郎・Boichi 「Dr.STONE」(集英社 ジャンプ コミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28525"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28525"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28525"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "親子"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28525"
+    }
+  }
+}

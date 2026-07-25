@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27889",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "ロボット/メカ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2025,
+  "original_credit": "菊石まれほ(電撃文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ロボット・メカ",
+  "canonical_tags": [
+    "ロボット・メカ",
+    "SF・ファンタジー",
+    "職業・仕事",
+    "犯罪・警察",
+    "医療"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ロボット・メカ",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [
+      "ロボット・メカ",
+      "犯罪・警察",
+      "医療"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "菊石まれほ(電撃文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ロボット/メカ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ロボット/メカ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ],
+          "犯罪・警察": [
+            "犯罪",
+            "捜査"
+          ],
+          "医療": [
+            "医療"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
+    }
+  }
+}

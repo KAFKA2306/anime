@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20378",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20378",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "ドラマ/青春"
+  ],
+  "production_year": 2015,
+  "original_credit": "天樹征丸・さとうふみや「金田一少年の事件簿R」(講談社『週刊少年マガジン』連載)",
+  "source_origin": "漫画",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "ドラマ・青春",
+    "学園",
+    "推理・謎解き"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "マガジン"
+      ],
+      "evidence_text": "天樹征丸・さとうふみや「金田一少年の事件簿R」(講談社『週刊少年マガジン』連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20378"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20378"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20378"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "推理・謎解き": [
+            "推理",
+            "謎解き",
+            "探偵"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20378"
+    }
+  }
+}

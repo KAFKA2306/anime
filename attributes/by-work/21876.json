@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "21876",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21876",
+  "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "official_genres": [
+    "スポーツ/競技"
+  ],
+  "production_year": 2003,
+  "original_credit": "森川ジョージ(講談社「週刊少年マガジン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "スポーツ・競技"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "マガジン"
+      ],
+      "evidence_text": "森川ジョージ(講談社「週刊少年マガジン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21876"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21876"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "スポーツ/競技"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21876"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "挑戦"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21876"
+    }
+  }
+}

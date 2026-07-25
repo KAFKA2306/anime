@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28562",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28562",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": "坂本遊也(白泉社・ヤングアニマルコミックス)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "日常・ほのぼの"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "コメディ・ギャグ",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "坂本遊也(白泉社・ヤングアニマルコミックス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28562"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [
+        "魔王"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28562"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28562"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28562"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10787",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10787",
+  "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "official_genres": [
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 2006,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "歴史・戦記",
+    "歴史・時代劇",
+    "成長・挑戦",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10787"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10787"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10787"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "江戸",
+            "幕末"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "成長"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10787"
+    }
+  }
+}

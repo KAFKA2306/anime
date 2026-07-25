@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24071",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24071",
+  "attribute_fetched_at": "2026-07-25T10:20:22.096Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 1966,
+  "original_credit": "手塚治虫 製作:山本暎一 チーフ・ディレクター:林重行 作画監督:勝井千賀雄 原画:斎藤博、彦根範夫 美術監督:伊藤信治",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "キッズ・ファミリー",
+    "成長・挑戦",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦",
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "手塚治虫 製作:山本暎一 チーフ・ディレクター:林重行 作画監督:勝井千賀雄 原画:斎藤博、彦根範夫 美術監督:伊藤信治",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24071"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24071"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24071"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "成長"
+          ],
+          "家族": [
+            "家族"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24071"
+    }
+  }
+}

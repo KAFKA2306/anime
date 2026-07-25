@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "25210",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25210",
+  "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2008,
+  "original_credit": "池田晃久(集英社「ジャンプSQ.」にて連載中)",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "SF・ファンタジー",
+    "学園",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "池田晃久(集英社「ジャンプSQ.」にて連載中)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25210"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25210"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25210"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園",
+            "学校",
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25210"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23897",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23897",
+  "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2016,
+  "original_credit": "「こちら葛飾区亀有公園前派出所」秋本治(集英社ジャンプ コミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "「こちら葛飾区亀有公園前派出所」秋本治(集英社ジャンプ コミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23897"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23897"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23897"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23897"
+    }
+  }
+}

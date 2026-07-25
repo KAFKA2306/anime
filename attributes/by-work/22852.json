@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22852",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22852",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2019,
+  "original_credit": "花間 燈 (MF文庫J『可愛ければ変態でも好きになってくれますか?』",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "学園",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "花間 燈 (MF文庫J『可愛ければ変態でも好きになってくれますか?』",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22852"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22852"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22852"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22852"
+    }
+  }
+}

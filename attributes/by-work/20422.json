@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20422",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20422",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "ドラマ/青春",
+    "ショート"
+  ],
+  "production_year": 2015,
+  "original_credit": "クール教信者(連載「まんがタイム オリジナル」芳文社)",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "ショート"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "ショート"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "クール教信者(連載「まんがタイム オリジナル」芳文社)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20422"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20422"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20422"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20422"
+    }
+  }
+}

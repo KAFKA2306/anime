@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "25314",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25314",
+  "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2017,
+  "original_credit": "江口夏実(講談社「モーニング」所載)",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "日常・ほのぼの",
+    "職業・仕事",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "コメディ・ギャグ",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "モーニング"
+      ],
+      "evidence_text": "江口夏実(講談社「モーニング」所載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25314"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25314"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25314"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25314"
+    }
+  }
+}

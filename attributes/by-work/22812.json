@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22812",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22812",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 2018,
+  "original_credit": "藤崎 竜(集英社文庫コミック版 )安能 務訳「封神演義」より",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "歴史・戦記",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミック"
+      ],
+      "evidence_text": "藤崎 竜(集英社文庫コミック版 )安能 務訳「封神演義」より",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22812"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22812"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22812"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22812"
+    }
+  }
+}

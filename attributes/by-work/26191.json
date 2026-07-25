@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26191",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191",
+  "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "ホラー/サスペンス/推理",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2021,
+  "original_credit": "トロル「おしりたんてい」シリーズ(ポプラ社)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "ホラー・サスペンス・ミステリー",
+    "キッズ・ファミリー",
+    "推理・謎解き"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "ホラー・サスペンス・ミステリー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "トロル「おしりたんてい」シリーズ(ポプラ社)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "推理"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
+    }
+  }
+}

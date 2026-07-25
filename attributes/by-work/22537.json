@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22537",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22537",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2019,
+  "original_credit": "MAGES.",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "SF・ファンタジー",
+    "歴史・時代劇",
+    "友情・仲間",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "友情・仲間",
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "MAGES.",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22537"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22537"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22537"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "明治"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "絆"
+          ],
+          "恋愛": [
+            "恋心"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22537"
+    }
+  }
+}

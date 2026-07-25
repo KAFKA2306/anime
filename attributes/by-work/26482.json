@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26482",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26482",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2023,
+  "original_credit": "青崎有吾「アンデッドガール・マーダーファルス」(講談社タイガ刊)",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ホラー・サスペンス・ミステリー",
+    "恋愛",
+    "推理・謎解き",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "恋愛",
+      "推理・謎解き"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "青崎有吾「アンデッドガール・マーダーファルス」(講談社タイガ刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26482"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26482"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26482"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ],
+          "推理・謎解き": [
+            "探偵"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26482"
+    }
+  }
+}

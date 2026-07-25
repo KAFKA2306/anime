@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11425",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425",
+  "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "ドラマ/青春"
+  ],
+  "production_year": 2013,
+  "original_credit": "志倉千代丸,MAGES.,Nitroplus",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "ドラマ・青春",
+    "学園",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "志倉千代丸,MAGES.,Nitroplus",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24687",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24687",
+  "attribute_fetched_at": "2026-07-25T10:43:54.548Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 1985,
+  "original_credit": "水木しげる",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "キッズ・ファミリー",
+    "友情・仲間",
+    "サバイバル",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "サバイバル"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "水木しげる",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24687"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24687"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24687"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "サバイバル": [
+            "生き残"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪",
+            "幽霊",
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24687"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26035",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26035",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2023,
+  "original_credit": "城平 京(講談社タイガ刊)",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "恋愛・ラブコメ",
+    "SF・ファンタジー",
+    "恋愛",
+    "推理・謎解き",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "恋愛・ラブコメ",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [
+      "恋愛",
+      "推理・謎解き"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "城平 京(講談社タイガ刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26035"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26035"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26035"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ],
+          "推理・謎解き": [
+            "推理"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "怪異"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26035"
+    }
+  }
+}

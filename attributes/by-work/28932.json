@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28932",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28932",
+  "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "official_genres": [
+    "ドラマ/青春",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2020,
+  "original_credit": "一穂ミチ,竹美家らら",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "恋愛・ラブコメ",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "一穂ミチ,竹美家らら",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28932"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28932"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28932"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28932"
+    }
+  }
+}

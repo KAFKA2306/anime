@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11601",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2015,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "友情・仲間",
+    "成長・挑戦",
+    "政治・戦略",
+    "魔法",
+    "ロボット・メカ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦",
+      "政治・戦略"
+    ],
+    "motif": [
+      "魔法",
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "政治・戦略": [
+            "国家"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔法"
+          ],
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601"
+    }
+  }
+}

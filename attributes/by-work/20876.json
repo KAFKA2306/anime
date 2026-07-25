@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20876",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20876",
+  "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2016,
+  "original_credit": "吉元ますめ(月刊コミックフラッパー連載",
+  "source_origin": "漫画",
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミック"
+      ],
+      "evidence_text": "吉元ますめ(月刊コミックフラッパー連載",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20876"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20876"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20876"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20876"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11241",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11241",
+  "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2014,
+  "original_credit": "Project-D",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ロボット・メカ",
+    "コメディ・ギャグ",
+    "歴史・時代劇",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "ロボット・メカ",
+      "コメディ・ギャグ"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "Project-D",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11241"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11241"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11241"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "江戸"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11241"
+    }
+  }
+}

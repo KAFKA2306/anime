@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "21480",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480",
+  "attribute_fetched_at": "2026-07-25T10:32:10.399Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 1981,
+  "original_credit": "タツノコプロ企画室",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "推理・謎解き",
+    "ロボット・メカ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "タツノコプロ企画室",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
+    }
+  }
+}

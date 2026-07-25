@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "29071",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29071",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "西条真二(KADOKAWA刊)",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "料理・グルメ",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "料理・グルメ"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "西条真二(KADOKAWA刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29071"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29071"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29071"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "料理・グルメ": [
+            "料理"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29071"
+    }
+  }
+}

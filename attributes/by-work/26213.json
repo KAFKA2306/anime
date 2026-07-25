@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26213",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26213",
+  "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "official_genres": [
+    "キッズ/ファミリー",
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2008,
+  "original_credit": "松本ぷりっつ",
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "コメディ・ギャグ",
+    "日常・ほのぼの",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー",
+      "コメディ・ギャグ",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "松本ぷりっつ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26213"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "キッズ/ファミリー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26213"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "キッズ/ファミリー",
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26213"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "姉妹"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26213"
+    }
+  }
+}

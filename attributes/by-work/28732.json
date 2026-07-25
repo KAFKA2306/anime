@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28732",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28732",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "末永裕樹・馬上鷹将(集英社「週刊少年ジャンプ」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "少年ジャンプ",
+        "週刊少年"
+      ],
+      "evidence_text": "末永裕樹・馬上鷹将(集英社「週刊少年ジャンプ」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28732"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28732"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28732"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28732"
+    }
+  }
+}

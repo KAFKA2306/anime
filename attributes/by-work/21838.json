@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "21838",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21838",
+  "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2011,
+  "original_credit": "入間人間(電撃文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "学園",
+    "宇宙",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園",
+      "宇宙"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "入間人間(電撃文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21838"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21838"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21838"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ],
+          "宇宙": [
+            "宇宙"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21838"
+    }
+  }
+}

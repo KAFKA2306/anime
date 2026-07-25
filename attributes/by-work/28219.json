@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "28219",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28219",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -15,12 +15,30 @@
   "canonical_tags": [
     "バトル・アクション",
     "SF・ファンタジー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "友情・仲間"
   ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "SF・ファンタジー",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,12 +60,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28219"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
         "ドラマ/青春"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28219"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {}
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28219"
     }
   }

@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23403",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23403",
+  "attribute_fetched_at": "2026-07-25T10:44:56.484Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 1997,
+  "original_credit": "いがらしみきお",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "SF・ファンタジー",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "SF・ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "いがらしみきお",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23403"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23403"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23403"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23403"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20624",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20624",
+  "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2001,
+  "original_credit": "本郷あきよし",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "キッズ・ファミリー",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "本郷あきよし",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20624"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [
+        "冒険者"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20624"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20624"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "兄弟"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20624"
+    }
+  }
+}

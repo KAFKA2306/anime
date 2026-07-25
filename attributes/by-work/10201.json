@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10201",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10201",
+  "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ",
+    "ショート"
+  ],
+  "production_year": 2006,
+  "original_credit": "佐渡川 準",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "ショート",
+    "成長・挑戦",
+    "料理・グルメ",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ",
+      "ショート"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦",
+      "料理・グルメ"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "佐渡川 準",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10201"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10201"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10201"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "成長"
+          ],
+          "料理・グルメ": [
+            "料理"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10201"
+    }
+  }
+}

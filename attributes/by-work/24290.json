@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24290",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24290",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "ライブ/ラジオ/etc."
+  ],
+  "production_year": 2018,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ライブ・ラジオ・その他",
+  "canonical_tags": [
+    "ライブ・ラジオ・その他"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ライブ・ラジオ・その他"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ライブ・ラジオ・その他"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24290"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24290"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24290"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24290"
+    }
+  }
+}

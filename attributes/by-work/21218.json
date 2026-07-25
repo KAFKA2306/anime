@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "21218",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21218",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2015,
+  "original_credit": "BANDAI",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "コメディ・ギャグ",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "BANDAI",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21218"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21218"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21218"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21218"
+    }
+  }
+}

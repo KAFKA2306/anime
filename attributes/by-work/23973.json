@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23973",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23973",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2019,
+  "original_credit": "TVアニメ「文豪ストレイドッグス」",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "推理・謎解き",
+    "サバイバル",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き",
+      "サバイバル"
+    ],
+    "motif": [
+      "犯罪・警察"
+    ],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "TVアニメ「文豪ストレイドッグス」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23973"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23973"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23973"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ],
+          "サバイバル": [
+            "生き残"
+          ]
+        },
+        "motif": {
+          "犯罪・警察": [
+            "警察"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23973"
+    }
+  }
+}

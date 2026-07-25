@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11512",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11512",
+  "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2014,
+  "original_credit": "Project 2H",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "ドラマ・青春",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "Project 2H",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11512"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "勇者"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11512"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11512"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校",
+            "部活"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11512"
+    }
+  }
+}

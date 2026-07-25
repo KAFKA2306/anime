@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11430",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11430",
+  "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2012,
+  "original_credit": "鈴木大輔(MF文庫J)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "学園",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "鈴木大輔(MF文庫J)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11430"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11430"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11430"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11430"
+    }
+  }
+}

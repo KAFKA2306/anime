@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11203",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11203",
+  "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "ドラマ/青春"
+  ],
+  "production_year": 2006,
+  "original_credit": "鶴屋南北(1~4話)、泉鏡花(5~8話)",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "ドラマ・青春",
+    "歴史・時代劇"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "鶴屋南北(1~4話)、泉鏡花(5~8話)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11203"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11203"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11203"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "江戸",
+            "明治"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11203"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10959",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10959",
+  "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2003,
+  "original_credit": "GROOVER(18禁PCゲーム)",
+  "source_origin": "ゲーム",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "SF・ファンタジー",
+    "学園",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ゲーム"
+    ],
+    "genre": [
+      "恋愛・ラブコメ",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-game-credit",
+      "matched_terms": [
+        "ゲーム"
+      ],
+      "evidence_text": "GROOVER(18禁PCゲーム)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10959"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10959"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10959"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園",
+            "高校"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10959"
+    }
+  }
+}

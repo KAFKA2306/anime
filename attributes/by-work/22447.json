@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22447",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22447",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2018,
+  "original_credit": "NEKO WORKs",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "日常・ほのぼの",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "NEKO WORKs",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22447"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22447"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22447"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "働く"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22447"
+    }
+  }
+}

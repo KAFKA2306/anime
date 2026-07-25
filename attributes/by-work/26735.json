@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "26735",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26735",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -13,12 +13,27 @@
   "primary_genre": "SF・ファンタジー",
   "canonical_tags": [
     "SF・ファンタジー",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "魔法"
   ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,11 +52,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26735"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26735"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26735"
     }
   }

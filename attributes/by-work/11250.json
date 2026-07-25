@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11250",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11250",
+  "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2014,
+  "original_credit": "弐瓶 勉 講談社「アフタヌーン」連載",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ロボット・メカ",
+    "ドラマ・青春",
+    "学園",
+    "宇宙",
+    "サバイバル"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "ロボット・メカ",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園",
+      "宇宙"
+    ],
+    "theme": [
+      "サバイバル"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "アフタヌーン"
+      ],
+      "evidence_text": "弐瓶 勉 講談社「アフタヌーン」連載",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11250"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11250"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11250"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ],
+          "宇宙": [
+            "宇宙",
+            "惑星"
+          ]
+        },
+        "theme": {
+          "サバイバル": [
+            "生き残"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11250"
+    }
+  }
+}

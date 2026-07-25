@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24835",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24835",
+  "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "official_genres": [
+    "アクション/バトル",
+    "スポーツ/競技"
+  ],
+  "production_year": 2020,
+  "original_credit": "『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "スポーツ・競技",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "スポーツ・競技"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24835"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "スポーツ/競技"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24835"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "スポーツ/競技"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24835"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24835"
+    }
+  }
+}

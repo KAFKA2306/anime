@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24619",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24619",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2019,
+  "original_credit": "DAME×PRINCE(NHN PlayArt株式会社)",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "政治・戦略"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "setting": [],
+    "theme": [
+      "政治・戦略"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "DAME×PRINCE(NHN PlayArt株式会社)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24619"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24619"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24619"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "政治・戦略": [
+            "国家"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24619"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20024",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024",
+  "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "official_genres": [
+    "ショート"
+  ],
+  "production_year": 2013,
+  "original_credit": "コザキユースケ(掲載「ヤングガンガン」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "友情・仲間",
+    "料理・グルメ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ショート"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "料理・グルメ"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "コザキユースケ(掲載「ヤングガンガン」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "料理・グルメ": [
+            "菓子"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
+    }
+  }
+}

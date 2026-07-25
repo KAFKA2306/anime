@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "25341",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341",
+  "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2022,
+  "original_credit": "丹念に発酵(月刊コミックフラッパー連載",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミック"
+      ],
+      "evidence_text": "丹念に発酵(月刊コミックフラッパー連載",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "エルフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "呪い"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
+    }
+  }
+}

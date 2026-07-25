@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22036",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22036",
+  "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 1999,
+  "original_credit": "藤崎竜「封神演義」",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "歴史・戦記",
+    "友情・仲間",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "藤崎竜「封神演義」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22036"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22036"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22036"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22036"
+    }
+  }
+}

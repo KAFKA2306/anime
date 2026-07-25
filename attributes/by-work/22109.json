@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22109",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22109",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2018,
+  "original_credit": "レベルファイブ",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "キッズ・ファミリー",
+    "推理・謎解き",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "レベルファイブ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22109"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22109"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22109"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪",
+            "幽霊"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22109"
+    }
+  }
+}

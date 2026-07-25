@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11240",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11240",
+  "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2014,
+  "original_credit": "佐島 勤(電撃文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "恋愛・ラブコメ",
+    "学園",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "佐島 勤(電撃文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11240"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11240"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11240"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校",
+            "大学"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11240"
+    }
+  }
+}

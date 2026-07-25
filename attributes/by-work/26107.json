@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26107",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107",
+  "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2021,
+  "original_credit": "中澤一登×Production I.G",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "成長・挑戦",
+    "政治・戦略",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦",
+      "政治・戦略",
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "中澤一登×Production I.G",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "成長"
+          ],
+          "政治・戦略": [
+            "国家"
+          ],
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
+    }
+  }
+}

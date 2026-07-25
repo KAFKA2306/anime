@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28333",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28333",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2025,
+  "original_credit": "ONE・村田雄介「ワンパンマン」(集英社「となりのヤングジャンプ」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "SF・ファンタジー"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ヤングジャンプ"
+      ],
+      "evidence_text": "ONE・村田雄介「ワンパンマン」(集英社「となりのヤングジャンプ」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28333"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28333"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28333"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28333"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11318",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11318",
+  "attribute_fetched_at": "2026-07-25T10:20:55.286Z",
+  "official_genres": [
+    "アクション/バトル",
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 1986,
+  "original_credit": "車田正美",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "SF・ファンタジー",
+    "ドラマ・青春",
+    "宇宙"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "SF・ファンタジー",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "車田正美",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11318"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11318"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11318"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "銀河"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11318"
+    }
+  }
+}

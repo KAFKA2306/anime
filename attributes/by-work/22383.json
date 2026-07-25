@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22383",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22383",
+  "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2014,
+  "original_credit": "「宇宙兄弟」小山宙哉(講談社「モーニング」連載中)",
+  "source_origin": "漫画",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ロボット・メカ",
+    "ドラマ・青春",
+    "宇宙",
+    "家族",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "ロボット・メカ",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "家族",
+      "職業・仕事"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "モーニング"
+      ],
+      "evidence_text": "「宇宙兄弟」小山宙哉(講談社「モーニング」連載中)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22383"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22383"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22383"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙"
+          ]
+        },
+        "theme": {
+          "家族": [
+            "兄弟"
+          ],
+          "職業・仕事": [
+            "職場"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22383"
+    }
+  }
+}

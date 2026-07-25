@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28267",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2025,
+  "original_credit": "木乃子増緒(アルファポリス刊)",
+  "source_origin": "Web小説（なろう・カクヨム系）",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "日常・ほのぼの",
+    "異世界",
+    "友情・仲間",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "Web小説（なろう・カクヨム系）"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "日常・ほのぼの"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-web-platform",
+      "matched_terms": [
+        "アルファポリス"
+      ],
+      "evidence_text": "木乃子増緒(アルファポリス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生",
+        "剣と魔法",
+        "エルフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "転生"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
+    }
+  }
+}

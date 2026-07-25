@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "29060",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29060",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "歴史/戦記",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "トマトスープ『天幕のジャードゥーガル』(秋田書店「Souffle」連載)",
+  "source_origin": null,
+  "primary_genre": "歴史・戦記",
+  "canonical_tags": [
+    "歴史・戦記",
+    "ドラマ・青春",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "歴史・戦記",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "トマトスープ『天幕のジャードゥーガル』(秋田書店「Souffle」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29060"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "歴史/戦記",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29060"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "歴史/戦記",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29060"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "絆"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29060"
+    }
+  }
+}

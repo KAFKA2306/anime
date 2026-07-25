@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28845",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28845",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2026,
+  "original_credit": "ブシロード 伊藤彰",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "スポーツ・競技",
+    "SF・ファンタジー",
+    "キッズ・ファミリー",
+    "異世界",
+    "学園",
+    "宇宙",
+    "友情・仲間",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "スポーツ・競技",
+      "SF・ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [
+      "異世界",
+      "学園",
+      "宇宙"
+    ],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ブシロード 伊藤彰",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28845"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [
+        "異世界"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28845"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28845"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界"
+          ],
+          "学園": [
+            "高校"
+          ],
+          "宇宙": [
+            "惑星"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "成長"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28845"
+    }
+  }
+}

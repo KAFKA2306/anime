@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28880",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28880",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "日常/ほのぼの",
+    "コメディ/ギャグ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "ひさまくまこ(芳文社「まんがタイムきらら」)",
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "コメディ・ギャグ",
+    "ドラマ・青春",
+    "学園",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの",
+      "コメディ・ギャグ",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ひさまくまこ(芳文社「まんがタイムきらら」)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28880"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28880"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28880"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校",
+            "高校"
+          ]
+        },
+        "theme": {
+          "職業・仕事": [
+            "働く"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28880"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "25685",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685",
+  "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2022,
+  "original_credit": "天那光汰・梅津葉子(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "異世界",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "天那光汰・梅津葉子(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "召喚"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "召喚"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法",
+            "魔術",
+            "魔導"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685"
+    }
+  }
+}

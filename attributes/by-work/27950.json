@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27950",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27950",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2025,
+  "original_credit": "豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "恋愛",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27950"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27950"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27950"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "恋心",
+            "ラブコメ"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27950"
+    }
+  }
+}

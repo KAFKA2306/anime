@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22989",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2019,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "ドラマ・青春",
+    "ホラー・サスペンス・ミステリー",
+    "怪異・妖怪",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "ドラマ・青春",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪",
+      "犯罪・警察"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [
+        "エルフ",
+        "ドワーフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ],
+          "犯罪・警察": [
+            "犯罪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
+    }
+  }
+}

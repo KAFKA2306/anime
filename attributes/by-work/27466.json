@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27466",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27466",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2025,
+  "original_credit": "ブシロード",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF・ファンタジー",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF・ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ブシロード",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27466"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27466"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "スポーツ/競技",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27466"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27466"
+    }
+  }
+}

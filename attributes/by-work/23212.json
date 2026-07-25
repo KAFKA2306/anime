@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23212",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23212",
+  "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2017,
+  "original_credit": "Cygames",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "ドラマ・青春",
+    "終末・ディストピア"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "終末・ディストピア"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "Cygames",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23212"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23212"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23212"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "終末・ディストピア": [
+            "世界崩壊"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23212"
+    }
+  }
+}

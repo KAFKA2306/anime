@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24179",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179",
+  "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2019,
+  "original_credit": "冨樫義博「幽☆遊☆白書」(集英社「ジャンプコミックス」刊)",
+  "source_origin": "漫画",
+  "primary_genre": "2.5次元舞台",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "推理・謎解き",
+    "職業・仕事",
+    "怪異・妖怪",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き",
+      "職業・仕事"
+    ],
+    "motif": [
+      "怪異・妖怪",
+      "犯罪・警察"
+    ],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "冨樫義博「幽☆遊☆白書」(集英社「ジャンプコミックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ],
+          "職業・仕事": [
+            "働く"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪",
+            "幽霊",
+            "鬼"
+          ],
+          "犯罪・警察": [
+            "犯罪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22363",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22363",
+  "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "ドラマ/青春"
+  ],
+  "production_year": 2017,
+  "original_credit": "森絵都『DIVE!!』(角川文庫)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ドラマ・青春",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "スポーツ・競技",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "森絵都『DIVE!!』(角川文庫)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22363"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22363"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22363"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22363"
+    }
+  }
+}

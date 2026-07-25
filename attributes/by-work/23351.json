@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23351",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351",
+  "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "official_genres": [
+    "ショート",
+    "SF/ファンタジー",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2009,
+  "original_credit": "ヨネムラマユミ(「まめゴマ」サンエックス株式会社)",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "SF・ファンタジー",
+    "日常・ほのぼの",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "SF・ファンタジー",
+      "日常・ほのぼの"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ヨネムラマユミ(「まめゴマ」サンエックス株式会社)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート",
+        "SF/ファンタジー",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "家族"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
+    }
+  }
+}

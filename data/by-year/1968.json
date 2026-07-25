@@ -33,7 +33,79 @@
       ],
       "year": 1968,
       "source_tag_id": "T0013890",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890"
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27981",
+      "attribute_fetched_at": "2026-07-25T10:55:27.515Z",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "production_year": 1968,
+      "original_credit": "川崎のぼる",
+      "source_origin": null,
+      "primary_genre": "スポーツ・競技",
+      "canonical_tags": [
+        "スポーツ・競技",
+        "ドラマ・青春",
+        "成長・挑戦"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "スポーツ・競技",
+          "ドラマ・青春"
+        ],
+        "setting": [],
+        "theme": [
+          "成長・挑戦"
+        ],
+        "motif": [],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.unclassified-credit",
+          "matched_terms": [],
+          "evidence_text": "川崎のぼる",
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27981"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-genre",
+          "official_genres": [
+            "スポーツ/競技",
+            "ドラマ/青春"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27981"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v1",
+          "official_genres": [
+            "スポーツ/競技",
+            "ドラマ/青春"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27981"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "matched_terms": {
+            "setting": {},
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {}
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27981"
+        }
+      }
     },
     {
       "work_id": "26156",
@@ -59,7 +131,93 @@
       ],
       "year": 1968,
       "source_tag_id": "T0013890",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890"
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26156",
+      "attribute_fetched_at": "2026-07-25T10:55:27.515Z",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "production_year": 1968,
+      "original_credit": "水木しげる",
+      "source_origin": null,
+      "primary_genre": "バトル・アクション",
+      "canonical_tags": [
+        "バトル・アクション",
+        "ホラー・サスペンス・ミステリー",
+        "キッズ・ファミリー",
+        "学園",
+        "怪異・妖怪"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "バトル・アクション",
+          "ホラー・サスペンス・ミステリー",
+          "キッズ・ファミリー"
+        ],
+        "setting": [
+          "学園"
+        ],
+        "theme": [],
+        "motif": [
+          "怪異・妖怪"
+        ],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.unclassified-credit",
+          "matched_terms": [],
+          "evidence_text": "水木しげる",
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26156"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-genre",
+          "official_genres": [
+            "アクション/バトル",
+            "ホラー/サスペンス/推理",
+            "キッズ/ファミリー"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26156"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v1",
+          "official_genres": [
+            "アクション/バトル",
+            "ホラー/サスペンス/推理",
+            "キッズ/ファミリー"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26156"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "matched_terms": {
+            "setting": {
+              "学園": [
+                "学校"
+              ]
+            },
+            "theme": {},
+            "motif": {
+              "怪異・妖怪": [
+                "妖怪",
+                "幽霊",
+                "鬼"
+              ]
+            }
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26156"
+        }
+      }
     },
     {
       "work_id": "26224",
@@ -85,7 +243,91 @@
       ],
       "year": 1968,
       "source_tag_id": "T0013890",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890"
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26224",
+      "attribute_fetched_at": "2026-07-25T10:55:27.515Z",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "production_year": 1968,
+      "original_credit": "石森章太郎",
+      "source_origin": null,
+      "primary_genre": "SF・ファンタジー",
+      "canonical_tags": [
+        "SF・ファンタジー",
+        "宇宙",
+        "友情・仲間",
+        "成長・挑戦",
+        "料理・グルメ"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "SF・ファンタジー"
+        ],
+        "setting": [
+          "宇宙"
+        ],
+        "theme": [
+          "友情・仲間",
+          "成長・挑戦",
+          "料理・グルメ"
+        ],
+        "motif": [],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.unclassified-credit",
+          "matched_terms": [],
+          "evidence_text": "石森章太郎",
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26224"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-genre",
+          "official_genres": [
+            "SF/ファンタジー"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26224"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v1",
+          "official_genres": [
+            "SF/ファンタジー"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26224"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "matched_terms": {
+            "setting": {
+              "宇宙": [
+                "宇宙"
+              ]
+            },
+            "theme": {
+              "友情・仲間": [
+                "仲間"
+              ],
+              "成長・挑戦": [
+                "挑戦"
+              ],
+              "料理・グルメ": [
+                "料理"
+              ]
+            },
+            "motif": {}
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26224"
+        }
+      }
     },
     {
       "work_id": "27985",
@@ -111,7 +353,74 @@
       ],
       "year": 1968,
       "source_tag_id": "T0013890",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890"
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27985",
+      "attribute_fetched_at": "2026-07-25T10:55:27.515Z",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "production_year": 1968,
+      "original_credit": "江戸川乱歩",
+      "source_origin": null,
+      "primary_genre": "ホラー・サスペンス・ミステリー",
+      "canonical_tags": [
+        "ホラー・サスペンス・ミステリー",
+        "推理・謎解き"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "ホラー・サスペンス・ミステリー"
+        ],
+        "setting": [],
+        "theme": [
+          "推理・謎解き"
+        ],
+        "motif": [],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.unclassified-credit",
+          "matched_terms": [],
+          "evidence_text": "江戸川乱歩",
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27985"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-genre",
+          "official_genres": [
+            "ホラー/サスペンス/推理"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27985"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v1",
+          "official_genres": [
+            "ホラー/サスペンス/推理"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27985"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "matched_terms": {
+            "setting": {},
+            "theme": {
+              "推理・謎解き": [
+                "探偵"
+              ]
+            },
+            "motif": {}
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27985"
+        }
+      }
     },
     {
       "work_id": "23387",
@@ -137,12 +446,84 @@
       ],
       "year": 1968,
       "source_tag_id": "T0013890",
-      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890"
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0013890",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23387",
+      "attribute_fetched_at": "2026-07-25T10:55:27.515Z",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "production_year": 1968,
+      "original_credit": "梶原一騎(作)、川崎のぼる(画)",
+      "source_origin": null,
+      "primary_genre": "スポーツ・競技",
+      "canonical_tags": [
+        "スポーツ・競技",
+        "ドラマ・青春",
+        "学園"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "スポーツ・競技",
+          "ドラマ・青春"
+        ],
+        "setting": [
+          "学園"
+        ],
+        "theme": [],
+        "motif": [],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.unclassified-credit",
+          "matched_terms": [],
+          "evidence_text": "梶原一騎(作)、川崎のぼる(画)",
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23387"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-genre",
+          "official_genres": [
+            "スポーツ/競技",
+            "ドラマ/青春"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23387"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v1",
+          "official_genres": [
+            "スポーツ/競技",
+            "ドラマ/青春"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23387"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "matched_terms": {
+            "setting": {
+              "学園": [
+                "高校"
+              ]
+            },
+            "theme": {},
+            "motif": {}
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23387"
+        }
+      }
     }
   ],
   "attribute_coverage": {
-    "enriched_count": 0,
+    "enriched_count": 5,
     "total_count": 5,
-    "coverage_ratio": 0
+    "coverage_ratio": 1
   }
 }

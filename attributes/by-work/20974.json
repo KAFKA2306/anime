@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20974",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974",
+  "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "official_genres": [
+    "日常/ほのぼの",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2016,
+  "original_credit": "ヨシノサツキ(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "日常・ほのぼの",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "コメディ・ギャグ",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "日常・ほのぼの",
+      "コメディ・ギャグ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "ガンガン"
+      ],
+      "evidence_text": "ヨシノサツキ(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校",
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
+    }
+  }
+}

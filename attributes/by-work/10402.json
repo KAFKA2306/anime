@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10402",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10402",
+  "attribute_fetched_at": "2026-07-25T10:44:56.484Z",
+  "official_genres": [
+    "ロボット/メカ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 1997,
+  "original_credit": null,
+  "source_origin": "漫画",
+  "primary_genre": "ロボット・メカ",
+  "canonical_tags": [
+    "ロボット・メカ",
+    "SF・ファンタジー"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ロボット・メカ",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミック"
+      ],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10402"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ロボット/メカ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10402"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ロボット/メカ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10402"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10402"
+    }
+  }
+}

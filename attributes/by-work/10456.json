@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10456",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10456",
+  "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2006,
+  "original_credit": "日本一ソフトウェア(プレイステーション2用ゲームソフト「魔界戦記ディスガイア」)",
+  "source_origin": "ゲーム",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "コメディ・ギャグ",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ゲーム"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-game-credit",
+      "matched_terms": [
+        "ゲーム"
+      ],
+      "evidence_text": "日本一ソフトウェア(プレイステーション2用ゲームソフト「魔界戦記ディスガイア」)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10456"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "勇者",
+        "魔王"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10456"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10456"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10456"
+    }
+  }
+}

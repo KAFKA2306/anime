@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22543",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22543",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2018,
+  "original_credit": "春場ねぎ(講談社「週刊少年マガジン」連載中)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "学園",
+    "家族",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "家族",
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "マガジン"
+      ],
+      "evidence_text": "春場ねぎ(講談社「週刊少年マガジン」連載中)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22543"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22543"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22543"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "家族": [
+            "姉妹"
+          ],
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22543"
+    }
+  }
+}

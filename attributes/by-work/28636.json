@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28636",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28636",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": "春紫「アルネの事件簿」(ゲームマガジン)",
+  "source_origin": "ゲーム",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "ホラー・サスペンス・ミステリー",
+    "推理・謎解き",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ゲーム"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-game-credit",
+      "matched_terms": [
+        "ゲーム"
+      ],
+      "evidence_text": "春紫「アルネの事件簿」(ゲームマガジン)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28636"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28636"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28636"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "怪異",
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28636"
+    }
+  }
+}

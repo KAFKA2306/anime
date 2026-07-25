@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "27033",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "恋愛/ラブコメ",
     "SF/ファンタジー"
@@ -13,12 +13,32 @@
   "primary_genre": "恋愛・ラブコメ",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "SF・ファンタジー"
+    "SF・ファンタジー",
+    "学園",
+    "恋愛"
   ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -39,11 +59,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "恋愛/ラブコメ",
         "SF/ファンタジー"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {}
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27033"
     }
   }

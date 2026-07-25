@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24554",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554",
+  "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2021,
+  "original_credit": "暁なつめ(株式会社KADOKAWA 角川スニーカー文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "宇宙"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "暁なつめ(株式会社KADOKAWA 角川スニーカー文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙",
+            "惑星"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554"
+    }
+  }
+}

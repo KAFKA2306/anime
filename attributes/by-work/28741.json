@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28741",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28741",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "ショート"
+  ],
+  "production_year": 2025,
+  "original_credit": "うたみつほ",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "ショート",
+    "異世界",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー",
+      "恋愛・ラブコメ",
+      "ショート"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "うたみつほ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28741"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28741"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28741"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "転生"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28741"
+    }
+  }
+}

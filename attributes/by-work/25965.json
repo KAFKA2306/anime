@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "25965",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965",
+  "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2022,
+  "original_credit": "御子柴奈々『冰剣の魔術師が世界を統べる 世界最強の魔術師である少年は、魔術学院に入学する』(講談社ラノベ文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "学園",
+    "友情・仲間",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "御子柴奈々『冰剣の魔術師が世界を統べる 世界最強の魔術師である少年は、魔術学院に入学する』(講談社ラノベ文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情",
+            "仲間"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔術"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965"
+    }
+  }
+}

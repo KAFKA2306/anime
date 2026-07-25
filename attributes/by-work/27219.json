@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27219",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27219",
+  "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "official_genres": [
+    "アクション/バトル",
+    "歴史/戦記"
+  ],
+  "production_year": 2022,
+  "original_credit": "野田サトル(集英社ヤングジャンプ コミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "歴史・戦記",
+    "サバイバル",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "歴史・戦記"
+    ],
+    "setting": [],
+    "theme": [
+      "サバイバル"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック",
+        "ヤングジャンプ"
+      ],
+      "evidence_text": "野田サトル(集英社ヤングジャンプ コミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27219"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27219"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "歴史/戦記"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27219"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "サバイバル": [
+            "サバイバル"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27219"
+    }
+  }
+}

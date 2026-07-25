@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "28164",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28164",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2023,
+  "original_credit": "尼子騒兵衛(「落第忍者乱太郎」より)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "キッズ・ファミリー",
+    "学園",
+    "歴史・時代劇"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "キッズ・ファミリー"
+    ],
+    "setting": [
+      "学園",
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "尼子騒兵衛(「落第忍者乱太郎」より)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28164"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28164"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28164"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ],
+          "歴史・時代劇": [
+            "戦国"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28164"
+    }
+  }
+}

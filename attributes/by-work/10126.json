@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10126",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10126",
+  "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2008,
+  "original_credit": "瀬川はじめ(月刊「少年エース」連載、角川コミックス・エース刊)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "瀬川はじめ(月刊「少年エース」連載、角川コミックス・エース刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10126"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10126"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10126"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "絆"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10126"
+    }
+  }
+}

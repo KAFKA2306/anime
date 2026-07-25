@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11599",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11599",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2015,
+  "original_credit": "鈴木ジュリエッタ(白泉社「花とゆめ」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "コメディ・ギャグ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ",
+      "コメディ・ギャグ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "花とゆめ"
+      ],
+      "evidence_text": "鈴木ジュリエッタ(白泉社「花とゆめ」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11599"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11599"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11599"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11599"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27726",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27726",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2015,
+  "original_credit": "トッド・デュアハム、ダン・ヘイグマン、ケヴィン・ヘイグマン",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "キッズ・ファミリー",
+    "友情・仲間",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "トッド・デュアハム、ダン・ヘイグマン、ケヴィン・ヘイグマン",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27726"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27726"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27726"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "家族": [
+            "家族"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27726"
+    }
+  }
+}

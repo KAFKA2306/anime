@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27540",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27540",
+  "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2012,
+  "original_credit": "眉村 卓(講談社刊・青い鳥文庫所載)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "眉村 卓(講談社刊・青い鳥文庫所載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27540"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27540"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27540"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27540"
+    }
+  }
+}

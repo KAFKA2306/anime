@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10601",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10601",
+  "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2007,
+  "original_credit": "雪乃 紗衣",
+  "source_origin": null,
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "友情・仲間",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF・ファンタジー",
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "雪乃 紗衣",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10601"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10601"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10601"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ],
+          "成長・挑戦": [
+            "成長"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10601"
+    }
+  }
+}

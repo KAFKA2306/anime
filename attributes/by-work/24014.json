@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24014",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24014",
+  "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "official_genres": [
+    "コメディ/ギャグ",
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2012,
+  "original_credit": "クーリア",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "SF・ファンタジー",
+    "キッズ・ファミリー",
+    "宇宙",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "SF・ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "クーリア",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24014"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24014"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24014"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙",
+            "惑星"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24014"
+    }
+  }
+}

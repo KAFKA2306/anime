@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24446",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24446",
+  "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "official_genres": [
+    "ドラマ/青春",
+    "ライブ/ラジオ/etc.",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2021,
+  "original_credit": "バンダイ",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "ライブ・ラジオ・その他",
+    "キッズ・ファミリー",
+    "学園",
+    "音楽・アイドル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "ライブ・ラジオ・その他",
+      "キッズ・ファミリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": [
+      "ライブ・ラジオ・その他"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "バンダイ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24446"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春",
+        "ライブ/ラジオ/etc.",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24446"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春",
+        "ライブ/ラジオ/etc.",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24446"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校",
+            "高校"
+          ]
+        },
+        "theme": {
+          "音楽・アイドル": [
+            "アイドル"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24446"
+    }
+  }
+}

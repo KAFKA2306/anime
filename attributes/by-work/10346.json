@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10346",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346",
+  "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "official_genres": [
+    "ドラマ/青春",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2009,
+  "original_credit": "CLAMP;「こばと。」(角川書店 月刊ニュータイプ連載;角川コミックス・エース刊)「Wish」(角川書店 角川コミックス・エース刊)",
+  "source_origin": "漫画",
+  "primary_genre": "ドラマ・青春",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "恋愛・ラブコメ",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ドラマ・青春",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "CLAMP;「こばと。」(角川書店 月刊ニュータイプ連載;角川コミックス・エース刊)「Wish」(角川書店 角川コミックス・エース刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "働く"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
+    }
+  }
+}

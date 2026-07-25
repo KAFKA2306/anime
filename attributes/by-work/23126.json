@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23126",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126",
+  "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2020,
+  "original_credit": "夕蜜柑 (カドカワBOOKS『痛いのは嫌なので防御力に極振りしたいと思います。』",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "SF・ファンタジー",
+    "友情・仲間",
+    "成長・挑戦",
+    "ゲーム世界"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦"
+    ],
+    "motif": [
+      "ゲーム世界"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "BOOKS"
+      ],
+      "evidence_text": "夕蜜柑 (カドカワBOOKS『痛いのは嫌なので防御力に極振りしたいと思います。』",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "成長"
+          ]
+        },
+        "motif": {
+          "ゲーム世界": [
+            "VRMMO"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126"
+    }
+  }
+}

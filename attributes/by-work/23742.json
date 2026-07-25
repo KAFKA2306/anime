@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23742",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742",
+  "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "戦争/ミリタリー"
+  ],
+  "production_year": 2011,
+  "original_credit": "犬村 小六 (小学館・ガガガ文庫刊 )",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF・ファンタジー",
+  "canonical_tags": [
+    "SF・ファンタジー",
+    "恋愛・ラブコメ",
+    "戦争・ミリタリー"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF・ファンタジー",
+      "恋愛・ラブコメ",
+      "戦争・ミリタリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "犬村 小六 (小学館・ガガガ文庫刊 )",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "戦争/ミリタリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "戦争/ミリタリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
+    }
+  }
+}

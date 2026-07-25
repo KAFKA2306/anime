@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "29097",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29097",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "ショート",
+    "日常/ほのぼの",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2026,
+  "original_credit": "『アズールレーン』運営",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "日常・ほのぼの",
+    "SF・ファンタジー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "日常・ほのぼの",
+      "SF・ファンタジー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "『アズールレーン』運営",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29097"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29097"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29097"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29097"
+    }
+  }
+}

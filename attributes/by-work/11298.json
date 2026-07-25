@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "11298",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11298",
+  "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "official_genres": [
+    "ショート"
+  ],
+  "production_year": 2013,
+  "original_credit": "ハッピープロジェクト",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ハッピープロジェクト",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11298"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11298"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11298"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11298"
+    }
+  }
+}

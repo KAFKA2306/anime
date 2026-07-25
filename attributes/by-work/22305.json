@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "22305",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22305",
+  "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "official_genres": [
+    "ショート",
+    "SF/ファンタジー",
+    "アクション/バトル"
+  ],
+  "production_year": 2018,
+  "original_credit": "NET EASE GAMES",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "SF・ファンタジー",
+    "バトル・アクション",
+    "歴史・時代劇",
+    "友情・仲間",
+    "怪異・妖怪",
+    "ゲーム世界"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "SF・ファンタジー",
+      "バトル・アクション"
+    ],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "怪異・妖怪",
+      "ゲーム世界"
+    ],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "NET EASE GAMES",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22305"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22305"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート",
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22305"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "平安"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪",
+            "鬼"
+          ],
+          "ゲーム世界": [
+            "ゲーム内"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22305"
+    }
+  }
+}

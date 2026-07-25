@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "27888",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27888",
+  "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": "「ヴィジランテ -僕のヒーローアカデミアILLEGALS-」(集英社 ジャンプ コミックス刊) 古橋秀之 別天荒人 堀越耕平",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ドラマ・青春",
+    "学園",
+    "音楽・アイドル",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [
+      "犯罪・警察"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "「ヴィジランテ -僕のヒーローアカデミアILLEGALS-」(集英社 ジャンプ コミックス刊) 古橋秀之 別天荒人 堀越耕平",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27888"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27888"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27888"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "音楽・アイドル": [
+            "アイドル"
+          ]
+        },
+        "motif": {
+          "犯罪・警察": [
+            "犯罪"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27888"
+    }
+  }
+}

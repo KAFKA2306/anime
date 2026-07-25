@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "23016",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016",
+  "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2021,
+  "original_credit": "小川悦司『真・中華一番!』(講談社「週刊少年マガジン」所蔵)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ドラマ・青春",
+    "友情・仲間",
+    "料理・グルメ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "料理・グルメ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "週刊少年",
+        "マガジン"
+      ],
+      "evidence_text": "小川悦司『真・中華一番!』(講談社「週刊少年マガジン」所蔵)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "料理・グルメ": [
+            "料理"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
+    }
+  }
+}

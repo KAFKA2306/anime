@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "work_id": "28244",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28244",
-  "attribute_fetched_at": "2026-07-23T00:24:51.391Z",
+  "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
   "official_genres": [
     "ドラマ/青春",
     "恋愛/ラブコメ"
@@ -13,12 +13,27 @@
   "primary_genre": "ドラマ・青春",
   "canonical_tags": [
     "ドラマ・青春",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "音楽・アイドル"
   ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": []
+  },
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,11 +52,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28244"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-genre-normalization",
+      "rule_id": "tags.official-plus-ontology-v1",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
       ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28244"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "音楽・アイドル": [
+            "音楽",
+            "バンド"
+          ]
+        },
+        "motif": {}
+      },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28244"
     }
   }

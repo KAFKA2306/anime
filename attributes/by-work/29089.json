@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "29089",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089",
+  "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "official_genres": [
+    "スポーツ/競技",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2026,
+  "original_credit": "江島絵理「対ありでした。 ~お嬢さまは格闘ゲームなんてしない~」(MFコミックス フラッパーシリーズ",
+  "source_origin": "ゲーム",
+  "primary_genre": "スポーツ・競技",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "コメディ・ギャグ",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ゲーム"
+    ],
+    "genre": [
+      "スポーツ・競技",
+      "コメディ・ギャグ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.explicit-game-credit",
+      "matched_terms": [
+        "ゲーム"
+      ],
+      "evidence_text": "江島絵理「対ありでした。 ~お嬢さまは格闘ゲームなんてしない~」(MFコミックス フラッパーシリーズ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "スポーツ/競技",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "スポーツ/競技",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
+    }
+  }
+}

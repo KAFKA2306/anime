@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "10258",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258",
+  "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "official_genres": [
+    "アクション/バトル",
+    "ロボット/メカ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2003,
+  "original_credit": "いづなよしつね,GONZO,錦織博",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ロボット・メカ",
+    "ドラマ・青春",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ロボット・メカ",
+      "ドラマ・青春"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "いづなよしつね,GONZO,錦織博",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "アクション/バトル",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "アクション/バトル",
+        "ロボット/メカ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "メカ"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
+    }
+  }
+}

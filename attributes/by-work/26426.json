@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "26426",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26426",
+  "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2023,
+  "original_credit": "昼熊「自動販売機に生まれ変わった俺は迷宮を彷徨う」(角川スニーカー文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF・ファンタジー",
+    "異世界"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF・ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "昼熊「自動販売機に生まれ変わった俺は迷宮を彷徨う」(角川スニーカー文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26426"
+    },
+    "primary_genre": {
+      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26426"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26426"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "転生"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26426"
+    }
+  }
+}

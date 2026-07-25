@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "24620",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24620",
+  "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "official_genres": [
+    "ショート"
+  ],
+  "production_year": 2011,
+  "original_credit": "TAGRO(講談社『モーニング・ツー』連載)",
+  "source_origin": "漫画",
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ショート"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "モーニング"
+      ],
+      "evidence_text": "TAGRO(講談社『モーニング・ツー』連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24620"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24620"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24620"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {},
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24620"
+    }
+  }
+}

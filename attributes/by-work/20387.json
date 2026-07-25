@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "work_id": "20387",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387",
+  "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "official_genres": [
+    "ショート",
+    "ホラー/サスペンス/推理",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2015,
+  "original_credit": "オトメイト(アイディアファクトリー・Rejet)",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "canonical_tags": [
+    "ショート",
+    "ホラー・サスペンス・ミステリー",
+    "恋愛・ラブコメ",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "ホラー・サスペンス・ミステリー",
+      "恋愛・ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "オトメイト(アイディアファクトリー・Rejet)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-genre",
+      "official_genres": [
+        "ショート",
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v1",
+      "official_genres": [
+        "ショート",
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "兄弟"
+          ]
+        },
+        "motif": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
+    }
+  }
+}
