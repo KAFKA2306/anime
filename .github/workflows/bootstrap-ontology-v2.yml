@@ -33,7 +33,7 @@ jobs:
       - name: Reconstruct reviewed implementation
         run: |
           set -euo pipefail
-          cat .bootstrap/part-* > /tmp/ontology-payload.b64
+          cat .bootstrap/part-00 .bootstrap/part-01 .bootstrap/part-02-0 .bootstrap/part-02-1 .bootstrap/part-02-2 .bootstrap/part-03 .bootstrap/part-04 > /tmp/ontology-payload.b64
           base64 -d /tmp/ontology-payload.b64 > /tmp/ontology-payload.tar.gz
           echo '524fbaaeef494b60991031bdccdb21876ad64c9daf1b13903969876ca1eda158  /tmp/ontology-payload.tar.gz' | sha256sum -c -
           tar -xzf /tmp/ontology-payload.tar.gz
