@@ -1,11 +1,12 @@
 {
   "name": "kafka2306-anime",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "Canonical d Anime Store catalogue and auditable attribute enrichment pipeline",
+  "description": "Canonical d Anime Store catalogue and cache-first auditable ontology pipeline",
   "scripts": {
     "acquire:raw": "node scripts/acquire-danime.mjs",
+    "attributes:rebuild-cache": "node scripts/rebuild-attributes-from-cache.mjs",
     "attributes:apply": "node scripts/apply-attributes.mjs",
     "attributes:enrich": "node scripts/enrich-official-details.mjs && npm run attributes:apply",
     "attributes:verify": "node scripts/verify-attribute-coverage.mjs",
