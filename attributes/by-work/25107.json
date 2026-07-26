@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25107",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25107",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "モノのかみさま ここたま",
+    "synopsis": "モノのかみさま ここたま BANDAI SF・ファンタジー コメディ・ギャグ",
+    "staff_text": "原作:BANDAI",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "29c495a7f9123a58f4c5c87d1edb55f71878e99b1dc9ccdfd4764ea48f65249f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,27 +24,36 @@
   "production_year": 2019,
   "original_credit": "BANDAI",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "コメディ・ギャグ"
+    "SF",
+    "コメディ・ギャグ",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,16 +63,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25107"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "AI"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25107"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -57,11 +82,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25107"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25107"
     }

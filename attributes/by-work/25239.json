@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25239",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25239",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "OVA「WILD ADAPTER」",
+    "synopsis": "OVA「WILD ADAPTER」 峰倉かずや(「ゼロサムWARD」一迅社刊) バトル・アクション ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:峰倉かずや(「ゼロサムWARD」一迅社刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "11e439460ae03450286245a3794a9591206038779b4ef6f5cfae0438e267ae15"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理"
@@ -11,6 +25,8 @@
   "original_credit": "峰倉かずや(「ゼロサムWARD」一迅社刊)",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー"
@@ -21,11 +37,13 @@
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25239"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25239"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25239"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25239"
     }

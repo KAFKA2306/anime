@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25264",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25264",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Fate/Apocrypha",
+    "synopsis": "Fate/Apocrypha 東出祐一郎・TYPE-MOON 異世界・ハイファンタジー SF・ファンタジー バトル・アクション ドラマ・青春 異世界 魔法 召喚 魔術 聖女",
+    "staff_text": "原作:東出祐一郎・TYPE-MOON",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "33ad812a16150bf2178c93fb59cf3aad391c2fad9b98c5dc891f53e0aa9ec756"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,31 +27,45 @@
   "original_credit": "東出祐一郎・TYPE-MOON",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "ドラマ・青春",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
+    "成長・挑戦",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -51,20 +80,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25264"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ドラマ/青春"
       ],
       "matched_terms": [
+        "魔法",
+        "魔術",
+        "異世界",
         "召喚",
         "聖女"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25264"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -73,17 +105,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25264"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

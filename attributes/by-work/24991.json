@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24991",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24991",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ハイパープロジェクション演劇「ハイキュー!!」 \"飛翔\"",
+    "synopsis": "ハイパープロジェクション演劇「ハイキュー!!」 \"飛翔\" ハイキュー!! 2.5次元舞台 スポーツ・競技 学園 成長・挑戦 高校 成長",
+    "staff_text": "原作:ハイキュー!!",
+    "official_genres": [
+      "2.5次元舞台",
+      "スポーツ/競技"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "328601fcf50919f73834daf8bdc66fb1ee5864ad9020cb2b3d38cbb0ca71b019"
+  },
   "official_genres": [
     "2.5次元舞台",
     "スポーツ/競技"
@@ -11,11 +25,14 @@
   "original_credit": "ハイキュー!!",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "スポーツ・競技",
     "学園",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,17 +40,20 @@
       "2.5次元舞台",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24991"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台",
         "スポーツ/競技"
@@ -57,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24991"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台",
         "スポーツ/競技"
@@ -65,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24991"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -75,10 +95,16 @@
         },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24991"
     }

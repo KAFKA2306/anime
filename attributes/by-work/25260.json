@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25260",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25260",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "池袋ウエストゲートパーク",
+    "synopsis": "池袋ウエストゲートパーク 石田衣良(『池袋ウエストゲートパーク』シリーズ 文春文庫 ホラー・サスペンス・ミステリー 犯罪・警察 警察 犯罪",
+    "staff_text": "原作:石田衣良(『池袋ウエストゲートパーク』シリーズ 文春文庫",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "e4793e919dc1dc0db036062de56c5ff9f2f0edf0262bac8b1a2fff88984918f5"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "石田衣良(『池袋ウエストゲートパーク』シリーズ 文春文庫",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "犯罪・警察"
@@ -21,6 +36,7 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [
@@ -28,6 +44,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25260"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -52,14 +69,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25260"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25260"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
@@ -68,7 +85,8 @@
             "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25260"
     }

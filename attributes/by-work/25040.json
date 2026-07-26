@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25040",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25040",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "こちら葛飾区亀有公園前派出所TVスペシャル ワシと俺!?ぼくらは浅草少年探偵団!",
+    "synopsis": "こちら葛飾区亀有公園前派出所TVスペシャル ワシと俺!?ぼくらは浅草少年探偵団! 秋本治(集英社「週刊少年ジャンプ」連載) コメディ・ギャグ 推理・謎解き 犯罪・警察 探偵 警察",
+    "staff_text": "原作:秋本治(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "26fea913b526484c0ffb8a168dd06dd540974ec0629035b9faa2f54dcfebe2f4"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "秋本治(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ミステリー",
     "推理・謎解き",
     "犯罪・警察"
   ],
@@ -22,6 +38,9 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "推理・謎解き"
@@ -31,6 +50,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25040"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -56,24 +76,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25040"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25040"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25233",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25233",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "NINJA ハットリくんリターンズ Season1",
+    "synopsis": "NINJA ハットリくんリターンズ Season1 藤子不二雄A バトル・アクション コメディ・ギャグ キッズ・ファミリー 学園 学校",
+    "staff_text": "原作:藤子不二雄A",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "89b73542ceaff8f4d83fc8b609033b70586f7bd0444dbf9594d0dbcbbed0f6b9"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ",
@@ -12,6 +27,8 @@
   "original_credit": "藤子不二雄A",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "コメディ・ギャグ",
@@ -25,6 +42,7 @@
       "コメディ・ギャグ",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -32,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25233"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ",
@@ -56,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25233"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ",
@@ -65,15 +84,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25233"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25233"
     }

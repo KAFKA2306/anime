@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25199",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25199",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "天地無用!魎皇鬼 第伍期",
+    "synopsis": "天地無用!魎皇鬼 第伍期 梶島正樹・AIC 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 異世界 宇宙 怪異・妖怪 鬼",
+    "staff_text": "原作:梶島正樹・AIC",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "b927c9a7ef28a081ef0ce71832ce24863789003e3f4b01fe7308d18680cb3634"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,31 +25,54 @@
   "original_credit": "梶島正樹・AIC",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "スペースオペラ",
+    "ラブコメ",
     "異世界",
     "宇宙",
-    "怪異・妖怪"
+    "恋愛",
+    "怪異・妖怪",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "スペースオペラ",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
-      "怪異・妖怪"
+      "怪異・妖怪",
+      "人工知能"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -50,18 +87,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25199"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
+        "宇宙",
+        "AI",
         "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25199"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -69,7 +108,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25199"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -79,10 +118,34 @@
             "宇宙"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ],
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

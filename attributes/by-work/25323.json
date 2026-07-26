@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25323",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25323",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ポケットモンスター 第101話~第147話",
+    "synopsis": "ポケットモンスター 第101話~第147話 バトル・アクション SF・ファンタジー キッズ・ファミリー",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "e145690efd5c7e7b2f7a29bc4e73bc95dcc01a3fe788003cd3bf6e565fcf2d87"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -11,49 +26,57 @@
   "production_year": 2019,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "バトル・アクション",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "ファンタジー",
     "バトル・アクション",
-    "SF・ファンタジー",
     "キッズ・ファミリー"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "ファンタジー",
       "バトル・アクション",
-      "SF・ファンタジー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "verified",
     "ontology_facets": "verified"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25323"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "モンスター"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25323"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -62,11 +85,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25323"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25323"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25189",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25189",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "怪人開発部の黒井津さん",
+    "synopsis": "怪人開発部の黒井津さん 水崎弘明(「COMICメテオ」連載 SF・ファンタジー コメディ・ギャグ 職業・仕事 働く",
+    "staff_text": "原作:水崎弘明(「COMICメテオ」連載",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "47fa2d65bc3f8c3166929e8a0b63dc0666aef57829d46645223c3623a8f4938a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,18 +24,21 @@
   "production_year": 2022,
   "original_credit": "水崎弘明(「COMICメテオ」連載",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
     "職業・仕事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25189"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25189"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25189"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25189"
     }

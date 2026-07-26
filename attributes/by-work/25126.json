@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25126",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25126",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版「テニスの王子様 跡部からの贈り物~君に捧げるテニプリ祭り~」",
+    "synopsis": "劇場版「テニスの王子様 跡部からの贈り物~君に捧げるテニプリ祭り~」 許斐 剛(集英社 ジャンプ・コミックス刊) スポーツ・競技 学園 学校",
+    "staff_text": "原作:許斐 剛(集英社 ジャンプ・コミックス刊)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "8d8bf9adf0259e24a32b52663d1f2cd95383c396d19a6c87f4c4b7459d02004c"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,24 +23,35 @@
   "original_credit": "許斐 剛(集英社 ジャンプ・コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
-    "学園"
+    "ファンタジー",
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25126"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -53,22 +77,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25126"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25126"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25126"
     }

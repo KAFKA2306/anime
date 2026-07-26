@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24990",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24990",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ハイパープロジェクション演劇「ハイキュー!!」\"東京の陣\"",
+    "synopsis": "ハイパープロジェクション演劇「ハイキュー!!」\"東京の陣\" ハイキュー!! 2.5次元舞台 スポーツ・競技 学園 高校",
+    "staff_text": "原作:ハイキュー!!",
+    "official_genres": [
+      "2.5次元舞台",
+      "スポーツ/競技"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "72ce96f747e78e475472d03a51db0f6681ed4ffc8d9280f7e1a6a756765821d0"
+  },
   "official_genres": [
     "2.5次元舞台",
     "スポーツ/競技"
@@ -11,10 +25,14 @@
   "original_credit": "ハイキュー!!",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "現代日本",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,15 +40,20 @@
       "2.5次元舞台",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
-      "学園"
+      "学園",
+      "現代日本"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24990"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台",
         "スポーツ/競技"
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24990"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台",
         "スポーツ/競技"
@@ -62,16 +85,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24990"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園",
             "高校"
+          ],
+          "現代日本": [
+            "東京"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24990"
     }

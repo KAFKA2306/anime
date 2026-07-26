@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24880",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24880",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "少女☆歌劇 レヴュースタァライト -The LIVE-#1 revival",
+    "synopsis": "少女☆歌劇 レヴュースタァライト -The LIVE-#1 revival 2.5次元舞台 ライブ・ラジオ・その他",
+    "staff_text": "",
+    "official_genres": [
+      "2.5次元舞台",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "d8e7117e56637c4952785fb461a5572ef42398bc32ca313bf1a86e77d4a4716d"
+  },
   "official_genres": [
     "2.5次元舞台",
     "ライブ/ラジオ/etc."
@@ -11,6 +25,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "ライブ・ラジオ・その他"
@@ -21,6 +37,7 @@
       "2.5次元舞台",
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -29,21 +46,22 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24880"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台",
         "ライブ/ラジオ/etc."
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24880"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台",
         "ライブ/ラジオ/etc."
@@ -60,11 +78,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24880"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24880"
     }

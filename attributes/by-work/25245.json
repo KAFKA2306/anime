@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25245",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25245",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "リーマンズクラブ",
+    "synopsis": "リーマンズクラブ Team RMC スポーツ・競技 ドラマ・青春 職業・仕事 仕事 会社員",
+    "staff_text": "原作:Team RMC",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "7237582e261da36e8e33fdd78ca85c00ef35fab8a5c895bdd7caf0f25674c77e"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春"
@@ -11,10 +25,15 @@
   "original_credit": "Team RMC",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
-    "職業・仕事"
+    "職場",
+    "成長・挑戦",
+    "職業・仕事",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +41,19 @@
       "スポーツ・競技",
       "ドラマ・青春"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
-      "職業・仕事"
+      "成長・挑戦",
+      "職業・仕事",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25245"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -52,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25245"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -60,16 +85,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25245"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
             "仕事",
             "会社員"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25245"
     }

@@ -1,27 +1,41 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24908",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24908",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "マルドゥック・スクランブル 燃焼",
+    "synopsis": "マルドゥック・スクランブル 燃焼 SF・ファンタジー 友情・仲間 犯罪・警察 絆 犯罪",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "4ade2ebf5ae03ef8818a2a3cb8fee47a580d612cbdae9d1df5157cbb03572a62"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2011,
   "original_credit": null,
-  "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
     "犯罪・警察"
   ],
   "ontology_facets": {
-    "source": [
-      "ライトノベル・小説"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -31,23 +45,22 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
-    "source_origin": "verified",
-    "primary_genre": "verified",
+    "source_origin": "unknown",
+    "primary_genre": "unknown",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-novel",
-      "matched_terms": [
-        "文庫"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24908"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -55,26 +68,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24908"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24908"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24908"
     }

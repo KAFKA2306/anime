@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25268",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25268",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゴールデンカムイ(第三期)",
+    "synopsis": "ゴールデンカムイ(第三期) 野田サトル(集英社「週刊ヤングジャンプ」連載) バトル・アクション 歴史・戦記 友情・仲間 サバイバル 仲間 絆",
+    "staff_text": "原作:野田サトル(集英社「週刊ヤングジャンプ」連載)",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "814cf8ef14ad971042fe8edfd11f290e039b5c728b123be890ed85ceef1d4051"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "野田サトル(集英社「週刊ヤングジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -25,6 +41,7 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -33,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25268"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -58,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25268"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -66,11 +84,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25268"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間",
             "絆"
           ],
@@ -78,7 +97,8 @@
             "サバイバル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25268"
     }

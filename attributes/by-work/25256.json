@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25256",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25256",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "オンエアできない!",
+    "synopsis": "オンエアできない! 真船佳奈「オンエアできない!」「オンエアできない!Deep」(朝日新聞出版) ショート コメディ・ギャグ 職業・仕事 仕事",
+    "staff_text": "原作:真船佳奈「オンエアできない!」「オンエアできない!Deep」(朝日新聞出版)",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "3c19e0f0a63bf56f9be3c1bbdf6d663e949f88952fc5da1a1f415e628d8f54d3"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "真船佳奈「オンエアできない!」「オンエアできない!Deep」(朝日新聞出版)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -22,6 +38,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -31,6 +48,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25256"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25256"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -62,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25256"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -70,7 +88,8 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25256"
     }

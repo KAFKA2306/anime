@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24993",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24993",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "真の仲間じゃないと勇者のパーティーを追い出されたので、辺境でスローライフすることにしました",
+    "synopsis": "真の仲間じゃないと勇者のパーティーを追い出されたので、辺境でスローライフすることにしました ざっぽん(株式会社KADOKAWA 角川スニーカー文庫刊) 異世界・ハイファンタジー SF・ファンタジー 友情・仲間 仲間 勇者 賢者",
+    "staff_text": "原作:ざっぽん(株式会社KADOKAWA 角川スニーカー文庫刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "8d779c2d40a9f9cb5198e68345c20971724838724ba8fd3f225965fe305834ef"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,9 +23,16 @@
   "original_credit": "ざっぽん(株式会社KADOKAWA 角川スニーカー文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "職場",
     "友情・仲間"
   ],
   "ontology_facets": {
@@ -21,15 +41,22 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界",
+      "職場"
+    ],
     "theme": [
       "友情・仲間"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -46,33 +73,47 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24993"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
         "勇者",
+        "異世界",
         "賢者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24993"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24993"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ],
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24993"
     }

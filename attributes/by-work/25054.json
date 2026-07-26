@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25054",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25054",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "VART-声優たちの新たな挑戦-season2-",
+    "synopsis": "VART-声優たちの新たな挑戦-season2- ライブ・ラジオ・その他 成長・挑戦 挑戦",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "01069786a93ea77407ec555e4105fd6d3b1cde1883921d1da1230dcdc1303fb6"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,24 +23,30 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
-    "成長・挑戦"
+    "成長・挑戦",
+    "創作・芸能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "創作・芸能"
     ],
     "motif": [],
     "format": [
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -36,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25054"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -50,22 +69,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25054"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25054"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
+          ],
+          "創作・芸能": [
+            "声優"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25054"
     }

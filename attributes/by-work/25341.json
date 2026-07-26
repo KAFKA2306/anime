@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25341",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "このヒーラー、めんどくさい",
+    "synopsis": "このヒーラー、めんどくさい 丹念に発酵(月刊コミックフラッパー連載 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ 怪異・妖怪 呪い エルフ",
+    "staff_text": "原作:丹念に発酵(月刊コミックフラッパー連載",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "9c184b9b33a46ab2beaadbb8164a65f028bd15c76ec669724e0204f3ed918d7d"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -11,10 +25,17 @@
   "original_credit": "丹念に発酵(月刊コミックフラッパー連載",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -23,16 +44,23 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,18 +77,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
+        "異世界",
         "エルフ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -68,13 +97,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25341"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

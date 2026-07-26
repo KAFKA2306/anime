@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25295",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25295",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "余命彼氏vol.5~紡ぎ出す季節~",
+    "synopsis": "余命彼氏vol.5~紡ぎ出す季節~ ライブ・ラジオ・その他 学園 恋愛 料理・グルメ 職業・仕事 大学 料理 仕事",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "53eacadc3b1e7c3bf9f07527ea01d21c20e820cd7af5c717cfd57d68808a64eb"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
     "学園",
@@ -22,6 +37,7 @@
     "genre": [
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -35,6 +51,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25295"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -57,17 +74,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25295"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25295"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
@@ -76,13 +94,15 @@
             "恋愛"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25295"
     }

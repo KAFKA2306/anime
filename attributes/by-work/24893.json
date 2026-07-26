@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24893",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24893",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "エリック・カールコレクション はらぺこあおむし",
+    "synopsis": "エリック・カールコレクション はらぺこあおむし SF・ファンタジー キッズ・ファミリー 音楽・アイドル 音楽",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "4d6901506bce08dcb9fd1bdd9d062cdb6df4e3a21c986359e8220f54cdf34482"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー"
@@ -10,18 +24,21 @@
   "production_year": 1996,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
     "音楽・アイドル"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24893"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24893"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24893"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24893"
     }
