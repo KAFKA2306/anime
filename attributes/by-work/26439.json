@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26439",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26439",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版「進撃の巨人」~クロニクル~",
+    "synopsis": "劇場版「進撃の巨人」~クロニクル~ 諫山創(別冊少年マガジン バトル・アクション SF・ファンタジー ドラマ・青春 成長・挑戦 成長",
+    "staff_text": "原作:諫山創(別冊少年マガジン",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "c91554e18e4897d75262bd7812de2d3c09734d77c9426d65938489677762fbce"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,10 +27,12 @@
   "original_credit": "諫山創(別冊少年マガジン",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "成長・挑戦"
   ],
   "ontology_facets": {
@@ -24,9 +41,10 @@
     ],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -34,6 +52,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26439"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -60,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26439"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -69,15 +88,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26439"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26439"
     }

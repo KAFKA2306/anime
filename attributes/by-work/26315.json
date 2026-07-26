@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26315",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "【推しの子】",
+    "synopsis": "【推しの子】 「【推しの子】」赤坂アカ×横槍メンゴ(集英社「週刊ヤングジャンプ」連載) SF・ファンタジー 恋愛・ラブコメ ホラー・サスペンス・ミステリー 音楽・アイドル 職業・仕事 アイドル 働く",
+    "staff_text": "原作:「【推しの子】」赤坂アカ×横槍メンゴ(集英社「週刊ヤングジャンプ」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "b819192a29c0123737338a2752cd2246b6ee80a1ccddc108eb866f663fd56b11"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,11 +26,15 @@
   "production_year": 2023,
   "original_credit": "「【推しの子】」赤坂アカ×横槍メンゴ(集英社「週刊ヤングジャンプ」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "恋愛",
     "音楽・アイドル",
     "職業・仕事"
   ],
@@ -24,18 +43,23 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "恋愛・ラブコメ",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
+      "恋愛",
       "音楽・アイドル",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -62,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -71,18 +95,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315"
     }

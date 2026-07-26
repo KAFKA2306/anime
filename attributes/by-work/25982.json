@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25982",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "魔王学院の不適合者 II ~史上最強の魔王の始祖、転生して子孫たちの学校へ通う~",
+    "synopsis": "魔王学院の不適合者 II ~史上最強の魔王の始祖、転生して子孫たちの学校へ通う~ 秋 異世界・ハイファンタジー SF・ファンタジー 異世界 学園 転生 学校 魔王",
+    "staff_text": "原作:秋",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "ada63ff4bd7140ef425c1dd5e56e1a49b424db0a8c3410a58a1264afe60df0de"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,26 +23,38 @@
   "original_credit": "秋",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
-    "学園"
+    "学園",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -44,36 +69,49 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "転生",
-        "魔王"
+        "魔王",
+        "異世界",
+        "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ],
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982"
     }

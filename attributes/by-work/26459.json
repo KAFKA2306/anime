@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26459",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26459",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "白聖女と黒牧師",
+    "synopsis": "白聖女と黒牧師 和武はざの(講談社「月マガ基地」連載) 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 恋愛 料理・グルメ 恋する ラブコメ 料理 聖女",
+    "staff_text": "原作:和武はざの(講談社「月マガ基地」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "fabb34813718b4962af26e203ee4ba1ffa9574ab9c41922977442e6569bf3cda"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,10 +25,17 @@
   "original_credit": "和武はざの(講談社「月マガ基地」連載)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
     "恋愛",
     "料理・グルメ"
   ],
@@ -22,10 +43,16 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "恋愛",
       "料理・グルメ"
@@ -33,6 +60,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -47,18 +75,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26459"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
+        "異世界",
         "聖女"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26459"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -66,19 +95,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26459"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "恋愛": [
+            "恋愛",
             "恋する",
             "ラブコメ"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26459"
     }

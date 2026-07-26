@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26643",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26643",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ミギとダリ",
+    "synopsis": "ミギとダリ 佐野菜見『ミギとダリ』(ハルタコミックス ホラー・サスペンス・ミステリー コメディ・ギャグ",
+    "staff_text": "原作:佐野菜見『ミギとダリ』(ハルタコミックス",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "e6eecbf8ebb3640a091a1b36163c6f1febe9e24e3f8c62cbe536d8fc0c483b23"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "佐野菜見『ミギとダリ』(ハルタコミックス",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "コメディ・ギャグ"
@@ -23,11 +39,13 @@
       "ホラー・サスペンス・ミステリー",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26643"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "コメディ/ギャグ"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26643"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "コメディ/ギャグ"
@@ -62,11 +80,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26643"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26643"
     }

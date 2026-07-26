@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26627",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26627",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "忍ばない!クリプトニンジャ咲耶",
+    "synopsis": "忍ばない!クリプトニンジャ咲耶 イケハヤ ショート SF・ファンタジー サバイバル 生き残",
+    "staff_text": "原作:イケハヤ",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "506c5112c9aeec47733d2ee378e687bb5123044ccb5a2d8e0e81b1fdf14fc99f"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー"
@@ -11,17 +25,20 @@
   "original_credit": "イケハヤ",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "サバイバル"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "サバイバル"
@@ -31,6 +48,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26627"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26627"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー"
@@ -62,15 +80,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26627"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "サバイバル": [
+            "サバイバル",
             "生き残"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26627"
     }

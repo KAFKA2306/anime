@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26214",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26214",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "えいが うちの3姉妹",
+    "synopsis": "えいが うちの3姉妹 松本ぷりっつ 主婦の友社・刊「うちの3姉妹」 キッズ・ファミリー コメディ・ギャグ 日常・ほのぼの 家族 姉妹",
+    "staff_text": "原作:松本ぷりっつ 主婦の友社・刊「うちの3姉妹」",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "562085c9ea5a5d335f52674f8811a648c01549310dad4ece80e3f0c75524223a"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "コメディ/ギャグ",
@@ -12,11 +27,14 @@
   "original_credit": "松本ぷりっつ 主婦の友社・刊「うちの3姉妹」",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "家族"
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,13 +43,16 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26214"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "コメディ/ギャグ",
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26214"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "コメディ/ギャグ",
@@ -65,15 +86,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26214"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "姉妹"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26214"
     }

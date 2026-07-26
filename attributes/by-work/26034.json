@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26034",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26034",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "最強陰陽師の異世界転生記",
+    "synopsis": "最強陰陽師の異世界転生記 小鈴危一(双葉社刊) 異世界・ハイファンタジー SF・ファンタジー 異世界 怪異・妖怪 転生 妖怪 呪い",
+    "staff_text": "原作:小鈴危一(双葉社刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "bd7d2ab8dd311bae8b97d61800d2a484159e7655eb67ddc921ed5b7425681b4a"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,27 +23,40 @@
   "original_credit": "小鈴危一(双葉社刊)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
-    "怪異・妖怪"
+    "怪異・妖怪",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
     "motif": [
-      "怪異・妖怪"
+      "怪異・妖怪",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26034"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -56,14 +82,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26034"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26034"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -74,8 +100,21 @@
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "呪い"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

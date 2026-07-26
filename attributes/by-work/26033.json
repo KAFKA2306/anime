@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26033",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26033",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "便利屋斎藤さん、異世界に行く",
+    "synopsis": "便利屋斎藤さん、異世界に行く 一智和智 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ 異世界 友情・仲間 魔法 転生 仲間 ダンジョン",
+    "staff_text": "原作:一智和智",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "f488899ea7bbcba9041dbcae2e5c9fe6f4d22c6d75ef8b7c82d09612063a8c57"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -11,20 +25,31 @@
   "original_credit": "一智和智",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "友情・仲間",
-    "魔法"
+    "魔法",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -33,10 +58,12 @@
       "友情・仲間"
     ],
     "motif": [
-      "魔法"
+      "魔法",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -51,12 +78,13 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26033"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
+        "魔法",
         "異世界",
         "転生",
         "ダンジョン"
@@ -64,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26033"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -72,7 +100,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26033"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -82,11 +110,24 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

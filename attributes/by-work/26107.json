@@ -1,17 +1,34 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26107",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "海賊王女",
+    "synopsis": "海賊王女 中澤一登×Production I.G SF・ファンタジー 成長・挑戦 政治・戦略 職業・仕事 成長 国家 仕事",
+    "staff_text": "原作:中澤一登×Production I.G",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "e6ece61c9ac5a65aaab49661949a44c7c8107121539756ac1293bbdef13a86ee"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2021,
   "original_credit": "中澤一登×Production I.G",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "成長・挑戦",
     "政治・戦略",
     "職業・仕事"
@@ -19,8 +36,9 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -30,9 +48,10 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -44,36 +63,42 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "王女"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "政治・戦略": [
-            "国家"
+            "政治",
+            "国家",
+            "戦略"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26107"
     }

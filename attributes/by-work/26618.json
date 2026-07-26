@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26618",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26618",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "OVA アズールレーン Queen's Orders",
+    "synopsis": "OVA アズールレーン Queen's Orders 「アズールレーン」運営 SF・ファンタジー コメディ・ギャグ 友情・仲間 仲間",
+    "staff_text": "原作:「アズールレーン」運営",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "18bbaaf8b2da5af9e476fda45adabe37b10f7cdd966ad43edb9d4f99aaa80cd9"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,18 +24,21 @@
   "production_year": 2023,
   "original_credit": "「アズールレーン」運営",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26618"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26618"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26618"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26618"
     }

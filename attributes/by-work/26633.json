@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26633",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26633",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "オチビサン",
+    "synopsis": "オチビサン 安野 モヨコ ショート 日常・ほのぼの 友情・仲間 仲間",
+    "staff_text": "原作:安野 モヨコ",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "857b0b47f02d9093119daba247a92ee0f6158c0d7e3a248ff00af8e01c936c12"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの"
@@ -11,10 +25,13 @@
   "original_credit": "安野 モヨコ",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "日常・ほのぼの",
-    "友情・仲間"
+    "友情・仲間",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,15 +39,18 @@
       "ショート",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26633"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -54,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26633"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -62,15 +82,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26633"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26633"
     }

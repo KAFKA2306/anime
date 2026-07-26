@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26412",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26412",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ジョジョの奇妙な冒険 ストーンオーシャン",
+    "synopsis": "ジョジョの奇妙な冒険 ストーンオーシャン 荒木 飛呂彦 SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー 友情・仲間 仲間",
+    "staff_text": "原作:荒木 飛呂彦",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "f8157a81c4ba4958e0c4b3511ac773526a9c5f61792dc0170e16e494ffedd832"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,27 +26,33 @@
   "production_year": 2021,
   "original_credit": "荒木 飛呂彦",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
-    "友情・仲間"
+    "スペキュレーティブ判定保留",
+    "友情・仲間",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26412"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26412"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -65,15 +86,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26412"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26412"
     }

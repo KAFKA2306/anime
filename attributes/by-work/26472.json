@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26472",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26472",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "わたしの幸せな結婚",
+    "synopsis": "わたしの幸せな結婚 顎木あくみ(株式会社KADOKAWA SF・ファンタジー 恋愛・ラブコメ 料理・グルメ 料理",
+    "staff_text": "原作:顎木あくみ(株式会社KADOKAWA",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "904f81b9c4c9a0731a70d611d132a8c647dc23bcafd3c756c5075cade824d42e"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,25 +24,37 @@
   "production_year": 2023,
   "original_credit": "顎木あくみ(株式会社KADOKAWA",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "職場",
+    "恋愛",
     "料理・グルメ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [
+      "恋愛",
       "料理・グルメ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26472"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -52,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26472"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -60,15 +86,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26472"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "料理・グルメ": [
-            "料理"
+        "setting": {
+          "職場": [
+            "会社"
           ]
         },
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ",
+            "結婚"
+          ],
+          "料理・グルメ": [
+            "料理",
+            "グルメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26472"
     }

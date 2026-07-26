@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26159",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26159",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゲゲゲの鬼太郎(第4作)",
+    "synopsis": "ゲゲゲの鬼太郎(第4作) 水木しげる バトル・アクション ホラー・サスペンス・ミステリー キッズ・ファミリー 友情・仲間 怪異・妖怪 仲間 妖怪 鬼",
+    "staff_text": "原作:水木しげる",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "af978e75d80ac67766de5f6bde745a838d377d646e575668c235d2c495c1dd2f"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,13 @@
   "original_credit": "水木しげる",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "友情・仲間",
     "怪異・妖怪"
   ],
@@ -26,6 +44,9 @@
       "ホラー・サスペンス・ミステリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -35,6 +56,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26159"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -59,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26159"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -68,18 +90,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26159"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

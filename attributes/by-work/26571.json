@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26571",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26571",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "私の推しは悪役令嬢。",
+    "synopsis": "私の推しは悪役令嬢。 いのり。(愛中出版・一迅社刊) 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 異世界 転生",
+    "staff_text": "原作:いのり。(愛中出版・一迅社刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "6f604544a69cd433d1b54670bbf1a463f3430beb8eb3211263e98982bc0403f6"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,26 +25,43 @@
   "original_credit": "いのり。(愛中出版・一迅社刊)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
-    "異世界"
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26571"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -57,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26571"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -65,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26571"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -73,8 +104,26 @@
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26571"
     }

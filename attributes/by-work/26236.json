@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26236",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26236",
   "attribute_fetched_at": "2026-07-25T10:20:43.857Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ドロロンえん魔くん",
+    "synopsis": "ドロロンえん魔くん 永井豪とダイナミックプロ コメディ・ギャグ SF・ファンタジー 職業・仕事 怪異・妖怪 仕事 妖怪",
+    "staff_text": "原作:永井豪とダイナミックプロ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1973,
+    "source": "legacy-derived",
+    "sha256": "ef64b248045077b623fc25d41a1878bc10f23b09a9a35e1d99719ec519365ce1"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "SF/ファンタジー"
@@ -11,9 +25,12 @@
   "original_credit": "永井豪とダイナミックプロ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "職業・仕事",
     "怪異・妖怪"
   ],
@@ -21,7 +38,10 @@
     "source": [],
     "genre": [
       "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -32,6 +52,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26236"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
@@ -55,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26236"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
@@ -63,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26236"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -73,7 +94,13 @@
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

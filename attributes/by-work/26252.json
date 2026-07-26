@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26252",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26252",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "マイホームヒーロー",
+    "synopsis": "マイホームヒーロー 山川直輝・朝基まさし(講談社「ヤングマガジン」連載) ホラー・サスペンス・ミステリー 成長・挑戦 家族 職業・仕事 怪異・妖怪 成長 会社員 鬼",
+    "staff_text": "原作:山川直輝・朝基まさし(講談社「ヤングマガジン」連載)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "2a6669b6ec602d9960cde1b047c0df160641803ddd6b165f1b3ff78f9e46150b"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,8 +23,12 @@
   "original_credit": "山川直輝・朝基まさし(講談社「ヤングマガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
+    "職場",
     "成長・挑戦",
     "家族",
     "職業・仕事",
@@ -24,7 +41,12 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
-    "setting": [],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "成長・挑戦",
       "家族",
@@ -35,6 +57,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26252"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -60,30 +83,43 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26252"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26252"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "家族": [
             "家族"
           ],
           "職業・仕事": [
+            "仕事",
             "会社員"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26540",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26540",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ミュージカル『刀剣乱舞』 ~幕末天狼傳~(2020年公演)",
+    "synopsis": "ミュージカル『刀剣乱舞』 ~幕末天狼傳~(2020年公演) 「刀剣乱舞-ONLINE-」より (DMM GAMES 2.5次元舞台 歴史・時代劇 幕末",
+    "staff_text": "原作:「刀剣乱舞-ONLINE-」より (DMM GAMES",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "afd7f4413a9576ee5cf3883829161a8bd638a2b53379a1e9e7293da156583b50"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "「刀剣乱舞-ONLINE-」より (DMM GAMES",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "歴史・時代劇"
@@ -19,6 +34,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -28,6 +44,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26540"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26540"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26540"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26540"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26593",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26593",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "とあるおっさんのVRMMO活動記",
+    "synopsis": "とあるおっさんのVRMMO活動記 異世界・ハイファンタジー SF・ファンタジー 料理・グルメ 職業・仕事 ゲーム世界 料理 会社員 VRMMO ダンジョン",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "9385ea098e6583d5515f9eb84ec2d8e4e038ff42131a6547f085c1563daefc2e"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,29 +23,48 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "職場",
     "料理・グルメ",
     "職業・仕事",
-    "ゲーム世界"
+    "ゲーム世界",
+    "電脳・VR"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "SF",
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界",
+      "職場"
+    ],
     "theme": [
       "料理・グルメ",
       "職業・仕事"
     ],
     "motif": [
-      "ゲーム世界"
+      "ゲーム世界",
+      "電脳・VR"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -41,43 +73,63 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26593"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "VR",
+        "異世界",
         "ダンジョン"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26593"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26593"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ],
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ],
           "職業・仕事": [
+            "仕事",
             "会社員"
           ]
         },
         "motif": {
           "ゲーム世界": [
+            "ゲーム世界",
             "VRMMO"
+          ],
+          "電脳・VR": [
+            "VR"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
           ]
         }
       },
