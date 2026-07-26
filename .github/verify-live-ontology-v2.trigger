@@ -3,4 +3,5 @@ verify_public_json_hashes=true
 verify_rendered_2024_cards=true
 expected_ontology_version=2.0.0
 expected_2025_count=307
-concurrency=isolated-pr-24
+request_pages_rebuild=true
+concurrency=unique-run
