@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21031",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21031",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "「DAYS」",
+    "synopsis": "「DAYS」 『DAYS』安田剛士(講談社「週刊少年マガジン」) スポーツ・競技 学園 友情・仲間 高校 部活 友情 絆",
+    "staff_text": "原作:『DAYS』安田剛士(講談社「週刊少年マガジン」)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "65dd17704112d0ce66d5a5bf0572f9a398b5b19c295f04273f32ab64c62081f6"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,10 +23,13 @@
   "original_credit": "『DAYS』安田剛士(講談社「週刊少年マガジン」)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +38,18 @@
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21031"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -56,17 +75,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21031"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21031"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校",
             "部活"
           ]
@@ -74,10 +94,16 @@
         "theme": {
           "友情・仲間": [
             "友情",
+            "仲間",
             "絆"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21031"
     }

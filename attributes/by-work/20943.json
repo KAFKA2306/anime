@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20943",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20943",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "美少女戦士セーラームーンCrystal",
+    "synopsis": "美少女戦士セーラームーンCrystal 武内直子 SF・ファンタジー バトル・アクション 恋愛・ラブコメ 友情・仲間 仲間",
+    "staff_text": "原作:武内直子",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "dc478e1889cd3cd22ffc14135bd6a7336c261511064a476018119809e0afbd63"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,27 +26,36 @@
   "production_year": 2014,
   "original_credit": "武内直子",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "恋愛・ラブコメ",
-    "友情・仲間"
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "友情・仲間",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20943"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -56,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20943"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -65,15 +89,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20943"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20943"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21294",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21294",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アクセル・ワールド-インフィニット・バースト-",
+    "synopsis": "アクセル・ワールド-インフィニット・バースト- 川原 礫(電撃文庫刊) SF・ファンタジー バトル・アクション ドラマ・青春 友情・仲間 政治・戦略 仲間 領土",
+    "staff_text": "原作:川原 礫(電撃文庫刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "671f9bd12284c731ef519abcba41dbde485bea3c0819740853cb129169383f34"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,12 +26,15 @@
   "production_year": 2016,
   "original_credit": "川原 礫(電撃文庫刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
+    "成長・挑戦",
     "政治・戦略"
   ],
   "ontology_facets": {
@@ -24,18 +42,21 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "政治・戦略"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21294"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -62,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21294"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -71,18 +92,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21294"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
+          "成長・挑戦": [
+            "青春"
+          ],
           "政治・戦略": [
+            "政治",
+            "戦略",
             "領土"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21294"
     }

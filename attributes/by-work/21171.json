@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21171",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21171",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Occultic;Nine -オカルティック・ナイン-",
+    "synopsis": "Occultic;Nine -オカルティック・ナイン- 志倉千代丸(オーバーラップ文庫刊) ホラー・サスペンス・ミステリー ドラマ・青春 SF・ファンタジー 学園 魔法 犯罪・警察 高校 大学 魔術 刑事",
+    "staff_text": "原作:志倉千代丸(オーバーラップ文庫刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "d7f237acd818572c408f317b73d05ddedec1842f71c1b11516a9dd9e1d0fa324"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春",
@@ -11,12 +26,18 @@
   "production_year": 2016,
   "original_credit": "志倉千代丸(オーバーラップ文庫刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
-    "SF・ファンタジー",
+    "現代ファンタジー",
     "学園",
+    "成長・挑戦",
     "魔法",
     "犯罪・警察"
   ],
@@ -25,23 +46,29 @@
       "ライトノベル・小説"
     ],
     "genre": [
+      "ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "ドラマ・青春",
-      "SF・ファンタジー"
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "魔法",
       "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -55,17 +82,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21171"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法",
+        "魔術"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21171"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春",
@@ -74,21 +104,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21171"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校",
             "大学"
           ]
         },
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
           ],
           "犯罪・警察": [
-            "刑事"
+            "警察",
+            "刑事",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20890",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20890",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "逆転裁判 ~その「真実」、異議あり!~",
+    "synopsis": "逆転裁判 ~その「真実」、異議あり!~ ホラー・サスペンス・ミステリー",
+    "staff_text": "",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "9472d1f2fc6728349911d0ca5e0fb24d35e5e792227b7a83c360798fa7f7d6db"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー"
   ],
@@ -18,11 +33,13 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -31,13 +48,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20890"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20890"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20890"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20890"
     }

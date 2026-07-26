@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21296",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21296",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "黒子のバスケ 第2期",
+    "synopsis": "黒子のバスケ 第2期 藤巻忠俊(集英社「週刊少年ジャンプ」) スポーツ・競技 学園 高校",
+    "staff_text": "原作:藤巻忠俊(集英社「週刊少年ジャンプ」)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "206896ce7052a337efedbc879663c85077c995cc059215ddb7bf51baa6c51193"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,9 +23,12 @@
   "original_credit": "藤巻忠俊(集英社「週刊少年ジャンプ」)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,17 @@
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21296"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -53,22 +73,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21296"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21296"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21296"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20619",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20619",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "金色のコルダ~primo passo~",
+    "synopsis": "金色のコルダ~primo passo~ コーエー 恋愛・ラブコメ スポーツ・競技 ドラマ・青春 学園 友情・仲間 音楽・アイドル 魔法 高校 友情 音楽",
+    "staff_text": "原作:コーエー",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "10307d5b66724b9d3538036276fc69a861c715e9ca0b6334c0875db117b60534"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "スポーツ/競技",
@@ -12,34 +27,53 @@
   "original_credit": "コーエー",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ファンタジー",
     "スポーツ・競技",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "ラブコメ",
     "学園",
     "友情・仲間",
+    "成長・挑戦",
+    "恋愛",
     "音楽・アイドル",
+    "スポーツ",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ",
+      "ファンタジー",
       "スポーツ・競技",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
-      "音楽・アイドル"
+      "成長・挑戦",
+      "恋愛",
+      "音楽・アイドル",
+      "スポーツ"
     ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -54,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20619"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "スポーツ/競技",
@@ -64,7 +98,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20619"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "スポーツ/競技",
@@ -73,24 +107,46 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20619"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ],
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

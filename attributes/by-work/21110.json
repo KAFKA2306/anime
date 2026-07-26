@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21110",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21110",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "あにトレ!XX~ひとつ屋根の下で~",
+    "synopsis": "あにトレ!XX~ひとつ屋根の下で~ ショート 音楽・アイドル アイドル",
+    "staff_text": "",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "8b139a8fee2d96ff649de98175f78ac6ad2c5e1105bbbe250fdd58e3e3ecebb4"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "音楽・アイドル"
@@ -19,6 +34,7 @@
     "genre": [
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
@@ -28,6 +44,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -36,13 +53,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21110"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -50,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21110"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21110"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21110"
     }

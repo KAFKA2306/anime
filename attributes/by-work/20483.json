@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20483",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20483",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ヤマノススメ セカンドシーズン",
+    "synopsis": "ヤマノススメ セカンドシーズン しろ(月刊コミック アース・スター連載) スポーツ・競技 ドラマ・青春 ショート 友情・仲間 成長・挑戦 仲間 挑戦",
+    "staff_text": "原作:しろ(月刊コミック アース・スター連載)",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春",
+      "ショート"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "b3d990b91a388a946019f107af4a048450b6d43074b6ceb415c0344a5509e76e"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春",
@@ -12,12 +27,15 @@
   "original_credit": "しろ(月刊コミック アース・スター連載)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
     "ショート",
     "友情・仲間",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -28,16 +46,19 @@
       "ドラマ・青春",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -54,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20483"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春",
@@ -64,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20483"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春",
@@ -73,18 +94,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20483"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20483"
     }

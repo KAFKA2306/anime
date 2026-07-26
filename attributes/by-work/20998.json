@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20998",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20998",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "魔法少女? なりあ☆がーるず",
+    "synopsis": "魔法少女? なりあ☆がーるず コメディ・ギャグ 魔法",
+    "staff_text": "",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "1d75875d5264017affa84105343799ea9e647606fde733c95687f4f39f2c7207"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,14 +23,24 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +49,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -34,13 +58,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20998"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,19 +72,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20998"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20998"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

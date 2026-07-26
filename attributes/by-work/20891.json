@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20891",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20891",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "学戦都市アスタリスク 2nd SEASON",
+    "synopsis": "学戦都市アスタリスク 2nd SEASON 三屋咲ゆう(MF文庫J「学戦都市アスタリスク」 KADOKAWA刊) SF・ファンタジー バトル・アクション ドラマ・青春 学園",
+    "staff_text": "原作:三屋咲ゆう(MF文庫J「学戦都市アスタリスク」 KADOKAWA刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "dec07a597ba85e289f4c27e7e1ef4a2bc8f587d7fa06f3dec9d92b64a5a25724"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,29 +26,36 @@
   "production_year": 2016,
   "original_credit": "三屋咲ゆう(MF文庫J「学戦都市アスタリスク」 KADOKAWA刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "ドラマ・青春",
-    "学園"
+    "スペキュレーティブ判定保留",
+    "学園",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20891"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -60,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20891"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -69,15 +91,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20891"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20891"
     }

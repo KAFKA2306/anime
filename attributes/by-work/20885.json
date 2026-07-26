@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20885",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20885",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "宇宙パトロールルル子",
+    "synopsis": "宇宙パトロールルル子 TRIGGER・今石洋之 ショート 宇宙 犯罪・警察 銀河 刑事 犯罪",
+    "staff_text": "原作:TRIGGER・今石洋之",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "4b82a69bdd7e6bbd4d44b3e62ff37b0e007034151784f64ad7b507b3d89cbf91"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,15 +23,25 @@
   "original_credit": "TRIGGER・今石洋之",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "SF",
+    "スペースオペラ",
     "宇宙",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ショート"
+      "ショート",
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -31,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20885"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -53,14 +77,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20885"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20885"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -71,8 +95,15 @@
         "theme": {},
         "motif": {
           "犯罪・警察": [
+            "警察",
             "刑事",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
           ]
         }
       },

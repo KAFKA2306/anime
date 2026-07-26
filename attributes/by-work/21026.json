@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21026",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21026",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Thunderbolt Fantasy 東離劍遊紀",
+    "synopsis": "Thunderbolt Fantasy 東離劍遊紀 Thunderbolt Fantasy Project バトル・アクション 歴史・戦記 ライブ・ラジオ・その他 友情・仲間 仲間",
+    "staff_text": "原作:Thunderbolt Fantasy Project",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "1f61c15287b493401a26ff7e0fc28972e30e04972cc75c95f33cda72a7c545c1"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記",
@@ -12,6 +27,8 @@
   "original_credit": "Thunderbolt Fantasy Project",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -25,6 +42,7 @@
       "歴史・戦記",
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -34,6 +52,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21026"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21026"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記",
@@ -67,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21026"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21026"
     }

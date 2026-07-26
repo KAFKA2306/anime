@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21303",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21303",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "サーバント×サービス",
+    "synopsis": "サーバント×サービス 高津カリノ(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊) コメディ・ギャグ 日常・ほのぼの 職業・仕事 働く",
+    "staff_text": "原作:高津カリノ(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "95de8de39093951932f58ff4a0ee1c8899c7fefe840730655ddc0fcc4370318a"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,10 +25,13 @@
   "original_credit": "高津カリノ(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +41,16 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21303"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -56,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21303"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -64,15 +84,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21303"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21303"
     }

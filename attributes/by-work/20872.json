@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20872",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20872",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ジョーカー・ゲーム",
+    "synopsis": "ジョーカー・ゲーム 柳 広司「ジョーカー・ゲーム」シリーズ(角川文庫刊) ホラー・サスペンス・ミステリー 学園 魔法 大学 魔術",
+    "staff_text": "原作:柳 広司「ジョーカー・ゲーム」シリーズ(角川文庫刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "98cfee2e36a7a2a14c13e9a275c74b1047fea75b555a026425bf29355877e213"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "柳 広司「ジョーカー・ゲーム」シリーズ(角川文庫刊)",
   "source_origin": "ゲーム",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
+    "現代ファンタジー",
     "学園",
     "魔法"
   ],
@@ -20,7 +39,11 @@
       "ゲーム"
     ],
     "genre": [
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -31,6 +54,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20872"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -55,24 +79,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20872"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20872"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

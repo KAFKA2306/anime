@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21272",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21272",
   "attribute_fetched_at": "2026-07-25T10:43:42.469Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "マッハGoGoGo",
+    "synopsis": "マッハGoGoGo スポーツ・競技 成長・挑戦 ロボット・メカ 成長 メカ",
+    "staff_text": "",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 1967,
+    "source": "legacy-derived",
+    "sha256": "46f926b200d8609108b949bfce2b5471c4f0f90af9fea07f5f959de38a14df53"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,25 +23,38 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
+    "SF",
+    "ロボットSF",
     "成長・挑戦",
+    "スポーツ",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "SF"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +63,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21272"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -51,24 +77,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21272"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21272"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
             "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20982",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982",
   "attribute_fetched_at": "2026-07-25T10:32:48.098Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "紺碧の艦隊",
+    "synopsis": "紺碧の艦隊 荒巻義雄(『紺碧の艦隊』徳間書店刊) 戦争・ミリタリー 歴史・戦記 異世界 転生",
+    "staff_text": "原作:荒巻義雄(『紺碧の艦隊』徳間書店刊)",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "歴史/戦記"
+    ],
+    "production_year": 1993,
+    "source": "legacy-derived",
+    "sha256": "89a85ed465d73211a283f300d272912bbf668619bf4fa9f2f66097f0cb4ce4b0"
+  },
   "official_genres": [
     "戦争/ミリタリー",
     "歴史/戦記"
@@ -11,24 +25,45 @@
   "original_credit": "荒巻義雄(『紺碧の艦隊』徳間書店刊)",
   "source_origin": null,
   "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "戦争・ミリタリー",
+    "ファンタジー",
     "歴史・戦記",
-    "異世界"
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "異世界",
+    "戦争",
+    "転生",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "戦争・ミリタリー",
+      "ファンタジー",
       "歴史・戦記"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "戦争"
+    ],
+    "motif": [
+      "転生",
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "戦争/ミリタリー",
         "歴史/戦記"
@@ -52,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "戦争/ミリタリー",
         "歴史/戦記"
@@ -60,15 +95,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "スペースオペラ": [
+            "艦隊"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21293",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21293",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "君のいる町",
+    "synopsis": "君のいる町 瀬尾公治「君のいる町」(講談社『週刊少年マガジン』連載) 恋愛・ラブコメ ドラマ・青春 友情・仲間 成長・挑戦 恋愛 友情 青春",
+    "staff_text": "原作:瀬尾公治「君のいる町」(講談社『週刊少年マガジン』連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "eaf0730875bbc683db6c11d4a8d72577f55d99e1bf0c89a2f95d149585a5f7c0"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "瀬尾公治「君のいる町」(講談社『週刊少年マガジン』連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "ラブコメ",
     "友情・仲間",
     "成長・挑戦",
     "恋愛"
@@ -26,6 +43,9 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -35,6 +55,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21293"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -61,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21293"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -69,21 +90,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21293"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21293"
     }

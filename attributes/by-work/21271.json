@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21271",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21271",
   "attribute_fetched_at": "2026-07-25T10:20:37.825Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "タイムボカン",
+    "synopsis": "タイムボカン タツノコプロ企画室 SF・ファンタジー コメディ・ギャグ 宇宙",
+    "staff_text": "原作:タツノコプロ企画室",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1975,
+    "source": "legacy-derived",
+    "sha256": "a93a13b01c831c09f8f9291ca726ca133de950424c303abf13f293eb8b781844"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,17 +24,25 @@
   "production_year": 1975,
   "original_credit": "タツノコプロ企画室",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -29,9 +51,10 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -43,16 +66,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21271"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21271"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -60,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21271"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -68,7 +93,12 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21271"
     }

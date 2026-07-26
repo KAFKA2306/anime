@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21148",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21148",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ブレイブウィッチーズ",
+    "synopsis": "ブレイブウィッチーズ 島田フミカネ&Projekt World Witches ロボット・メカ バトル・アクション 戦争・ミリタリー 魔法",
+    "staff_text": "原作:島田フミカネ&Projekt World Witches",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "d4dc8060aef2e8d460a07e8d411b3727f1386ed9f1ee679c8a2449e8798d2bbb"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -12,27 +27,48 @@
   "original_credit": "島田フミカネ&Projekt World Witches",
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
+    "ファンタジー",
     "バトル・アクション",
     "戦争・ミリタリー",
-    "魔法"
+    "現代ファンタジー",
+    "ロボットSF",
+    "戦争",
+    "魔法",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
+      "ファンタジー",
       "バトル・アクション",
       "戦争・ミリタリー"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [
       "魔法",
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21148"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -57,7 +93,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21148"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -66,13 +102,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21148"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
+          ],
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },
