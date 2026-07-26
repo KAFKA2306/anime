@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25798",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25798",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "宇崎ちゃんは遊びたい!ω",
+    "synopsis": "宇崎ちゃんは遊びたい!ω 丈(ドラゴンコミックスエイジ『宇崎ちゃんは遊びたい!』 恋愛・ラブコメ ドラマ・青春 学園 成長・挑戦 恋愛 大学 青春 ラブコメ",
+    "staff_text": "原作:丈(ドラゴンコミックスエイジ『宇崎ちゃんは遊びたい!』",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "da7bdaca50a3e55e9cac00367db62707c5481e14d55f4a28f21fc633ac846fcb"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,9 +25,15 @@
   "original_credit": "丈(ドラゴンコミックスエイジ『宇崎ちゃんは遊びたい!』",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ファンタジー",
     "ドラマ・青春",
+    "ラブコメ",
     "学園",
     "成長・挑戦",
     "恋愛"
@@ -24,7 +44,11 @@
     ],
     "genre": [
       "恋愛・ラブコメ",
+      "ファンタジー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -36,6 +60,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25798"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -62,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25798"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -70,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25798"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -80,13 +105,21 @@
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25798"
     }

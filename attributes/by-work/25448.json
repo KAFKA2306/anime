@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25448",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25448",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王ゴーラッシュ!!",
+    "synopsis": "遊☆戯☆王ゴーラッシュ!! 『遊☆戯☆王』(集英社 ジャンプ コミックス刊) バトル・アクション スポーツ・競技 宇宙 友情・仲間 銀河 星間 仲間",
+    "staff_text": "原作:『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "51510a69c3801c5496f0443892aa1667c824d32b47b57d8b3b1d2e7ab0eb5f35"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,11 +25,18 @@
   "original_credit": "『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "スポーツ・競技",
+    "スペースオペラ",
     "宇宙",
-    "友情・仲間"
+    "友情・仲間",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -23,17 +44,23 @@
     ],
     "genre": [
       "バトル・アクション",
+      "SF",
       "スポーツ・競技"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25448"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -60,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25448"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -68,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25448"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -79,10 +106,21 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25448"
     }

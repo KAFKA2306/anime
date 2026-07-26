@@ -1,24 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25795",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25795",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "不滅のあなたへ Season2",
+    "synopsis": "不滅のあなたへ Season2 大今良時 SF・ファンタジー 成長・挑戦 成長",
+    "staff_text": "原作:大今良時",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "a3b354984a7e98ff9629319b0a82dc04c89cc31422cb08426499c424b5a5a94c"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2022,
   "original_credit": "大今良時",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -26,9 +42,10 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "unknown",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25795"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -48,22 +65,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25795"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25795"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25795"
     }

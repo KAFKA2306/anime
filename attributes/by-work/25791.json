@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25791",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25791",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画ヒーリングっど♥プリキュア ゆめのまちでキュン!っとGoGo!大変身!!【副音声ボイスドラマ版】",
+    "synopsis": "映画ヒーリングっど♥プリキュア ゆめのまちでキュン!っとGoGo!大変身!!【副音声ボイスドラマ版】 東堂いづみ SF・ファンタジー バトル・アクション キッズ・ファミリー",
+    "staff_text": "原作:東堂いづみ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "c1b1b4b40133668929a37bbb627e77e3610b4c74e5824ec469048ec692ab813d"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,24 +26,28 @@
   "production_year": 2021,
   "original_credit": "東堂いづみ",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25791"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -53,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25791"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -62,11 +81,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25791"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25791"
     }

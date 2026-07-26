@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25721",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25721",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "うたの☆プリンスさまっ♪ マジLOVEスターリッシュツアーズ~旅の始まり~",
+    "synopsis": "うたの☆プリンスさまっ♪ マジLOVEスターリッシュツアーズ~旅の始まり~ 上松範康 恋愛・ラブコメ ドラマ・青春 音楽・アイドル アイドル",
+    "staff_text": "原作:上松範康",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "2e422cc020daadfd747ad93ab8543b725e8d28859db1e4afc1a8a984c52015e2"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,10 +25,16 @@
   "original_credit": "上松範康",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
-    "音楽・アイドル"
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛",
+    "音楽・アイドル",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +42,20 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "音楽・アイドル"
+      "成長・挑戦",
+      "恋愛",
+      "音楽・アイドル",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25721"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -52,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25721"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -60,15 +87,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25721"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
+          ],
+          "旅・冒険": [
+            "旅"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25721"
     }

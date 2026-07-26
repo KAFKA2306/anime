@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25658",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25658",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "転生賢者の異世界ライフ~第二の職業を得て、世界最強になりました~",
+    "synopsis": "転生賢者の異世界ライフ~第二の職業を得て、世界最強になりました~ 進行諸島(GAノベル 異世界・ハイファンタジー SF・ファンタジー 異世界 友情・仲間 魔法 転生 召喚 仲間 冒険者 賢者",
+    "staff_text": "原作:進行諸島(GAノベル",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "08b5b9fec48b943e861c97563a45735356b931a8f71a7ef1a6028aeaa65e7506"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,12 +23,20 @@
   "original_credit": "進行諸島(GAノベル",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "友情・仲間",
-    "魔法"
+    "旅・冒険",
+    "魔法",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -23,19 +44,26 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "旅・冒険"
     ],
     "motif": [
-      "魔法"
+      "魔法",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -52,28 +80,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25658"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
         "異世界",
         "転生",
         "召喚",
-        "冒険者",
-        "賢者"
+        "賢者",
+        "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25658"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25658"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -84,11 +113,28 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生",
+            "召喚"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

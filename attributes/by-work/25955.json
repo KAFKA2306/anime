@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25955",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25955",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "僕とロボコ",
+    "synopsis": "僕とロボコ 宮崎周平「僕とロボコ」(集英社「週刊少年ジャンプ」) コメディ・ギャグ ショート",
+    "staff_text": "原作:宮崎周平「僕とロボコ」(集英社「週刊少年ジャンプ」)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "066a9bf2fc816a47f2542ea81d1bdb2c579e86e81f7b80f900036c4aea316329"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,6 +25,8 @@
   "original_credit": "宮崎周平「僕とロボコ」(集英社「週刊少年ジャンプ」)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート"
@@ -23,6 +39,7 @@
       "コメディ・ギャグ",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -30,11 +47,12 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25955"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25955"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -64,11 +82,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25955"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25955"
     }
