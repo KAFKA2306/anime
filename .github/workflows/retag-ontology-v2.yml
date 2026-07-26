@@ -66,7 +66,7 @@ jobs:
           const report = JSON.parse(fs.readFileSync('diagnostics/attribute-coverage.json', 'utf8'));
           const y = report.by_year['2025'];
           console.log(JSON.stringify({ year: 2025, ...y }, null, 2));
-          if (!y || y.coverage_ratio !== 1) process.exit(1);
+          if (!y || y.coverage_ratio !== 1 || y.full_snapshot_count !== y.total_count) process.exit(1);
           NODE
 
       - name: Commit generated ontology data
