@@ -1,13 +1,14 @@
 name: Verify ontology v2 on live Pages
 
 on:
-  issues:
-    types: [opened]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/verify-live-ontology-v2.trigger'
   workflow_dispatch:
 
 permissions:
   contents: write
-  issues: write
 
 concurrency:
   group: verify-ontology-v2-live
@@ -17,13 +18,15 @@ jobs:
   verify-live:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      github.event.issue.title == '[automation] verify live ontology v2'
+      (github.event_name == 'pull_request' && github.actor != 'github-actions[bot]')
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      TARGET_BRANCH: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -48,10 +51,4 @@ jobs:
             exit 0
           fi
           git commit -m 'Record live ontology v2 Pages verification'
-          git push origin HEAD:main
-
-      - name: Close trigger issue
-        if: github.event_name == 'issues'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh issue close "${{ github.event.issue.number }}" --comment 'Live ontology v2 JSON and rendered-card verification passed.'
+          git push origin HEAD:"$TARGET_BRANCH"
