@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22115",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22115",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "断裁分離のクライムエッジ",
+    "synopsis": "断裁分離のクライムエッジ 緋鍵龍彦『断裁分離のクライムエッジ』(掲載「月刊コミックアライブ」) バトル・アクション 恋愛・ラブコメ 学園 怪異・妖怪 学校 鬼",
+    "staff_text": "原作:緋鍵龍彦『断裁分離のクライムエッジ』(掲載「月刊コミックアライブ」)",
+    "official_genres": [
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "f2439b9523a577edf652b1a9b594d17c6ab4104517e6514e32d35a942eb38ab5"
+  },
   "official_genres": [
     "アクション/バトル",
     "恋愛/ラブコメ"
@@ -11,10 +25,15 @@
   "original_credit": "緋鍵龍彦『断裁分離のクライムエッジ』(掲載「月刊コミックアライブ」)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
     "学園",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -25,15 +44,22 @@
       "バトル・アクション",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22115"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -59,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22115"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -67,17 +93,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22115"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

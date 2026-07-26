@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22445",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22445",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "となりの吸血鬼さん",
+    "synopsis": "となりの吸血鬼さん 甘党「となりの吸血鬼さん」(月刊コミックキューン連載 コメディ・ギャグ 日常・ほのぼの 怪異・妖怪 鬼",
+    "staff_text": "原作:甘党「となりの吸血鬼さん」(月刊コミックキューン連載",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "641815ca1396b94f717aac48826b6a06d8ff417db429ceaff18e247432dbe577"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,10 +25,15 @@
   "original_credit": "甘党「となりの吸血鬼さん」(月刊コミックキューン連載",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "怪異・妖怪"
+    "現代ファンタジー",
+    "癒やし",
+    "怪異・妖怪",
+    "吸血鬼"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +43,20 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [
-      "怪異・妖怪"
+      "怪異・妖怪",
+      "吸血鬼"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22445"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -56,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22445"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -64,13 +90,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22445"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ],
+          "吸血鬼": [
+            "吸血鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

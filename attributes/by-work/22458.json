@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22458",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22458",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "メイドインアビス",
+    "synopsis": "メイドインアビス つくしあきひと(竹書房「WEBコミックガンマ」) 異世界・ハイファンタジー SF・ファンタジー バトル・アクション 成長・挑戦 ロボット・メカ 挑戦 ロボット 冒険者",
+    "staff_text": "原作:つくしあきひと(竹書房「WEBコミックガンマ」)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "1e3d3ef397a6d40b0ad2d1e4031971238a970fffe6bbe2da2fcbd57d61ce76a2"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル"
@@ -11,11 +25,21 @@
   "original_credit": "つくしあきひと(竹書房「WEBコミックガンマ」)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "バトル・アクション",
+    "異世界ファンタジー",
+    "ロボットSF",
+    "異世界",
     "成長・挑戦",
+    "旅・冒険",
     "ロボット・メカ"
   ],
   "ontology_facets": {
@@ -24,18 +48,27 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "バトル・アクション"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ロボットSF"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "旅・冒険"
     ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -46,24 +79,28 @@
     "source_origin": {
       "rule_id": "origin.publication-credit-manga",
       "matched_terms": [
-        "コミック"
+        "コミック",
+        "webコミック"
       ],
       "evidence_text": "つくしあきひと(竹書房「WEBコミックガンマ」)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22458"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
       ],
       "matched_terms": [
+        "ロボット",
+        "メカ",
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22458"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
@@ -71,16 +108,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22458"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ロボットSF": [
             "ロボット"
           ]
         }

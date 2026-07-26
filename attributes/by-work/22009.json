@@ -1,24 +1,42 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22009",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22009",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "舞台 増田こうすけ劇場 ギャグマンガ日和 ~奥の細道、地獄のランウェイ編~",
+    "synopsis": "舞台 増田こうすけ劇場 ギャグマンガ日和 ~奥の細道、地獄のランウェイ編~ 「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプSQ.」連載) 2.5次元舞台 歴史・時代劇 時代劇",
+    "staff_text": "原作:「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプSQ.」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "5af87261a7451ecff7180717a233a119ef75e18d2f61840fdcce211ad3f34df3"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
   "production_year": 2017,
   "original_credit": "「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプSQ.」連載)",
-  "source_origin": null,
+  "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "歴史・時代劇"
   ],
   "ontology_facets": {
-    "source": [],
+    "source": [
+      "漫画"
+    ],
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -28,21 +46,24 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
+    "source_origin": "verified",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプSQ.」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22009"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,14 +71,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22009"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22009"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
@@ -65,7 +86,8 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22009"
     }

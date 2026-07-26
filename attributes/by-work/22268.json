@@ -1,32 +1,52 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22268",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22268",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "百錬の覇王と聖約の戦乙女",
+    "synopsis": "百錬の覇王と聖約の戦乙女 異世界・ハイファンタジー SF・ファンタジー 歴史・戦記 異世界 友情・仲間 家族 召喚 絆",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "歴史/戦記"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "f6b464ea5fc640c0ce57c10ccb63298a86f480aac39f1e0eaa65ab51f819e016"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "歴史/戦記"
   ],
   "production_year": 2018,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "歴史・戦記",
+    "異世界ファンタジー",
     "異世界",
     "友情・仲間",
     "家族"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "歴史・戦記"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -38,36 +58,34 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "コミックス",
-        "コミック",
-        "漫画"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22268"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記"
       ],
       "matched_terms": [
+        "異世界",
         "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22268"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記"
@@ -75,22 +93,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22268"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ],
           "家族": [
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22268"
     }

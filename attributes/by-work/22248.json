@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22248",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22248",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アイドルマスター シンデレラガールズ劇場 3rd SEASON",
+    "synopsis": "アイドルマスター シンデレラガールズ劇場 3rd SEASON バンダイナムコエンターテインメント ショート ドラマ・青春 音楽・アイドル アイドル",
+    "staff_text": "原作:バンダイナムコエンターテインメント",
+    "official_genres": [
+      "ショート",
+      "ドラマ/青春"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "ca63b3c8af23076ac164bdb83d2a3e9f5f9ac8ce9c85f9c4bc6d6c239e991dc6"
+  },
   "official_genres": [
     "ショート",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "バンダイナムコエンターテインメント",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ドラマ・青春",
+    "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -22,8 +39,10 @@
       "ショート",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル"
     ],
     "motif": [],
@@ -31,6 +50,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22248"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ドラマ/青春"
@@ -54,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22248"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ドラマ/青春"
@@ -62,15 +82,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22248"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22248"
     }

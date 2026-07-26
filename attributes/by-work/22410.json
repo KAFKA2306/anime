@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22410",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22410",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ガイコツ書店員 本田さん",
+    "synopsis": "ガイコツ書店員 本田さん 本田「ガイコツ書店員 本田さん」(MFCジーンピクシブシリーズ コメディ・ギャグ ショート 職業・仕事 職場",
+    "staff_text": "原作:本田「ガイコツ書店員 本田さん」(MFCジーンピクシブシリーズ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "45352989dbb864af2f29930e6c0a666e611cc0954d65fa16bb6e8dce51013dd1"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,9 +25,12 @@
   "original_credit": "本田「ガイコツ書店員 本田さん」(MFCジーンピクシブシリーズ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート",
+    "職場",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,7 +39,10 @@
       "コメディ・ギャグ",
       "ショート"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "職業・仕事"
     ],
@@ -31,6 +51,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22410"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -54,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22410"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -62,15 +83,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22410"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "職業・仕事": [
+        "setting": {
+          "職場": [
             "職場"
           ]
         },
-        "motif": {}
+        "theme": {
+          "職業・仕事": [
+            "仕事",
+            "職場"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22410"
     }

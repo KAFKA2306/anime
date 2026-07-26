@@ -1,17 +1,35 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22220",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22220",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "レベルE",
+    "synopsis": "レベルE 冨樫義博「レベルE」集英社ジャンプコミックス SF・ファンタジー 学園 宇宙 犯罪・警察 高校 犯罪",
+    "staff_text": "原作:冨樫義博「レベルE」集英社ジャンプコミックス",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "ffeac7e1d16c01762395a4eea581e27f5016f9bc3123dadc798f7d9f5760e4fa"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2011,
   "original_credit": "冨樫義博「レベルE」集英社ジャンプコミックス",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
+    "スペースオペラ",
     "学園",
     "宇宙",
     "犯罪・警察"
@@ -21,7 +39,10 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー"
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "学園",
@@ -33,9 +54,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -50,25 +72,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22220"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22220"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22220"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "宇宙": [
@@ -78,7 +103,13 @@
         "theme": {},
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

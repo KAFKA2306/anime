@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22430",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "BAKUMATSU",
+    "synopsis": "BAKUMATSU 「恋愛幕末カレシ~時の彼方で花咲く恋~」(フリュー) バトル・アクション 歴史・戦記 歴史・時代劇 幕末",
+    "staff_text": "原作:「恋愛幕末カレシ~時の彼方で花咲く恋~」(フリュー)",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "725dc16ffaff7093196eb05d4bf48bf1c874f3f9c355f1d2a2294a4f12000fe2"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,10 +25,13 @@
   "original_credit": "「恋愛幕末カレシ~時の彼方で花咲く恋~」(フリュー)",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
-    "歴史・時代劇"
+    "歴史・時代劇",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,17 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -60,15 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22430"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21904",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21904",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "京極夏彦 巷説百物語",
+    "synopsis": "京極夏彦 巷説百物語 歴史・戦記 ホラー・サスペンス・ミステリー 歴史・時代劇 江戸 幕末",
+    "staff_text": "",
+    "official_genres": [
+      "歴史/戦記",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "9e9043bd7309d9dbb2f0058b34c902e94c0a893555df40fcfc380aee0632e592"
+  },
   "official_genres": [
     "歴史/戦記",
     "ホラー/サスペンス/推理"
@@ -11,6 +25,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "ホラー・サスペンス・ミステリー",
@@ -22,6 +38,7 @@
       "歴史・戦記",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21904"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "ホラー/サスペンス/推理"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21904"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "ホラー/サスペンス/推理"
@@ -60,16 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21904"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
             "江戸",
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21904"
     }

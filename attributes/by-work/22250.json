@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22250",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22250",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "異世界魔王と召喚少女の奴隷魔術",
+    "synopsis": "異世界魔王と召喚少女の奴隷魔術 むらさきゆきや (講談社ラノベ文庫刊) 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 異世界 魔法 ゲーム世界 召喚 魔術 ゲーム内 魔王",
+    "staff_text": "原作:むらさきゆきや (講談社ラノベ文庫刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "07b0aa456b9776c84cac1a8d85c00f5dfd9daf8ad9019b6b0f01d062329005d3"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,11 +25,19 @@
   "original_credit": "むらさきゆきや (講談社ラノベ文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "ラブコメ",
     "異世界",
+    "恋愛",
     "魔法",
     "ゲーム世界"
   ],
@@ -25,19 +47,27 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "魔法",
       "ゲーム世界"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -54,20 +84,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22250"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
+        "魔法",
+        "魔術",
+        "魔王",
         "異世界",
-        "召喚",
-        "魔王"
+        "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22250"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -75,7 +107,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22250"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -83,13 +115,32 @@
             "召喚"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
           ],
           "ゲーム世界": [
+            "ゲーム世界",
             "ゲーム内"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },
