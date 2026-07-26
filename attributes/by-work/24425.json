@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24425",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24425",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語",
+    "synopsis": "たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語 サトウとシオ(GA文庫 異世界・ハイファンタジー SF・ファンタジー 魔法 ダンジョン",
+    "staff_text": "原作:サトウとシオ(GA文庫",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "f72b035cb465a3c829b3e37e70a23eb8e0fce049fab67305dd37283047d57515"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,9 +23,16 @@
   "original_credit": "サトウとシオ(GA文庫",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
     "魔法"
   ],
   "ontology_facets": {
@@ -21,15 +41,22 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -46,29 +73,43 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24425"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
+        "異世界",
         "ダンジョン"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24425"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24425"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

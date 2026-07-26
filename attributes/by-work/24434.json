@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24434",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24434",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "美少女戦士セーラームーン セーラースターズ",
+    "synopsis": "美少女戦士セーラームーン セーラースターズ 武内直子 SF・ファンタジー バトル・アクション 恋愛・ラブコメ 学園 宇宙 怪異・妖怪 高校 銀河 鬼",
+    "staff_text": "原作:武内直子",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "37d0f9b744b38d2b06e98b9ea473fea708461ba23466eb726fee789e3c3aae89"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,35 +26,51 @@
   "production_year": 1996,
   "original_credit": "武内直子",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "スペースオペラ",
+    "ラブコメ",
     "学園",
     "宇宙",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "スペースオペラ",
+      "ラブコメ"
     ],
     "setting": [
       "学園",
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -51,17 +82,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24434"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "銀河"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24434"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -70,20 +104,41 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24434"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "宇宙": [
+            "宇宙",
             "銀河"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

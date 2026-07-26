@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24823",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24823",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "金田一少年の事件簿 オペラ座館・最後の殺人",
+    "synopsis": "金田一少年の事件簿 オペラ座館・最後の殺人 天樹征丸 さとうふみや(漫画)(講談社「金田一少年の事件簿」) ホラー・サスペンス・ミステリー ドラマ・青春",
+    "staff_text": "原作:天樹征丸 さとうふみや(漫画)(講談社「金田一少年の事件簿」)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "24c34b61db4a81e052c42d9587a12022346014f27723c4237ff81b6dbf8c6de5"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春"
@@ -11,9 +25,13 @@
   "original_credit": "天樹征丸 さとうふみや(漫画)(講談社「金田一少年の事件簿」)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "ミステリー",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +41,22 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24823"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -53,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24823"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -61,11 +85,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24823"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24823"
     }

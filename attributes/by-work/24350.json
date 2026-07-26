@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24350",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24350",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ログ・ホライズン 円卓崩壊",
+    "synopsis": "ログ・ホライズン 円卓崩壊 橙乃ままれ 異世界・ハイファンタジー SF・ファンタジー バトル・アクション ドラマ・青春 異世界 魔法 ゲーム世界 オンラインゲーム 冒険者 ギルド",
+    "staff_text": "原作:橙乃ままれ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "5832e5559cc434419dcac046c53b6a9efd693e9a4f09e786afd4952c3d39fc06"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,12 +27,20 @@
   "original_credit": "橙乃ままれ",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "ドラマ・青春",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
+    "成長・挑戦",
+    "旅・冒険",
     "魔法",
     "ゲーム世界"
   ],
@@ -25,20 +48,28 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "旅・冒険"
+    ],
     "motif": [
       "魔法",
       "ゲーム世界"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -53,13 +84,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24350"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ドラマ/青春"
       ],
       "matched_terms": [
+        "魔法",
         "異世界",
         "冒険者",
         "ギルド"
@@ -67,7 +99,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24350"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -76,14 +108,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24350"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
             "異世界"
           ]
         },
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
@@ -91,6 +130,14 @@
           "ゲーム世界": [
             "ゲーム世界",
             "オンラインゲーム"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

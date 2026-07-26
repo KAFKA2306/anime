@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24506",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24506",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ぷっちみく♪ D4DJ Petit Mix",
+    "synopsis": "ぷっちみく♪ D4DJ Petit Mix ブシロード ショート ドラマ・青春 成長・挑戦 挑戦",
+    "staff_text": "原作:ブシロード",
+    "official_genres": [
+      "ショート",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "0d573c09bde3a0b1e7a4747cd24b568f72931e6c976306de7ad2c2728bff274b"
+  },
   "official_genres": [
     "ショート",
     "ドラマ/青春"
@@ -11,6 +25,8 @@
   "original_credit": "ブシロード",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ドラマ・青春",
@@ -22,6 +38,7 @@
       "ショート",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -31,6 +48,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24506"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ドラマ/青春"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24506"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ドラマ/青春"
@@ -62,15 +80,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24506"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24506"
     }

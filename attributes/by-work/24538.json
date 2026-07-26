@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24538",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24538",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "もっと!まじめにふまじめ かいけつゾロリ 第2シリーズ",
+    "synopsis": "もっと!まじめにふまじめ かいけつゾロリ 第2シリーズ 原ゆたか コメディ・ギャグ キッズ・ファミリー",
+    "staff_text": "原作:原ゆたか",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "fd674ba65fc79891cb80b377e5709e944f277e3a02262ea3df0b3744c30651c8"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "キッズ/ファミリー"
@@ -11,6 +25,8 @@
   "original_credit": "原ゆたか",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "キッズ・ファミリー"
@@ -21,11 +37,13 @@
       "コメディ・ギャグ",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24538"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "キッズ/ファミリー"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24538"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "キッズ/ファミリー"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24538"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24538"
     }

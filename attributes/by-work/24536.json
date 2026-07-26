@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24536",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24536",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "東京リベンジャーズ",
+    "synopsis": "東京リベンジャーズ 和久井健「東京卍リベンジャーズ」(講談社「週刊少年マガジン」連載) バトル・アクション ホラー・サスペンス・ミステリー SF・ファンタジー",
+    "staff_text": "原作:和久井健「東京卍リベンジャーズ」(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "5fa83c7d063e5aec3017d728603acaf18134be516dab529695edb5d81f62b621"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,13 @@
   "original_credit": "和久井健「東京卍リベンジャーズ」(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留",
+    "現代日本"
   ],
   "ontology_facets": {
     "source": [
@@ -24,18 +42,22 @@
     "genre": [
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "現代日本"
+    ],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -48,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24536"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -58,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24536"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -67,11 +89,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24536"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24536"
     }

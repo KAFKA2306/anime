@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24690",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24690",
   "attribute_fetched_at": "2026-07-25T10:20:55.286Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゲゲゲの鬼太郎 激突!異次元妖怪の大反乱",
+    "synopsis": "ゲゲゲの鬼太郎 激突!異次元妖怪の大反乱 水木しげる バトル・アクション ホラー・サスペンス・ミステリー キッズ・ファミリー 怪異・妖怪 妖怪 鬼",
+    "staff_text": "原作:水木しげる",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1986,
+    "source": "legacy-derived",
+    "sha256": "8790322f6799884bea6adbe6a89e05f8f001247d0df5fc18c9617331cf8d7627"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,13 @@
   "original_credit": "水木しげる",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -25,6 +43,9 @@
       "ホラー・サスペンス・ミステリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [],
     "motif": [
@@ -32,6 +53,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24690"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -56,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24690"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -65,14 +87,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24690"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

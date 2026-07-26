@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24588",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24588",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "結城友奈は勇者である ちゅるっと",
+    "synopsis": "結城友奈は勇者である ちゅるっと Project 2H ショート 異世界 友情・仲間 召喚 仲間",
+    "staff_text": "原作:Project 2H",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "1a7d832142d1a7c305ea0369e7a3c4ba9f0a37dbf8bb6ae9f7d244a79542ce48"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,15 +23,25 @@
   "original_credit": "Project 2H",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ショート"
+      "ショート",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -31,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24588"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -53,26 +77,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24588"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24588"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24588"
     }

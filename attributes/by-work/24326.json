@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24326",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24326",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "エタニティ ~深夜の濡恋ちゃんねる♡~《通常版》",
+    "synopsis": "エタニティ ~深夜の濡恋ちゃんねる♡~《通常版》 「君が好きだから」井上美珠 「溺愛デイズ」槇原まき 「愛されるのもお仕事ですかっ!?」栢野すばる 「待ち焦がれたハッピーエンド」吉桜美貴 「野良猫は愛に溺れる」桜 朱理 「暴走プロポーズは極甘仕立て」冬野まゆ 「プリンの田中さんはケダモノ。」雪兎ざっく 「冷酷CEOは秘書に溺れるか?」流月るる 「総務部の丸山さん、イケメン社長に溺愛される」有允ひろみ 「152センチ 62キロの恋人」高倉碧依 「私と彼のお見合い事情」幸村真桜 「4番目の許婚候補」富樫聖夜 恋愛・ラブコメ",
+    "staff_text": "原作:「君が好きだから」井上美珠 「溺愛デイズ」槇原まき 「愛されるのもお仕事ですかっ!?」栢野すばる 「待ち焦がれたハッピーエンド」吉桜美貴 「野良猫は愛に溺れる」桜 朱理 「暴走プロポーズは極甘仕立て」冬野まゆ 「プリンの田中さんはケダモノ。」雪兎ざっく 「冷酷CEOは秘書に溺れるか?」流月るる 「総務部の丸山さん、イケメン社長に溺愛される」有允ひろみ 「152センチ 62キロの恋人」高倉碧依 「私と彼のお見合い事情」幸村真桜 「4番目の許婚候補」富樫聖夜",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "33c5f796a7002d95e43e14df220544b89b5499d4c06df84710e8694bf06707d8"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,24 +23,36 @@
   "original_credit": "「君が好きだから」井上美珠 「溺愛デイズ」槇原まき 「愛されるのもお仕事ですかっ!?」栢野すばる 「待ち焦がれたハッピーエンド」吉桜美貴 「野良猫は愛に溺れる」桜 朱理 「暴走プロポーズは極甘仕立て」冬野まゆ 「プリンの田中さんはケダモノ。」雪兎ざっく 「冷酷CEOは秘書に溺れるか?」流月るる 「総務部の丸山さん、イケメン社長に溺愛される」有允ひろみ 「152センチ 62キロの恋人」高倉碧依 「私と彼のお見合い事情」幸村真桜 「4番目の許婚候補」富樫聖夜",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛",
+    "職業・仕事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛",
+      "職業・仕事"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24326"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -45,18 +70,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24326"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24326"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24326"
     }

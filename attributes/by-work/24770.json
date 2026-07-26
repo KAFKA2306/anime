@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24770",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24770",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ぼくらの7日間戦争",
+    "synopsis": "ぼくらの7日間戦争 宗田理「ぼくらの七日間戦争」(角川つばさ文庫・角川文庫 ドラマ・青春",
+    "staff_text": "原作:宗田理「ぼくらの七日間戦争」(角川つばさ文庫・角川文庫",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "b285324b537cb76ae3d3133ed879a15cc97b462a7d528b9268b5d009b067d182"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,8 +23,12 @@
   "original_credit": "宗田理「ぼくらの七日間戦争」(角川つばさ文庫・角川文庫",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦",
+    "戦争"
   ],
   "ontology_facets": {
     "source": [
@@ -20,16 +37,21 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "戦争"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -41,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24770"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -49,18 +71,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24770"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24770"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24770"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24417",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24417",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "私、能力は平均値でって言ったよね!",
+    "synopsis": "私、能力は平均値でって言ったよね! FUNA・亜方逸樹 (アース・スターノベル刊) 異世界・ハイファンタジー SF・ファンタジー 異世界 魔法 転生 魔術",
+    "staff_text": "原作:FUNA・亜方逸樹 (アース・スターノベル刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "ec1b888f2b198df7d45ca39f7dee36079ce4314438ac2189d1e8e6c107afe9cf"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,11 +23,18 @@
   "original_credit": "FUNA・亜方逸樹 (アース・スターノベル刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
-    "魔法"
+    "魔法",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -22,17 +42,23 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
     "motif": [
-      "魔法"
+      "魔法",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,25 +75,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24417"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
+        "魔術",
         "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24417"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24417"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -80,6 +108,18 @@
           "魔法": [
             "魔法",
             "魔術"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24606",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24606",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "フルーツバスケット The Final",
+    "synopsis": "フルーツバスケット The Final SF・ファンタジー ドラマ・青春 恋愛・ラブコメ 友情・仲間 怪異・妖怪 絆 呪い",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "bb7521b5a2b42b697fff179b73eaaf91b922eb8749216c7efc44bd573e25344f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春",
@@ -10,50 +25,59 @@
   ],
   "production_year": 2021,
   "original_credit": null,
-  "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
     "友情・仲間",
+    "成長・挑戦",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー",
       "ドラマ・青春",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "花とゆめ"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24606"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -63,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24606"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -72,17 +96,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24606"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
+          ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },
