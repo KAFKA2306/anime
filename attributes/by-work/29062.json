@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29062",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29062",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "同じゼミの染谷さんがセクシー女優だった話。【オンエア版】",
+    "synopsis": "同じゼミの染谷さんがセクシー女優だった話。【オンエア版】 庄司二号 恋愛・ラブコメ ショート 学園 恋愛 大学 ラブコメ",
+    "staff_text": "原作:庄司二号",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "ff76e13cb3c8f3dbece2dbae3cdb2b86a768848fd00c284402ee5f0bd202d4ce"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,12 @@
   "original_credit": "庄司二号",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
     "学園",
     "恋愛"
   ],
@@ -22,6 +39,9 @@
     "genre": [
       "恋愛・ラブコメ",
       "ショート"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -34,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29062"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -57,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29062"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -65,19 +86,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29062"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29062"
     }

@@ -1,8 +1,24 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28759",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28759",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ポケモン動画図鑑1",
+    "synopsis": "ポケモン動画図鑑1 ショート バトル・アクション キッズ・ファミリー SF・ファンタジー",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "アクション/バトル",
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "1e21b954c3c2d13aed3b0c440bdee9763d382f957317bbfa46c37486b290d8a0"
+  },
   "official_genres": [
     "ショート",
     "アクション/バトル",
@@ -13,11 +29,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
     "バトル・アクション",
     "キッズ・ファミリー",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,8 +43,9 @@
       "ショート",
       "バトル・アクション",
       "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -34,21 +53,22 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28759"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "アクション/バトル",
@@ -59,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28759"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "アクション/バトル",
@@ -69,11 +89,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28759"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28759"
     }

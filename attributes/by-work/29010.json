@@ -1,46 +1,73 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29010",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29010",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "青い花",
+    "synopsis": "青い花 志村貴子(「マンガ・エロティクス・エフ」連載 恋愛・ラブコメ 学園 学校",
+    "staff_text": "原作:志村貴子(「マンガ・エロティクス・エフ」連載",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "91f109f8652a636297852843c2f10b51b929539ab174e423bfce58936f97a20d"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
   "production_year": 2009,
   "original_credit": "志村貴子(「マンガ・エロティクス・エフ」連載",
-  "source_origin": null,
+  "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "学園"
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
-    "source": [],
+    "source": [
+      "漫画"
+    ],
     "genre": [
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
+    "source_origin": "verified",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "志村貴子(「マンガ・エロティクス・エフ」連載",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29010"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -48,22 +75,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29010"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29010"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29010"
     }

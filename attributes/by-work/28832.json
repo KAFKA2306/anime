@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28832",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28832",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "貧乏姉妹物語",
+    "synopsis": "貧乏姉妹物語 かずといずみ 日常・ほのぼの ドラマ・青春 学園 家族 学校 中学校 姉妹",
+    "staff_text": "原作:かずといずみ",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ドラマ/青春"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "246749104b63b390b3540758e65c15e9cb9e697e95e889ef744ccda4a59a798c"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "ドラマ/青春"
@@ -11,11 +25,15 @@
   "original_credit": "かずといずみ",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "ドラマ・青春",
     "学園",
-    "家族"
+    "成長・挑戦",
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,15 +41,19 @@
       "日常・ほのぼの",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "家族"
+      "成長・挑戦",
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28832"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28832"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -63,20 +85,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28832"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "中学校"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "姉妹"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28832"
     }

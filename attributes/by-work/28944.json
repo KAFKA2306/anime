@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28944",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28944",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画クレヨンしんちゃん 嵐を呼ぶモーレツ!オトナ帝国の逆襲",
+    "synopsis": "映画クレヨンしんちゃん 嵐を呼ぶモーレツ!オトナ帝国の逆襲 臼井儀人 キッズ・ファミリー ショート コメディ・ギャグ",
+    "staff_text": "原作:臼井儀人",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "ac82bd01dc694a161d0b9cb08e3c76a5982a22866e1ba27fdcb4d9011517c369"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "ショート",
@@ -12,10 +27,13 @@
   "original_credit": "臼井儀人",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "ショート",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "スペースオペラ"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,6 +42,9 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -31,11 +52,12 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28944"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28944"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -64,11 +86,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28944"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28944"
     }

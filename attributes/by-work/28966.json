@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28966",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28966",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "しん次元!クレヨンしんちゃん THE MOVIE 超能力大決戦 ~とべとべ手巻き寿司~",
+    "synopsis": "しん次元!クレヨンしんちゃん THE MOVIE 超能力大決戦 ~とべとべ手巻き寿司~ 臼井儀人(らくだ社) キッズ・ファミリー ショート コメディ・ギャグ 宇宙 音楽・アイドル 犯罪・警察 アイドル 警察",
+    "staff_text": "原作:臼井儀人(らくだ社)",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "0f1aae94e9d08d0ab6414fc36eae9df5fe24f7f86f58a29e5ad7f37ff5bc2753"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "ショート",
@@ -12,20 +27,31 @@
   "original_credit": "臼井儀人(らくだ社)",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
+    "SF",
     "ショート",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙",
     "音楽・アイドル",
-    "犯罪・警察"
+    "犯罪・警察",
+    "超能力"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
+      "SF",
       "ショート",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -34,12 +60,14 @@
       "音楽・アイドル"
     ],
     "motif": [
-      "犯罪・警察"
+      "犯罪・警察",
+      "超能力"
     ],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -54,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28966"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -64,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28966"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -73,7 +101,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28966"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -82,12 +110,22 @@
         },
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ],
+          "超能力": [
+            "超能力"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

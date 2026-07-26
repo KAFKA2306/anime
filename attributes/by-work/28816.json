@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28816",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28816",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "姫騎士は蛮族の嫁",
+    "synopsis": "姫騎士は蛮族の嫁 コトバノリアキ(講談社「別冊少年マガジン」連載) 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 異世界",
+    "staff_text": "原作:コトバノリアキ(講談社「別冊少年マガジン」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "1dc4ccfe91b8cafdea3510df9c8a0318fd672d5d75ef08defbf00ffa52aefd87"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,11 +25,18 @@
   "original_credit": "コトバノリアキ(講談社「別冊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
-    "異世界"
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +44,23 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,18 +77,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28816"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
-        "異世界"
+        "異世界",
+        "騎士"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28816"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -68,15 +97,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28816"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
             "異世界"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28816"
     }

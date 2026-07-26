@@ -1,17 +1,39 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28824",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28824",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "魔法の姉妹ルルットリリィ",
+    "synopsis": "魔法の姉妹ルルットリリィ スタジオぴえろ・バンダイナムコフィルムワークス SF・ファンタジー 宇宙 家族 音楽・アイドル 魔法 姉妹 アイドル",
+    "staff_text": "原作:スタジオぴえろ・バンダイナムコフィルムワークス",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "eb3e8aebd102ad1bcd9ba05992d25530706d3775eea2c4d07213a24eec2be474"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2026,
   "original_credit": "スタジオぴえろ・バンダイナムコフィルムワークス",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "クロスジャンル",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "クロスジャンル",
+    "SF",
+    "ファンタジー",
+    "現代ファンタジー",
+    "スペースオペラ",
     "宇宙",
     "家族",
     "音楽・アイドル",
@@ -20,7 +42,13 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "クロスジャンル",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -34,9 +62,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -48,22 +77,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28824"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-fantasy-balanced",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28824"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28824"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -72,15 +104,25 @@
         },
         "theme": {
           "家族": [
+            "家族",
             "姉妹"
           ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

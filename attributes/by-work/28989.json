@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28989",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28989",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画 きかんしゃトーマス めざせ!夢のチャンピオンカップ",
+    "synopsis": "映画 きかんしゃトーマス めざせ!夢のチャンピオンカップ キッズ・ファミリー 日常・ほのぼの",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "4ce73274a40564199332624a9b2fcd534e10b2a8af9baa1a426ff485567700e7"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,26 +38,30 @@
       "キッズ・ファミリー",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28989"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28989"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -57,11 +78,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28989"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28989"
     }

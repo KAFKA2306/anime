@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29066",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29066",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "炎の闘球女 ドッジ弾子",
+    "synopsis": "炎の闘球女 ドッジ弾子 こしたてつひろ「炎の闘球女 ドッジ弾子」(小学館「週刊コロコロコミック」連載中) スポーツ・競技",
+    "staff_text": "原作:こしたてつひろ「炎の闘球女 ドッジ弾子」(小学館「週刊コロコロコミック」連載中)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "3eb00091b7016ab85f518bfa42e881f7f9fe8149184e7b9fa086ce0ad0f36159"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "こしたてつひろ「炎の闘球女 ドッジ弾子」(小学館「週刊コロコロコミック」連載中)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -20,16 +36,20 @@
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -41,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29066"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -49,18 +69,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29066"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29066"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29066"
     }

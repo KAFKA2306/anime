@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28803",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28803",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゴーストコンサート : missing Songs",
+    "synopsis": "ゴーストコンサート : missing Songs 上松範康 SF・ファンタジー ドラマ・青春 音楽・アイドル 音楽",
+    "staff_text": "原作:上松範康",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "b51352dcab2be01d5a1013950db3ebe04d7fa4198343db3c97778937dc466bf0"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,25 +24,31 @@
   "production_year": 2026,
   "original_credit": "上松範康",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28803"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28803"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -60,15 +80,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28803"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28803"
     }

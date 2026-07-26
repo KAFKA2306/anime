@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28988",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28988",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画 きかんしゃトーマス おいでよ!未来の発明ショー!",
+    "synopsis": "映画 きかんしゃトーマス おいでよ!未来の発明ショー! キッズ・ファミリー 日常・ほのぼの ロボット・メカ ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "dd0a10f01e08b31d1f7502be801b4978de89bce4da748bcde570122242a96da7"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,24 +25,38 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
+    "SF",
     "日常・ほのぼの",
+    "ロボットSF",
+    "癒やし",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
+      "SF",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28988"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -52,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28988"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -60,12 +88,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28988"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28991",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28991",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画 きかんしゃトーマス 大冒険!ルックアウトマウンテンとひみつのトンネル",
+    "synopsis": "映画 きかんしゃトーマス 大冒険!ルックアウトマウンテンとひみつのトンネル キッズ・ファミリー 日常・ほのぼの",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "41c9746f7887592669db9496e7357f332763d64f1144fbf76e8df4a48d23f1e5"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,9 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,26 +39,31 @@
       "キッズ・ファミリー",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし",
+      "旅・冒険"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28991"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -49,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28991"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -57,11 +80,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28991"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28991"
     }

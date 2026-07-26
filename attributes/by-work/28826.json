@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28826",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28826",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "夜桜さんちの大作戦 第2期",
+    "synopsis": "夜桜さんちの大作戦 第2期 権平ひつじ『夜桜さんちの大作戦』(集英社ジャンプコミックス刊) バトル・アクション SF・ファンタジー コメディ・ギャグ 友情・仲間 成長・挑戦 家族 犯罪・警察 絆 挑戦 犯罪",
+    "staff_text": "原作:権平ひつじ『夜桜さんちの大作戦』(集英社ジャンプコミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "2e67183470e91674c0e63f2d7dd2994b4d8d497f67cf7bff5bc29cb880d48fd7"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,10 +27,12 @@
   "original_credit": "権平ひつじ『夜桜さんちの大作戦』(集英社ジャンプコミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
     "成長・挑戦",
     "家族",
@@ -27,9 +44,10 @@
     ],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -41,6 +59,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28826"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -68,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28826"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -77,14 +96,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28826"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ],
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ],
           "家族": [
@@ -93,9 +115,11 @@
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28826"
     }

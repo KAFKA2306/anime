@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28852",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28852",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "本好きの下剋上 領主の養女",
+    "synopsis": "本好きの下剋上 領主の養女 香月美夜『本好きの下剋上~司書になるためには手段を選んでいられません~』(TOブックス刊) SF・ファンタジー ドラマ・青春 友情・仲間 家族 仲間",
+    "staff_text": "原作:香月美夜『本好きの下剋上~司書になるためには手段を選んでいられません~』(TOブックス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "f6cab4924d048e292bfe139b15c5e428567b1169bc667a9a093f0feae3fe6574"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,11 +24,14 @@
   "production_year": 2026,
   "original_credit": "香月美夜『本好きの下剋上~司書になるためには手段を選んでいられません~』(TOブックス刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
+    "成長・挑戦",
     "家族"
   ],
   "ontology_facets": {
@@ -22,17 +39,20 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "家族"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28852"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -58,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28852"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -66,18 +86,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28852"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ],
           "家族": [
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28852"
     }

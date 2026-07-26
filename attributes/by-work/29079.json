@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29079",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29079",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "手札が多めのビクトリア",
+    "synopsis": "手札が多めのビクトリア 守雨「手札が多めのビクトリア」(MFブックス ドラマ・青春 日常・ほのぼの",
+    "staff_text": "原作:守雨「手札が多めのビクトリア」(MFブックス",
+    "official_genres": [
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "3f053e0328e0e56f30af137571bf9f87b101877639b5bb830378f9169b16e49e"
+  },
   "official_genres": [
     "ドラマ/青春",
     "日常/ほのぼの"
@@ -11,9 +25,13 @@
   "original_credit": "守雨「手札が多めのビクトリア」(MFブックス",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +41,21 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29079"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -53,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29079"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -61,11 +84,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29079"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29079"
     }

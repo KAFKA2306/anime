@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28783",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28783",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ChaO",
+    "synopsis": "ChaO SF・ファンタジー 恋愛・ラブコメ 職業・仕事 働く",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "01becaba4dd32ed8513c8cb7f85b9c4734409c75bb596334fa9cc5fde53ebb2f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,25 +24,34 @@
   "production_year": 2025,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +60,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28783"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28783"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -60,15 +83,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28783"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28783"
     }
