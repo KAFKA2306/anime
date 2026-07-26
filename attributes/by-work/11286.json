@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11286",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11286",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "イナズマイレブン 脅威の侵略者編",
+    "synopsis": "イナズマイレブン 脅威の侵略者編 スポーツ・競技 バトル・アクション キッズ・ファミリー",
+    "staff_text": "",
+    "official_genres": [
+      "スポーツ/競技",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "8f722774224a32c8cc594e7068443536e7370df718f1e5255c9d3fe7473992ca"
+  },
   "official_genres": [
     "スポーツ/競技",
     "アクション/バトル",
@@ -12,10 +27,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "バトル・アクション",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "スポーツ",
+    "戦争"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,26 +43,31 @@
       "バトル・アクション",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ",
+      "戦争"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11286"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -53,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11286"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -62,11 +86,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11286"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ],
+          "戦争": [
+            "侵略"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11286"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11361",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11361",
   "attribute_fetched_at": "2026-07-25T10:20:55.286Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ドテラマン",
+    "synopsis": "ドテラマン 九里一平 バトル・アクション コメディ・ギャグ 異世界 推理・謎解き 怪異・妖怪 探偵 鬼",
+    "staff_text": "原作:九里一平",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1986,
+    "source": "legacy-derived",
+    "sha256": "ecc250008ccc1339144bd36159ebb8a010113b4d00a99f36922636ee624cf08f"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,9 +25,17 @@
   "original_credit": "九里一平",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "ミステリー",
     "異世界",
     "推理・謎解き",
     "怪異・妖怪"
@@ -22,7 +44,13 @@
     "source": [],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "ミステリー"
     ],
     "setting": [
       "異世界"
@@ -35,6 +63,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11361"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -58,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11361"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -66,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11361"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -75,12 +104,29 @@
         },
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

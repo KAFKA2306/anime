@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11378",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11378",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アカメが斬る!",
+    "synopsis": "アカメが斬る! タカヒロ・田代哲也(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊) SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:タカヒロ・田代哲也(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "b7acfec22e740508b72b8b05a756d7c7d7d6c62e08f7af58adca483109550c0b"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,26 +26,30 @@
   "production_year": 2014,
   "original_credit": "タカヒロ・田代哲也(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11378"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -57,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11378"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -66,11 +85,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11378"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11378"
     }

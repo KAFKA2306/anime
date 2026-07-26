@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11104",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11104",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "戦場のヴァルキュリア3 誰がための銃瘡",
+    "synopsis": "戦場のヴァルキュリア3 誰がための銃瘡 SEGA SF・ファンタジー バトル・アクション 戦争・ミリタリー 犯罪・警察 犯罪",
+    "staff_text": "原作:SEGA",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "fba8a315d84f400afdb465ee4b9fa74581f19bec4efebca49f14ce2c4265284a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,27 +26,36 @@
   "production_year": 2011,
   "original_credit": "SEGA",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "戦争・ミリタリー",
-    "犯罪・警察"
+    "スペキュレーティブ判定保留",
+    "戦争",
+    "犯罪・警察",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "戦争・ミリタリー"
+      "戦争・ミリタリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [
-      "犯罪・警察"
+      "犯罪・警察",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11104"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -56,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11104"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -65,15 +89,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11104"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "戦争": [
+            "戦争",
+            "戦場"
+          ]
+        },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ],
+          "軍事": [
+            "ミリタリー"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11104"
     }

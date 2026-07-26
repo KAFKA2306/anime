@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11287",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11287",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "イナズマイレブン 世界への挑戦!!編",
+    "synopsis": "イナズマイレブン 世界への挑戦!!編 スポーツ・競技 バトル・アクション キッズ・ファミリー 学園 成長・挑戦 怪異・妖怪 挑戦 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "スポーツ/競技",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "cd9f06a3e4bcb5c3589609fff92b73e514f7b43a9fb49a6a83aa8b3a4595aa86"
+  },
   "official_genres": [
     "スポーツ/競技",
     "アクション/バトル",
@@ -12,12 +27,16 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "バトル・アクション",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "学園",
     "成長・挑戦",
+    "スポーツ",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -27,17 +46,22 @@
       "バトル・アクション",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,13 +70,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11287"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -62,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11287"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -71,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11287"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -80,12 +104,24 @@
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11425",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版 STEINS;GATE 負荷領域のデジャヴ",
+    "synopsis": "劇場版 STEINS;GATE 負荷領域のデジャヴ 志倉千代丸,MAGES.,Nitroplus ホラー・サスペンス・ミステリー ドラマ・青春 学園 友情・仲間 大学 仲間",
+    "staff_text": "原作:志倉千代丸,MAGES.,Nitroplus",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "c7791d6e2211edce499fd4488a84207481e6e1a481313f2793d7cdb8ece6477a"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春"
@@ -11,11 +25,14 @@
   "original_credit": "志倉千代丸,MAGES.,Nitroplus",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,15 +40,18 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -55,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -63,19 +83,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11425"
     }

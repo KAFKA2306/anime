@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11411",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11411",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "マケン姫っ!通",
+    "synopsis": "マケン姫っ!通 武田弘光(株式会社KADOKAWA 富士見書房 月刊ドラゴンエイジ連載 ドラゴンコミックスエイジ刊) バトル・アクション 恋愛・ラブコメ 学園 友情・仲間 魔法 怪異・妖怪 高校 友情 魔導 呪い",
+    "staff_text": "原作:武田弘光(株式会社KADOKAWA 富士見書房 月刊ドラゴンエイジ連載 ドラゴンコミックスエイジ刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "762798591aa69d0533d4de96b539ce65932c1e3dcdff0fe9262fa3216506beaa"
+  },
   "official_genres": [
     "アクション/バトル",
     "恋愛/ラブコメ"
@@ -11,11 +25,20 @@
   "original_credit": "武田弘光(株式会社KADOKAWA 富士見書房 月刊ドラゴンエイジ連載 ドラゴンコミックスエイジ刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
     "学園",
+    "職場",
     "友情・仲間",
+    "恋愛",
     "魔法",
     "怪異・妖怪"
   ],
@@ -25,13 +48,20 @@
     ],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [
-      "学園"
+      "学園",
+      "職場"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "恋愛"
     ],
     "motif": [
       "魔法",
@@ -39,6 +69,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -56,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11411"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -65,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11411"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -73,25 +104,45 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11411"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園",
             "高校"
+          ],
+          "職場": [
+            "会社"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法",
             "魔導"
           ],
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法",
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

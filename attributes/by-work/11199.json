@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11199",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11199",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "海月姫",
+    "synopsis": "海月姫 東村アキコ 恋愛・ラブコメ コメディ・ギャグ ドラマ・青春 成長・挑戦 青春",
+    "staff_text": "原作:東村アキコ",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "c4a83b40e7f8d971395b9c226794ab0df95f403fe1a2850776e1449da703c0bf"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "コメディ/ギャグ",
@@ -12,11 +27,15 @@
   "original_credit": "東村アキコ",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "コメディ・ギャグ",
     "ドラマ・青春",
-    "成長・挑戦"
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,13 +44,18 @@
       "コメディ・ギャグ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11199"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ",
@@ -56,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11199"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ",
@@ -65,15 +89,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11199"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11199"
     }

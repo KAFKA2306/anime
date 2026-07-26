@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11562",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11562",
   "attribute_fetched_at": "2026-07-25T10:21:15.719Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "発明BOYカニパン",
+    "synopsis": "発明BOYカニパン ロボット・メカ 宇宙 友情・仲間 惑星 仲間 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ"
+    ],
+    "production_year": 1998,
+    "source": "legacy-derived",
+    "sha256": "414212d70adbb6532a3adedcd062acf7c534a881c50ed855eb2a6315f4a886ab"
+  },
   "official_genres": [
     "ロボット/メカ"
   ],
@@ -10,15 +23,27 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
+    "スペースオペラ",
+    "ロボットSF",
     "宇宙",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ロボットSF"
     ],
     "setting": [
       "宇宙"
@@ -31,6 +56,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11562"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ"
       ],
@@ -53,27 +79,38 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11562"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11562"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "惑星"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
             "ロボット"
           ]
         }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11495",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11495",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "寄生獣 セイの格率",
+    "synopsis": "寄生獣 セイの格率 岩明均(講談社「アフタヌーン」) SF・ファンタジー ホラー・サスペンス・ミステリー ドラマ・青春 学園 友情・仲間 サバイバル 高校 友情 生き残",
+    "staff_text": "原作:岩明均(講談社「アフタヌーン」)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "dc2326f7e6ea7e65a22854b02cb28cabfab2e98038abbbab8d4bf5861eab9e6a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -11,13 +26,16 @@
   "production_year": 2014,
   "original_credit": "岩明均(講談社「アフタヌーン」)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "学園",
     "友情・仲間",
+    "成長・挑戦",
     "サバイバル"
   ],
   "ontology_facets": {
@@ -25,20 +43,23 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "サバイバル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -55,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11495"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -65,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11495"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -74,22 +95,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11495"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ],
           "サバイバル": [
+            "サバイバル",
             "生き残"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11495"
     }

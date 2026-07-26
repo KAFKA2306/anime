@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11212",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11212",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ガリレイドンナ",
+    "synopsis": "ガリレイドンナ 梅津泰臣・teamGD SF・ファンタジー ロボット・メカ ドラマ・青春 家族 姉妹",
+    "staff_text": "原作:梅津泰臣・teamGD",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "e40f8dd2c3ba5484792c5c7a6be9dadd990b4c9b300f2d283c21d5ad092a3f53"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,22 +26,32 @@
   "production_year": 2013,
   "original_credit": "梅津泰臣・teamGD",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
     "ドラマ・青春",
+    "ロボットSF",
+    "成長・挑戦",
     "家族"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "家族"
     ],
     "motif": [
@@ -34,9 +59,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -48,17 +74,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11212"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11212"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -67,15 +96,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11212"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "姉妹"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11212"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11393",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11393",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "超速変形ジャイロゼッター",
+    "synopsis": "超速変形ジャイロゼッター スクウェア・エニックス ロボット・メカ バトル・アクション キッズ・ファミリー 学園 学校 ロボット",
+    "staff_text": "原作:スクウェア・エニックス",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "9df467a007a70a41f3d22d215e830c558a930b8137683e30f1263af20f084980"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -12,18 +27,28 @@
   "original_credit": "スクウェア・エニックス",
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "バトル・アクション",
     "キッズ・ファミリー",
+    "ロボットSF",
     "学園"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "バトル・アクション",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
@@ -34,6 +59,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11393"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -58,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11393"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -67,7 +93,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11393"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -78,6 +104,12 @@
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }
