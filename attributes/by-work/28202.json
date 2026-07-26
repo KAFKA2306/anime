@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28202",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28202",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フランチェスカ",
+    "synopsis": "フランチェスカ 熊谷仁志 ドラマ・青春 ショート 推理・謎解き 推理",
+    "staff_text": "原作:熊谷仁志",
+    "official_genres": [
+      "ドラマ/青春",
+      "ショート"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "0d06495d292a0345484a33877199b782533d1849b2204ecad289729a0c490eda"
+  },
   "official_genres": [
     "ドラマ/青春",
     "ショート"
@@ -11,9 +25,13 @@
   "original_credit": "熊谷仁志",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "ショート",
+    "ミステリー",
+    "成長・挑戦",
     "推理・謎解き"
   ],
   "ontology_facets": {
@@ -22,8 +40,12 @@
       "ドラマ・青春",
       "ショート"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "推理・謎解き"
     ],
     "motif": [],
@@ -31,6 +53,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28202"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "ショート"
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28202"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "ショート"
@@ -62,15 +85,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28202"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "推理・謎解き": [
-            "推理"
+            "推理",
+            "謎解き"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28202"
     }

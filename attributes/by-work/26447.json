@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26447",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26447",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "おかしな転生",
+    "synopsis": "おかしな転生 古流 望「おかしな転生」(TOブックス刊) 異世界・ハイファンタジー SF・ファンタジー 異世界 料理・グルメ 転生 菓子",
+    "staff_text": "原作:古流 望「おかしな転生」(TOブックス刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "461d1345d24baac372d3e7311cf33d9038baaf2e7da9f946630234dfba5092f6"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,11 +23,17 @@
   "original_credit": "古流 望「おかしな転生」(TOブックス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
-    "料理・グルメ"
+    "料理・グルメ",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -22,7 +41,10 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -30,9 +52,12 @@
     "theme": [
       "料理・グルメ"
     ],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,36 +74,50 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26447"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26447"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26447"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
         "theme": {
           "料理・グルメ": [
+            "料理",
+            "グルメ",
             "菓子"
           ]
         },
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26447"
     }

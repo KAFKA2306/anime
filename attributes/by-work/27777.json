@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27777",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27777",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ある魔女が死ぬまで",
+    "synopsis": "ある魔女が死ぬまで 坂「ある魔女が死ぬまで」(電撃の新文芸 SF・ファンタジー ドラマ・青春 魔法 怪異・妖怪 呪い",
+    "staff_text": "原作:坂「ある魔女が死ぬまで」(電撃の新文芸",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "f6ae54d638e089a5db78b3e471a222747299889b79822cbe12b928050ca5630a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,30 +24,42 @@
   "production_year": 2025,
   "original_credit": "坂「ある魔女が死ぬまで」(電撃の新文芸",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "成長・挑戦",
     "魔法",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "魔法",
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -45,16 +71,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27777"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27777"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -62,16 +90,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27777"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
           ],
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法",
+            "怪異"
           ]
         }
       },

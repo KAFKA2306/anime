@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28109",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28109",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "カラオケ行こ!",
+    "synopsis": "カラオケ行こ! 和山やま『カラオケ行こ!』(ビームコミックス コメディ・ギャグ",
+    "staff_text": "原作:和山やま『カラオケ行こ!』(ビームコミックス",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "84d84ab32b98b771c21c253cadbbd7f2ba2410675b3e72b89a3016079aa66bd4"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "和山やま『カラオケ行こ!』(ビームコミックス",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ"
   ],
@@ -20,11 +35,13 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -42,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28109"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -50,18 +67,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28109"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28109"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28109"
     }

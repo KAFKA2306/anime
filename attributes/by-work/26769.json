@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26769",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26769",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "TVアニメ「30歳まで童貞だと魔法使いになれるらしい」",
+    "synopsis": "TVアニメ「30歳まで童貞だと魔法使いになれるらしい」 豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊) 恋愛・ラブコメ 恋愛 魔法 恋心 ラブコメ",
+    "staff_text": "原作:豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "a20924d433d21de10cad5218113f5f5d07aa84ce4f47596c949e2ea9e5fcdcf1"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,8 +23,15 @@
   "original_credit": "豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ファンタジー",
+    "現代ファンタジー",
+    "ラブコメ",
     "恋愛",
     "魔法"
   ],
@@ -20,7 +40,12 @@
       "漫画"
     ],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
@@ -31,6 +56,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26769"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -55,18 +81,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26769"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26769"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
+            "恋愛",
             "恋心",
             "ラブコメ"
           ]
@@ -74,6 +101,14 @@
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

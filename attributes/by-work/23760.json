@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23760",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23760",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王SEVENS ラッシュデュエル誕生編",
+    "synopsis": "遊☆戯☆王SEVENS ラッシュデュエル誕生編 『遊☆戯☆王』(集英社 ジャンプ コミックス刊) バトル・アクション スポーツ・競技 学園 学校",
+    "staff_text": "原作:『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "eac9a8c332a7072494547b005d87eea67fe3f20000b0d91497ffd1d335cc6ab3"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,10 +25,13 @@
   "original_credit": "『遊☆戯☆王』(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +41,17 @@
       "バトル・アクション",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23760"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -57,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23760"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -65,15 +86,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23760"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23760"
     }

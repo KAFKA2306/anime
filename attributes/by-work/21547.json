@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21547",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21547",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "TEEN×TEEN THEATER「初恋モンスター」",
+    "synopsis": "TEEN×TEEN THEATER「初恋モンスター」 日吉丸 晃(講談社「ARIA」連載) 2.5次元舞台 学園 成長・挑戦 恋愛 高校 挑戦 ラブコメ",
+    "staff_text": "原作:日吉丸 晃(講談社「ARIA」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "98b8e471c47662b9c37bd3146e2d9455194c2b58a2d1a269aab9b817a08d0c97"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "日吉丸 晃(講談社「ARIA」連載)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "ラブコメ",
     "学園",
     "成長・挑戦",
     "恋愛"
@@ -19,7 +38,11 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -33,6 +56,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21547"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,29 +79,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21547"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21547"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ],
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21547"
     }

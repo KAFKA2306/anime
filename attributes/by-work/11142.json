@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11142",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11142",
   "attribute_fetched_at": "2026-07-25T10:44:56.484Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ヴァリアブル・ジオ",
+    "synopsis": "ヴァリアブル・ジオ ゲームソフト『ヴァリアブル・ジオ』(TGL) SF・ファンタジー バトル・アクション スポーツ・競技",
+    "staff_text": "原作:ゲームソフト『ヴァリアブル・ジオ』(TGL)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 1997,
+    "source": "legacy-derived",
+    "sha256": "5c00364b487674e077952066825fb9f4db8af3178ba3b816f3a283a78bc167ac"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,31 +26,38 @@
   "production_year": 1997,
   "original_credit": "ゲームソフト『ヴァリアブル・ジオ』(TGL)",
   "source_origin": "ゲーム",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "スペキュレーティブ判定保留",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
       "ゲーム"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11142"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -57,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11142"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -66,11 +88,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11142"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11142"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20158",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20158",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞-HiME",
+    "synopsis": "舞-HiME 矢立肇 バトル・アクション 恋愛・ラブコメ SF・ファンタジー 学園",
+    "staff_text": "原作:矢立肇",
+    "official_genres": [
+      "アクション/バトル",
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "818492d0b4babf58d9a4e0016b68035f4d3a2c30931e163c45ce26a34983d0f1"
+  },
   "official_genres": [
     "アクション/バトル",
     "恋愛/ラブコメ",
@@ -12,26 +27,36 @@
   "original_credit": "矢立肇",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
     "恋愛・ラブコメ",
-    "SF・ファンタジー",
-    "学園"
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
       "恋愛・ラブコメ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20158"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ",
@@ -56,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20158"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ",
@@ -65,15 +90,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20158"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20158"
     }

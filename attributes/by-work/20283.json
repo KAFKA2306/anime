@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20283",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20283",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "天空のエスカフローネ",
+    "synopsis": "天空のエスカフローネ 矢立肇、河森正治 異世界・ハイファンタジー SF・ファンタジー ロボット・メカ 異世界 学園 高校",
+    "staff_text": "原作:矢立肇、河森正治",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "0d5790e42229ff3549ca465188fa42426810f1bf0663d4acea75217e00b02cbb"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ"
@@ -11,10 +25,18 @@
   "original_credit": "矢立肇、河森正治",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
+    "異世界ファンタジー",
+    "ロボットSF",
     "異世界",
     "学園"
   ],
@@ -22,8 +44,13 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ロボットSF"
     ],
     "setting": [
       "異世界",
@@ -35,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -49,18 +77,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20283"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
       ],
       "matched_terms": [
+        "ロボット",
+        "メカ",
         "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20283"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
@@ -68,18 +98,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20283"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
             "異世界"
           ],
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20283"
     }

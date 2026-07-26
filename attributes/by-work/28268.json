@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28268",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28268",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "機械じかけのマリー",
+    "synopsis": "機械じかけのマリー あきもと明希「機械じかけのマリー」(白泉社・花とゆめコミックス) 恋愛・ラブコメ ロボット・メカ 職業・仕事 働く ロボット",
+    "staff_text": "原作:あきもと明希「機械じかけのマリー」(白泉社・花とゆめコミックス)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ロボット/メカ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "aa4557c6c0ee7b0b10c6c4586f7edd9937144d87ec484a0ac61036828602ea18"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ロボット/メカ"
@@ -11,9 +25,17 @@
   "original_credit": "あきもと明希「機械じかけのマリー」(白泉社・花とゆめコミックス)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "SF",
     "ロボット・メカ",
+    "ロボットSF",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,10 +44,16 @@
     ],
     "genre": [
       "恋愛・ラブコメ",
+      "SF",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [
@@ -33,6 +61,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28268"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ロボット/メカ"
@@ -60,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28268"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ロボット/メカ"
@@ -68,17 +97,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28268"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24837",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24837",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "あたしンち ムービーコミック",
+    "synopsis": "あたしンち ムービーコミック けらえいこ コメディ・ギャグ 日常・ほのぼの キッズ・ファミリー",
+    "staff_text": "原作:けらえいこ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "490822898446b904e0211978c4822102b3b4707e110884ce85308bfc4e5605ef"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの",
@@ -12,10 +27,13 @@
   "original_credit": "けらえいこ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,16 +42,20 @@
       "日常・ほのぼの",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24837"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -53,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24837"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -62,11 +84,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24837"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24837"
     }

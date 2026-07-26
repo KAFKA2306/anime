@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11183",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11183",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "空中ブランコ",
+    "synopsis": "空中ブランコ 奥田英朗 コメディ・ギャグ ドラマ・青春 医療 病院",
+    "staff_text": "原作:奥田英朗",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "fb9bad3a25b744e00cef6dbab7b6f7ecbd5c8069edf68a6b4476b5d910c33f5b"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "奥田英朗",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ドラマ・青春",
+    "成長・挑戦",
     "医療"
   ],
   "ontology_facets": {
@@ -22,13 +39,17 @@
       "コメディ・ギャグ",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "医療"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11183"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11183"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -60,15 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11183"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "医療": [
+            "医療",
             "病院"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11183"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22391",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22391",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "宇宙兄弟",
+    "synopsis": "宇宙兄弟 「宇宙兄弟」小山宙哉(講談社「モーニング」連載中) SF・ファンタジー ロボット・メカ ドラマ・青春 宇宙 家族 兄弟",
+    "staff_text": "原作:「宇宙兄弟」小山宙哉(講談社「モーニング」連載中)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "196ab3338bad1644686c98c8a7d20d3f26a61d48b8013df9a2235c784a5b826f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,12 +26,19 @@
   "production_year": 2012,
   "original_credit": "「宇宙兄弟」小山宙哉(講談社「モーニング」連載中)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
     "ドラマ・青春",
+    "スペースオペラ",
+    "ロボットSF",
     "宇宙",
+    "成長・挑戦",
     "家族"
   ],
   "ontology_facets": {
@@ -24,14 +46,19 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ロボットSF"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [
+      "成長・挑戦",
       "家族"
     ],
     "motif": [
@@ -39,9 +66,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -55,17 +83,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22391"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22391"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -74,7 +106,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22391"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -82,11 +114,28 @@
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "兄弟"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22391"
     }

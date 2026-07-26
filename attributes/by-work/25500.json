@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25500",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25500",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "名探偵ハンギョドン 怪盗ルーズあらわるの巻",
+    "synopsis": "名探偵ハンギョドン 怪盗ルーズあらわるの巻 キッズ・ファミリー SF・ファンタジー 推理・謎解き 探偵",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "37d2f344bdda34206ef65579317f2f198c9e826b288801efb24483cbfef11755"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "SF/ファンタジー"
@@ -11,16 +25,22 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
     "推理・謎解き"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -29,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25500"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25500"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -60,15 +81,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25500"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25500"
     }

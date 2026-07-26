@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28805",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28805",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。Season2",
+    "synopsis": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。Season2 天壱(一迅社アイリスNEO 異世界・ハイファンタジー SF・ファンタジー 異世界 転生",
+    "staff_text": "原作:天壱(一迅社アイリスNEO",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "5e26f9048d45cf9b942ac4875fb477d2f68496a9d2f6546454c8dbe65acae046"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,24 +23,36 @@
   "original_credit": "天壱(一迅社アイリスNEO",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
-    "異世界"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -42,32 +67,44 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28805"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28805"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28805"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28805"
     }

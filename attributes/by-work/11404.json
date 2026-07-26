@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11404",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11404",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ビーストサーガ",
+    "synopsis": "ビーストサーガ タカラトミー SF・ファンタジー バトル・アクション キッズ・ファミリー 宇宙 銀河",
+    "staff_text": "原作:タカラトミー",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "26f538fe05cabbd562d5c0de8b7df29002827efae9527142a7ac030630a393c2"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,19 +26,27 @@
   "production_year": 2013,
   "original_credit": "タカラトミー",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
     "キッズ・ファミリー",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -32,9 +55,10 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -46,17 +70,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11404"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "銀河"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11404"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -65,15 +92,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11404"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "銀河"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11404"
     }

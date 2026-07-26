@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29057",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29057",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "スーパーの裏でヤニ吸うふたり",
+    "synopsis": "スーパーの裏でヤニ吸うふたり 地主(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊) 日常・ほのぼの 職業・仕事 仕事 働く",
+    "staff_text": "原作:地主(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "5255df9e7df3a1f70be2095436ee258f3db071f60400bbac9d0839a689d33fe7"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,9 +23,12 @@
   "original_credit": "地主(掲載 月刊「ビッグガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,16 @@
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29057"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -52,23 +71,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29057"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29057"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
             "仕事",
             "働く"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29057"
     }

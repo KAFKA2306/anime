@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20988",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20988",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "こども刑事めめたん",
+    "synopsis": "こども刑事めめたん 森山一保 ショート コメディ・ギャグ 音楽・アイドル 犯罪・警察 アイドル 刑事",
+    "staff_text": "原作:森山一保",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "d016c6498972b5724d1020291917f8a96eb7d9f22615b16162a5eaab22593862"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "森山一保",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -23,6 +39,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
@@ -34,6 +51,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20988"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -57,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20988"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -65,19 +83,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20988"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
         "motif": {
           "犯罪・警察": [
-            "刑事"
+            "警察",
+            "刑事",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20988"
     }

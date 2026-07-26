@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10686",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10686",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "サムライ7",
+    "synopsis": "サムライ7 バトル・アクション 歴史・戦記 宇宙 惑星",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "e8472539b2a4bdc9cfee03aedf0834a48a3635d1048696b86ed3b1c7ef5c6d01"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,16 +25,26 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "歴史・戦記",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "歴史・戦記"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -29,6 +53,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10686"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -52,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10686"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -60,15 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10686"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "惑星"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10686"
     }

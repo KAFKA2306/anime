@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28391",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28391",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "科学×冒険サバイバル! 第2シリーズ",
+    "synopsis": "科学×冒険サバイバル! 第2シリーズ 「科学漫画サバイバル」シリーズ(朝日新聞出版) バトル・アクション キッズ・ファミリー 友情・仲間 サバイバル 仲間",
+    "staff_text": "原作:「科学漫画サバイバル」シリーズ(朝日新聞出版)",
+    "official_genres": [
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "a4d0f3d4f015b7ffa6a3569bd1a856ec659f7349dd49ddf49691682c0a18d6c9"
+  },
   "official_genres": [
     "アクション/バトル",
     "キッズ/ファミリー"
@@ -11,11 +25,17 @@
   "original_credit": "「科学漫画サバイバル」シリーズ(朝日新聞出版)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "キッズ・ファミリー",
     "友情・仲間",
-    "サバイバル"
+    "サバイバル",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +43,20 @@
     ],
     "genre": [
       "バトル・アクション",
+      "SF",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "サバイバル"
+      "サバイバル",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28391"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28391"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -66,18 +90,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28391"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "サバイバル": [
             "サバイバル"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28391"
     }

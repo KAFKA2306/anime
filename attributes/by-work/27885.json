@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27885",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27885",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "未ル わたしのみらい",
+    "synopsis": "未ル わたしのみらい ロボット・メカ ドラマ・青春 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "05bcee290dca652beeab8ddde0a132c9e6481e4396ae697b1a45b0e42cf0010e"
+  },
   "official_genres": [
     "ロボット/メカ",
     "ドラマ/青春"
@@ -11,38 +25,52 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
-    "ドラマ・青春"
+    "SF",
+    "ドラマ・青春",
+    "ロボットSF",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27885"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "ドラマ/青春"
@@ -51,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27885"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "ドラマ/青春"
@@ -59,12 +87,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27885"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

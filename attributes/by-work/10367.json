@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10367",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10367",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "最終兵器彼女 Another love song",
+    "synopsis": "最終兵器彼女 Another love song 高橋 しん 戦争・ミリタリー ドラマ・青春",
+    "staff_text": "原作:高橋 しん",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "0ac4124c55fb3644cf9e7e27f3e5b07e4267ba328e1daa37acc95ed1eae19b28"
+  },
   "official_genres": [
     "戦争/ミリタリー",
     "ドラマ/青春"
@@ -11,9 +25,14 @@
   "original_credit": "高橋 しん",
   "source_origin": null,
   "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "戦争・ミリタリー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +40,23 @@
       "戦争・ミリタリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "成長・挑戦",
+      "戦争"
+    ],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10367"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "戦争/ミリタリー",
         "ドラマ/青春"
@@ -49,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10367"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "戦争/ミリタリー",
         "ドラマ/青春"
@@ -57,11 +83,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10367"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "軍事": [
+            "兵器",
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10367"
     }

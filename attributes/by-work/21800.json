@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21800",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21800",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "戦刻ナイトブラッド",
+    "synopsis": "戦刻ナイトブラッド 『戦刻ナイトブラッド』(オトメイト×KADOKAWA×マーベラス) 異世界・ハイファンタジー 恋愛・ラブコメ 歴史・戦記 SF・ファンタジー 異世界 歴史・時代劇 怪異・妖怪 戦国 鬼",
+    "staff_text": "原作:『戦刻ナイトブラッド』(オトメイト×KADOKAWA×マーベラス)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "歴史/戦記",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "3a590e37e02953861e5b41f0187ccc7e97b45c89fbd4a64daa557c1c4e589bc5"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "歴史/戦記",
@@ -12,33 +27,49 @@
   "original_credit": "『戦刻ナイトブラッド』(オトメイト×KADOKAWA×マーベラス)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
     "歴史・戦記",
-    "SF・ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "ラブコメ",
     "異世界",
     "歴史・時代劇",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ",
-      "歴史・戦記",
-      "SF・ファンタジー"
+      "歴史・戦記"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
       "歴史・時代劇"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -53,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21800"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "恋愛/ラブコメ",
         "歴史/戦記",
@@ -65,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21800"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "歴史/戦記",
@@ -74,20 +105,39 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21800"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
             "異世界"
           ],
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

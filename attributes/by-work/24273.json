@@ -1,17 +1,36 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24273",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24273",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔女の旅々",
+    "synopsis": "魔女の旅々 白石定規(GAノベル SF・ファンタジー 魔法",
+    "staff_text": "原作:白石定規(GAノベル",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "caf29c2b2ea43c6bb27687b655f4e14598095ac7f9a9aeab57d6be65105ede56"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2020,
   "original_credit": "白石定規(GAノベル",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
+    "現代ファンタジー",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
@@ -19,18 +38,24 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -44,27 +69,38 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24273"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24273"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24273"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

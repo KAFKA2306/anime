@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23939",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23939",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "若おかみは小学生!(劇場版)",
+    "synopsis": "若おかみは小学生!(劇場版) 令丈ヒロ子・亜沙美(絵) ドラマ・青春 キッズ・ファミリー 職業・仕事 怪異・妖怪 仕事 鬼",
+    "staff_text": "原作:令丈ヒロ子・亜沙美(絵)",
+    "official_genres": [
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "7e3a58fda79314b3b9a22e02886e09af2e8c915379eb8cbea3dc8e66f7cea723"
+  },
   "official_genres": [
     "ドラマ/青春",
     "キッズ/ファミリー"
@@ -11,9 +25,13 @@
   "original_credit": "令丈ヒロ子・亜沙美(絵)",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "キッズ・ファミリー",
+    "現代ファンタジー",
+    "成長・挑戦",
     "職業・仕事",
     "怪異・妖怪"
   ],
@@ -23,8 +41,12 @@
       "ドラマ・青春",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [
@@ -32,6 +54,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23939"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -55,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23939"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -63,17 +86,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23939"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20906",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20906",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ねこねこ日本史",
+    "synopsis": "ねこねこ日本史 そにしけんじ 歴史・戦記 キッズ・ファミリー",
+    "staff_text": "原作:そにしけんじ",
+    "official_genres": [
+      "歴史/戦記",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "a9ec8381502a31561d8b390a371aa3d04c6dfe6122cd31a39218726d61a83a49"
+  },
   "official_genres": [
     "歴史/戦記",
     "キッズ/ファミリー"
@@ -11,6 +25,8 @@
   "original_credit": "そにしけんじ",
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "キッズ・ファミリー"
@@ -21,11 +37,13 @@
       "歴史・戦記",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20906"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "キッズ/ファミリー"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20906"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "キッズ/ファミリー"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20906"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20906"
     }

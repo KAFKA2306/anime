@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28306",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "シンデレラ・シェフ ~萌妻食神~",
+    "synopsis": "シンデレラ・シェフ ~萌妻食神~ 紫伊281『萌妻食神』 SF・ファンタジー 恋愛・ラブコメ 料理・グルメ 職業・仕事 料理 グルメ 働く",
+    "staff_text": "原作:紫伊281『萌妻食神』",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "3b232d378fda6f8fe1927ce191af910ed3fc4dbe37a2aba49ae9ba6b4f8f2567"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,27 +24,36 @@
   "production_year": 2018,
   "original_credit": "紫伊281『萌妻食神』",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "恋愛",
     "料理・グルメ",
     "職業・仕事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
+      "恋愛",
       "料理・グルメ",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -62,19 +85,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "料理・グルメ": [
             "料理",
             "グルメ"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306"
     }

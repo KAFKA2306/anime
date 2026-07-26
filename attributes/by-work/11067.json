@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11067",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11067",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "デート・ア・ライブ",
+    "synopsis": "デート・ア・ライブ 橘 公司 異世界・ハイファンタジー SF・ファンタジー バトル・アクション 恋愛・ラブコメ 異世界 学園 高校",
+    "staff_text": "原作:橘 公司",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "1ea77382aa378ec94cf9dc7db37bf566fcba65256a3b153934a918e820507ee9"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,30 +27,44 @@
   "original_credit": "橘 公司",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "ラブコメ",
     "異世界",
-    "学園"
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -50,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11067"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -62,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11067"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -71,18 +100,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11067"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
             "異世界"
           ],
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11067"
     }

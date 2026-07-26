@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23739",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23739",
   "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "人形草紙あやつり左近",
+    "synopsis": "人形草紙あやつり左近 写楽麿 ホラー・サスペンス・ミステリー 犯罪・警察 刑事",
+    "staff_text": "原作:写楽麿",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1999,
+    "source": "legacy-derived",
+    "sha256": "8cc9039ad8806bd4aecd3c5b9d69a94a8dd2d2bb07b53261d4e2168b5dd05aab"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "写楽麿",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "犯罪・警察"
@@ -19,6 +34,7 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [
@@ -26,6 +42,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23739"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,22 +65,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23739"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23739"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "犯罪・警察": [
-            "刑事"
+            "警察",
+            "刑事",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23739"
     }

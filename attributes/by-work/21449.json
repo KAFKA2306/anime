@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21449",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21449",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "こちら葛飾区亀有公園前派出所 両さん最大の危機!ライバルはチャキチャキ江戸っ娘",
+    "synopsis": "こちら葛飾区亀有公園前派出所 両さん最大の危機!ライバルはチャキチャキ江戸っ娘 秋本治(集英社「週刊少年ジャンプ」連載) コメディ・ギャグ 歴史・時代劇 江戸",
+    "staff_text": "原作:秋本治(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "cb4ab174a837d2dbebbdbcfd9a4772e30cdd2858b297fe09cd3100961a612302"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "秋本治(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "歴史・時代劇"
@@ -21,6 +36,7 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -28,6 +44,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21449"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -53,22 +70,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21449"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21449"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "江戸"
+            "江戸",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21449"
     }

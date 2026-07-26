@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22733",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22733",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "今宵、アフレコブースで。",
+    "synopsis": "今宵、アフレコブースで。 ライブ・ラジオ・その他 ショート",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc.",
+      "ショート"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "b95dbc0f3f046cf7711028fb96d6d9a9238e3e8e4208a2503d301cab74aa4b61"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc.",
     "ショート"
@@ -11,6 +25,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
     "ショート"
@@ -21,6 +37,7 @@
       "ライブ・ラジオ・その他",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -29,21 +46,22 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22733"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc.",
         "ショート"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22733"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc.",
         "ショート"
@@ -60,11 +78,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22733"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22733"
     }

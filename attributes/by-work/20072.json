@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20072",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20072",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "高宮なすのです!~てーきゅうスピンオフ~",
+    "synopsis": "高宮なすのです!~てーきゅうスピンオフ~ ルーツ コメディ・ギャグ ショート 学園 成長・挑戦 高校 成長",
+    "staff_text": "原作:ルーツ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "ce32faaa4b35bf31d969d8868dbeb4cd36ba16d8005a51135fa4cda86a2b7388"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,6 +25,8 @@
   "original_credit": "ルーツ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート",
@@ -23,6 +39,7 @@
       "コメディ・ギャグ",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -34,6 +51,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20072"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -57,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20072"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -65,19 +83,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20072"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20072"
     }

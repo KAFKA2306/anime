@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11086",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11086",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "同級生2Special 卒業生",
+    "synopsis": "同級生2Special 卒業生 蛭田昌人(エルフ) 恋愛・ラブコメ 学園 大学",
+    "staff_text": "原作:蛭田昌人(エルフ)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "0638cc0995f4eb9f3eaea71901c9dfd03768055f638530857d3734fe3fbeb9e1"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,22 +23,36 @@
   "original_credit": "蛭田昌人(エルフ)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "学園"
+    "ファンタジー",
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11086"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -48,22 +75,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11086"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11086"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11086"
     }

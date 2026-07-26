@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25786",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25786",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "陰の実力者になりたくて!",
+    "synopsis": "陰の実力者になりたくて! 逢沢大介(『陰の実力者になりたくて!』 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ 異世界 転生",
+    "staff_text": "原作:逢沢大介(『陰の実力者になりたくて!』",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "8fcf8b74dbb2386ab55209143c98fbe8625d5389687ec7961f1b04c0ce473499"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -11,26 +25,38 @@
   "original_credit": "逢沢大介(『陰の実力者になりたくて!』",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25786"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -57,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25786"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -65,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25786"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -74,7 +100,17 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25786"
     }

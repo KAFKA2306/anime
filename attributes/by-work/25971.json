@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25971",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25971",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "トモちゃんは女の子!",
+    "synopsis": "トモちゃんは女の子! 柳田史太(星海社COMICS) 恋愛・ラブコメ 学園 友情・仲間 成長・挑戦 恋愛 高校 仲間 青春 恋する ラブコメ",
+    "staff_text": "原作:柳田史太(星海社COMICS)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "ba8297b1060aae80e3e31e9f29b317fdf401fc82a3e8d097175014a5c02a8e9b"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "柳田史太(星海社COMICS)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
     "友情・仲間",
     "成長・挑戦",
@@ -21,6 +37,9 @@
     "source": [],
     "genre": [
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -33,6 +52,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25971"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -55,25 +75,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25971"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25971"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
@@ -82,7 +106,12 @@
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25971"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10818",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10818",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "まりあ†ほりっく あらいぶ",
+    "synopsis": "まりあ†ほりっく あらいぶ 遠藤海成(月刊コミックアライブ連載 コメディ・ギャグ ドラマ・青春",
+    "staff_text": "原作:遠藤海成(月刊コミックアライブ連載",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "022487df574237025fbcb34c96af3dcb73ebcedcb66aa00413f1a1e3b6f78aa4"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "遠藤海成(月刊コミックアライブ連載",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +40,20 @@
       "コメディ・ギャグ",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10818"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -53,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10818"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -61,11 +82,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10818"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10818"
     }

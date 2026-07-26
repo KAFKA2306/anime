@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10346",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "こばと。",
+    "synopsis": "こばと。 CLAMP;「こばと。」(角川書店 月刊ニュータイプ連載;角川コミックス・エース刊)「Wish」(角川書店 角川コミックス・エース刊) ドラマ・青春 恋愛・ラブコメ 職業・仕事 働く",
+    "staff_text": "原作:CLAMP;「こばと。」(角川書店 月刊ニュータイプ連載;角川コミックス・エース刊)「Wish」(角川書店 角川コミックス・エース刊)",
+    "official_genres": [
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "20bfdbc78bf3712af5a72e8bd9dd04a90733e96a6df29c6db64d5ce6c9e19958"
+  },
   "official_genres": [
     "ドラマ/青春",
     "恋愛/ラブコメ"
@@ -11,9 +25,14 @@
   "original_credit": "CLAMP;「こばと。」(角川書店 月刊ニュータイプ連載;角川コミックス・エース刊)「Wish」(角川書店 角川コミックス・エース刊)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "恋愛・ラブコメ",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -24,13 +43,19 @@
       "ドラマ・青春",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
+      "成長・挑戦",
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -57,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -65,15 +90,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10346"
     }

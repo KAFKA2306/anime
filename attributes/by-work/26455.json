@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26455",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26455",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "デキる猫は今日も憂鬱",
+    "synopsis": "デキる猫は今日も憂鬱 山田ヒツジ「デキる猫は今日も憂鬱」(講談社「月刊少年シリウス」連載) SF・ファンタジー コメディ・ギャグ 成長・挑戦 料理・グルメ 職業・仕事 成長 料理 仕事 会社員",
+    "staff_text": "原作:山田ヒツジ「デキる猫は今日も憂鬱」(講談社「月刊少年シリウス」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "c8a744902d928f3c67cd769b407d9e44f10b4da6ac2752d7b8010045a7a3940f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,10 +24,13 @@
   "production_year": 2023,
   "original_credit": "山田ヒツジ「デキる猫は今日も憂鬱」(講談社「月刊少年シリウス」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
+    "職場",
     "成長・挑戦",
     "料理・グルメ",
     "職業・仕事"
@@ -23,10 +40,13 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "成長・挑戦",
       "料理・グルメ",
@@ -35,6 +55,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26455"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -60,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26455"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -68,22 +89,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26455"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ],
           "職業・仕事": [
             "仕事",
             "会社員"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26455"
     }

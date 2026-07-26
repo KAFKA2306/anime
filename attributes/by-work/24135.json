@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24135",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24135",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "手塚治虫のブッダ 赤い砂漠よ!美しく",
+    "synopsis": "手塚治虫のブッダ 赤い砂漠よ!美しく 手塚治虫 歴史・戦記 家族",
+    "staff_text": "原作:手塚治虫",
+    "official_genres": [
+      "歴史/戦記"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "8482ce2fec1d295b123b4a3c65105a461a621e8fe9b24d38554ca3bc73d1c42c"
+  },
   "official_genres": [
     "歴史/戦記"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "手塚治虫",
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "家族"
@@ -19,6 +34,7 @@
     "genre": [
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24135"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記"
       ],
@@ -48,14 +65,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24135"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24135"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -63,7 +80,8 @@
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24135"
     }

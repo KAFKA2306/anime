@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21577",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21577",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フューチャーカード バディファイトX",
+    "synopsis": "フューチャーカード バディファイトX ブシロード 田村光久 異世界・ハイファンタジー SF・ファンタジー スポーツ・競技 キッズ・ファミリー 異世界 学園 魔王",
+    "staff_text": "原作:ブシロード 田村光久",
+    "official_genres": [
+      "SF/ファンタジー",
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "8d05452c08f36ae2a7d9c6feee3064c8dec150b2b8a88b253c3466e28d917ab2"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "スポーツ/競技",
@@ -12,30 +27,42 @@
   "original_credit": "ブシロード 田村光久",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "スポーツ・競技",
     "キッズ・ファミリー",
+    "異世界ファンタジー",
     "異世界",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "スポーツ・競技",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -50,20 +77,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21577"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技",
         "キッズ/ファミリー"
       ],
       "matched_terms": [
-        "異世界",
-        "魔王"
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21577"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技",
@@ -72,7 +99,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21577"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -82,8 +109,18 @@
             "学園"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21577"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26310",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26310",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ちいかわ シーズン1",
+    "synopsis": "ちいかわ シーズン1 ナガノ SF・ファンタジー 日常・ほのぼの ショート",
+    "staff_text": "原作:ナガノ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの",
+      "ショート"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "ecc54a49ffdbe7c3d4e9caf3ea89ab3ceaa0aaef40a3b1cceadf81b43610b0f3"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの",
@@ -11,31 +26,38 @@
   "production_year": 2022,
   "original_credit": "ナガノ",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "日常・ほのぼの",
-    "ショート"
+    "ショート",
+    "スペキュレーティブ判定保留",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "日常・ほのぼの",
-      "ショート"
+      "ショート",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26310"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの",
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26310"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの",
@@ -64,11 +86,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26310"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26310"
     }

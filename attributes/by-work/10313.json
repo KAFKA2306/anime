@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10313",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10313",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "恋姫†無双",
+    "synopsis": "恋姫†無双 BaseSon バトル・アクション 歴史・戦記 家族 姉妹",
+    "staff_text": "原作:BaseSon",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "8b2c23bb54c5801e6553dbd5cfc13d8b358255c0e02645996047b0c7c4810bc7"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "BaseSon",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -22,6 +38,7 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10313"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10313"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10313"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "姉妹"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10313"
     }

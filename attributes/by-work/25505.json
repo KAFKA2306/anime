@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25505",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25505",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ぽこぽんのキツネ川温泉へんしん合戦",
+    "synopsis": "ぽこぽんのキツネ川温泉へんしん合戦 キッズ・ファミリー SF・ファンタジー 家族",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "56bc2d6d8002e3016d7f1e10969c75af4cc5d4a76dc3335b74716aba92aca5dd"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "SF/ファンタジー"
@@ -11,17 +25,20 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "家族"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25505"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25505"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -60,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25505"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -68,7 +86,8 @@
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25505"
     }

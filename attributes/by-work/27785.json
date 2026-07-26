@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27785",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27785",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台『アオペラ』全景映像",
+    "synopsis": "舞台『アオペラ』全景映像 アオペラ -aoppella!?- 2.5次元舞台 学園 友情・仲間 成長・挑戦 音楽・アイドル 高校 友情 青春 音楽",
+    "staff_text": "原作:アオペラ -aoppella!?-",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "02459289107b1800e89f28c54a0ba4b69e3754e7495fd641cfc0b1fb5befae11"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "アオペラ -aoppella!?-",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園",
@@ -22,6 +37,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -35,6 +51,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27785"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -57,32 +74,38 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27785"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27785"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27785"
     }

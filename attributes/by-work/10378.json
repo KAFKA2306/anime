@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10378",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10378",
   "attribute_fetched_at": "2026-07-25T10:20:37.825Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "勇者ライディーン",
+    "synopsis": "勇者ライディーン 鈴木良武 異世界・ハイファンタジー ロボット・メカ SF・ファンタジー 勇者",
+    "staff_text": "原作:鈴木良武",
+    "official_genres": [
+      "ロボット/メカ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1975,
+    "source": "legacy-derived",
+    "sha256": "338c68e222e11a8408391a66baaeeb14bb45ce8e6a3364bf39b2bc2818172b3b"
+  },
   "official_genres": [
     "ロボット/メカ",
     "SF/ファンタジー"
@@ -11,30 +25,47 @@
   "original_credit": "鈴木良武",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
-    "SF・ファンタジー"
+    "異世界ファンタジー",
+    "ロボットSF",
+    "異世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "ロボット・メカ",
-      "SF・ファンタジー"
+      "SF",
+      "ファンタジー",
+      "ロボット・メカ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ロボットSF"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,18 +75,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10378"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "勇者"
+        "ロボット",
+        "メカ",
+        "勇者",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10378"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
@@ -63,11 +97,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10378"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10378"
     }

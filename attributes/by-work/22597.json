@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22597",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22597",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ロード・エルメロイII世の事件簿 -魔眼蒐集列車 Grace note-",
+    "synopsis": "ロード・エルメロイII世の事件簿 -魔眼蒐集列車 Grace note- 三田誠、TYPE-MOON ホラー・サスペンス・ミステリー SF・ファンタジー 音楽・アイドル 魔法 音楽 魔術",
+    "staff_text": "原作:三田誠、TYPE-MOON",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "7038fa1fc3f6aa5bb555a472341e98b90db63fde63826adf6f30fbf610ed8e2d"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "SF/ファンタジー"
@@ -10,18 +24,28 @@
   "production_year": 2018,
   "original_credit": "三田誠、TYPE-MOON",
   "source_origin": null,
-  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "ファンタジー",
     "ホラー・サスペンス・ミステリー",
-    "SF・ファンタジー",
+    "現代ファンタジー",
+    "ミステリー",
     "音楽・アイドル",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ホラー・サスペンス・ミステリー",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -32,9 +56,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -46,16 +71,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22597"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法",
+        "魔術"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22597"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "SF/ファンタジー"
@@ -63,18 +91,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22597"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ]
         },
         "motif": {
           "魔法": [
             "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ミステリー": [
+            "事件"
           ]
         }
       },

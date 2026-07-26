@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25024",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25024",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "見える子ちゃん",
+    "synopsis": "見える子ちゃん 泉 朝樹 (WebComic アパンダ連載 ホラー・サスペンス・ミステリー コメディ・ギャグ",
+    "staff_text": "原作:泉 朝樹 (WebComic アパンダ連載",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "24ffad56a54779c2ba588739496ea2f2b4748ee95db458ad0bf480d247b73c8f"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "泉 朝樹 (WebComic アパンダ連載",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "コメディ・ギャグ"
@@ -21,11 +37,13 @@
       "ホラー・サスペンス・ミステリー",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25024"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "コメディ/ギャグ"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25024"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "コメディ/ギャグ"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25024"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25024"
     }

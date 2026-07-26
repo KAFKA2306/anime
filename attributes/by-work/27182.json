@@ -1,25 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27182",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27182",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "神之塔 -Tower of God- 王子の帰還",
+    "synopsis": "神之塔 -Tower of God- 王子の帰還 SIU(「LINEマンガ」連載) SF・ファンタジー 成長・挑戦 犯罪・警察 挑戦 犯罪",
+    "staff_text": "原作:SIU(「LINEマンガ」連載)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "eaf178aaf3e16a1d789f251baddcd9134c8e8c1773b6636fc92a5eb95851cbb6"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2024,
   "original_credit": "SIU(「LINEマンガ」連載)",
-  "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": "漫画",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "成長・挑戦",
     "犯罪・警察"
   ],
   "ontology_facets": {
-    "source": [],
-    "genre": [
-      "SF・ファンタジー"
+    "source": [
+      "漫画"
     ],
+    "genre": [
+      "ファンタジー"
+    ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -29,48 +49,56 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
-    "primary_genre": "verified",
+    "source_origin": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "SIU(「LINEマンガ」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27182"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "王子"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27182"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27182"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27182"
     }

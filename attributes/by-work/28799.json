@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28799",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28799",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "百鬼夜行抄",
+    "synopsis": "百鬼夜行抄 今市子 SF・ファンタジー ホラー・サスペンス・ミステリー ショート 学園 家族 怪異・妖怪 高校 鬼",
+    "staff_text": "原作:今市子",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "9e4a545ebd5cb1fd10b6ec83e8a59347dd8554e8fb494ee380cee46b0b2bcd74"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -11,11 +26,14 @@
   "production_year": 2026,
   "original_credit": "今市子",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "ショート",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "学園",
     "家族",
     "怪異・妖怪"
@@ -23,9 +41,12 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "ショート"
+      "ショート",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -40,6 +61,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -54,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28799"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -64,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28799"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -73,10 +95,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28799"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
@@ -87,7 +110,14 @@
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

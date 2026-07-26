@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23237",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23237",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ストライクウィッチーズ 劇場版 501部隊発進しますっ!",
+    "synopsis": "ストライクウィッチーズ 劇場版 501部隊発進しますっ! 島田フミカネ&Projekt Kagonish コメディ・ギャグ 学園 友情・仲間 魔法 学校 仲間",
+    "staff_text": "原作:島田フミカネ&Projekt Kagonish",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "258501378431b7e1f700438314790c27c6cfe1290447f291d77c2b22e4665ac5"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "島田フミカネ&Projekt Kagonish",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
+    "現代ファンタジー",
     "学園",
     "友情・仲間",
     "魔法"
@@ -19,7 +38,11 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -32,6 +55,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23237"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -54,27 +78,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23237"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23237"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

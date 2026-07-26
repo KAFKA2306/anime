@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28861",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28861",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "しまじろうと えほんのくに",
+    "synopsis": "しまじろうと えほんのくに 株式会社ベネッセコーポレーション キッズ・ファミリー 日常・ほのぼの 料理・グルメ 菓子",
+    "staff_text": "原作:株式会社ベネッセコーポレーション",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "d6535c9757fe7b148dbae3cc4e886b623e67e5840399a43941f9d5f556af2dab"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,10 +25,14 @@
   "original_credit": "株式会社ベネッセコーポレーション",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "日常・ほのぼの",
-    "料理・グルメ"
+    "職場",
+    "料理・グルメ",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "キッズ・ファミリー",
       "日常・ほのぼの"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
-      "料理・グルメ"
+      "料理・グルメ",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28861"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28861"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -60,15 +83,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28861"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "料理・グルメ": [
-            "菓子"
+        "setting": {
+          "職場": [
+            "会社"
           ]
         },
-        "motif": {}
+        "theme": {
+          "料理・グルメ": [
+            "料理",
+            "グルメ",
+            "菓子"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28861"
     }

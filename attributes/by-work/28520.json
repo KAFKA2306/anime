@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28520",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28520",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "【女性マスター】Fate/Grand Order THE STAGE -冠位時間神殿ソロモン-",
+    "synopsis": "【女性マスター】Fate/Grand Order THE STAGE -冠位時間神殿ソロモン- Fate 2.5次元舞台 魔法 医療 魔術",
+    "staff_text": "原作:Fate",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "fa28c49dd2c4a34873b7f8f49a46aea425d6ea33f60d38f91f224b48ab641606"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,15 +23,25 @@
   "original_credit": "Fate",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
     "魔法",
     "医療"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -30,6 +53,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -44,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28520"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -52,23 +76,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28520"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28520"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
           ],
           "医療": [
             "医療"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

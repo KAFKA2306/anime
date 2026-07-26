@@ -1,17 +1,34 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27332",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27332",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "精霊幻想記2",
+    "synopsis": "精霊幻想記2 北山結莉(HJ文庫 SF・ファンタジー 学園 大学",
+    "staff_text": "原作:北山結莉(HJ文庫",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "256da5697960ea464d51635b6b9b38aa74955f52dad7a70aad541e78df397d5c"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2024,
   "original_credit": "北山結莉(HJ文庫",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "学園"
   ],
   "ontology_facets": {
@@ -19,8 +36,9 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -28,9 +46,10 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -44,30 +63,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27332"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "精霊"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27332"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27332"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27332"
     }

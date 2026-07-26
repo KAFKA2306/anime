@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20242",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20242",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "東京喰種トーキョーグール",
+    "synopsis": "東京喰種トーキョーグール 石田スイ(集英社「週刊ヤングジャンプ」連載中) バトル・アクション ホラー・サスペンス・ミステリー ドラマ・青春 学園 大学",
+    "staff_text": "原作:石田スイ(集英社「週刊ヤングジャンプ」連載中)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "e433074b0ba8b6de51f8b02af50ca85fbf98f18ffb5a0b785cb659787839665e"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,11 +27,15 @@
   "original_credit": "石田スイ(集英社「週刊ヤングジャンプ」連載中)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "現代日本",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -27,13 +46,18 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
-      "学園"
+      "学園",
+      "現代日本"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20242"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -60,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20242"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -69,15 +93,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20242"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
+          ],
+          "現代日本": [
+            "東京"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20242"
     }

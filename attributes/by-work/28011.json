@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28011",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28011",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "デキちゃうまで婚【オンエア版】",
+    "synopsis": "デキちゃうまで婚【オンエア版】 恋愛・ラブコメ ショート 医療 病院 医者",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "16e5d957c0c778d27a9d63c280e8a0fac0dc31163dd1161a4aa3dacfbf50f887"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
+    "恋愛",
     "医療"
   ],
   "ontology_facets": {
@@ -22,8 +40,13 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "医療"
     ],
@@ -31,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +63,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28011"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -54,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28011"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -62,14 +86,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28011"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "医療": [
+            "医療",
             "病院",
             "医者"
+          ]
+        },
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

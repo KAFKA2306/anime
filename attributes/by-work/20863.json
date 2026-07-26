@@ -1,31 +1,50 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20863",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20863",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "精霊の守り人",
+    "synopsis": "精霊の守り人 上橋菜穂子(「精霊の守り人」偕成社・刊) SF・ファンタジー",
+    "staff_text": "原作:上橋菜穂子(「精霊の守り人」偕成社・刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "fb6e2ed3c4c474af10349a6d98280c7e42d4a1369a97ad0a21364d2d35452909"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2007,
   "original_credit": "上橋菜穂子(「精霊の守り人」偕成社・刊)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー"
+    "ファンタジー"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "verified",
     "ontology_facets": "verified"
   },
@@ -37,26 +56,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20863"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "精霊"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20863"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20863"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20863"
     }

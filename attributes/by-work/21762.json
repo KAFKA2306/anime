@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21762",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21762",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ルパン三世TVSP #15 お宝返却大作戦!!",
+    "synopsis": "ルパン三世TVSP #15 お宝返却大作戦!! バトル・アクション ドラマ・青春 職業・仕事 仕事",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "1e84cc194beb1e628b6d61e93308eb83d1faa9bbae4236c033376e1a88b6ca84"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
+    "成長・挑戦",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,13 +39,16 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +57,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21762"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21762"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -60,15 +80,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21762"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21762"
     }

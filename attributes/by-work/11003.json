@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11003",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11003",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "犬とハサミは使いよう",
+    "synopsis": "犬とハサミは使いよう 更伊俊介 (ファミ通文庫「犬とハサミは使いよう」シリーズ コメディ・ギャグ",
+    "staff_text": "原作:更伊俊介 (ファミ通文庫「犬とハサミは使いよう」シリーズ",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "5f3865814e025ae72ca4c55016a6322b7aa1561f01dae47fee48e7f84c95f004"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "更伊俊介 (ファミ通文庫「犬とハサミは使いよう」シリーズ",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ"
   ],
@@ -20,11 +35,13 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -41,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11003"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -49,18 +66,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11003"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11003"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11003"
     }

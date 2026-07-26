@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11099",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11099",
   "attribute_fetched_at": "2026-07-25T10:43:54.548Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "プロゴルファー猿",
+    "synopsis": "プロゴルファー猿 藤子不二雄A スポーツ・競技 成長・挑戦 家族 挑戦 兄弟",
+    "staff_text": "原作:藤子不二雄A",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 1985,
+    "source": "legacy-derived",
+    "sha256": "11eaa5e18dcee6cf0bd3e0456b290ef8c9e1d10b12a58d67eba7c26c8551013c"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,24 +23,30 @@
   "original_credit": "藤子不二雄A",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "成長・挑戦",
-    "家族"
+    "家族",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
-      "家族"
+      "家族",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11099"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -50,25 +69,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11099"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11099"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ],
           "家族": [
+            "家族",
             "兄弟"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11099"
     }

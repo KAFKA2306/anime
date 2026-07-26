@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29077",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29077",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "身代わり令嬢を救ったのは冷酷無慈悲な氷の王子の愛でした",
+    "synopsis": "身代わり令嬢を救ったのは冷酷無慈悲な氷の王子の愛でした やきいもほくほく SF・ファンタジー 恋愛・ラブコメ",
+    "staff_text": "原作:やきいもほくほく",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "7bba017ead9431fc7db53131a72d857d5a7d217ba6294749d566ef1ebe3e8116"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,27 +24,39 @@
   "production_year": 2026,
   "original_credit": "やきいもほくほく",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "恋愛・ラブコメ"
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,16 +66,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29077"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "王子"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29077"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -57,11 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29077"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29077"
     }

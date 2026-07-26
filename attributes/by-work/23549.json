@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23549",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23549",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ミュージカル「陰陽師」~平安絵巻~",
+    "synopsis": "ミュージカル「陰陽師」~平安絵巻~ 「陰陽師本格幻想RPG」より(NetEase Inc. 2.5次元舞台 歴史・時代劇 友情・仲間 怪異・妖怪 平安 仲間 鬼",
+    "staff_text": "原作:「陰陽師本格幻想RPG」より(NetEase Inc.",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "a1f8a2d22005a7e12ab4b4e3440a51dbca85578b39962ec8cd78b7c6b00513ed"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "「陰陽師本格幻想RPG」より(NetEase Inc.",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
     "歴史・時代劇",
     "友情・仲間",
     "怪異・妖怪"
@@ -20,6 +36,9 @@
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "歴史・時代劇"
@@ -34,6 +53,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23549"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -56,28 +76,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23549"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23549"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "平安"
+            "平安",
+            "時代劇"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

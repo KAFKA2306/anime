@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24777",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24777",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "指先から本気の熱情2-恋人は消防士-【オンエア版】",
+    "synopsis": "指先から本気の熱情2-恋人は消防士-【オンエア版】 恋愛・ラブコメ ショート 職業・仕事 職場",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "12f100a4f7f4eb43f32bb4e06aaaba3bfd25a66be45e4568f963ae0c6acf3a2e"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
+    "職場",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,8 +41,14 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
-    "setting": [],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
@@ -31,6 +56,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24777"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -54,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24777"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -62,15 +88,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24777"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "職業・仕事": [
+        "setting": {
+          "職場": [
             "職場"
           ]
         },
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "職業・仕事": [
+            "仕事",
+            "職場"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24777"
     }

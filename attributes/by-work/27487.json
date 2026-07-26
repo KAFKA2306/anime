@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27487",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27487",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台「呪術廻戦」",
+    "synopsis": "舞台「呪術廻戦」 「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載) 2.5次元舞台 怪異・妖怪 呪い",
+    "staff_text": "原作:「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "95d2658eb5306233100705b584b54b008b42001c9e068c44aa65d3fb505aab83"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -19,7 +38,11 @@
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -30,6 +53,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27487"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,20 +79,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27487"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27487"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

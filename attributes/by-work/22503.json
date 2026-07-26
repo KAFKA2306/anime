@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22503",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22503",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "下ネタという概念が存在しない退屈な世界",
+    "synopsis": "下ネタという概念が存在しない退屈な世界 赤城大空(小学館「ガガガ文庫」刊) コメディ・ギャグ 恋愛・ラブコメ",
+    "staff_text": "原作:赤城大空(小学館「ガガガ文庫」刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "afa14dcd9663457e3a4de925475d2082703087dba37973c6c4b5857a690d51f7"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "恋愛/ラブコメ"
@@ -11,9 +25,13 @@
   "original_credit": "赤城大空(小学館「ガガガ文庫」刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +41,22 @@
       "コメディ・ギャグ",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22503"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "恋愛/ラブコメ"
@@ -53,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22503"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "恋愛/ラブコメ"
@@ -61,11 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22503"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22503"
     }

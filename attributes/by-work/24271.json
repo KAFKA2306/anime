@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24271",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24271",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "いわかける!- Sport Climbing Girls -",
+    "synopsis": "いわかける!- Sport Climbing Girls - 石坂リューダイ「いわかける! ーClimbing Girlsー」(サイコミ)「いわかける!! -Try a new climbing-」(サイコミ) スポーツ・競技 学園 友情・仲間 高校 仲間",
+    "staff_text": "原作:石坂リューダイ「いわかける! ーClimbing Girlsー」(サイコミ)「いわかける!! -Try a new climbing-」(サイコミ)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "c46e21051ab84a4914bb020326b26ce9db93aded352a9a450bd20c3689ef4095"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,25 +23,31 @@
   "original_credit": "石坂リューダイ「いわかける! ーClimbing Girlsー」(サイコミ)「いわかける!! -Try a new climbing-」(サイコミ)",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24271"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -51,26 +70,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24271"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24271"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24271"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20518",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20518",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "NANA-ナナ-",
+    "synopsis": "NANA-ナナ- 矢沢あい(集英社「Cookie」連載) 恋愛・ラブコメ ドラマ・青春 友情・仲間 音楽・アイドル 友情 絆 バンド",
+    "staff_text": "原作:矢沢あい(集英社「Cookie」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "a1c18c1c15d9879464c57ac0c924da4601720e9242554f51fa75c912eb160f4e"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,10 +25,15 @@
   "original_credit": "矢沢あい(集英社「Cookie」連載)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "ラブコメ",
     "友情・仲間",
+    "成長・挑戦",
+    "恋愛",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -23,14 +42,20 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
+      "恋愛",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20518"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -54,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20518"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -62,19 +87,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20518"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
             "友情",
+            "仲間",
             "絆"
           ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "音楽・アイドル": [
-            "バンド"
+            "音楽",
+            "バンド",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20518"
     }

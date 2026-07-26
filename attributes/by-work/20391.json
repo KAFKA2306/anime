@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20391",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20391",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "家庭教師ヒットマンREBORN!",
+    "synopsis": "家庭教師ヒットマンREBORN! 天野明(週刊少年ジャンプ連載) SF・ファンタジー バトル・アクション コメディ・ギャグ",
+    "staff_text": "原作:天野明(週刊少年ジャンプ連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "553beb6e6fb38292a2c7e2fed94963d3293456abdb78e2df93921335bacfe2d2"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,26 +26,30 @@
   "production_year": 2006,
   "original_credit": "天野明(週刊少年ジャンプ連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20391"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20391"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -67,11 +86,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20391"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20391"
     }

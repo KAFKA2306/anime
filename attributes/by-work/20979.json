@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20979",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20979",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "不機嫌なモノノケ庵",
+    "synopsis": "不機嫌なモノノケ庵 ワザワキリ(掲載「ガンガンONLINE」 スクウェア・エニックス刊) ドラマ・青春 コメディ・ギャグ 学園 職業・仕事 怪異・妖怪 高校 仕事 働く 妖怪",
+    "staff_text": "原作:ワザワキリ(掲載「ガンガンONLINE」 スクウェア・エニックス刊)",
+    "official_genres": [
+      "ドラマ/青春",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "c241240bf862430ecbbb0b034a2e9907d9bf40aae42ca7e949f8c71f6eabec43"
+  },
   "official_genres": [
     "ドラマ/青春",
     "コメディ/ギャグ"
@@ -11,10 +25,14 @@
   "original_credit": "ワザワキリ(掲載「ガンガンONLINE」 スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "コメディ・ギャグ",
+    "現代ファンタジー",
     "学園",
+    "成長・挑戦",
     "職業・仕事",
     "怪異・妖怪"
   ],
@@ -26,10 +44,14 @@
       "ドラマ・青春",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [
@@ -37,6 +59,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20979"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "コメディ/ギャグ"
@@ -62,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20979"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "コメディ/ギャグ"
@@ -70,14 +93,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20979"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
             "仕事",
             "働く"
@@ -85,7 +112,13 @@
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

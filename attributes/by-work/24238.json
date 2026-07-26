@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24238",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。",
+    "synopsis": "うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。 CHIROLU『うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。』(HJノベルス 異世界・ハイファンタジー SF・ファンタジー 職業・仕事 仕事 魔王 冒険者",
+    "staff_text": "原作:CHIROLU『うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。』(HJノベルス",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "629673d5525acb8594ee8cb0a5dcacb738a297ac4eee4edc12ec0acb785f6d55"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,10 +23,17 @@
   "original_credit": "CHIROLU『うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。』(HJノベルス",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
-    "職業・仕事"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "職業・仕事",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [
@@ -21,15 +41,22 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -46,33 +73,46 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
         "魔王",
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "職業・仕事": [
             "仕事"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238"
     }

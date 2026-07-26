@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20865",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20865",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "妖狐×僕SS",
+    "synopsis": "妖狐×僕SS 藤原ここあ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊) 恋愛・ラブコメ 怪異・妖怪 妖怪 鬼",
+    "staff_text": "原作:藤原ここあ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "bd71d52e7ab3190c535036408e8708b37784097fb7d7f6e0669c9581d30fa0fd"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,8 +23,13 @@
   "original_credit": "藤原ここあ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -21,13 +39,20 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20865"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -52,21 +77,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20865"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20865"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

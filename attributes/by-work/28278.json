@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28278",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28278",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ある日、お姫様になってしまった件について",
+    "synopsis": "ある日、お姫様になってしまった件について Spoon Plutus KWBOOKS (CARROTOON) SF・ファンタジー 恋愛・ラブコメ ドラマ・青春 魔法",
+    "staff_text": "原作:Spoon Plutus KWBOOKS (CARROTOON)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "98e7e6ad91d4e8fe967dffea568da60f633330082f587f383368fe3d10512c66"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,11 +26,19 @@
   "production_year": 2025,
   "original_credit": "Spoon Plutus KWBOOKS (CARROTOON)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛",
     "魔法"
   ],
   "ontology_facets": {
@@ -23,20 +46,28 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -50,17 +81,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28278"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28278"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -69,13 +102,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28278"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

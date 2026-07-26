@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27198",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "時々ボソッとロシア語でデレる隣のアーリャさん",
+    "synopsis": "時々ボソッとロシア語でデレる隣のアーリャさん 燦々SUN(株式会社KADOKAWA 角川スニーカー文庫刊) 恋愛・ラブコメ",
+    "staff_text": "原作:燦々SUN(株式会社KADOKAWA 角川スニーカー文庫刊)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "c1a6403f96f39f3e8836d630af33e772cb39c43fd2784a3adf823675891f7c95"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,8 +23,13 @@
   "original_credit": "燦々SUN(株式会社KADOKAWA 角川スニーカー文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "職場",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -20,16 +38,24 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [
+      "職場"
+    ],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -41,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -49,18 +75,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
-        "motif": {}
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
     }

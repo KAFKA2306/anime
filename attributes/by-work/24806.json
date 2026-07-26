@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24806",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24806",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "白い砂のアクアトープ",
+    "synopsis": "白い砂のアクアトープ projectティンガーラ ドラマ・青春 音楽・アイドル 職業・仕事 アイドル 仕事",
+    "staff_text": "原作:projectティンガーラ",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "cb5eb243e9c7df4f48ddb3e1af4cba8b75f0e0a81a49d997db9dfb6ace0d8c59"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "projectティンガーラ",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "成長・挑戦",
     "音楽・アイドル",
     "職業・仕事"
   ],
@@ -20,14 +36,17 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24806"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -50,25 +69,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24806"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24806"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24806"
     }

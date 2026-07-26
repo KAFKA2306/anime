@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20380",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20380",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "あにトレ!EX",
+    "synopsis": "あにトレ!EX ショート 音楽・アイドル アイドル",
+    "staff_text": "",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "ffaa13835d1901b2a8184b739274ba0e5cf28a5a75edecdc6b85724d6eac429f"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "音楽・アイドル"
@@ -19,6 +34,7 @@
     "genre": [
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
@@ -28,6 +44,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -36,13 +53,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20380"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -50,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20380"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20380"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20380"
     }

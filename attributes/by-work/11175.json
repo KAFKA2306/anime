@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11175",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11175",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "IS<インフィニット・ストラトス>2",
+    "synopsis": "IS<インフィニット・ストラトス>2 弓弦イズル(オーバーラップ文庫刊) SF・ファンタジー ロボット・メカ 恋愛・ラブコメ 学園 学校",
+    "staff_text": "原作:弓弦イズル(オーバーラップ文庫刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "5047130072211d16533bfd69926eef854ca051fd9932963dc233564898134512"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,34 +26,48 @@
   "production_year": 2013,
   "original_credit": "弓弦イズル(オーバーラップ文庫刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
     "恋愛・ラブコメ",
-    "学園"
+    "ロボットSF",
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -52,17 +81,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11175"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11175"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -71,7 +103,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11175"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -79,8 +111,26 @@
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11175"
     }

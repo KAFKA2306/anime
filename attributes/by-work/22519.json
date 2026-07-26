@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22519",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22519",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "怪獣娘(黒)~ウルトラ怪獣擬人化計画~",
+    "synopsis": "怪獣娘(黒)~ウルトラ怪獣擬人化計画~ 円谷プロダクション コメディ・ギャグ 日常・ほのぼの",
+    "staff_text": "原作:円谷プロダクション",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "36ba2d0360c9ff57eb66f4a7fc7fdeb93bb8e9f73175f1eff5add95693a96a09"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,9 +25,13 @@
   "original_credit": "円谷プロダクション",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし",
+    "怪獣"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +39,22 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "癒やし"
+    ],
+    "motif": [
+      "怪獣"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22519"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -49,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22519"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -57,11 +81,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22519"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {
+          "怪獣": [
+            "怪獣"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22519"
     }

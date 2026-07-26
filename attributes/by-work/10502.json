@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10502",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10502",
   "attribute_fetched_at": "2026-07-25T10:21:27.736Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "花子さんがきた",
+    "synopsis": "花子さんがきた ホラー・サスペンス・ミステリー ショート 怪異・妖怪 幽霊",
+    "staff_text": "",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ショート"
+    ],
+    "production_year": 1994,
+    "source": "legacy-derived",
+    "sha256": "09b02562cb8e2fa5f054b00ceaa38510557d00f39a5fbe1a3d14f6444137d922"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ショート"
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "ショート",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -21,6 +38,9 @@
     "genre": [
       "ホラー・サスペンス・ミステリー",
       "ショート"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -31,6 +51,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10502"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ショート"
@@ -54,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10502"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ショート"
@@ -62,13 +83,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10502"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

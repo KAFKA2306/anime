@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27401",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27401",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "百姓貴族",
+    "synopsis": "百姓貴族 荒川弘(新書館「ウィングス」連載) コメディ・ギャグ 日常・ほのぼの 職業・仕事 働く",
+    "staff_text": "原作:荒川弘(新書館「ウィングス」連載)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "6315be5cadae1641b62b0dc3d8784ad6aa9d900d18083860cd09e67011498277"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,10 +25,13 @@
   "original_credit": "荒川弘(新書館「ウィングス」連載)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27401"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27401"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -60,15 +80,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27401"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27401"
     }

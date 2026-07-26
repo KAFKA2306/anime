@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22743",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22743",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ライブ・スペクタクル「NARUTO-ナルト-」~暁の調べ~",
+    "synopsis": "ライブ・スペクタクル「NARUTO-ナルト-」~暁の調べ~ 「NARUTO-ナルト-」岸本斉史(集英社 ジャンプ コミックス刊) 2.5次元舞台 終末・ディストピア 友情・仲間 終末 仲間",
+    "staff_text": "原作:「NARUTO-ナルト-」岸本斉史(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "1a1cdc953a342be7d04ba6586de5b99c53fef040dc5eef48714ff6deae54db71"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "「NARUTO-ナルト-」岸本斉史(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "SF",
+    "終末SF",
     "終末・ディストピア",
     "友情・仲間"
   ],
@@ -20,7 +39,11 @@
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF"
+    ],
+    "subgenre": [
+      "終末SF"
     ],
     "setting": [
       "終末・ディストピア"
@@ -33,6 +56,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22743"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -58,26 +82,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22743"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22743"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "終末・ディストピア": [
-            "終末"
+            "終末",
+            "ディストピア"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "終末SF": [
+            "終末",
+            "ディストピア"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22743"
     }

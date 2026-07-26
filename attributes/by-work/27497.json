@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27497",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27497",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "『FARMAGIA』",
+    "synopsis": "『FARMAGIA』 FARMAGIA(マーベラス) 異世界・ハイファンタジー バトル・アクション SF・ファンタジー 友情・仲間 仲間 魔王",
+    "staff_text": "原作:FARMAGIA(マーベラス)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "b7479a313ffe76bad7b00dab07313d0f5923e010ef45608da3f24596276e6ca2"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー"
@@ -11,26 +25,38 @@
   "original_credit": "FARMAGIA(マーベラス)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "バトル・アクション",
-    "SF・ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "バトル・アクション",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "バトル・アクション"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "友情・仲間"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,18 +71,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27497"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "魔王"
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27497"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -64,15 +91,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27497"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27497"
     }

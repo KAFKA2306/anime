@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28048",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28048",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "公女殿下の家庭教師",
+    "synopsis": "公女殿下の家庭教師 七野りく(KADOKAWA SF・ファンタジー 日常・ほのぼの 職業・仕事 魔法 仕事",
+    "staff_text": "原作:七野りく(KADOKAWA",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "09825cee159a1e880f68638eb07eb19839e624092eecd369ce4196e9044e95b5"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの"
@@ -10,31 +24,42 @@
   "production_year": 2025,
   "original_credit": "七野りく(KADOKAWA",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "日常・ほのぼの",
+    "現代ファンタジー",
     "職業・仕事",
+    "癒やし",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "日常・ほのぼの"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -46,16 +71,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28048"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28048"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -63,16 +90,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28048"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
             "仕事"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

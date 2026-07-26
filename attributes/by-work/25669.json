@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25669",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25669",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "東京ミュウミュウ にゅ~♡",
+    "synopsis": "東京ミュウミュウ にゅ~♡ 原案・講談社、まんが・征海美亜、シナリオ・吉田玲子 バトル・アクション SF・ファンタジー 恋愛・ラブコメ",
+    "staff_text": "原作:原案・講談社、まんが・征海美亜、シナリオ・吉田玲子",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "8ab2d1ca18fe48b1ea581fd1d8e511268657a10149af8aca02e17df2500d6cac"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,28 +27,41 @@
   "original_credit": "原案・講談社、まんが・征海美亜、シナリオ・吉田玲子",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "現代日本",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25669"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -53,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25669"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -62,11 +90,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25669"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
-        "motif": {}
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25669"
     }

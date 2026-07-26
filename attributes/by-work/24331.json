@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24331",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24331",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "犬と猫どっちも飼ってると毎日たのしい",
+    "synopsis": "犬と猫どっちも飼ってると毎日たのしい 松本ひで吉(講談社「Palcy」連載) ショート 日常・ほのぼの",
+    "staff_text": "原作:松本ひで吉(講談社「Palcy」連載)",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "55016833af1a982003905018f166b6fb585338420501b6cf87c0638795c78c50"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの"
@@ -11,9 +25,12 @@
   "original_credit": "松本ひで吉(講談社「Palcy」連載)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,18 +38,22 @@
       "ショート",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24331"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24331"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -59,11 +80,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24331"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24331"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24065",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24065",
   "attribute_fetched_at": "2026-07-25T10:20:55.286Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ライオンブックスシリーズ 山太郎かえる",
+    "synopsis": "ライオンブックスシリーズ 山太郎かえる SF・ファンタジー キッズ・ファミリー 友情・仲間 絆",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1986,
+    "source": "legacy-derived",
+    "sha256": "ee2523b465bc7907e78d1307924cf49a2f8506c40355d0b2f069c4e5612df7cc"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー"
@@ -10,18 +24,21 @@
   "production_year": 1986,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24065"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24065"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -60,15 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24065"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24065"
     }

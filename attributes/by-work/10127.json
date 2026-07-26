@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10127",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10127",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "裏切りは僕の名前を知っている",
+    "synopsis": "裏切りは僕の名前を知っている 小田切ほたる(角川書店 月刊「ASUKA」連載中,あすかコミックスDX刊) 異世界・ハイファンタジー SF・ファンタジー 異世界 学園 友情・仲間 転生 高校 仲間",
+    "staff_text": "原作:小田切ほたる(角川書店 月刊「ASUKA」連載中,あすかコミックスDX刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "5f87049b9d0154687d824037e3e9b80b039c7111e86febc4a5c740086c4094ca"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,12 +23,18 @@
   "original_credit": "小田切ほたる(角川書店 月刊「ASUKA」連載中,あすかコミックスDX刊)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -23,7 +42,10 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
@@ -32,9 +54,12 @@
     "theme": [
       "友情・仲間"
     ],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -52,39 +77,53 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10127"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10127"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10127"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ],
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10127"
     }

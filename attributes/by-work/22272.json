@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22272",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22272",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "悪偶(あぐう) -天才人形-",
+    "synopsis": "悪偶(あぐう) -天才人形- 一淳(テンセントアニメ連載) SF・ファンタジー ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:一淳(テンセントアニメ連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "8af4e30828a10154326563d5185a803779363c8478b0085dfd5595e3d061af01"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理"
@@ -10,22 +24,26 @@
   "production_year": 2018,
   "original_credit": "一淳(テンセントアニメ連載)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22272"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22272"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22272"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22272"
     }

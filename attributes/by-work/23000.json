@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23000",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23000",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場版「PEACE MAKER 鐵」後篇 友命~ユウメイ~",
+    "synopsis": "劇場版「PEACE MAKER 鐵」後篇 友命~ユウメイ~ 黒乃奈々絵(掲載「月刊コミック ガーデン」 バトル・アクション 歴史・戦記",
+    "staff_text": "原作:黒乃奈々絵(掲載「月刊コミック ガーデン」",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "7d985af992d077424ecdfda7a5d4c486656f8f684d52b5414d099e33f0c1e261"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "黒乃奈々絵(掲載「月刊コミック ガーデン」",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記"
@@ -23,11 +39,13 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23000"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -53,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23000"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -61,11 +79,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23000"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23000"
     }

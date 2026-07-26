@@ -1,58 +1,92 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28555",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28555",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "シャンピニオンの魔女",
+    "synopsis": "シャンピニオンの魔女 樋口 橘「シャンピニオンの魔女」(白泉社・「マンガPark」連載) SF・ファンタジー 恋愛・ラブコメ 魔法",
+    "staff_text": "原作:樋口 橘「シャンピニオンの魔女」(白泉社・「マンガPark」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "b844532b108481621ab55c5f25fc8accdb20b20a9c752ca8c21679e002cad2db"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
   ],
   "production_year": 2026,
   "original_credit": "樋口 橘「シャンピニオンの魔女」(白泉社・「マンガPark」連載)",
-  "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": "漫画",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "魔法"
   ],
   "ontology_facets": {
-    "source": [],
+    "source": [
+      "漫画"
+    ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
-    "primary_genre": "verified",
+    "source_origin": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "樋口 橘「シャンピニオンの魔女」(白泉社・「マンガPark」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28555"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28555"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -60,13 +94,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28555"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

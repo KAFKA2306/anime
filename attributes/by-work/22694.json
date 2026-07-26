@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22694",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22694",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "真夜中のオカルト公務員",
+    "synopsis": "真夜中のオカルト公務員 たもつ葉子(KADOKAWA「コミックNewtype」連載) SF・ファンタジー ホラー・サスペンス・ミステリー 職業・仕事 仕事",
+    "staff_text": "原作:たもつ葉子(KADOKAWA「コミックNewtype」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "8c26d5233ef1cf46f5776677a63f554faa35b0b6725fc55c35b18b33f385c118"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理"
@@ -10,10 +24,12 @@
   "production_year": 2019,
   "original_credit": "たもつ葉子(KADOKAWA「コミックNewtype」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -21,9 +37,10 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -31,6 +48,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22694"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22694"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -64,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22694"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -72,7 +90,8 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22694"
     }

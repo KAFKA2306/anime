@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22720",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22720",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ほしの島のにゃんこ",
+    "synopsis": "ほしの島のにゃんこ 株式会社コロプラ ショート SF・ファンタジー キッズ・ファミリー 料理・グルメ 料理",
+    "staff_text": "原作:株式会社コロプラ",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "36ab7816b17b742c8230507eecbf14340b9ec6aa6e65321de563ce345c913915"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,20 +27,26 @@
   "original_credit": "株式会社コロプラ",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
+    "職場",
     "料理・グルメ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "料理・グルメ"
     ],
@@ -34,6 +55,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22720"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -58,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22720"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -67,15 +89,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22720"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "料理・グルメ": [
-            "料理"
+        "setting": {
+          "職場": [
+            "会社"
           ]
         },
-        "motif": {}
+        "theme": {
+          "料理・グルメ": [
+            "料理",
+            "グルメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22720"
     }

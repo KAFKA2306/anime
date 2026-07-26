@@ -1,28 +1,47 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24267",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24267",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "100万の命の上に俺は立っている",
+    "synopsis": "100万の命の上に俺は立っている 異世界・ハイファンタジー SF・ファンタジー 異世界 友情・仲間 仲間",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "eb7230b0d4344f1e1e78e4873a89af424f7c39328cd7a75e47826a22602c2dbd"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2020,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
     "友情・仲間"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -33,24 +52,22 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "漫画",
-        "マガジン"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24267"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -60,14 +77,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24267"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24267"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -76,10 +93,16 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24267"
     }

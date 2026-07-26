@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23351",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "クプ~!!まめゴマ!",
+    "synopsis": "クプ~!!まめゴマ! ヨネムラマユミ(「まめゴマ」サンエックス株式会社) ショート SF・ファンタジー 日常・ほのぼの 家族",
+    "staff_text": "原作:ヨネムラマユミ(「まめゴマ」サンエックス株式会社)",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "35882756a5834aad90eeb862fbeffef8f4bc0ba7e35879c6744e65545c82f262"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,28 +27,37 @@
   "original_credit": "ヨネムラマユミ(「まめゴマ」サンエックス株式会社)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
     "日常・ほのぼの",
-    "家族"
+    "スペキュレーティブ判定保留",
+    "職場",
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー",
-      "日常・ほのぼの"
+      "日常・ほのぼの",
+      "スペキュレーティブ判定保留"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -67,15 +91,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "家族": [
             "家族"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23351"
     }

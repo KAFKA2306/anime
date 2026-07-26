@@ -1,26 +1,50 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24077",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24077",
   "attribute_fetched_at": "2026-07-25T10:32:10.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ブレーメン4 地獄の中の天使たち",
+    "synopsis": "ブレーメン4 地獄の中の天使たち SF・ファンタジー 宇宙 政治・戦略 戦略",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 1981,
+    "source": "legacy-derived",
+    "sha256": "ec02eb4605b828c295e8ba36ab034482cbf0c9ff0e0dd9539eb2021ee525f6e9"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 1981,
   "original_credit": null,
-  "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "クロスジャンル",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "クロスジャンル",
+    "SF",
+    "ファンタジー",
+    "スペースオペラ",
     "宇宙",
     "政治・戦略"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "クロスジャンル",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -31,38 +55,40 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
-    "primary_genre": "verified",
+    "source_origin": "unknown",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "漫画"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24077"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-fantasy-balanced",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "天使"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24077"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24077"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -71,10 +97,16 @@
         },
         "theme": {
           "政治・戦略": [
+            "政治",
             "戦略"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24077"
     }

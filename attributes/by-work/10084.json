@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10084",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10084",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "今日からマ王! 第3シリーズ",
+    "synopsis": "今日からマ王! 第3シリーズ 喬林知「今日からマのつく自由業!」より 異世界・ハイファンタジー SF・ファンタジー バトル・アクション コメディ・ギャグ 成長・挑戦 成長 魔王",
+    "staff_text": "原作:喬林知「今日からマのつく自由業!」より",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "b5dcc4cb5ac53846e5d7503edfb3584595de70e8a6ab5c93bdf294ea9a2a506e"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,28 +27,40 @@
   "original_credit": "喬林知「今日からマのつく自由業!」より",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "異世界",
     "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "コメディ・ギャグ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -48,19 +75,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10084"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
-        "魔王"
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10084"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -69,15 +97,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10084"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "成長・挑戦": [
-            "成長"
+        "setting": {
+          "異世界": [
+            "異世界"
           ]
         },
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "成長",
+            "挑戦"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10084"
     }

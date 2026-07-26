@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27322",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27322",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "みどりのマキバオー",
+    "synopsis": "みどりのマキバオー つの丸(集英社刊) コメディ・ギャグ",
+    "staff_text": "原作:つの丸(集英社刊)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "3f3f22406016dce8c47d9f2abfa0c30c511ffc9734b5ec1f533e5bde5bd9cd0b"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "つの丸(集英社刊)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ"
   ],
@@ -18,11 +33,13 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27322"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27322"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27322"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27322"
     }

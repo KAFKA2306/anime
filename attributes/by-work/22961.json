@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22961",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22961",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "アイカツフレンズ!",
+    "synopsis": "アイカツフレンズ! バンダイ ドラマ・青春 キッズ・ファミリー 学園 友情・仲間 成長・挑戦 音楽・アイドル 職業・仕事 友情 成長 アイドル 仕事",
+    "staff_text": "原作:バンダイ",
+    "official_genres": [
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "0196c730d236089df4ee2dbb7886593e2d720f34343add0fd0708f6cd4913581"
+  },
   "official_genres": [
     "ドラマ/青春",
     "キッズ/ファミリー"
@@ -11,6 +25,8 @@
   "original_credit": "バンダイ",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "キッズ・ファミリー",
@@ -26,6 +42,7 @@
       "ドラマ・青春",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -38,6 +55,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22961"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -61,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22961"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -69,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22961"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -78,19 +96,24 @@
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22961"
     }

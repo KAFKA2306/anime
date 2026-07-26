@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28267",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "素材採取家の異世界旅行記",
+    "synopsis": "素材採取家の異世界旅行記 木乃子増緒(アルファポリス刊) 異世界・ハイファンタジー SF・ファンタジー 日常・ほのぼの 異世界 友情・仲間 魔法 転生 仲間 剣と魔法 エルフ",
+    "staff_text": "原作:木乃子増緒(アルファポリス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "2a406cb74008e0dcf0fad024de8ee5eecda2189a7fc1cde404c2eab6e5e9b6f7"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの"
@@ -11,13 +25,22 @@
   "original_credit": "木乃子増緒(アルファポリス刊)",
   "source_origin": "Web小説（なろう・カクヨム系）",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "日常・ほのぼの",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "友情・仲間",
-    "魔法"
+    "癒やし",
+    "旅・冒険",
+    "魔法",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -25,20 +48,28 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "日常・ほのぼの"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし",
+      "旅・冒険"
     ],
     "motif": [
-      "魔法"
+      "魔法",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -55,12 +86,13 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
       ],
       "matched_terms": [
+        "魔法",
         "異世界",
         "転生",
         "剣と魔法",
@@ -69,7 +101,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -77,7 +109,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28267"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -87,11 +119,30 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ],
+          "旅・冒険": [
+            "旅"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

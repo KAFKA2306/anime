@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10711",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10711",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ブギーポップは笑わない Boogiepop Phantom",
+    "synopsis": "ブギーポップは笑わない Boogiepop Phantom 上遠野浩平(アスキー・メディア・ワークス電撃文庫) SF・ファンタジー ホラー・サスペンス・ミステリー ドラマ・青春",
+    "staff_text": "原作:上遠野浩平(アスキー・メディア・ワークス電撃文庫)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "17b1ffd1d225b293ea0e811d1b8be7b36a5509d354d410a97301f5d0df47709a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -11,31 +26,38 @@
   "production_year": 2000,
   "original_credit": "上遠野浩平(アスキー・メディア・ワークス電撃文庫)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10711"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -57,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10711"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -66,11 +88,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10711"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10711"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11091",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11091",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場版あたしンち「情熱のちょ~超能力♪ 母大暴走!」",
+    "synopsis": "劇場版あたしンち「情熱のちょ~超能力♪ 母大暴走!」 けらえいこ コメディ・ギャグ 日常・ほのぼの キッズ・ファミリー 家族 料理・グルメ 料理",
+    "staff_text": "原作:けらえいこ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "7ce89f1195a13cfcc35f6fc275adc5f291f08558da779f927ddf451da1815a78"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの",
@@ -12,12 +27,16 @@
   "original_credit": "けらえいこ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
     "キッズ・ファミリー",
     "家族",
-    "料理・グルメ"
+    "料理・グルメ",
+    "癒やし",
+    "超能力"
   ],
   "ontology_facets": {
     "source": [],
@@ -26,14 +45,19 @@
       "日常・ほのぼの",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族",
-      "料理・グルメ"
+      "料理・グルメ",
+      "癒やし"
     ],
-    "motif": [],
+    "motif": [
+      "超能力"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11091"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11091"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -67,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11091"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -75,10 +99,19 @@
             "家族"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {
+          "超能力": [
+            "超能力"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11091"
     }

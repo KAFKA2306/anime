@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22162",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22162",
   "attribute_fetched_at": "2026-07-25T10:44:31.771Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "行け!稲中卓球部",
+    "synopsis": "行け!稲中卓球部 古谷実 コメディ・ギャグ ドラマ・青春 スポーツ・競技 学園 成長・挑戦 学校 中学校 青春",
+    "staff_text": "原作:古谷実",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ドラマ/青春",
+      "スポーツ/競技"
+    ],
+    "production_year": 1995,
+    "source": "legacy-derived",
+    "sha256": "00078538b1ed043e53084eb22c7714b0e3b2b1516c2463adb0fb7a0fddf5b159"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ドラマ/青春",
@@ -12,12 +27,15 @@
   "original_credit": "古谷実",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ドラマ・青春",
     "スポーツ・競技",
     "学園",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -26,15 +44,18 @@
       "ドラマ・青春",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22162"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春",
@@ -59,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22162"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春",
@@ -68,20 +89,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22162"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "中学校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22162"
     }

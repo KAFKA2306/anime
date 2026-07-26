@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24320",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24320",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ポンコツクエスト~魔王と派遣の魔物たち~ シーズン6",
+    "synopsis": "ポンコツクエスト~魔王と派遣の魔物たち~ シーズン6 コメディ・ギャグ ショート",
+    "staff_text": "",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "fba7634ac1107896baecaee000fe538b542ac7da99170909c14ae8917ef51753"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,16 +25,23 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
     "ショート"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "コメディ・ギャグ",
+      "ファンタジー",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -28,21 +49,22 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24320"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -51,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24320"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -59,11 +81,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24320"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24320"
     }

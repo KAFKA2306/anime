@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23878",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23878",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "カードファイト!! ヴァンガード外伝 イフ-if-",
+    "synopsis": "カードファイト!! ヴァンガード外伝 イフ-if- ブシロード・伊藤 彰 異世界・ハイファンタジー スポーツ・競技 SF・ファンタジー キッズ・ファミリー 異世界 魔法 召喚",
+    "staff_text": "原作:ブシロード・伊藤 彰",
+    "official_genres": [
+      "スポーツ/競技",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "88a42c44a2527b92ab35e3ea547de4eaab5e7009dcfef0d2e37b6c340d3c28e5"
+  },
   "official_genres": [
     "スポーツ/競技",
     "SF/ファンタジー",
@@ -12,31 +27,45 @@
   "original_credit": "ブシロード・伊藤 彰",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "スポーツ・競技",
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
+    "スポーツ",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "スポーツ・競技",
-      "SF・ファンタジー",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -51,19 +80,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23878"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "スポーツ/競技",
         "SF/ファンタジー",
         "キッズ/ファミリー"
       ],
       "matched_terms": [
+        "魔法",
+        "異世界",
         "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23878"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "SF/ファンタジー",
@@ -72,16 +103,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23878"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
-        "theme": {},
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

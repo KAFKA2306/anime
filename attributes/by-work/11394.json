@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11394",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11394",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "「侵略!!イカ娘」オリジナルアニメーション2012SUMMER",
+    "synopsis": "「侵略!!イカ娘」オリジナルアニメーション2012SUMMER 安部真弘(秋田書店「週刊少年チャンピオン」連載中) コメディ・ギャグ 日常・ほのぼの",
+    "staff_text": "原作:安部真弘(秋田書店「週刊少年チャンピオン」連載中)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "e8b24171be5a3d7adf2c22ad5f5e5cd3287f0c9b8c18be86afb6936aaf3902ca"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,9 +25,13 @@
   "original_credit": "安部真弘(秋田書店「週刊少年チャンピオン」連載中)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "戦争",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +41,21 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争",
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11394"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11394"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -62,11 +85,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11394"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "侵略"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11394"
     }

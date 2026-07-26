@@ -1,24 +1,42 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27231",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27231",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "神之塔 -Tower of God- 工房戦",
+    "synopsis": "神之塔 -Tower of God- 工房戦 SIU(「LINEマンガ」連載) SF・ファンタジー 友情・仲間 仲間",
+    "staff_text": "原作:SIU(「LINEマンガ」連載)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "14323a4f8dd165bdae98263aac893f96fb692d4693501ef31eec1f6762a59fe2"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2024,
   "original_credit": "SIU(「LINEマンガ」連載)",
-  "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": "漫画",
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
-    "source": [],
-    "genre": [
-      "SF・ファンタジー"
+    "source": [
+      "漫画"
     ],
+    "genre": [
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -26,21 +44,24 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
-    "source_origin": "unknown",
-    "primary_genre": "verified",
+    "source_origin": "verified",
+    "primary_genre": "unknown",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "SIU(「LINEマンガ」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27231"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -48,22 +69,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27231"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27231"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27231"
     }

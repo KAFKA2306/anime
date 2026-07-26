@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28986",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28986",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画 きかんしゃトーマス とびだせ!友情の大冒険",
+    "synopsis": "映画 きかんしゃトーマス とびだせ!友情の大冒険 キッズ・ファミリー 日常・ほのぼの 友情・仲間 職業・仕事 友情 働く",
+    "staff_text": "",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "ddd1fb4031eb2f56c205db8029a81d7e9542121fc5d0295388cb736dc2e675f6"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,11 +25,15 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "日常・ほのぼの",
     "友情・仲間",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,14 +41,18 @@
       "キッズ・ファミリー",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +61,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28986"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -54,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28986"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -62,18 +84,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28986"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28986"
     }

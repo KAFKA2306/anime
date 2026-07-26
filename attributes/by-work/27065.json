@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27065",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27065",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "アングリーバード",
+    "synopsis": "アングリーバード ジョン・コーエン キッズ・ファミリー コメディ・ギャグ 友情・仲間 仲間 絆",
+    "staff_text": "原作:ジョン・コーエン",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "308554694fc8398e5d8359d99ac23cc76fe900bae3787a2c02d6e16b362dabcb"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "ジョン・コーエン",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "コメディ・ギャグ",
@@ -22,6 +38,7 @@
       "キッズ・ファミリー",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27065"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "コメディ/ギャグ"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27065"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "コメディ/ギャグ"
@@ -60,16 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27065"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間",
             "絆"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27065"
     }

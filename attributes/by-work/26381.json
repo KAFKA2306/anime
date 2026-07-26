@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26381",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26381",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ぼさにまる",
+    "synopsis": "ぼさにまる サンリオ SF・ファンタジー キッズ・ファミリー ショート 家族",
+    "staff_text": "原作:サンリオ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー",
+      "ショート"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "0ab83156aca5acc9bb5b6627ce498351c151c5076a23d21215f5dbee5e9feefe"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー",
@@ -11,20 +26,23 @@
   "production_year": 2023,
   "original_credit": "サンリオ",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "キッズ・ファミリー",
     "ショート",
+    "スペキュレーティブ判定保留",
     "家族"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "キッズ・ファミリー",
-      "ショート"
+      "ショート",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -34,6 +52,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26381"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26381"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー",
@@ -67,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26381"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -75,7 +94,8 @@
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26381"
     }

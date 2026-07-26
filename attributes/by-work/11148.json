@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11148",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11148",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ひぐらしのなく頃に煌",
+    "synopsis": "ひぐらしのなく頃に煌 竜騎士07 ホラー・サスペンス・ミステリー ドラマ・青春 恋愛・ラブコメ",
+    "staff_text": "原作:竜騎士07",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "c61cb9afcd44dddb7ecefdeda16435161c235a91e4c6b8754506708e9f700b69"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春",
@@ -12,28 +27,44 @@
   "original_credit": "竜騎士07",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
     "ドラマ・青春",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー",
+      "ファンタジー",
       "ドラマ・青春",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11148"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春",
@@ -53,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11148"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春",
@@ -62,11 +93,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11148"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11148"
     }

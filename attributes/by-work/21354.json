@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21354",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21354",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台「ノラガミー神と願いー」ディレクターズ・カット版",
+    "synopsis": "舞台「ノラガミー神と願いー」ディレクターズ・カット版 あだちとか「ノラガミ」(「月刊少年マガジン」連載 2.5次元舞台",
+    "staff_text": "原作:あだちとか「ノラガミ」(「月刊少年マガジン」連載",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "aacd50718d487915c13a8cae6208fe51a7d13b9a2379c30788e4d42a1aff49dd"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "あだちとか「ノラガミ」(「月刊少年マガジン」連載",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台"
   ],
@@ -20,6 +35,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -27,11 +43,12 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21354"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -52,18 +69,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21354"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21354"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21354"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21112",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21112",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔法少女なんてもういいですから。セカンドシーズン",
+    "synopsis": "魔法少女なんてもういいですから。セカンドシーズン 双見酔「魔法少女なんてもういいですから。」 デジタル版コミックアース・スター 連載中 コメディ・ギャグ ショート 日常・ほのぼの 魔法",
+    "staff_text": "原作:双見酔「魔法少女なんてもういいですから。」 デジタル版コミックアース・スター 連載中",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "dfaed29b6183a81e08676479fb7c6e8a1eab3a712a1b8bcf57797e8587cac2ce"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート",
@@ -12,10 +27,17 @@
   "original_credit": "双見酔「魔法少女なんてもういいですから。」 デジタル版コミックアース・スター 連載中",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
     "ショート",
     "日常・ほのぼの",
+    "現代ファンタジー",
+    "癒やし",
     "魔法"
   ],
   "ontology_facets": {
@@ -24,11 +46,17 @@
     ],
     "genre": [
       "コメディ・ギャグ",
+      "ファンタジー",
       "ショート",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [
       "魔法"
     ],
@@ -36,6 +64,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21112"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート",
@@ -62,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21112"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート",
@@ -71,12 +100,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21112"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

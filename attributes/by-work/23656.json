@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23656",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23656",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "天晴爛漫!",
+    "synopsis": "天晴爛漫! APPERRACING スポーツ・競技",
+    "staff_text": "原作:APPERRACING",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "51153c37ab0019c603b19ca505b211d4a908ac134e1c4d2096e53448b57b928a"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,24 +23,31 @@
   "original_credit": "APPERRACING",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23656"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -45,18 +65,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23656"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23656"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23656"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27079",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27079",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "当て馬キャラのくせして、スパダリ王子に寵愛されています。【オンエア版】",
+    "synopsis": "当て馬キャラのくせして、スパダリ王子に寵愛されています。【オンエア版】 恋愛・ラブコメ 異世界 転生",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "303469e88909a2373a73faa27482efcb3666ce971571fbc008713331affb2fbe"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,22 +23,41 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "異世界"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -34,13 +66,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27079"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -48,22 +80,41 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27079"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27079"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27079"
     }

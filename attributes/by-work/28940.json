@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28940",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28940",
   "attribute_fetched_at": "2026-07-25T10:44:56.484Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画クレヨンしんちゃん 暗黒タマタマ大追跡",
+    "synopsis": "映画クレヨンしんちゃん 暗黒タマタマ大追跡 臼井儀人(らくだ社) キッズ・ファミリー ショート コメディ・ギャグ 家族 兄弟",
+    "staff_text": "原作:臼井儀人(らくだ社)",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1997,
+    "source": "legacy-derived",
+    "sha256": "a3a6e3069ddf5d4346c85efe01698759337af3ee4777c106e6ad1105fd0ec418"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "ショート",
@@ -12,6 +27,8 @@
   "original_credit": "臼井儀人(らくだ社)",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "ショート",
@@ -25,6 +42,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -34,6 +52,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28940"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28940"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -67,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28940"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "兄弟"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28940"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24102",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24102",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "バ怪獣 ゴメラ",
+    "synopsis": "バ怪獣 ゴメラ ショート SF・ファンタジー キッズ・ファミリー",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "3b780fe38bdcd797d8db2f5f247b7ee65e817dba2e9747dcce42ff43d845bda1"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,40 +27,47 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
+    "怪獣"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "怪獣"
+    ],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24102"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24102"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -64,11 +86,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24102"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "怪獣": [
+            "怪獣"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24102"
     }

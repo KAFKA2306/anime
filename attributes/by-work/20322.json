@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20322",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20322",
   "attribute_fetched_at": "2026-07-25T10:22:31.564Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "キン肉マンII世 マッスル人参争奪!超人大戦争",
+    "synopsis": "キン肉マンII世 マッスル人参争奪!超人大戦争 ゆでたまご バトル・アクション コメディ・ギャグ",
+    "staff_text": "原作:ゆでたまご",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2002,
+    "source": "legacy-derived",
+    "sha256": "2234e0ddb64a008e50ca30f476cf87e98e175fde11c9874adb0e843356044bd7"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,9 +25,12 @@
   "original_credit": "ゆでたまご",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "戦争"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +38,20 @@
       "バトル・アクション",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20322"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20322"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -57,11 +78,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20322"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20322"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11504",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11504",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "繰繰れ!コックリさん",
+    "synopsis": "繰繰れ!コックリさん 遠藤ミドリ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊) SF・ファンタジー コメディ・ギャグ",
+    "staff_text": "原作:遠藤ミドリ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "d150ece6408449e9a443b8e0cadb1e07088014c589f6aad02b4c242b626b3663"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,24 +24,28 @@
   "production_year": 2014,
   "original_credit": "遠藤ミドリ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11504"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -53,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11504"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -61,11 +79,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11504"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11504"
     }

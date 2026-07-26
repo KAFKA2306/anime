@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20152",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20152",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "マイマイ新子と千年の魔法",
+    "synopsis": "マイマイ新子と千年の魔法 髙樹のぶ子(「マイマイ新子」マガジンハウス・新潮文庫刊) ドラマ・青春 キッズ・ファミリー 魔法",
+    "staff_text": "原作:髙樹のぶ子(「マイマイ新子」マガジンハウス・新潮文庫刊)",
+    "official_genres": [
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "8fc9c955931da508a9b558333bad7b24712f21358ed5d51bebab8bc900cb5eec"
+  },
   "official_genres": [
     "ドラマ/青春",
     "キッズ/ファミリー"
@@ -11,9 +25,16 @@
   "original_credit": "髙樹のぶ子(「マイマイ新子」マガジンハウス・新潮文庫刊)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "ファンタジー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
+    "成長・挑戦",
     "魔法"
   ],
   "ontology_facets": {
@@ -22,15 +43,22 @@
     ],
     "genre": [
       "ドラマ・青春",
+      "ファンタジー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20152"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -56,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20152"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -64,12 +92,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20152"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

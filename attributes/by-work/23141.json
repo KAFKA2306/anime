@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23141",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23141",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "どるふろ",
+    "synopsis": "どるふろ 上海散爆網絡科技有限公司 ショート コメディ・ギャグ 終末・ディストピア 荒廃した世界",
+    "staff_text": "原作:上海散爆網絡科技有限公司",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "fe92594a1b04a2218abc5c0eda65b5af477c978b2ca06f2a756b481e050ea750"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,16 +25,26 @@
   "original_credit": "上海散爆網絡科技有限公司",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "SF",
     "コメディ・ギャグ",
+    "終末SF",
     "終末・ディストピア"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "終末SF"
     ],
     "setting": [
       "終末・ディストピア"
@@ -31,6 +55,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23141"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -54,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23141"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -62,15 +87,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23141"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "終末・ディストピア": [
+            "終末",
+            "ディストピア",
             "荒廃した世界"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "終末SF": [
+            "終末",
+            "ディストピア"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23141"
     }

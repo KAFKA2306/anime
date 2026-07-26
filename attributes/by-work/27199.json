@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27199",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27199",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "小市民シリーズ",
+    "synopsis": "小市民シリーズ 米澤穂信『春期限定いちごタルト事件』『夏期限定トロピカルパフェ事件』(創元推理文庫 刊) ホラー・サスペンス・ミステリー 学園 高校",
+    "staff_text": "原作:米澤穂信『春期限定いちごタルト事件』『夏期限定トロピカルパフェ事件』(創元推理文庫 刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "d773030b87b3c12b92a87692d6d59fb1d3a50a292ef9303633a1df6bc35db904"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,9 +23,13 @@
   "original_credit": "米澤穂信『春期限定いちごタルト事件』『夏期限定トロピカルパフェ事件』(創元推理文庫 刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
-    "学園"
+    "ミステリー",
+    "学園",
+    "推理・謎解き"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +38,19 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "推理・謎解き"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27199"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -52,22 +75,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27199"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27199"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "推理・謎解き": [
+            "推理"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "事件"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27199"
     }

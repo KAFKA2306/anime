@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11254",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "キン肉マン キン肉星王位争奪編",
+    "synopsis": "キン肉マン キン肉星王位争奪編 ゆでたまご バトル・アクション コメディ・ギャグ 宇宙 友情・仲間 成長・挑戦 サバイバル 友情 絆 成長",
+    "staff_text": "原作:ゆでたまご",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "c30a80b25ad51f3cf3ee93342e8f12f4fc200260cf785313e91d16656774b857"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,9 +25,15 @@
   "original_credit": "ゆでたまご",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙",
     "友情・仲間",
     "成長・挑戦",
@@ -23,7 +43,11 @@
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -36,6 +60,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -59,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -67,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -77,16 +102,23 @@
         "theme": {
           "友情・仲間": [
             "友情",
+            "仲間",
             "絆"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "サバイバル": [
             "サバイバル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11254"
     }

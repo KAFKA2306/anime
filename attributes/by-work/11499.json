@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11499",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11499",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ガンダム Gのレコンギスタ",
+    "synopsis": "ガンダム Gのレコンギスタ 異世界・ハイファンタジー SF・ファンタジー ロボット・メカ キッズ・ファミリー 宇宙 ギルド",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "1f6835931f4c59fc49dac92f77e502e440d1d6e233c7beb9000a0c4abe9ccd5b"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -12,22 +27,39 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
     "キッズ・ファミリー",
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "ロボットSF",
+    "異世界",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "ロボット・メカ",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ",
+      "ロボットSF"
+    ],
     "setting": [
+      "異世界",
       "宇宙"
     ],
     "theme": [],
@@ -36,6 +68,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -44,25 +77,29 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11499"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "キッズ/ファミリー"
       ],
       "matched_terms": [
+        "宇宙",
+        "ロボット",
+        "メカ",
+        "異世界",
         "ギルド"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11499"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -71,15 +108,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11499"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "宇宙": [
             "宇宙"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11499"
     }

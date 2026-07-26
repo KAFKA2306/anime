@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28836",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28836",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "自称悪役令嬢な婚約者の観察記録。",
+    "synopsis": "自称悪役令嬢な婚約者の観察記録。 しき(アルファポリス刊) 恋愛・ラブコメ 異世界 転生",
+    "staff_text": "原作:しき(アルファポリス刊)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "ef112748a019a1eeaeffef3f108524e94e58441a198e2aa65b8e87e30aa77245"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,24 +23,43 @@
   "original_credit": "しき(アルファポリス刊)",
   "source_origin": "Web小説（なろう・カクヨム系）",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "異世界"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
       "Web小説（なろう・カクヨム系）"
     ],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28836"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -52,22 +84,42 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28836"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28836"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ",
+            "婚約"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28836"
     }

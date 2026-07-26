@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27177",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27177",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "負けヒロインが多すぎる!",
+    "synopsis": "負けヒロインが多すぎる! 雨森たきび「負けヒロインが多すぎる!」(小学館「ガガガ文庫」刊) ドラマ・青春 成長・挑戦 青春",
+    "staff_text": "原作:雨森たきび「負けヒロインが多すぎる!」(小学館「ガガガ文庫」刊)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "c20b5b508e333d366178d3b8d7d7005b7aedaa8e41e0e56b9e33ba7872a2d09c"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "雨森たきび「負けヒロインが多すぎる!」(小学館「ガガガ文庫」刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "成長・挑戦"
@@ -21,6 +36,7 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -28,6 +44,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27177"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -52,22 +69,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27177"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27177"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27177"
     }

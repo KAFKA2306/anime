@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21375",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21375",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ミュージカル「忍たま乱太郎」第5弾再演~新たなる敵!~",
+    "synopsis": "ミュージカル「忍たま乱太郎」第5弾再演~新たなる敵!~ 尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」 ©尼子騒兵衛 2.5次元舞台 学園",
+    "staff_text": "原作:尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」 ©尼子騒兵衛",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "2826fa1abc2f282006b1a931a5a9b7d83eb04361b46dfe6d1f63bb020224479b"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」 ©尼子騒兵衛",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園"
@@ -19,6 +34,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -28,6 +44,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21375"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,14 +67,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21375"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21375"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -65,7 +82,8 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21375"
     }

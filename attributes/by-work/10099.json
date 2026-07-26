@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10099",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "バカとテストと召喚獣 ~祭~",
+    "synopsis": "バカとテストと召喚獣 ~祭~ 井上堅二(「バカとテストと召喚獣」シリーズ ファミ通文庫 コメディ・ギャグ バトル・アクション 恋愛・ラブコメ 異世界 学園 召喚",
+    "staff_text": "原作:井上堅二(「バカとテストと召喚獣」シリーズ ファミ通文庫",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "a40c1530469851bf12ad07680f0bfeead124b2e9eba37ddc5c57ff62b00404e2"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "アクション/バトル",
@@ -12,12 +27,20 @@
   "original_credit": "井上堅二(「バカとテストと召喚獣」シリーズ ファミ通文庫",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "ラブコメ",
     "異世界",
-    "学園"
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -25,17 +48,25 @@
     ],
     "genre": [
       "コメディ・ギャグ",
+      "ファンタジー",
       "バトル・アクション",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "アクション/バトル",
@@ -62,7 +93,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "アクション/バトル",
@@ -71,18 +102,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ],
           "学園": [
             "学園"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25690",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25690",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "邪神ちゃんドロップキックX",
+    "synopsis": "邪神ちゃんドロップキックX ユキヲ(COMICメテオ連載中) コメディ・ギャグ 異世界 召喚",
+    "staff_text": "原作:ユキヲ(COMICメテオ連載中)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "443b8e8ea7af40757a8b37f3b4ed1190c012f0ffa255dbcfef3492d724779d02"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,14 +23,24 @@
   "original_credit": "ユキヲ(COMICメテオ連載中)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -26,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25690"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,22 +72,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25690"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25690"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25690"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10072",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10072",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "うみねこのなく頃に",
+    "synopsis": "うみねこのなく頃に 竜騎士07 ホラー・サスペンス・ミステリー サバイバル 犯罪・警察 生き残 警察",
+    "staff_text": "原作:竜騎士07",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "773c91f2b5be54a12044d9a6161773b8162b61418b82d78d8d54f20c9b453ec3"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,16 +23,23 @@
   "original_credit": "竜騎士07",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
     "サバイバル",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "サバイバル"
@@ -29,6 +49,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10072"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -51,26 +72,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10072"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10072"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "サバイバル": [
+            "サバイバル",
             "生き残"
           ]
         },
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10072"
     }

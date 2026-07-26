@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25227",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25227",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "HEROES(ヒーローズ)~Legend of Battle Disks~",
+    "synopsis": "HEROES(ヒーローズ)~Legend of Battle Disks~ バトル・アクション キッズ・ファミリー 宇宙 ロボット・メカ 惑星 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "40dd04afcd30d096b22717e53f01cc95937d49f25b4787a8ff067b637890835d"
+  },
   "official_genres": [
     "アクション/バトル",
     "キッズ/ファミリー"
@@ -11,9 +25,16 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "キッズ・ファミリー",
+    "スペースオペラ",
+    "ロボットSF",
     "宇宙",
     "ロボット・メカ"
   ],
@@ -21,7 +42,12 @@
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ロボットSF"
     ],
     "setting": [
       "宇宙"
@@ -32,6 +58,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,13 +67,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25227"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -55,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25227"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -63,7 +90,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25227"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -74,6 +101,15 @@
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
             "ロボット"
           ]
         }

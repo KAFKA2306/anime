@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23038",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23038",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フォーカード 第1話~第27話",
+    "synopsis": "フォーカード 第1話~第27話 ショート ライブ・ラジオ・その他 学園 友情・仲間 怪異・妖怪 学校 友情 幽霊",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "339d322dcaa0f9db107172216b6ec1787f58d1ad9ac4bf661962c30df3a41846"
+  },
   "official_genres": [
     "ショート",
     "ライブ/ラジオ/etc."
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ライブ・ラジオ・その他",
+    "現代ファンタジー",
     "学園",
     "友情・仲間",
     "怪異・妖怪"
@@ -23,6 +40,9 @@
     "genre": [
       "ショート",
       "ライブ・ラジオ・その他"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -38,6 +58,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,13 +67,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23038"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ライブ/ラジオ/etc."
@@ -61,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23038"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ライブ/ラジオ/etc."
@@ -69,21 +90,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23038"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

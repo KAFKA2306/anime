@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24256",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24256",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "アオハライド",
+    "synopsis": "アオハライド 咲坂伊緒(集英社「別冊マーガレット」連載) ドラマ・青春 恋愛・ラブコメ 学園 友情・仲間 成長・挑戦 家族 高校 友情 仲間 青春",
+    "staff_text": "原作:咲坂伊緒(集英社「別冊マーガレット」連載)",
+    "official_genres": [
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "842863e26ea6c1b5a2ad1600fd4ae9a8d5c9ba4165d9b5b1c01cc4ac2a3a2c99"
+  },
   "official_genres": [
     "ドラマ/青春",
     "恋愛/ラブコメ"
@@ -11,13 +25,17 @@
   "original_credit": "咲坂伊緒(集英社「別冊マーガレット」連載)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
     "友情・仲間",
     "成長・挑戦",
-    "家族"
+    "家族",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -27,17 +45,22 @@
       "ドラマ・青春",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
       "成長・挑戦",
-      "家族"
+      "家族",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24256"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -63,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24256"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -71,10 +94,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24256"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
@@ -84,13 +108,24 @@
             "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "家族": [
             "家族"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24256"
     }

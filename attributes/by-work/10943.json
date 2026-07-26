@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10943",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10943",
   "attribute_fetched_at": "2026-07-25T10:44:02.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "キャプテン",
+    "synopsis": "キャプテン ちば あきお スポーツ・競技 成長・挑戦 成長",
+    "staff_text": "原作:ちば あきお",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 1983,
+    "source": "legacy-derived",
+    "sha256": "2b329283135dd43ead840b09e3a152b00be46f19f216974a37a2ce63c91b50ba"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,22 +23,28 @@
   "original_credit": "ちば あきお",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10943"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -48,22 +67,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10943"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10943"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10943"
     }

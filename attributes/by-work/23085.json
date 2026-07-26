@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23085",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23085",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "きんぎょ注意報!",
+    "synopsis": "きんぎょ注意報! 猫部ねこ コメディ・ギャグ SF・ファンタジー 学園 学校 中学校",
+    "staff_text": "原作:猫部ねこ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "fdd1c84cc72d56ddd60a791e44057ccbd22f0724706976ab614f71834ae9b62b"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "SF/ファンタジー"
@@ -11,17 +25,20 @@
   "original_credit": "猫部ねこ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "学園"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23085"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23085"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
@@ -60,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23085"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -70,7 +88,8 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23085"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25276",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25276",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台『弱虫ペダル』新インターハイ篇FINAL~POWER OF BIKE~",
+    "synopsis": "舞台『弱虫ペダル』新インターハイ篇FINAL~POWER OF BIKE~ 渡辺航「弱虫ペダル」(秋田書店『週刊少年チャンピオン』連載) 2.5次元舞台 友情・仲間 サバイバル 仲間 デスゲーム",
+    "staff_text": "原作:渡辺航「弱虫ペダル」(秋田書店『週刊少年チャンピオン』連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "92d1b3349bed1ab2f2e44d31b951d76b35472b3eee44e8bae5820ff95d57e01b"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "渡辺航「弱虫ペダル」(秋田書店『週刊少年チャンピオン』連載)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "友情・仲間",
@@ -22,6 +37,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -32,6 +48,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25276"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -57,25 +74,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25276"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25276"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "サバイバル": [
+            "サバイバル",
             "デスゲーム"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25276"
     }

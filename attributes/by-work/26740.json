@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26740",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~",
+    "synopsis": "名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~ 綿涙粉緒「名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~」(HJノベルス 異世界・ハイファンタジー SF・ファンタジー ショート 異世界 転生 エルフ",
+    "staff_text": "原作:綿涙粉緒「名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~」(HJノベルス",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ショート"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "a913c2ef999b9f3b2977d91177eb0ff588435d6edde4eabcadb90104908e39f4"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ショート"
@@ -11,11 +25,17 @@
   "original_credit": "綿涙粉緒「名湯『異世界の湯』開拓記 ~アラフォー温泉マニアの転生先は、のんびり温泉天国でした~」(HJノベルス",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "ショート",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -23,18 +43,24 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "ショート"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -51,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ショート"
@@ -64,7 +90,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ショート"
@@ -72,7 +98,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -81,7 +107,17 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26740"
     }

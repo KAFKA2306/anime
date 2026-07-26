@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24080",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24080",
   "attribute_fetched_at": "2026-07-25T10:20:39.481Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "鉄腕アトム 宇宙の勇者",
+    "synopsis": "鉄腕アトム 宇宙の勇者 異世界・ハイファンタジー SF・ファンタジー ロボット・メカ 宇宙 ロボット 勇者",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ"
+    ],
+    "production_year": 1964,
+    "source": "legacy-derived",
+    "sha256": "520dccd03a057398ededd3e61c7d98181da199f4cfbe819152e68147b8d20b5e"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ"
@@ -11,20 +25,37 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "ロボットSF",
+    "異世界",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "ロボット・メカ"
     ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ",
+      "ロボットSF"
+    ],
     "setting": [
+      "異世界",
       "宇宙"
     ],
     "theme": [],
@@ -33,6 +64,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -41,24 +73,28 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24080"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
       ],
       "matched_terms": [
-        "勇者"
+        "宇宙",
+        "ロボット",
+        "メカ",
+        "勇者",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24080"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
@@ -66,9 +102,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24080"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "宇宙": [
             "宇宙"
           ]
@@ -76,6 +115,18 @@
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
             "ロボット"
           ]
         }

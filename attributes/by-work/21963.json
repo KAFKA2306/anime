@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21963",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21963",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王デュエルモンスターズGX",
+    "synopsis": "遊☆戯☆王デュエルモンスターズGX 高橋和希 スタジオ・ダイス(集英社「週刊少年ジャンプ」) バトル・アクション スポーツ・競技 学園",
+    "staff_text": "原作:高橋和希 スタジオ・ダイス(集英社「週刊少年ジャンプ」)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "561087aba3194dce788de71bfeb49089e4493ee769cd13ad33b799986e4e7c5a"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,10 +25,16 @@
   "original_credit": "高橋和希 スタジオ・ダイス(集英社「週刊少年ジャンプ」)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +42,20 @@
     ],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21963"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -57,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21963"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -65,15 +90,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21963"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21963"
     }

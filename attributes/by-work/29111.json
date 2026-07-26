@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29111",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29111",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "こうしす!EE「山形出張特別編ミニアニメ(第9001レ)」",
+    "synopsis": "こうしす!EE「山形出張特別編ミニアニメ(第9001レ)」 「こうしす!」 OPAP-JP contributors (https: コメディ・ギャグ 職業・仕事 仕事",
+    "staff_text": "原作:「こうしす!」 OPAP-JP contributors (https:",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "ba6ad3cfb3fa36ecc3822be1677afbdbcbf75a7c6add923ac95de6c66511177e"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "「こうしす!」 OPAP-JP contributors (https:",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "職業・仕事"
@@ -19,6 +34,7 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29111"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,14 +65,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29111"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29111"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -63,7 +80,8 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29111"
     }

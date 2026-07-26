@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28875",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28875",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "Identity V STAGE Episode4 『Phantom of The Monochrome』Side:H",
+    "synopsis": "Identity V STAGE Episode4 『Phantom of The Monochrome』Side:H NetEase Games 2.5次元舞台 怪異・妖怪 鬼",
+    "staff_text": "原作:NetEase Games",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "d166cf64bd437fb1d89724c10795ff8f9a1333d017f71b4a681f31559eafcf3f"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,14 +23,20 @@
   "original_credit": "NetEase Games",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -28,6 +47,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28875"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,20 +70,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28875"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28875"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

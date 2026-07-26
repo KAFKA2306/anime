@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20995",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20995",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "アルスラーン戦記 風塵乱舞",
+    "synopsis": "アルスラーン戦記 風塵乱舞 田中芳樹(光文社カッパ・ノベルス刊) SF・ファンタジー 歴史・戦記 ドラマ・青春 友情・仲間 成長・挑戦 仲間 成長",
+    "staff_text": "原作:田中芳樹(光文社カッパ・ノベルス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "歴史/戦記",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "b47bbd88a182d59e9b0963741c55fb8d0f86c5881f438f561a451a84d3cd0b6b"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "歴史/戦記",
@@ -11,11 +26,13 @@
   "production_year": 2016,
   "original_credit": "田中芳樹(光文社カッパ・ノベルス刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "歴史・戦記",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
     "成長・挑戦"
   ],
@@ -24,10 +41,11 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "歴史・戦記",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -36,6 +54,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20995"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記",
@@ -62,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20995"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記",
@@ -71,18 +90,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20995"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20995"
     }

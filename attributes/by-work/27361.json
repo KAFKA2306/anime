@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27361",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "青のミブロ",
+    "synopsis": "青のミブロ 安田剛士「青のミブロ」(講談社「週刊少年マガジン」連載) 歴史・戦記 バトル・アクション ドラマ・青春 歴史・時代劇 成長・挑戦 幕末 青春",
+    "staff_text": "原作:安田剛士「青のミブロ」(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "歴史/戦記",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "8ac2b1ab59f7f4f2ca310f005874c47f96d27b70df69c9f8f98dab61dd2e5a25"
+  },
   "official_genres": [
     "歴史/戦記",
     "アクション/バトル",
@@ -12,6 +27,8 @@
   "original_credit": "安田剛士「青のミブロ」(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "バトル・アクション",
@@ -28,6 +45,7 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -37,6 +55,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -54,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "アクション/バトル",
@@ -64,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "アクション/バトル",
@@ -73,19 +92,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27361"
     }

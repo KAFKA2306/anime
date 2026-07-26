@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26379",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26379",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "リョーマ!The Prince of Tennis 新生劇場版テニスの王子様 〈Decide〉",
+    "synopsis": "リョーマ!The Prince of Tennis 新生劇場版テニスの王子様 〈Decide〉 許斐 剛「テニスの王子様」(集英社 ジャンプ コミックス刊)「新テニスの王子様」(集英社「ジャンプSQ.」連載) スポーツ・競技 家族",
+    "staff_text": "原作:許斐 剛「テニスの王子様」(集英社 ジャンプ コミックス刊)「新テニスの王子様」(集英社「ジャンプSQ.」連載)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "039024bd6d56519ed19ddda81620202a0d9aabbbad4d4666fe9fd9216610a79f"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,24 +23,34 @@
   "original_credit": "許斐 剛「テニスの王子様」(集英社 ジャンプ コミックス刊)「新テニスの王子様」(集英社「ジャンプSQ.」連載)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
-    "家族"
+    "ファンタジー",
+    "家族",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "家族"
+      "家族",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26379"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -53,22 +76,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26379"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26379"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
             "家族"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26379"
     }

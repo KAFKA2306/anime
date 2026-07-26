@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10208",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10208",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "sin in the rain",
+    "synopsis": "sin in the rain 矢野よしたか ホラー・サスペンス・ミステリー 推理・謎解き 探偵",
+    "staff_text": "原作:矢野よしたか",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "c20d66b4912804206acb6b9e5f7fe8523ace02f231617d8215548092431055da"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,22 +23,36 @@
   "original_credit": "矢野よしたか",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
-    "推理・謎解き"
+    "SF",
+    "ミステリー",
+    "推理・謎解き",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "SF"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
       "推理・謎解き"
     ],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10208"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,22 +75,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10208"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10208"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10208"
     }

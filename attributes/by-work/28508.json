@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28508",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28508",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "#神奈川に住んでるエルフ",
+    "synopsis": "#神奈川に住んでるエルフ 鎧田「#神奈川に住んでるエルフ」(マイクロマガジン社「コミックELMO」連載) 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ エルフ",
+    "staff_text": "原作:鎧田「#神奈川に住んでるエルフ」(マイクロマガジン社「コミックELMO」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "a210d98fb78d253e2a6401d673b2027231e50330716b5212d426f8bc35f76a45"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -11,10 +25,16 @@
   "original_credit": "鎧田「#神奈川に住んでるエルフ」(マイクロマガジン社「コミックELMO」連載)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
-    "コメディ・ギャグ"
+    "ファンタジー",
+    "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "異世界"
   ],
   "ontology_facets": {
     "source": [
@@ -22,19 +42,25 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,18 +73,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28508"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
+        "異世界",
         "エルフ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28508"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -66,11 +93,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28508"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28508"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25134",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25134",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "境界戦機",
+    "synopsis": "境界戦機 ロボット・メカ バトル・アクション SF・ファンタジー 機動兵器",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "3134e1fd198542534ff5d90bea7520324d0c2ad1a584b410ff3dff474bb8ac87"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -11,51 +26,66 @@
   "production_year": 2021,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ロボット・メカ",
     "バトル・アクション",
-    "SF・ファンタジー"
+    "ロボットSF",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "SF",
       "ロボット・メカ",
-      "バトル・アクション",
-      "SF・ファンタジー"
+      "バトル・アクション"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25134"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ",
+        "機動兵器"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25134"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -64,12 +94,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25134"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ",
+            "機動兵器"
+          ],
+          "軍事": [
+            "兵器"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット",
             "機動兵器"
           ]
         }

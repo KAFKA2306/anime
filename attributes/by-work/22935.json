@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22935",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22935",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "テニスの王子様 OVA 全国大会篇 Semifinal",
+    "synopsis": "テニスの王子様 OVA 全国大会篇 Semifinal 許斐 剛(集英社 ジャンプ コミックス刊) スポーツ・競技",
+    "staff_text": "原作:許斐 剛(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "317e10f0be8ceb852c8a25330e11d33a1bc70974cd06143d32bc7b1c65ded53a"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,26 +23,40 @@
   "original_credit": "許斐 剛(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "ファンタジー",
+    "スポ根",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "スポ根"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22935"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -50,18 +77,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22935"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22935"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "大会",
+            "全国大会",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スポ根": [
+            "全国大会"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22935"
     }

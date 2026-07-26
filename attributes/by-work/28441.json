@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28441",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28441",
   "attribute_fetched_at": "2026-07-25T10:21:15.719Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "プチプチ・アニメ ロボット パルタ お宝たんけん隊",
+    "synopsis": "プチプチ・アニメ ロボット パルタ お宝たんけん隊 ショート キッズ・ファミリー ロボット・メカ ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1998,
+    "source": "legacy-derived",
+    "sha256": "c2b9c0a1e45a9c964c1336123533e09227631d3f84563eea457dfbac11fc5cb5"
+  },
   "official_genres": [
     "ショート",
     "キッズ/ファミリー"
@@ -11,16 +25,26 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "SF",
     "キッズ・ファミリー",
+    "ロボットSF",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
+      "SF",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -31,6 +55,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +64,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28441"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "キッズ/ファミリー"
@@ -54,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28441"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "キッズ/ファミリー"
@@ -62,12 +87,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28441"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

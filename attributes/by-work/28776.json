@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28776",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28776",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ルパン三世TVSP #26 ルパン三世 グッバイ・パートナー",
+    "synopsis": "ルパン三世TVSP #26 ルパン三世 グッバイ・パートナー モンキー・パンチ(MPワークス ルパン三世officialマガジン刊) バトル・アクション ドラマ・青春 政治・戦略 政治",
+    "staff_text": "原作:モンキー・パンチ(MPワークス ルパン三世officialマガジン刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "e1382c9ccc38186016d619a9f6cc95c1bda939a951683901994cd562fdb6e669"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "モンキー・パンチ(MPワークス ルパン三世officialマガジン刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
+    "成長・挑戦",
     "政治・戦略"
   ],
   "ontology_facets": {
@@ -24,13 +41,16 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "政治・戦略"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28776"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -56,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28776"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -64,15 +84,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28776"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "政治・戦略": [
-            "政治"
+            "政治",
+            "戦略"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28776"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23080",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23080",
   "attribute_fetched_at": "2026-07-25T10:20:39.630Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "夢魔子【デジタルリマスター版】",
+    "synopsis": "夢魔子【デジタルリマスター版】 藤子不二雄A ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:藤子不二雄A",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1990,
+    "source": "legacy-derived",
+    "sha256": "7c1fff77e2795283ed3e7a880c2357b4fc8673045249b5b600aadd987b580a51"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "藤子不二雄A",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー"
   ],
@@ -18,11 +33,13 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23080"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23080"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23080"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23080"
     }

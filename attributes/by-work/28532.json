@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28532",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "不死身な僕の日常 シーズン2",
+    "synopsis": "不死身な僕の日常 シーズン2 枯玄『仙王的日常生活』 SF・ファンタジー バトル・アクション 日常・ほのぼの 学園 友情・仲間 仲間",
+    "staff_text": "原作:枯玄『仙王的日常生活』",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "4093514a545886548aeea1d0cff4707ff37a685738b618e9a989b61f7554c1c5"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,30 +26,36 @@
   "production_year": 2021,
   "original_credit": "枯玄『仙王的日常生活』",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "日常・ほのぼの",
+    "スペキュレーティブ判定保留",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "日常・ほのぼの"
+      "日常・ほのぼの",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -59,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -68,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -77,10 +98,15 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532"
     }

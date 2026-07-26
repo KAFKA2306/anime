@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26191",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画おしりたんてい スフーレ島のひみつ",
+    "synopsis": "映画おしりたんてい スフーレ島のひみつ トロル「おしりたんてい」シリーズ(ポプラ社) コメディ・ギャグ ホラー・サスペンス・ミステリー キッズ・ファミリー 推理・謎解き 推理",
+    "staff_text": "原作:トロル「おしりたんてい」シリーズ(ポプラ社)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "179cf1c44138ad50b8fddfdbd2e5a112e7512f1b67e7c3ae6ef00aa0409e8380"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,13 @@
   "original_credit": "トロル「おしりたんてい」シリーズ(ポプラ社)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ホラー・サスペンス・ミステリー",
     "キッズ・ファミリー",
+    "ミステリー",
     "推理・謎解き"
   ],
   "ontology_facets": {
@@ -25,6 +43,9 @@
       "ホラー・サスペンス・ミステリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "推理・謎解き"
@@ -32,6 +53,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ホラー/サスペンス/推理",
@@ -56,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ホラー/サスペンス/推理",
@@ -65,15 +87,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
-            "推理"
+            "推理",
+            "謎解き"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26191"
     }

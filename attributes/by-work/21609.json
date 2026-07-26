@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21609",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ハーモニー",
+    "synopsis": "ハーモニー 「ハーモニー」伊藤計劃(ハヤカワ文庫JA) SF・ファンタジー ホラー・サスペンス・ミステリー 職業・仕事 医療 仕事",
+    "staff_text": "原作:「ハーモニー」伊藤計劃(ハヤカワ文庫JA)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "8c32e1a33f10c2c54edb3179916e3144bd0fcb123ed190077b1b55351a4bea0a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理"
@@ -10,10 +24,12 @@
   "production_year": 2015,
   "original_credit": "「ハーモニー」伊藤計劃(ハヤカワ文庫JA)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
     "職業・仕事",
     "医療"
   ],
@@ -22,9 +38,10 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -34,6 +51,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -59,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -67,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -79,7 +97,8 @@
           "医療": [
             "医療"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609"
     }

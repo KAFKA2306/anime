@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24332",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24332",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "みりたり!",
+    "synopsis": "みりたり! 「みりたり!」(原作者・まもウィリアムズ) ショート バトル・アクション コメディ・ギャグ",
+    "staff_text": "原作:「みりたり!」(原作者・まもウィリアムズ)",
+    "official_genres": [
+      "ショート",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "57a7f7f0944001d7006f9dcd2594760b36b9b71c13bfcf0c4e512d4ed037e286"
+  },
   "official_genres": [
     "ショート",
     "アクション/バトル",
@@ -12,6 +27,8 @@
   "original_credit": "「みりたり!」(原作者・まもウィリアムズ)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "バトル・アクション",
@@ -24,6 +41,7 @@
       "バトル・アクション",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -31,11 +49,12 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24332"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "アクション/バトル",
@@ -55,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24332"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "アクション/バトル",
@@ -64,11 +83,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24332"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24332"
     }

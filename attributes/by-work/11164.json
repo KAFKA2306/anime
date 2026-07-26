@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11164",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11164",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "蟲師",
+    "synopsis": "蟲師 漆原友紀(講談社 アフタヌーンKC刊) SF・ファンタジー ドラマ・青春 ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:漆原友紀(講談社 アフタヌーンKC刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "90298f3ed6ff5c33b7553e4772a4b8076dad95315dc2d2014618137ad514c6d1"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春",
@@ -11,31 +26,38 @@
   "production_year": 2005,
   "original_credit": "漆原友紀(講談社 アフタヌーンKC刊)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "ドラマ・青春",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11164"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -57,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11164"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -66,11 +88,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11164"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11164"
     }

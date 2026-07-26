@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11178",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "うさぎドロップ",
+    "synopsis": "うさぎドロップ 宇仁田ゆみ ドラマ・青春 日常・ほのぼの",
+    "staff_text": "原作:宇仁田ゆみ",
+    "official_genres": [
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "2f7721369820426a37ae057f32280bf7caee24679486383133cae5b88d928549"
+  },
   "official_genres": [
     "ドラマ/青春",
     "日常/ほのぼの"
@@ -11,9 +25,13 @@
   "original_credit": "宇仁田ゆみ",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +39,21 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -49,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -57,11 +80,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11178"
     }

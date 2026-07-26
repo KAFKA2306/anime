@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20903",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20903",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "もっと To LOVEる-とらぶる-",
+    "synopsis": "もっと To LOVEる-とらぶる- 矢吹健太朗、長谷見沙貴「To LOVEる-とらぶる-」 SF・ファンタジー 恋愛・ラブコメ ドラマ・青春 学園 宇宙 恋愛 怪異・妖怪 高校 幽霊",
+    "staff_text": "原作:矢吹健太朗、長谷見沙貴「To LOVEる-とらぶる-」",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "ceaeb8b55d850f8010df2ac014639cf60862b5e94ca83a5d709b2d5d18b554c3"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,28 +26,42 @@
   "production_year": 2010,
   "original_credit": "矢吹健太朗、長谷見沙貴「To LOVEる-とらぶる-」",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "スペースオペラ",
+    "ラブコメ",
     "学園",
     "宇宙",
+    "成長・挑戦",
     "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "恋愛・ラブコメ",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "スペースオペラ",
+      "ラブコメ"
     ],
     "setting": [
       "学園",
       "宇宙"
     ],
     "theme": [
+      "成長・挑戦",
       "恋愛"
     ],
     "motif": [
@@ -40,9 +69,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -54,17 +84,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20903"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20903"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -73,10 +105,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20903"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "宇宙": [
@@ -84,13 +117,30 @@
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

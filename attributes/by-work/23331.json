@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23331",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23331",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ガンバとカワウソの冒険",
+    "synopsis": "ガンバとカワウソの冒険 斎藤惇夫(岩波書店刊) バトル・アクション SF・ファンタジー キッズ・ファミリー 友情・仲間 仲間",
+    "staff_text": "原作:斎藤惇夫(岩波書店刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "9c3af486c2d584f738c212f9242fad3443c747dc7e10b317bb3c0c7c00f71093"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,26 +27,32 @@
   "original_credit": "斎藤惇夫(岩波書店刊)",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
     "キッズ・ファミリー",
-    "友情・仲間"
+    "スペキュレーティブ判定保留",
+    "友情・仲間",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23331"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23331"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -65,15 +86,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23331"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23331"
     }

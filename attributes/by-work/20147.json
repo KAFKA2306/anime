@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20147",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20147",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "夏のあらし!",
+    "synopsis": "夏のあらし! 小林 尽(掲載:月刊「ガンガンJOKER」スクウェア・エニックス刊) コメディ・ギャグ 恋愛・ラブコメ ドラマ・青春 怪異・妖怪 幽霊",
+    "staff_text": "原作:小林 尽(掲載:月刊「ガンガンJOKER」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "76eb0aa5184dfe6aedcfb2f8c431a5c49acba0a35b47654bdc401f1e9b735c23"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "恋愛/ラブコメ",
@@ -12,10 +27,16 @@
   "original_credit": "小林 尽(掲載:月刊「ガンガンJOKER」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -27,13 +48,21 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20147"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "恋愛/ラブコメ",
@@ -60,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20147"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "恋愛/ラブコメ",
@@ -69,13 +98,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20147"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

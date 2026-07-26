@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26855",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855",
   "attribute_fetched_at": "2026-07-25T10:32:48.098Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔神英雄伝ワタル 終わりなき時の物語",
+    "synopsis": "魔神英雄伝ワタル 終わりなき時の物語 SF・ファンタジー ロボット・メカ",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ"
+    ],
+    "production_year": 1993,
+    "source": "legacy-derived",
+    "sha256": "f7191ae0a8f2e13594a175c8f259bbe08fe2968a2c4bfeb3c8b68a039b3049e1"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ"
@@ -10,16 +24,24 @@
   "production_year": 1993,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "ロボット・メカ"
+    "SF",
+    "ロボット・メカ",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -28,30 +50,34 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
@@ -59,11 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
     }

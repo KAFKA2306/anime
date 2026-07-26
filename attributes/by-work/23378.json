@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23378",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23378",
   "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "モンスターファーム~円盤石の秘密~",
+    "synopsis": "モンスターファーム~円盤石の秘密~ 「モンスターファーム」「モンスターファーム2」 異世界・ハイファンタジー SF・ファンタジー 異世界 召喚",
+    "staff_text": "原作:「モンスターファーム」「モンスターファーム2」",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 1999,
+    "source": "legacy-derived",
+    "sha256": "a772614bc8c25dd622a95dfa1bb8f121e61481925088905ba2a18a40d13ea45c"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,16 +23,24 @@
   "original_credit": "「モンスターファーム」「モンスターファーム2」",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -28,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -42,32 +64,41 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23378"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "召喚"
+        "異世界",
+        "召喚",
+        "モンスター"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23378"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23378"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23378"
     }

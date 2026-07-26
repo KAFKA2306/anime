@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24701",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24701",
   "attribute_fetched_at": "2026-07-25T10:32:41.781Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ろくでなしBLUES",
+    "synopsis": "ろくでなしBLUES 森田まさのり バトル・アクション コメディ・ギャグ 学園 高校",
+    "staff_text": "原作:森田まさのり",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1992,
+    "source": "legacy-derived",
+    "sha256": "176c9539cc3b2503f4af6f8aa2e710d27f6b3b4a9e3091857e7ea868ad8e54f3"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "森田まさのり",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "コメディ・ギャグ",
@@ -22,6 +38,7 @@
       "バトル・アクション",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24701"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24701"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24701"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24701"
     }

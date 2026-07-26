@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27678",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27678",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ファーザー・クリスマス(字幕版)",
+    "synopsis": "ファーザー・クリスマス(字幕版) レイモンド・ブリッグズ キッズ・ファミリー SF・ファンタジー",
+    "staff_text": "原作:レイモンド・ブリッグズ",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "ba73e2f291e80d295b30eac827db5899ed5535950a6b0ca886dbf93c112f44e2"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "SF/ファンタジー"
@@ -11,21 +25,25 @@
   "original_credit": "レイモンド・ブリッグズ",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27678"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27678"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27678"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27678"
     }

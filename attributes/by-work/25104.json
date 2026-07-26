@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25104",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25104",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "結城友奈は勇者である -大満開の章-",
+    "synopsis": "結城友奈は勇者である -大満開の章- Project 2H 異世界・ハイファンタジー SF・ファンタジー バトル・アクション ドラマ・青春 勇者",
+    "staff_text": "原作:Project 2H",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "17a1b517bc9e3e530a912986f932643379f763cf672311a7da252dacb196963b"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,30 +27,45 @@
   "original_credit": "Project 2H",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "異世界ファンタジー",
+    "異世界",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ドラマ・青春"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,19 +75,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25104"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ドラマ/青春"
       ],
       "matched_terms": [
-        "勇者"
+        "勇者",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25104"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -66,11 +97,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25104"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
-        "motif": {}
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25104"
     }

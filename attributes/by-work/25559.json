@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25559",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25559",
   "attribute_fetched_at": "2026-07-25T10:55:20.668Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "チリンの鈴",
+    "synopsis": "チリンの鈴 やなせ・たかし キッズ・ファミリー SF・ファンタジー",
+    "staff_text": "原作:やなせ・たかし",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1978,
+    "source": "legacy-derived",
+    "sha256": "06d170751459d0dcc2247f0e1d87fd2435e83189a19913f478fe2e413a86d4df"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "SF/ファンタジー"
@@ -11,21 +25,25 @@
   "original_credit": "やなせ・たかし",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "キッズ・ファミリー",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25559"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25559"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25559"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25559"
     }

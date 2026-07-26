@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21955",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21955",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ミイラの飼い方",
+    "synopsis": "ミイラの飼い方 空木かける(comico) SF・ファンタジー コメディ・ギャグ 日常・ほのぼの 学園 高校",
+    "staff_text": "原作:空木かける(comico)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "065f783584c29691cdbb35fcd54e40a85fba4806feba2e75df2ecd5f36684731"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ",
@@ -11,27 +26,34 @@
   "production_year": 2018,
   "original_credit": "空木かける(comico)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "学園"
+    "スペキュレーティブ判定保留",
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "コメディ・ギャグ",
-      "日常・ほのぼの"
+      "日常・ほのぼの",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21955"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
@@ -56,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21955"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
@@ -65,15 +87,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21955"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21955"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10295",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10295",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "まかせてイルか!",
+    "synopsis": "まかせてイルか! 大地丙太郎 日常・ほのぼの 家族 職業・仕事 姉妹 仕事",
+    "staff_text": "原作:大地丙太郎",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "7db9f42c3b6f72afd3406dd025f157d9758fb5f0a17a14b21a1cd5942c7abe19"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,24 +23,30 @@
   "original_credit": "大地丙太郎",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "家族",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族",
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10295"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -50,25 +69,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10295"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10295"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "姉妹"
           ],
           "職業・仕事": [
             "仕事"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10295"
     }

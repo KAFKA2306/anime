@@ -1,34 +1,59 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26804",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26804",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "YAT安心!宇宙旅行",
+    "synopsis": "YAT安心!宇宙旅行 西川伸司 SF・ファンタジー 宇宙",
+    "staff_text": "原作:西川伸司",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "137e2c089392343975b7501812a0537a3dd3ce3b07d788aae2d9aad5f57eacf0"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 1996,
   "original_credit": "西川伸司",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "宇宙"
+    "SF",
+    "スペースオペラ",
+    "宇宙",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -40,30 +65,41 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26804"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26804"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26804"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
             "宇宙"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26804"
     }

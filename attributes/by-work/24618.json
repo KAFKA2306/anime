@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24618",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24618",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "歌劇派ステージ ダメプリ ダメ王子VS完璧王子(LOVEルート)",
+    "synopsis": "歌劇派ステージ ダメプリ ダメ王子VS完璧王子(LOVEルート) DAME×PRINCE(NHN PlayArt株式会社) 2.5次元舞台 政治・戦略 国家",
+    "staff_text": "原作:DAME×PRINCE(NHN PlayArt株式会社)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "c7861d1c1376f875c00b29bbece98b185a212ed0c5c8d099f6cac067846b7420"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,16 +23,26 @@
   "original_credit": "DAME×PRINCE(NHN PlayArt株式会社)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "職場",
     "政治・戦略"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "政治・戦略"
     ],
@@ -28,6 +51,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24618"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,22 +74,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24618"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24618"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "政治・戦略": [
-            "国家"
+        "setting": {
+          "職場": [
+            "会社"
           ]
         },
-        "motif": {}
+        "theme": {
+          "政治・戦略": [
+            "政治",
+            "国家",
+            "戦略"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24618"
     }

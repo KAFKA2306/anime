@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10221",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10221",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "撲殺天使ドクロちゃん",
+    "synopsis": "撲殺天使ドクロちゃん おかゆまさき コメディ・ギャグ 魔法",
+    "staff_text": "原作:おかゆまさき",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "ea549356a512d3d737b661fff4a37284c565de2a4874efc8b9d77b2f5ac7e35a"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,14 +23,24 @@
   "original_credit": "おかゆまさき",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +49,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10221"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,19 +72,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10221"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10221"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

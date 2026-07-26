@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21945",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21945",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "博多豚骨ラーメンズ",
+    "synopsis": "博多豚骨ラーメンズ 木崎ちあき(メディアワークス文庫刊) ホラー・サスペンス・ミステリー 推理・謎解き 犯罪・警察 探偵 犯罪",
+    "staff_text": "原作:木崎ちあき(メディアワークス文庫刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "22c17dafc8741e9ddbffac5a5f29aadba84e24f17fe155b96a5128cd0ed5b4bd"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "木崎ちあき(メディアワークス文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ミステリー",
     "推理・謎解き",
     "犯罪・警察"
   ],
@@ -22,6 +38,9 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "推理・謎解き"
@@ -31,6 +50,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21945"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -55,24 +75,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21945"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21945"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

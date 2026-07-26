@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22590",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22590",
   "attribute_fetched_at": "2026-07-25T10:32:41.781Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "三国志 完結編 遥かなる大地",
+    "synopsis": "三国志 完結編 遥かなる大地 歴史・戦記 戦争・ミリタリー ドラマ・青春",
+    "staff_text": "",
+    "official_genres": [
+      "歴史/戦記",
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 1992,
+    "source": "legacy-derived",
+    "sha256": "6270287a1bf9d9ff8aa4b107476bff3d181dea5c6b7d6076a2f2b16164999c82"
+  },
   "official_genres": [
     "歴史/戦記",
     "戦争/ミリタリー",
@@ -12,10 +27,15 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "戦争・ミリタリー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,26 +44,33 @@
       "戦争・ミリタリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "成長・挑戦",
+      "戦争"
+    ],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22590"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "戦争/ミリタリー",
@@ -53,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22590"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "戦争/ミリタリー",
@@ -62,11 +89,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22590"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22590"
     }

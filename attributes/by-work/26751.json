@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26751",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26751",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ぽんのみち",
+    "synopsis": "ぽんのみち IIS-P ドラマ・青春 日常・ほのぼの 料理・グルメ 料理",
+    "staff_text": "原作:IIS-P",
+    "official_genres": [
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "d747b5e40d6fdde5cefa0d1d0aaa1a6db286a0c9d37cb07d97410d87781d109c"
+  },
   "official_genres": [
     "ドラマ/青春",
     "日常/ほのぼの"
@@ -11,10 +25,14 @@
   "original_credit": "IIS-P",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "日常・ほのぼの",
-    "料理・グルメ"
+    "成長・挑戦",
+    "料理・グルメ",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,17 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "料理・グルメ"
+      "成長・挑戦",
+      "料理・グルメ",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26751"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26751"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -60,15 +82,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26751"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26751"
     }

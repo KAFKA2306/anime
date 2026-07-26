@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22107",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22107",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "東京喰種トーキョーグール:re",
+    "synopsis": "東京喰種トーキョーグール:re 石田スイ(集英社「週刊ヤングジャンプ」連載中) バトル・アクション ホラー・サスペンス・ミステリー ドラマ・青春 犯罪・警察 捜査",
+    "staff_text": "原作:石田スイ(集英社「週刊ヤングジャンプ」連載中)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "f69ff5a68c12ca29e5b5d0da681cbeff98ece372f8d19b482a5d8f5153a8a9b7"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,14 @@
   "original_credit": "石田スイ(集英社「週刊ヤングジャンプ」連載中)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
+    "現代日本",
+    "成長・挑戦",
     "犯罪・警察"
   ],
   "ontology_facets": {
@@ -27,13 +46,19 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22107"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -60,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22107"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -69,15 +94,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22107"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "犯罪・警察": [
+            "警察",
+            "犯罪",
             "捜査"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22107"
     }

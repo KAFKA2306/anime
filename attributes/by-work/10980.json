@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10980",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10980",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "こいこい7",
+    "synopsis": "こいこい7 もりしげ 恋愛・ラブコメ バトル・アクション コメディ・ギャグ 学園 宇宙 高校",
+    "staff_text": "原作:もりしげ",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "1c709fabe96fde9a6e31b6bb95da45483ee14472f79f0641e2657ffe87a6a865"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "アクション/バトル",
@@ -12,28 +27,44 @@
   "original_credit": "もりしげ",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "SF",
     "バトル・アクション",
     "コメディ・ギャグ",
+    "スペースオペラ",
+    "ラブコメ",
     "学園",
-    "宇宙"
+    "宇宙",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ",
+      "SF",
       "バトル・アクション",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ラブコメ"
     ],
     "setting": [
       "学園",
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10980"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "アクション/バトル",
@@ -58,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10980"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "アクション/バトル",
@@ -67,7 +98,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10980"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -78,8 +109,21 @@
             "宇宙"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10980"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24056",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24056",
   "attribute_fetched_at": "2026-07-25T10:43:54.548Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "へーい!ブンブー",
+    "synopsis": "へーい!ブンブー ショート SF・ファンタジー キッズ・ファミリー 友情・仲間 仲間",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1985,
+    "source": "legacy-derived",
+    "sha256": "05f66221459fd359623c89d6683ef21dfa118f4f58c949ae505b28e09b1e0e97"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,19 +27,22 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -34,6 +52,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +61,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24056"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24056"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -67,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24056"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24056"
     }

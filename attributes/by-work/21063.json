@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21063",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21063",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "レゴ ネックスナイツ",
+    "synopsis": "レゴ ネックスナイツ バトル・アクション キッズ・ファミリー 魔法 魔術",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "8497eb8e0c657b911771e86a4770cc02d65451dc126d862bd6ca70159ec9e322"
+  },
   "official_genres": [
     "アクション/バトル",
     "キッズ/ファミリー"
@@ -11,16 +25,26 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -29,6 +53,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21063"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -52,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21063"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -60,13 +85,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21063"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

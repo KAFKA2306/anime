@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10466",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10466",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "幻想魔伝 最遊記",
+    "synopsis": "幻想魔伝 最遊記 峰倉かずや(エニックス「月刊Gファンタジー」連載) 異世界・ハイファンタジー バトル・アクション SF・ファンタジー 怪異・妖怪 妖怪 魔王",
+    "staff_text": "原作:峰倉かずや(エニックス「月刊Gファンタジー」連載)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "4f99d610dbfe9c367037127e700118e67a4f6c469d5fb7463ccec8b37d103c0b"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー"
@@ -11,26 +25,40 @@
   "original_credit": "峰倉かずや(エニックス「月刊Gファンタジー」連載)",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "バトル・アクション",
-    "SF・ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "バトル・アクション",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "バトル・アクション"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,18 +73,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10466"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "魔王"
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10466"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -64,13 +93,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10466"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

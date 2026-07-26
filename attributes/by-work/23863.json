@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23863",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23863",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フルーツバスケット 2nd season",
+    "synopsis": "フルーツバスケット 2nd season SF・ファンタジー ドラマ・青春 恋愛・ラブコメ 怪異・妖怪 呪い",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "2836a5962f1b5e9b1f47980849db942cf55e29407ec111a36629c93536866d02"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春",
@@ -10,47 +25,57 @@
   ],
   "production_year": 2019,
   "original_credit": null,
-  "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー",
       "ドラマ・青春",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "花とゆめ"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23863"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -60,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23863"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -69,13 +94,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23863"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

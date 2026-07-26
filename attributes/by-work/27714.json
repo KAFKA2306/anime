@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27714",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27714",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "OVA 乙女はお姉さまに恋してる~2人のエルダー~THE ANIMATION",
+    "synopsis": "OVA 乙女はお姉さまに恋してる~2人のエルダー~THE ANIMATION キャラメルBOX 恋愛・ラブコメ 学園 友情・仲間 学校 友情",
+    "staff_text": "原作:キャラメルBOX",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "3bae8e7e714669dd3bcff495d7f2f0a19ad643cc9c316c63dcde407d7608a957"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,25 +23,34 @@
   "original_credit": "キャラメルBOX",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27714"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -51,14 +73,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27714"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27714"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -68,10 +90,20 @@
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27714"
     }

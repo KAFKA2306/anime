@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26750",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26750",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "道産子ギャルはなまらめんこい",
+    "synopsis": "道産子ギャルはなまらめんこい 伊科田海(集英社「少年ジャンプ+」連載) 恋愛・ラブコメ 学園 高校",
+    "staff_text": "原作:伊科田海(集英社「少年ジャンプ+」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "6e04bef809dd25225a436569cdcc952ef8383dae892e929e52c162471abbc68b"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,9 +23,13 @@
   "original_credit": "伊科田海(集英社「少年ジャンプ+」連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "学園"
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +38,19 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26750"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -52,22 +75,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26750"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26750"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26750"
     }

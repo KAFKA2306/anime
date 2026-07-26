@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26424",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26424",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "無職転生II ~異世界行ったら本気だす~",
+    "synopsis": "無職転生II ~異世界行ったら本気だす~ 理不尽な孫の手(MFブックス 異世界・ハイファンタジー SF・ファンタジー 異世界 学園 家族 魔法 転生 転移 大学 魔術 冒険者 剣と魔法",
+    "staff_text": "原作:理不尽な孫の手(MFブックス",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "0ae84fdefb9ac4adea7ba045ff580dc995b305ad56cd95a5dda9d3eab1239e3f"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,13 +23,21 @@
   "original_credit": "理不尽な孫の手(MFブックス",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "学園",
     "家族",
-    "魔法"
+    "旅・冒険",
+    "魔法",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -24,20 +45,27 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
     "theme": [
-      "家族"
+      "家族",
+      "旅・冒険"
     ],
     "motif": [
-      "魔法"
+      "魔法",
+      "転生"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -54,11 +82,13 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26424"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
+        "魔術",
         "異世界",
         "転生",
         "転移",
@@ -68,14 +98,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26424"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26424"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -84,18 +114,35 @@
             "転移"
           ],
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "家族": [
             "家族"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "魔法": [
             "魔法",
             "魔術"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生",
+            "転移"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21092",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21092",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "GANTZ (オンエア版)",
+    "synopsis": "GANTZ (オンエア版) 奥 浩哉 (集英社『週刊ヤングジャンプ』連載中) SF・ファンタジー バトル・アクション ドラマ・青春 学園 宇宙 学校 高校",
+    "staff_text": "原作:奥 浩哉 (集英社『週刊ヤングジャンプ』連載中)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "b88cc954ae6c9bfd204db619e2ee12727fef942a8f7d005eee2f4e067fe2ce1d"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,34 +26,46 @@
   "production_year": 2004,
   "original_credit": "奥 浩哉 (集英社『週刊ヤングジャンプ』連載中)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
     "ドラマ・青春",
+    "スペースオペラ",
     "学園",
-    "宇宙"
+    "宇宙",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "学園",
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -52,17 +79,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21092"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21092"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -71,10 +100,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21092"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ],
@@ -82,8 +112,17 @@
             "宇宙"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21092"
     }

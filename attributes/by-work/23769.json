@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23769",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23769",
   "attribute_fetched_at": "2026-07-25T10:32:14.552Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔法の妖精 ペルシャ",
+    "synopsis": "魔法の妖精 ペルシャ 青沼貴子(集英社刊「週刊マーガレット」連載『ペルシャがすき!』) SF・ファンタジー 恋愛・ラブコメ 魔法",
+    "staff_text": "原作:青沼貴子(集英社刊「週刊マーガレット」連載『ペルシャがすき!』)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 1984,
+    "source": "legacy-derived",
+    "sha256": "8994b2de1c37f5af1fbcc16b7c1a13a8523295b16cb6986bcb3a1021296ac16a"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,10 +24,17 @@
   "production_year": 1984,
   "original_credit": "青沼貴子(集英社刊「週刊マーガレット」連載『ペルシャがすき!』)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "魔法"
   ],
   "ontology_facets": {
@@ -21,19 +42,26 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -47,16 +75,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23769"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法",
+        "妖精"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23769"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -64,13 +95,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23769"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

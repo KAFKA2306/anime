@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28960",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28960",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画クレヨンしんちゃん 襲来!!宇宙人シリリ",
+    "synopsis": "映画クレヨンしんちゃん 襲来!!宇宙人シリリ 臼井儀人(らくだ社) キッズ・ファミリー ショート コメディ・ギャグ 宇宙 家族",
+    "staff_text": "原作:臼井儀人(らくだ社)",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "b57afaf5b4f37772316719994e09c9fdc77fd8898d3880805e0c2a2712eb4873"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "ショート",
@@ -12,10 +27,16 @@
   "original_credit": "臼井儀人(らくだ社)",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
+    "SF",
     "ショート",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙",
     "家族"
   ],
@@ -23,8 +44,12 @@
     "source": [],
     "genre": [
       "キッズ・ファミリー",
+      "SF",
       "ショート",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -37,6 +62,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28960"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -61,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28960"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "ショート",
@@ -70,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28960"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -82,7 +108,12 @@
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28960"
     }

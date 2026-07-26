@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20989",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20989",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "迷家-マヨイガ-",
+    "synopsis": "迷家-マヨイガ- diomedea・Ponycanyon ドラマ・青春 ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:diomedea・Ponycanyon",
+    "official_genres": [
+      "ドラマ/青春",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "bcd293b3ca1e7a6c4183e47a53db68d19f4d3f15324eca6da1129228ab85afdd"
+  },
   "official_genres": [
     "ドラマ/青春",
     "ホラー/サスペンス/推理"
@@ -11,9 +25,12 @@
   "original_credit": "diomedea・Ponycanyon",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +38,20 @@
       "ドラマ・青春",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20989"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "ホラー/サスペンス/推理"
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20989"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "ホラー/サスペンス/推理"
@@ -57,11 +78,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20989"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20989"
     }

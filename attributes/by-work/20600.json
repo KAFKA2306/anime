@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20600",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20600",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "新あたしンち",
+    "synopsis": "新あたしンち けらえいこ コメディ・ギャグ 日常・ほのぼの キッズ・ファミリー 学園 家族 高校",
+    "staff_text": "原作:けらえいこ",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "f98f2961e6a4fa152769d780e086e013faef39aaeae4caec74df4a232a866271"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの",
@@ -12,12 +27,15 @@
   "original_credit": "けらえいこ",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
     "キッズ・ファミリー",
     "学園",
-    "家族"
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -26,15 +44,18 @@
       "日常・ほのぼの",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20600"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -59,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20600"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの",
@@ -68,19 +89,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20600"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "家族": [
             "家族"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20600"
     }

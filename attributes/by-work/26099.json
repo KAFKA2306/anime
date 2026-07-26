@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26099",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26099",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "青山オペレッタ THE STAGE ~ファルチェ・インヴェルソ/逆さの三日月~(メイキング付)",
+    "synopsis": "青山オペレッタ THE STAGE ~ファルチェ・インヴェルソ/逆さの三日月~(メイキング付) 2.5次元舞台 歴史・時代劇 音楽・アイドル 料理・グルメ 明治 音楽 食堂",
+    "staff_text": "",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "4a1de4e8502b73f319c49e7c5f8ae4ae8193a4db052a4bb2a46a3c4242bac8e2"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "歴史・時代劇",
@@ -21,6 +36,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -33,6 +49,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -41,13 +58,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26099"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,29 +72,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26099"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26099"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ],
           "料理・グルメ": [
+            "料理",
+            "グルメ",
             "食堂"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26099"
     }

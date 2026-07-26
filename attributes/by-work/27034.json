@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27034",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27034",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "怪異と乙女と神隠し",
+    "synopsis": "怪異と乙女と神隠し ぬじま「怪異と乙女と神隠し」(小学館「やわらかスピリッツ」連載中) SF・ファンタジー ホラー・サスペンス・ミステリー 友情・仲間 怪異・妖怪 友情 怪異",
+    "staff_text": "原作:ぬじま「怪異と乙女と神隠し」(小学館「やわらかスピリッツ」連載中)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "ae606b55be9ac9bc9184f5cd583a58b193f904b3df04ee7118e29cc70d048c46"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理"
@@ -10,18 +24,24 @@
   "production_year": 2024,
   "original_credit": "ぬじま「怪異と乙女と神隠し」(小学館「やわらかスピリッツ」連載中)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "友情・仲間",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -32,6 +52,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27034"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -55,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27034"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -63,16 +84,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27034"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "怪異"
           ]
         }

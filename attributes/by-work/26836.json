@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26836",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26836",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "「バクマン。」THE STAGE",
+    "synopsis": "「バクマン。」THE STAGE 大場つぐみ 小畑 健「バクマン。」(集英社 ジャンプ コミックス刊) 2.5次元舞台 学園 高校",
+    "staff_text": "原作:大場つぐみ 小畑 健「バクマン。」(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "1aad45f41f4dbbf881e1d733243e8d60d0c9b6c9fb19d6a212a68b442347aeab"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "大場つぐみ 小畑 健「バクマン。」(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園"
@@ -21,6 +36,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -30,6 +46,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26836"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,22 +72,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26836"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26836"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26836"
     }

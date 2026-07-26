@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11190",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11190",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ロボティクス・ノーツ",
+    "synopsis": "ロボティクス・ノーツ 志倉千代丸,MAGES. ドラマ・青春 ロボット・メカ スポーツ・競技 学園 成長・挑戦 高校 青春 ロボット",
+    "staff_text": "原作:志倉千代丸,MAGES.",
+    "official_genres": [
+      "ドラマ/青春",
+      "ロボット/メカ",
+      "スポーツ/競技"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "d7da8d34f9f8f70132f43f7d4bab1d78e842eca09e0cda0573dc29e5d1e6fb7c"
+  },
   "official_genres": [
     "ドラマ/青春",
     "ロボット/メカ",
@@ -12,31 +27,44 @@
   "original_credit": "志倉千代丸,MAGES.",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "SF",
     "ロボット・メカ",
     "スポーツ・競技",
+    "ロボットSF",
     "学園",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春",
+      "SF",
       "ロボット・メカ",
       "スポーツ・競技"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11190"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "ロボット/メカ",
@@ -61,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11190"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "ロボット/メカ",
@@ -70,20 +98,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11190"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

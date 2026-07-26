@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22572",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22572",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "私に天使が舞い降りた!",
+    "synopsis": "私に天使が舞い降りた! 椋木ななつ(コミック百合姫 コメディ・ギャグ",
+    "staff_text": "原作:椋木ななつ(コミック百合姫",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "4d1015ec65f7658acdad87e5206975ae3c0f10b478c0605da459fc387df41423"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,21 +23,29 @@
   "original_credit": "椋木ななつ(コミック百合姫",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "ファンタジー"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -41,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22572"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -49,18 +70,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22572"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22572"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22572"
     }

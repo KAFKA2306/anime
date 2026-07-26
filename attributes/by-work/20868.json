@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20868",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20868",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "僕のヒーローアカデミア",
+    "synopsis": "僕のヒーローアカデミア 堀越耕平(集英社「週刊少年ジャンプ」連載) バトル・アクション ドラマ・青春 学園 成長・挑戦 犯罪・警察 高校 成長 犯罪",
+    "staff_text": "原作:堀越耕平(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "1c7bad5942f66c62f79bb7c4ce6dacc2d16027b30978420902f0307207a7cd1c"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,6 +25,8 @@
   "original_credit": "堀越耕平(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
@@ -26,6 +42,7 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -37,6 +54,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20868"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -63,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20868"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -71,23 +89,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20868"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20868"
     }

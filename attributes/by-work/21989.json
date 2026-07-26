@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21989",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21989",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "衛宮さんちの今日のごはん",
+    "synopsis": "衛宮さんちの今日のごはん 「衛宮さんちの今日のごはん」TAa 日常・ほのぼの 料理・グルメ 料理",
+    "staff_text": "原作:「衛宮さんちの今日のごはん」TAa",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "89bb2953c48608b1dab8d83885d2ea540b6fd6f6eb69750c6a5f495d25128730"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,22 +23,28 @@
   "original_credit": "「衛宮さんちの今日のごはん」TAa",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "料理・グルメ"
+    "料理・グルメ",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "料理・グルメ"
+      "料理・グルメ",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21989"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -48,22 +67,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21989"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21989"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21989"
     }

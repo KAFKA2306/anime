@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24059",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24059",
   "attribute_fetched_at": "2026-07-25T10:44:16.911Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "燃えろ!トップストライカー",
+    "synopsis": "燃えろ!トップストライカー 日本アニメーション スポーツ・競技 ドラマ・青春 成長・挑戦 挑戦",
+    "staff_text": "原作:日本アニメーション",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 1991,
+    "source": "legacy-derived",
+    "sha256": "badce5d48f48ad22e48c972a461e594d49d69609844dfe49376fb2d20e309af7"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": "日本アニメーション",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "スポーツ・競技",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24059"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24059"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -60,15 +80,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24059"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24059"
     }

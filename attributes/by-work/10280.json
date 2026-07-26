@@ -1,31 +1,48 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10280",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10280",
   "attribute_fetched_at": "2026-07-25T10:22:31.564Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "幻魔大戦 -神話前夜の章-",
+    "synopsis": "幻魔大戦 -神話前夜の章- 石ノ森章太郎 SF・ファンタジー",
+    "staff_text": "原作:石ノ森章太郎",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2002,
+    "source": "legacy-derived",
+    "sha256": "bac0a1d53dd831e54a43e0e5bc6ef70facfc8722083cadb1542f18b7245ce0bc"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2002,
   "original_credit": "石ノ森章太郎",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "unknown",
     "canonical_tags": "verified",
     "ontology_facets": "verified"
   },
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10280"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10280"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10280"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10280"
     }

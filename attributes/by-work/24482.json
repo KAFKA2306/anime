@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24482",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24482",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ぶらどらぶ",
+    "synopsis": "ぶらどらぶ ショート コメディ・ギャグ SF・ファンタジー 学園 友情・仲間 怪異・妖怪 学校 絆 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "6c74803c0098775bd7aacb59bf17627efc12bc803b0172ffdbec8eeb3c6c23e1"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -10,24 +25,28 @@
   ],
   "production_year": 2020,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "学園",
     "友情・仲間",
     "怪異・妖怪"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
       "ショート",
       "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -42,23 +61,22 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "コミック"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24482"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -68,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24482"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -77,21 +95,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24482"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

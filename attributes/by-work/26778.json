@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26778",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26778",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "『永久少年 Eternal Boys』特別編集版",
+    "synopsis": "『永久少年 Eternal Boys』特別編集版 満福芸能プロダクション ドラマ・青春 音楽・アイドル アイドル",
+    "staff_text": "原作:満福芸能プロダクション",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "321d27432acb4766d05c9e6611e7133e27d5e2446e576507c01a5617b9e1648c"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "満福芸能プロダクション",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -19,13 +35,16 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26778"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -48,22 +67,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26778"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26778"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26778"
     }

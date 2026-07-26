@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10087",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10087",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "機神咆吼デモンベイン",
+    "synopsis": "機神咆吼デモンベイン 角川書店,デジターボ,Nitroplus ロボット・メカ SF・ファンタジー 推理・謎解き 魔法 怪異・妖怪 犯罪・警察 探偵 魔術 魔導 ロボット 鬼 犯罪",
+    "staff_text": "原作:角川書店,デジターボ,Nitroplus",
+    "official_genres": [
+      "ロボット/メカ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "a5f9987cbac9bc944809e05b2121bc16f07ebca57ee841a30002dae77e6fc1a6"
+  },
   "official_genres": [
     "ロボット/メカ",
     "SF/ファンタジー"
@@ -10,10 +24,19 @@
   "production_year": 2006,
   "original_credit": "角川書店,デジターボ,Nitroplus",
   "source_origin": null,
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "ファンタジー",
+    "SF",
     "ロボット・メカ",
-    "SF・ファンタジー",
+    "現代ファンタジー",
+    "ロボットSF",
+    "ミステリー",
     "推理・謎解き",
     "魔法",
     "怪異・妖怪",
@@ -22,8 +45,14 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ロボット・メカ",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "SF",
+      "ロボット・メカ"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ロボットSF",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -37,9 +66,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -51,16 +81,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10087"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ",
+        "魔法",
+        "魔術",
+        "魔導"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10087"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
@@ -68,27 +104,48 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10087"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術",
             "魔導"
           ],
           "ロボット・メカ": [
-            "ロボット"
+            "ロボット",
+            "メカ"
           ],
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
           ],
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法",
+            "怪異"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

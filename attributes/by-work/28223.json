@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28223",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28223",
   "attribute_fetched_at": "2026-07-25T10:44:38.235Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "鎧伝サムライトルーパー外伝",
+    "synopsis": "鎧伝サムライトルーパー外伝 矢立 肇 バトル・アクション SF・ファンタジー",
+    "staff_text": "原作:矢立 肇",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1989,
+    "source": "legacy-derived",
+    "sha256": "18192cbd2011e06f65a373fe7011c50be9a0479de64a2e347305310e771ca004"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー"
@@ -11,21 +25,25 @@
   "original_credit": "矢立 肇",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28223"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28223"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -57,11 +75,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28223"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28223"
     }

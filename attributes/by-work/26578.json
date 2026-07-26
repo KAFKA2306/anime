@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26578",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26578",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "オッドタクシー イン・ザ・ウッズ",
+    "synopsis": "オッドタクシー イン・ザ・ウッズ ホラー・サスペンス・ミステリー 学園 音楽・アイドル 大学 アイドル",
+    "staff_text": "",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "367f3e7f8602b0d669c10d0fb965f8787bc07d758514acca88f48afe3a0264c2"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "学園",
@@ -20,6 +35,7 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -29,6 +45,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +54,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26578"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -51,26 +68,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26578"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26578"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26578"
     }

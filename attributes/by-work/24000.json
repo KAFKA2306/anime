@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24000",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24000",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "CLANNAD AFTER STORY 番外編 「一年前の出来事」",
+    "synopsis": "CLANNAD AFTER STORY 番外編 「一年前の出来事」 Key ドラマ・青春 恋愛・ラブコメ 学園 高校",
+    "staff_text": "原作:Key",
+    "official_genres": [
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "407cd0e774663f06a7079b331db863c311a1c981a96253b7fb4419d4213908b8"
+  },
   "official_genres": [
     "ドラマ/青春",
     "恋愛/ラブコメ"
@@ -11,10 +25,15 @@
   "original_credit": "Key",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "恋愛・ラブコメ",
-    "学園"
+    "ラブコメ",
+    "学園",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +41,20 @@
       "ドラマ・青春",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24000"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -52,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24000"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ"
@@ -60,15 +86,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24000"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24000"
     }

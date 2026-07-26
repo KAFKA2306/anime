@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11352",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11352",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "幕末Rock",
+    "synopsis": "幕末Rock バトル・アクション 歴史・戦記 ドラマ・青春 歴史・時代劇 音楽・アイドル 幕末 アイドル",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記",
+      "ドラマ/青春"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "7e039ce548c4e1897f462c845c0eea79eb3e7b74d27d45cc94b76df3262c7d21"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記",
@@ -12,11 +27,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
     "ドラマ・青春",
     "歴史・時代劇",
+    "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -26,15 +44,18 @@
       "歴史・戦記",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11352"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記",
@@ -59,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11352"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記",
@@ -68,19 +89,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11352"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11352"
     }

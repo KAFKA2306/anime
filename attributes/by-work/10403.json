@@ -1,31 +1,48 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10403",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10403",
   "attribute_fetched_at": "2026-07-25T10:44:56.484Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "元祖 爆れつハンター",
+    "synopsis": "元祖 爆れつハンター あかほりさとる,臣士れい SF・ファンタジー",
+    "staff_text": "原作:あかほりさとる,臣士れい",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 1997,
+    "source": "legacy-derived",
+    "sha256": "cde06583d584beee5fd89a0549371ee58b28836048b80e594983a6d00c39f34f"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 1997,
   "original_credit": "あかほりさとる,臣士れい",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "unknown",
     "canonical_tags": "verified",
     "ontology_facets": "verified"
   },
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10403"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10403"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10403"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10403"
     }

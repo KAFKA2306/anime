@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27723",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27723",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台『東京喰種トーキョーグール』~或いは、超越的美食学をめぐる瞑想録~",
+    "synopsis": "舞台『東京喰種トーキョーグール』~或いは、超越的美食学をめぐる瞑想録~ 石田スイ『東京喰種トーキョーグール』(集英社「週刊ヤングジャンプ」連載) 2.5次元舞台 料理・グルメ グルメ レストラン",
+    "staff_text": "原作:石田スイ『東京喰種トーキョーグール』(集英社「週刊ヤングジャンプ」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "0a0206e0aba0e46206c0994bcdd8a375dc79086e5e7faabbbb8de8d77112c90c"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "石田スイ『東京喰種トーキョーグール』(集英社「週刊ヤングジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代日本",
     "料理・グルメ"
   ],
   "ontology_facets": {
@@ -21,7 +37,10 @@
     "genre": [
       "2.5次元舞台"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "現代日本"
+    ],
     "theme": [
       "料理・グルメ"
     ],
@@ -30,6 +49,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27723"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,23 +74,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27723"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27723"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
         "theme": {
           "料理・グルメ": [
+            "料理",
             "グルメ",
             "レストラン"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27723"
     }

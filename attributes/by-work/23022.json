@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23022",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23022",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王ARC-V",
+    "synopsis": "遊☆戯☆王ARC-V 高橋和希 スタジオ・ダイス(「週刊少年ジャンプ」) バトル・アクション スポーツ・競技 異世界 召喚",
+    "staff_text": "原作:高橋和希 スタジオ・ダイス(「週刊少年ジャンプ」)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "5e22115f9e90dc6a46e19d5b80bbb8b75e80cd482d2bec07e3986d7b40bff434"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,10 +25,17 @@
   "original_credit": "高橋和希 スタジオ・ダイス(「週刊少年ジャンプ」)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "スポーツ・競技",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +43,22 @@
     ],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "スポーツ・競技"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23022"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -57,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23022"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -65,15 +93,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23022"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23022"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11276",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11276",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "みんな集まれ!ファルコム学園",
+    "synopsis": "みんな集まれ!ファルコム学園 日本ファルコム株式会社(「月刊FALCOM MAGAZINE」連載中)新久保だいすけ ショート コメディ・ギャグ 異世界 学園 魔法 召喚 魔導",
+    "staff_text": "原作:日本ファルコム株式会社(「月刊FALCOM MAGAZINE」連載中)新久保だいすけ",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "31fe1e0e7208b2945b11dc1323802df1d5098c8a38378029f5bf816534019b97"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,22 +25,36 @@
   "original_credit": "日本ファルコム株式会社(「月刊FALCOM MAGAZINE」連載中)新久保だいすけ",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "学園",
+    "職場",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界",
-      "学園"
+      "学園",
+      "職場"
     ],
     "theme": [],
     "motif": [
@@ -36,6 +64,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11276"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -59,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11276"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -67,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11276"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -76,12 +105,25 @@
           ],
           "学園": [
             "学園"
+          ],
+          "職場": [
+            "会社"
           ]
         },
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔導"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

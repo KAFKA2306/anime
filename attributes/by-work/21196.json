@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21196",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21196",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "歌劇「明治東亰恋伽~朧月の黒き猫~」",
+    "synopsis": "歌劇「明治東亰恋伽~朧月の黒き猫~」 「明治東亰恋伽」MAGES. 2.5次元舞台 歴史・時代劇 怪異・妖怪 明治 妖怪",
+    "staff_text": "原作:「明治東亰恋伽」MAGES.",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "f9a8dc1f6ab967ece89b74d8ade28c3d39df754a4a8bc1f830129725750ec1da"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "「明治東亰恋伽」MAGES.",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
     "歴史・時代劇",
     "怪異・妖怪"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "歴史・時代劇"
@@ -31,6 +50,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21196"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -53,24 +73,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21196"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21196"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

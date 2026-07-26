@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26065",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26065",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "解雇された暗黒兵士(30代)のスローなセカンドライフ",
+    "synopsis": "解雇された暗黒兵士(30代)のスローなセカンドライフ 岡沢六十四 異世界・ハイファンタジー SF・ファンタジー 魔法 魔王 冒険者",
+    "staff_text": "原作:岡沢六十四",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "cad9f01f71ca90e798b9a29b913f9808f1dfb7a4c4254fa43dc280d392659be7"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,24 +23,41 @@
   "original_credit": "岡沢六十四",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -42,30 +72,48 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26065"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
         "魔王",
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26065"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26065"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

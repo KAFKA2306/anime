@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10272",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10272",
   "attribute_fetched_at": "2026-07-25T10:21:27.736Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "おたくの星座 I・IIAN ADVENTURE IN THE OTAKU GALAXY",
+    "synopsis": "おたくの星座 I・IIAN ADVENTURE IN THE OTAKU GALAXY 江口寿史、本宮ひろ志 コメディ・ギャグ",
+    "staff_text": "原作:江口寿史、本宮ひろ志",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1994,
+    "source": "legacy-derived",
+    "sha256": "a0c6794d1b4850bc91b94b9f9343324a6f88a769ff47b0eb43b160cd1dda2125"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "江口寿史、本宮ひろ志",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ"
   ],
@@ -18,11 +33,13 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10272"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10272"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10272"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10272"
     }

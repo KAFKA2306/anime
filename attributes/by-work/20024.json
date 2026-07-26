@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20024",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場アニメ どーにゃつ",
+    "synopsis": "劇場アニメ どーにゃつ コザキユースケ(掲載「ヤングガンガン」スクウェア・エニックス刊) ショート 友情・仲間 料理・グルメ 仲間 菓子",
+    "staff_text": "原作:コザキユースケ(掲載「ヤングガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "f87d035687474565c9425b089d93c5b59d61013c2a13abfe59eb37df47cea69c"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "コザキユースケ(掲載「ヤングガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "友情・仲間",
@@ -22,6 +37,7 @@
     "genre": [
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -32,6 +48,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -56,25 +73,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "料理・グルメ": [
+            "料理",
+            "グルメ",
             "菓子"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20024"
     }

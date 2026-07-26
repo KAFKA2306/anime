@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22831",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22831",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "惡の華",
+    "synopsis": "惡の華 押見修造(講談社「別冊少年マガジン」連載) ホラー・サスペンス・ミステリー ドラマ・青春 成長・挑戦 青春",
+    "staff_text": "原作:押見修造(講談社「別冊少年マガジン」連載)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "fbf1967c04e465d251005aa7dfef70b31497262af3957f007532cf8de61b084b"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春"
@@ -11,6 +25,8 @@
   "original_credit": "押見修造(講談社「別冊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
@@ -24,6 +40,7 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -31,6 +48,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22831"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22831"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -64,15 +82,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22831"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22831"
     }

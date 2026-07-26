@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10725",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10725",
   "attribute_fetched_at": "2026-07-25T10:44:31.771Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "はじまりの冒険者たち~レジェンド・オブ・クリスタニア~",
+    "synopsis": "はじまりの冒険者たち~レジェンド・オブ・クリスタニア~ 水野 良 異世界・ハイファンタジー SF・ファンタジー 異世界 友情・仲間 魔法 仲間 冒険者 剣と魔法",
+    "staff_text": "原作:水野 良",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 1995,
+    "source": "legacy-derived",
+    "sha256": "627a2ccceae03b8eb7230d76ef2270f7799b4a15bd994636ef3df6647bf71881"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,30 +23,43 @@
   "original_credit": "水野 良",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "友情・仲間",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "旅・冒険"
     ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -48,11 +74,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10725"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
         "異世界",
         "冒険者",
         "剣と魔法"
@@ -60,14 +87,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10725"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10725"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -76,11 +103,23 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11167",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11167",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ブラッドラッド",
+    "synopsis": "ブラッドラッド 小玉有起(角川書店 ヤングエース連載 角川コミックス・エース刊) バトル・アクション コメディ・ギャグ ホラー・サスペンス・ミステリー 怪異・妖怪 幽霊 鬼",
+    "staff_text": "原作:小玉有起(角川書店 ヤングエース連載 角川コミックス・エース刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "47180f3d4358bc99ead76b7d979520b7b5af7359c5800d355d84aa36a02f5c00"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ",
@@ -12,10 +27,13 @@
   "original_credit": "小玉有起(角川書店 ヤングエース連載 角川コミックス・エース刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "コメディ・ギャグ",
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -27,6 +45,9 @@
       "コメディ・ギャグ",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [],
     "motif": [
@@ -34,6 +55,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11167"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ",
@@ -61,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11167"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ",
@@ -70,14 +92,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11167"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

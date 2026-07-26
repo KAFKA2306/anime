@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10258",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "GADGUARD",
+    "synopsis": "GADGUARD いづなよしつね,GONZO,錦織博 バトル・アクション ロボット・メカ ドラマ・青春 友情・仲間 仲間 メカ",
+    "staff_text": "原作:いづなよしつね,GONZO,錦織博",
+    "official_genres": [
+      "アクション/バトル",
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "99edb0acbdaea2e399d50ff95dc441b520e15fca457354ccca7faa8eabb6a235"
+  },
   "official_genres": [
     "アクション/バトル",
     "ロボット/メカ",
@@ -12,28 +27,41 @@
   "original_credit": "いづなよしつね,GONZO,錦織博",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "ロボット・メカ",
     "ドラマ・青春",
-    "友情・仲間"
+    "ロボットSF",
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "ロボット・メカ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ロボット/メカ",
@@ -58,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ロボット/メカ",
@@ -67,17 +95,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10258"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
             "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

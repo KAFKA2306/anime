@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22067",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22067",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画ドキドキ!プリキュア マナ結婚!!? 未来につなぐ希望のドレス",
+    "synopsis": "映画ドキドキ!プリキュア マナ結婚!!? 未来につなぐ希望のドレス 東堂いづみ SF・ファンタジー バトル・アクション キッズ・ファミリー",
+    "staff_text": "原作:東堂いづみ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "1daef3754553288fbe66c2d6136b01a5494efd6500d7e8d771bc17a78dd21752"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,29 +26,38 @@
   "production_year": 2013,
   "original_credit": "東堂いづみ",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,17 +67,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22067"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "未来"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22067"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -62,11 +88,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22067"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "結婚"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22067"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28839",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28839",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "『マリッジトキシン』",
+    "synopsis": "『マリッジトキシン』 静脈 バトル・アクション 恋愛・ラブコメ 職業・仕事 仕事",
+    "staff_text": "原作:静脈",
+    "official_genres": [
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "9e9bd76545824f47bc0190c71d4132f8fc056d364d277271ea493ba2a2f0858e"
+  },
   "official_genres": [
     "アクション/バトル",
     "恋愛/ラブコメ"
@@ -11,9 +25,13 @@
   "original_credit": "静脈",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,13 +40,18 @@
       "バトル・アクション",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28839"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28839"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -60,15 +83,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28839"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28839"
     }

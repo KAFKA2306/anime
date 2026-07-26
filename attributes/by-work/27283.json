@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27283",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ダンダダン",
+    "synopsis": "ダンダダン 龍幸伸(集英社「少年ジャンプ+」連載) バトル・アクション ホラー・サスペンス・ミステリー ドラマ・青春 宇宙 成長・挑戦 怪異・妖怪 医療 青春 幽霊 呪い 病院",
+    "staff_text": "原作:龍幸伸(集英社「少年ジャンプ+」連載)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "79d499e789d794ca3bcf1a53f8f8554a13a8f9dc9f86e71b9a1f6535dd23d5b3"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,17 @@
   "original_credit": "龍幸伸(集英社「少年ジャンプ+」連載)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "スペースオペラ",
     "宇宙",
     "成長・挑戦",
     "怪異・妖怪",
@@ -27,8 +49,13 @@
     ],
     "genre": [
       "バトル・アクション",
+      "SF",
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -42,6 +69,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -58,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -68,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -77,7 +105,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27283"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -86,16 +114,29 @@
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊",
             "呪い"
           ],
           "医療": [
+            "医療",
             "病院"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

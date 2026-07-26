@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10144",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10144",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "OVA 『ToHeart2 adplus』",
+    "synopsis": "OVA 『ToHeart2 adplus』 「ToHeart2」(AQUAPLUS) 恋愛・ラブコメ",
+    "staff_text": "原作:「ToHeart2」(AQUAPLUS)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "579c50f924b08567b80ae1f26fbc0d6e88c4d885e226cddf75305be26ca53dec"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,24 +23,34 @@
   "original_credit": "「ToHeart2」(AQUAPLUS)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10144"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -45,18 +68,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10144"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10144"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10144"
     }

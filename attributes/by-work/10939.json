@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10939",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10939",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "よんでますよ、アザゼルさん。",
+    "synopsis": "よんでますよ、アザゼルさん。 久保保久(講談社「イブニング」連載) コメディ・ギャグ ショート 異世界 推理・謎解き 職業・仕事 魔法 召喚 探偵 働く 魔導",
+    "staff_text": "原作:久保保久(講談社「イブニング」連載)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "2486238741a34b9d8609b207265b8a6b93e15c23df3eb79260d06fb5dd49ef43"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,9 +25,17 @@
   "original_credit": "久保保久(講談社「イブニング」連載)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
     "ショート",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "ミステリー",
     "異世界",
     "推理・謎解き",
     "職業・仕事",
@@ -23,7 +45,13 @@
     "source": [],
     "genre": [
       "コメディ・ギャグ",
+      "ファンタジー",
       "ショート"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "ミステリー"
     ],
     "setting": [
       "異世界"
@@ -39,6 +67,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -53,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10939"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -62,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10939"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -70,24 +99,43 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10939"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法",
             "魔導"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23313",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23313",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "戦争童話集「焼跡の、お菓子の木」",
+    "synopsis": "戦争童話集「焼跡の、お菓子の木」 野坂昭如 戦争・ミリタリー キッズ・ファミリー 料理・グルメ 菓子",
+    "staff_text": "原作:野坂昭如",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "9803d32f7dd0e5e5ce8c2061c013257ecaeff2d50c361efba5291e8fcb5ba043"
+  },
   "official_genres": [
     "戦争/ミリタリー",
     "キッズ/ファミリー"
@@ -11,10 +25,14 @@
   "original_credit": "野坂昭如",
   "source_origin": null,
   "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "戦争・ミリタリー",
     "キッズ・ファミリー",
-    "料理・グルメ"
+    "料理・グルメ",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "戦争・ミリタリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "料理・グルメ"
+      "料理・グルメ",
+      "戦争"
     ],
-    "motif": [],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23313"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "戦争/ミリタリー",
         "キッズ/ファミリー"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23313"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "戦争/ミリタリー",
         "キッズ/ファミリー"
@@ -60,15 +83,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23313"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "料理・グルメ": [
+            "料理",
+            "グルメ",
             "菓子"
+          ],
+          "戦争": [
+            "戦争"
           ]
         },
-        "motif": {}
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23313"
     }

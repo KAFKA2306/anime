@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23849",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23849",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "がんばれ!ルルロロ 第3シリーズ",
+    "synopsis": "がんばれ!ルルロロ 第3シリーズ 文・あいはら ひろゆき 絵・あだち なみ「くまのがっこう ジャッキーのいもうと」より ショート SF・ファンタジー キッズ・ファミリー 成長・挑戦 家族 成長",
+    "staff_text": "原作:文・あいはら ひろゆき 絵・あだち なみ「くまのがっこう ジャッキーのいもうと」より",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "f1ce31a8411dc1b35b2dbd5b0ef583885902820f79668184cdf69c473aea2085"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,10 +27,12 @@
   "original_credit": "文・あいはら ひろゆき 絵・あだち なみ「くまのがっこう ジャッキーのいもうと」より",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ショート",
-    "SF・ファンタジー",
     "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
     "成長・挑戦",
     "家族"
   ],
@@ -23,9 +40,10 @@
     "source": [],
     "genre": [
       "ショート",
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -36,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23849"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -60,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23849"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -69,18 +88,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23849"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "家族": [
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23849"
     }

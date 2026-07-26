@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26280",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26280",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "江戸前エルフ",
+    "synopsis": "江戸前エルフ 樋口彰彦(講談社「少年マガジンエッジ」連載) 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ 日常・ほのぼの 異世界 歴史・時代劇 召喚 江戸 エルフ",
+    "staff_text": "原作:樋口彰彦(講談社「少年マガジンエッジ」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "759c7d646b5a8e933bc1ad8aa2d84d59c156383312711af3dca6d94fc78bcd83"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ",
@@ -12,13 +27,19 @@
   "original_credit": "樋口彰彦(講談社「少年マガジンエッジ」連載)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
     "日常・ほのぼの",
+    "異世界ファンタジー",
     "異世界",
-    "歴史・時代劇"
+    "歴史・時代劇",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -26,18 +47,24 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ",
       "日常・ほのぼの"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
       "歴史・時代劇"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -54,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26280"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
@@ -68,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26280"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
@@ -77,7 +104,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26280"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -85,11 +112,22 @@
             "召喚"
           ],
           "歴史・時代劇": [
-            "江戸"
+            "江戸",
+            "時代劇"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26280"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24440",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24440",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "おとなの防具屋さんII ラグジュアリー版",
+    "synopsis": "おとなの防具屋さんII ラグジュアリー版 斐宮ふみ 異世界・ハイファンタジー ショート コメディ・ギャグ SF・ファンタジー 職業・仕事 魔法 働く 魔王 冒険者",
+    "staff_text": "原作:斐宮ふみ",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "764ede4929713c16e04a64c4182a94504d15fe95efdf8e562dde68fa6e3f473b"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -12,25 +27,40 @@
   "original_credit": "斐宮ふみ",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "ショート",
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
     "職業・仕事",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "ショート",
-      "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "コメディ・ギャグ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "旅・冒険"
     ],
     "motif": [
       "魔法"
@@ -39,6 +69,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -53,20 +84,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24440"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "魔法",
         "魔王",
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24440"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -75,16 +108,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24440"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

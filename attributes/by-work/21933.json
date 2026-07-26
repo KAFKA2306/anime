@@ -1,29 +1,49 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21933",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21933",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "グランクレスト戦記",
+    "synopsis": "グランクレスト戦記 SF・ファンタジー 歴史・戦記 政治・戦略 魔法 領土",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "歴史/戦記"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "eb067a403d2e5f73d02daadf4e76f2544d8b029f86b17d7d06a7089dcd335dd5"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "歴史/戦記"
   ],
   "production_year": 2017,
   "original_credit": null,
-  "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "歴史・戦記",
+    "現代ファンタジー",
     "政治・戦略",
     "魔法"
   ],
   "ontology_facets": {
-    "source": [
-      "ライトノベル・小説"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "歴史・戦記"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -34,32 +54,33 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
-    "primary_genre": "verified",
+    "source_origin": "unknown",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-novel",
-      "matched_terms": [
-        "文庫"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21933"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21933"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "歴史/戦記"
@@ -67,16 +88,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21933"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "政治・戦略": [
+            "政治",
+            "戦略",
             "領土"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

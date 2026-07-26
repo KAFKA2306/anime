@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28611",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28611",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "TVアニメ『MFゴースト 3rd Season』",
+    "synopsis": "TVアニメ『MFゴースト 3rd Season』 しげの秀一(講談社「ヤングマガジン」所載) スポーツ・競技 バトル・アクション ドラマ・青春 成長・挑戦 挑戦",
+    "staff_text": "原作:しげの秀一(講談社「ヤングマガジン」所載)",
+    "official_genres": [
+      "スポーツ/競技",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "f575350aa15cc0a7f12404a5b9881740ef5a103ddd962c70e625f1839c24fcb2"
+  },
   "official_genres": [
     "スポーツ/競技",
     "アクション/バトル",
@@ -12,11 +27,14 @@
   "original_credit": "しげの秀一(講談社「ヤングマガジン」所載)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "バトル・アクション",
     "ドラマ・青春",
-    "成長・挑戦"
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -27,13 +45,16 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28611"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -61,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28611"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "アクション/バトル",
@@ -70,15 +91,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28611"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28611"
     }

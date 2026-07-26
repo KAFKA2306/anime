@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10219",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10219",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "たまゆら",
+    "synopsis": "たまゆら 日常・ほのぼの 学園 高校",
+    "staff_text": "",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "860c69abb4706b635b89fa14780e5e536af2b6a3265fdd5466f35c01d96a170d"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,22 +23,29 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10219"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -48,22 +68,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10219"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10219"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10219"
     }

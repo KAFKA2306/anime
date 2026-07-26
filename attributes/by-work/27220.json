@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27220",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27220",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "死神坊ちゃんと黒メイド(第3期)",
+    "synopsis": "死神坊ちゃんと黒メイド(第3期) イノウエ「死神坊ちゃんと黒メイド」(小学館「サンデーうぇぶりSSC」刊) 恋愛・ラブコメ 友情・仲間 怪異・妖怪 仲間 呪い",
+    "staff_text": "原作:イノウエ「死神坊ちゃんと黒メイド」(小学館「サンデーうぇぶりSSC」刊)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "97301807eb7fc1323076b944f17a41e86f2168978ee640dcf3847ebbb84c08aa"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,9 +23,14 @@
   "original_credit": "イノウエ「死神坊ちゃんと黒メイド」(小学館「サンデーうぇぶりSSC」刊)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
     "友情・仲間",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -22,15 +40,21 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "恋愛"
     ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27220"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -55,24 +79,39 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27220"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27220"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

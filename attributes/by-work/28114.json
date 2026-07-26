@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28114",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28114",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フェルマーの料理",
+    "synopsis": "フェルマーの料理 小林有吾『フェルマーの料理』(講談社「月刊少年マガジン」連載) ドラマ・青春 学園 成長・挑戦 料理・グルメ 職業・仕事 挑戦 料理 食堂 働く",
+    "staff_text": "原作:小林有吾『フェルマーの料理』(講談社「月刊少年マガジン」連載)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "3b6451c37f73298359a981befd6a2edba5b624c4aab7e811a7b6f19967fb95c0"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "小林有吾『フェルマーの料理』(講談社「月刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "学園",
@@ -24,6 +39,7 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -35,6 +51,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28114"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -60,14 +77,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28114"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28114"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -76,17 +93,22 @@
         },
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
           ],
           "料理・グルメ": [
             "料理",
+            "グルメ",
             "食堂"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28114"
     }

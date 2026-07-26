@@ -1,24 +1,42 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22716",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22716",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台 増田こうすけ劇場 ギャグマンガ日和 向かい風100%",
+    "synopsis": "舞台 増田こうすけ劇場 ギャグマンガ日和 向かい風100% 「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプ SQ.」連載) 2.5次元舞台 学園 高校",
+    "staff_text": "原作:「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプ SQ.」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "3ae4d9d92c284dc94f88e18c2ff1815688c20c54f5d45ec0a69ddff4c6961ad7"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
   "production_year": 2018,
   "original_credit": "「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプ SQ.」連載)",
-  "source_origin": null,
+  "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園"
   ],
   "ontology_facets": {
-    "source": [],
+    "source": [
+      "漫画"
+    ],
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -28,21 +46,24 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
+    "source_origin": "verified",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "「増田こうすけ劇場 ギャグマンガ日和」増田こうすけ(集英社「ジャンプ SQ.」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22716"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,22 +71,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22716"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22716"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22716"
     }

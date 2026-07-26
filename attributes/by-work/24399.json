@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24399",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24399",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画プリキュア ミラクルユニバース",
+    "synopsis": "映画プリキュア ミラクルユニバース 東堂いづみ 異世界・ハイファンタジー SF・ファンタジー バトル・アクション キッズ・ファミリー 宇宙 職業・仕事 惑星 働く 魔王",
+    "staff_text": "原作:東堂いづみ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "882bad79324c3335b17a0c57ee8ba714bbfdb5fd4fb28c4c5bd0a4217900f8a9"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,11 +27,20 @@
   "original_credit": "東堂いづみ",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "バトル・アクション",
     "キッズ・ファミリー",
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "異世界",
     "宇宙",
     "職業・仕事"
   ],
@@ -24,11 +48,17 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "バトル・アクション",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ"
+    ],
     "setting": [
+      "異世界",
       "宇宙"
     ],
     "theme": [
@@ -37,6 +67,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -51,19 +82,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24399"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "キッズ/ファミリー"
       ],
       "matched_terms": [
-        "魔王"
+        "宇宙",
+        "惑星",
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24399"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -72,9 +106,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24399"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "宇宙": [
             "宇宙",
             "惑星"
@@ -82,10 +119,19 @@
         },
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24399"
     }

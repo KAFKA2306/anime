@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21351",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21351",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "さんかれあ",
+    "synopsis": "さんかれあ はっとりみつる 恋愛・ラブコメ ホラー・サスペンス・ミステリー 学園 成長・挑戦 高校 青春",
+    "staff_text": "原作:はっとりみつる",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "b2b06331ad238bb4e502bedc1f48539823ceb84bae8e171da20a6c8cc78c3cad"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ホラー/サスペンス/推理"
@@ -11,11 +25,15 @@
   "original_credit": "はっとりみつる",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ホラー・サスペンス・ミステリー",
+    "ラブコメ",
     "学園",
-    "成長・挑戦"
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,15 +41,20 @@
       "恋愛・ラブコメ",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21351"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ホラー/サスペンス/推理"
@@ -55,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21351"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ホラー/サスペンス/推理"
@@ -63,19 +86,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21351"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21351"
     }

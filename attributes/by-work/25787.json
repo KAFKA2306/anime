@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25787",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25787",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ベルセルク 黄金時代篇 MEMORIAL EDITION(放送用編集ver.)",
+    "synopsis": "ベルセルク 黄金時代篇 MEMORIAL EDITION(放送用編集ver.) 三浦建太郎 SF・ファンタジー バトル・アクション 戦争・ミリタリー 友情・仲間 家族 仲間 絆",
+    "staff_text": "原作:三浦建太郎",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "7af3c9ff8ae601b8c99985abef1b5bd14d0265534105ae23c7c6f82ed36a7f41"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,29 +26,38 @@
   "production_year": 2022,
   "original_credit": "三浦建太郎",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "戦争・ミリタリー",
+    "スペキュレーティブ判定保留",
     "友情・仲間",
-    "家族"
+    "家族",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "戦争・ミリタリー"
+      "戦争・ミリタリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "家族"
+      "家族",
+      "戦争"
     ],
-    "motif": [],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25787"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25787"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -67,19 +91,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25787"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間",
             "絆"
           ],
           "家族": [
             "家族"
+          ],
+          "戦争": [
+            "戦争"
           ]
         },
-        "motif": {}
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25787"
     }

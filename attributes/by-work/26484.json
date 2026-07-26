@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26484",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26484",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "るろうに剣心 -明治剣客浪漫譚-",
+    "synopsis": "るろうに剣心 -明治剣客浪漫譚- 和月伸宏『るろうに剣心 -明治剣客浪漫譚-』(集英社 ジャンプコミックス刊) バトル・アクション 歴史・戦記 歴史・時代劇 友情・仲間 幕末 明治 仲間",
+    "staff_text": "原作:和月伸宏『るろうに剣心 -明治剣客浪漫譚-』(集英社 ジャンプコミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "5c7fe636a8e5ed3e7280f6cc35c8f1ed35d8aa7899d8223f5f1424df5f942edb"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "和月伸宏『るろうに剣心 -明治剣客浪漫譚-』(集英社 ジャンプコミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -25,6 +41,7 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -34,6 +51,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26484"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -60,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26484"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -68,20 +86,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26484"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
             "幕末",
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26484"
     }

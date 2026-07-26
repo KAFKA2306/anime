@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26100",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場版 Free!–the Final Stroke– 前編",
+    "synopsis": "劇場版 Free!–the Final Stroke– 前編 スポーツ・競技 ドラマ・青春 友情・仲間 仲間",
+    "staff_text": "",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "aa179c162582f2a3d866f38038251e2ee9cba67a766c940650d803d606b63801"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,17 @@
       "スポーツ・競技",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +59,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -60,15 +82,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100"
     }

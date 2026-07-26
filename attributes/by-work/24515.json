@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24515",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24515",
   "attribute_fetched_at": "2026-07-25T10:55:12.529Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "桃太郎 海の神兵 デジタル修正版",
+    "synopsis": "桃太郎 海の神兵 デジタル修正版 SF・ファンタジー 戦争・ミリタリー 職業・仕事 怪異・妖怪 仕事 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 1945,
+    "source": "legacy-derived",
+    "sha256": "d1ec4cb4c37c5b79e4e8817d56747d5b9b2c25bf54683cce88e5c0efdebc4615"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "戦争/ミリタリー"
@@ -10,28 +24,39 @@
   "production_year": 1945,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "戦争・ミリタリー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "職業・仕事",
-    "怪異・妖怪"
+    "戦争",
+    "怪異・妖怪",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "戦争・ミリタリー"
+      "戦争・ミリタリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "職業・仕事",
+      "戦争"
     ],
     "motif": [
-      "怪異・妖怪"
+      "怪異・妖怪",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24515"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "戦争/ミリタリー"
@@ -55,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24515"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "戦争/ミリタリー"
@@ -63,17 +88,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24515"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
             "仕事"
+          ],
+          "戦争": [
+            "戦争"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

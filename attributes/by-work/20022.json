@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20022",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20022",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ぼくは王さま",
+    "synopsis": "ぼくは王さま 寺村輝夫、和歌山静子『王さまシリーズ』より(理論社・刊) ショート ドラマ・青春 キッズ・ファミリー",
+    "staff_text": "原作:寺村輝夫、和歌山静子『王さまシリーズ』より(理論社・刊)",
+    "official_genres": [
+      "ショート",
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "678affde0de4121ba5aab1422085bcc305b05efd66c7c3a309497e354fd86fea"
+  },
   "official_genres": [
     "ショート",
     "ドラマ/青春",
@@ -12,10 +27,13 @@
   "original_credit": "寺村輝夫、和歌山静子『王さまシリーズ』より(理論社・刊)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ドラマ・青春",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,18 +42,22 @@
       "ドラマ・青春",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20022"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ドラマ/青春",
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20022"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ドラマ/青春",
@@ -64,11 +86,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20022"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20022"
     }

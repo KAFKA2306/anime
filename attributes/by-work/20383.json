@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20383",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20383",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ハッカドール THE あにめ~しょん",
+    "synopsis": "ハッカドール THE あにめ~しょん ハッカドールチーム(DeNA) コメディ・ギャグ ショート 音楽・アイドル 魔法 アイドル",
+    "staff_text": "原作:ハッカドールチーム(DeNA)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "2516c0d47355bc6e4ab81f93d8817a077a870cfedb33e6baefbad90b3e726451"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,9 +25,15 @@
   "original_credit": "ハッカドールチーム(DeNA)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ファンタジー",
     "ショート",
+    "現代ファンタジー",
     "音楽・アイドル",
     "魔法"
   ],
@@ -21,7 +41,11 @@
     "source": [],
     "genre": [
       "コメディ・ギャグ",
+      "ファンタジー",
       "ショート"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -34,6 +58,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20383"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -57,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20383"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -65,16 +90,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20383"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

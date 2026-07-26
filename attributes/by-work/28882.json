@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28882",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28882",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "とんがり帽子のアトリエ",
+    "synopsis": "とんがり帽子のアトリエ 白浜 鴎「とんがり帽子のアトリエ」(講談社「モーニング・ツー」連載) SF・ファンタジー ドラマ・青春 友情・仲間 成長・挑戦 魔法 仲間 成長",
+    "staff_text": "原作:白浜 鴎「とんがり帽子のアトリエ」(講談社「モーニング・ツー」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "5bb16d1372ac23744b29c2cf4d31e31cdfc0946cc797a8c09ae06fc76466fa0c"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,10 +24,15 @@
   "production_year": 2026,
   "original_credit": "白浜 鴎「とんがり帽子のアトリエ」(講談社「モーニング・ツー」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "ドラマ・青春",
+    "現代ファンタジー",
     "友情・仲間",
     "成長・挑戦",
     "魔法"
@@ -23,8 +42,11 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -36,9 +58,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -52,16 +75,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28882"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28882"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -69,19 +94,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28882"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

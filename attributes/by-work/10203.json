@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10203",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203",
   "attribute_fetched_at": "2026-07-25T10:32:48.098Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "NG騎士ラムネ&40DX ワクワク時空 炎の大捜査戦",
+    "synopsis": "NG騎士ラムネ&40DX ワクワク時空 炎の大捜査戦 コメディ・ギャグ ロボット・メカ 犯罪・警察 捜査",
+    "staff_text": "",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ロボット/メカ"
+    ],
+    "production_year": 1993,
+    "source": "legacy-derived",
+    "sha256": "57a3d1904e28574e48048ea92bd3b65ee6c2e28e322b7ec89f81784d9963ccfb"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ロボット/メカ"
@@ -11,25 +25,39 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
+    "ロボットSF",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "コメディ・ギャグ",
+      "SF",
+      "ファンタジー",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
     "motif": [
-      "犯罪・警察",
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -38,13 +66,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ロボット/メカ"
@@ -53,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ロボット/メカ"
@@ -61,13 +89,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
           "犯罪・警察": [
+            "警察",
+            "犯罪",
             "捜査"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

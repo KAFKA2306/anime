@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28062",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28062",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "彼女、お借りします Season4",
+    "synopsis": "彼女、お借りします Season4 宮島礼吏(講談社「週刊少年マガジン」連載) 恋愛・ラブコメ 学園 家族 大学",
+    "staff_text": "原作:宮島礼吏(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "1946eba532334e2a721490527c8fdb91fb40018eb7aaf5b5e9adaf9f9b867690"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,10 +23,14 @@
   "original_credit": "宮島礼吏(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
-    "家族"
+    "家族",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +39,20 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "家族"
+      "家族",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28062"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -56,26 +78,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28062"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28062"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "家族": [
             "家族"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28062"
     }

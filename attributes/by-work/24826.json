@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24826",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24826",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ジャヒー様はくじけない!",
+    "synopsis": "ジャヒー様はくじけない! 昆布わかめ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊) 異世界・ハイファンタジー コメディ・ギャグ SF・ファンタジー 魔法 魔王",
+    "staff_text": "原作:昆布わかめ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "67e050c5b44ad8585e3b5fd3373de56925e2bfd43feaa9ba11a89e1e0043dcc4"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "SF/ファンタジー"
@@ -11,10 +25,17 @@
   "original_credit": "昆布わかめ(掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
     "魔法"
   ],
   "ontology_facets": {
@@ -23,16 +44,23 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "コメディ・ギャグ"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,18 +77,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24826"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "魔王"
+        "魔法",
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24826"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー"
@@ -68,12 +98,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24826"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
             "魔法"
           ]
         }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10467",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10467",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "お伽草子",
+    "synopsis": "お伽草子 プロダクション I.G,日本テレビ 歴史・戦記 SF・ファンタジー 歴史・時代劇 平安",
+    "staff_text": "原作:プロダクション I.G,日本テレビ",
+    "official_genres": [
+      "歴史/戦記",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "09de3e8b0a333324cf311d5e4bde4db3d77be331cc9b8765fb8b6b9cb9c41f48"
+  },
   "official_genres": [
     "歴史/戦記",
     "SF/ファンタジー"
@@ -11,17 +25,20 @@
   "original_credit": "プロダクション I.G,日本テレビ",
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "歴史・戦記",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "歴史・時代劇"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "歴史・戦記",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10467"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "SF/ファンタジー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10467"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "SF/ファンタジー"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10467"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "平安"
+            "平安",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10467"
     }

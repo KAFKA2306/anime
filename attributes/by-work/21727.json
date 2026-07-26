@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21727",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21727",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "るろうに剣心 ‐明治剣客浪漫譚‐星霜編",
+    "synopsis": "るろうに剣心 ‐明治剣客浪漫譚‐星霜編 和月伸宏(集英社 ジャンプ・コミックス) バトル・アクション 歴史・戦記 歴史・時代劇 明治",
+    "staff_text": "原作:和月伸宏(集英社 ジャンプ・コミックス)",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "e688883fcbd8c778677330cfdd7a708831d268068b90f8a4e0e299b1ef1c77e0"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "和月伸宏(集英社 ジャンプ・コミックス)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -24,6 +40,7 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -31,6 +48,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21727"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -57,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21727"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -65,15 +83,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21727"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21727"
     }

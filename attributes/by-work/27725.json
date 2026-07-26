@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27725",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27725",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "モンスター・ホテル",
+    "synopsis": "モンスター・ホテル トッド・デュアハム、ダン・ヘイグマン、ケヴィン・ヘイグマン ホラー・サスペンス・ミステリー キッズ・ファミリー",
+    "staff_text": "原作:トッド・デュアハム、ダン・ヘイグマン、ケヴィン・ヘイグマン",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "85011ffe6d37f925e220eebd53ba47e7e848c5b302bfdd726983c7934adc380d"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "キッズ/ファミリー"
@@ -11,21 +25,29 @@
   "original_credit": "トッド・デュアハム、ダン・ヘイグマン、ケヴィン・ヘイグマン",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
     "キッズ・ファミリー"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー",
+      "ファンタジー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27725"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "キッズ/ファミリー"
@@ -49,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27725"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "キッズ/ファミリー"
@@ -57,11 +79,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27725"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27725"
     }

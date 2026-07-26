@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27629",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "パリピ孔明 Road to Summer Sonia",
+    "synopsis": "パリピ孔明 Road to Summer Sonia 四葉夕卜・小川亮(講談社「ヤングマガジン」連載) 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ ドラマ・青春 異世界 成長・挑戦 転生 青春",
+    "staff_text": "原作:四葉夕卜・小川亮(講談社「ヤングマガジン」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "481e553606a3340dc55e1b558ad746115e77427aba80be937790b617553c89e8"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ",
@@ -12,13 +27,19 @@
   "original_credit": "四葉夕卜・小川亮(講談社「ヤングマガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
     "ドラマ・青春",
+    "異世界ファンタジー",
     "異世界",
-    "成長・挑戦"
+    "成長・挑戦",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -26,9 +47,12 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -36,9 +60,12 @@
     "theme": [
       "成長・挑戦"
     ],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -56,19 +83,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
         "ドラマ/青春"
       ],
       "matched_terms": [
+        "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ",
@@ -77,19 +105,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27629"
     }

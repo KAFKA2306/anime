@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27200",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27200",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "現代誤訳/超電導会議 ~Documentary of 現代誤訳~",
+    "synopsis": "現代誤訳/超電導会議 ~Documentary of 現代誤訳~ 日常・ほのぼの 成長・挑戦 成長",
+    "staff_text": "",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "f5761e3a9b531ed15ab870ea57c3fa29d0278e2ead9e8da8b73f81efb3ea6373"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,22 +23,31 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "成長・挑戦"
+    "現代ファンタジー",
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -34,13 +56,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27200"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -48,22 +70,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27200"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27200"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "現代ファンタジー": [
+            "現代"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27200"
     }

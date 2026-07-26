@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22197",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22197",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "銀の匙 Silver Spoon(第1期)",
+    "synopsis": "銀の匙 Silver Spoon(第1期) 荒川弘(小学館「週刊少年サンデー」連載) ドラマ・青春 日常・ほのぼの 学園 友情・仲間 成長・挑戦 学校 仲間 絆 成長 青春",
+    "staff_text": "原作:荒川弘(小学館「週刊少年サンデー」連載)",
+    "official_genres": [
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "a4229726b1932a057f069e7625957afec58bb12a781a29c44eb9eaef92824f49"
+  },
   "official_genres": [
     "ドラマ/青春",
     "日常/ほのぼの"
@@ -11,12 +25,15 @@
   "original_credit": "荒川弘(小学館「週刊少年サンデー」連載)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "日常・ほのぼの",
     "学園",
     "友情・仲間",
-    "成長・挑戦"
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -26,16 +43,19 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22197"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -62,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22197"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -70,24 +90,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22197"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間",
             "絆"
           ],
           "成長・挑戦": [
             "成長",
+            "挑戦",
             "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22197"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22871",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22871",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フルメタル・パニック!ディレクターズカット版 第2部:「ワン・ナイト・スタンド」編",
+    "synopsis": "フルメタル・パニック!ディレクターズカット版 第2部:「ワン・ナイト・スタンド」編 賀東招二・四季童子(富士見ファンタジア文庫刊) ロボット・メカ バトル・アクション 戦争・ミリタリー",
+    "staff_text": "原作:賀東招二・四季童子(富士見ファンタジア文庫刊)",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "43ccb4920f1973c558fd691f8f674a10c8e8be75f006354fc07cbe6297418026"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -12,10 +27,18 @@
   "original_credit": "賀東招二・四季童子(富士見ファンタジア文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "バトル・アクション",
-    "戦争・ミリタリー"
+    "戦争・ミリタリー",
+    "ロボットSF",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [
@@ -23,21 +46,29 @@
     ],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "バトル・アクション",
       "戦争・ミリタリー"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -49,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22871"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -59,7 +90,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22871"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -68,11 +99,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22871"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22871"
     }

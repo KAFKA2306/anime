@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23870",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23870",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王ZEXAL (ドクター・フェイカー編)",
+    "synopsis": "遊☆戯☆王ZEXAL (ドクター・フェイカー編) 高橋和希 スタジオ・ダイス (週刊少年ジャンプ) バトル・アクション スポーツ・競技 異世界 学園 怪異・妖怪 召喚 学校 幽霊",
+    "staff_text": "原作:高橋和希 スタジオ・ダイス (週刊少年ジャンプ)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "1181c5a82409c0cb669bae057a6a9f9959c0d69ec1eb89d47b7dfc3d17eba9f6"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,11 +25,19 @@
   "original_credit": "高橋和希 スタジオ・ダイス (週刊少年ジャンプ)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "ファンタジー",
     "スポーツ・競技",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "学園",
+    "スポーツ",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -24,18 +46,26 @@
     ],
     "genre": [
       "バトル・アクション",
+      "ファンタジー",
       "スポーツ・競技"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23870"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -62,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23870"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -70,20 +100,38 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23870"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ],
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

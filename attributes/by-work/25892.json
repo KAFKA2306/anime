@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25892",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25892",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "サマータイムレンダ",
+    "synopsis": "サマータイムレンダ 田中靖規(集英社ジャンプコミックス刊) ホラー・サスペンス・ミステリー SF・ファンタジー",
+    "staff_text": "原作:田中靖規(集英社ジャンプコミックス刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "cce07a78a136c8c2c9e977382e156ef3f4353f2cb86126e8a8d67896bdac7746"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "SF/ファンタジー"
@@ -11,9 +25,11 @@
   "original_credit": "田中靖規(集英社ジャンプコミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,15 @@
     ],
     "genre": [
       "ホラー・サスペンス・ミステリー",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25892"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "SF/ファンタジー"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25892"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "SF/ファンタジー"
@@ -62,11 +80,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25892"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25892"
     }

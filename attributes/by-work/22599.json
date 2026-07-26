@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22599",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22599",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "フライングベイビーズ",
+    "synopsis": "フライングベイビーズ 日常・ほのぼの ドラマ・青春 友情・仲間 成長・挑戦 仲間 青春",
+    "staff_text": "",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ドラマ/青春"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "2048cfd3cbb9b3d08821c82950e4768f02af52c7fea282cff5bf9a3cbedcf1f2"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "ドラマ/青春"
@@ -11,11 +25,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "ドラマ・青春",
     "友情・仲間",
-    "成長・挑戦"
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,14 +40,17 @@
       "日常・ほのぼの",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +59,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22599"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -54,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22599"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -62,18 +82,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22599"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22599"
     }

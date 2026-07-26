@@ -1,24 +1,42 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26629",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26629",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "新しい上司はど天然",
+    "synopsis": "新しい上司はど天然 いちかわ暖「新しい上司はど天然」(秋田書店「マンガクロス」連載) コメディ・ギャグ 職業・仕事 仕事",
+    "staff_text": "原作:いちかわ暖「新しい上司はど天然」(秋田書店「マンガクロス」連載)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "b1ab5ae78bf42ff9f1addad87b05667c1a0be1aaa7d456e71a7a2668dbe16c7e"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
   "production_year": 2023,
   "original_credit": "いちかわ暖「新しい上司はど天然」(秋田書店「マンガクロス」連載)",
-  "source_origin": null,
+  "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "職業・仕事"
   ],
   "ontology_facets": {
-    "source": [],
+    "source": [
+      "漫画"
+    ],
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -26,21 +44,24 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "unknown",
+    "source_origin": "verified",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
-      "matched_terms": [],
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マンガ"
+      ],
       "evidence_text": "いちかわ暖「新しい上司はど天然」(秋田書店「マンガクロス」連載)",
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26629"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,14 +69,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26629"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26629"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -63,7 +84,8 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26629"
     }

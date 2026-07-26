@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22333",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22333",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "GJ部",
+    "synopsis": "GJ部 新木伸(小学館「ガガガ文庫」刊) 日常・ほのぼの 学園 高校",
+    "staff_text": "原作:新木伸(小学館「ガガガ文庫」刊)",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "1a807633ae9d30f6bb149763ac6860726b1fa083ad13e1a6a4e333a8d5934a54"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,9 +23,12 @@
   "original_credit": "新木伸(小学館「ガガガ文庫」刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,17 @@
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -44,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22333"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -52,22 +72,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22333"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22333"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22333"
     }

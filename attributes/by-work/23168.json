@@ -1,18 +1,37 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23168",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23168",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔術士オーフェンはぐれ旅",
+    "synopsis": "魔術士オーフェンはぐれ旅 秋田禎信(TOブックス刊) SF・ファンタジー 友情・仲間 魔法 仲間 魔術",
+    "staff_text": "原作:秋田禎信(TOブックス刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "0eecbd096c1001f0091498e8ff1c149adc1a29f20111abec86df7df445b5edfa"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2020,
   "original_credit": "秋田禎信(TOブックス刊)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
+    "現代ファンタジー",
     "友情・仲間",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
@@ -20,20 +39,25 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "旅・冒険"
     ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -47,32 +71,45 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23168"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法",
+        "魔術"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23168"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23168"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "旅・冒険": [
+            "旅"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

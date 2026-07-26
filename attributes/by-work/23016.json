@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23016",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "真・中華一番!",
+    "synopsis": "真・中華一番! 小川悦司『真・中華一番!』(講談社「週刊少年マガジン」所蔵) バトル・アクション ドラマ・青春 友情・仲間 料理・グルメ 仲間 料理",
+    "staff_text": "原作:小川悦司『真・中華一番!』(講談社「週刊少年マガジン」所蔵)",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "9d71e2e889fb9aa0fe9eb22dcc70a466e040884c3c4a3f520e93142a3e1fec1a"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": "小川悦司『真・中華一番!』(講談社「週刊少年マガジン」所蔵)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
     "友情・仲間",
+    "成長・挑戦",
     "料理・グルメ"
   ],
   "ontology_facets": {
@@ -25,14 +42,17 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "料理・グルメ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -59,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -67,18 +87,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
+          "成長・挑戦": [
+            "青春"
+          ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23016"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28863",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28863",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画しまじろう まほうのしまの だいぼうけん",
+    "synopsis": "映画しまじろう まほうのしまの だいぼうけん 株式会社ベネッセコーポレーション キッズ・ファミリー 日常・ほのぼの 家族 魔法 兄弟",
+    "staff_text": "原作:株式会社ベネッセコーポレーション",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "26b0f9fe19a86e313f5b49e330abc1e7e3672b21caacc16db89317badb317f2c"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "日常/ほのぼの"
@@ -11,27 +25,43 @@
   "original_credit": "株式会社ベネッセコーポレーション",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
+    "ファンタジー",
     "日常・ほのぼの",
+    "現代ファンタジー",
+    "職場",
     "家族",
+    "癒やし",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "キッズ・ファミリー",
+      "ファンタジー",
       "日常・ほのぼの"
     ],
-    "setting": [],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28863"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -55,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28863"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "日常/ほのぼの"
@@ -63,16 +93,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28863"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "家族": [
+            "家族",
             "兄弟"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

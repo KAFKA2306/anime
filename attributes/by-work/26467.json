@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26467",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26467",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "呪術廻戦 懐玉・玉折/渋谷事変(第2期)",
+    "synopsis": "呪術廻戦 懐玉・玉折/渋谷事変(第2期) 「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載) SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー 怪異・妖怪 呪い",
+    "staff_text": "原作:「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "4e1240bddc0db4705133f45e50a73e3b89e4e8522d87c5bc81fafd5c7d03edb7"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,11 +26,16 @@
   "production_year": 2023,
   "original_credit": "「呪術廻戦」芥見下々(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -23,9 +43,12 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -34,9 +57,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -51,17 +75,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26467"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ホラー/サスペンス/推理"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "呪術"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26467"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -70,13 +96,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26467"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

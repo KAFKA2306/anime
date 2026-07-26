@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27085",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27085",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "パズドラ 第7シリーズ",
+    "synopsis": "パズドラ 第7シリーズ ガンホー・オンライン・エンターテイメント「Puzzle&Dragons」 バトル・アクション キッズ・ファミリー 宇宙",
+    "staff_text": "原作:ガンホー・オンライン・エンターテイメント「Puzzle&Dragons」",
+    "official_genres": [
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "8d3cf41708db9b1240eb0ee29f4ad6f6b872195804516f5165fc09bf46c2b61a"
+  },
   "official_genres": [
     "アクション/バトル",
     "キッズ/ファミリー"
@@ -11,16 +25,26 @@
   "original_credit": "ガンホー・オンライン・エンターテイメント「Puzzle&Dragons」",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "キッズ・ファミリー",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -29,6 +53,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27085"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -52,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27085"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "キッズ/ファミリー"
@@ -60,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27085"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -68,7 +93,12 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27085"
     }

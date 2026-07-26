@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22851",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22851",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "炎炎ノ消防隊",
+    "synopsis": "炎炎ノ消防隊 大久保篤(講談社「週刊少年マガジン」連載) SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー 友情・仲間 仲間",
+    "staff_text": "原作:大久保篤(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "61248edd64ef020cb246a37fb063650724176f46945a9b33de48aa5c442e22fe"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,11 +26,13 @@
   "production_year": 2019,
   "original_credit": "大久保篤(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
@@ -23,10 +40,11 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -34,6 +52,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -51,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22851"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -61,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22851"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -70,15 +89,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22851"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22851"
     }

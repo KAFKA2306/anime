@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22004",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22004",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場版プリパラみ~んなでかがやけ!キラリン☆スターライブ!- ひびきのコース",
+    "synopsis": "劇場版プリパラみ~んなでかがやけ!キラリン☆スターライブ!- ひびきのコース タカラトミーアーツ ドラマ・青春 キッズ・ファミリー 宇宙 惑星",
+    "staff_text": "原作:タカラトミーアーツ",
+    "official_genres": [
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "b76da212ff150cd3a2651d7b361f724de4468b9c847e44bc4f54ffbbcf383281"
+  },
   "official_genres": [
     "ドラマ/青春",
     "キッズ/ファミリー"
@@ -11,24 +25,38 @@
   "original_credit": "タカラトミーアーツ",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "SF",
     "キッズ・ファミリー",
-    "宇宙"
+    "スペースオペラ",
+    "宇宙",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春",
+      "SF",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22004"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -52,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22004"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -60,15 +88,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22004"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "惑星"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22004"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22030",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22030",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "新幹線変形ロボ シンカリオン",
+    "synopsis": "新幹線変形ロボ シンカリオン ロボット・メカ バトル・アクション キッズ・ファミリー",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "92146b6c4f4cc13bf685b504b0149606df7ac1724aa2902201ac1ce6d97c13d9"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -12,17 +27,27 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "バトル・アクション",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "バトル・アクション",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -31,21 +56,22 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22030"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -55,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22030"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -64,11 +90,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22030"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22030"
     }

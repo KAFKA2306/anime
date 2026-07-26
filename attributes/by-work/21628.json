@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21628",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21628",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ひなろじ ~from Luck & Logic~",
+    "synopsis": "ひなろじ ~from Luck & Logic~ Septpia SF・ファンタジー 日常・ほのぼの 学園 学校",
+    "staff_text": "原作:Septpia",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "36005727d713b3b05f305faf143a35c91154f1945e30ca6142e995bc472b82db"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの"
@@ -10,25 +24,32 @@
   "production_year": 2017,
   "original_credit": "Septpia",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "日常・ほのぼの",
-    "学園"
+    "スペキュレーティブ判定保留",
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "日常・ほのぼの"
+      "日常・ほのぼの",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21628"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21628"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -60,15 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21628"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21628"
     }

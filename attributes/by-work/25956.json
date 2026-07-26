@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25956",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25956",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "さんかく窓の外側は夜",
+    "synopsis": "さんかく窓の外側は夜 ヤマシタトモコ「さんかく窓の外側は夜」(クロフネコミックス ホラー・サスペンス・ミステリー 推理・謎解き 探偵",
+    "staff_text": "原作:ヤマシタトモコ「さんかく窓の外側は夜」(クロフネコミックス",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "cb4aa421938f992b27e346b05c51d0b07d208e687fc9cc55198a101ffab392c7"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "ヤマシタトモコ「さんかく窓の外側は夜」(クロフネコミックス",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ミステリー",
     "推理・謎解き"
   ],
   "ontology_facets": {
@@ -21,6 +37,9 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "推理・謎解き"
@@ -28,6 +47,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25956"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -53,22 +73,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25956"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25956"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25956"
     }

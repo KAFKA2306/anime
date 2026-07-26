@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10789",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10789",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "映画「図書館戦争 革命のつばさ」",
+    "synopsis": "映画「図書館戦争 革命のつばさ」 有川浩「図書館戦争」シリーズ(角川文庫刊) バトル・アクション 戦争・ミリタリー ドラマ・青春",
+    "staff_text": "原作:有川浩「図書館戦争」シリーズ(角川文庫刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "1e7b386fe3f10b4a5d4d6558bdec241e0001d7564ea12c73a6415fe33987cf0c"
+  },
   "official_genres": [
     "アクション/バトル",
     "戦争/ミリタリー",
@@ -12,10 +27,15 @@
   "original_credit": "有川浩「図書館戦争」シリーズ(角川文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "戦争・ミリタリー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [
@@ -26,16 +46,23 @@
       "戦争・ミリタリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "成長・挑戦",
+      "戦争"
+    ],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10789"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "戦争/ミリタリー",
@@ -57,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10789"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "戦争/ミリタリー",
@@ -66,11 +93,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10789"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10789"
     }

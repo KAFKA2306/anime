@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20459",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20459",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "OVA東京喰種トーキョーグール【JACK】",
+    "synopsis": "OVA東京喰種トーキョーグール【JACK】 バトル・アクション ホラー・サスペンス・ミステリー ドラマ・青春 学園 友情・仲間 犯罪・警察 高校 仲間 捜査",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "cf145fcbaa764ff7e714188b50f26146f2b6d0b1baddce1fc15ce60e1317f2f9"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,12 +27,16 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
     "学園",
+    "現代日本",
     "友情・仲間",
+    "成長・挑戦",
     "犯罪・警察"
   ],
   "ontology_facets": {
@@ -27,17 +46,21 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
-      "学園"
+      "学園",
+      "現代日本"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [
       "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,13 +69,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20459"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -62,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20459"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -71,23 +94,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20459"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
+          ],
+          "現代日本": [
+            "東京"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
+            "犯罪",
             "捜査"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20459"
     }

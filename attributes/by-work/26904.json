@@ -1,25 +1,46 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26904",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26904",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台「異世界で孤児院を開いたけど、なぜか誰一人巣立とうとしない件」マーキュリーTeam",
+    "synopsis": "舞台「異世界で孤児院を開いたけど、なぜか誰一人巣立とうとしない件」マーキュリーTeam 2.5次元舞台 異世界 召喚",
+    "staff_text": "",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "e4707d14cd9c7a43152a868c1e1b6b161a2030199b2d21291af4757fc3e28fd1"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
   "production_year": 2020,
   "original_credit": null,
-  "source_origin": "ライトノベル・小説",
+  "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
-    "source": [
-      "ライトノベル・小説"
-    ],
+    "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -30,23 +51,22 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-novel",
-      "matched_terms": [
-        "ブックス"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26904"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,14 +74,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26904"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26904"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -70,7 +90,13 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26904"
     }

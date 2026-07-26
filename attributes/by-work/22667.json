@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22667",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22667",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "OVA 鋼の錬金術師 FULLMETAL ALCHEMIST",
+    "synopsis": "OVA 鋼の錬金術師 FULLMETAL ALCHEMIST 荒川弘(掲載 月刊「少年ガンガン」スクウェア・エニックス刊) SF・ファンタジー バトル・アクション ドラマ・青春",
+    "staff_text": "原作:荒川弘(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "a313142d20a01b065cce19f79280ea75903fcb9ed58dcc64c599ebb2d1defd81"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,31 +26,40 @@
   "production_year": 2009,
   "original_credit": "荒川弘(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,17 +71,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22667"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "錬金術"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22667"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -66,11 +92,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22667"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22667"
     }

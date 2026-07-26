@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26588",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26588",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "しーくれっとみっしょん~潜入捜査官は絶対に負けない!~【オンエア版】",
+    "synopsis": "しーくれっとみっしょん~潜入捜査官は絶対に負けない!~【オンエア版】 恋愛・ラブコメ ショート 職業・仕事 犯罪・警察 仕事 犯罪 捜査",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "108fa0d8ab7c69fecb9e49dd84b3c090b587f211790dbed322f9d99c9f7da431"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事",
     "犯罪・警察"
   ],
@@ -23,8 +41,12 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [
@@ -34,6 +56,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26588"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -57,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26588"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -65,18 +88,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26588"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪",
             "捜査"
+          ]
+        },
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

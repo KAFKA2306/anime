@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10345",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10345",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "シャングリ・ラ",
+    "synopsis": "シャングリ・ラ 池上永一(角川文庫刊) バトル・アクション SF・ファンタジー ドラマ・青春",
+    "staff_text": "原作:池上永一(角川文庫刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "f914ee3387eed064a1cd0f4c86488d746da2ceb1cef48b490e4cf79c84187e21"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,10 +27,13 @@
   "original_credit": "池上永一(角川文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -23,19 +41,23 @@
     ],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10345"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -57,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10345"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -66,11 +88,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10345"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10345"
     }

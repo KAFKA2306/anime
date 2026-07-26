@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10848",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10848",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "続 夏目友人帳",
+    "synopsis": "続 夏目友人帳 緑川ゆき(白泉社「月刊LaLa」「LaLa DX」連載) SF・ファンタジー ホラー・サスペンス・ミステリー ドラマ・青春 怪異・妖怪 妖怪",
+    "staff_text": "原作:緑川ゆき(白泉社「月刊LaLa」「LaLa DX」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "ec44ae7516c17f7c9e5b464ca09bb708338b3e1b6b12e66fc1edcabd9dcfb933"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -11,27 +26,37 @@
   "production_year": 2009,
   "original_credit": "緑川ゆき(白泉社「月刊LaLa」「LaLa DX」連載)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "成長・挑戦",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10848"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -56,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10848"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -65,13 +90,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10848"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

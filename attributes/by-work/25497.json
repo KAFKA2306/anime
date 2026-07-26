@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25497",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497",
   "attribute_fetched_at": "2026-07-25T10:32:48.098Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "けろけろけろっぴのよわむし王子の大冒険",
+    "synopsis": "けろけろけろっぴのよわむし王子の大冒険 小林りぼん 異世界・ハイファンタジー キッズ・ファミリー SF・ファンタジー 勇者",
+    "staff_text": "原作:小林りぼん",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1993,
+    "source": "legacy-derived",
+    "sha256": "a89920e888cd6f55f809ff24f9117936addf669de67152670aaab9db2632e1dd"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "SF/ファンタジー"
@@ -11,28 +25,43 @@
   "original_credit": "小林りぼん",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "キッズ・ファミリー",
-    "SF・ファンタジー"
+    "異世界ファンタジー",
+    "異世界",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "キッズ・ファミリー",
-      "SF・ファンタジー"
+      "ファンタジー",
+      "キッズ・ファミリー"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,18 +71,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "勇者"
+        "勇者",
+        "異世界",
+        "王子"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "SF/ファンタジー"
@@ -61,11 +92,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
-        "motif": {}
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
     }

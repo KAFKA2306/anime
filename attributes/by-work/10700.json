@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10700",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10700",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "天体戦士サンレッド",
+    "synopsis": "天体戦士サンレッド くぼたまこと(掲載「ヤングガンガン」スクウェア・エニックス刊) コメディ・ギャグ ショート 料理・グルメ 料理",
+    "staff_text": "原作:くぼたまこと(掲載「ヤングガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "49b08737c47ddfaf4424beb90117aa6c3232605aa2376d8b2280a994a9f300de"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,6 +25,8 @@
   "original_credit": "くぼたまこと(掲載「ヤングガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート",
@@ -24,6 +40,7 @@
       "コメディ・ギャグ",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "料理・グルメ"
@@ -33,6 +50,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10700"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -58,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10700"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -66,15 +84,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10700"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10700"
     }

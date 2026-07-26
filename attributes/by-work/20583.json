@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20583",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20583",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ちはやふる",
+    "synopsis": "ちはやふる 末次由紀(講談社「BE・LOVE」連載) スポーツ・競技 ドラマ・青春 学園 高校",
+    "staff_text": "原作:末次由紀(講談社「BE・LOVE」連載)",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "65e21f6ab56b3a64091bddefff9bef6e23eb1759ac8da6c061ce907a725e6c6c"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": "末次由紀(講談社「BE・LOVE」連載)",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "成長・挑戦",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "スポーツ・競技",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20583"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20583"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -60,15 +83,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20583"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20583"
     }

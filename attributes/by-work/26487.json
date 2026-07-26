@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26487",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26487",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "シルバニアファミリー フレアのゴー・フォー・ドリーム!",
+    "synopsis": "シルバニアファミリー フレアのゴー・フォー・ドリーム! SF・ファンタジー キッズ・ファミリー ショート 友情・仲間 仲間",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー",
+      "ショート"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "d85028fff7b3cc2d0a4e5aade88a52e3b396c604b8a03302e8f1bb7bc28a5326"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー",
@@ -11,20 +26,23 @@
   "production_year": 2023,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "キッズ・ファミリー",
     "ショート",
+    "スペキュレーティブ判定保留",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "キッズ・ファミリー",
-      "ショート"
+      "ショート",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -34,6 +52,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +61,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26487"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26487"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー",
@@ -67,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26487"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26487"
     }

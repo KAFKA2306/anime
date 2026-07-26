@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23580",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23580",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ミュージカル『薄桜鬼 志譚』風間千景 篇",
+    "synopsis": "ミュージカル『薄桜鬼 志譚』風間千景 篇 オトメイト(アイディアファクトリー・デザインファクトリー) 2.5次元舞台 歴史・時代劇 怪異・妖怪 幕末 明治 鬼",
+    "staff_text": "原作:オトメイト(アイディアファクトリー・デザインファクトリー)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "49e6de0b477acf363e68d0c66fefef19aff6018d5e04e49791db5a463504e8d8"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "オトメイト(アイディアファクトリー・デザインファクトリー)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
     "歴史・時代劇",
     "怪異・妖怪"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "歴史・時代劇"
@@ -31,6 +50,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23580"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -53,25 +73,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23580"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23580"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
             "幕末",
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

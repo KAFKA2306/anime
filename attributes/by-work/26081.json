@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26081",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26081",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "あやかしトライアングル",
+    "synopsis": "あやかしトライアングル 矢吹健太朗(集英社「少年ジャンプ+」連載) SF・ファンタジー バトル・アクション 恋愛・ラブコメ 恋愛",
+    "staff_text": "原作:矢吹健太朗(集英社「少年ジャンプ+」連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "6090902da942f009eeefa276a1cd744ce46ea4dac9eca931758a6b7d0c72b888"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,11 +26,14 @@
   "production_year": 2023,
   "original_credit": "矢吹健太朗(集英社「少年ジャンプ+」連載)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
     "恋愛"
   ],
   "ontology_facets": {
@@ -23,9 +41,12 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
@@ -34,6 +55,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26081"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -60,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26081"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -69,15 +91,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26081"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26081"
     }

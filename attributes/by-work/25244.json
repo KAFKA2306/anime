@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25244",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25244",
   "attribute_fetched_at": "2026-07-25T10:21:15.719Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "コボちゃんスペシャル 約束のマジックデイ",
+    "synopsis": "コボちゃんスペシャル 約束のマジックデイ 植田まさし(読売新聞連載) コメディ・ギャグ キッズ・ファミリー 日常・ほのぼの 家族",
+    "staff_text": "原作:植田まさし(読売新聞連載)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 1998,
+    "source": "legacy-derived",
+    "sha256": "c60ab6d88e621575db05db94de876bfa42e4dcc0669ccf1fff32428fd70fe4e1"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "キッズ/ファミリー",
@@ -12,11 +27,14 @@
   "original_credit": "植田まさし(読売新聞連載)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "キッズ・ファミリー",
     "日常・ほのぼの",
-    "家族"
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,13 +43,16 @@
       "キッズ・ファミリー",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25244"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "キッズ/ファミリー",
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25244"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "キッズ/ファミリー",
@@ -65,15 +86,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25244"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
             "家族"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25244"
     }

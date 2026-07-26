@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25129",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25129",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "SKET DANCE",
+    "synopsis": "SKET DANCE 篠原健太(集英社ジャンプ コミックス刊) コメディ・ギャグ ドラマ・青春 学園 部活",
+    "staff_text": "原作:篠原健太(集英社ジャンプ コミックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "a727ea7f82f16f75e7a6dcfb1738657911b3f8a577c685c5acb192dc0320aa9c"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": "篠原健太(集英社ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +41,17 @@
       "コメディ・ギャグ",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25129"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -57,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25129"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -65,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25129"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -73,8 +94,13 @@
             "部活"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25129"
     }

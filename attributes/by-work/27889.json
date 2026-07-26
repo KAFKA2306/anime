@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27889",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ユア・フォルマ",
+    "synopsis": "ユア・フォルマ 菊石まれほ(電撃文庫 ロボット・メカ SF・ファンタジー 職業・仕事 犯罪・警察 医療 仕事 ロボット 犯罪 捜査",
+    "staff_text": "原作:菊石まれほ(電撃文庫",
+    "official_genres": [
+      "ロボット/メカ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "848a87f41074bf5308c2245d44c99a2cbb77d8e3e77eb13dfcb8e172b70e8b85"
+  },
   "official_genres": [
     "ロボット/メカ",
     "SF/ファンタジー"
@@ -10,10 +24,15 @@
   "production_year": 2025,
   "original_credit": "菊石まれほ(電撃文庫",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ロボット・メカ",
-    "SF・ファンタジー",
+    "ロボットSF",
     "職業・仕事",
     "犯罪・警察",
     "医療"
@@ -23,8 +42,11 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "ロボット・メカ",
-      "SF・ファンタジー"
+      "SF",
+      "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [
@@ -37,9 +59,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -53,16 +76,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
@@ -70,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27889"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -80,14 +106,21 @@
         },
         "motif": {
           "ロボット・メカ": [
-            "ロボット"
+            "ロボット",
+            "メカ"
           ],
           "犯罪・警察": [
+            "警察",
             "犯罪",
             "捜査"
           ],
           "医療": [
             "医療"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

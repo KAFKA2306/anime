@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25125",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25125",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "劇場版「テニスの王子様 二人のサムライ The First Game」",
+    "synopsis": "劇場版「テニスの王子様 二人のサムライ The First Game」 許斐 剛(集英社 ジャンプ・コミックス刊) スポーツ・競技",
+    "staff_text": "原作:許斐 剛(集英社 ジャンプ・コミックス刊)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "bfa3d63e8bf3e696c83f9da9dc631d231e6d106e3b5d37cb0024542f1205e3d2"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,26 +23,37 @@
   "original_credit": "許斐 剛(集英社 ジャンプ・コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "ファンタジー",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "スポーツ・競技"
+      "スポーツ・競技",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25125"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -50,18 +74,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25125"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25125"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25125"
     }

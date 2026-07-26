@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21787",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21787",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "僕の彼女がマジメ過ぎるしょびっちな件",
+    "synopsis": "僕の彼女がマジメ過ぎるしょびっちな件 松本ナミル(株式会社KADOKAWAコミックNewtype連載) 恋愛・ラブコメ 学園 成長・挑戦 学校 青春",
+    "staff_text": "原作:松本ナミル(株式会社KADOKAWAコミックNewtype連載)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "c41b60f1490929a1fd7c572edebbd90b273d02bf4fcd16fb5b50ad49f6c099bf"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,10 +23,15 @@
   "original_credit": "松本ナミル(株式会社KADOKAWAコミックNewtype連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
-    "成長・挑戦"
+    "職場",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +40,21 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
-      "学園"
+      "学園",
+      "職場"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21787"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -55,26 +79,41 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21787"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21787"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
+          ],
+          "職場": [
+            "会社"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21787"
     }

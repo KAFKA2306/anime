@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27049",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27049",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "佐々木と宮野 OVA「恋に気づく前のちょっとした話。」",
+    "synopsis": "佐々木と宮野 OVA「恋に気づく前のちょっとした話。」 春園ショウ(『佐々木と宮野』MFCジーンピクシブシリーズ 恋愛・ラブコメ 学園 推理・謎解き 部活 探偵",
+    "staff_text": "原作:春園ショウ(『佐々木と宮野』MFCジーンピクシブシリーズ",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "d4cc95164ec389e2accdce42189b21dc4d74405d4d8d25438b08ed210308e901"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,9 +23,14 @@
   "original_credit": "春園ショウ(『佐々木と宮野』MFCジーンピクシブシリーズ",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
+    "ミステリー",
     "学園",
+    "恋愛",
     "推理・謎解き"
   ],
   "ontology_facets": {
@@ -20,15 +38,21 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ",
+      "ミステリー"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
+      "恋愛",
       "推理・謎解き"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27049"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -51,26 +75,43 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27049"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27049"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "部活"
           ]
         },
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27049"
     }

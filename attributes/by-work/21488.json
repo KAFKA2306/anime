@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21488",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21488",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ガンダムビルドファイターズトライ",
+    "synopsis": "ガンダムビルドファイターズトライ SF・ファンタジー ロボット・メカ キッズ・ファミリー 学園 成長・挑戦 挑戦",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "801a85b5f236719353c18db740cf6d7ffff5a53949e5cc649640deac51d868ad"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,20 +26,28 @@
   "production_year": 2014,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
     "キッズ・ファミリー",
+    "ロボットSF",
     "学園",
     "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
@@ -37,9 +60,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -51,17 +75,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21488"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21488"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -70,7 +97,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21488"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -79,10 +106,21 @@
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21488"
     }

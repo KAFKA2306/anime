@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20914",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20914",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "私がモテないのはどう考えてもお前らが悪い!",
+    "synopsis": "私がモテないのはどう考えてもお前らが悪い! 谷川ニコ(掲載「ガンガンONLINE」スクウェア・エニックス刊) コメディ・ギャグ 日常・ほのぼの 学園 家族 高校",
+    "staff_text": "原作:谷川ニコ(掲載「ガンガンONLINE」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "afac498b644c917e4249d4ea91a8513811332dc34c74ef88764e7629c530584d"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,11 +25,14 @@
   "original_credit": "谷川ニコ(掲載「ガンガンONLINE」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
     "学園",
-    "家族"
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -25,15 +42,18 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20914"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -59,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20914"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -67,19 +87,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20914"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "家族": [
             "家族"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20914"
     }

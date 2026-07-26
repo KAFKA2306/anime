@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24470",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24470",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "コヨーテ ラグタイムショー",
+    "synopsis": "コヨーテ ラグタイムショー ufotable 異世界・ハイファンタジー SF・ファンタジー バトル・アクション 宇宙 犯罪・警察 惑星 警察 ギルド",
+    "staff_text": "原作:ufotable",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "0c3308371c19476d2d9b7b057c239a81f2dfb0770f63bab79f8f1a0e6e6ffd69"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル"
@@ -11,10 +25,19 @@
   "original_credit": "ufotable",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "バトル・アクション",
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "異世界",
     "宇宙",
     "犯罪・警察"
   ],
@@ -22,10 +45,16 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "バトル・アクション"
     ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ"
+    ],
     "setting": [
+      "異世界",
       "宇宙"
     ],
     "theme": [],
@@ -34,6 +63,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -48,18 +78,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24470"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
       ],
       "matched_terms": [
+        "宇宙",
+        "惑星",
+        "異世界",
         "ギルド"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24470"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
@@ -67,9 +100,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24470"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "宇宙": [
             "宇宙",
             "惑星"
@@ -78,7 +114,16 @@
         "theme": {},
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

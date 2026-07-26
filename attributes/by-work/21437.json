@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21437",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ひだまりスケッチ",
+    "synopsis": "ひだまりスケッチ 蒼樹うめ 日常・ほのぼの 学園 学校 高校",
+    "staff_text": "原作:蒼樹うめ",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "45207c220e25c86470e0a888903d2215a4eea2b4444dfbe7db7dbc879257da22"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,22 +23,29 @@
   "original_credit": "蒼樹うめ",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -48,14 +68,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -64,8 +84,13 @@
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437"
     }

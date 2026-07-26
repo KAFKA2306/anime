@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20146",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20146",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "はなまる幼稚園",
+    "synopsis": "はなまる幼稚園 勇人(掲載:「ヤングガンガン」スクウェア・エニックス刊) コメディ・ギャグ 成長・挑戦 恋愛 推理・謎解き 成長 恋する 探偵",
+    "staff_text": "原作:勇人(掲載:「ヤングガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "11d0c6cddec95956194a8b9a95317404e1680b85f217d6edc623d46ec37c1179"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "勇人(掲載:「ヤングガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ミステリー",
     "成長・挑戦",
     "恋愛",
     "推理・謎解き"
@@ -23,6 +39,9 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -32,6 +51,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20146"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -56,28 +76,39 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20146"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20146"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "恋愛": [
+            "恋愛",
             "恋する"
           ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20146"
     }

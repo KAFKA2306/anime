@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21343",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21343",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ライブ・ファンタジー「FAIRY TAIL」",
+    "synopsis": "ライブ・ファンタジー「FAIRY TAIL」 真島ヒロ「FAIRY TAIL」(講談社「週刊少年マガジン」連載) 2.5次元舞台 魔法 魔導",
+    "staff_text": "原作:真島ヒロ「FAIRY TAIL」(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "d282db12314872658a334cab02ec6831e1f6a6140d2d458ca1b1b3a63c8792dc"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,26 +23,42 @@
   "original_credit": "真島ヒロ「FAIRY TAIL」(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
-    "魔法"
+    "SF",
+    "ファンタジー",
+    "現代ファンタジー",
+    "魔法",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
     "motif": [
-      "魔法"
+      "魔法",
+      "人工知能"
     ],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21343"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,14 +84,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21343"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21343"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
@@ -70,6 +99,14 @@
           "魔法": [
             "魔法",
             "魔導"
+          ],
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10645",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10645",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "神様はじめました",
+    "synopsis": "神様はじめました 恋愛・ラブコメ コメディ・ギャグ 職業・仕事 怪異・妖怪 仕事 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "b5a347b0a0f59c5f5da84b235aaad8a74227638cc4587fa11a2bc530c47d5b2d"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "コメディ/ギャグ"
@@ -11,9 +25,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "コメディ・ギャグ",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事",
     "怪異・妖怪"
   ],
@@ -23,8 +42,13 @@
       "恋愛・ラブコメ",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [
@@ -32,6 +56,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,13 +65,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10645"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ"
@@ -55,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10645"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ"
@@ -63,17 +88,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10645"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

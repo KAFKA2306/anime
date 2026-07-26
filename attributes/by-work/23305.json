@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23305",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23305",
   "attribute_fetched_at": "2026-07-25T10:55:42.105Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ビリ犬",
+    "synopsis": "ビリ犬 藤子不二雄A コメディ・ギャグ SF・ファンタジー ショート 家族 兄弟",
+    "staff_text": "原作:藤子不二雄A",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "SF/ファンタジー",
+      "ショート"
+    ],
+    "production_year": 1988,
+    "source": "legacy-derived",
+    "sha256": "790e916e41193adb3134cf975fd9e07af5f6652d77a3f1d1439ce948ac0e44e0"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "SF/ファンタジー",
@@ -12,19 +27,22 @@
   "original_credit": "藤子不二雄A",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "SF・ファンタジー",
     "ショート",
+    "スペキュレーティブ判定保留",
     "家族"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "コメディ・ギャグ",
-      "SF・ファンタジー",
-      "ショート"
+      "ショート",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -34,6 +52,7 @@
       "ショート"
     ]
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23305"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー",
@@ -58,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23305"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー",
@@ -67,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23305"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "兄弟"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23305"
     }

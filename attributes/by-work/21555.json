@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21555",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21555",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "アイドルマスター シンデレラガールズ劇場",
+    "synopsis": "アイドルマスター シンデレラガールズ劇場 バンダイナムコエンターテインメント ショート 音楽・アイドル アイドル",
+    "staff_text": "原作:バンダイナムコエンターテインメント",
+    "official_genres": [
+      "ショート"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "6ce9cd306ad77ee25d8d9d2c738b9963738537b89ba484b0b4c4d476925e43c3"
+  },
   "official_genres": [
     "ショート"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "バンダイナムコエンターテインメント",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "音楽・アイドル"
@@ -19,6 +34,7 @@
     "genre": [
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
@@ -28,6 +44,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21555"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート"
       ],
@@ -50,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21555"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21555"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21555"
     }

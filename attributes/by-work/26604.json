@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26604",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26604",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "攻略うぉんてっど!~異世界救います!?~",
+    "synopsis": "攻略うぉんてっど!~異世界救います!?~ 異世界・ハイファンタジー SF・ファンタジー コメディ・ギャグ 異世界 ゲーム世界 召喚 勇者 魔王",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "be2dc43a8b09caa5ca1a238923a775decc84d4fff5a963a97405d940d0666090"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -11,10 +25,15 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
     "異世界",
     "ゲーム世界"
   ],
@@ -22,8 +41,11 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -34,6 +56,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -42,27 +65,27 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26604"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
-        "異世界",
-        "召喚",
+        "魔王",
         "勇者",
-        "魔王"
+        "異世界",
+        "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26604"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -70,7 +93,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26604"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -82,6 +105,12 @@
         "motif": {
           "ゲーム世界": [
             "ゲーム世界"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
           ]
         }
       },

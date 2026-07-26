@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10691",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10691",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "一騎当千 Great Guardians",
+    "synopsis": "一騎当千 Great Guardians 塩崎雄二 (ワニブックス刊「月刊Comic Gum連載」) バトル・アクション",
+    "staff_text": "原作:塩崎雄二 (ワニブックス刊「月刊Comic Gum連載」)",
+    "official_genres": [
+      "アクション/バトル"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "b13c109893da4681d7c568e5521deece5ace313682b7418f894ffe1c38af47ed"
+  },
   "official_genres": [
     "アクション/バトル"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "塩崎雄二 (ワニブックス刊「月刊Comic Gum連載」)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション"
   ],
@@ -20,11 +35,13 @@
     "genre": [
       "バトル・アクション"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -41,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10691"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル"
       ],
@@ -49,18 +66,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10691"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10691"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10691"
     }

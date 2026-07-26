@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24042",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24042",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "妖怪人間ベム -HUMANOID MONSTER BEM-",
+    "synopsis": "妖怪人間ベム -HUMANOID MONSTER BEM- アサツー ディ・ケイ ホラー・サスペンス・ミステリー 怪異・妖怪 妖怪",
+    "staff_text": "原作:アサツー ディ・ケイ",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "a80dc8376dbcbb412780e1f58a238b7a9d91a41c838a96e77c21f3d8ecd178df"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,14 +23,20 @@
   "original_credit": "アサツー ディ・ケイ",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +45,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24042"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,20 +68,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24042"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24042"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

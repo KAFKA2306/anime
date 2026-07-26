@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24809",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24809",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "探偵はもう、死んでいる。",
+    "synopsis": "探偵はもう、死んでいる。 二語十(MF文庫J「探偵はもう、死んでいる。」 ホラー・サスペンス・ミステリー 恋愛・ラブコメ 学園 推理・謎解き 高校 探偵",
+    "staff_text": "原作:二語十(MF文庫J「探偵はもう、死んでいる。」",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "b824c17c74775347921408090fa71210658013038de4d1f2d5e5862f8ff9e761"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "恋愛/ラブコメ"
@@ -11,10 +25,15 @@
   "original_credit": "二語十(MF文庫J「探偵はもう、死んでいる。」",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "恋愛・ラブコメ",
+    "ラブコメ",
+    "ミステリー",
     "学園",
+    "恋愛",
     "推理・謎解き"
   ],
   "ontology_facets": {
@@ -25,15 +44,21 @@
       "ホラー・サスペンス・ミステリー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ",
+      "ミステリー"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
+      "恋愛",
       "推理・謎解き"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24809"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "恋愛/ラブコメ"
@@ -59,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24809"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "恋愛/ラブコメ"
@@ -67,19 +92,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24809"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24809"
     }

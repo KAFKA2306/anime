@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26575",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26575",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ガンダムビルドメタバース",
+    "synopsis": "ガンダムビルドメタバース 矢立 肇・富野由悠季 SF・ファンタジー ロボット・メカ キッズ・ファミリー",
+    "staff_text": "原作:矢立 肇・富野由悠季",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "1e091082d84bc4189863cafba3ae3f3e6ccd8ce5d96f986c6ad2f04d6353c707"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,18 +26,26 @@
   "production_year": 2023,
   "original_credit": "矢立 肇・富野由悠季",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -31,11 +54,12 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,17 +69,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26575"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26575"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -64,11 +91,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26575"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26575"
     }

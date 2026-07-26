@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21837",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21837",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "3月のライオン",
+    "synopsis": "3月のライオン 羽海野チカ(白泉社 ヤングアニマル連載) スポーツ・競技 ドラマ・青春 家族 姉妹",
+    "staff_text": "原作:羽海野チカ(白泉社 ヤングアニマル連載)",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "7f56420ae65e40b8371a76abdf9f0f1a7c35f4bcb3baf0ff140b29363baf92a0"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": "羽海野チカ(白泉社 ヤングアニマル連載)",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
-    "家族"
+    "成長・挑戦",
+    "家族",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,17 @@
       "スポーツ・競技",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "家族"
+      "成長・挑戦",
+      "家族",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21837"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21837"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春"
@@ -60,16 +82,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21837"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
             "家族",
             "姉妹"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21837"
     }

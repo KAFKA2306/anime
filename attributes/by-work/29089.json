@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "29089",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "対ありでした。~お嬢さまは格闘ゲームなんてしない~",
+    "synopsis": "対ありでした。~お嬢さまは格闘ゲームなんてしない~ 江島絵理「対ありでした。 ~お嬢さまは格闘ゲームなんてしない~」(MFコミックス フラッパーシリーズ スポーツ・競技 コメディ・ギャグ 学園 学校",
+    "staff_text": "原作:江島絵理「対ありでした。 ~お嬢さまは格闘ゲームなんてしない~」(MFコミックス フラッパーシリーズ",
+    "official_genres": [
+      "スポーツ/競技",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "89cfa16ae9b88f9b1a196da42ef37972477f9899242a7e8cd1fe728fca356407"
+  },
   "official_genres": [
     "スポーツ/競技",
     "コメディ/ギャグ"
@@ -11,10 +25,13 @@
   "original_credit": "江島絵理「対ありでした。 ~お嬢さまは格闘ゲームなんてしない~」(MFコミックス フラッパーシリーズ",
   "source_origin": "ゲーム",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "コメディ・ギャグ",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +41,17 @@
       "スポーツ・競技",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "コメディ/ギャグ"
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "コメディ/ギャグ"
@@ -64,15 +85,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29089"
     }

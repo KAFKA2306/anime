@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23297",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23297",
   "attribute_fetched_at": "2026-07-25T10:21:27.736Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "白雪姫の伝説",
+    "synopsis": "白雪姫の伝説 『白雪姫』(グリム兄弟) SF・ファンタジー キッズ・ファミリー",
+    "staff_text": "原作:『白雪姫』(グリム兄弟)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1994,
+    "source": "legacy-derived",
+    "sha256": "443265ea1083f01f8a5027c504cb7f378afb5d6655180f7cd88f560b0d24c305"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー"
@@ -10,27 +24,34 @@
   "production_year": 1994,
   "original_credit": "『白雪姫』(グリム兄弟)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "スペキュレーティブ判定保留",
+    "家族"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "キッズ・ファミリー"
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "家族"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23297"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23297"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -57,11 +78,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23297"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "家族": [
+            "兄弟"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23297"
     }

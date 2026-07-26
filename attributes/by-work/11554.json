@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11554",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11554",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "DOG DAYS",
+    "synopsis": "DOG DAYS 異世界・ハイファンタジー SF・ファンタジー スポーツ・競技 異世界 召喚 勇者",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "スポーツ/競技"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "c6d25406da87d846dcd2d697df4869f256550edb662874ecabdd339da73c21a4"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "スポーツ/競技"
@@ -11,26 +25,38 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "スポーツ・競技",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "スポーツ・競技"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -39,26 +65,26 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11554"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技"
       ],
       "matched_terms": [
+        "勇者",
         "異世界",
-        "召喚",
-        "勇者"
+        "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11554"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技"
@@ -66,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11554"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -74,8 +100,19 @@
             "召喚"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11554"
     }

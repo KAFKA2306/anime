@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20431",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ガールズ&パンツァー",
+    "synopsis": "ガールズ&パンツァー スポーツ・競技 戦争・ミリタリー ドラマ・青春 学園 恋愛 恋する",
+    "staff_text": "",
+    "official_genres": [
+      "スポーツ/競技",
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "41b5c999160a6f1748c47586220cae6889c66b4b6e17cdd1e7b138198e53069d"
+  },
   "official_genres": [
     "スポーツ/競技",
     "戦争/ミリタリー",
@@ -12,12 +27,18 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "戦争・ミリタリー",
     "ドラマ・青春",
     "学園",
-    "恋愛"
+    "成長・挑戦",
+    "恋愛",
+    "スポーツ",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
@@ -26,15 +47,22 @@
       "戦争・ミリタリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "恋愛"
+      "成長・挑戦",
+      "恋愛",
+      "スポーツ",
+      "戦争"
     ],
-    "motif": [],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,13 +71,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "戦争/ミリタリー",
@@ -59,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "戦争/ミリタリー",
@@ -68,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -76,11 +104,27 @@
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "恋愛": [
+            "恋愛",
             "恋する"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ],
+          "戦争": [
+            "戦争"
           ]
         },
-        "motif": {}
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431"
     }

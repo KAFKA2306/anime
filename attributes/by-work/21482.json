@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21482",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21482",
   "attribute_fetched_at": "2026-07-25T10:44:38.235Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "笑ゥせぇるすまん(89~93年)【デジタルリマスター版】",
+    "synopsis": "笑ゥせぇるすまん(89~93年)【デジタルリマスター版】 藤子不二雄(A) ホラー・サスペンス・ミステリー 職業・仕事 仕事",
+    "staff_text": "原作:藤子不二雄(A)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1989,
+    "source": "legacy-derived",
+    "sha256": "89ed5e57317100450bece2fe528b7027c2b2eb37b2bad3d83b3849dfd3f05c5d"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "藤子不二雄(A)",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "職業・仕事"
@@ -19,6 +34,7 @@
     "genre": [
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21482"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,14 +65,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21482"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21482"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -63,7 +80,8 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21482"
     }

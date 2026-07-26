@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21906",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21906",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "黒崎真音 LIVE 2015~5th Anniversary~",
+    "synopsis": "黒崎真音 LIVE 2015~5th Anniversary~ ライブ・ラジオ・その他 学園 友情・仲間 魔法 怪異・妖怪 絆 魔術 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "5466c5a725fa40bfecc73e72a1914b6033318f9b273e747ffd921ff3384b0d8c"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,8 +23,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
+    "ファンタジー",
+    "現代ファンタジー",
     "学園",
     "友情・仲間",
     "魔法",
@@ -20,7 +39,11 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ライブ・ラジオ・その他"
+      "ライブ・ラジオ・その他",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -36,6 +59,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21906"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -58,14 +82,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21906"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21906"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -74,15 +98,26 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
           ],
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法",
+            "怪異"
           ]
         }
       },

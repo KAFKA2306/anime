@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28363",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28363",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "湾岸ミッドナイト",
+    "synopsis": "湾岸ミッドナイト 楠みちはる(講談社『ヤングマガジン』所載) ドラマ・青春 成長・挑戦 挑戦",
+    "staff_text": "原作:楠みちはる(講談社『ヤングマガジン』所載)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "56bf7df8e30e2ee013bb0291bfef127b2eb85ddadee5e6f07e7b3b5f47f3babc"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "楠みちはる(講談社『ヤングマガジン』所載)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "成長・挑戦"
@@ -21,6 +36,7 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -28,6 +44,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28363"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -53,22 +70,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28363"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28363"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28363"
     }

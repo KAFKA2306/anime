@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21403",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21403",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台版『心霊探偵八雲 祈りの柩』",
+    "synopsis": "舞台版『心霊探偵八雲 祈りの柩』 神永 学「心霊探偵八雲」シリーズ(株式会社KADOKAWA 角川書店刊) 脚本:神永 学 2.5次元舞台 推理・謎解き 怪異・妖怪 犯罪・警察 探偵 幽霊 刑事",
+    "staff_text": "原作:神永 学「心霊探偵八雲」シリーズ(株式会社KADOKAWA 角川書店刊) 脚本:神永 学",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "b043262bab88488cd5164a2372f013a376e3a8b1c31b7410683dcfa79f37daa1"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,13 @@
   "original_credit": "神永 学「心霊探偵八雲」シリーズ(株式会社KADOKAWA 角川書店刊) 脚本:神永 学",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
+    "ミステリー",
+    "職場",
     "推理・謎解き",
     "怪異・妖怪",
     "犯罪・警察"
@@ -21,7 +39,13 @@
     "genre": [
       "2.5次元舞台"
     ],
-    "setting": [],
+    "subgenre": [
+      "現代ファンタジー",
+      "ミステリー"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [
       "推理・謎解き"
     ],
@@ -33,6 +57,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21403"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,27 +80,47 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21403"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21403"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
           ],
           "犯罪・警察": [
-            "刑事"
+            "警察",
+            "刑事",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

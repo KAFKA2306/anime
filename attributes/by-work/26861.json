@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26861",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26861",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ミュージカル「ヘタリア~The world is wonderful~」",
+    "synopsis": "ミュージカル「ヘタリア~The world is wonderful~」 「ヘタリア World★Stars」日丸屋秀和(集英社「少年ジャンプ+」連載) 2.5次元舞台 家族 兄弟",
+    "staff_text": "原作:「ヘタリア World★Stars」日丸屋秀和(集英社「少年ジャンプ+」連載)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "8ae453a7195351a361dbd8de714c1f8207a9b6b673fd06ed762a840df28977b5"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "「ヘタリア World★Stars」日丸屋秀和(集英社「少年ジャンプ+」連載)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "家族"
@@ -21,6 +36,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -30,6 +46,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26861"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,22 +71,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26861"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26861"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "兄弟"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26861"
     }

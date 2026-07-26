@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10276",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10276",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "けいおん!",
+    "synopsis": "けいおん! かきふらい(芳文社「まんがタイムきらら」連載) ドラマ・青春 日常・ほのぼの 友情・仲間 音楽・アイドル 仲間 音楽",
+    "staff_text": "原作:かきふらい(芳文社「まんがタイムきらら」連載)",
+    "official_genres": [
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "c43fa51de5fad8297d176e257a0d7bfe11b3fad880871c9eb52a6a968293d5d7"
+  },
   "official_genres": [
     "ドラマ/青春",
     "日常/ほのぼの"
@@ -11,11 +25,15 @@
   "original_credit": "かきふらい(芳文社「まんがタイムきらら」連載)",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "日常・ほのぼの",
     "友情・仲間",
-    "音楽・アイドル"
+    "成長・挑戦",
+    "音楽・アイドル",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,14 +41,18 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "音楽・アイドル"
+      "成長・挑戦",
+      "音楽・アイドル",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10276"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -54,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10276"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "日常/ほのぼの"
@@ -62,18 +84,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10276"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10276"
     }

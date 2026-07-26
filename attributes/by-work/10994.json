@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10994",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "問題児たちが異世界から来るそうですよ?",
+    "synopsis": "問題児たちが異世界から来るそうですよ? 異世界・ハイファンタジー SF・ファンタジー バトル・アクション コメディ・ギャグ 異世界 魔王",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "4ecf1c520610bc0e7c0a34f092dda306bf8bd249aa177c92c4784bc1a24cfca0"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -10,24 +25,30 @@
   ],
   "production_year": 2013,
   "original_credit": null,
-  "source_origin": "ライトノベル・小説",
+  "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
-    "source": [
-      "ライトノベル・小説"
-    ],
+    "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -36,36 +57,35 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-novel",
-      "matched_terms": [
-        "文庫"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "コメディ/ギャグ"
       ],
       "matched_terms": [
-        "異世界",
-        "魔王"
+        "魔王",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -74,7 +94,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -82,7 +102,12 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994"
     }

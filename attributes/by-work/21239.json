@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21239",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21239",
   "attribute_fetched_at": "2026-07-25T10:55:16.490Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "パタリロ!",
+    "synopsis": "パタリロ! 魔夜峰央 コメディ・ギャグ 学園 大学",
+    "staff_text": "原作:魔夜峰央",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1982,
+    "source": "legacy-derived",
+    "sha256": "a00214fc85fa14da91750bcd02d189ff8dc36de282742b4bb17de4b08eb49035"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "魔夜峰央",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "学園"
@@ -19,6 +34,7 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21239"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,22 +65,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21239"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21239"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21239"
     }

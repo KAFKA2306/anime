@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25180",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25180",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "王子の本命は悪役令嬢【オンエア版】",
+    "synopsis": "王子の本命は悪役令嬢【オンエア版】 Re:mimu ※「:」は半角 異世界・ハイファンタジー ショート 恋愛・ラブコメ SF・ファンタジー 異世界 転生",
+    "staff_text": "原作:Re:mimu ※「:」は半角",
+    "official_genres": [
+      "ショート",
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "66070db17d13e8f8f3b45f6e2c93705882d4417db73c0e7814c895ee14cff370"
+  },
   "official_genres": [
     "ショート",
     "恋愛/ラブコメ",
@@ -12,30 +27,47 @@
   "original_credit": "Re:mimu ※「:」は半角",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "ショート",
     "恋愛・ラブコメ",
-    "SF・ファンタジー",
-    "異世界"
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "ショート",
-      "恋愛・ラブコメ",
-      "SF・ファンタジー"
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "転生"
+    ],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -50,19 +82,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25180"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ショート",
         "恋愛/ラブコメ",
         "SF/ファンタジー"
       ],
       "matched_terms": [
-        "転生"
+        "異世界",
+        "転生",
+        "王子"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25180"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "恋愛/ラブコメ",
@@ -71,15 +105,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25180"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25180"
     }

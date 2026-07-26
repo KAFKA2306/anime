@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27672",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27672",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "プチ・ニコラ パリがくれた幸せ(吹替版)",
+    "synopsis": "プチ・ニコラ パリがくれた幸せ(吹替版) ルネ・ゴシニ、ジャン=ジャック・サンペ キッズ・ファミリー ドラマ・青春 友情・仲間 友情",
+    "staff_text": "原作:ルネ・ゴシニ、ジャン=ジャック・サンペ",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "32dfe487b61b2d3dcbf273610318b4b07117b3bb13a7818875adacff8f8dbccc"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": "ルネ・ゴシニ、ジャン=ジャック・サンペ",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "ドラマ・青春",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "キッズ・ファミリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27672"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27672"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "ドラマ/青春"
@@ -60,15 +80,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27672"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27672"
     }

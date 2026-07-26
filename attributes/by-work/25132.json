@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "25132",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25132",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "イノセンス",
+    "synopsis": "イノセンス 士郎正宗(「攻殻機動隊」講談社刊) SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー ロボット・メカ 犯罪・警察 ロボット 刑事 犯罪 捜査",
+    "staff_text": "原作:士郎正宗(「攻殻機動隊」講談社刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "cba24d5ad3a1e14f08d60b40dab00433fbe6f7c9b796ef9fd3cfc7e3907b5a31"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,20 +26,28 @@
   "production_year": 2004,
   "original_credit": "士郎正宗(「攻殻機動隊」講談社刊)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
+    "ロボットSF",
     "ロボット・メカ",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -34,9 +57,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -48,17 +72,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25132"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "ホラー/サスペンス/推理"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25132"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -67,18 +94,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25132"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
-            "ロボット"
+            "ロボット",
+            "メカ"
           ],
           "犯罪・警察": [
+            "警察",
             "刑事",
             "犯罪",
             "捜査"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

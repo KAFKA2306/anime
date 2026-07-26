@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28550",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28550",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ボトムズファインダー",
+    "synopsis": "ボトムズファインダー 矢立 肇、高橋良輔 SF・ファンタジー ロボット・メカ 戦争・ミリタリー",
+    "staff_text": "原作:矢立 肇、高橋良輔",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "325a91d8f124509f9f457c7e9b5eff7ea564fa0c714cc3e0b15639578a2ec027"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,31 +26,45 @@
   "production_year": 2010,
   "original_credit": "矢立 肇、高橋良輔",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
-    "戦争・ミリタリー"
+    "戦争・ミリタリー",
+    "ロボットSF",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "戦争・ミリタリー"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,17 +74,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28550"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "戦争/ミリタリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28550"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -64,11 +96,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28550"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28550"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21610",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21610",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "屍者の帝国",
+    "synopsis": "屍者の帝国 「屍者の帝国」伊藤計劃×円城塔(河出文庫) SF・ファンタジー ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:「屍者の帝国」伊藤計劃×円城塔(河出文庫)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "ac37be8cc4a66af2ab3585972cf2aacdf0b5e276444c2ea854d82a1aa76c3d35"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理"
@@ -10,29 +24,36 @@
   "production_year": 2015,
   "original_credit": "「屍者の帝国」伊藤計劃×円城塔(河出文庫)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "スペースオペラ"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -44,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21610"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -53,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21610"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理"
@@ -61,11 +82,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21610"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21610"
     }

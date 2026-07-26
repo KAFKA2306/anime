@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21146",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21146",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ステラのまほう",
+    "synopsis": "ステラのまほう くろば・U「ステラのまほう」(芳文社刊) 日常・ほのぼの 学園 音楽・アイドル 高校 部活 音楽",
+    "staff_text": "原作:くろば・U「ステラのまほう」(芳文社刊)",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "7643ad4514c02cf13f63981eb7cb1031a7a1cea15b8939c8c1a1f81f19a35ecb"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,25 +23,31 @@
   "original_credit": "くろば・U「ステラのまほう」(芳文社刊)",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "学園",
-    "音楽・アイドル"
+    "音楽・アイドル",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "音楽・アイドル"
+      "音楽・アイドル",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21146"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -51,27 +70,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21146"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21146"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校",
             "部活"
           ]
         },
         "theme": {
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21146"
     }

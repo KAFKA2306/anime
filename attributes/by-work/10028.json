@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10028",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10028",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "双恋",
+    "synopsis": "双恋 双葉ひな・ささきむつみ 恋愛・ラブコメ 学園 職業・仕事 学校 仕事",
+    "staff_text": "原作:双葉ひな・ささきむつみ",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "739efd5e55a5397eb7073358682348e77721cb440f51a3d3b4d115394d854965"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,9 +23,13 @@
   "original_credit": "双葉ひな・ささきむつみ",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -20,15 +37,20 @@
     "genre": [
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10028"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -51,26 +73,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10028"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10028"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10028"
     }

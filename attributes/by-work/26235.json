@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26235",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26235",
   "attribute_fetched_at": "2026-07-25T10:20:37.825Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "鋼鉄ジーグ",
+    "synopsis": "鋼鉄ジーグ 永井豪、安田達也とダイナミックプロ ロボット・メカ バトル・アクション SF・ファンタジー",
+    "staff_text": "原作:永井豪、安田達也とダイナミックプロ",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1975,
+    "source": "legacy-derived",
+    "sha256": "c08c7e9bfa48a7da89e56da286407fede554bdfdc8eceef181db86dbfc0dc64c"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -11,18 +26,26 @@
   "production_year": 1975,
   "original_credit": "永井豪、安田達也とダイナミックプロ",
   "source_origin": null,
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ロボット・メカ",
     "バトル・アクション",
-    "SF・ファンタジー"
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "SF",
       "ロボット・メカ",
-      "バトル・アクション",
-      "SF・ファンタジー"
+      "バトル・アクション"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -31,11 +54,12 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,17 +69,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26235"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26235"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -64,11 +91,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26235"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26235"
     }

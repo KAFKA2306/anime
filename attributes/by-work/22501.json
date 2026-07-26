@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22501",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22501",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "トリコ",
+    "synopsis": "トリコ 島袋光年(集英社 ジャンプ コミックス刊) バトル・アクション SF・ファンタジー 料理・グルメ 料理 グルメ",
+    "staff_text": "原作:島袋光年(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "ed85c98ab66194d88f219d41e31107aaa1349d3229afd1cee16b646ddd1bae72"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー"
@@ -11,9 +25,11 @@
   "original_credit": "島袋光年(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "料理・グルメ"
   ],
   "ontology_facets": {
@@ -22,8 +38,9 @@
     ],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "料理・グルメ"
@@ -31,6 +48,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22501"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -57,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22501"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -65,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22501"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -74,7 +92,8 @@
             "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22501"
     }

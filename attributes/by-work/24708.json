@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24708",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24708",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "地獄先生ぬ~べ~(劇場版)",
+    "synopsis": "地獄先生ぬ~べ~(劇場版) 真倉 翔(原作)・岡野 剛(漫画) ホラー・サスペンス・ミステリー バトル・アクション 宇宙 怪異・妖怪 犯罪・警察 鬼 警察",
+    "staff_text": "原作:真倉 翔(原作)・岡野 剛(漫画)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "アクション/バトル"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "52511001832d4359b1102367ba01a2b65043381b429977d13b47ed752bcdd034"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "アクション/バトル"
@@ -11,9 +25,16 @@
   "original_credit": "真倉 翔(原作)・岡野 剛(漫画)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "SF",
     "バトル・アクション",
+    "現代ファンタジー",
+    "スペースオペラ",
     "宇宙",
     "怪異・妖怪",
     "犯罪・警察"
@@ -24,7 +45,12 @@
     ],
     "genre": [
       "ホラー・サスペンス・ミステリー",
+      "SF",
       "バトル・アクション"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -36,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24708"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "アクション/バトル"
@@ -61,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24708"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "アクション/バトル"
@@ -69,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24708"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -79,10 +106,21 @@
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
           ],
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

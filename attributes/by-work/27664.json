@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27664",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27664",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "歌劇『桜蘭高校ホスト部』Fine",
+    "synopsis": "歌劇『桜蘭高校ホスト部』Fine 葉鳥ビスコ(白泉社・花とゆめコミックス) 2.5次元舞台 学園 宇宙 高校 銀河",
+    "staff_text": "原作:葉鳥ビスコ(白泉社・花とゆめコミックス)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "a2ab8f567df22f23babe43093ace01b7556ec6f01216da61e5380cf4861e431d"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "葉鳥ビスコ(白泉社・花とゆめコミックス)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "SF",
+    "スペースオペラ",
     "学園",
     "宇宙"
   ],
@@ -20,7 +39,11 @@
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "学園",
@@ -32,6 +55,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27664"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -58,25 +82,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27664"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27664"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "宇宙": [
+            "宇宙",
             "銀河"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27664"
     }

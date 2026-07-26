@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26091",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26091",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "舞台「文豪ストレイドッグス 太宰、中也、十五歳」",
+    "synopsis": "舞台「文豪ストレイドッグス 太宰、中也、十五歳」 TVアニメ「文豪ストレイドッグス 」 2.5次元舞台 推理・謎解き 職業・仕事 探偵 仕事",
+    "staff_text": "原作:TVアニメ「文豪ストレイドッグス 」",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "e30f49b0d1a95b1ef584c6665b366cd97998f2fb0f5c8c1ae4906ffffd5226ad"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "TVアニメ「文豪ストレイドッグス 」",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ミステリー",
     "推理・謎解き",
     "職業・仕事"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -30,6 +49,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -44,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26091"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -52,25 +72,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26091"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26091"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26091"
     }

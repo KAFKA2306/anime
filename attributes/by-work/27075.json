@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27075",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27075",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "シンカリオン チェンジ ザ ワールド",
+    "synopsis": "シンカリオン チェンジ ザ ワールド ロボット・メカ バトル・アクション キッズ・ファミリー 学園 成長・挑戦 成長 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "アクション/バトル",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "314cd2c1bee2bbac79680e8098da9ba506277d13f344ac9fb7908feb85eb2d2d"
+  },
   "official_genres": [
     "ロボット/メカ",
     "アクション/バトル",
@@ -12,10 +27,16 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "バトル・アクション",
     "キッズ・ファミリー",
+    "ロボットSF",
     "学園",
     "成長・挑戦"
   ],
@@ -23,8 +44,12 @@
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "バトル・アクション",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
@@ -37,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,13 +71,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27075"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -61,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27075"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "アクション/バトル",
@@ -70,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27075"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -79,11 +105,18 @@
         },
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

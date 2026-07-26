@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11081",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11081",
   "attribute_fetched_at": "2026-07-25T10:43:54.548Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ハイスクール!奇面組",
+    "synopsis": "ハイスクール!奇面組 新沢基栄 コメディ・ギャグ 学園 怪異・妖怪 高校 鬼",
+    "staff_text": "原作:新沢基栄",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1985,
+    "source": "legacy-derived",
+    "sha256": "b459fcfa450bf9985fe2dcb6fed028f4df9bae92b20be946d2b2d8f54b58c829"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "新沢基栄",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "現代ファンタジー",
     "学園",
     "怪異・妖怪"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -29,6 +48,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11081"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -51,24 +71,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11081"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11081"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

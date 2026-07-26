@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20974",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "はんだくん",
+    "synopsis": "はんだくん ヨシノサツキ(掲載 月刊「少年ガンガン」スクウェア・エニックス刊) 日常・ほのぼの コメディ・ギャグ 学園 学校 高校",
+    "staff_text": "原作:ヨシノサツキ(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "日常/ほのぼの",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "f060bffce4cd2170abe4386e31224eabf38bd986b69402d992704edb9712220e"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "コメディ/ギャグ"
@@ -11,10 +25,13 @@
   "original_credit": "ヨシノサツキ(掲載 月刊「少年ガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "コメディ・ギャグ",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -24,13 +41,17 @@
       "日常・ほのぼの",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -64,16 +85,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20974"
     }

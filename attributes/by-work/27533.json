@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27533",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27533",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "「マッシュル-MASHLE-」THE STAGE 【大千秋楽公演】",
+    "synopsis": "「マッシュル-MASHLE-」THE STAGE 【大千秋楽公演】 「マッシュル-MASHLE-」甲本 一(集英社ジャンプ コミックス刊) 2.5次元舞台 友情・仲間 魔法 友情",
+    "staff_text": "原作:「マッシュル-MASHLE-」甲本 一(集英社ジャンプ コミックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "97a143a74ddf625b27f3ef6acfe454d991fe0845f1f98179858d26870f3b9f11"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "「マッシュル-MASHLE-」甲本 一(集英社ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
     "友情・仲間",
     "魔法"
   ],
@@ -20,7 +39,11 @@
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
@@ -33,6 +56,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27533"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -58,23 +82,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27533"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27533"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

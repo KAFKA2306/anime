@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23392",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23392",
   "attribute_fetched_at": "2026-07-25T10:20:43.857Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "空手バカ一代",
+    "synopsis": "空手バカ一代 梶原一騎、つのだじろう バトル・アクション スポーツ・競技 サバイバル 生き残",
+    "staff_text": "原作:梶原一騎、つのだじろう",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 1973,
+    "source": "legacy-derived",
+    "sha256": "8d18db9d664255e435f3e772d82b17c5f49096facf57c24ee702526becad68cc"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,10 +25,13 @@
   "original_credit": "梶原一騎、つのだじろう",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "スポーツ・競技",
-    "サバイバル"
+    "サバイバル",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "バトル・アクション",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "サバイバル"
+      "サバイバル",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23392"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23392"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -60,15 +80,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23392"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "サバイバル": [
+            "サバイバル",
             "生き残"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23392"
     }

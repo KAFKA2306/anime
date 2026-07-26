@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10045",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10045",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "魔探偵ロキ RAGNAROK",
+    "synopsis": "魔探偵ロキ RAGNAROK 木下さくら ホラー・サスペンス・ミステリー 推理・謎解き 探偵",
+    "staff_text": "原作:木下さくら",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "aab09af1feb851e9dcc44444e65b4a6878a9f2ca071d71596e6d536983184874"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,14 +23,20 @@
   "original_credit": "木下さくら",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ミステリー",
     "推理・謎解き"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -26,6 +45,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10045"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,22 +68,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10045"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10045"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10045"
     }

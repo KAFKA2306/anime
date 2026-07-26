@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22502",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22502",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "ココロコネクト",
+    "synopsis": "ココロコネクト 庵田定夏(ファミ通文庫 ドラマ・青春 恋愛・ラブコメ SF・ファンタジー",
+    "staff_text": "原作:庵田定夏(ファミ通文庫",
+    "official_genres": [
+      "ドラマ/青春",
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "a37f3d726a0ff11b5e6b50590fbd2faa575895f5c127c9cc085606a7c4822fd0"
+  },
   "official_genres": [
     "ドラマ/青春",
     "恋愛/ラブコメ",
@@ -12,10 +27,15 @@
   "original_credit": "庵田定夏(ファミ通文庫",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ドラマ・青春",
     "恋愛・ラブコメ",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -24,18 +44,25 @@
     "genre": [
       "ドラマ・青春",
       "恋愛・ラブコメ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22502"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ",
@@ -57,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22502"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "恋愛/ラブコメ",
@@ -66,11 +93,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22502"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22502"
     }

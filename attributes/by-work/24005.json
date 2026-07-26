@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24005",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24005",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "リルリルフェアリル~魔法の鏡~",
+    "synopsis": "リルリルフェアリル~魔法の鏡~ サンリオ・セガトイズ SF・ファンタジー キッズ・ファミリー 学園 友情・仲間 成長・挑戦 魔法 学校 仲間 成長",
+    "staff_text": "原作:サンリオ・セガトイズ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "682051f46c289632d04bab4e54f4e6a94eef9562b092f6c98c8ec71b7f183161"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー"
@@ -10,10 +24,15 @@
   "production_year": 2017,
   "original_credit": "サンリオ・セガトイズ",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "学園",
     "友情・仲間",
     "成長・挑戦",
@@ -22,8 +41,11 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -37,9 +59,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -51,16 +74,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24005"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24005"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -68,23 +93,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24005"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ]
         },
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

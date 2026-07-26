@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10862",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10862",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "full-snapshot-reused",
+  "official_snapshot": {
+    "title": "gdgd妖精s(ぐだぐだフェアリーズ)第1期",
+    "synopsis": "gdgd妖精s(ぐだぐだフェアリーズ)第1期 ショート コメディ・ギャグ 魔法",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "64fc0dccc448e5f1c8503535fb1e2f1bbf83a1685c53b39bbfff7fd9d3ffb1c7"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,16 +25,26 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "ファンタジー",
     "コメディ・ギャグ",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
+      "ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -31,6 +55,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +64,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10862"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -54,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10862"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -62,12 +87,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10862"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }
