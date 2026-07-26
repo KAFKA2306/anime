@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28560",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28560",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "BEASTARS(第2期)",
+    "synopsis": "BEASTARS(第2期) 「BEASTARS」板垣巴留(秋田書店少年チャンピオン・コミックス刊) SF・ファンタジー ドラマ・青春 学園 成長・挑戦 青春",
+    "staff_text": "原作:「BEASTARS」板垣巴留(秋田書店少年チャンピオン・コミックス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "abcaf1415866caab1bf18f24174e5cdbbaec497061fe1889b8515a0e3e2705a8"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,10 +24,12 @@
   "production_year": 2021,
   "original_credit": "「BEASTARS」板垣巴留(秋田書店少年チャンピオン・コミックス刊)",
   "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
     "学園",
     "成長・挑戦"
   ],
@@ -22,9 +38,10 @@
       "漫画"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -34,6 +51,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28560"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -61,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28560"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -69,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28560"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -78,10 +96,13 @@
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28560"
     }

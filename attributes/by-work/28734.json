@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28734",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28734",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "8P channel 13",
+    "synopsis": "8P channel 13 ライブ・ラジオ・その他 成長・挑戦 挑戦",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "97a608f5a99cea79d7c0eab45a30ed1a57066cf6112f8b9df64ecb9a06c1328c"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
     "成長・挑戦"
@@ -19,6 +34,7 @@
     "genre": [
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -28,6 +44,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28734"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -50,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28734"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28734"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28734"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28316",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28316",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "不遇職【鑑定士】が実は最強だった",
+    "synopsis": "不遇職【鑑定士】が実は最強だった 茨木野『不遇職【鑑定士】が実は最強だった』~奈落で鍛えた最強の【神眼】で無双する~(講談社Kラノベブックス刊) 異世界・ハイファンタジー SF・ファンタジー 友情・仲間 家族 仲間 姉妹 賢者",
+    "staff_text": "原作:茨木野『不遇職【鑑定士】が実は最強だった』~奈落で鍛えた最強の【神眼】で無双する~(講談社Kラノベブックス刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "71014f1c1a9c6aa75e2d149cd564d2901d42189eb4197556bea224c1b3b89ee3"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,9 +23,15 @@
   "original_credit": "茨木野『不遇職【鑑定士】が実は最強だった』~奈落で鍛えた最強の【神眼】で無双する~(講談社Kラノベブックス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
     "友情・仲間",
     "家族"
   ],
@@ -22,9 +41,14 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "友情・仲間",
       "家族"
@@ -32,6 +56,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -48,35 +73,47 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28316"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "異世界",
         "賢者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28316"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28316"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "家族": [
+            "家族",
             "姉妹"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28316"
     }

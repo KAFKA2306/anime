@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28354",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28354",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ニャニがニャンだー ニャンダーかめん",
+    "synopsis": "ニャニがニャンだー ニャンダーかめん やなせたかし『ニャニガニャンだー ニャンダーかめん』より(講談社刊) キッズ・ファミリー バトル・アクション SF・ファンタジー 学園 音楽・アイドル 学校 アイドル",
+    "staff_text": "原作:やなせたかし『ニャニガニャンだー ニャンダーかめん』より(講談社刊)",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "b1563e22d0301dfef5cc0be35c0265617945fa380c1e68d22a6ab9d122ae23de"
+  },
   "official_genres": [
     "キッズ/ファミリー",
     "アクション/バトル",
@@ -12,10 +27,12 @@
   "original_credit": "やなせたかし『ニャニガニャンだー ニャンダーかめん』より(講談社刊)",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "キッズ・ファミリー",
     "バトル・アクション",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "学園",
     "音楽・アイドル"
   ],
@@ -24,8 +41,9 @@
     "genre": [
       "キッズ・ファミリー",
       "バトル・アクション",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -35,6 +53,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28354"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー",
         "アクション/バトル",
@@ -59,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28354"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー",
         "アクション/バトル",
@@ -68,19 +87,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28354"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28354"
     }

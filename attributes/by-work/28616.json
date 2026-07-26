@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28616",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28616",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "チャギントン(シーズン4)",
+    "synopsis": "チャギントン(シーズン4) ロボット・メカ ショート キッズ・ファミリー",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "f7d41e2ea239a1f4728013f7c292b821f3240d1614653368b69ae1c4a9414b77"
+  },
   "official_genres": [
     "ロボット/メカ",
     "ショート",
@@ -12,17 +27,27 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "ショート",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "ショート",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -33,21 +58,22 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28616"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "ショート",
@@ -57,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28616"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "ショート",
@@ -66,11 +92,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28616"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28616"
     }

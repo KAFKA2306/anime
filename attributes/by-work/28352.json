@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28352",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28352",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "千歳くんはラムネ瓶のなか",
+    "synopsis": "千歳くんはラムネ瓶のなか 裕夢(小学館「ガガガ文庫」刊) ドラマ・青春 学園 友情・仲間 学校 高校 仲間",
+    "staff_text": "原作:裕夢(小学館「ガガガ文庫」刊)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "7ba0dc9fdd18884447050ef6a7b5475baebeb6ff494f39f24a43bf092b79c425"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,10 +23,13 @@
   "original_credit": "裕夢(小学館「ガガガ文庫」刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +38,18 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28352"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -55,27 +74,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28352"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28352"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28352"
     }

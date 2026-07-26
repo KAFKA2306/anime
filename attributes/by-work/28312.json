@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28312",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28312",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Let’s Play クエストだらけのマイライフ",
+    "synopsis": "Let’s Play クエストだらけのマイライフ Leeanne M. Krecic (Mongie) 恋愛・ラブコメ ドラマ・青春 コメディ・ギャグ 成長・挑戦 家族 恋愛 職業・仕事 成長 仕事",
+    "staff_text": "原作:Leeanne M. Krecic (Mongie)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "2381bf87cb8b49f3320e7007ce29c26a3f752ee68c66d7d1aaa6f18b5b07cb87"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春",
@@ -12,10 +27,13 @@
   "original_credit": "Leeanne M. Krecic (Mongie)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
     "コメディ・ギャグ",
+    "ラブコメ",
     "成長・挑戦",
     "家族",
     "恋愛",
@@ -28,6 +46,9 @@
       "ドラマ・青春",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -38,6 +59,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28312"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春",
@@ -62,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28312"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春",
@@ -71,24 +93,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28312"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ],
           "家族": [
             "家族"
           ],
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28312"
     }

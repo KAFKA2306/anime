@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28503",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28503",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "2.5次元ダンスライブ「ツキウタ。」ステージ Girl’s Side MEGASTA. Episode2『Goodbye my dear Frenemy.』花公演",
+    "synopsis": "2.5次元ダンスライブ「ツキウタ。」ステージ Girl’s Side MEGASTA. Episode2『Goodbye my dear Frenemy.』花公演 2.5次元舞台 学園 友情・仲間 職業・仕事 学校 高校 大学 友情 働く",
+    "staff_text": "",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "7b1d4796fc5d163262216ab0e59f97c296d7a5d36f1f00f110ed81597e4ed24c"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,6 +23,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園",
@@ -21,6 +36,7 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -33,6 +49,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -41,13 +58,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28503"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,17 +72,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28503"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28503"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校",
             "大学"
@@ -73,13 +91,16 @@
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28503"
     }

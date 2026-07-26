@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28627",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28627",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "モブから始まる探索英雄譚",
+    "synopsis": "モブから始まる探索英雄譚 海翔 異世界・ハイファンタジー SF・ファンタジー バトル・アクション 学園 高校 ダンジョン",
+    "staff_text": "原作:海翔",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "d2d9d42133b2050b0855339dfcf7e2165a712b310b73fbf8f3276277476f2b2d"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル"
@@ -11,26 +25,37 @@
   "original_credit": "海翔",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
+    "異世界ファンタジー",
+    "異世界",
     "学園"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション"
     ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
     "setting": [
+      "異世界",
       "学園"
     ],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,18 +70,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28627"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
       ],
       "matched_terms": [
+        "異世界",
         "ダンジョン"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28627"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
@@ -64,15 +90,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28627"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28627"
     }

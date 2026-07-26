@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28332",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28332",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "よふかしのうた Season2",
+    "synopsis": "よふかしのうた Season2 コトヤマ(小学館「少年サンデーコミックス」刊) 恋愛・ラブコメ SF・ファンタジー 推理・謎解き 怪異・妖怪 探偵 鬼",
+    "staff_text": "原作:コトヤマ(小学館「少年サンデーコミックス」刊)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "e0d540581c4586b6f5a5fbcb2af916b628946ce8be1643ec06835dfa231f4f2a"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "SF/ファンタジー"
@@ -11,9 +25,15 @@
   "original_credit": "コトヤマ(小学館「少年サンデーコミックス」刊)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
+    "ミステリー",
+    "恋愛",
     "推理・謎解き",
     "怪異・妖怪"
   ],
@@ -23,10 +43,16 @@
     ],
     "genre": [
       "恋愛・ラブコメ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
+      "恋愛",
       "推理・謎解き"
     ],
     "motif": [
@@ -34,6 +60,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28332"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "SF/ファンタジー"
@@ -61,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28332"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "SF/ファンタジー"
@@ -69,17 +96,38 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28332"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

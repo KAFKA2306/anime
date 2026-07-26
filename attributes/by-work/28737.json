@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28737",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28737",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "おしりたんてい(第10期)",
+    "synopsis": "おしりたんてい(第10期) トロル「おしりたんてい」ポプラ社 コメディ・ギャグ ホラー・サスペンス・ミステリー キッズ・ファミリー 職業・仕事 働く",
+    "staff_text": "原作:トロル「おしりたんてい」ポプラ社",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "bf8dade097e5aaa41c70b7a353704c674e073b19306ae2ae2de804d2d2a8ef4f"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ホラー/サスペンス/推理",
@@ -12,6 +27,8 @@
   "original_credit": "トロル「おしりたんてい」ポプラ社",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ホラー・サスペンス・ミステリー",
@@ -25,6 +42,7 @@
       "ホラー・サスペンス・ミステリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "職業・仕事"
@@ -32,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28737"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ホラー/サスペンス/推理",
@@ -56,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28737"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ホラー/サスペンス/推理",
@@ -65,15 +84,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28737"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28737"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28709",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28709",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "バイオハザード:デスアイランド",
+    "synopsis": "バイオハザード:デスアイランド 株式会社カプコン バトル・アクション ホラー・サスペンス・ミステリー",
+    "staff_text": "原作:株式会社カプコン",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "cb2142b2fcd8063a662ab3d24c74c1c14c813d510efa30ed774ec8e6383b9584"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理"
@@ -11,9 +25,12 @@
   "original_credit": "株式会社カプコン",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
-    "ホラー・サスペンス・ミステリー"
+    "ホラー・サスペンス・ミステリー",
+    "職場"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +38,20 @@
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28709"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -49,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28709"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -57,11 +78,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28709"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28709"
     }

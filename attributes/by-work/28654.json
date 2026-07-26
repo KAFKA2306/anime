@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28654",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28654",
   "attribute_fetched_at": "2026-07-25T11:02:11.262Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "透明男と人間女~そのうち夫婦になるふたり~(副音声版)",
+    "synopsis": "透明男と人間女~そのうち夫婦になるふたり~(副音声版) 岩飛猫 恋愛・ラブコメ 日常・ほのぼの 恋愛 推理・謎解き ラブコメ 探偵",
+    "staff_text": "原作:岩飛猫",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "legacy-derived",
+    "sha256": "a423470b7dbd27776f3a723d34a40c8207aae255b7d8e30fc042b97f93155b2d"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "日常/ほのぼの"
@@ -11,11 +25,16 @@
   "original_credit": "岩飛猫",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "日常・ほのぼの",
+    "ラブコメ",
+    "ミステリー",
     "恋愛",
-    "推理・謎解き"
+    "推理・謎解き",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,14 +42,20 @@
       "恋愛・ラブコメ",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "ラブコメ",
+      "ミステリー"
+    ],
     "setting": [],
     "theme": [
       "恋愛",
-      "推理・謎解き"
+      "推理・謎解き",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28654"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -54,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28654"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -62,18 +87,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28654"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28654"
     }

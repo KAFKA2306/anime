@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28397",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28397",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ババンババンバンバンパイア",
+    "synopsis": "ババンババンバンバンパイア 奥嶋ひろまさ(秋田書店「別冊少年チャンピオン」連載) コメディ・ギャグ SF・ファンタジー 恋愛・ラブコメ 怪異・妖怪 鬼",
+    "staff_text": "原作:奥嶋ひろまさ(秋田書店「別冊少年チャンピオン」連載)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "f703b936eba7d4697549ff35102b99d2880d6dad18967ceb280c1a5e3b9f9ddb"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "SF/ファンタジー",
@@ -12,10 +27,15 @@
   "original_credit": "奥嶋ひろまさ(秋田書店「別冊少年チャンピオン」連載)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "コメディ・ギャグ",
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -24,16 +44,23 @@
     ],
     "genre": [
       "コメディ・ギャグ",
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28397"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー",
@@ -60,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28397"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "SF/ファンタジー",
@@ -69,13 +96,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28397"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

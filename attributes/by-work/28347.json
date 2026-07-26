@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28347",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28347",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "梶100!~梶裕貴がやりたい100のこと~",
+    "synopsis": "梶100!~梶裕貴がやりたい100のこと~ 日常・ほのぼの ライブ・ラジオ・その他 成長・挑戦 挑戦",
+    "staff_text": "",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "80aecdb9c9c55952579758a4f0884c953cf5dcb3f6b5f53981f4e339a3d8f971"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "ライブ/ラジオ/etc."
@@ -11,10 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "ライブ・ラジオ・その他",
-    "成長・挑戦"
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,15 +39,18 @@
       "日常・ほのぼの",
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28347"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "ライブ/ラジオ/etc."
@@ -54,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28347"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "ライブ/ラジオ/etc."
@@ -62,15 +82,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28347"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28347"
     }
