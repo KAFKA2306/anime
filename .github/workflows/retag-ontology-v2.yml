@@ -1,5 +1,6 @@
 name: Retag ontology v2
 
+# This migration is intentionally cache-first. Repeated runs reuse official snapshots.
 on:
   workflow_dispatch:
   push:
