@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10593",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10593",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "月面兎兵器ミーナ",
+    "synopsis": "月面兎兵器ミーナ バトル・アクション コメディ・ギャグ 学園 宇宙 職業・仕事 学校 高校 仕事",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "5e1e1d87b4c1c21948e3fc5d3d2f6dc4e31db5aaff25539c0b490c0bf78024b6"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,18 +25,29 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "学園",
     "宇宙",
-    "職業・仕事"
+    "職業・仕事",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "学園",
@@ -31,9 +56,12 @@
     "theme": [
       "職業・仕事"
     ],
-    "motif": [],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +70,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10593"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -57,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10593"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -65,10 +93,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10593"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ],
@@ -81,7 +110,16 @@
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {
+          "軍事": [
+            "兵器"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10593"
     }

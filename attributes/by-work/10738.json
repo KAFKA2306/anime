@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10738",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10738",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ヤマノススメ",
+    "synopsis": "ヤマノススメ しろ スポーツ・競技 ドラマ・青春 ショート 友情・仲間 成長・挑戦 料理・グルメ 仲間 挑戦 料理",
+    "staff_text": "原作:しろ",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春",
+      "ショート"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "9c216e140090245d0423374aaf31170e1dc8675da64be2f80a80ed3d2293fcee"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ドラマ/青春",
@@ -12,13 +27,16 @@
   "original_credit": "しろ",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ドラマ・青春",
     "ショート",
     "友情・仲間",
     "成長・挑戦",
-    "料理・グルメ"
+    "料理・グルメ",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -27,17 +45,20 @@
       "ドラマ・青春",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
       "成長・挑戦",
-      "料理・グルメ"
+      "料理・グルメ",
+      "スポーツ"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10738"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春",
@@ -62,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10738"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ドラマ/青春",
@@ -71,21 +92,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10738"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10738"
     }

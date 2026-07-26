@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10790",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "えびてん 公立海老栖川高校天悶部",
+    "synopsis": "えびてん 公立海老栖川高校天悶部 脚本 すかぢ 作画 狗神煌(月刊コンプエース連載 コメディ・ギャグ 学園 高校 部活",
+    "staff_text": "原作:脚本 すかぢ 作画 狗神煌(月刊コンプエース連載",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "6ab733f28841406ae9affcc9ff74c8e9d2e86f426e10f9b073e7f1a4aad9cf91"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "脚本 すかぢ 作画 狗神煌(月刊コンプエース連載",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "学園"
@@ -19,6 +34,7 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,23 +65,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校",
             "部活"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790"
     }

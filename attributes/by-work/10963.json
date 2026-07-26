@@ -1,29 +1,44 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10963",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10963",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "あいまいみー",
+    "synopsis": "あいまいみー コメディ・ギャグ ショート 学園 高校",
+    "staff_text": "",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "e2856312d38e3c319dd5bc3b5a4deb3536df01dff1e5a81f15ce936ac24b760d"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
   ],
   "production_year": 2013,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート",
     "学園"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
       "コメディ・ギャグ",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -33,23 +48,22 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "漫画"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10963"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -58,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10963"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -66,15 +80,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10963"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10963"
     }

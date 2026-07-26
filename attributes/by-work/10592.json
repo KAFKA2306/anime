@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10592",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10592",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "マージナルプリンス~月桂樹の王子達~",
+    "synopsis": "マージナルプリンス~月桂樹の王子達~ 森本繭斗・セレンディピティ(携帯特化型ゲーム「マージナルプリンス~月桂樹の王子達~」より) 恋愛・ラブコメ",
+    "staff_text": "原作:森本繭斗・セレンディピティ(携帯特化型ゲーム「マージナルプリンス~月桂樹の王子達~」より)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "85a85c4920fc7ed223dc673762a7f9bb249c8d6e36d66abdc34f919fdcf72904"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,26 +23,40 @@
   "original_credit": "森本繭斗・セレンディピティ(携帯特化型ゲーム「マージナルプリンス~月桂樹の王子達~」より)",
   "source_origin": "ゲーム",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ファンタジー",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
       "ゲーム"
     ],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -41,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10592"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -49,18 +76,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10592"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10592"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10592"
     }

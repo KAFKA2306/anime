@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10916",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10916",
   "attribute_fetched_at": "2026-07-25T10:44:38.235Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ジャングル大帝 (1989)",
+    "synopsis": "ジャングル大帝 (1989) ドラマ・青春 キッズ・ファミリー 成長・挑戦 成長",
+    "staff_text": "",
+    "official_genres": [
+      "ドラマ/青春",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1989,
+    "source": "legacy-derived",
+    "sha256": "c2bb859b19f8c6da958f01e93f1a93a0475538904e3a0a21ee73551f9693c6f5"
+  },
   "official_genres": [
     "ドラマ/青春",
     "キッズ/ファミリー"
@@ -11,6 +25,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "キッズ・ファミリー",
@@ -22,6 +38,7 @@
       "ドラマ・青春",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10916"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10916"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "キッズ/ファミリー"
@@ -60,15 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10916"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10916"
     }

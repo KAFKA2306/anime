@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10622",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10622",
   "attribute_fetched_at": "2026-07-25T10:32:41.781Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "スーパーヅガン",
+    "synopsis": "スーパーヅガン 片山まさゆき(竹書房 恋愛・ラブコメ スポーツ・競技 コメディ・ギャグ",
+    "staff_text": "原作:片山まさゆき(竹書房",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "スポーツ/競技",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1992,
+    "source": "legacy-derived",
+    "sha256": "8efa3bdaf73b8416f9e51df50236bd4d785aab1cc5b407cb97dd57fc5fd7c974"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "スポーツ/競技",
@@ -12,10 +27,15 @@
   "original_credit": "片山まさゆき(竹書房",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "スポーツ・競技",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "ラブコメ",
+    "恋愛",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,16 +44,23 @@
       "スポーツ・競技",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛",
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10622"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "スポーツ/競技",
@@ -53,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10622"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "スポーツ/競技",
@@ -62,11 +89,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10622"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10622"
     }

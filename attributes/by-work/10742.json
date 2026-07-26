@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10742",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10742",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "薄桜鬼 雪華録 第一章 ~沖田総司~",
+    "synopsis": "薄桜鬼 雪華録 第一章 ~沖田総司~ オトメイト(アイディアファクトリー 恋愛・ラブコメ 歴史・戦記 怪異・妖怪 鬼",
+    "staff_text": "原作:オトメイト(アイディアファクトリー",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "歴史/戦記"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "bb0a7e3beffa3847822cf694b1a01c8b4da5ce86809660201950422dd9b16ed1"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "歴史/戦記"
@@ -11,9 +25,14 @@
   "original_credit": "オトメイト(アイディアファクトリー",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "歴史・戦記",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -22,13 +41,20 @@
       "恋愛・ラブコメ",
       "歴史・戦記"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10742"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "歴史/戦記"
@@ -52,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10742"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "歴史/戦記"
@@ -60,13 +86,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10742"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10937",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10937",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "超ロボット生命体 トランスフォーマー プライム",
+    "synopsis": "超ロボット生命体 トランスフォーマー プライム ロボット・メカ ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "81be30b4cb44c8f137dd2f6f36876ab1c1c6930a836ba871955d3798e896d1d5"
+  },
   "official_genres": [
     "ロボット/メカ"
   ],
@@ -10,13 +23,23 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "ロボット・メカ"
+    "ロボット・メカ",
+    "SF",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "SF"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -25,11 +48,12 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -39,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10937"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ"
       ],
@@ -47,19 +71,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10937"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10937"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

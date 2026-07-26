@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11036",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11036",
   "attribute_fetched_at": "2026-07-25T10:45:59.280Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ひぐらしのなく頃に解",
+    "synopsis": "ひぐらしのなく頃に解 ホラー・サスペンス・ミステリー ドラマ・青春 学園 部活",
+    "staff_text": "",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2007,
+    "source": "legacy-derived",
+    "sha256": "bdcf84f9e113a99a0efa2bd7c634a6e886a2dc828fc5e6de28df7163f6cd0781"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,17 @@
       "ホラー・サスペンス・ミステリー",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +58,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11036"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11036"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -60,15 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11036"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "部活"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11036"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10832",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10832",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "銀装騎攻オーディアン",
+    "synopsis": "銀装騎攻オーディアン ロボット・メカ 戦争・ミリタリー SF・ファンタジー 学園 高校 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "戦争/ミリタリー",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "1416f7b2700992285f852960041433d562f90bebbdf8d0dc1e6d0bba85922763"
+  },
   "official_genres": [
     "ロボット/メカ",
     "戦争/ミリタリー",
@@ -11,54 +26,71 @@
   "production_year": 2000,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ロボット・メカ",
     "戦争・ミリタリー",
-    "SF・ファンタジー",
-    "学園"
+    "ロボットSF",
+    "学園",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "SF",
       "ロボット・メカ",
-      "戦争・ミリタリー",
-      "SF・ファンタジー"
+      "戦争・ミリタリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "戦争"
+    ],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10832"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "戦争/ミリタリー",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10832"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "戦争/ミリタリー",
@@ -67,16 +99,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10832"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

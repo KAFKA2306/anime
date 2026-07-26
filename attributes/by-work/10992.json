@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10992",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10992",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "攻殻機動隊 S.A.C. 2nd GIG",
+    "synopsis": "攻殻機動隊 S.A.C. 2nd GIG SF・ファンタジー バトル・アクション ホラー・サスペンス・ミステリー 政治・戦略 犯罪・警察 政治 犯罪",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "c30b95b689a760634c6ca95cf6e0b2b444b8369fd84d6bb520c38a32172ba0c8"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,21 +26,24 @@
   "production_year": 2004,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
     "政治・戦略",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "バトル・アクション",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "政治・戦略"
@@ -35,6 +53,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10992"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -59,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10992"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -68,19 +87,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10992"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "政治・戦略": [
-            "政治"
+            "政治",
+            "戦略"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10992"
     }

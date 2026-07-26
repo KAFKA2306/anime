@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10609",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10609",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "古墳ギャルのコフィー",
+    "synopsis": "古墳ギャルのコフィー ショート コメディ・ギャグ 学園 歴史・時代劇 友情・仲間 成長・挑戦 恋愛 高校 戦国 友情 青春 ラブコメ",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "bcb3654f6a9d06cb68d88152ce89320a677f377c63d36c7c03e4ba847b7a29a7"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
+    "ラブコメ",
     "学園",
     "歴史・時代劇",
     "友情・仲間",
@@ -25,6 +42,9 @@
     "genre": [
       "ショート",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園",
@@ -40,6 +60,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,13 +69,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10609"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -63,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10609"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -71,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10609"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -79,21 +100,31 @@
             "高校"
           ],
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10609"
     }

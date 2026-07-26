@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10600",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10600",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ヴァンドレッド the second stage",
+    "synopsis": "ヴァンドレッド the second stage SF・ファンタジー ロボット・メカ",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "fd494b9b95844a7cdd6c423b795798038651c23d900885f313eda429a95e6cb3"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ"
@@ -10,16 +24,24 @@
   "production_year": 2001,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "ロボット・メカ"
+    "SF",
+    "ロボット・メカ",
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -28,30 +50,34 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10600"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10600"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ"
@@ -59,11 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10600"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10600"
     }

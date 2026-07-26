@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10484",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10484",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "猫ラーメン(ショートアニメ)",
+    "synopsis": "猫ラーメン(ショートアニメ) そにしけんじ(「ブレイドコミックス」 コメディ・ギャグ ショート",
+    "staff_text": "原作:そにしけんじ(「ブレイドコミックス」",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "0f62d67d1a016774469d630c5151f163c809b0319dbc2bdedefcc51385ac3b3b"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
@@ -11,6 +25,8 @@
   "original_credit": "そにしけんじ(「ブレイドコミックス」",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ショート"
@@ -23,6 +39,7 @@
       "コメディ・ギャグ",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -30,11 +47,12 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10484"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10484"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -64,11 +82,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10484"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10484"
     }

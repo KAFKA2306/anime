@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10885",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10885",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "神さまのいない日曜日",
+    "synopsis": "神さまのいない日曜日 入江君人 SF・ファンタジー ドラマ・青春 職業・仕事 仕事",
+    "staff_text": "原作:入江君人",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "819d31dc15b7fc6ffec6a1c4da970b6beffc21091468451ad358616732ee6b21"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -10,25 +24,31 @@
   "production_year": 2013,
   "original_credit": "入江君人",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "成長・挑戦",
     "職業・仕事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10885"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10885"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -60,15 +80,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10885"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
             "仕事"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10885"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10503",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10503",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "学校のコワイうわさ 新・花子さんがきた!!",
+    "synopsis": "学校のコワイうわさ 新・花子さんがきた!! 森京詞姫 学校のコワイうわさ 新・花子さんがきた!!(竹書房 刊) ホラー・サスペンス・ミステリー ショート 学園 音楽・アイドル 怪異・妖怪 学校 アイドル 幽霊",
+    "staff_text": "原作:森京詞姫 学校のコワイうわさ 新・花子さんがきた!!(竹書房 刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ショート"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "f91aaa53b92606b5579fc46d365227d16d35f7ac5d833a7a0e1f4cc192de05a4"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ショート"
@@ -11,9 +25,12 @@
   "original_credit": "森京詞姫 学校のコワイうわさ 新・花子さんがきた!!(竹書房 刊)",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "ショート",
+    "現代ファンタジー",
     "学園",
     "音楽・アイドル",
     "怪異・妖怪"
@@ -23,6 +40,9 @@
     "genre": [
       "ホラー・サスペンス・ミステリー",
       "ショート"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [
       "学園"
@@ -37,6 +57,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10503"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ショート"
@@ -60,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10503"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ショート"
@@ -68,21 +89,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10503"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

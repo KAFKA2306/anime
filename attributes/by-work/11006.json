@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11006",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11006",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゴールデンタイム",
+    "synopsis": "ゴールデンタイム 竹宮ゆゆこ 恋愛・ラブコメ ドラマ・青春 成長・挑戦 青春",
+    "staff_text": "原作:竹宮ゆゆこ",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "52be74262a63457f103f549837ca30d4c8c20843c22dfdae5fd6ba8a00cf8216"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": "竹宮ゆゆこ",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
-    "成長・挑戦"
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11006"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11006"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -60,15 +83,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11006"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11006"
     }

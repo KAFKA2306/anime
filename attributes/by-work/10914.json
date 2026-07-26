@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10914",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10914",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "TVアニメ「ペルソナ4」",
+    "synopsis": "TVアニメ「ペルソナ4」 「ペルソナ4」(Index) バトル・アクション SF・ファンタジー 学園 高校",
+    "staff_text": "原作:「ペルソナ4」(Index)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "83119118f50ec9e77ecbd03951ada7c9a4ca0f7fa35cfd691bf5f2a7ccf838bd"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー"
@@ -11,17 +25,20 @@
   "original_credit": "「ペルソナ4」(Index)",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
     "学園"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10914"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10914"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー"
@@ -60,15 +78,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10914"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10914"
     }

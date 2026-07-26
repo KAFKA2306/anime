@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10983",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10983",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "仮面のメイドガイ",
+    "synopsis": "仮面のメイドガイ 赤衣丸歩郎(富士見書房 月刊ドラゴンエイジ連載中) コメディ・ギャグ",
+    "staff_text": "原作:赤衣丸歩郎(富士見書房 月刊ドラゴンエイジ連載中)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "e31160e654a250c21973f7c96b5c5d6e73ea63f552d307cb54e8d3f1f0ff3792"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,19 +23,27 @@
   "original_credit": "赤衣丸歩郎(富士見書房 月刊ドラゴンエイジ連載中)",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "ファンタジー"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,7 +58,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10983"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -45,18 +66,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10983"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10983"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10983"
     }

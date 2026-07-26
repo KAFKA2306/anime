@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10472",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10472",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "異世界の聖機師物語",
+    "synopsis": "異世界の聖機師物語 異世界・ハイファンタジー ロボット・メカ SF・ファンタジー 恋愛・ラブコメ 異世界 学園 恋愛 召喚",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "8cf691a712e80115d47282b75bbe86792bba494710d80c61d71414d9179b1e47"
+  },
   "official_genres": [
     "ロボット/メカ",
     "SF/ファンタジー",
@@ -12,11 +27,20 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "SF",
+    "ファンタジー",
     "ロボット・メカ",
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "ロボットSF",
+    "ラブコメ",
     "異世界",
     "学園",
     "恋愛"
@@ -25,9 +49,15 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "SF",
+      "ファンタジー",
       "ロボット・メカ",
-      "SF・ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ロボットSF",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
@@ -41,6 +71,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -49,26 +80,28 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10472"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
+        "ロボット",
+        "メカ",
         "異世界",
         "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10472"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー",
@@ -77,7 +110,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10472"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -90,10 +123,28 @@
         },
         "theme": {
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10472"
     }

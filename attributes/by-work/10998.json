@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10998",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10998",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "織田信奈の野望",
+    "synopsis": "織田信奈の野望 春日みかげ(GA文庫 SF・ファンタジー 恋愛・ラブコメ 歴史・戦記 学園 歴史・時代劇 高校 戦国",
+    "staff_text": "原作:春日みかげ(GA文庫",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "歴史/戦記"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "fa57f7d3c8b337d8b23b1c752b912fb162c8941a37e0470f57336d6fc27d26b7"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,31 +26,41 @@
   "production_year": 2012,
   "original_credit": "春日みかげ(GA文庫",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
     "歴史・戦記",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
     "学園",
-    "歴史・時代劇"
+    "歴史・時代劇",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "恋愛・ラブコメ",
-      "歴史・戦記"
+      "歴史・戦記",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園",
       "歴史・時代劇"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10998"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -62,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10998"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -71,18 +96,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10998"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10998"
     }
