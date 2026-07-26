@@ -113,9 +113,9 @@ jobs:
             git push origin HEAD:"$TARGET_BRANCH"
           fi
 
-          git add data/manifest.json diagnostics/attribute-cache-rebuild.json diagnostics/attribute-coverage.json
+          git add data/manifest.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Record all-year ontology v2 verification'
+            git commit -m 'Record all-year ontology v2 manifest'
             git push origin HEAD:"$TARGET_BRANCH"
           fi
 
