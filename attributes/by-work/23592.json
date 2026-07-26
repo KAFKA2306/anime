@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23592",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23592",
   "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アキハバラ電脳組 2011年の夏休み",
+    "synopsis": "アキハバラ電脳組 2011年の夏休み SF・ファンタジー バトル・アクション コメディ・ギャグ 宇宙",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1999,
+    "source": "legacy-derived",
+    "sha256": "878d0ec63747d1c0224101c8c8199943647ac072ce688fbcf8fb65d42172230f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -10,58 +25,70 @@
   ],
   "production_year": 1999,
   "original_credit": null,
-  "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
     "コメディ・ギャグ",
-    "宇宙"
+    "スペースオペラ",
+    "サイバーパンク",
+    "宇宙",
+    "電脳・VR"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "サイバーパンク"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "電脳・VR"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
-    "primary_genre": "verified",
+    "source_origin": "unknown",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "コミックス",
-        "コミック"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23592"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "コメディ/ギャグ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "電脳"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23592"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -70,7 +97,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23592"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -78,7 +105,19 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "電脳・VR": [
+            "電脳"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "サイバーパンク": [
+            "電脳"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23592"
     }

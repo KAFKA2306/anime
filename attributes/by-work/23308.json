@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23308",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23308",
   "attribute_fetched_at": "2026-07-25T10:22:31.564Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "戦争童話集「ウミガメと少年」",
+    "synopsis": "戦争童話集「ウミガメと少年」 『ウミガメと少年(戦争童話集 沖縄編 講談社刊)』・作 戦争・ミリタリー キッズ・ファミリー",
+    "staff_text": "原作:『ウミガメと少年(戦争童話集 沖縄編 講談社刊)』・作",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2002,
+    "source": "legacy-derived",
+    "sha256": "bd683f35e88e71cb298a7a7f1d4b26fc3305770e1e14c5627b7338c4b104b699"
+  },
   "official_genres": [
     "戦争/ミリタリー",
     "キッズ/ファミリー"
@@ -11,9 +25,13 @@
   "original_credit": "『ウミガメと少年(戦争童話集 沖縄編 講談社刊)』・作",
   "source_origin": null,
   "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "戦争・ミリタリー",
-    "キッズ・ファミリー"
+    "キッズ・ファミリー",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,16 +39,22 @@
       "戦争・ミリタリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "戦争"
+    ],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23308"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "戦争/ミリタリー",
         "キッズ/ファミリー"
@@ -49,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23308"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "戦争/ミリタリー",
         "キッズ/ファミリー"
@@ -57,11 +81,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23308"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23308"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23169",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ぼくのとなりに暗黒破壊神がいます。",
+    "synopsis": "ぼくのとなりに暗黒破壊神がいます。 亜樹新「ぼくのとなりに暗黒破壊神がいます。」(KADOKAWA「月刊コミックジーン」) ショート コメディ・ギャグ 学園 高校",
+    "staff_text": "原作:亜樹新「ぼくのとなりに暗黒破壊神がいます。」(KADOKAWA「月刊コミックジーン」)",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "f513b1b40f931739d46685de05e8034783458a09cea13bbcdeadb776eed8e50a"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "亜樹新「ぼくのとなりに暗黒破壊神がいます。」(KADOKAWA「月刊コミックジーン」)",
   "source_origin": "漫画",
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -24,6 +40,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -33,6 +50,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -58,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -66,15 +84,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169"
     }

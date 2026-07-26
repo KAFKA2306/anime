@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23250",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23250",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "HAND MAID メイ",
+    "synopsis": "HAND MAID メイ 六月十三 恋愛・ラブコメ ロボット・メカ 学園 恋愛 大学 ラブコメ ロボット",
+    "staff_text": "原作:六月十三",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ロボット/メカ"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "fbdd9b06481bd2716951c79889c1601c09e3d8feb2233a658eb1db81c5ce8856"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ロボット/メカ"
@@ -11,17 +25,30 @@
   "original_credit": "六月十三",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "SF",
     "ロボット・メカ",
+    "ロボットSF",
+    "ラブコメ",
     "学園",
-    "恋愛"
+    "恋愛",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "恋愛・ラブコメ",
+      "SF",
       "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -30,10 +57,12 @@
       "恋愛"
     ],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "人工知能"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23250"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ロボット/メカ"
@@ -57,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23250"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ロボット/メカ"
@@ -65,21 +94,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23250"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23270",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23270",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ストレンジ ドーン",
+    "synopsis": "ストレンジ ドーン 佐藤順一・ハルフィルムメーカー 異世界・ハイファンタジー SF・ファンタジー 異世界",
+    "staff_text": "原作:佐藤順一・ハルフィルムメーカー",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "dc4645d7654cf692524929007443d3a88b9394428b612d6c60ed11fdfca43606"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,16 +23,24 @@
   "original_credit": "佐藤順一・ハルフィルムメーカー",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -28,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -42,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23270"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -52,14 +74,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23270"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23270"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -67,7 +89,12 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23270"
     }

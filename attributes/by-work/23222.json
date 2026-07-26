@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23222",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23222",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "通霊姫",
+    "synopsis": "通霊姫 肉肉 SF・ファンタジー 恋愛・ラブコメ 恋愛 恋心",
+    "staff_text": "原作:肉肉",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "5a381384f06fb4bb9a14a8d103830c32225eeb2bfeed2ea2cc62e2b5d0af6d68"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,17 +24,23 @@
   "production_year": 2018,
   "original_credit": "肉肉",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
     "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
@@ -29,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23222"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23222"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -60,15 +81,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23222"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
-            "恋心"
+            "恋愛",
+            "恋心",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23222"
     }

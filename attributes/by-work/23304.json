@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23304",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23304",
   "attribute_fetched_at": "2026-07-25T10:20:55.860Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ウルトラB",
+    "synopsis": "ウルトラB 藤子不二雄A ショート コメディ・ギャグ SF・ファンタジー 宇宙",
+    "staff_text": "原作:藤子不二雄A",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1987,
+    "source": "legacy-derived",
+    "sha256": "f023aa8b024430c50042d917c952e483e335cda8030b3ee39fc634f65e4f47ed"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -11,19 +26,27 @@
   "production_year": 1987,
   "original_credit": "藤子不二雄A",
   "source_origin": null,
-  "primary_genre": "ショート",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ショート",
     "コメディ・ギャグ",
-    "SF・ファンタジー",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "SF",
       "ショート",
-      "コメディ・ギャグ",
-      "SF・ファンタジー"
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -34,9 +57,10 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -48,17 +72,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23304"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23304"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -67,7 +93,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23304"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -75,7 +101,12 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23304"
     }

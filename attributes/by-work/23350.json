@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23350",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23350",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "全力ウサギ",
+    "synopsis": "全力ウサギ イケダケイ ショート コメディ・ギャグ 成長・挑戦 職業・仕事 成長 仕事 働く",
+    "staff_text": "原作:イケダケイ",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "3663fa9e265b034e2839d1d9495b820f1cbe26a95ca0f6a18665a666287d47c8"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": "イケダケイ",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -23,6 +39,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -33,6 +50,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23350"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23350"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -64,19 +82,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23350"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "職業・仕事": [
             "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23350"
     }

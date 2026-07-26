@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23190",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23190",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "食戟のソーマ 豪ノ皿",
+    "synopsis": "食戟のソーマ 豪ノ皿 附田祐斗・佐伯 俊 ドラマ・青春 学園 友情・仲間 成長・挑戦 料理・グルメ 学校 仲間 成長 料理",
+    "staff_text": "原作:附田祐斗・佐伯 俊",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "f10244f72a6600c3ad6db19c34fe361c64e4ecaa928ba47bc706c9b7d5c58b04"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "附田祐斗・佐伯 俊",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "学園",
@@ -22,6 +37,7 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -33,6 +49,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23190"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -55,14 +72,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23190"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23190"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -72,16 +89,21 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ],
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23190"
     }

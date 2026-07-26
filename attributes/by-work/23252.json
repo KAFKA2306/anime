@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23252",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23252",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ハヤテのごとく! Cuties",
+    "synopsis": "ハヤテのごとく! Cuties 畑健二郎(小学館「週刊少年サンデー」連載中) バトル・アクション 恋愛・ラブコメ 恋愛 ラブコメ",
+    "staff_text": "原作:畑健二郎(小学館「週刊少年サンデー」連載中)",
+    "official_genres": [
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "de1ee9add3221ec0738c5da37df1643eeb2a7066cff8532d514dc432ae9057cc"
+  },
   "official_genres": [
     "アクション/バトル",
     "恋愛/ラブコメ"
@@ -11,9 +25,12 @@
   "original_credit": "畑健二郎(小学館「週刊少年サンデー」連載中)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "ラブコメ",
     "恋愛"
   ],
   "ontology_facets": {
@@ -24,6 +41,9 @@
       "バトル・アクション",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
       "恋愛"
@@ -31,6 +51,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23252"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -57,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23252"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "恋愛/ラブコメ"
@@ -65,15 +86,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23252"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23252"
     }

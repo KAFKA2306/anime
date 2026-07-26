@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23395",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23395",
   "attribute_fetched_at": "2026-07-25T10:31:59.057Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "あしたのジョー",
+    "synopsis": "あしたのジョー 高森朝雄、ちばてつや スポーツ・競技",
+    "staff_text": "原作:高森朝雄、ちばてつや",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 1970,
+    "source": "legacy-derived",
+    "sha256": "9bf893cc1a3f81c56c20b755742ad249eefb8a13f30ec2c6d931215ee1fff31b"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,24 +23,31 @@
   "original_credit": "高森朝雄、ちばてつや",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "スポーツ・競技"
+    "スポーツ・競技",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23395"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -45,18 +65,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23395"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23395"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23395"
     }

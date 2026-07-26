@@ -1,26 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23419",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23419",
   "attribute_fetched_at": "2026-07-25T10:22:31.564Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "サクラ大戦 スーパー歌謡ショウ「新編 八犬伝」",
+    "synopsis": "サクラ大戦 スーパー歌謡ショウ「新編 八犬伝」 2.5次元舞台 成長・挑戦 挑戦",
+    "staff_text": "",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2002,
+    "source": "legacy-derived",
+    "sha256": "8b3fd548b1f07521227065dc8dd297e2a1122308c0eb46f6aeebbd379f677604"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
   "production_year": 2002,
   "original_credit": null,
-  "source_origin": "ゲーム",
+  "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "成長・挑戦"
   ],
   "ontology_facets": {
-    "source": [
-      "ゲーム"
-    ],
+    "source": [],
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -30,23 +44,22 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.explicit-game-credit",
-      "matched_terms": [
-        "ゲーム"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23419"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,22 +67,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23419"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23419"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23419"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23658",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23658",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "俺の指で乱れろ。~閉店後二人きりのサロンで...~【オンエア版】",
+    "synopsis": "俺の指で乱れろ。~閉店後二人きりのサロンで...~【オンエア版】 恋愛・ラブコメ ショート 職業・仕事 働く",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "308f6266aa0333b19d184ac4063c4c013aecc67d8622d70b0642fe146d168fef"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
+    "恋愛",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -22,8 +40,12 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
+      "恋愛",
       "職業・仕事"
     ],
     "motif": [],
@@ -31,6 +53,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23658"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -54,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23658"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -62,15 +85,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23658"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23658"
     }

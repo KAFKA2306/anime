@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23632",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23632",
   "attribute_fetched_at": "2026-07-25T10:45:23.551Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "009‐1",
+    "synopsis": "009‐1 石ノ森章太郎『009ノ1』 ホラー・サスペンス・ミステリー バトル・アクション SF・ファンタジー",
+    "staff_text": "原作:石ノ森章太郎『009ノ1』",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "アクション/バトル",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2006,
+    "source": "legacy-derived",
+    "sha256": "a4ed8cf1cc16a1fca0bbc176a1bc6894fb28b54c7f28c8f1d940f9d1e0a0b6bd"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "アクション/バトル",
@@ -12,23 +27,27 @@
   "original_credit": "石ノ森章太郎『009ノ1』",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "バトル・アクション",
-    "SF・ファンタジー"
+    "スペキュレーティブ判定保留"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー",
       "バトル・アクション",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23632"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "アクション/バトル",
@@ -53,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23632"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "アクション/バトル",
@@ -62,11 +81,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23632"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23632"
     }

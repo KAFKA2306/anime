@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23156",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23156",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "異世界かるてっと2",
+    "synopsis": "異世界かるてっと2 丸山くがね『オーバーロード』、暁なつめ『この素晴らしい世界に祝福を!』、長月達平『Re:ゼロから始める異世界生活』、カルロ・ゼン『幼女戦記』 異世界・ハイファンタジー ショート SF・ファンタジー コメディ・ギャグ 異世界 学園 転移 学校",
+    "staff_text": "原作:丸山くがね『オーバーロード』、暁なつめ『この素晴らしい世界に祝福を!』、長月達平『Re:ゼロから始める異世界生活』、カルロ・ゼン『幼女戦記』",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "b598dc5ab218cb804d143f17010d46a7b65ce9c294b774cc0b06f3db0e92d056"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,11 +27,16 @@
   "original_credit": "丸山くがね『オーバーロード』、暁なつめ『この素晴らしい世界に祝福を!』、長月達平『Re:ゼロから始める異世界生活』、カルロ・ゼン『幼女戦記』",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "ショート",
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
     "異世界",
     "学園"
   ],
@@ -24,9 +44,12 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "ショート",
-      "SF・ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
@@ -38,6 +61,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -52,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23156"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -65,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23156"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -74,7 +98,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23156"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -87,7 +111,13 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転移"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23156"
     }

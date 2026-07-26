@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23662",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23662",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "啄木鳥探偵處",
+    "synopsis": "啄木鳥探偵處 伊井 圭(創元推理文庫刊) ホラー・サスペンス・ミステリー 歴史・時代劇 友情・仲間 推理・謎解き 怪異・妖怪 明治 仲間 探偵 幽霊",
+    "staff_text": "原作:伊井 圭(創元推理文庫刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "92ead73a21bce91da3a284daf07740bc0808e465e32776a626fed31fba359023"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,8 +23,12 @@
   "original_credit": "伊井 圭(創元推理文庫刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
+    "ミステリー",
     "歴史・時代劇",
     "友情・仲間",
     "推理・謎解き",
@@ -23,6 +40,10 @@
     ],
     "genre": [
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ミステリー"
     ],
     "setting": [
       "歴史・時代劇"
@@ -36,6 +57,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23662"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -60,31 +82,47 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23662"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23662"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

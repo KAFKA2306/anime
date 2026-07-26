@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23645",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23645",
   "attribute_fetched_at": "2026-07-25T10:21:15.719Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アキハバラ電脳組",
+    "synopsis": "アキハバラ電脳組 KA・NON SF・ファンタジー バトル・アクション コメディ・ギャグ",
+    "staff_text": "原作:KA・NON",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1998,
+    "source": "legacy-derived",
+    "sha256": "0ed57f05cf100b863489b01f0aa089029440485da61b93075f6dda8034989b69"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -11,29 +26,41 @@
   "production_year": 1998,
   "original_credit": "KA・NON",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "バトル・アクション",
-    "コメディ・ギャグ"
+    "コメディ・ギャグ",
+    "サイバーパンク",
+    "電脳・VR"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "バトル・アクション",
       "コメディ・ギャグ"
     ],
+    "subgenre": [
+      "サイバーパンク"
+    ],
     "setting": [],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "電脳・VR"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -43,17 +70,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23645"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "コメディ/ギャグ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "電脳"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23645"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -62,11 +91,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23645"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "電脳・VR": [
+            "電脳"
+          ]
+        },
+        "subgenre": {
+          "サイバーパンク": [
+            "電脳"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23645"
     }

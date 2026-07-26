@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23171",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23171",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Re:ゼロから始める異世界生活",
+    "synopsis": "Re:ゼロから始める異世界生活 長月達平(MF文庫J「Re:ゼロから始める異世界生活」 異世界・ハイファンタジー SF・ファンタジー ドラマ・青春 異世界 召喚",
+    "staff_text": "原作:長月達平(MF文庫J「Re:ゼロから始める異世界生活」",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "afa91c9bd43f31d2f6e756ce33725a501d2530899e8cabd5f940c39cb1266555"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -11,11 +25,17 @@
   "original_credit": "長月達平(MF文庫J「Re:ゼロから始める異世界生活」",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "ドラマ・青春",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +43,22 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -49,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23171"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -61,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23171"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -69,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23171"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -77,8 +103,18 @@
             "召喚"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23171"
     }

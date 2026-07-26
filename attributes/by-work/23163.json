@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23163",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23163",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "宝石商リチャード氏の謎鑑定",
+    "synopsis": "宝石商リチャード氏の謎鑑定 辻村七子「宝石商リチャード氏の謎鑑定」(集英社オレンジ文庫)※辻は点一つ ドラマ・青春 ホラー・サスペンス・ミステリー 学園 職業・仕事 大学 働く",
+    "staff_text": "原作:辻村七子「宝石商リチャード氏の謎鑑定」(集英社オレンジ文庫)※辻は点一つ",
+    "official_genres": [
+      "ドラマ/青春",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "80f06292c8fce08569f8dac8c48e02536fcf9a8b7f0aa7870945bde714586961"
+  },
   "official_genres": [
     "ドラマ/青春",
     "ホラー/サスペンス/推理"
@@ -11,10 +25,13 @@
   "original_credit": "辻村七子「宝石商リチャード氏の謎鑑定」(集英社オレンジ文庫)※辻は点一つ",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "ホラー・サスペンス・ミステリー",
     "学園",
+    "成長・挑戦",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -25,15 +42,18 @@
       "ドラマ・青春",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23163"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "ホラー/サスペンス/推理"
@@ -59,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23163"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "ホラー/サスペンス/推理"
@@ -67,19 +87,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23163"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23163"
     }

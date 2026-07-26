@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23654",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23654",
   "attribute_fetched_at": "2026-07-25T10:49:24.670Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "白猫プロジェクト ZERO CHRONICLE",
+    "synopsis": "白猫プロジェクト ZERO CHRONICLE コロプラ「白猫プロジェクト ゼロ・クロニクル ~はじまりの罪~」 SF・ファンタジー 恋愛・ラブコメ",
+    "staff_text": "原作:コロプラ「白猫プロジェクト ゼロ・クロニクル ~はじまりの罪~」",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2020,
+    "source": "legacy-derived",
+    "sha256": "b16856d2c5af61173c01e8d8a9c525c05d5b13b0a39468ce8bcb9e8bdd58ddb0"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,27 +24,37 @@
   "production_year": 2020,
   "original_credit": "コロプラ「白猫プロジェクト ゼロ・クロニクル ~はじまりの罪~」",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -40,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23654"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -49,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23654"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -57,11 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23654"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23654"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23496",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496",
   "attribute_fetched_at": "2026-07-25T10:32:48.098Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "タイムボカン王道復古",
+    "synopsis": "タイムボカン王道復古 竜の子プロ企画室 コメディ・ギャグ ロボット・メカ メカ",
+    "staff_text": "原作:竜の子プロ企画室",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1993,
+    "source": "legacy-derived",
+    "sha256": "44b9a09141962f0152d066a6034f4a8c238873b9b29f8547c42a803d8bb34052"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,14 +23,27 @@
   "original_credit": "竜の子プロ企画室",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "SF",
+    "ファンタジー",
+    "ロボットSF",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +52,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -48,20 +75,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
             "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },
