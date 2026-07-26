@@ -9,9 +9,10 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
-  group: verify-ontology-v2-live-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
+  group: verify-ontology-v2-live-${{ github.run_id }}
   cancel-in-progress: false
 
 jobs:
@@ -32,6 +33,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: Request configured GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pages" > /tmp/pages-config.json
+          cat /tmp/pages-config.json
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
 
       - name: Install verifier dependencies
         run: |
