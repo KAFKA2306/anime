@@ -14,13 +14,13 @@ permissions:
   issues: write
 
 concurrency:
-  group: offline-retag-all-years
+  group: offline-retag-all-years-final
   cancel-in-progress: false
 
 jobs:
   retag:
     if: >-
-      github.event_name == 'pull_request' ||
+      (github.event_name == 'pull_request' && github.actor != 'github-actions[bot]') ||
       github.event_name == 'workflow_dispatch' ||
       github.event.issue.title == '[automation] retag all years ontology v2'
     runs-on: ubuntu-latest
