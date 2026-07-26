@@ -1,0 +1,107 @@
+name: Sync generated catalogue to gh-pages
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/sync-generated-data-to-gh-pages.trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sync-generated-catalogue-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' && github.actor != 'github-actions[bot]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout verified main source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: source
+          fetch-depth: 1
+
+      - name: Checkout production branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: publish
+          fetch-depth: 0
+
+      - name: Synchronize runtime and all yearly JSON
+        run: |
+          set -euo pipefail
+          mkdir -p publish/data/by-year
+          rm -f publish/data/by-year/*.json
+          cp source/data/by-year/*.json publish/data/by-year/
+          cp source/data/manifest.json publish/data/manifest.json
+          cp source/index.html publish/index.html
+          cp source/app.js publish/app.js
+          cp source/tag-ranking.js publish/tag-ranking.js
+          cp source/styles.css publish/styles.css
+          cp source/tag-ranking.css publish/tag-ranking.css
+          touch publish/.nojekyll
+
+          test "$(find publish/data/by-year -maxdepth 1 -name '*.json' | wc -l)" -eq 66
+          node --input-type=module <<'NODE'
+          import { readFile, readdir } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('publish/data/manifest.json', 'utf8'));
+          const files = (await readdir('publish/data/by-year')).filter((name) => /^\d{4}\.json$/.test(name));
+          if (manifest.attributes?.ontology_version !== '2.0.0') throw new Error('Published manifest is not ontology v2.');
+          if (manifest.attributes?.coverage_ratio !== 1 || files.length !== 66) throw new Error('Published catalogue coverage is incomplete.');
+          const y2025 = JSON.parse(await readFile('publish/data/by-year/2025.json', 'utf8'));
+          if (y2025.works.length !== 307) throw new Error('Published 2025 count is not 307.');
+          for (const filename of files) {
+            const payload = JSON.parse(await readFile(`publish/data/by-year/${filename}`, 'utf8'));
+            for (const work of payload.works) {
+              const value = JSON.stringify({ canonical_tags: work.canonical_tags, ontology_facets: work.ontology_facets });
+              if (value.includes('SF・ファンタジー')) throw new Error(`${filename}/${work.work_id}: deprecated combined tag remains.`);
+            }
+          }
+          console.log(JSON.stringify({ years: files.length, canonical: manifest.canonical_work_count, memberships: manifest.membership_count, y2025: y2025.works.length }));
+          NODE
+
+      - name: Commit production files
+        working-directory: publish
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .nojekyll index.html app.js tag-ranking.js styles.css tag-ranking.css data/manifest.json data/by-year
+          if git diff --cached --quiet; then
+            echo 'gh-pages already matches main.'
+          else
+            git commit -m 'Deploy all-year ontology v2 catalogue data'
+            git push origin HEAD:gh-pages
+          fi
+
+      - name: Request and wait for Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+          for attempt in $(seq 1 90); do
+            gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" > /tmp/pages-build.json
+            status=$(jq -r '.status // "unknown"' /tmp/pages-build.json)
+            echo "Pages build attempt $attempt: $status"
+            if [ "$status" = "built" ]; then
+              cat /tmp/pages-build.json
+              exit 0
+            fi
+            if [ "$status" = "errored" ]; then
+              cat /tmp/pages-build.json
+              exit 1
+            fi
+            sleep 5
+          done
+          cat /tmp/pages-build.json
+          exit 1
