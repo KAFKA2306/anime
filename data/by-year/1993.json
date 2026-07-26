@@ -46,7 +46,8 @@
       "primary_genre": "バトル・アクション",
       "canonical_tags": [
         "バトル・アクション",
-        "ドラマ・青春"
+        "ドラマ・青春",
+        "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [],
@@ -54,16 +55,19 @@
           "バトル・アクション",
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
@@ -73,7 +77,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28033"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -82,7 +86,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28033"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -90,15 +94,25 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28033"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28033"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10433",
@@ -134,37 +148,41 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "ドラマ・青春",
       "canonical_tags": [
-        "SF・ファンタジー",
-        "ドラマ・青春"
+        "ドラマ・青春",
+        "スペキュレーティブ判定保留",
+        "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
-          "ドラマ・青春"
+          "ドラマ・青春",
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10433"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "ドラマ/青春"
@@ -173,7 +191,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10433"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "ドラマ/青春"
@@ -181,15 +199,25 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10433"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10433"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "10203",
@@ -228,20 +256,28 @@
       "primary_genre": "コメディ・ギャグ",
       "canonical_tags": [
         "コメディ・ギャグ",
+        "SF",
+        "ファンタジー",
         "ロボット・メカ",
+        "ロボットSF",
         "犯罪・警察"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "コメディ・ギャグ",
+          "SF",
+          "ファンタジー",
           "ロボット・メカ"
+        ],
+        "subgenre": [
+          "ロボットSF"
         ],
         "setting": [],
         "theme": [],
         "motif": [
-          "犯罪・警察",
-          "ロボット・メカ"
+          "ロボット・メカ",
+          "犯罪・警察"
         ],
         "format": []
       },
@@ -253,13 +289,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "コメディ/ギャグ",
             "ロボット/メカ"
@@ -268,7 +304,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "コメディ/ギャグ",
             "ロボット/メカ"
@@ -276,19 +312,38 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
             "motif": {
+              "ロボット・メカ": [
+                "ロボット",
+                "メカ"
+              ],
               "犯罪・警察": [
+                "警察",
+                "犯罪",
                 "捜査"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10203"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF",
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "23495",
@@ -324,17 +379,18 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "バトル・アクション",
       "canonical_tags": [
-        "SF・ファンタジー",
-        "バトル・アクション"
+        "バトル・アクション",
+        "スペキュレーティブ判定保留"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
-          "バトル・アクション"
+          "バトル・アクション",
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -348,13 +404,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23495"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -363,7 +419,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23495"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -371,15 +427,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23495"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23495"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "29112",
@@ -415,24 +477,31 @@
       "production_year": 1993,
       "original_credit": "藤島康介(講談社刊 月刊『アフタヌーン』連載)",
       "source_origin": "漫画",
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "恋愛・ラブコメ",
       "canonical_tags": [
-        "SF・ファンタジー",
         "恋愛・ラブコメ",
-        "学園"
+        "スペキュレーティブ判定保留",
+        "ラブコメ",
+        "学園",
+        "恋愛"
       ],
       "ontology_facets": {
         "source": [
           "漫画"
         ],
         "genre": [
-          "SF・ファンタジー",
-          "恋愛・ラブコメ"
+          "恋愛・ラブコメ",
+          "スペキュレーティブ判定保留"
+        ],
+        "subgenre": [
+          "ラブコメ"
         ],
         "setting": [
           "学園"
         ],
-        "theme": [],
+        "theme": [
+          "恋愛"
+        ],
         "motif": [],
         "format": []
       },
@@ -452,7 +521,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29112"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "恋愛/ラブコメ"
@@ -461,7 +530,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29112"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "恋愛/ラブコメ"
@@ -469,19 +538,35 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29112"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "大学"
               ]
             },
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "恋愛": [
+                "恋愛",
+                "ラブコメ"
+              ]
+            },
+            "motif": {},
+            "subgenre": {
+              "ラブコメ": [
+                "ラブコメ"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29112"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "25486",
@@ -523,34 +608,38 @@
       "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
         "キッズ・ファミリー",
-        "SF・ファンタジー"
+        "スペキュレーティブ判定保留",
+        "旅・冒険"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "キッズ・ファミリー",
-          "SF・ファンタジー"
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "旅・冒険"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25486"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -559,7 +648,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25486"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -567,15 +656,25 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25486"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "旅・冒険": [
+                "冒険"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25486"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "25496",
@@ -614,14 +713,15 @@
       "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
         "キッズ・ファミリー",
-        "SF・ファンタジー"
+        "スペキュレーティブ判定保留"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "キッズ・ファミリー",
-          "SF・ファンタジー"
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -635,13 +735,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25496"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -650,7 +750,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25496"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -658,15 +758,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25496"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25496"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "25497",
@@ -705,26 +811,36 @@
       "primary_genre": "異世界・ハイファンタジー",
       "canonical_tags": [
         "異世界・ハイファンタジー",
+        "ファンタジー",
         "キッズ・ファミリー",
-        "SF・ファンタジー"
+        "異世界ファンタジー",
+        "異世界",
+        "旅・冒険"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "異世界・ハイファンタジー",
-          "キッズ・ファミリー",
-          "SF・ファンタジー"
+          "ファンタジー",
+          "キッズ・ファミリー"
         ],
-        "setting": [],
-        "theme": [],
+        "subgenre": [
+          "異世界ファンタジー"
+        ],
+        "setting": [
+          "異世界"
+        ],
+        "theme": [
+          "旅・冒険"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "derived",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
@@ -734,18 +850,20 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
         },
         "primary_genre": {
-          "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+          "rule_id": "genre.fantasy-plus-explicit-world-signal",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
           ],
           "matched_terms": [
-            "勇者"
+            "勇者",
+            "異世界",
+            "王子"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -753,15 +871,35 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
-            "setting": {},
-            "theme": {},
-            "motif": {}
+            "setting": {
+              "異世界": [
+                "異世界"
+              ]
+            },
+            "theme": {
+              "旅・冒険": [
+                "冒険"
+              ]
+            },
+            "motif": {},
+            "subgenre": {
+              "異世界ファンタジー": [
+                "異世界"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25497"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "20937",
@@ -808,6 +946,7 @@
           "コメディ・ギャグ",
           "バトル・アクション"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -827,7 +966,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20937"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "コメディ/ギャグ",
             "アクション/バトル"
@@ -836,7 +975,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20937"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "コメディ/ギャグ",
             "アクション/バトル"
@@ -844,15 +983,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20937"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20937"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10774",
@@ -893,7 +1038,8 @@
         "スポーツ・競技",
         "ドラマ・青春",
         "学園",
-        "成長・挑戦"
+        "成長・挑戦",
+        "スポーツ"
       ],
       "ontology_facets": {
         "source": [],
@@ -901,11 +1047,13 @@
           "スポーツ・競技",
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [
           "学園"
         ],
         "theme": [
-          "成長・挑戦"
+          "成長・挑戦",
+          "スポーツ"
         ],
         "motif": [],
         "format": []
@@ -924,7 +1072,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10774"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "スポーツ/競技",
             "ドラマ/青春"
@@ -933,7 +1081,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10774"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "スポーツ/競技",
             "ドラマ/青春"
@@ -941,10 +1089,11 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10774"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "学校",
                 "高校",
                 "中学校"
@@ -952,14 +1101,26 @@
             },
             "theme": {
               "成長・挑戦": [
-                "成長"
+                "成長",
+                "挑戦",
+                "青春"
+              ],
+              "スポーツ": [
+                "スポーツ",
+                "競技"
               ]
             },
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10774"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "25499",
@@ -998,14 +1159,15 @@
       "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
         "キッズ・ファミリー",
-        "SF・ファンタジー"
+        "スペキュレーティブ判定保留"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "キッズ・ファミリー",
-          "SF・ファンタジー"
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -1025,7 +1187,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25499"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -1034,7 +1196,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25499"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -1042,15 +1204,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25499"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25499"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "23496",
@@ -1088,12 +1256,20 @@
       "primary_genre": "コメディ・ギャグ",
       "canonical_tags": [
         "コメディ・ギャグ",
+        "SF",
+        "ファンタジー",
+        "ロボットSF",
         "ロボット・メカ"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "コメディ・ギャグ"
+          "コメディ・ギャグ",
+          "SF",
+          "ファンタジー"
+        ],
+        "subgenre": [
+          "ロボットSF"
         ],
         "setting": [],
         "theme": [],
@@ -1116,7 +1292,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "コメディ/ギャグ"
           ],
@@ -1124,26 +1300,40 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "コメディ/ギャグ"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
             "motif": {
               "ロボット・メカ": [
+                "ロボット",
                 "メカ"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23496"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF",
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "25219",
@@ -1179,17 +1369,18 @@
       "production_year": 1993,
       "original_credit": "鳥山明",
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "ファンタジー",
       "canonical_tags": [
-        "SF・ファンタジー",
+        "ファンタジー",
         "バトル・アクション"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
+          "ファンタジー",
           "バトル・アクション"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -1197,7 +1388,7 @@
       },
       "attribute_confidence": {
         "source_origin": "unknown",
-        "primary_genre": "verified",
+        "primary_genre": "derived",
         "canonical_tags": "verified",
         "ontology_facets": "verified"
       },
@@ -1209,16 +1400,18 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25219"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.fantasy-signal-dominant",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "ドラゴン"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25219"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -1226,15 +1419,23 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25219"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25219"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "25502",
@@ -1273,17 +1474,26 @@
       "primary_genre": "異世界・ハイファンタジー",
       "canonical_tags": [
         "異世界・ハイファンタジー",
+        "SF",
+        "ファンタジー",
         "キッズ・ファミリー",
-        "SF・ファンタジー"
+        "異世界ファンタジー",
+        "異世界"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "異世界・ハイファンタジー",
-          "キッズ・ファミリー",
-          "SF・ファンタジー"
+          "SF",
+          "ファンタジー",
+          "キッズ・ファミリー"
         ],
-        "setting": [],
+        "subgenre": [
+          "異世界ファンタジー"
+        ],
+        "setting": [
+          "異世界"
+        ],
         "theme": [],
         "motif": [],
         "format": []
@@ -1291,29 +1501,31 @@
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "derived",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25502"
         },
         "primary_genre": {
-          "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+          "rule_id": "genre.fantasy-plus-explicit-world-signal",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
           ],
           "matched_terms": [
-            "勇者"
+            "未来",
+            "勇者",
+            "異世界"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25502"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "SF/ファンタジー"
@@ -1321,15 +1533,32 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25502"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
-            "setting": {},
+            "setting": {
+              "異世界": [
+                "異世界"
+              ]
+            },
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {
+              "異世界ファンタジー": [
+                "異世界"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25502"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF",
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "11467",
@@ -1366,23 +1595,27 @@
       "source_origin": null,
       "primary_genre": "ドラマ・青春",
       "canonical_tags": [
-        "ドラマ・青春"
+        "ドラマ・青春",
+        "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
@@ -1392,7 +1625,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11467"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "ドラマ/青春"
           ],
@@ -1400,22 +1633,32 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11467"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "ドラマ/青春"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11467"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11467"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10224",
@@ -1451,24 +1694,28 @@
       "production_year": 1993,
       "original_credit": "日渡早紀(白泉社 花とゆめコミックス)",
       "source_origin": "漫画",
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "ドラマ・青春",
       "canonical_tags": [
-        "SF・ファンタジー",
         "ドラマ・青春",
-        "学園"
+        "スペキュレーティブ判定保留",
+        "学園",
+        "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [
           "漫画"
         ],
         "genre": [
-          "SF・ファンタジー",
-          "ドラマ・青春"
+          "ドラマ・青春",
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [
           "学園"
         ],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [],
         "format": []
       },
@@ -1490,7 +1737,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10224"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "ドラマ/青春"
@@ -1499,7 +1746,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10224"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "ドラマ/青春"
@@ -1507,19 +1754,30 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10224"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "高校"
               ]
             },
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10224"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "27086",
@@ -1563,6 +1821,7 @@
         "genre": [
           "キッズ・ファミリー"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -1582,7 +1841,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27086"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "キッズ/ファミリー"
           ],
@@ -1590,22 +1849,28 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27086"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27086"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27086"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10923",
@@ -1640,15 +1905,19 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "SF",
       "canonical_tags": [
-        "SF・ファンタジー",
+        "SF",
+        "スペースオペラ",
         "宇宙"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー"
+          "SF"
+        ],
+        "subgenre": [
+          "スペースオペラ"
         ],
         "setting": [
           "宇宙"
@@ -1659,34 +1928,37 @@
       },
       "attribute_confidence": {
         "source_origin": "unknown",
-        "primary_genre": "verified",
+        "primary_genre": "derived",
         "canonical_tags": "derived",
         "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10923"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.sf-signal-dominant",
           "official_genres": [
             "SF/ファンタジー"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "宇宙",
+            "銀河"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10923"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10923"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "宇宙": [
@@ -1695,11 +1967,24 @@
               ]
             },
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {
+              "スペースオペラ": [
+                "宇宙",
+                "銀河"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10923"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "24937",
@@ -1736,39 +2021,46 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "バトル・アクション",
       "canonical_tags": [
-        "SF・ファンタジー",
         "バトル・アクション",
-        "恋愛・ラブコメ"
+        "恋愛・ラブコメ",
+        "スペキュレーティブ判定保留",
+        "ラブコメ",
+        "恋愛"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
           "バトル・アクション",
-          "恋愛・ラブコメ"
+          "恋愛・ラブコメ",
+          "スペキュレーティブ判定保留"
+        ],
+        "subgenre": [
+          "ラブコメ"
         ],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "恋愛"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24937"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
@@ -1778,7 +2070,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24937"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
@@ -1787,15 +2079,30 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24937"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "恋愛": [
+                "恋愛",
+                "ラブコメ"
+              ]
+            },
+            "motif": {},
+            "subgenre": {
+              "ラブコメ": [
+                "ラブコメ"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24937"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "24067",
@@ -1831,18 +2138,19 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
-        "SF・ファンタジー",
         "キッズ・ファミリー",
+        "スペキュレーティブ判定保留",
         "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
-          "キッズ・ファミリー"
+          "キッズ・ファミリー",
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [
           "成長・挑戦"
@@ -1858,13 +2166,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24067"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "キッズ/ファミリー"
@@ -1873,7 +2181,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24067"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "キッズ/ファミリー"
@@ -1881,19 +2189,26 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24067"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {
               "成長・挑戦": [
+                "成長",
                 "挑戦"
               ]
             },
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24067"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "21754",
@@ -1933,6 +2248,7 @@
       "canonical_tags": [
         "バトル・アクション",
         "ドラマ・青春",
+        "成長・挑戦",
         "犯罪・警察"
       ],
       "ontology_facets": {
@@ -1941,8 +2257,11 @@
           "バトル・アクション",
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [
           "犯罪・警察"
         ],
@@ -1956,13 +2275,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21754"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -1971,7 +2290,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21754"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -1979,19 +2298,31 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21754"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
             "motif": {
               "犯罪・警察": [
+                "警察",
+                "犯罪",
                 "捜査"
               ]
-            }
+            },
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21754"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "24702",
@@ -2038,6 +2369,7 @@
           "バトル・アクション",
           "コメディ・ギャグ"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -2057,7 +2389,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24702"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "アクション/バトル",
             "コメディ/ギャグ"
@@ -2066,7 +2398,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24702"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "アクション/バトル",
             "コメディ/ギャグ"
@@ -2074,15 +2406,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24702"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24702"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "26617",
@@ -2129,6 +2467,7 @@
           "コメディ・ギャグ",
           "キッズ・ファミリー"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -2142,13 +2481,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26617"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "コメディ/ギャグ",
             "キッズ/ファミリー"
@@ -2157,7 +2496,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26617"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "コメディ/ギャグ",
             "キッズ/ファミリー"
@@ -2165,15 +2504,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26617"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26617"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "24195",
@@ -2209,17 +2554,21 @@
       "production_year": 1993,
       "original_credit": "水木しげる「河童の三平」",
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
-        "SF・ファンタジー",
         "キッズ・ファミリー",
+        "スペキュレーティブ判定保留",
+        "現代ファンタジー",
         "怪異・妖怪"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
-          "キッズ・ファミリー"
+          "キッズ・ファミリー",
+          "スペキュレーティブ判定保留"
+        ],
+        "subgenre": [
+          "現代ファンタジー"
         ],
         "setting": [],
         "theme": [],
@@ -2242,7 +2591,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24195"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "キッズ/ファミリー"
@@ -2251,7 +2600,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24195"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "キッズ/ファミリー"
@@ -2259,20 +2608,31 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24195"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
             "motif": {
               "怪異・妖怪": [
+                "怪異",
                 "妖怪",
                 "鬼"
+              ]
+            },
+            "subgenre": {
+              "現代ファンタジー": [
+                "怪異"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24195"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "28936",
@@ -2312,6 +2672,7 @@
       "primary_genre": "キッズ・ファミリー",
       "canonical_tags": [
         "キッズ・ファミリー",
+        "ファンタジー",
         "ショート",
         "コメディ・ギャグ"
       ],
@@ -2319,9 +2680,11 @@
         "source": [],
         "genre": [
           "キッズ・ファミリー",
+          "ファンタジー",
           "ショート",
           "コメディ・ギャグ"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -2332,8 +2695,8 @@
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
@@ -2343,7 +2706,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28936"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "キッズ/ファミリー",
             "ショート",
@@ -2353,7 +2716,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28936"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "キッズ/ファミリー",
             "ショート",
@@ -2362,15 +2725,23 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28936"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28936"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "24914",
@@ -2409,14 +2780,20 @@
       "primary_genre": "コメディ・ギャグ",
       "canonical_tags": [
         "コメディ・ギャグ",
+        "SF",
         "バトル・アクション",
+        "ロボットSF",
         "ロボット・メカ"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "コメディ・ギャグ",
+          "SF",
           "バトル・アクション"
+        ],
+        "subgenre": [
+          "ロボットSF"
         ],
         "setting": [],
         "theme": [],
@@ -2439,7 +2816,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24914"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "コメディ/ギャグ",
             "アクション/バトル"
@@ -2448,7 +2825,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24914"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "コメディ/ギャグ",
             "アクション/バトル"
@@ -2456,19 +2833,32 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24914"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
             "motif": {
               "ロボット・メカ": [
+                "ロボット",
                 "メカ"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24914"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10248",
@@ -2506,18 +2896,24 @@
       "primary_genre": "ロボット・メカ",
       "canonical_tags": [
         "ロボット・メカ",
+        "SF",
+        "ロボットSF",
         "犯罪・警察"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "ロボット・メカ"
+          "ロボット・メカ",
+          "SF"
+        ],
+        "subgenre": [
+          "ロボットSF"
         ],
         "setting": [],
         "theme": [],
         "motif": [
-          "犯罪・警察",
-          "ロボット・メカ"
+          "ロボット・メカ",
+          "犯罪・警察"
         ],
         "format": []
       },
@@ -2535,7 +2931,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10248"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "ロボット/メカ"
           ],
@@ -2543,26 +2939,43 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10248"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "ロボット/メカ"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10248"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
             "motif": {
+              "ロボット・メカ": [
+                "ロボット",
+                "メカ"
+              ],
               "犯罪・警察": [
-                "警察"
+                "警察",
+                "犯罪"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10248"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "11052",
@@ -2599,23 +3012,29 @@
       "production_year": 1993,
       "original_credit": "武内直子",
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "バトル・アクション",
       "canonical_tags": [
-        "SF・ファンタジー",
         "バトル・アクション",
         "恋愛・ラブコメ",
-        "友情・仲間"
+        "スペキュレーティブ判定保留",
+        "ラブコメ",
+        "友情・仲間",
+        "恋愛"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
           "バトル・アクション",
-          "恋愛・ラブコメ"
+          "恋愛・ラブコメ",
+          "スペキュレーティブ判定保留"
+        ],
+        "subgenre": [
+          "ラブコメ"
         ],
         "setting": [],
         "theme": [
-          "友情・仲間"
+          "友情・仲間",
+          "恋愛"
         ],
         "motif": [],
         "format": []
@@ -2634,7 +3053,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11052"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
@@ -2644,7 +3063,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11052"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
@@ -2653,19 +3072,34 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11052"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {
               "友情・仲間": [
+                "友情",
                 "仲間"
+              ],
+              "恋愛": [
+                "恋愛",
+                "ラブコメ"
               ]
             },
-            "motif": {}
+            "motif": {},
+            "subgenre": {
+              "ラブコメ": [
+                "ラブコメ"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11052"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "24825",
@@ -2703,6 +3137,8 @@
       "primary_genre": "バトル・アクション",
       "canonical_tags": [
         "バトル・アクション",
+        "現代ファンタジー",
+        "ミステリー",
         "推理・謎解き",
         "怪異・妖怪"
       ],
@@ -2712,6 +3148,10 @@
         ],
         "genre": [
           "バトル・アクション"
+        ],
+        "subgenre": [
+          "現代ファンタジー",
+          "ミステリー"
         ],
         "setting": [],
         "theme": [
@@ -2739,7 +3179,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24825"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "アクション/バトル"
           ],
@@ -2747,30 +3187,48 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24825"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "アクション/バトル"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24825"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {
               "推理・謎解き": [
+                "推理",
+                "謎解き",
                 "探偵"
               ]
             },
             "motif": {
               "怪異・妖怪": [
+                "怪異",
                 "妖怪"
+              ]
+            },
+            "subgenre": {
+              "現代ファンタジー": [
+                "怪異"
+              ],
+              "ミステリー": [
+                "推理",
+                "探偵",
+                "謎解き"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24825"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "27232",
@@ -2806,31 +3264,37 @@
       "production_year": 1993,
       "original_credit": "青山剛昌",
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "SF",
       "canonical_tags": [
-        "SF・ファンタジー",
+        "SF",
         "バトル・アクション",
+        "現代ファンタジー",
         "学園",
-        "怪異・妖怪"
+        "怪異・妖怪",
+        "人工知能"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
+          "SF",
           "バトル・アクション"
+        ],
+        "subgenre": [
+          "現代ファンタジー"
         ],
         "setting": [
           "学園"
         ],
         "theme": [],
         "motif": [
-          "怪異・妖怪"
+          "怪異・妖怪",
+          "人工知能"
         ],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
-        "primary_genre": "verified",
+        "primary_genre": "derived",
         "canonical_tags": "derived",
         "ontology_facets": "derived"
       },
@@ -2842,16 +3306,18 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27232"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.sf-signal-dominant",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "AI"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27232"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -2859,23 +3325,41 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27232"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "学校"
               ]
             },
             "theme": {},
             "motif": {
               "怪異・妖怪": [
+                "怪異",
+                "妖怪",
                 "鬼"
+              ],
+              "人工知能": [
+                "AI"
+              ]
+            },
+            "subgenre": {
+              "現代ファンタジー": [
+                "怪異"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27232"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "20982",
@@ -2914,20 +3398,36 @@
       "primary_genre": "戦争・ミリタリー",
       "canonical_tags": [
         "戦争・ミリタリー",
+        "ファンタジー",
         "歴史・戦記",
-        "異世界"
+        "異世界ファンタジー",
+        "スペースオペラ",
+        "異世界",
+        "戦争",
+        "転生",
+        "軍事"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "戦争・ミリタリー",
+          "ファンタジー",
           "歴史・戦記"
+        ],
+        "subgenre": [
+          "異世界ファンタジー",
+          "スペースオペラ"
         ],
         "setting": [
           "異世界"
         ],
-        "theme": [],
-        "motif": [],
+        "theme": [
+          "戦争"
+        ],
+        "motif": [
+          "転生",
+          "軍事"
+        ],
         "format": []
       },
       "attribute_confidence": {
@@ -2944,7 +3444,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "戦争/ミリタリー",
             "歴史/戦記"
@@ -2953,7 +3453,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "戦争/ミリタリー",
             "歴史/戦記"
@@ -2961,19 +3461,47 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "異世界": [
+                "異世界",
                 "転生"
               ]
             },
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "戦争": [
+                "戦争"
+              ]
+            },
+            "motif": {
+              "転生": [
+                "転生"
+              ],
+              "軍事": [
+                "ミリタリー"
+              ]
+            },
+            "subgenre": {
+              "異世界ファンタジー": [
+                "異世界",
+                "転生"
+              ],
+              "スペースオペラ": [
+                "艦隊"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20982"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "20251",
@@ -3011,17 +3539,21 @@
       "primary_genre": "ドラマ・青春",
       "canonical_tags": [
         "ドラマ・青春",
-        "学園"
+        "学園",
+        "成長・挑戦"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [
           "学園"
         ],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [],
         "format": []
       },
@@ -3039,7 +3571,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20251"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "ドラマ/青春"
           ],
@@ -3047,26 +3579,37 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20251"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "ドラマ/青春"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20251"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "学校"
               ]
             },
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20251"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "26753",
@@ -3108,6 +3651,8 @@
       "canonical_tags": [
         "バトル・アクション",
         "ドラマ・青春",
+        "現代ファンタジー",
+        "成長・挑戦",
         "怪異・妖怪"
       ],
       "ontology_facets": {
@@ -3116,8 +3661,13 @@
           "バトル・アクション",
           "ドラマ・青春"
         ],
+        "subgenre": [
+          "現代ファンタジー"
+        ],
         "setting": [],
-        "theme": [],
+        "theme": [
+          "成長・挑戦"
+        ],
         "motif": [
           "怪異・妖怪"
         ],
@@ -3131,13 +3681,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26753"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -3146,7 +3696,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26753"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "アクション/バトル",
             "ドラマ/青春"
@@ -3154,19 +3704,35 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26753"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
-            "theme": {},
+            "theme": {
+              "成長・挑戦": [
+                "青春"
+              ]
+            },
             "motif": {
               "怪異・妖怪": [
+                "怪異",
+                "妖怪",
                 "鬼"
+              ]
+            },
+            "subgenre": {
+              "現代ファンタジー": [
+                "怪異"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26753"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "11295",
@@ -3208,8 +3774,12 @@
         "スポーツ・競技",
         "ドラマ・青春",
         "恋愛・ラブコメ",
+        "ラブコメ",
         "学園",
-        "友情・仲間"
+        "友情・仲間",
+        "成長・挑戦",
+        "恋愛",
+        "スポーツ"
       ],
       "ontology_facets": {
         "source": [],
@@ -3218,11 +3788,17 @@
           "ドラマ・青春",
           "恋愛・ラブコメ"
         ],
+        "subgenre": [
+          "ラブコメ"
+        ],
         "setting": [
           "学園"
         ],
         "theme": [
-          "友情・仲間"
+          "友情・仲間",
+          "成長・挑戦",
+          "恋愛",
+          "スポーツ"
         ],
         "motif": [],
         "format": []
@@ -3241,7 +3817,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11295"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "スポーツ/競技",
             "ドラマ/青春",
@@ -3251,7 +3827,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11295"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "スポーツ/競技",
             "ドラマ/青春",
@@ -3260,23 +3836,46 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11295"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
+                "学園",
                 "高校"
               ]
             },
             "theme": {
               "友情・仲間": [
-                "友情"
+                "友情",
+                "仲間"
+              ],
+              "成長・挑戦": [
+                "青春"
+              ],
+              "恋愛": [
+                "恋愛",
+                "ラブコメ"
+              ],
+              "スポーツ": [
+                "スポーツ",
+                "競技"
               ]
             },
-            "motif": {}
+            "motif": {},
+            "subgenre": {
+              "ラブコメ": [
+                "ラブコメ"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11295"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "10636",
@@ -3312,17 +3911,18 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "バトル・アクション",
       "canonical_tags": [
-        "SF・ファンタジー",
-        "バトル・アクション"
+        "バトル・アクション",
+        "スペキュレーティブ判定保留"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
-          "バトル・アクション"
+          "バトル・アクション",
+          "スペキュレーティブ判定保留"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [],
         "motif": [],
@@ -3336,13 +3936,13 @@
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10636"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -3351,7 +3951,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10636"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル"
@@ -3359,15 +3959,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10636"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10636"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "needs-review",
+      "classification_status": "needs-review"
     },
     {
       "work_id": "10269",
@@ -3405,6 +4011,7 @@
       "primary_genre": "ドラマ・青春",
       "canonical_tags": [
         "ドラマ・青春",
+        "成長・挑戦",
         "職業・仕事"
       ],
       "ontology_facets": {
@@ -3412,8 +4019,10 @@
         "genre": [
           "ドラマ・青春"
         ],
+        "subgenre": [],
         "setting": [],
         "theme": [
+          "成長・挑戦",
           "職業・仕事"
         ],
         "motif": [],
@@ -3433,7 +4042,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10269"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.first-official-non-speculative",
           "official_genres": [
             "ドラマ/青春"
           ],
@@ -3441,26 +4050,35 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10269"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "ドラマ/青春"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10269"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {
+              "成長・挑戦": [
+                "青春"
+              ],
               "職業・仕事": [
                 "仕事"
               ]
             },
-            "motif": {}
+            "motif": {},
+            "subgenre": {}
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10269"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
     },
     {
       "work_id": "24431",
@@ -3497,32 +4115,41 @@
       "production_year": 1993,
       "original_credit": "武内直子",
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "SF",
       "canonical_tags": [
-        "SF・ファンタジー",
+        "SF",
         "バトル・アクション",
         "恋愛・ラブコメ",
+        "スペースオペラ",
+        "ラブコメ",
         "学園",
-        "宇宙"
+        "宇宙",
+        "恋愛"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
+          "SF",
           "バトル・アクション",
           "恋愛・ラブコメ"
+        ],
+        "subgenre": [
+          "スペースオペラ",
+          "ラブコメ"
         ],
         "setting": [
           "学園",
           "宇宙"
         ],
-        "theme": [],
+        "theme": [
+          "恋愛"
+        ],
         "motif": [],
         "format": []
       },
       "attribute_confidence": {
         "source_origin": "unknown",
-        "primary_genre": "verified",
+        "primary_genre": "derived",
         "canonical_tags": "derived",
         "ontology_facets": "derived"
       },
@@ -3534,17 +4161,20 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24431"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.sf-signal-dominant",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
             "恋愛/ラブコメ"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "宇宙",
+            "銀河"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24431"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "アクション/バトル",
@@ -3553,7 +4183,7 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24431"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "学園": [
@@ -3564,12 +4194,33 @@
                 "銀河"
               ]
             },
-            "theme": {},
-            "motif": {}
+            "theme": {
+              "恋愛": [
+                "恋愛",
+                "ラブコメ"
+              ]
+            },
+            "motif": {},
+            "subgenre": {
+              "スペースオペラ": [
+                "宇宙",
+                "銀河"
+              ],
+              "ラブコメ": [
+                "ラブコメ"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24431"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "26855",
@@ -3605,16 +4256,20 @@
       "production_year": 1993,
       "original_credit": null,
       "source_origin": null,
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "SF",
       "canonical_tags": [
-        "SF・ファンタジー",
-        "ロボット・メカ"
+        "SF",
+        "ロボット・メカ",
+        "ロボットSF"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
-          "SF・ファンタジー",
+          "SF",
           "ロボット・メカ"
+        ],
+        "subgenre": [
+          "ロボットSF"
         ],
         "setting": [],
         "theme": [],
@@ -3625,28 +4280,31 @@
       },
       "attribute_confidence": {
         "source_origin": "unknown",
-        "primary_genre": "verified",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "primary_genre": "derived",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
-          "rule_id": "origin.unclassified-credit",
+          "rule_id": "origin.no-evidence",
           "matched_terms": [],
           "evidence_text": null,
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.sf-signal-dominant",
           "official_genres": [
             "SF/ファンタジー",
             "ロボット/メカ"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "ロボット",
+            "メカ"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "ロボット/メカ"
@@ -3654,15 +4312,32 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {},
             "theme": {},
-            "motif": {}
+            "motif": {
+              "ロボット・メカ": [
+                "ロボット",
+                "メカ"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26855"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "21305",
@@ -3697,9 +4372,10 @@
       "production_year": 1993,
       "original_credit": "吉岡 平(富士見ファンタジア文庫刊)",
       "source_origin": "ライトノベル・小説",
-      "primary_genre": "SF・ファンタジー",
+      "primary_genre": "SF",
       "canonical_tags": [
-        "SF・ファンタジー",
+        "SF",
+        "スペースオペラ",
         "宇宙"
       ],
       "ontology_facets": {
@@ -3707,7 +4383,10 @@
           "ライトノベル・小説"
         ],
         "genre": [
-          "SF・ファンタジー"
+          "SF"
+        ],
+        "subgenre": [
+          "スペースオペラ"
         ],
         "setting": [
           "宇宙"
@@ -3718,7 +4397,7 @@
       },
       "attribute_confidence": {
         "source_origin": "verified",
-        "primary_genre": "verified",
+        "primary_genre": "derived",
         "canonical_tags": "derived",
         "ontology_facets": "derived"
       },
@@ -3732,22 +4411,25 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21305"
         },
         "primary_genre": {
-          "rule_id": "genre.first-official-genre",
+          "rule_id": "genre.sf-signal-dominant",
           "official_genres": [
             "SF/ファンタジー"
           ],
-          "matched_terms": [],
+          "matched_terms": [
+            "宇宙",
+            "惑星"
+          ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21305"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21305"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
             "setting": {
               "宇宙": [
@@ -3756,11 +4438,23 @@
               ]
             },
             "theme": {},
-            "motif": {}
+            "motif": {},
+            "subgenre": {
+              "スペースオペラ": [
+                "宇宙"
+              ]
+            }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21305"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     },
     {
       "work_id": "20016",
@@ -3799,17 +4493,28 @@
       "primary_genre": "異世界・ハイファンタジー",
       "canonical_tags": [
         "異世界・ハイファンタジー",
-        "SF・ファンタジー",
-        "ロボット・メカ"
+        "SF",
+        "ファンタジー",
+        "ロボット・メカ",
+        "異世界ファンタジー",
+        "ロボットSF",
+        "異世界"
       ],
       "ontology_facets": {
         "source": [],
         "genre": [
           "異世界・ハイファンタジー",
-          "SF・ファンタジー",
+          "SF",
+          "ファンタジー",
           "ロボット・メカ"
         ],
-        "setting": [],
+        "subgenre": [
+          "異世界ファンタジー",
+          "ロボットSF"
+        ],
+        "setting": [
+          "異世界"
+        ],
         "theme": [],
         "motif": [
           "ロボット・メカ"
@@ -3819,8 +4524,8 @@
       "attribute_confidence": {
         "source_origin": "unknown",
         "primary_genre": "derived",
-        "canonical_tags": "verified",
-        "ontology_facets": "verified"
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
       },
       "attribute_evidence": {
         "source_origin": {
@@ -3830,18 +4535,21 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20016"
         },
         "primary_genre": {
-          "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+          "rule_id": "genre.fantasy-plus-explicit-world-signal",
           "official_genres": [
             "SF/ファンタジー",
             "ロボット/メカ"
           ],
           "matched_terms": [
-            "勇者"
+            "ロボット",
+            "メカ",
+            "勇者",
+            "異世界"
           ],
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20016"
         },
         "canonical_tags": {
-          "rule_id": "tags.official-plus-ontology-v1",
+          "rule_id": "tags.official-plus-ontology-v2",
           "official_genres": [
             "SF/ファンタジー",
             "ロボット/メカ"
@@ -3849,24 +4557,46 @@
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20016"
         },
         "ontology_facets": {
-          "rule_id": "ontology.keyword-plus-official-metadata-v1",
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
           "matched_terms": {
-            "setting": {},
+            "setting": {
+              "異世界": [
+                "異世界"
+              ]
+            },
             "theme": {},
             "motif": {
               "ロボット・メカ": [
+                "ロボット",
+                "メカ"
+              ]
+            },
+            "subgenre": {
+              "異世界ファンタジー": [
+                "異世界"
+              ],
+              "ロボットSF": [
                 "ロボット"
               ]
             }
           },
           "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20016"
         }
-      }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF",
+        "ファンタジー"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
     }
   ],
   "attribute_coverage": {
     "enriched_count": 40,
     "total_count": 40,
-    "coverage_ratio": 1
+    "coverage_ratio": 1,
+    "ontology_version": "2.0.0"
   }
 }
