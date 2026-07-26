@@ -162,6 +162,7 @@ async function main() {
     let fantasy = 0;
     let both = 0;
     let needsReview = 0;
+    let fullSnapshots = 0;
     for (const work of payload.works) {
       const workId = String(work.work_id);
       const record = attributes.get(workId);
@@ -171,6 +172,7 @@ async function main() {
       if (record.speculative_genres.includes('ファンタジー')) fantasy += 1;
       if (record.speculative_genres.length === 2) both += 1;
       if (record.classification_status === 'needs-review') needsReview += 1;
+      if (record.official_snapshot.source === 'network') fullSnapshots += 1;
     }
     if (payload.attribute_coverage?.enriched_count !== payload.works.length ||
         payload.attribute_coverage?.total_count !== payload.works.length ||
@@ -186,6 +188,7 @@ async function main() {
       fantasy_count: fantasy,
       sf_fantasy_cross_count: both,
       needs_review_count: needsReview,
+      full_snapshot_count: fullSnapshots,
     };
   }
 
