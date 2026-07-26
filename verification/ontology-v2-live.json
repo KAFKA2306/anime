@@ -1,0 +1,105 @@
+{
+  "status": "failed",
+  "verified_at": "2026-07-26T05:16:09.115Z",
+  "site": "https://kafka2306.github.io/anime/",
+  "repository_head_sha": "77a30155a27fb39ab6a13c8713ba912d2bf324f5",
+  "data_commit_sha": "33aec25c2ed44af917e20805cc3636f7427f3fec",
+  "catalogue": {
+    "year_count": 66,
+    "canonical_work_count": 7542,
+    "membership_count": 7544,
+    "ontology_version": "2.0.0",
+    "coverage_ratio": 1,
+    "year_2024_count": 397,
+    "year_2025_count": 307,
+    "deprecated_combined_tag_count": 0
+  },
+  "public_files": {
+    "data/manifest.json": {
+      "url": "https://kafka2306.github.io/anime/data/manifest.json?verify=1785042967701-1",
+      "status": 200,
+      "sha256": "0701d80be7538902c212b5e3d9aa5c271ff32947132c5ab0ddb34b0f51d1a636",
+      "expected_sha256": "0701d80be7538902c212b5e3d9aa5c271ff32947132c5ab0ddb34b0f51d1a636",
+      "exact_match": true
+    },
+    "data/by-year/2024.json": {
+      "url": "https://kafka2306.github.io/anime/data/by-year/2024.json?verify=1785042967830-1",
+      "status": 200,
+      "sha256": "3ab3a4cae964fd884106b480738bd0f86a44f80d414cef99f910db55111d5813",
+      "expected_sha256": "3ab3a4cae964fd884106b480738bd0f86a44f80d414cef99f910db55111d5813",
+      "exact_match": true
+    },
+    "data/by-year/2025.json": {
+      "url": "https://kafka2306.github.io/anime/data/by-year/2025.json?verify=1785042967879-1",
+      "status": 200,
+      "sha256": "b7700f4dd583ebc61a44b77409aa1740c3bd8039f4f5ef54a6c9b2bb7160eafb",
+      "expected_sha256": "b7700f4dd583ebc61a44b77409aa1740c3bd8039f4f5ef54a6c9b2bb7160eafb",
+      "exact_match": true
+    }
+  },
+  "public_json_samples": [
+    {
+      "work_id": "27226",
+      "title": "しかのこのこのここしたんたん",
+      "primary_genre": "コメディ・ギャグ",
+      "speculative_genres": [],
+      "canonical_tags": [
+        "コメディ・ギャグ",
+        "ドラマ・青春",
+        "スペキュレーティブ判定保留",
+        "学園",
+        "成長・挑戦"
+      ]
+    },
+    {
+      "work_id": "27033",
+      "title": "ワンルーム、日当たり普通、天使つき。",
+      "primary_genre": "ファンタジー",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "canonical_tags": [
+        "ファンタジー",
+        "恋愛・ラブコメ",
+        "ラブコメ",
+        "学園",
+        "恋愛"
+      ]
+    },
+    {
+      "work_id": "27567",
+      "title": "〈物語〉シリーズ オフ&モンスターシーズン",
+      "primary_genre": "ファンタジー",
+      "speculative_genres": [
+        "ファンタジー"
+      ],
+      "canonical_tags": [
+        "ファンタジー",
+        "恋愛・ラブコメ",
+        "ホラー・サスペンス・ミステリー",
+        "ラブコメ",
+        "学園",
+        "成長・挑戦",
+        "恋愛"
+      ]
+    }
+  ],
+  "browser_samples": [
+    {
+      "title": "しかのこのこのここしたんたん",
+      "tags": [
+        "原作:漫画",
+        "コメディ・ギャグ",
+        "ドラマ・青春",
+        "スペキュレーティブ判定保留",
+        "学園"
+      ],
+      "meta": "気になる 84,443件 · #41",
+      "url": "https://kafka2306.github.io/anime/?year=2024&verify=1785042968269&q=%E3%81%97%E3%81%8B%E3%81%AE%E3%81%93%E3%81%AE%E3%81%93%E3%81%AE%E3%81%93%E3%81%93%E3%81%97%E3%81%9F%E3%82%93%E3%81%9F%E3%82%93"
+    }
+  ],
+  "error": {
+    "message": "live card has no rendered tags: ワンルーム、日当たり普通、天使つき。",
+    "stack": "Error: live card has no rendered tags: ワンルーム、日当たり普通、天使つき。\n    at fail (file:///home/runner/work/anime/anime/scripts/verify-live-ontology-v2.mjs:22:35)\n    at main (file:///home/runner/work/anime/anime/scripts/verify-live-ontology-v2.mjs:161:34)\n    at async file:///home/runner/work/anime/anime/scripts/verify-live-ontology-v2.mjs:178:1"
+  }
+}
