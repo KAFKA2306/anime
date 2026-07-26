@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26747",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ダンジョン飯",
+    "synopsis": "ダンジョン飯 九井諒子(「ダンジョン飯」 異世界・ハイファンタジー SF・ファンタジー 冒険者 ダンジョン",
+    "staff_text": "原作:九井諒子(「ダンジョン飯」",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "fa4c5897f5853826f474acbbad64d491621c7e4c71af308a31d8fda76a81d1c2"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,26 +23,41 @@
   "original_credit": "九井諒子(「ダンジョン飯」",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -39,29 +67,43 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "異世界",
         "冒険者",
         "ダンジョン"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
-        "motif": {}
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747"
     }

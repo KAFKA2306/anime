@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26823",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "明治撃剣-1874-",
+    "synopsis": "明治撃剣-1874- 櫻井 司 (つむぎ秋田アニメLab 代表)・戸塚直樹 バトル・アクション 歴史・戦記 歴史・時代劇 犯罪・警察 明治 警察",
+    "staff_text": "原作:櫻井 司 (つむぎ秋田アニメLab 代表)・戸塚直樹",
+    "official_genres": [
+      "アクション/バトル",
+      "歴史/戦記"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "6d98115d2ab43e4eede6f6ad3c3d579c370a132146d8a9aa68743405c92ebcd9"
+  },
   "official_genres": [
     "アクション/バトル",
     "歴史/戦記"
@@ -11,6 +25,8 @@
   "original_credit": "櫻井 司 (つむぎ秋田アニメLab 代表)・戸塚直樹",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "歴史・戦記",
@@ -23,6 +39,7 @@
       "バトル・アクション",
       "歴史・戦記"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
@@ -32,6 +49,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -55,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "歴史/戦記"
@@ -63,19 +81,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
         "theme": {},
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26823"
     }

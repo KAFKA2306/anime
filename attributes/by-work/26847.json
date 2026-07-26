@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26847",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26847",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "MANKAI STAGE『A3!』Troupe LIVE~AUTUMN 2021~",
+    "synopsis": "MANKAI STAGE『A3!』Troupe LIVE~AUTUMN 2021~ イケメン役者育成ゲーム『A3!(エースリー)』 2.5次元舞台 ライブ・ラジオ・その他",
+    "staff_text": "原作:イケメン役者育成ゲーム『A3!(エースリー)』",
+    "official_genres": [
+      "2.5次元舞台",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "1fbef83ca64d6abcf0dee4fc0359bd5b4da48edd1a8d0937e85b08aae4214df2"
+  },
   "official_genres": [
     "2.5次元舞台",
     "ライブ/ラジオ/etc."
@@ -11,9 +25,15 @@
   "original_credit": "イケメン役者育成ゲーム『A3!(エースリー)』",
   "source_origin": "ゲーム",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
-    "ライブ・ラジオ・その他"
+    "SF",
+    "ライブ・ラジオ・その他",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [
@@ -21,21 +41,26 @@
     ],
     "genre": [
       "2.5次元舞台",
+      "SF",
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": [
       "2.5次元舞台",
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26847"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台",
         "ライブ/ラジオ/etc."
@@ -56,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26847"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台",
         "ライブ/ラジオ/etc."
@@ -64,11 +89,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26847"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26847"
     }

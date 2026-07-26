@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26901",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26901",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "舞台 淡海乃海‐声無き者の歌をこそ聴け‐",
+    "synopsis": "舞台 淡海乃海‐声無き者の歌をこそ聴け‐ イスラーフィール『淡海乃海 水面が揺れる時~三英傑に嫌われた不運な男、朽木基綱の逆襲~』(TOブックス刊) 2.5次元舞台 異世界 歴史・時代劇 転生 戦国",
+    "staff_text": "原作:イスラーフィール『淡海乃海 水面が揺れる時~三英傑に嫌われた不運な男、朽木基綱の逆襲~』(TOブックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "4b3bb73df8e62f9c52c0bec00d45d43a414c0d745b6541af184ce49e923970d7"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,28 +23,42 @@
   "original_credit": "イスラーフィール『淡海乃海 水面が揺れる時~三英傑に嫌われた不運な男、朽木基綱の逆襲~』(TOブックス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "異世界ファンタジー",
     "異世界",
-    "歴史・時代劇"
+    "歴史・時代劇",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界",
       "歴史・時代劇"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26901"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -56,25 +83,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26901"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26901"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ],
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26901"
     }

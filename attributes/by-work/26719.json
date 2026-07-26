@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26719",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26719",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Saint Snow PRESENTS LOVELIVE! SUNSHINE!! HAKODATE UNIT CARNIVAL",
+    "synopsis": "Saint Snow PRESENTS LOVELIVE! SUNSHINE!! HAKODATE UNIT CARNIVAL ライブ・ラジオ・その他",
+    "staff_text": "",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "719ba4f4fd8335aefd386595913259a09335ab52f7fbfcfdd82f652a7ed63548"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,26 +23,37 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "ライブ・ラジオ・その他"
+    "ライブ・ラジオ・その他",
+    "SF",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ライブ・ラジオ・その他"
+      "ライブ・ラジオ・その他",
+      "SF"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": [
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -39,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26719"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -47,18 +71,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26719"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26719"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26719"
     }

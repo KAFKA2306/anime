@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27157",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27157",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ATRI -My Dear Moments-",
+    "synopsis": "ATRI -My Dear Moments- 『ATRI -My Dear Moments-』(ANIPLEX.EXE) ロボット・メカ 恋愛・ラブコメ ロボット",
+    "staff_text": "原作:『ATRI -My Dear Moments-』(ANIPLEX.EXE)",
+    "official_genres": [
+      "ロボット/メカ",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "90d591eda84e8311604edc2fc4e995cd3deecaa40132708081c9668c42e9c474"
+  },
   "official_genres": [
     "ロボット/メカ",
     "恋愛/ラブコメ"
@@ -11,28 +25,44 @@
   "original_credit": "『ATRI -My Dear Moments-』(ANIPLEX.EXE)",
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
-    "恋愛・ラブコメ"
+    "SF",
+    "恋愛・ラブコメ",
+    "ロボットSF",
+    "ラブコメ",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ロボットSF",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27157"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "恋愛/ラブコメ"
@@ -51,7 +81,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27157"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "恋愛/ラブコメ"
@@ -59,13 +89,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27157"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

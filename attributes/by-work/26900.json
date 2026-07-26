@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26900",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26900",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ティアムーン帝国物語 THE STAGEII ~断頭台から始まる、姫の転生逆転ストーリー~",
+    "synopsis": "ティアムーン帝国物語 THE STAGEII ~断頭台から始まる、姫の転生逆転ストーリー~ 餅月望「ティアーン帝国物語~断頭台から始まる、姫の転生逆転ストーリー~」(TOブックス刊) 2.5次元舞台 異世界 学園 転生",
+    "staff_text": "原作:餅月望「ティアーン帝国物語~断頭台から始まる、姫の転生逆転ストーリー~」(TOブックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "d6dac26aab3ca9b68f5af989a1fd08c9a6de2a6e68a5a3959e2e4c66e33a3c34"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,28 +23,44 @@
   "original_credit": "餅月望「ティアーン帝国物語~断頭台から始まる、姫の転生逆転ストーリー~」(TOブックス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "スペースオペラ",
     "異世界",
-    "学園"
+    "学園",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ"
     ],
     "setting": [
       "異世界",
       "学園"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26900"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -56,17 +85,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26900"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26900"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "転生"
           ],
           "学園": [
@@ -74,7 +104,20 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ],
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26900"
     }

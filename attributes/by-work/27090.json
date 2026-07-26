@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27090",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27090",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "テレビアニメ「鬼滅の刃」柱稽古編",
+    "synopsis": "テレビアニメ「鬼滅の刃」柱稽古編 吾峠呼世晴(集英社ジャンプ コミックス刊) バトル・アクション SF・ファンタジー ドラマ・青春 友情・仲間 家族 怪異・妖怪 絆 鬼",
+    "staff_text": "原作:吾峠呼世晴(集英社ジャンプ コミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "5d2b5dbe130b085b23f85e0b047c659cd3cfa036405a57a425834dbe992e0f29"
+  },
   "official_genres": [
     "アクション/バトル",
     "SF/ファンタジー",
@@ -12,11 +27,15 @@
   "original_credit": "吾峠呼世晴(集英社ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "バトル・アクション",
-    "SF・ファンタジー",
     "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "友情・仲間",
+    "成長・挑戦",
     "家族",
     "怪異・妖怪"
   ],
@@ -26,12 +45,16 @@
     ],
     "genre": [
       "バトル・アクション",
-      "SF・ファンタジー",
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "家族"
     ],
     "motif": [
@@ -39,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -56,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27090"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -66,7 +90,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27090"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "SF/ファンタジー",
@@ -75,12 +99,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27090"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
+          ],
+          "成長・挑戦": [
+            "青春"
           ],
           "家族": [
             "家族"
@@ -88,7 +117,14 @@
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

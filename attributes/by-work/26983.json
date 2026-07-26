@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26983",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26983",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "花野井くんと恋の病",
+    "synopsis": "花野井くんと恋の病 森野 萌(講談社「月刊デザート」連載) 恋愛・ラブコメ 学園 家族 恋愛 高校 恋する",
+    "staff_text": "原作:森野 萌(講談社「月刊デザート」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "794ec41871afb0f1480fac26e6c425662e85a3a927273abb51392cf91d7355b2"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "森野 萌(講談社「月刊デザート」連載)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "ラブコメ",
     "学園",
     "家族",
     "恋愛"
@@ -20,6 +36,9 @@
     "source": [],
     "genre": [
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -31,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26983"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -53,17 +73,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26983"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26983"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
@@ -73,10 +94,16 @@
           ],
           "恋愛": [
             "恋愛",
-            "恋する"
+            "恋する",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26983"
     }

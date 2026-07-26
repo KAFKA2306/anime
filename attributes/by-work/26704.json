@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "26704",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26704",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画『ゆるキャン△』",
+    "synopsis": "映画『ゆるキャン△』 あ f ろ(芳文社「COMIC FUZ」掲載) 日常・ほのぼの 学園 友情・仲間 職業・仕事 学校 高校 仲間 働く",
+    "staff_text": "原作:あ f ろ(芳文社「COMIC FUZ」掲載)",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "301b7b5f29f95591091f24a38d947db30c57337fe29e2614829db7d7af7a5c4c"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,27 +23,33 @@
   "original_credit": "あ f ろ(芳文社「COMIC FUZ」掲載)",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "学園",
     "友情・仲間",
-    "職業・仕事"
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
-      "職業・仕事"
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26704"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -53,30 +72,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26704"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26704"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26704"
     }

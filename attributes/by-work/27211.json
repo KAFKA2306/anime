@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27211",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27211",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "未来の黒幕系悪役令嬢モリアーティーの異世界完全犯罪白書",
+    "synopsis": "未来の黒幕系悪役令嬢モリアーティーの異世界完全犯罪白書 黒銘菓(エブリスタ) 異世界・ハイファンタジー SF・ファンタジー 異世界 推理・謎解き 犯罪・警察 探偵 犯罪",
+    "staff_text": "原作:黒銘菓(エブリスタ)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "defee29492c24e33a137a35f11a5033873d5fc55010f5cb01d1066addb09917a"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,9 +23,17 @@
   "original_credit": "黒銘菓(エブリスタ)",
   "source_origin": "Web小説（なろう・カクヨム系）",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
+    "異世界ファンタジー",
+    "ミステリー",
     "異世界",
     "推理・謎解き",
     "犯罪・警察"
@@ -23,7 +44,12 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ミステリー"
     ],
     "setting": [
       "異世界"
@@ -36,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -52,24 +79,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27211"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "matched_terms": [
+        "未来",
         "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27211"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27211"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -78,12 +106,25 @@
         },
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },
