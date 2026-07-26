@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21567",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21567",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "会長はメイド様!",
+    "synopsis": "会長はメイド様! 藤原ヒロ(白泉社「月刊LaLa」連載) ドラマ・青春 学園 学校 高校",
+    "staff_text": "原作:藤原ヒロ(白泉社「月刊LaLa」連載)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "60806bc93bb48a3fafea7d23250f8284aaa2f076c16c15622a3d02b80df66121"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,22 +23,29 @@
   "original_credit": "藤原ヒロ(白泉社「月刊LaLa」連載)",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21567"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -48,23 +68,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21567"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21567"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21567"
     }

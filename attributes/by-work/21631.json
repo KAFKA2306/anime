@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21631",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21631",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "活撃 刀剣乱舞",
+    "synopsis": "活撃 刀剣乱舞 「刀剣乱舞-ONLINE-」より(DMM GAMES ドラマ・青春 歴史・時代劇 友情・仲間 幕末 仲間",
+    "staff_text": "原作:「刀剣乱舞-ONLINE-」より(DMM GAMES",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "dd2c4676a7ce7b8b68d5b863e169a1486b6d803d9cd625c87cf681da3808d73e"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,25 +23,31 @@
   "original_credit": "「刀剣乱舞-ONLINE-」より(DMM GAMES",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "歴史・時代劇",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21631"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -51,26 +70,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21631"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21631"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "幕末"
+            "幕末",
+            "時代劇"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21631"
     }

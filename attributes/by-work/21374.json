@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21374",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21374",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "忍たま乱太郎 第17シリーズ 第25話~第48話",
+    "synopsis": "忍たま乱太郎 第17シリーズ 第25話~第48話 尼子 騒兵衛「落第忍者乱太郎」より ショート コメディ・ギャグ キッズ・ファミリー 学園 歴史・時代劇 戦国",
+    "staff_text": "原作:尼子 騒兵衛「落第忍者乱太郎」より",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "77cca61e4e5e5f323a66d8e225fe367a8516c5c49ea938012119e31f0b37499b"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -12,6 +27,8 @@
   "original_credit": "尼子 騒兵衛「落第忍者乱太郎」より",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -26,6 +43,7 @@
       "コメディ・ギャグ",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園",
       "歴史・時代劇"
@@ -36,6 +54,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21374"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -60,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21374"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -69,18 +88,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21374"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
             "学園"
           ],
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21374"
     }

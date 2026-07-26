@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21868",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21868",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "エルフェンリート",
+    "synopsis": "エルフェンリート 岡本 倫(「週刊ヤングジャンプ、ヤングジャンプ・コミックス」集英社刊) 異世界・ハイファンタジー SF・ファンタジー バトル・アクション 政治・戦略 国家 エルフ",
+    "staff_text": "原作:岡本 倫(「週刊ヤングジャンプ、ヤングジャンプ・コミックス」集英社刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "cacb52e75e0f197ad47223d58a15088541e24d9ae77c096c7b70390bb709657d"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル"
@@ -11,10 +25,16 @@
   "original_credit": "岡本 倫(「週刊ヤングジャンプ、ヤングジャンプ・コミックス」集英社刊)",
   "source_origin": "漫画",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
+    "異世界ファンタジー",
+    "異世界",
     "政治・戦略"
   ],
   "ontology_facets": {
@@ -23,16 +43,22 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "政治・戦略"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -51,18 +77,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21868"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
       ],
       "matched_terms": [
+        "異世界",
         "エルフ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21868"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル"
@@ -70,15 +97,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21868"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "政治・戦略": [
-            "国家"
+        "setting": {
+          "異世界": [
+            "異世界"
           ]
         },
-        "motif": {}
+        "theme": {
+          "政治・戦略": [
+            "政治",
+            "国家",
+            "戦略"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21868"
     }

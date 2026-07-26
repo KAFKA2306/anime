@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21695",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21695",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "磯部磯兵衛物語",
+    "synopsis": "磯部磯兵衛物語 ショート コメディ・ギャグ 学園 歴史・時代劇 学校 江戸",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "e8ed2ae3a463114d7e7c3e3d09d4a49d4f7292f0b4b788ff324fcfbd0004b492"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ"
@@ -11,6 +25,8 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
@@ -23,6 +39,7 @@
       "ショート",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園",
       "歴史・時代劇"
@@ -33,6 +50,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -41,13 +59,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21695"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21695"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ"
@@ -64,18 +82,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21695"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ],
           "歴史・時代劇": [
-            "江戸"
+            "江戸",
+            "時代劇"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21695"
     }

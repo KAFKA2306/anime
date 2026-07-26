@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21478",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21478",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "タイムボカン 2000 怪盗きらめきマン",
+    "synopsis": "タイムボカン 2000 怪盗きらめきマン SF・ファンタジー コメディ・ギャグ 犯罪・警察 警察 刑事",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "cd3103fad445d6a52a4cd12a4cc3cc25dd1ba7cfeffe10a01d7cfb1914137f37"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,18 +24,21 @@
   "production_year": 2000,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [
@@ -29,6 +46,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,13 +55,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21478"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21478"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -60,16 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21478"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "犯罪・警察": [
             "警察",
-            "刑事"
+            "刑事",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21478"
     }

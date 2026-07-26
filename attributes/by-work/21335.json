@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21335",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21335",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "風夏",
+    "synopsis": "風夏 瀬尾公治(講談社「週刊少年マガジン」連載) 恋愛・ラブコメ ドラマ・青春 学園 家族 音楽・アイドル 高校 姉妹 音楽",
+    "staff_text": "原作:瀬尾公治(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "febcabfaa0dd9099159d98b9aa4cace21d5774fc81d917b02c48dd3f76d80930"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,11 +25,16 @@
   "original_credit": "瀬尾公治(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
+    "ラブコメ",
     "学園",
+    "成長・挑戦",
     "家族",
+    "恋愛",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -26,16 +45,22 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
+      "成長・挑戦",
       "家族",
+      "恋愛",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21335"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -62,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21335"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -70,22 +95,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21335"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "姉妹"
           ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21335"
     }

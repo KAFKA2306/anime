@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21526",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21526",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "恋愛暴君",
+    "synopsis": "恋愛暴君 三星めがね(COMICメテオ連載) SF・ファンタジー 恋愛・ラブコメ 学園 友情・仲間 恋愛 高校 仲間 ラブコメ",
+    "staff_text": "原作:三星めがね(COMICメテオ連載)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "0711f1e7f97874d1a6549c255e888fb8c14c0bc82298d122f3fb70ce38c69569"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,10 +24,13 @@
   "production_year": 2017,
   "original_credit": "三星めがね(COMICメテオ連載)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
     "学園",
     "友情・仲間",
     "恋愛"
@@ -21,8 +38,11 @@
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [
       "学園"
@@ -34,6 +54,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21526"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -57,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21526"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -65,15 +86,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21526"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "恋愛": [
@@ -81,7 +104,12 @@
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21526"
     }

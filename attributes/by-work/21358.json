@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21358",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21358",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ちるらん にぶんの壱",
+    "synopsis": "ちるらん にぶんの壱 「ちるらん にぶんの壱」 漫画:橋本エイジ 原作:梅村真也 コメディ・ギャグ 歴史・戦記 ショート",
+    "staff_text": "原作:「ちるらん にぶんの壱」 漫画:橋本エイジ 原作:梅村真也",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "歴史/戦記",
+      "ショート"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "c8e575331036cbf880adf969c5358dc443eb87a8c4e6f223a5161888e0dc753e"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "歴史/戦記",
@@ -12,6 +27,8 @@
   "original_credit": "「ちるらん にぶんの壱」 漫画:橋本エイジ 原作:梅村真也",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "歴史・戦記",
@@ -26,6 +43,7 @@
       "歴史・戦記",
       "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -33,11 +51,12 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -49,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21358"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "歴史/戦記",
@@ -59,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21358"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "歴史/戦記",
@@ -68,11 +87,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21358"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21358"
     }

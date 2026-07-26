@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21617",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21617",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "舞台版『心霊探偵八雲 裁きの塔』",
+    "synopsis": "舞台版『心霊探偵八雲 裁きの塔』 神永 学「心霊探偵八雲」シリーズ(KADOKAWA刊) 2.5次元舞台 学園 推理・謎解き 大学 探偵",
+    "staff_text": "原作:神永 学「心霊探偵八雲」シリーズ(KADOKAWA刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "5f5c724972544a6d8a553f926bab6f1735f577891e81fc1165218757336243b8"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "神永 学「心霊探偵八雲」シリーズ(KADOKAWA刊)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ミステリー",
     "学園",
     "推理・謎解き"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [
       "学園"
@@ -31,6 +50,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21617"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -53,26 +73,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21617"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21617"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21617"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21841",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21841",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "月曜日のたわわ",
+    "synopsis": "月曜日のたわわ 比村奇石 ショート 日常・ほのぼの 恋愛・ラブコメ",
+    "staff_text": "原作:比村奇石",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "577af0df22e7d904400205ced86b21867c22315680489820e2beaa7d2889864d"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの",
@@ -12,10 +27,15 @@
   "original_credit": "比村奇石",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "日常・ほのぼの",
-    "恋愛・ラブコメ"
+    "恋愛・ラブコメ",
+    "ラブコメ",
+    "恋愛",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,18 +44,25 @@
       "日常・ほのぼの",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛",
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21841"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの",
@@ -55,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21841"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの",
@@ -64,11 +91,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21841"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21841"
     }

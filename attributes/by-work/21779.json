@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21779",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21779",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版 魔法先生ネギま! ANIME FINAL",
+    "synopsis": "劇場版 魔法先生ネギま! ANIME FINAL SF・ファンタジー バトル・アクション 恋愛・ラブコメ 魔法",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "a6efad8e855eff3e8aa4be7853e7748e7ef5a814c0f55134f177a0611d6be4cc"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -10,58 +25,69 @@
   ],
   "production_year": 2011,
   "original_credit": null,
-  "source_origin": "漫画",
-  "primary_genre": "SF・ファンタジー",
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "恋愛・ラブコメ",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "魔法"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
-    "primary_genre": "verified",
+    "source_origin": "unknown",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "週刊少年",
-        "マガジン"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21779"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.fantasy-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
         "恋愛/ラブコメ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "魔法"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21779"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -70,13 +96,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21779"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

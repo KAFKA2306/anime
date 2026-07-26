@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21813",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21813",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "おそ松さん 第2期",
+    "synopsis": "おそ松さん 第2期 赤塚不二夫「おそ松くん」 コメディ・ギャグ ドラマ・青春 成長・挑戦 成長",
+    "staff_text": "原作:赤塚不二夫「おそ松くん」",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "f6b3487e96b94b5cf249bbb5252deae424202fcc8c02fb752231fa48f0f447d7"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ドラマ/青春"
@@ -11,6 +25,8 @@
   "original_credit": "赤塚不二夫「おそ松くん」",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "ドラマ・青春",
@@ -22,6 +38,7 @@
       "コメディ・ギャグ",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
@@ -29,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +61,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21813"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -52,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21813"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ドラマ/青春"
@@ -60,15 +78,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21813"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21813"
     }

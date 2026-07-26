@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21480",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480",
   "attribute_fetched_at": "2026-07-25T10:32:10.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "タイムボカンシリーズ ヤットデタマン",
+    "synopsis": "タイムボカンシリーズ ヤットデタマン タツノコプロ企画室 SF・ファンタジー コメディ・ギャグ 推理・謎解き ロボット・メカ 探偵 ロボット",
+    "staff_text": "原作:タツノコプロ企画室",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1981,
+    "source": "legacy-derived",
+    "sha256": "046d22c680e226ff8f2a456c541f72da9120cd825700d373b6cec964ab483fc3"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "コメディ/ギャグ"
@@ -10,18 +24,28 @@
   "production_year": 1981,
   "original_credit": "タツノコプロ企画室",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "コメディ・ギャグ",
+    "ロボットSF",
+    "ミステリー",
     "推理・謎解き",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -32,9 +56,10 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -46,16 +71,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "コメディ/ギャグ"
@@ -63,17 +91,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21480"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21689",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21689",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "逆境無頼カイジ 破戒録篇",
+    "synopsis": "逆境無頼カイジ 破戒録篇 福本伸行(講談社「ヤングマガジン」連載) ドラマ・青春 友情・仲間 仲間",
+    "staff_text": "原作:福本伸行(講談社「ヤングマガジン」連載)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "3e1a66aa202bc334b33d1d391a9d070e8ca77301c23381898098283f333ff01f"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,9 +23,12 @@
   "original_credit": "福本伸行(講談社「ヤングマガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,16 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21689"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -53,22 +72,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21689"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21689"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21689"
     }

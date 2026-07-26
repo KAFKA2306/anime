@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "21456",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21456",
   "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "こちら葛飾区亀有公園前派出所THE MOVIE もう、誰もわしを止められん!",
+    "synopsis": "こちら葛飾区亀有公園前派出所THE MOVIE もう、誰もわしを止められん! 秋本治・アトリエびーだま(集英社「週刊少年ジャンプ」連載) コメディ・ギャグ ロボット・メカ ロボット",
+    "staff_text": "原作:秋本治・アトリエびーだま(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1999,
+    "source": "legacy-derived",
+    "sha256": "6ad0dede22030976d8ffd90ed32e70f76553a86f1c742b53093e50a94d306c30"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "秋本治・アトリエびーだま(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "SF",
+    "ロボットSF",
     "ロボット・メカ"
   ],
   "ontology_facets": {
@@ -19,7 +38,11 @@
       "漫画"
     ],
     "genre": [
-      "コメディ・ギャグ"
+      "コメディ・ギャグ",
+      "SF"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -28,6 +51,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21456"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -53,19 +77,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21456"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21456"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }
