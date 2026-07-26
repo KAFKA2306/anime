@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27727",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27727",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "モンスター・ホテル クルーズ船の恋は危険がいっぱい?!",
+    "synopsis": "モンスター・ホテル クルーズ船の恋は危険がいっぱい?! トッド・デュアハム ホラー・サスペンス・ミステリー キッズ・ファミリー 家族",
+    "staff_text": "原作:トッド・デュアハム",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "23242c19a46a8fe1354cd837f65d90e218aa3c81069f60ab703af019d8bf8fc8"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "キッズ/ファミリー"
@@ -11,8 +25,13 @@
   "original_credit": "トッド・デュアハム",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
     "キッズ・ファミリー",
     "家族"
   ],
@@ -20,8 +39,10 @@
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー",
+      "ファンタジー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "家族"
@@ -29,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27727"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "キッズ/ファミリー"
@@ -52,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27727"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "キッズ/ファミリー"
@@ -60,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27727"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -68,7 +90,8 @@
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27727"
     }

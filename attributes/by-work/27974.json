@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27974",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27974",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇団『ドラマティカ』ACT1/西遊記悠久奇譚",
+    "synopsis": "劇団『ドラマティカ』ACT1/西遊記悠久奇譚 『あんさんぶるスターズ!!』 (Happy Elements株式会社) 2.5次元舞台 魔法 怪異・妖怪 魔術 妖怪",
+    "staff_text": "原作:『あんさんぶるスターズ!!』 (Happy Elements株式会社)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "185f26327b05d9d363d3619e458286285f73f1272425eec016e42197f124ff0b"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,17 +23,30 @@
   "original_credit": "『あんさんぶるスターズ!!』 (Happy Elements株式会社)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
+    "職場",
     "魔法",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
     ],
-    "setting": [],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "職場"
+    ],
     "theme": [],
     "motif": [
       "魔法",
@@ -30,6 +56,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -44,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27974"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -52,23 +79,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27974"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27974"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
           ],
           "怪異・妖怪": [
+            "怪異",
             "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法",
+            "怪異"
           ]
         }
       },

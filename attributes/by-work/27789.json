@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27789",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27789",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "阿波連さんははかれない Season2",
+    "synopsis": "阿波連さんははかれない Season2 水あさと(集英社ジャンプ コミックス刊) 恋愛・ラブコメ 日常・ほのぼの 学園 成長・挑戦 恋愛 学校 青春 ラブコメ",
+    "staff_text": "原作:水あさと(集英社ジャンプ コミックス刊)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "316549f707f1a498c0c64e995073b3439109475eca775fbc0348b9de8efbd302"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "日常/ほのぼの"
@@ -11,12 +25,16 @@
   "original_credit": "水あさと(集英社ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "日常・ほのぼの",
+    "ラブコメ",
     "学園",
     "成長・挑戦",
-    "恋愛"
+    "恋愛",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -26,16 +44,21 @@
       "恋愛・ラブコメ",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
     "theme": [
       "成長・挑戦",
-      "恋愛"
+      "恋愛",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27789"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -62,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27789"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -70,22 +93,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27789"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
+            "恋愛",
             "ラブコメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27789"
     }

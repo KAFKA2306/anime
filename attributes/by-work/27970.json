@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27970",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27970",
   "attribute_fetched_at": "2026-07-25T10:32:46.898Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ルパン三世 DEAD OR ALIVE",
+    "synopsis": "ルパン三世 DEAD OR ALIVE モンキー・パンチ バトル・アクション ドラマ・青春 政治・戦略 政治",
+    "staff_text": "原作:モンキー・パンチ",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 1996,
+    "source": "legacy-derived",
+    "sha256": "ef48551b139a5e589988b41d74081a4ed2ecb0593094d502151dcbe451378d2b"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,9 +25,12 @@
   "original_credit": "モンキー・パンチ",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
+    "成長・挑戦",
     "政治・戦略"
   ],
   "ontology_facets": {
@@ -22,13 +39,16 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "政治・戦略"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27970"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27970"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -60,15 +80,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27970"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "政治・戦略": [
-            "政治"
+            "政治",
+            "戦略"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27970"
     }

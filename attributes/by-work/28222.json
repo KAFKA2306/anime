@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28222",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28222",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "だめっこどうぶつ",
+    "synopsis": "だめっこどうぶつ 桑田乃梨子 ショート コメディ・ギャグ 日常・ほのぼの",
+    "staff_text": "原作:桑田乃梨子",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "cda522b970350f8df08f5d360e83a1fc8d88177cdfa81e0fd7434b74eb221f4f"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -12,10 +27,13 @@
   "original_credit": "桑田乃梨子",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -24,18 +42,22 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28222"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -55,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28222"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -64,11 +86,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28222"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28222"
     }

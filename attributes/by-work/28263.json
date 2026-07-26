@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28263",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28263",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "MyGO!!!!!メンバーの日常",
+    "synopsis": "MyGO!!!!!メンバーの日常 ブシロード ショート 日常・ほのぼの コメディ・ギャグ 音楽・アイドル バンド",
+    "staff_text": "原作:ブシロード",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "be79a741212992ec3895ce53c9060d8d2b4f009eb41a833bb7db9acea0ee82d9"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの",
@@ -12,11 +27,14 @@
   "original_credit": "ブシロード",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "日常・ほのぼの",
     "コメディ・ギャグ",
-    "音楽・アイドル"
+    "音楽・アイドル",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,15 +43,18 @@
       "日常・ほのぼの",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "音楽・アイドル"
+      "音楽・アイドル",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +69,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28263"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの",
@@ -58,7 +79,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28263"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの",
@@ -67,15 +88,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28263"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
-            "バンド"
+            "音楽",
+            "バンド",
+            "アイドル"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28263"
     }

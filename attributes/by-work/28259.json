@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28259",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28259",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "SHIBUYA♡HACHI 第4クール",
+    "synopsis": "SHIBUYA♡HACHI 第4クール 「SHIBUYA♡HACHI」実行委員会 日常・ほのぼの 友情・仲間 仲間",
+    "staff_text": "原作:「SHIBUYA♡HACHI」実行委員会",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "9ce76aa0199d3956d861b5efee67c902a0aa66b867063924bd170efed0531075"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,22 +23,28 @@
   "original_credit": "「SHIBUYA♡HACHI」実行委員会",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
-    "友情・仲間"
+    "友情・仲間",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28259"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -48,22 +67,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28259"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28259"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28259"
     }

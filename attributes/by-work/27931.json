@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27931",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27931",
   "attribute_fetched_at": "2026-07-25T10:55:16.490Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "トンデラハウスの大冒険",
+    "synopsis": "トンデラハウスの大冒険 SF・ファンタジー キッズ・ファミリー ロボット・メカ ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 1982,
+    "source": "legacy-derived",
+    "sha256": "f69f0486b7475717d3f84c3c376a40f1248abb050118e60344e79636495328dc"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "キッズ/ファミリー"
@@ -10,49 +24,64 @@
   "production_year": 1982,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "キッズ・ファミリー",
+    "ロボットSF",
+    "旅・冒険",
     "ロボット・メカ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "旅・冒険"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27931"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27931"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "キッズ/ファミリー"
@@ -60,12 +89,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27931"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

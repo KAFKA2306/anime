@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28160",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28160",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "短編人形アニメーション こまねこのかいがいりょこう",
+    "synopsis": "短編人形アニメーション こまねこのかいがいりょこう 日常・ほのぼの ライブ・ラジオ・その他 友情・仲間 成長・挑戦 友情 成長",
+    "staff_text": "",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "d4bbc9be6b2dfefacd11ed090bbb2a1fb7b0a8e43aefbab4dcfc8540a8f79fed"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "ライブ/ラジオ/etc."
@@ -11,11 +25,14 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "ライブ・ラジオ・その他",
     "友情・仲間",
-    "成長・挑戦"
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,16 +40,19 @@
       "日常・ほのぼの",
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -41,13 +61,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28160"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "ライブ/ラジオ/etc."
@@ -56,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28160"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "ライブ/ラジオ/etc."
@@ -64,18 +84,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28160"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
           ],
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28160"
     }

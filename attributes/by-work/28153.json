@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28153",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28153",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Spicy Candy 1期",
+    "synopsis": "Spicy Candy 1期 ショート 日常・ほのぼの 宇宙 音楽・アイドル 音楽",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "f59b4305e5c54ff712df03ef16e896ed867dfde05a45f308e9276bb3239d2865"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの"
@@ -11,29 +25,42 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
+    "SF",
     "日常・ほのぼの",
+    "スペースオペラ",
     "宇宙",
-    "音楽・アイドル"
+    "音楽・アイドル",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ショート",
+      "SF",
       "日常・ほのぼの"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [
-      "音楽・アイドル"
+      "音楽・アイドル",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +69,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28153"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -57,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28153"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -65,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28153"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -74,10 +101,19 @@
         },
         "theme": {
           "音楽・アイドル": [
-            "音楽"
+            "音楽",
+            "アイドル"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28153"
     }

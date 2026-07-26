@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28061",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28061",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "瑠璃の宝石",
+    "synopsis": "瑠璃の宝石 渋谷 圭一郎 (HARTA COMIX 日常・ほのぼの ドラマ・青春 学園 大学",
+    "staff_text": "原作:渋谷 圭一郎 (HARTA COMIX",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "ef2bc026ad4ab029489cc3b8b1152cb6a43a17ef33954f397e8f660a0e4d0fec"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": "渋谷 圭一郎 (HARTA COMIX",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "ドラマ・青春",
-    "学園"
+    "学園",
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "日常・ほのぼの",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28061"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28061"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "ドラマ/青春"
@@ -60,15 +83,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28061"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28061"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28031",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "追放者食堂へようこそ!",
+    "synopsis": "追放者食堂へようこそ! 君川優樹(オーバーラップノベルス刊) 異世界・ハイファンタジー SF・ファンタジー 日常・ほのぼの 友情・仲間 料理・グルメ 仲間 料理 食堂 冒険者",
+    "staff_text": "原作:君川優樹(オーバーラップノベルス刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "a0312833c264c49844bf28deb90a739d5acf9f1c8d221cb6f0ac77df4304b9aa"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの"
@@ -11,12 +25,20 @@
   "original_credit": "君川優樹(オーバーラップノベルス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "日常・ほのぼの",
+    "異世界ファンタジー",
+    "異世界",
     "友情・仲間",
-    "料理・グルメ"
+    "料理・グルメ",
+    "癒やし",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [
@@ -24,17 +46,25 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "日常・ほのぼの"
     ],
-    "setting": [],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
     "theme": [
       "友情・仲間",
-      "料理・グルメ"
+      "料理・グルメ",
+      "癒やし",
+      "旅・冒険"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -51,18 +81,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
       ],
       "matched_terms": [
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -70,19 +101,36 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "料理・グルメ": [
             "料理",
+            "グルメ",
             "食堂"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031"
     }

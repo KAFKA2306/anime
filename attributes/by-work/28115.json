@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28115",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28115",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゲーセン少女と異文化交流",
+    "synopsis": "ゲーセン少女と異文化交流 安原宏和(KADOKAWA「ドラドラしゃーぷ♯」連載) 恋愛・ラブコメ ドラマ・青春 成長・挑戦 挑戦",
+    "staff_text": "原作:安原宏和(KADOKAWA「ドラドラしゃーぷ♯」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "ed8a2b757a8f56de89e4bf747105d8de74a32277015ea3b92542f2f497b455be"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ドラマ/青春"
@@ -11,10 +25,14 @@
   "original_credit": "安原宏和(KADOKAWA「ドラドラしゃーぷ♯」連載)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ドラマ・青春",
-    "成長・挑戦"
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +40,18 @@
       "恋愛・ラブコメ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28115"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -52,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28115"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ドラマ/青春"
@@ -60,15 +83,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28115"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "挑戦"
+            "成長",
+            "挑戦",
+            "青春"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28115"
     }

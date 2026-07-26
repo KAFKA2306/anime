@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27877",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27877",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "えぶりでいホスト",
+    "synopsis": "えぶりでいホスト ごとうにも ドラマ・青春 音楽・アイドル 職業・仕事 アイドル 職場",
+    "staff_text": "原作:ごとうにも",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "8897a46365c25fd8feae5a00a5964e7fc3a48c67ca91193461a3b4d27ae0cd15"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,8 +23,12 @@
   "original_credit": "ごとうにも",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "職場",
+    "成長・挑戦",
     "音楽・アイドル",
     "職業・仕事"
   ],
@@ -20,14 +37,19 @@
     "genre": [
       "ドラマ・青春"
     ],
-    "setting": [],
+    "subgenre": [],
+    "setting": [
+      "職場"
+    ],
     "theme": [
+      "成長・挑戦",
       "音楽・アイドル",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27877"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -50,25 +72,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27877"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27877"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {
-          "音楽・アイドル": [
-            "アイドル"
-          ],
-          "職業・仕事": [
+        "setting": {
+          "職場": [
             "職場"
           ]
         },
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "音楽・アイドル": [
+            "音楽",
+            "アイドル"
+          ],
+          "職業・仕事": [
+            "仕事",
+            "職場"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27877"
     }

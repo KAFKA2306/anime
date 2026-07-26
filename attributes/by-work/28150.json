@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28150",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28150",
   "attribute_fetched_at": "2026-07-25T10:24:25.195Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版SOARA2『I will. -君が未来を歩くとき-』",
+    "synopsis": "劇場版SOARA2『I will. -君が未来を歩くとき-』 ツキノ芸能プロダクション『ALIVE』シリーズ(ムービック) 2.5次元舞台 成長・挑戦 音楽・アイドル 挑戦 青春 バンド",
+    "staff_text": "原作:ツキノ芸能プロダクション『ALIVE』シリーズ(ムービック)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2021,
+    "source": "legacy-derived",
+    "sha256": "b1de07a173d62e8138aeddc3bae3aec507521b3d58f9df778b6bc9c19542ce07"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,16 +23,23 @@
   "original_credit": "ツキノ芸能プロダクション『ALIVE』シリーズ(ムービック)",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "SF",
     "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
@@ -30,6 +50,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -44,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28150"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -52,26 +73,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28150"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28150"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
             "挑戦",
             "青春"
           ],
           "音楽・アイドル": [
-            "バンド"
+            "音楽",
+            "バンド",
+            "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28150"
     }

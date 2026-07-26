@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28118",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28118",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "パペットスンスン",
+    "synopsis": "パペットスンスン コメディ・ギャグ 日常・ほのぼの 友情・仲間 仲間",
+    "staff_text": "原作:パペットスンスン",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "81e4143cb8d0fe865bc64a43c19c07f7fe4b6a190814af04ed80b8baa0bbee60"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,10 +25,13 @@
   "original_credit": "パペットスンスン",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "友情・仲間"
+    "友情・仲間",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28118"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28118"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -60,15 +80,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28118"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28118"
     }

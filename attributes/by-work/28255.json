@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28255",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28255",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "父は英雄、母は精霊、娘の私は転生者。",
+    "synopsis": "父は英雄、母は精霊、娘の私は転生者。 松浦 『父は英雄、母は精霊、娘の私は転生者。』(株式会社KADOKAWA 異世界・ハイファンタジー SF・ファンタジー 日常・ほのぼの 異世界 転生",
+    "staff_text": "原作:松浦 『父は英雄、母は精霊、娘の私は転生者。』(株式会社KADOKAWA",
+    "official_genres": [
+      "SF/ファンタジー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "5edace75714ca2bad99f7cb92b946dcbebcbb5530f5276b8043e74d8fb0f6fd1"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "日常/ほのぼの"
@@ -11,26 +25,43 @@
   "original_credit": "松浦 『父は英雄、母は精霊、娘の私は転生者。』(株式会社KADOKAWA",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "日常・ほのぼの",
-    "異世界"
+    "異世界ファンタジー",
+    "異世界",
+    "職場",
+    "癒やし",
+    "転生"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "日常・ほのぼの"
     ],
-    "setting": [
-      "異世界"
+    "subgenre": [
+      "異世界ファンタジー"
     ],
-    "theme": [],
-    "motif": [],
+    "setting": [
+      "異世界",
+      "職場"
+    ],
+    "theme": [
+      "癒やし"
+    ],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,18 +76,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28255"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
       ],
       "matched_terms": [
-        "転生"
+        "異世界",
+        "転生",
+        "精霊"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28255"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "日常/ほのぼの"
@@ -64,15 +97,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28255"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
+            "転生"
+          ],
+          "職場": [
+            "会社"
+          ]
+        },
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {
+          "転生": [
             "転生"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28255"
     }

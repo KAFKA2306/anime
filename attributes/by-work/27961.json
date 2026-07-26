@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27961",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27961",
   "attribute_fetched_at": "2026-07-25T10:20:55.860Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "レモンエンジェル",
+    "synopsis": "レモンエンジェル わたべ淳 ドラマ・青春 学園 友情・仲間 友情",
+    "staff_text": "原作:わたべ淳",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 1987,
+    "source": "legacy-derived",
+    "sha256": "9fa6b214392d6d641bc7f633b2227d3e02bac09740c1696fb873b90c2d831532"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,25 +23,31 @@
   "original_credit": "わたべ淳",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27961"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -51,14 +70,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27961"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27961"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -67,10 +86,15 @@
         },
         "theme": {
           "友情・仲間": [
-            "友情"
+            "友情",
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27961"
     }

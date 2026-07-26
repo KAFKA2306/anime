@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28119",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28119",
   "attribute_fetched_at": "2026-07-25T11:01:02.319Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ずたぼろ令嬢は姉の元婚約者に溺愛される",
+    "synopsis": "ずたぼろ令嬢は姉の元婚約者に溺愛される とびらの・仲倉千景(双葉社 モンスターコミックスf) 恋愛・ラブコメ 家族",
+    "staff_text": "原作:とびらの・仲倉千景(双葉社 モンスターコミックスf)",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2025,
+    "source": "legacy-derived",
+    "sha256": "40f8c5904e3841b225bbe50d00c73ea6d21a8ddd24a557b5e829d24249294c4f"
+  },
   "official_genres": [
     "恋愛/ラブコメ"
   ],
@@ -10,24 +23,37 @@
   "original_credit": "とびらの・仲倉千景(双葉社 モンスターコミックスf)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "家族"
+    "ファンタジー",
+    "ラブコメ",
+    "家族",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
       "漫画"
     ],
     "genre": [
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
-      "家族"
+      "家族",
+      "恋愛"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28119"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
@@ -53,22 +79,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28119"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28119"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
             "家族"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ",
+            "婚約"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28119"
     }

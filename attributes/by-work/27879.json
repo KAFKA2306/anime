@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27879",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27879",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "おそ松さん~ヒピポ族と輝く果実~",
+    "synopsis": "おそ松さん~ヒピポ族と輝く果実~ 「おそ松くん」赤塚不二夫 コメディ・ギャグ",
+    "staff_text": "原作:「おそ松くん」赤塚不二夫",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "b53f085380069185afa0a96aa4983bdccd0008d8352b7cf549e4c52e3074f4ff"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "「おそ松くん」赤塚不二夫",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ"
   ],
@@ -18,11 +33,13 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -37,7 +54,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27879"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -45,18 +62,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27879"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27879"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27879"
     }

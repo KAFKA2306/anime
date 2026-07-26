@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "28187",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28187",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "舞台『ジョーカー・ゲーム』",
+    "synopsis": "舞台『ジョーカー・ゲーム』 TVアニメ 『ジョーカー・ゲーム』 2.5次元舞台 魔法 魔術",
+    "staff_text": "原作:TVアニメ 『ジョーカー・ゲーム』",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "29ec57a71a07989b77cf87b49bbb103143806039339a77db85855434d26e085f"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "TVアニメ 『ジョーカー・ゲーム』",
   "source_origin": "ゲーム",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
@@ -19,7 +38,11 @@
       "ゲーム"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -30,6 +53,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28187"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,20 +78,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28187"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28187"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },
