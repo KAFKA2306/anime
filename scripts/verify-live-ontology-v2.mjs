@@ -139,8 +139,9 @@ async function main() {
     for (const sample of samples) {
       await searchInput.fill(sample.title);
       await page.waitForFunction((title) => {
-        return [...document.querySelectorAll('#workGrid .work-card__title')]
-          .some((element) => element.textContent?.trim() === title);
+        const cards = [...document.querySelectorAll('#workGrid .work-card')];
+        const card = cards.find((candidate) => candidate.querySelector('.work-card__title')?.textContent?.trim() === title);
+        return Boolean(card?.querySelector('.work-card__tags .tag-chip, .work-card__tags span'));
       }, sample.title, { timeout: 30_000 });
 
       const rendered = await page.evaluate((title) => {
@@ -149,7 +150,7 @@ async function main() {
         if (!card) return null;
         return {
           title: card.querySelector('.work-card__title')?.textContent?.trim() ?? '',
-          tags: [...card.querySelectorAll('.work-card__tags span')]
+          tags: [...card.querySelectorAll('.work-card__tags .tag-chip, .work-card__tags span')]
             .map((element) => element.textContent?.trim() ?? '')
             .filter(Boolean),
           meta: card.querySelector('.work-card__meta')?.textContent?.trim() ?? '',
