@@ -5,4 +5,5 @@ expected_ontology_version=2.0.0
 expected_2025_count=307
 request_pages_rebuild=true
 wait_pages_build_status=true
-concurrency=unique-run
+browser_search_mode=input-exact-title
+persist_failure_diagnostics=true
