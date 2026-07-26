@@ -71,16 +71,32 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Verify public JSON and rendered cards
+        id: verify
+        continue-on-error: true
         run: node scripts/verify-live-ontology-v2.mjs
 
       - name: Commit live verification evidence
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add verification/ontology-v2-live.json
           if git diff --cached --quiet; then
             echo 'Verification evidence is unchanged.'
-            exit 0
+          else
+            git commit -m 'Record live ontology v2 Pages verification'
+            git push origin HEAD:"$TARGET_BRANCH"
           fi
-          git commit -m 'Record live ontology v2 Pages verification'
-          git push origin HEAD:"$TARGET_BRANCH"
+
+      - name: Enforce passed verification
+        if: always()
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const report = JSON.parse(await readFile('verification/ontology-v2-live.json', 'utf8'));
+          if (report.status !== 'passed') {
+            console.error(JSON.stringify(report.error ?? report, null, 2));
+            process.exit(1);
+          }
+          console.log('Live ontology v2 verification passed.');
+          NODE
