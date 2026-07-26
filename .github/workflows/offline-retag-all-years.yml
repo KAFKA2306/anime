@@ -1,0 +1,83 @@
+name: Offline retag all years
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: offline-retag-all-years
+  cancel-in-progress: false
+
+jobs:
+  retag:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.issue.title == '[automation] retag all years ontology v2'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test ontology rules
+        run: npm test
+
+      - name: Rebuild every cached attribute without network
+        run: npm run attributes:rebuild-cache
+
+      - name: Apply ontology v2 to canonical and all yearly JSON
+        run: npm run attributes:apply
+
+      - name: Verify all years and catalogue integrity
+        run: |
+          npm run attributes:verify
+          npm run validate
+          node --input-type=module <<'NODE'
+          import { readFile, readdir } from 'node:fs/promises';
+          const files = (await readdir('data/by-year')).filter((name) => /^\d{4}\.json$/.test(name)).sort();
+          if (!files.length) throw new Error('No yearly JSON files found.');
+          let memberships = 0;
+          for (const file of files) {
+            const payload = JSON.parse(await readFile(`data/by-year/${file}`, 'utf8'));
+            if (payload.attribute_coverage?.coverage_ratio !== 1) throw new Error(`${file}: coverage is not 100%`);
+            if (payload.attribute_coverage?.ontology_version !== '2.0.0') throw new Error(`${file}: stale ontology`);
+            for (const work of payload.works) {
+              memberships += 1;
+              if (work.ontology_version !== '2.0.0') throw new Error(`${file}/${work.work_id}: stale embedded ontology`);
+              const serialized = JSON.stringify({ tags: work.canonical_tags, facets: work.ontology_facets });
+              if (serialized.includes('SF・ファンタジー')) throw new Error(`${file}/${work.work_id}: deprecated combined tag remains`);
+            }
+          }
+          const y2025 = JSON.parse(await readFile('data/by-year/2025.json', 'utf8'));
+          if (y2025.works.length !== 307) throw new Error(`2025 count changed: ${y2025.works.length}`);
+          console.log(JSON.stringify({ year_files: files.length, memberships, y2025_count: y2025.works.length }, null, 2));
+          NODE
+
+      - name: Commit generated ontology data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add attributes/by-work data diagnostics/attribute-cache-rebuild.json diagnostics/attribute-coverage.json
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m 'Regenerate all catalogue years with ontology v2'
+          git push origin HEAD:main
+
+      - name: Close trigger issue
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ github.event.issue.number }}" --comment 'All-year offline retag workflow completed.'
