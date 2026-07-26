@@ -80,26 +80,46 @@ jobs:
           git config http.postBuffer 524288000
 
           mapfile -d '' attribute_files < <(find attributes/by-work -maxdepth 1 -type f -name '*.json' -print0 | sort -z)
-          batch_size=400
-          batch_number=0
-          for ((start=0; start<${#attribute_files[@]}; start+=batch_size)); do
-            batch=("${attribute_files[@]:start:batch_size}")
+          attribute_batch_size=400
+          attribute_batch_number=0
+          for ((start=0; start<${#attribute_files[@]}; start+=attribute_batch_size)); do
+            batch=("${attribute_files[@]:start:attribute_batch_size}")
             git add -- "${batch[@]}"
             if git diff --cached --quiet; then
               continue
             fi
-            batch_number=$((batch_number + 1))
-            git commit -m "Regenerate ontology v2 attribute cache batch ${batch_number}"
+            attribute_batch_number=$((attribute_batch_number + 1))
+            git commit -m "Regenerate ontology v2 attribute cache batch ${attribute_batch_number}"
             git push origin HEAD:"$TARGET_BRANCH"
           done
 
-          git add data diagnostics/attribute-cache-rebuild.json diagnostics/attribute-coverage.json
+          mapfile -d '' year_files < <(find data/by-year -maxdepth 1 -type f -name '*.json' -print0 | sort -z)
+          year_batch_size=5
+          year_batch_number=0
+          for ((start=0; start<${#year_files[@]}; start+=year_batch_size)); do
+            batch=("${year_files[@]:start:year_batch_size}")
+            git add -- "${batch[@]}"
+            if git diff --cached --quiet; then
+              continue
+            fi
+            year_batch_number=$((year_batch_number + 1))
+            git commit -m "Apply ontology v2 to yearly catalogue batch ${year_batch_number}"
+            git push origin HEAD:"$TARGET_BRANCH"
+          done
+
+          git add data/works.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Regenerate all catalogue years with ontology v2'
+            git commit -m 'Apply ontology v2 to canonical works'
             git push origin HEAD:"$TARGET_BRANCH"
           fi
 
-          echo "Pushed ${batch_number} attribute batches plus generated catalogue data."
+          git add data/manifest.json diagnostics/attribute-cache-rebuild.json diagnostics/attribute-coverage.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record all-year ontology v2 verification'
+            git push origin HEAD:"$TARGET_BRANCH"
+          fi
+
+          echo "Pushed ${attribute_batch_number} attribute batches and ${year_batch_number} yearly data batches."
 
       - name: Close trigger issue
         if: github.event_name == 'issues'
