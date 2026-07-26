@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: verify-ontology-v2-live
+  group: verify-ontology-v2-live-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: false
 
 jobs:
