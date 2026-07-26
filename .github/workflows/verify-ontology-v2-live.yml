@@ -42,6 +42,29 @@ jobs:
           cat /tmp/pages-config.json
           gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
 
+      - name: Wait for GitHub Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 90); do
+            gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" > /tmp/pages-build.json
+            status=$(jq -r '.status // "unknown"' /tmp/pages-build.json)
+            echo "Pages build attempt $attempt: $status"
+            if [ "$status" = "built" ]; then
+              cat /tmp/pages-build.json
+              exit 0
+            fi
+            if [ "$status" = "errored" ]; then
+              cat /tmp/pages-build.json
+              exit 1
+            fi
+            sleep 5
+          done
+          cat /tmp/pages-build.json
+          echo 'Pages build did not reach built status.' >&2
+          exit 1
+
       - name: Install verifier dependencies
         run: |
           npm install --ignore-scripts
