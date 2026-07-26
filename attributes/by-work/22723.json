@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22723",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22723",
   "attribute_fetched_at": "2026-07-25T10:48:25.268Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "劇場版「暗殺教室」365日の時間",
+    "synopsis": "劇場版「暗殺教室」365日の時間 「暗殺教室」松井優征(集英社 ジャンプ コミックス刊) バトル・アクション ドラマ・青春 友情・仲間 成長・挑戦 絆 成長 挑戦",
+    "staff_text": "原作:「暗殺教室」松井優征(集英社 ジャンプ コミックス刊)",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "legacy-derived",
+    "sha256": "15ea1165a6b95b46fc6252856356f109767b84017daf8ea2b83da6c68a106aec"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,6 +25,8 @@
   "original_credit": "「暗殺教室」松井優征(集英社 ジャンプ コミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ドラマ・青春",
@@ -25,6 +41,7 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間",
@@ -33,6 +50,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22723"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -59,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22723"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -67,19 +85,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22723"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
           ],
           "成長・挑戦": [
             "成長",
-            "挑戦"
+            "挑戦",
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22723"
     }

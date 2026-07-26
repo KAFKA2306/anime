@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23015",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23015",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "XL上司。【オンエア版】",
+    "synopsis": "XL上司。【オンエア版】 可児いとう 恋愛・ラブコメ ショート 怪異・妖怪 鬼",
+    "staff_text": "原作:可児いとう",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "449c7cfa0e0022188bbba91f362dba83c295dd15107ef303281757b9180d41c4"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,14 @@
   "original_credit": "可児いとう",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -22,8 +41,14 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
@@ -31,6 +56,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23015"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -54,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23015"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -62,13 +88,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23015"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

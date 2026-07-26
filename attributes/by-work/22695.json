@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22695",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22695",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "異世界かるてっと",
+    "synopsis": "異世界かるてっと 異世界・ハイファンタジー ショート SF・ファンタジー コメディ・ギャグ 異世界 転移",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "aa25ae31925c4a924938e203f89a8c78d636a578b165f73f0e5e21c3001c5837"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー",
@@ -12,20 +27,28 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
+    "ファンタジー",
     "ショート",
-    "SF・ファンタジー",
     "コメディ・ギャグ",
+    "異世界ファンタジー",
     "異世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
+      "ファンタジー",
       "ショート",
-      "SF・ファンタジー",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
@@ -36,6 +59,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -44,13 +68,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22695"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -63,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22695"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー",
@@ -72,7 +96,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22695"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -81,7 +105,13 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転移"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22695"
     }

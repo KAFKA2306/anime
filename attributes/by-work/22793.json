@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22793",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22793",
   "attribute_fetched_at": "2026-07-25T10:56:26.521Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ベターマン",
+    "synopsis": "ベターマン 矢立 肇、米たにヨシトモ 異世界・ハイファンタジー SF・ファンタジー ホラー・サスペンス・ミステリー ロボット・メカ 学園 高校 勇者",
+    "staff_text": "原作:矢立 肇、米たにヨシトモ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "ロボット/メカ"
+    ],
+    "production_year": 1999,
+    "source": "legacy-derived",
+    "sha256": "4024ffe661931aa2f3941b976016b5c1f2376f1f1864ca6c98e87119e3e012da"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -12,22 +27,37 @@
   "original_credit": "矢立 肇、米たにヨシトモ",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "ロボット・メカ",
+    "異世界ファンタジー",
+    "ロボットSF",
+    "異世界",
     "学園"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "ホラー・サスペンス・ミステリー",
       "ロボット・メカ"
     ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ロボットSF"
+    ],
     "setting": [
+      "異世界",
       "学園"
     ],
     "theme": [],
@@ -36,6 +66,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -50,19 +81,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22793"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
         "ロボット/メカ"
       ],
       "matched_terms": [
-        "勇者"
+        "ロボット",
+        "メカ",
+        "勇者",
+        "異世界"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22793"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -71,15 +105,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22793"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
+          "異世界": [
+            "異世界"
+          ],
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22793"
     }

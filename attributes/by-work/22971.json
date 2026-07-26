@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22971",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22971",
   "attribute_fetched_at": "2026-07-25T10:33:32.104Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "それでも町は廻っている",
+    "synopsis": "それでも町は廻っている 石黒正数(少年画報社 コメディ・ギャグ 推理・謎解き 職業・仕事 探偵 働く",
+    "staff_text": "原作:石黒正数(少年画報社",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2010,
+    "source": "legacy-derived",
+    "sha256": "b25a327af00879288883065dfa6f1929b232cee86659be91eef8e3cf4551ec3f"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "石黒正数(少年画報社",
   "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "ミステリー",
     "推理・謎解き",
     "職業・仕事"
   ],
@@ -19,6 +35,9 @@
     "source": [],
     "genre": [
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -28,6 +47,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +62,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22971"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -50,25 +70,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22971"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22971"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22971"
     }

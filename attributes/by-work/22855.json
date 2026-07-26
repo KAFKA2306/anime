@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22855",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22855",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "女子高生の無駄づかい",
+    "synopsis": "女子高生の無駄づかい ビーノ(KADOKAWA「コミックNewtype」連載) コメディ・ギャグ 日常・ほのぼの 学園 友情・仲間 成長・挑戦 ロボット・メカ 高校 仲間 青春 ロボット",
+    "staff_text": "原作:ビーノ(KADOKAWA「コミックNewtype」連載)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "8510145ace94bc35f18c84a76cd25f27ccd8a3f530509287e875aaa0b51a9c8f"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "日常/ほのぼの"
@@ -11,12 +25,19 @@
   "original_credit": "ビーノ(KADOKAWA「コミックNewtype」連載)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "SF",
     "日常・ほのぼの",
+    "ロボットSF",
     "学園",
     "友情・仲間",
     "成長・挑戦",
+    "癒やし",
     "ロボット・メカ"
   ],
   "ontology_facets": {
@@ -25,20 +46,26 @@
     ],
     "genre": [
       "コメディ・ギャグ",
+      "SF",
       "日常・ほのぼの"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -55,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22855"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -64,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22855"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "日常/ほのぼの"
@@ -72,7 +99,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22855"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -82,14 +109,26 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

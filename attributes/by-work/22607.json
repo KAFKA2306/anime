@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22607",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22607",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Aチャンネル",
+    "synopsis": "Aチャンネル 黒田bb 日常・ほのぼの コメディ・ギャグ 学園 高校",
+    "staff_text": "原作:黒田bb",
+    "official_genres": [
+      "日常/ほのぼの",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "edb3769426bbc7ad87bbf3a7c7d564d351ae2ee656db45b4e00daf3f57a2be9a"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "コメディ/ギャグ"
@@ -11,10 +25,13 @@
   "original_credit": "黒田bb",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "コメディ・ギャグ",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,17 @@
       "日常・ほのぼの",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +64,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22607"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22607"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -60,15 +81,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22607"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22607"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23129",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23129",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "虚構推理",
+    "synopsis": "虚構推理 城平 京(講談社タイガ刊) ホラー・サスペンス・ミステリー 恋愛・ラブコメ SF・ファンタジー 恋愛 推理・謎解き 怪異・妖怪 推理 怪異",
+    "staff_text": "原作:城平 京(講談社タイガ刊)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "96a066e8eb7c6e34896f3930116b78ed1c8aa1085a9d8aeca973d9b9290f4e36"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "恋愛/ラブコメ",
@@ -12,10 +27,15 @@
   "original_credit": "城平 京(講談社タイガ刊)",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
     "恋愛・ラブコメ",
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
+    "ミステリー",
     "恋愛",
     "推理・謎解き",
     "怪異・妖怪"
@@ -25,7 +45,12 @@
     "genre": [
       "ホラー・サスペンス・ミステリー",
       "恋愛・ラブコメ",
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -37,6 +62,7 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23129"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "恋愛/ラブコメ",
@@ -61,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23129"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "恋愛/ラブコメ",
@@ -70,20 +96,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23129"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ],
           "推理・謎解き": [
-            "推理"
+            "推理",
+            "謎解き"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ],
+          "ミステリー": [
+            "推理",
+            "謎解き"
           ]
         }
       },

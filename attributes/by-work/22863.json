@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22863",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22863",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "Re:ステージ! ドリームデイズ♪",
+    "synopsis": "Re:ステージ! ドリームデイズ♪ ドラマ・青春 学園 友情・仲間 音楽・アイドル 仲間 アイドル",
+    "staff_text": "",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "24bbf7c96976b77fb6f25ec464325e62ae8c272308ca303891f8f23f3b79bb96"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,10 +23,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "学園",
     "友情・仲間",
+    "成長・挑戦",
     "音楽・アイドル"
   ],
   "ontology_facets": {
@@ -21,16 +37,19 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
       "友情・仲間",
+      "成長・挑戦",
       "音楽・アイドル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -39,13 +58,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22863"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -53,14 +72,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22863"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22863"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -69,13 +88,19 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
+          "成長・挑戦": [
+            "青春"
+          ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22863"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22727",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22727",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "川柳少女",
+    "synopsis": "川柳少女 五十嵐正邦『川柳少女』(講談社「週刊少年マガジン」連載) 恋愛・ラブコメ 日常・ほのぼの",
+    "staff_text": "原作:五十嵐正邦『川柳少女』(講談社「週刊少年マガジン」連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "38bcef8042384844cd4105a677d06c9d2086603146cb9ad3eda47b5cde6b3de7"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "日常/ほのぼの"
@@ -11,9 +25,14 @@
   "original_credit": "五十嵐正邦『川柳少女』(講談社「週刊少年マガジン」連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "ラブコメ",
+    "恋愛",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -23,16 +42,23 @@
       "恋愛・ラブコメ",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛",
+      "癒やし"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22727"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -54,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22727"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "日常/ほのぼの"
@@ -62,11 +88,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22727"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22727"
     }

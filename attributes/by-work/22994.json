@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22994",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22994",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "浦島坂田船の日常",
+    "synopsis": "浦島坂田船の日常 浦島坂田船 ショート ドラマ・青春 日常・ほのぼの 学園 成長・挑戦 学校 高校 青春",
+    "staff_text": "原作:浦島坂田船",
+    "official_genres": [
+      "ショート",
+      "ドラマ/青春",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "82e84c876ac5a8fd23457787fe0266bd215fd0dedaa2dbf75863faed2a64c463"
+  },
   "official_genres": [
     "ショート",
     "ドラマ/青春",
@@ -12,12 +27,15 @@
   "original_credit": "浦島坂田船",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ドラマ・青春",
     "日常・ほのぼの",
     "学園",
-    "成長・挑戦"
+    "成長・挑戦",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -26,17 +44,20 @@
       "ドラマ・青春",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "成長・挑戦"
+      "成長・挑戦",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22994"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ドラマ/青春",
@@ -61,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22994"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ドラマ/青春",
@@ -70,20 +91,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22994"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校",
             "高校"
           ]
         },
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22994"
     }

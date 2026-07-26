@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22876",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22876",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "今日もツノがある",
+    "synopsis": "今日もツノがある STUDY YU-SAKU ショート 日常・ほのぼの",
+    "staff_text": "原作:STUDY YU-SAKU",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "34dccb3ea4a890bcde96115ab5b4368262288fd6dbf1e9fb3d419adb62b8baa4"
+  },
   "official_genres": [
     "ショート",
     "日常/ほのぼの"
@@ -11,9 +25,12 @@
   "original_credit": "STUDY YU-SAKU",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
-    "日常・ほのぼの"
+    "日常・ほのぼの",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -21,18 +38,22 @@
       "ショート",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22876"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -51,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22876"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "日常/ほのぼの"
@@ -59,11 +80,16 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22876"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22876"
     }

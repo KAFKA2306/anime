@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22989",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-",
+    "synopsis": "警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ- 異世界・ハイファンタジー SF・ファンタジー ドラマ・青春 ホラー・サスペンス・ミステリー 怪異・妖怪 犯罪・警察 鬼 犯罪 エルフ ドワーフ",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "0931cc586b465868fb79d8ab7b50cb541e3916cc4e57d7c6ca832eb8256b0582"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春",
@@ -12,11 +27,19 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "ドラマ・青春",
     "ホラー・サスペンス・ミステリー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
+    "成長・挑戦",
     "怪異・妖怪",
     "犯罪・警察"
   ],
@@ -24,18 +47,27 @@
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "ドラマ・青春",
       "ホラー・サスペンス・ミステリー"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "怪異・妖怪",
       "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -44,26 +76,27 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
         "ホラー/サスペンス/推理"
       ],
       "matched_terms": [
+        "異世界",
         "エルフ",
         "ドワーフ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春",
@@ -72,16 +105,35 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22989"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
           ],
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22995",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22995",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "戦×恋(ヴァルラヴ)~イチャイチャ副音声Ver.~",
+    "synopsis": "戦×恋(ヴァルラヴ)~イチャイチャ副音声Ver.~ 朝倉亮介(連載 月刊「少年ガンガン」スクウェア・エニックス刊) ライブ・ラジオ・その他 学園 家族 高校 姉妹",
+    "staff_text": "原作:朝倉亮介(連載 月刊「少年ガンガン」スクウェア・エニックス刊)",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "413f6dd906e77969fdca7fa4b01a89bd5e0774f8a60c93251f93a3a05ef36eff"
+  },
   "official_genres": [
     "ライブ/ラジオ/etc."
   ],
@@ -10,6 +23,8 @@
   "original_credit": "朝倉亮介(連載 月刊「少年ガンガン」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ライブ・ラジオ・その他",
     "学園",
@@ -22,6 +37,7 @@
     "genre": [
       "ライブ・ラジオ・その他"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
@@ -33,6 +49,7 @@
       "ライブ・ラジオ・その他"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22995"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
@@ -57,26 +74,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22995"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ライブ/ラジオ/etc."
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22995"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "家族": [
+            "家族",
             "姉妹"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22995"
     }

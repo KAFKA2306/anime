@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22824",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22824",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "胡蝶綺 ~若き信長~",
+    "synopsis": "胡蝶綺 ~若き信長~ 歴史・戦記 ドラマ・青春 歴史・時代劇 家族 サバイバル 戦国 兄弟 生き残",
+    "staff_text": "",
+    "official_genres": [
+      "歴史/戦記",
+      "ドラマ/青春"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "9072b94ef053dac0216db3acfaca6ae563588f9d8f3a24c5dbb6e8b00a955050"
+  },
   "official_genres": [
     "歴史/戦記",
     "ドラマ/青春"
@@ -11,10 +25,13 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "歴史・戦記",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "歴史・戦記",
     "ドラマ・青春",
     "歴史・時代劇",
+    "成長・挑戦",
     "家族",
     "サバイバル"
   ],
@@ -24,16 +41,19 @@
       "歴史・戦記",
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [
       "歴史・時代劇"
     ],
     "theme": [
+      "成長・挑戦",
       "家族",
       "サバイバル"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22824"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "歴史/戦記",
         "ドラマ/青春"
@@ -57,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22824"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "歴史/戦記",
         "ドラマ/青春"
@@ -65,22 +85,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22824"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "歴史・時代劇": [
-            "戦国"
+            "戦国",
+            "時代劇"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "兄弟"
           ],
           "サバイバル": [
+            "サバイバル",
             "生き残"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22824"
     }

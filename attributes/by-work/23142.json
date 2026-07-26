@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23142",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23142",
   "attribute_fetched_at": "2026-07-25T10:21:33.513Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "闇の末裔",
+    "synopsis": "闇の末裔 松下容子(白泉社「花とゆめ」連載) ホラー・サスペンス・ミステリー ドラマ・青春 異世界 職業・仕事 召喚 働く",
+    "staff_text": "原作:松下容子(白泉社「花とゆめ」連載)",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2000,
+    "source": "legacy-derived",
+    "sha256": "dc2eafa6e735192f03400ae386368eda299b737b1eb36954489a78192ed955d7"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理",
     "ドラマ/青春"
@@ -11,10 +25,17 @@
   "original_credit": "松下容子(白泉社「花とゆめ」連載)",
   "source_origin": "漫画",
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "ファンタジー",
     "ドラマ・青春",
+    "異世界ファンタジー",
     "異世界",
+    "成長・挑戦",
     "職業・仕事"
   ],
   "ontology_facets": {
@@ -23,17 +44,23 @@
     ],
     "genre": [
       "ホラー・サスペンス・ミステリー",
+      "ファンタジー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
+      "成長・挑戦",
       "職業・仕事"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23142"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -59,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23142"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理",
         "ドラマ/青春"
@@ -67,19 +94,30 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23142"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23142"
     }

@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22706",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22706",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "洗い屋さん!~俺とアイツが女湯で!?~【オンエア版】",
+    "synopsis": "洗い屋さん!~俺とアイツが女湯で!?~【オンエア版】 恋愛・ラブコメ ショート 成長・挑戦 恋愛 青春 ラブコメ",
+    "staff_text": "",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "01d05a321dd75a9517ae980dc9d1fe64482ac4119c302e53c7317cf5a019c0c1"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,9 +25,12 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
+    "ラブコメ",
     "成長・挑戦",
     "恋愛"
   ],
@@ -22,6 +39,9 @@
     "genre": [
       "恋愛・ラブコメ",
       "ショート"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
@@ -33,6 +53,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -41,13 +62,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22706"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -56,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22706"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -64,18 +85,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22706"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ],
           "恋愛": [
+            "恋愛",
             "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22706"
     }

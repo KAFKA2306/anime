@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "22710",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22710",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "グリザイア:ファントムトリガー THE ANIMATION",
+    "synopsis": "グリザイア:ファントムトリガー THE ANIMATION フロントウイング ドラマ・青春 歴史・戦記 ホラー・サスペンス・ミステリー 学園 家族 犯罪・警察 姉妹 警察",
+    "staff_text": "原作:フロントウイング",
+    "official_genres": [
+      "ドラマ/青春",
+      "歴史/戦記",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "50dcc656d6323e0ff12af1255a8283f8d31eb4d6e9e9ffac9607c82ec0b904fb"
+  },
   "official_genres": [
     "ドラマ/青春",
     "歴史/戦記",
@@ -12,11 +27,14 @@
   "original_credit": "フロントウイング",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
     "歴史・戦記",
     "ホラー・サスペンス・ミステリー",
     "学園",
+    "成長・挑戦",
     "家族",
     "犯罪・警察"
   ],
@@ -27,10 +45,12 @@
       "歴史・戦記",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
+      "成長・挑戦",
       "家族"
     ],
     "motif": [
@@ -38,6 +58,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -52,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22710"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春",
         "歴史/戦記",
@@ -62,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22710"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春",
         "歴史/戦記",
@@ -71,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22710"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -79,15 +100,21 @@
           ]
         },
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
+            "家族",
             "姉妹"
           ]
         },
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22710"
     }

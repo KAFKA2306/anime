@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23081",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23081",
   "attribute_fetched_at": "2026-07-25T10:32:41.781Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "呪いのワンピース【デジタルリマスター版】",
+    "synopsis": "呪いのワンピース【デジタルリマスター版】 内田春菊 ホラー・サスペンス・ミステリー 怪異・妖怪 呪い",
+    "staff_text": "原作:内田春菊",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1992,
+    "source": "legacy-derived",
+    "sha256": "7fe18aeb9bf3b88db745f2a4ab21dafa54a8edd4a7b9767a70e03be54fed7024"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,14 +23,20 @@
   "original_credit": "内田春菊",
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +45,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23081"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,20 +68,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23081"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23081"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },
