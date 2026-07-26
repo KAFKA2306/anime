@@ -20,6 +20,7 @@ const MAX_PASSES = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_MAX_
 const PAGE_ATTEMPTS = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_PAGE_ATTEMPTS ?? 2)));
 const FORCE_REFRESH = process.env.DANIME_ENRICH_REFRESH === '1';
 const BACKFILL_RAW = process.env.DANIME_ENRICH_BACKFILL_RAW === '1';
+const ALLOW_PARTIAL = process.env.DANIME_ENRICH_ALLOW_PARTIAL === '1';
 const NETWORK_BUDGET = Math.max(0, Number(process.env.DANIME_ENRICH_NETWORK_BUDGET ?? (ONLY_YEAR ? 400 : 100)));
 const FETCHED_AT = new Date().toISOString();
 const OFFICIAL_ORIGIN = 'https://animestore.docomo.ne.jp';
@@ -268,6 +269,7 @@ async function main() {
     requested_year: ONLY_YEAR,
     force_refresh: FORCE_REFRESH,
     raw_backfill: BACKFILL_RAW,
+    allow_partial: ALLOW_PARTIAL,
     request_delay_ms: RATE_LIMIT_MS,
     concurrency: CONCURRENCY,
     network_budget: NETWORK_BUDGET,
@@ -278,6 +280,9 @@ async function main() {
 
   if (pending.length && !stats.network_completed) {
     throw new Error(`Network enrichment produced no records from ${pending.length} requested works.`);
+  }
+  if (serializableFailures.length && !ALLOW_PARTIAL) {
+    throw new Error(`Network enrichment left ${serializableFailures.length} unresolved works; partial output is disabled.`);
   }
   console.log(
     `Cache-first enrichment complete: cache=${stats.cache_hits + stats.cache_rebuilt}, ` +
