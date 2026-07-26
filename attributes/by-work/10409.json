@@ -1,25 +1,48 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10409",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10409",
   "attribute_fetched_at": "2026-07-25T10:43:54.548Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "戦え!超ロボット生命体トランスフォーマー",
+    "synopsis": "戦え!超ロボット生命体トランスフォーマー ロボット・メカ 宇宙 惑星 ロボット",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ"
+    ],
+    "production_year": 1985,
+    "source": "legacy-derived",
+    "sha256": "440abb3f76a08583f2d7b00ba42ceaad9d01c037896dc85f49e9ab2ab7366fbb"
+  },
   "official_genres": [
     "ロボット/メカ"
   ],
   "production_year": 1985,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
+    "スペースオペラ",
+    "ロボットSF",
     "宇宙"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ロボットSF"
     ],
     "setting": [
       "宇宙"
@@ -30,23 +53,22 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "マガジン"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10409"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ"
       ],
@@ -54,14 +76,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10409"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10409"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -72,6 +94,15 @@
         "theme": {},
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
             "ロボット"
           ]
         }

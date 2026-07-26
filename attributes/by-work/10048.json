@@ -1,23 +1,42 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10048",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10048",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "tactics",
+    "synopsis": "tactics 木下さくら,東山和子 SF・ファンタジー 怪異・妖怪 妖怪 鬼",
+    "staff_text": "原作:木下さくら,東山和子",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "b74787e926e99c60929cba58db8adae7e74d12632428cd8b85e01725ef81f9f5"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
   "production_year": 2004,
   "original_credit": "木下さくら,東山和子",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー"
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,9 +45,10 @@
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "unknown",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
@@ -40,7 +60,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10048"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -48,21 +68,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10048"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10048"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

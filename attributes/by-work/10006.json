@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10006",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10006",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ケメコデラックス!",
+    "synopsis": "ケメコデラックス! いわさきまさかず(連載 月刊コミック電撃大王) 恋愛・ラブコメ コメディ・ギャグ 学園 ロボット・メカ 高校 ロボット",
+    "staff_text": "原作:いわさきまさかず(連載 月刊コミック電撃大王)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "e37ef815981a8e0abf7e78152cbe14504c486983cd97de526cc0f0234ea52266"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "コメディ/ギャグ"
@@ -11,10 +25,18 @@
   "original_credit": "いわさきまさかず(連載 月刊コミック電撃大王)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
+    "SF",
     "コメディ・ギャグ",
+    "ロボットSF",
+    "ラブコメ",
     "学園",
+    "恋愛",
     "ロボット・メカ"
   ],
   "ontology_facets": {
@@ -23,17 +45,25 @@
     ],
     "genre": [
       "恋愛・ラブコメ",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -50,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10006"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ"
@@ -59,7 +89,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10006"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "コメディ/ギャグ"
@@ -67,17 +97,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10006"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

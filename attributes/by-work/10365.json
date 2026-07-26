@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10365",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10365",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "WXIII機動警察パトレイバー",
+    "synopsis": "WXIII機動警察パトレイバー ロボット・メカ ドラマ・青春 学園 犯罪・警察 大学 警察 刑事 捜査",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "1c8c22865220d6af489efa86fedb791c5c1764cea4930fc60a98948d80a69ed4"
+  },
   "official_genres": [
     "ロボット/メカ",
     "ドラマ/青春"
@@ -11,28 +25,42 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "ドラマ・青春",
+    "ロボットSF",
     "学園",
+    "成長・挑戦",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
-      "犯罪・警察",
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10365"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "ドラマ/青春"
@@ -56,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10365"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "ドラマ/青春"
@@ -64,19 +92,34 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10365"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
           "犯罪・警察": [
             "警察",
             "刑事",
+            "犯罪",
             "捜査"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

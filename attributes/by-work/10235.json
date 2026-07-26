@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10235",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10235",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ガングレイヴ",
+    "synopsis": "ガングレイヴ 内藤泰弘 バトル・アクション ドラマ・青春 宇宙 友情・仲間 惑星 友情 仲間",
+    "staff_text": "原作:内藤泰弘",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "6a5972fa9ca96136ba464cdb2ab2c2b54aaf62adc25cd934d856eeeb929c1b98"
+  },
   "official_genres": [
     "アクション/バトル",
     "ドラマ/青春"
@@ -11,27 +25,40 @@
   "original_credit": "内藤泰弘",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "ドラマ・青春",
+    "スペースオペラ",
     "宇宙",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10235"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -55,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10235"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ドラマ/青春"
@@ -63,10 +90,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10235"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "惑星"
           ]
         },
@@ -74,9 +102,17 @@
           "友情・仲間": [
             "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10235"
     }

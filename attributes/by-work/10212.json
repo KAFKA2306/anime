@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10212",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10212",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "アスラクライン2",
+    "synopsis": "アスラクライン2 三雲岳斗(電撃文庫) SF・ファンタジー 恋愛・ラブコメ 学園 友情・仲間 怪異・妖怪 高校 仲間 幽霊",
+    "staff_text": "原作:三雲岳斗(電撃文庫)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "6b392afe09a8a979951a5a4a06757efab5381f6cae26435d7cdd0a9aae422aec"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -10,12 +24,17 @@
   "production_year": 2009,
   "original_credit": "三雲岳斗(電撃文庫)",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
     "学園",
     "友情・仲間",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -23,20 +42,26 @@
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "恋愛"
     ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10212"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -62,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10212"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -70,21 +95,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10212"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "幽霊"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

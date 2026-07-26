@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10366",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10366",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ミニパト",
+    "synopsis": "ミニパト ヘッドギア ロボット・メカ コメディ・ギャグ ショート 犯罪・警察 ロボット 警察",
+    "staff_text": "原作:ヘッドギア",
+    "official_genres": [
+      "ロボット/メカ",
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "2e6f562290d4e191f27658b757f43020ba969b8964cd2df50bb2c24fd5f60863"
+  },
   "official_genres": [
     "ロボット/メカ",
     "コメディ/ギャグ",
@@ -12,18 +27,28 @@
   "original_credit": "ヘッドギア",
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "コメディ・ギャグ",
     "ショート",
+    "ロボットSF",
     "犯罪・警察"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "コメディ・ギャグ",
       "ショート"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -35,6 +60,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -49,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10366"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "コメディ/ギャグ",
@@ -59,7 +85,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10366"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "コメディ/ギャグ",
@@ -68,16 +94,23 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10366"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "ロボット・メカ": [
-            "ロボット"
+            "ロボット",
+            "メカ"
           ],
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
           ]
         }
       },

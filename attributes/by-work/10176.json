@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10176",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10176",
   "attribute_fetched_at": "2026-07-25T10:22:17.253Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "カクレンボ",
+    "synopsis": "カクレンボ ホラー・サスペンス・ミステリー 怪異・妖怪 鬼",
+    "staff_text": "",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2005,
+    "source": "legacy-derived",
+    "sha256": "fb27d55edb08d346831271d79b5a700dd4ee025d76dab6d5b8e2addf470e3113"
+  },
   "official_genres": [
     "ホラー/サスペンス/推理"
   ],
@@ -10,14 +23,20 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ホラー・サスペンス・ミステリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -26,6 +45,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -34,13 +54,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10176"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
@@ -48,20 +68,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10176"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ホラー/サスペンス/推理"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10176"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

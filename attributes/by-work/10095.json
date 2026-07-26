@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10095",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10095",
   "attribute_fetched_at": "2026-07-25T10:33:29.584Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "まかでみ・WAっしょい!",
+    "synopsis": "まかでみ・WAっしょい! 榊 一郎(『まじしゃんず・あかでみい』シリーズ ファミ通文庫;エンターブレイン刊) 異世界・ハイファンタジー SF・ファンタジー 恋愛・ラブコメ 異世界 学園 恋愛 魔法 召喚 恋する",
+    "staff_text": "原作:榊 一郎(『まじしゃんず・あかでみい』シリーズ ファミ通文庫;エンターブレイン刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2008,
+    "source": "legacy-derived",
+    "sha256": "226a6d857133115963eee5c92a2c560be864fa1e285a32a714a6034a780786ab"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ"
@@ -11,10 +25,17 @@
   "original_credit": "榊 一郎(『まじしゃんず・あかでみい』シリーズ ファミ通文庫;エンターブレイン刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "ラブコメ",
     "異世界",
     "学園",
     "恋愛",
@@ -26,8 +47,13 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [
       "異世界",
@@ -41,6 +67,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -57,18 +84,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10095"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
       ],
       "matched_terms": [
+        "魔法",
+        "異世界",
         "召喚"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10095"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ"
@@ -76,10 +105,11 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10095"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
+            "異世界",
             "召喚"
           ],
           "学園": [
@@ -88,12 +118,26 @@
         },
         "theme": {
           "恋愛": [
-            "恋する"
+            "恋愛",
+            "恋する",
+            "ラブコメ"
           ]
         },
         "motif": {
           "魔法": [
             "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ],
+          "現代ファンタジー": [
+            "魔法"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

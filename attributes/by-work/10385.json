@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10385",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10385",
   "attribute_fetched_at": "2026-07-25T10:22:31.564Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "サイキックアカデミー 煌羅万象",
+    "synopsis": "サイキックアカデミー 煌羅万象 克・亜樹(講談社月刊マガジンZ連載) 恋愛・ラブコメ ショート 学園 学校",
+    "staff_text": "原作:克・亜樹(講談社月刊マガジンZ連載)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2002,
+    "source": "legacy-derived",
+    "sha256": "97d38e2d325fee903efdd13bdb292a5420790efeb87cac2d69dbdc422601d805"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート"
@@ -11,10 +25,14 @@
   "original_credit": "克・亜樹(講談社月刊マガジンZ連載)",
   "source_origin": "漫画",
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
-    "学園"
+    "ラブコメ",
+    "学園",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [
@@ -24,15 +42,21 @@
       "恋愛・ラブコメ",
       "ショート"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -49,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10385"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10385"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート"
@@ -66,15 +90,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10385"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10385"
     }

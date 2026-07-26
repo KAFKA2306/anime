@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10013",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10013",
   "attribute_fetched_at": "2026-07-25T10:32:41.781Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "風の大陸 The Weathering Continent",
+    "synopsis": "風の大陸 The Weathering Continent 竹河 聖 異世界・ハイファンタジー SF・ファンタジー ドラマ・青春 魔法 魔術 冒険者",
+    "staff_text": "原作:竹河 聖",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 1992,
+    "source": "legacy-derived",
+    "sha256": "ef53f380618d5f9c8d4bfc40238f4e6e6d5ea4bbdcfd1214b780e17528bba70e"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -11,26 +25,45 @@
   "original_credit": "竹河 聖",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "ドラマ・青春",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
+    "成長・挑戦",
+    "旅・冒険",
     "魔法"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "ドラマ・青春"
     ],
-    "setting": [],
-    "theme": [],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "成長・挑戦",
+      "旅・冒険"
+    ],
     "motif": [
       "魔法"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -45,18 +78,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10013"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
       ],
       "matched_terms": [
+        "魔法",
+        "魔術",
+        "異世界",
         "冒険者"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10013"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -64,13 +100,33 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10013"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
-        "setting": {},
-        "theme": {},
+        "setting": {
+          "異世界": [
+            "異世界"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
         "motif": {
           "魔法": [
+            "魔法",
             "魔術"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "魔法"
           ]
         }
       },

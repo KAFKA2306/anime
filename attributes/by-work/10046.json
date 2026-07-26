@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10046",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10046",
   "attribute_fetched_at": "2026-07-25T10:22:12.115Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "超重神グラヴィオンツヴァイ",
+    "synopsis": "超重神グラヴィオンツヴァイ 大張 正己,赤松 和光,GONZO ロボット・メカ SF・ファンタジー",
+    "staff_text": "原作:大張 正己,赤松 和光,GONZO",
+    "official_genres": [
+      "ロボット/メカ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2004,
+    "source": "legacy-derived",
+    "sha256": "e19116da1654103eecb8244fe2aff7e4f1055e769f1c4f12904e610644b4341b"
+  },
   "official_genres": [
     "ロボット/メカ",
     "SF/ファンタジー"
@@ -10,16 +24,24 @@
   "production_year": 2004,
   "original_credit": "大張 正己,赤松 和光,GONZO",
   "source_origin": null,
-  "primary_genre": "ロボット・メカ",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
     "ロボット・メカ",
-    "SF・ファンタジー"
+    "ロボットSF"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ロボット・メカ",
-      "SF・ファンタジー"
+      "SF",
+      "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [],
@@ -28,11 +50,12 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -42,16 +65,19 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10046"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10046"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "SF/ファンタジー"
@@ -59,11 +85,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10046"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10046"
     }

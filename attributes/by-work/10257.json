@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10257",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10257",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "爆裂天使",
+    "synopsis": "爆裂天使 バトル・アクション ロボット・メカ SF・ファンタジー 学園 料理・グルメ 学校 料理",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "ロボット/メカ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "903824ce7b4c3e2a07fe256313f081980e51aae9190b6738130e921ec3c39ad6"
+  },
   "official_genres": [
     "アクション/バトル",
     "ロボット/メカ",
@@ -11,20 +26,31 @@
   "production_year": 2003,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "バトル・アクション",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
+    "SF",
+    "ファンタジー",
     "バトル・アクション",
     "ロボット・メカ",
-    "SF・ファンタジー",
+    "ロボットSF",
     "学園",
     "料理・グルメ"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
+      "SF",
+      "ファンタジー",
       "バトル・アクション",
-      "ロボット・メカ",
-      "SF・ファンタジー"
+      "ロボット・メカ"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [
       "学園"
@@ -37,31 +63,36 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10257"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "アクション/バトル",
         "ロボット/メカ",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ",
+        "天使"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10257"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ロボット/メカ",
@@ -70,19 +101,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10257"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
         "theme": {
           "料理・グルメ": [
-            "料理"
+            "料理",
+            "グルメ"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10257"
     }

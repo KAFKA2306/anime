@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10223",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10223",
   "attribute_fetched_at": "2026-07-25T10:55:56.796Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ココロ図書館",
+    "synopsis": "ココロ図書館 髙木信孝(メディアワークス 月刊コミック「電撃大王」連載) 日常・ほのぼの 成長・挑戦 家族 成長 姉妹",
+    "staff_text": "原作:髙木信孝(メディアワークス 月刊コミック「電撃大王」連載)",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2001,
+    "source": "legacy-derived",
+    "sha256": "0b385291b434c94a0ba7c788470c7c09e9956387f61cbf12bac777e64bbd627b"
+  },
   "official_genres": [
     "日常/ほのぼの"
   ],
@@ -10,10 +23,13 @@
   "original_credit": "髙木信孝(メディアワークス 月刊コミック「電撃大王」連載)",
   "source_origin": "漫画",
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "成長・挑戦",
-    "家族"
+    "家族",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [
@@ -22,14 +38,17 @@
     "genre": [
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦",
-      "家族"
+      "家族",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10223"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの"
       ],
@@ -54,25 +73,31 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10223"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10223"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
-            "成長"
+            "成長",
+            "挑戦"
           ],
           "家族": [
+            "家族",
             "姉妹"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10223"
     }

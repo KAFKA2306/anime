@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "10044",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10044",
   "attribute_fetched_at": "2026-07-25T10:55:44.137Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "D・N・ANGEL",
+    "synopsis": "D・N・ANGEL SF・ファンタジー ホラー・サスペンス・ミステリー 恋愛・ラブコメ 恋愛",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2003,
+    "source": "legacy-derived",
+    "sha256": "205b8cf410288e4e6aed5d64f67a8c7b2910facb8ea213a3e7139c8a1edd0c90"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ホラー/サスペンス/推理",
@@ -11,19 +26,25 @@
   "production_year": 2003,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "ホラー・サスペンス・ミステリー",
     "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
     "恋愛"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "ホラー・サスペンス・ミステリー",
-      "恋愛・ラブコメ"
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
     "theme": [
@@ -32,6 +53,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10044"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -56,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10044"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ホラー/サスペンス/推理",
@@ -65,15 +87,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10044"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "恋愛": [
-            "恋愛"
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10044"
     }
