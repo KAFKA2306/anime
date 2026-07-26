@@ -1,0 +1,2 @@
+capture_pages_source=true
+capture_latest_build=true
