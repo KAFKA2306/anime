@@ -1,30 +1,42 @@
 import { chromium } from 'playwright';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { OFFICIAL_GENRES, buildAttributeRecord, parseOfficialDetailText } from './lib/ontology.mjs';
+import {
+  OFFICIAL_GENRES,
+  ONTOLOGY_VERSION,
+  buildAttributeRecord,
+  parseOfficialDetailText,
+  rebuildAttributeRecordFromCache,
+} from './lib/ontology.mjs';
 
 const DATA_DIR = path.resolve('data');
 const ATTRIBUTE_DIR = path.resolve('attributes', 'by-work');
+const DIAGNOSTIC_PATH = path.resolve('diagnostics', 'attribute-enrichment.json');
 const ONLY_YEAR = process.env.DANIME_ENRICH_YEAR ? Number(process.env.DANIME_ENRICH_YEAR) : null;
-const LIMIT = Number(process.env.DANIME_ENRICH_LIMIT ?? (ONLY_YEAR ? 0 : 500));
-const CONCURRENCY = Math.max(1, Math.min(4, Number(process.env.DANIME_ENRICH_CONCURRENCY ?? 2)));
-const RATE_LIMIT_MS = Math.max(300, Number(process.env.DANIME_ENRICH_RATE_LIMIT_MS ?? 900));
+const LIMIT = Number(process.env.DANIME_ENRICH_LIMIT ?? 0);
+const CONCURRENCY = Math.max(1, Math.min(2, Number(process.env.DANIME_ENRICH_CONCURRENCY ?? 1)));
+const RATE_LIMIT_MS = Math.max(1_200, Number(process.env.DANIME_ENRICH_RATE_LIMIT_MS ?? 1_800));
 const MAX_PASSES = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_MAX_PASSES ?? 2)));
 const PAGE_ATTEMPTS = Math.max(1, Math.min(3, Number(process.env.DANIME_ENRICH_PAGE_ATTEMPTS ?? 2)));
-const REFRESH = process.env.DANIME_ENRICH_REFRESH === '1';
+const FORCE_REFRESH = process.env.DANIME_ENRICH_REFRESH === '1';
+const BACKFILL_RAW = process.env.DANIME_ENRICH_BACKFILL_RAW === '1';
+const ALLOW_PARTIAL = process.env.DANIME_ENRICH_ALLOW_PARTIAL === '1';
+const NETWORK_BUDGET = Math.max(0, Number(process.env.DANIME_ENRICH_NETWORK_BUDGET ?? (ONLY_YEAR ? 400 : 100)));
 const FETCHED_AT = new Date().toISOString();
 const OFFICIAL_ORIGIN = 'https://animestore.docomo.ne.jp';
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
 async function readJson(file) { return JSON.parse(await readFile(file, 'utf8')); }
 async function writeJson(file, value) {
+  await mkdir(path.dirname(file), { recursive: true });
   await writeFile(file, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
+function sameJson(left, right) { return JSON.stringify(left) === JSON.stringify(right); }
 
 function normalizedDetailUrl(work) {
   try {
     const url = new URL(work.detail_url, OFFICIAL_ORIGIN);
-    if (url.origin !== OFFICIAL_ORIGIN || !url.pathname.endsWith('/animestore/ci_pc')) return null;
+    if (url.origin !== OFFICIAL_ORIGIN || url.pathname !== '/animestore/ci_pc') return null;
     if (url.searchParams.get('workId') !== String(work.work_id)) return null;
     return url.toString();
   } catch {
@@ -39,11 +51,50 @@ async function listCandidates() {
   return readJson(path.join(DATA_DIR, 'works.json'));
 }
 
-async function existingAttributeIds() {
+async function loadExistingRecords() {
   await mkdir(ATTRIBUTE_DIR, { recursive: true });
   const files = await readdir(ATTRIBUTE_DIR).catch(() => []);
-  return new Set(files.filter((name) => /^[A-Za-z0-9_-]+\.json$/u.test(name))
-    .map((name) => name.replace(/\.json$/u, '')));
+  const records = new Map();
+  for (const filename of files.filter((name) => /^[A-Za-z0-9_-]+\.json$/u.test(name)).sort()) {
+    const record = await readJson(path.join(ATTRIBUTE_DIR, filename));
+    if (String(record.work_id) !== filename.replace(/\.json$/u, '')) {
+      throw new Error(`Invalid attribute cache filename or work_id: ${filename}`);
+    }
+    records.set(String(record.work_id), record);
+  }
+  return records;
+}
+
+function requiresNetwork(existing) {
+  if (FORCE_REFRESH) return true;
+  if (!existing) return true;
+  if (!BACKFILL_RAW) return false;
+  return existing.official_snapshot?.source !== 'network';
+}
+
+async function prepareQueue(candidates, existingRecords, stats) {
+  const queue = [];
+  for (const work of candidates) {
+    const workId = String(work.work_id);
+    const existing = existingRecords.get(workId);
+    if (requiresNetwork(existing)) {
+      queue.push(work);
+      if (existing) stats.raw_backfill_requested += 1;
+      else stats.missing_cache_requested += 1;
+      continue;
+    }
+
+    const rebuilt = rebuildAttributeRecordFromCache(existing, { title: work.title });
+    if (!sameJson(existing, rebuilt)) {
+      await writeJson(path.join(ATTRIBUTE_DIR, `${workId}.json`), rebuilt);
+      stats.cache_rebuilt += 1;
+    } else {
+      stats.cache_hits += 1;
+    }
+    if (rebuilt.official_snapshot?.source === 'network') stats.full_snapshot_reused += 1;
+    else stats.legacy_cache_reused += 1;
+  }
+  return LIMIT > 0 ? queue.slice(0, LIMIT) : queue;
 }
 
 async function visibleOfficialGenreLinks(page) {
@@ -61,10 +112,8 @@ async function extractFromPage(page, work, detailUrl) {
   for (let attempt = 1; attempt <= PAGE_ATTEMPTS; attempt += 1) {
     try {
       const response = await page.goto(detailUrl, { waitUntil: 'domcontentloaded', timeout: 90_000 });
-      if (!response || response.status() >= 400) {
-        throw new Error(`HTTP ${response?.status() ?? 'no response'}`);
-      }
-      await page.waitForTimeout(750);
+      if (!response || response.status() >= 400) throw new Error(`HTTP ${response?.status() ?? 'no response'}`);
+      await page.waitForTimeout(500);
       const bodyText = await page.locator('body').innerText({ timeout: 15_000 });
       const parsed = parseOfficialDetailText(bodyText);
       const linkedGenres = parsed.officialGenres.length ? [] : await visibleOfficialGenreLinks(page);
@@ -77,11 +126,12 @@ async function extractFromPage(page, work, detailUrl) {
         staffText: parsed.staffText,
         productionYear: parsed.productionYear,
         fetchedAt: FETCHED_AT,
+        cacheStatus: 'network-fetched',
+        snapshotSource: 'network',
       });
       if (!record.official_genres.length) {
         const pageTitle = await page.title().catch(() => '');
-        lastReason = `official genre metadata was not found; page_title=${JSON.stringify(pageTitle)}`;
-        throw new Error(lastReason);
+        throw new Error(`official genre metadata was not found; page_title=${JSON.stringify(pageTitle)}`);
       }
       if (record.official_genres.some((genre) => !OFFICIAL_GENRES.includes(genre))) {
         throw new Error('unknown official genre was extracted');
@@ -89,7 +139,7 @@ async function extractFromPage(page, work, detailUrl) {
       return record;
     } catch (error) {
       lastReason = error instanceof Error ? error.message : String(error);
-      if (attempt < PAGE_ATTEMPTS) await sleep(1_000 * attempt);
+      if (attempt < PAGE_ATTEMPTS) await sleep(1_500 * attempt);
     }
   }
   throw new Error(`${lastReason}; attempts=${PAGE_ATTEMPTS}`);
@@ -97,7 +147,7 @@ async function extractFromPage(page, work, detailUrl) {
 
 async function worker(context, queue, failures, stats, rateLimitMs) {
   let page = await context.newPage();
-  let handledByWorker = 0;
+  let handled = 0;
   try {
     while (queue.length) {
       const work = queue.shift();
@@ -110,8 +160,8 @@ async function worker(context, queue, failures, stats, rateLimitMs) {
       try {
         const record = await extractFromPage(page, work, detailUrl);
         await writeJson(path.join(ATTRIBUTE_DIR, `${work.work_id}.json`), record);
-        stats.completed += 1;
-        console.log(`${stats.completed}/${stats.total}: ${work.work_id} ${work.title}`);
+        stats.network_completed += 1;
+        console.log(`${stats.network_completed}/${stats.network_requested}: ${work.work_id} ${work.title}`);
       } catch (error) {
         failures.push({
           work,
@@ -122,12 +172,12 @@ async function worker(context, queue, failures, stats, rateLimitMs) {
         });
         console.warn(`Failed ${work.work_id}: ${error instanceof Error ? error.message : error}`);
       }
-      handledByWorker += 1;
-      if (handledByWorker % 50 === 0 && queue.length) {
+      handled += 1;
+      if (handled % 40 === 0 && queue.length) {
         await page.close();
         page = await context.newPage();
       }
-      await sleep(rateLimitMs);
+      if (queue.length) await sleep(rateLimitMs);
     }
   } finally {
     await page.close();
@@ -135,12 +185,22 @@ async function worker(context, queue, failures, stats, rateLimitMs) {
 }
 
 async function createContext(browser) {
-  return browser.newContext({
+  const context = await browser.newContext({
     locale: 'ja-JP',
     timezoneId: 'Asia/Tokyo',
     viewport: { width: 1280, height: 900 },
-    userAgent: 'KAFKA2306-anime-attribute-enricher/1.2 (+https://github.com/KAFKA2306/anime; official public metadata only)',
+    userAgent: `KAFKA2306-anime-attribute-enricher/${ONTOLOGY_VERSION} (+https://github.com/KAFKA2306/anime; official public metadata only; cache-first)`,
   });
+  await context.route('**/*', async (route) => {
+    const request = route.request();
+    const resourceType = request.resourceType();
+    let url;
+    try { url = new URL(request.url()); } catch { return route.abort(); }
+    if (['image', 'media', 'font', 'stylesheet'].includes(resourceType)) return route.abort();
+    if (url.origin !== OFFICIAL_ORIGIN && resourceType !== 'document') return route.abort();
+    return route.continue();
+  });
+  return context;
 }
 
 async function runPass(browser, works, stats, passNumber) {
@@ -162,45 +222,72 @@ async function runPass(browser, works, stats, passNumber) {
 
 async function main() {
   const candidates = await listCandidates();
-  const existing = await existingAttributeIds();
-  let pending = candidates.filter((work) => REFRESH || !existing.has(String(work.work_id)));
-  if (LIMIT > 0) pending = pending.slice(0, LIMIT);
-  if (!pending.length) {
-    console.log('No missing attribute records.');
-    return;
+  const existingRecords = await loadExistingRecords();
+  const stats = {
+    ontology_version: ONTOLOGY_VERSION,
+    candidate_count: candidates.length,
+    cache_hits: 0,
+    cache_rebuilt: 0,
+    full_snapshot_reused: 0,
+    legacy_cache_reused: 0,
+    missing_cache_requested: 0,
+    raw_backfill_requested: 0,
+    network_requested: 0,
+    network_completed: 0,
+  };
+  const pending = await prepareQueue(candidates, existingRecords, stats);
+  stats.network_requested = pending.length;
+
+  if (pending.length > NETWORK_BUDGET) {
+    throw new Error(
+      `Network request budget exceeded: requested=${pending.length}, budget=${NETWORK_BUDGET}. ` +
+      'Use existing cache, narrow DANIME_ENRICH_YEAR/LIMIT, or explicitly raise DANIME_ENRICH_NETWORK_BUDGET.',
+    );
   }
 
-  const browser = await chromium.launch({ headless: true });
-  const stats = { completed: 0, total: pending.length };
-  let remaining = pending;
   let finalFailures = [];
-  try {
-    for (let pass = 1; pass <= MAX_PASSES && remaining.length; pass += 1) {
-      console.log(`Attribute enrichment pass ${pass}/${MAX_PASSES}: ${remaining.length} works.`);
-      finalFailures = await runPass(browser, remaining, stats, pass);
-      remaining = finalFailures.map((failure) => failure.work);
-      if (remaining.length && pass < MAX_PASSES) await sleep(2_000 * pass);
+  if (pending.length) {
+    const browser = await chromium.launch({ headless: true });
+    let remaining = pending;
+    try {
+      for (let pass = 1; pass <= MAX_PASSES && remaining.length; pass += 1) {
+        console.log(`Network enrichment pass ${pass}/${MAX_PASSES}: ${remaining.length} works; delay=${RATE_LIMIT_MS * pass}ms.`);
+        finalFailures = await runPass(browser, remaining, stats, pass);
+        remaining = finalFailures.map((failure) => failure.work);
+        if (remaining.length && pass < MAX_PASSES) await sleep(3_000 * pass);
+      }
+    } finally {
+      await browser.close();
     }
-  } finally {
-    await browser.close();
+  } else {
+    console.log('All requested attributes were rebuilt or reused from local cache; no dAnime requests were sent.');
   }
 
   const serializableFailures = finalFailures.map(({ work: _work, ...failure }) => failure);
-  await mkdir(path.resolve('diagnostics'), { recursive: true });
-  await writeJson(path.resolve('diagnostics', 'attribute-enrichment.json'), {
+  await writeJson(DIAGNOSTIC_PATH, {
     generated_at: FETCHED_AT,
     requested_year: ONLY_YEAR,
-    requested_count: pending.length,
-    completed_count: stats.completed,
+    force_refresh: FORCE_REFRESH,
+    raw_backfill: BACKFILL_RAW,
+    allow_partial: ALLOW_PARTIAL,
+    request_delay_ms: RATE_LIMIT_MS,
+    concurrency: CONCURRENCY,
+    network_budget: NETWORK_BUDGET,
+    ...stats,
     failed_count: serializableFailures.length,
-    max_passes: MAX_PASSES,
-    page_attempts: PAGE_ATTEMPTS,
     failures: serializableFailures,
   });
-  if (!stats.completed) {
-    throw new Error(`Attribute enrichment produced no records from ${pending.length} works.`);
+
+  if (pending.length && !stats.network_completed) {
+    throw new Error(`Network enrichment produced no records from ${pending.length} requested works.`);
   }
-  console.log(`Enriched ${stats.completed} works; ${serializableFailures.length} unresolved failures recorded.`);
+  if (serializableFailures.length && !ALLOW_PARTIAL) {
+    throw new Error(`Network enrichment left ${serializableFailures.length} unresolved works; partial output is disabled.`);
+  }
+  console.log(
+    `Cache-first enrichment complete: cache=${stats.cache_hits + stats.cache_rebuilt}, ` +
+    `network=${stats.network_completed}, failures=${serializableFailures.length}.`,
+  );
 }
 
 main().catch((error) => {

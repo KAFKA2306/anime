@@ -1,12 +1,14 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { ATTRIBUTE_SCHEMA_VERSION, ONTOLOGY_VERSION } from './lib/ontology.mjs';
 
 const DATA_DIR = path.resolve('data');
 const ATTRIBUTE_DIR = path.resolve('attributes', 'by-work');
 const ATTRIBUTE_FIELDS = [
-  'attribute_source_url', 'attribute_fetched_at', 'official_genres',
-  'production_year', 'original_credit', 'source_origin', 'primary_genre',
-  'canonical_tags', 'ontology_facets', 'attribute_confidence', 'attribute_evidence',
+  'ontology_version', 'attribute_source_url', 'attribute_fetched_at', 'cache_status',
+  'official_genres', 'production_year', 'original_credit', 'source_origin', 'primary_genre',
+  'speculative_genres', 'speculative_genre_status', 'canonical_tags', 'ontology_facets', 'classification_status',
+  'attribute_confidence', 'attribute_evidence',
 ];
 
 async function readJson(file) { return JSON.parse(await readFile(file, 'utf8')); }
@@ -26,6 +28,9 @@ async function loadAttributeMap() {
     const record = await readJson(path.join(ATTRIBUTE_DIR, filename));
     if (!record.work_id || filename !== `${record.work_id}.json`) {
       throw new Error(`Invalid attribute cache filename or work_id: ${filename}`);
+    }
+    if (record.schema_version !== ATTRIBUTE_SCHEMA_VERSION || record.ontology_version !== ONTOLOGY_VERSION) {
+      throw new Error(`Attribute record ${record.work_id} is not rebuilt for ontology ${ONTOLOGY_VERSION}.`);
     }
     if (!record.attribute_source_url?.startsWith('https://animestore.docomo.ne.jp/')) {
       throw new Error(`Attribute record ${record.work_id} lacks an official source URL.`);
@@ -57,6 +62,7 @@ async function main() {
       enriched_count: enrichedCount,
       total_count: payload.works.length,
       coverage_ratio: payload.works.length ? enrichedCount / payload.works.length : 0,
+      ontology_version: ONTOLOGY_VERSION,
     };
     coverageByYear[String(payload.year)] = payload.attribute_coverage;
     await writeJson(file, payload);
@@ -73,27 +79,35 @@ async function main() {
   });
   await writeJson(worksPath, enrichedWorks);
 
-  const attributeRecords = [...attributes.values()];
-  const sourceClassifiedCount = attributeRecords.filter((record) => record.source_origin).length;
+  const records = [...attributes.values()];
+  const sourceClassifiedCount = records.filter((record) => record.source_origin).length;
+  const fullSnapshotCount = records.filter((record) => record.official_snapshot?.source === 'network').length;
+  const needsReviewCount = records.filter((record) => record.classification_status === 'needs-review').length;
   const manifestPath = path.join(DATA_DIR, 'manifest.json');
   const manifest = await readJson(manifestPath);
   manifest.attributes = {
-    schema_version: '1.1.0',
+    schema_version: ATTRIBUTE_SCHEMA_VERSION,
+    ontology_version: ONTOLOGY_VERSION,
     cache_record_count: attributes.size,
     applied_canonical_count: appliedCanonicalCount,
     applied_membership_count: appliedMembershipCount,
     coverage_ratio: works.length ? appliedCanonicalCount / works.length : 0,
     source_classified_count: sourceClassifiedCount,
     source_unknown_count: attributes.size - sourceClassifiedCount,
+    full_snapshot_count: fullSnapshotCount,
+    legacy_cache_count: attributes.size - fullSnapshotCount,
+    classified_count: attributes.size - needsReviewCount,
+    needs_review_count: needsReviewCount,
     by_year: coverageByYear,
-    fields: ['source_origin', 'primary_genre', 'canonical_tags', 'ontology_facets'],
-    ontology_facets: ['source', 'genre', 'setting', 'theme', 'motif', 'format'],
-    policy: 'Official detail metadata plus deterministic, auditable rules; unknown values remain null or empty.',
+    fields: ['source_origin', 'primary_genre', 'speculative_genres', 'speculative_genre_status', 'canonical_tags', 'ontology_facets', 'classification_status'],
+    ontology_facets: ['source', 'genre', 'subgenre', 'setting', 'theme', 'motif', 'format'],
+    speculative_genre_policy: 'SF and fantasy are independent canonical domains; the official combined bucket is retained only as source metadata.',
+    cache_policy: 'Reclassification is local and cache-first. Network access is limited to missing records or explicit raw-snapshot backfill.',
   };
   await writeJson(manifestPath, manifest);
 
   console.log(
-    `Applied ${attributes.size} attribute records to ${appliedCanonicalCount} canonical works ` +
+    `Applied ${attributes.size} ontology ${ONTOLOGY_VERSION} records to ${appliedCanonicalCount} canonical works ` +
     `and ${appliedMembershipCount} year memberships.`,
   );
 }

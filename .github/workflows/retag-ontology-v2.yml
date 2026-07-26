@@ -1,0 +1,82 @@
+name: Retag ontology v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/lib/ontology.mjs'
+      - 'scripts/enrich-official-details.mjs'
+      - 'scripts/rebuild-attributes-from-cache.mjs'
+      - 'scripts/apply-attributes.mjs'
+      - 'scripts/verify-attribute-coverage.mjs'
+      - 'tests/ontology.test.mjs'
+      - 'package.json'
+      - '.github/workflows/retag-ontology-v2.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retag-ontology-v2
+  cancel-in-progress: false
+
+jobs:
+  retag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Test ontology rules
+        run: npm test
+
+      - name: Reclassify all existing caches offline
+        run: npm run attributes:rebuild-cache
+
+      - name: Backfill reusable 2025 official snapshots once
+        env:
+          DANIME_ENRICH_YEAR: '2025'
+          DANIME_ENRICH_BACKFILL_RAW: '1'
+          DANIME_ENRICH_CONCURRENCY: '1'
+          DANIME_ENRICH_RATE_LIMIT_MS: '1800'
+          DANIME_ENRICH_NETWORK_BUDGET: '307'
+          DANIME_ENRICH_MAX_PASSES: '2'
+          DANIME_ENRICH_PAGE_ATTEMPTS: '2'
+        run: npm run attributes:enrich
+
+      - name: Verify complete separated taxonomy
+        run: |
+          npm run attributes:verify
+          npm run validate
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const report = JSON.parse(fs.readFileSync('diagnostics/attribute-coverage.json', 'utf8'));
+          const y = report.by_year['2025'];
+          console.log(JSON.stringify({ year: 2025, ...y }, null, 2));
+          if (!y || y.coverage_ratio !== 1 || y.full_snapshot_count !== y.total_count) process.exit(1);
+          NODE
+
+      - name: Commit generated ontology data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add attributes/by-work data diagnostics/attribute-cache-rebuild.json diagnostics/attribute-coverage.json diagnostics/attribute-enrichment.json
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m 'Regenerate catalogue tags with ontology v2'
+          git push
