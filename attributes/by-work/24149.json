@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24149",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24149",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ハイキュー!! OVA",
+    "synopsis": "ハイキュー!! OVA 古舘春一(集英社「週刊少年ジャンプ」連載) スポーツ・競技 学園 高校",
+    "staff_text": "原作:古舘春一(集英社「週刊少年ジャンプ」連載)",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "6b49ae4a024950bea6a97b02f5e5fdaaac6d29bfd559265a01cc3e0a6e4ae2c9"
+  },
   "official_genres": [
     "スポーツ/競技"
   ],
@@ -10,9 +23,12 @@
   "original_credit": "古舘春一(集英社「週刊少年ジャンプ」連載)",
   "source_origin": "漫画",
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [
@@ -21,13 +37,17 @@
     "genre": [
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "スポーツ"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -45,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24149"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技"
       ],
@@ -53,14 +73,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24149"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24149"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -68,8 +88,14 @@
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24149"
     }

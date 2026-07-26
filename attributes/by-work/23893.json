@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23893",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23893",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "『ヴァンパイア騎士(ナイト)』 Supported by 青山メインランド",
+    "synopsis": "『ヴァンパイア騎士(ナイト)』 Supported by 青山メインランド 「ヴァンパイア騎士」樋野まつり 2.5次元舞台 音楽・アイドル アイドル",
+    "staff_text": "原作:「ヴァンパイア騎士」樋野まつり",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "44ebe9471b9b4c81f8043c6fa09f883137e1bcf5299440b261603118ff50ded4"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,24 +23,35 @@
   "original_credit": "「ヴァンパイア騎士」樋野まつり",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
-    "音楽・アイドル"
+    "ファンタジー",
+    "音楽・アイドル",
+    "吸血鬼"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "音楽・アイドル"
     ],
-    "motif": [],
+    "motif": [
+      "吸血鬼"
+    ],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23893"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,22 +74,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23893"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23893"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ]
         },
-        "motif": {}
+        "motif": {
+          "吸血鬼": [
+            "ヴァンパイア"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23893"
     }

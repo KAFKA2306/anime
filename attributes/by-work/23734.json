@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23734",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23734",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "銀河英雄伝説 第四章 前篇 激突前夜",
+    "synopsis": "銀河英雄伝説 第四章 前篇 激突前夜 田中芳樹 2.5次元舞台 宇宙 銀河 惑星",
+    "staff_text": "原作:田中芳樹",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "feb610371385abd07b940b782f711f159da21855677bc9c77e80106bac71900a"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,14 +23,24 @@
   "original_credit": "田中芳樹",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "SF",
+    "スペースオペラ",
     "宇宙"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -28,6 +51,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -42,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23734"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -50,14 +74,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23734"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23734"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -67,7 +91,13 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23734"
     }

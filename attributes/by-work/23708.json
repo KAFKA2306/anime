@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23708",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23708",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "MANKAI STAGE『A3!』~SPRING & SUMMER 2018~",
+    "synopsis": "MANKAI STAGE『A3!』~SPRING & SUMMER 2018~ イケメン役者育成ゲーム『A3!(エースリー)』 2.5次元舞台 成長・挑戦 青春",
+    "staff_text": "原作:イケメン役者育成ゲーム『A3!(エースリー)』",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "c34ca5a059741946137da97a85ccb64356683eb0358950e5c7d809bf4de4c08c"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,26 +23,37 @@
   "original_credit": "イケメン役者育成ゲーム『A3!(エースリー)』",
   "source_origin": "ゲーム",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
-    "成長・挑戦"
+    "SF",
+    "成長・挑戦",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [
       "ゲーム"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "SF"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "成長・挑戦"
     ],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": [
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23708"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,22 +78,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23708"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23708"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "成長・挑戦": [
+            "成長",
+            "挑戦",
             "青春"
           ]
         },
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23708"
     }

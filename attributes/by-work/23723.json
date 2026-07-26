@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23723",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23723",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "スペースジャングル ~小さなエイリアン~ Vol.1~3",
+    "synopsis": "スペースジャングル ~小さなエイリアン~ Vol.1~3 ショート SF・ファンタジー",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "57aac7b7dad2b0d429e534042d03e5dc8040a80375e2361f40406340ec3dd33f"
+  },
   "official_genres": [
     "ショート",
     "SF/ファンタジー"
@@ -10,17 +24,22 @@
   "production_year": 2014,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "ショート",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "ショート",
-    "SF・ファンタジー"
+    "SF",
+    "ショート"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ショート",
-      "SF・ファンタジー"
+      "SF",
+      "ショート"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [],
@@ -28,30 +47,33 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23723"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "ショート",
         "SF/ファンタジー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "エイリアン"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23723"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "SF/ファンタジー"
@@ -59,11 +81,12 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23723"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23723"
     }

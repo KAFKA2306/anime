@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23742",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742",
   "attribute_fetched_at": "2026-07-25T10:45:34.871Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "とある飛空士への追憶",
+    "synopsis": "とある飛空士への追憶 犬村 小六 (小学館・ガガガ文庫刊 ) SF・ファンタジー 恋愛・ラブコメ 戦争・ミリタリー",
+    "staff_text": "原作:犬村 小六 (小学館・ガガガ文庫刊 )",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2011,
+    "source": "legacy-derived",
+    "sha256": "2a82c3d3bc372da77d060f8680e7241a6edd17f1484c23fd971bb3a2a45512db"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,31 +26,46 @@
   "production_year": 2011,
   "original_credit": "犬村 小六 (小学館・ガガガ文庫刊 )",
   "source_origin": "ライトノベル・小説",
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
-    "戦争・ミリタリー"
+    "戦争・ミリタリー",
+    "スペキュレーティブ判定保留",
+    "ラブコメ",
+    "恋愛",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [
       "ライトノベル・小説"
     ],
     "genre": [
-      "SF・ファンタジー",
       "恋愛・ラブコメ",
-      "戦争・ミリタリー"
+      "戦争・ミリタリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "恋愛",
+      "戦争"
+    ],
+    "motif": [
+      "軍事"
+    ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -47,7 +77,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -57,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -66,11 +96,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23742"
     }

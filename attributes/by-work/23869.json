@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23869",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23869",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "遊☆戯☆王VRAINS Ai編",
+    "synopsis": "遊☆戯☆王VRAINS Ai編 高橋和希 スタジオ・ダイス (週刊少年ジャンプ) バトル・アクション スポーツ・競技 学園 高校",
+    "staff_text": "原作:高橋和希 スタジオ・ダイス (週刊少年ジャンプ)",
+    "official_genres": [
+      "アクション/バトル",
+      "スポーツ/競技"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "a2954354814707d147c6b6efa3c91e7a23d171997c28be27c3fff39ed1c293fc"
+  },
   "official_genres": [
     "アクション/バトル",
     "スポーツ/競技"
@@ -11,10 +25,18 @@
   "original_credit": "高橋和希 スタジオ・ダイス (週刊少年ジャンプ)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "スポーツ・競技",
-    "学園"
+    "学園",
+    "スポーツ",
+    "人工知能",
+    "電脳・VR"
   ],
   "ontology_facets": {
     "source": [
@@ -22,15 +44,23 @@
     ],
     "genre": [
       "バトル・アクション",
+      "SF",
       "スポーツ・競技"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
-    "motif": [],
+    "theme": [
+      "スポーツ"
+    ],
+    "motif": [
+      "人工知能",
+      "電脳・VR"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -48,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23869"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -57,7 +87,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23869"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "スポーツ/競技"
@@ -65,15 +95,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23869"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "スポーツ": [
+            "スポーツ",
+            "競技"
+          ]
+        },
+        "motif": {
+          "人工知能": [
+            "AI"
+          ],
+          "電脳・VR": [
+            "VR"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23869"
     }

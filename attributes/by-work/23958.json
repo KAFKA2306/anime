@@ -1,29 +1,53 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23958",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23958",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "新世紀末 奴との遭遇",
+    "synopsis": "新世紀末 奴との遭遇 コメディ・ギャグ ショート 宇宙 終末・ディストピア 惑星 終末",
+    "staff_text": "",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "b808c91c0aeb3d482d405e47ece69b11210b69a1dcdb25bf2243b230bfd2a06c"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "ショート"
   ],
   "production_year": 2013,
   "original_credit": null,
-  "source_origin": "漫画",
+  "source_origin": null,
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
+    "SF",
     "ショート",
+    "スペースオペラ",
+    "終末SF",
     "宇宙",
     "終末・ディストピア"
   ],
   "ontology_facets": {
-    "source": [
-      "漫画"
-    ],
+    "source": [],
     "genre": [
       "コメディ・ギャグ",
+      "SF",
       "ショート"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "終末SF"
     ],
     "setting": [
       "宇宙",
@@ -35,24 +59,22 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
-    "source_origin": "verified",
+    "source_origin": "unknown",
     "primary_genre": "verified",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.publication-credit-manga",
-      "matched_terms": [
-        "コミックス",
-        "コミック"
-      ],
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23958"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -61,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23958"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "ショート"
@@ -69,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23958"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -77,11 +99,21 @@
             "惑星"
           ],
           "終末・ディストピア": [
-            "終末"
+            "終末",
+            "ディストピア"
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "終末SF": [
+            "終末",
+            "ディストピア"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23958"
     }

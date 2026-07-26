@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23933",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23933",
   "attribute_fetched_at": "2026-07-25T10:24:43.046Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "歌劇「明治東亰恋伽〜月虹の婚約者〜」",
+    "synopsis": "歌劇「明治東亰恋伽〜月虹の婚約者〜」 MAGES.「明治東亰恋伽」 2.5次元舞台 学園 歴史・時代劇 犯罪・警察 高校 明治 警察",
+    "staff_text": "原作:MAGES.「明治東亰恋伽」",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2018,
+    "source": "legacy-derived",
+    "sha256": "68c5cf08a62856ffce32bf9cbe08b7dd92112ccdd79b9c4bcbc37afc40fe234a"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,10 +23,13 @@
   "original_credit": "MAGES.「明治東亰恋伽」",
   "source_origin": null,
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
     "学園",
     "歴史・時代劇",
+    "恋愛",
     "犯罪・警察"
   ],
   "ontology_facets": {
@@ -21,11 +37,14 @@
     "genre": [
       "2.5次元舞台"
     ],
+    "subgenre": [],
     "setting": [
       "学園",
       "歴史・時代劇"
     ],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "犯罪・警察"
     ],
@@ -33,6 +52,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -47,7 +67,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23933"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -55,29 +75,37 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23933"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23933"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "高校"
           ],
           "歴史・時代劇": [
-            "明治"
+            "明治",
+            "時代劇"
           ]
         },
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "婚約"
+          ]
+        },
         "motif": {
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23933"
     }

@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24179",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179",
   "attribute_fetched_at": "2026-07-25T10:24:27.710Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "舞台「幽☆遊☆白書」",
+    "synopsis": "舞台「幽☆遊☆白書」 冨樫義博「幽☆遊☆白書」(集英社「ジャンプコミックス」刊) 2.5次元舞台 推理・謎解き 職業・仕事 怪異・妖怪 犯罪・警察 探偵 働く 妖怪 幽霊 鬼 犯罪",
+    "staff_text": "原作:冨樫義博「幽☆遊☆白書」(集英社「ジャンプコミックス」刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2019,
+    "source": "legacy-derived",
+    "sha256": "2f00edbc17b5c4bb376427b4b83d9673bc0f58b803d5743c4e126765553934b9"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,12 @@
   "original_credit": "冨樫義博「幽☆遊☆白書」(集英社「ジャンプコミックス」刊)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "現代ファンタジー",
+    "ミステリー",
     "推理・謎解き",
     "職業・仕事",
     "怪異・妖怪",
@@ -23,6 +40,10 @@
     ],
     "genre": [
       "2.5次元舞台"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ミステリー"
     ],
     "setting": [],
     "theme": [
@@ -37,6 +58,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -54,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -62,32 +84,47 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24179"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "推理・謎解き": [
+            "推理",
+            "謎解き",
             "探偵"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "幽霊",
             "鬼"
           ],
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
+          ],
+          "ミステリー": [
+            "推理",
+            "探偵",
+            "謎解き"
           ]
         }
       },

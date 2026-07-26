@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "23983",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23983",
   "attribute_fetched_at": "2026-07-25T10:44:38.235Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ヴイナス戦記",
+    "synopsis": "ヴイナス戦記 SF・ファンタジー ロボット・メカ 戦争・ミリタリー 宇宙 友情・仲間 政治・戦略 惑星 仲間 政治",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 1989,
+    "source": "legacy-derived",
+    "sha256": "bf308d5555a325b0c9969bf942e88a4ca75bd9d77d41b8c8318f4ddc6db5f1c2"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,59 +26,79 @@
   "production_year": 1989,
   "original_credit": null,
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
     "戦争・ミリタリー",
+    "スペースオペラ",
+    "ロボットSF",
     "宇宙",
     "友情・仲間",
-    "政治・戦略"
+    "政治・戦略",
+    "戦争",
+    "軍事"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "戦争・ミリタリー"
+    ],
+    "subgenre": [
+      "スペースオペラ",
+      "ロボットSF"
     ],
     "setting": [
       "宇宙"
     ],
     "theme": [
       "友情・仲間",
-      "政治・戦略"
+      "政治・戦略",
+      "戦争"
     ],
     "motif": [
-      "ロボット・メカ"
+      "ロボット・メカ",
+      "軍事"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
+    "primary_genre": "derived",
     "canonical_tags": "derived",
     "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23983"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "戦争/ミリタリー"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "宇宙",
+        "惑星",
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23983"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -72,22 +107,44 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23983"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
+            "宇宙",
             "惑星"
           ]
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ],
           "政治・戦略": [
-            "政治"
+            "政治",
+            "戦略"
+          ],
+          "戦争": [
+            "戦争"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ],
+          "軍事": [
+            "ミリタリー"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ],
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23983"
     }

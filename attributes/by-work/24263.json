@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "24263",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24263",
   "attribute_fetched_at": "2026-07-25T10:48:41.269Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "映画 妖怪ウォッチ シャドウサイド 鬼王の復活",
+    "synopsis": "映画 妖怪ウォッチ シャドウサイド 鬼王の復活 レベルファイブ バトル・アクション ホラー・サスペンス・ミステリー キッズ・ファミリー 怪異・妖怪 妖怪 鬼",
+    "staff_text": "原作:レベルファイブ",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2017,
+    "source": "legacy-derived",
+    "sha256": "30ea1d929dd3ef7f4e95b6ddf58b07055c1e5e10157c642a6e9cd6bf0af6c946"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理",
@@ -12,10 +27,13 @@
   "original_credit": "レベルファイブ",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
     "キッズ・ファミリー",
+    "現代ファンタジー",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -25,6 +43,9 @@
       "ホラー・サスペンス・ミステリー",
       "キッズ・ファミリー"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
     "theme": [],
     "motif": [
@@ -32,6 +53,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +68,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24263"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -56,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24263"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理",
@@ -65,14 +87,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24263"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "怪異・妖怪": [
+            "怪異",
             "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },
