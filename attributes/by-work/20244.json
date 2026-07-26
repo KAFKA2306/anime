@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20244",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20244",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ログ・ホライズン 第2シリーズ",
+    "synopsis": "ログ・ホライズン 第2シリーズ 橙乃ままれ 異世界・ハイファンタジー SF・ファンタジー バトル・アクション ドラマ・青春 異世界 友情・仲間 ゲーム世界 仲間 冒険者",
+    "staff_text": "原作:橙乃ままれ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "36b99eea45709ab0302064355cd8200087808a60e81397dbe9ced33b4e6a29a1"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "アクション/バトル",
@@ -12,34 +27,47 @@
   "original_credit": "橙乃ままれ",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "バトル・アクション",
     "ドラマ・青春",
+    "異世界ファンタジー",
     "異世界",
     "友情・仲間",
+    "成長・挑戦",
+    "旅・冒険",
     "ゲーム世界"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "バトル・アクション",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦",
+      "旅・冒険"
     ],
     "motif": [
       "ゲーム世界"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -54,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20244"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -67,7 +95,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20244"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "アクション/バトル",
@@ -76,7 +104,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20244"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -85,12 +113,24 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
+          ],
+          "旅・冒険": [
+            "冒険"
           ]
         },
         "motif": {
           "ゲーム世界": [
             "ゲーム世界"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
           ]
         }
       },

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20115",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20115",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "旦那が何を言っているかわからない件",
+    "synopsis": "旦那が何を言っているかわからない件 「旦那が何を言っているかわからない件」(原作者:クール教信者・単行本既刊4巻一迅社刊) 恋愛・ラブコメ ショート 日常・ほのぼの 職業・仕事 仕事",
+    "staff_text": "原作:「旦那が何を言っているかわからない件」(原作者:クール教信者・単行本既刊4巻一迅社刊)",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "b39fc66152eaa6590d22f1bb5831f8e08a796f1ea95e42e4406898608ec1693c"
+  },
   "official_genres": [
     "恋愛/ラブコメ",
     "ショート",
@@ -12,11 +27,16 @@
   "original_credit": "「旦那が何を言っているかわからない件」(原作者:クール教信者・単行本既刊4巻一迅社刊)",
   "source_origin": null,
   "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "恋愛・ラブコメ",
     "ショート",
     "日常・ほのぼの",
-    "職業・仕事"
+    "ラブコメ",
+    "恋愛",
+    "職業・仕事",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,15 +45,21 @@
       "ショート",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "職業・仕事"
+      "恋愛",
+      "職業・仕事",
+      "癒やし"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20115"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート",
@@ -58,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20115"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "恋愛/ラブコメ",
         "ショート",
@@ -67,15 +93,27 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20115"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ],
           "職業・仕事": [
             "仕事"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20115"
     }

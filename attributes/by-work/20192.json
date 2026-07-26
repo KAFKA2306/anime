@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20192",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20192",
   "attribute_fetched_at": "2026-07-25T10:32:10.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ふしぎな島のフローネ",
+    "synopsis": "ふしぎな島のフローネ 『スイスのロビンソン』 ドラマ・青春 家族",
+    "staff_text": "原作:『スイスのロビンソン』",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 1981,
+    "source": "legacy-derived",
+    "sha256": "605fbdf3f3940e0ab7502440c3c9b27737f88de787f4094eea6f3ee5c4679db2"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,8 +23,11 @@
   "original_credit": "『スイスのロビンソン』",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
+    "成長・挑戦",
     "家族"
   ],
   "ontology_facets": {
@@ -19,13 +35,16 @@
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
+      "成長・挑戦",
       "家族"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20192"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -48,22 +67,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20192"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20192"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
           "家族": [
             "家族"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20192"
     }

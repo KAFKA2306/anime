@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20411",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20411",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "〈物語〉シリーズ セカンドシーズン(第12話~第15話) 囮物語",
+    "synopsis": "〈物語〉シリーズ セカンドシーズン(第12話~第15話) 囮物語 西尾維新 『猫物語(白)』『傾物語』『花物語』『囮物語』『鬼物語』『恋物語』(講談社BOX) SF・ファンタジー 恋愛・ラブコメ ホラー・サスペンス・ミステリー 怪異・妖怪 怪異",
+    "staff_text": "原作:西尾維新 『猫物語(白)』『傾物語』『花物語』『囮物語』『鬼物語』『恋物語』(講談社BOX)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "1ab7b095c0a290b339e876844007a9deb3874827272267493f5fba887cb6db97"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "恋愛/ラブコメ",
@@ -11,27 +26,39 @@
   "production_year": 2013,
   "original_credit": "西尾維新 『猫物語(白)』『傾物語』『花物語』『囮物語』『鬼物語』『恋物語』(講談社BOX)",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
   "canonical_tags": [
-    "SF・ファンタジー",
     "恋愛・ラブコメ",
     "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "ラブコメ",
+    "恋愛",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
       "恋愛・ラブコメ",
-      "ホラー・サスペンス・ミステリー"
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー",
+      "ラブコメ"
     ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "恋愛"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "needs-review",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +73,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20411"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -56,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20411"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "恋愛/ラブコメ",
@@ -65,13 +92,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20411"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
+            "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "怪異"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
           ]
         }
       },

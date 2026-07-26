@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "11605",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11605",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "デス・パレード",
+    "synopsis": "デス・パレード 立川譲、マッドハウス スポーツ・競技 ホラー・サスペンス・ミステリー サバイバル デスゲーム",
+    "staff_text": "原作:立川譲、マッドハウス",
+    "official_genres": [
+      "スポーツ/競技",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "1baa942abea0d98e4267e5b5c869dd62fd794afbf0db96f6e9d6eff47fa13688"
+  },
   "official_genres": [
     "スポーツ/競技",
     "ホラー/サスペンス/推理"
@@ -11,10 +25,13 @@
   "original_credit": "立川譲、マッドハウス",
   "source_origin": null,
   "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "スポーツ・競技",
     "ホラー・サスペンス・ミステリー",
-    "サバイバル"
+    "サバイバル",
+    "スポーツ"
   ],
   "ontology_facets": {
     "source": [],
@@ -22,13 +39,16 @@
       "スポーツ・競技",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "サバイバル"
+      "サバイバル",
+      "スポーツ"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11605"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "スポーツ/競技",
         "ホラー/サスペンス/推理"
@@ -52,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11605"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "スポーツ/競技",
         "ホラー/サスペンス/推理"
@@ -60,15 +80,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11605"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "サバイバル": [
+            "サバイバル",
             "デスゲーム"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11605"
     }

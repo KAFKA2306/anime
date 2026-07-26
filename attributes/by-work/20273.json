@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20273",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20273",
   "attribute_fetched_at": "2026-07-25T11:01:37.779Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "カリーノ・コニ",
+    "synopsis": "カリーノ・コニ play set products ショート キッズ・ファミリー 友情・仲間 仲間",
+    "staff_text": "原作:play set products",
+    "official_genres": [
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2014,
+    "source": "legacy-derived",
+    "sha256": "7fb3bf594682eda0a785e6e13307434eede64aee21a0c42829a2c122429b0f77"
+  },
   "official_genres": [
     "ショート",
     "キッズ/ファミリー"
@@ -11,6 +25,8 @@
   "original_credit": "play set products",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "キッズ・ファミリー",
@@ -22,6 +38,7 @@
       "ショート",
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -31,6 +48,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -45,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20273"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "キッズ/ファミリー"
@@ -54,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20273"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "キッズ/ファミリー"
@@ -62,15 +80,17 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20273"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20273"
     }

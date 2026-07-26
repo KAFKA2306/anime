@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20246",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20246",
   "attribute_fetched_at": "2026-07-25T10:32:13.002Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "トム・ソーヤーの冒険",
+    "synopsis": "トム・ソーヤーの冒険 『トム・ソーヤーの冒険』 ドラマ・青春",
+    "staff_text": "原作:『トム・ソーヤーの冒険』",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 1980,
+    "source": "legacy-derived",
+    "sha256": "b9e2796585e32a926136b9cbadad5a6fb229a789f971748cab819ba8aac4a719"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,24 +23,33 @@
   "original_credit": "『トム・ソーヤーの冒険』",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "成長・挑戦",
+    "旅・冒険"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ドラマ・青春"
     ],
+    "subgenre": [],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦",
+      "旅・冒険"
+    ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -37,7 +59,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20246"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -45,18 +67,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20246"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20246"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20246"
     }

@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20078",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20078",
   "attribute_fetched_at": "2026-07-25T10:33:37.520Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ゆるめいつ",
+    "synopsis": "ゆるめいつ saxyun(「まんがくらぶ」連載-竹書房刊) ショート コメディ・ギャグ 日常・ほのぼの 学園 怪異・妖怪 大学 鬼",
+    "staff_text": "原作:saxyun(「まんがくらぶ」連載-竹書房刊)",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2009,
+    "source": "legacy-derived",
+    "sha256": "a5a08e4deb0c8abe4b53f8676c11e92940588763a51cd70a03c6ac4731d6de43"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -12,11 +27,15 @@
   "original_credit": "saxyun(「まんがくらぶ」連載-竹書房刊)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
     "日常・ほのぼの",
+    "現代ファンタジー",
     "学園",
+    "癒やし",
     "怪異・妖怪"
   ],
   "ontology_facets": {
@@ -26,10 +45,15 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [
       "怪異・妖怪"
     ],
@@ -37,6 +61,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -51,7 +76,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20078"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -61,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20078"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -70,17 +95,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20078"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "大学"
           ]
         },
-        "theme": {},
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

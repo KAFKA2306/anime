@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20015",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20015",
   "attribute_fetched_at": "2026-07-25T10:32:14.552Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "巨神ゴーグ",
+    "synopsis": "巨神ゴーグ 安彦良和 SF・ファンタジー ロボット・メカ ドラマ・青春 ロボット",
+    "staff_text": "原作:安彦良和",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "ドラマ/青春"
+    ],
+    "production_year": 1984,
+    "source": "legacy-derived",
+    "sha256": "049b713ed821d82d99890de1c3626547ea86fba904f585c3fd75d70047051e4f"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ロボット/メカ",
@@ -11,31 +26,43 @@
   "production_year": 1984,
   "original_credit": "安彦良和",
   "source_origin": null,
-  "primary_genre": "SF・ファンタジー",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
-    "SF・ファンタジー",
+    "SF",
     "ロボット・メカ",
-    "ドラマ・青春"
+    "ドラマ・青春",
+    "ロボットSF",
+    "成長・挑戦"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "SF・ファンタジー",
+      "SF",
       "ロボット・メカ",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "ロボットSF"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "ロボット・メカ"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
-    "primary_genre": "verified",
-    "canonical_tags": "verified",
-    "ontology_facets": "verified"
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
   },
   "attribute_evidence": {
     "source_origin": {
@@ -45,17 +72,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20015"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.sf-signal-dominant",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
         "ドラマ/青春"
       ],
-      "matched_terms": [],
+      "matched_terms": [
+        "ロボット",
+        "メカ"
+      ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20015"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ロボット/メカ",
@@ -64,12 +94,22 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20015"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
             "ロボット"
           ]
         }

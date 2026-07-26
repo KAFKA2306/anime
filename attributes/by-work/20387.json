@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20387",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "DIABOLIK LOVERS MORE,BLOOD",
+    "synopsis": "DIABOLIK LOVERS MORE,BLOOD オトメイト(アイディアファクトリー・Rejet) ショート ホラー・サスペンス・ミステリー 恋愛・ラブコメ 家族 兄弟",
+    "staff_text": "原作:オトメイト(アイディアファクトリー・Rejet)",
+    "official_genres": [
+      "ショート",
+      "ホラー/サスペンス/推理",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "63be8cd9d9e526fad7ccd91a61df0e47c3af8857aa4927f9c39d9efd0448e641"
+  },
   "official_genres": [
     "ショート",
     "ホラー/サスペンス/推理",
@@ -12,11 +27,15 @@
   "original_credit": "オトメイト(アイディアファクトリー・Rejet)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "ホラー・サスペンス・ミステリー",
     "恋愛・ラブコメ",
-    "家族"
+    "ラブコメ",
+    "家族",
+    "恋愛"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,15 +44,20 @@
       "ホラー・サスペンス・ミステリー",
       "恋愛・ラブコメ"
     ],
+    "subgenre": [
+      "ラブコメ"
+    ],
     "setting": [],
     "theme": [
-      "家族"
+      "家族",
+      "恋愛"
     ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +72,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "ホラー/サスペンス/推理",
@@ -58,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "ホラー/サスペンス/推理",
@@ -67,15 +91,25 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "家族": [
+            "家族",
             "兄弟"
+          ],
+          "恋愛": [
+            "恋愛",
+            "ラブコメ"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20387"
     }

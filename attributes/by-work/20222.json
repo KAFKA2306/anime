@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20222",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20222",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "WORKING!!!",
+    "synopsis": "WORKING!!! 高津カリノ(掲載:『ヤングガンガン』スクウェア・エニックス刊) コメディ・ギャグ 料理・グルメ 職業・仕事 レストラン 働く",
+    "staff_text": "原作:高津カリノ(掲載:『ヤングガンガン』スクウェア・エニックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "e5352a3d8e060b29b4ae65c2e9663514c7b8cb906f89cf9822210d99d00a32f0"
+  },
   "official_genres": [
     "コメディ/ギャグ"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "高津カリノ(掲載:『ヤングガンガン』スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "料理・グルメ",
@@ -22,6 +37,7 @@
     "genre": [
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "料理・グルメ",
@@ -30,6 +46,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +63,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20222"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ"
       ],
@@ -54,25 +71,29 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20222"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20222"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "料理・グルメ": [
+            "料理",
+            "グルメ",
             "レストラン"
           ],
           "職業・仕事": [
+            "仕事",
             "働く"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20222"
     }

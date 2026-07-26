@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20286",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20286",
   "attribute_fetched_at": "2026-07-25T10:20:39.630Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "A-Ko The VS <ヴァーサス>「BLUE SIDE」",
+    "synopsis": "A-Ko The VS <ヴァーサス>「BLUE SIDE」 バトル・アクション コメディ・ギャグ 宇宙 友情・仲間 犯罪・警察 惑星 仲間 犯罪",
+    "staff_text": "",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1990,
+    "source": "legacy-derived",
+    "sha256": "b327d9db03b16fd5eaacabe0527f347b670879ec3a790eef6b0ff13f4637d045"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,9 +25,15 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙",
     "友情・仲間",
     "犯罪・警察"
@@ -22,7 +42,11 @@
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -35,6 +59,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -43,13 +68,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20286"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -58,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20286"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -66,7 +91,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20286"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -76,12 +101,19 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
         "motif": {
           "犯罪・警察": [
+            "警察",
             "犯罪"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
           ]
         }
       },

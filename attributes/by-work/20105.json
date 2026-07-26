@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20105",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20105",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "キュートランスフォーマー 帰ってきたコンボイの謎",
+    "synopsis": "キュートランスフォーマー 帰ってきたコンボイの謎 ロボット・メカ コメディ・ギャグ ショート 友情・仲間 仲間",
+    "staff_text": "",
+    "official_genres": [
+      "ロボット/メカ",
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "a07c65580c738682b0b60369ff94e768505dad143f100fdc8743b09ab08d1bc1"
+  },
   "official_genres": [
     "ロボット/メカ",
     "コメディ/ギャグ",
@@ -12,18 +27,28 @@
   "original_credit": null,
   "source_origin": null,
   "primary_genre": "ロボット・メカ",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ロボット・メカ",
+    "SF",
     "コメディ・ギャグ",
     "ショート",
+    "ロボットSF",
     "友情・仲間"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "ロボット・メカ",
+      "SF",
       "コメディ・ギャグ",
       "ショート"
+    ],
+    "subgenre": [
+      "ロボットSF"
     ],
     "setting": [],
     "theme": [
@@ -36,6 +61,7 @@
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -44,13 +70,13 @@
   },
   "attribute_evidence": {
     "source_origin": {
-      "rule_id": "origin.unclassified-credit",
+      "rule_id": "origin.no-evidence",
       "matched_terms": [],
       "evidence_text": null,
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20105"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ロボット/メカ",
         "コメディ/ギャグ",
@@ -60,7 +86,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20105"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ロボット/メカ",
         "コメディ/ギャグ",
@@ -69,15 +95,26 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20105"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット",
+            "メカ"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20105"
     }

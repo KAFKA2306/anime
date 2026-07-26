@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20116",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20116",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ハロー!!きんいろモザイク",
+    "synopsis": "ハロー!!きんいろモザイク 原悠衣(掲載:月刊「まんがタイムきららMAX」(芳文社刊)) 日常・ほのぼの コメディ・ギャグ 学園 友情・仲間 高校 絆",
+    "staff_text": "原作:原悠衣(掲載:月刊「まんがタイムきららMAX」(芳文社刊))",
+    "official_genres": [
+      "日常/ほのぼの",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "61aad993295110ba1d579bf8bd795184fccf988f876a2093532bcabd825bae27"
+  },
   "official_genres": [
     "日常/ほのぼの",
     "コメディ/ギャグ"
@@ -11,11 +25,14 @@
   "original_credit": "原悠衣(掲載:月刊「まんがタイムきららMAX」(芳文社刊))",
   "source_origin": null,
   "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "日常・ほのぼの",
     "コメディ・ギャグ",
     "学園",
-    "友情・仲間"
+    "友情・仲間",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -23,15 +40,18 @@
       "日常・ほのぼの",
       "コメディ・ギャグ"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "癒やし"
     ],
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -46,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20116"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -55,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20116"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "日常/ほのぼの",
         "コメディ/ギャグ"
@@ -63,7 +83,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20116"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
@@ -73,10 +93,16 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
+          ],
+          "癒やし": [
+            "ほのぼの"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20116"
     }

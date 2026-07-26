@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20080",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20080",
   "attribute_fetched_at": "2026-07-25T10:57:29.295Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ちとせげっちゅ!! 二時限目",
+    "synopsis": "ちとせげっちゅ!! 二時限目 真島悦也『ちとせげっちゅ!!』(「月刊まんがライフMOMO」連載) ショート コメディ・ギャグ 日常・ほのぼの 学園 学校",
+    "staff_text": "原作:真島悦也『ちとせげっちゅ!!』(「月刊まんがライフMOMO」連載)",
+    "official_genres": [
+      "ショート",
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2012,
+    "source": "legacy-derived",
+    "sha256": "69b3aa544a8d040f754d7106a8837ac0b9dccbe22c2a3f16ea3f81e9facd43d4"
+  },
   "official_genres": [
     "ショート",
     "コメディ/ギャグ",
@@ -12,11 +27,14 @@
   "original_credit": "真島悦也『ちとせげっちゅ!!』(「月刊まんがライフMOMO」連載)",
   "source_origin": null,
   "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ショート",
     "コメディ・ギャグ",
     "日常・ほのぼの",
-    "学園"
+    "学園",
+    "癒やし"
   ],
   "ontology_facets": {
     "source": [],
@@ -25,15 +43,19 @@
       "コメディ・ギャグ",
       "日常・ほのぼの"
     ],
+    "subgenre": [],
     "setting": [
       "学園"
     ],
-    "theme": [],
+    "theme": [
+      "癒やし"
+    ],
     "motif": [],
     "format": [
       "ショート"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -48,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20080"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -58,7 +80,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20080"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ショート",
         "コメディ/ギャグ",
@@ -67,15 +89,21 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20080"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "学園": [
+            "学園",
             "学校"
           ]
         },
-        "theme": {},
-        "motif": {}
+        "theme": {
+          "癒やし": [
+            "ほのぼの"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20080"
     }

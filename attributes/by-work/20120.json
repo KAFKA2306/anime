@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "20120",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20120",
   "attribute_fetched_at": "2026-07-25T10:57:19.085Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "フューチャーカード バディファイト100(ハンドレッド)",
+    "synopsis": "フューチャーカード バディファイト100(ハンドレッド) ブシロード 異世界・ハイファンタジー SF・ファンタジー スポーツ・競技 キッズ・ファミリー 異世界 友情・仲間 怪異・妖怪 仲間 鬼",
+    "staff_text": "原作:ブシロード",
+    "official_genres": [
+      "SF/ファンタジー",
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2015,
+    "source": "legacy-derived",
+    "sha256": "fae52b8e643d3aef2aa431fce559d7765052f80ff114a83bd92164e8a3606b20"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "スポーツ/競技",
@@ -12,34 +27,47 @@
   "original_credit": "ブシロード",
   "source_origin": null,
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "ファンタジー",
     "スポーツ・競技",
     "キッズ・ファミリー",
+    "異世界ファンタジー",
+    "現代ファンタジー",
     "異世界",
     "友情・仲間",
+    "スポーツ",
     "怪異・妖怪"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "ファンタジー",
       "スポーツ・競技",
       "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "スポーツ"
     ],
     "motif": [
       "怪異・妖怪"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "derived",
@@ -54,7 +82,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20120"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技",
@@ -66,7 +94,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20120"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "スポーツ/競技",
@@ -75,7 +103,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20120"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -84,12 +112,27 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "スポーツ": [
+            "スポーツ",
+            "競技"
           ]
         },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界"
+          ],
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },
