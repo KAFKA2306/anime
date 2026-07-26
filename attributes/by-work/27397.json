@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27397",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27397",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ELEMON",
+    "synopsis": "ELEMON 東映アニメーション キッズ・ファミリー 友情・仲間 友情 仲間",
+    "staff_text": "原作:東映アニメーション",
+    "official_genres": [
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "742cb1f6e6c851e2b3859f7f1ef20704b93a373b5cf40138f56d504ec3512953"
+  },
   "official_genres": [
     "キッズ/ファミリー"
   ],
@@ -10,6 +23,8 @@
   "original_credit": "東映アニメーション",
   "source_origin": null,
   "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "キッズ・ファミリー",
     "友情・仲間"
@@ -19,6 +34,7 @@
     "genre": [
       "キッズ・ファミリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
       "友情・仲間"
@@ -26,6 +42,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +57,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27397"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "キッズ/ファミリー"
       ],
@@ -48,14 +65,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27397"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "キッズ/ファミリー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27397"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
@@ -64,7 +81,8 @@
             "仲間"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27397"
     }

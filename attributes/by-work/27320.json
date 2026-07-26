@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27320",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27320",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "ポーション頼みで生き延びます!",
+    "synopsis": "ポーション頼みで生き延びます! FUNA 「ポーション頼みで生き延びます!」(講談社Kラノベブックス刊) 異世界・ハイファンタジー SF・ファンタジー 異世界 転生",
+    "staff_text": "原作:FUNA 「ポーション頼みで生き延びます!」(講談社Kラノベブックス刊)",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "6bf754d2bd85b83158c77467c1cb8b4def370c8366da9b4e617d45b3bda638ec"
+  },
   "official_genres": [
     "SF/ファンタジー"
   ],
@@ -10,10 +23,16 @@
   "original_credit": "FUNA 「ポーション頼みで生き延びます!」(講談社Kラノベブックス刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
-    "異世界"
+    "ファンタジー",
+    "異世界ファンタジー",
+    "異世界",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -21,15 +40,21 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー"
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -46,7 +71,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27320"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー"
       ],
@@ -57,14 +82,14 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27320"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27320"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -73,7 +98,17 @@
           ]
         },
         "theme": {},
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27320"
     }

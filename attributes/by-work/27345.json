@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27345",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "転生貴族、鑑定スキルで成り上がる 第2期",
+    "synopsis": "転生貴族、鑑定スキルで成り上がる 第2期 未来人A『転生貴族、鑑定スキルで成り上がる〜弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた〜』(講談社「Kラノベブックス」刊) 異世界・ハイファンタジー SF・ファンタジー ドラマ・青春 異世界 友情・仲間 転生 仲間",
+    "staff_text": "原作:未来人A『転生貴族、鑑定スキルで成り上がる〜弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた〜』(講談社「Kラノベブックス」刊)",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "152b0bcdd8ce0d1df8849e514edbb29fea365bf914a37eaf046c70cf33dccc31"
+  },
   "official_genres": [
     "SF/ファンタジー",
     "ドラマ/青春"
@@ -11,12 +25,21 @@
   "original_credit": "未来人A『転生貴族、鑑定スキルで成り上がる〜弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた〜』(講談社「Kラノベブックス」刊)",
   "source_origin": "ライトノベル・小説",
   "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
   "canonical_tags": [
     "異世界・ハイファンタジー",
-    "SF・ファンタジー",
+    "SF",
+    "ファンタジー",
     "ドラマ・青春",
+    "異世界ファンタジー",
     "異世界",
-    "友情・仲間"
+    "友情・仲間",
+    "成長・挑戦",
+    "転生"
   ],
   "ontology_facets": {
     "source": [
@@ -24,18 +47,26 @@
     ],
     "genre": [
       "異世界・ハイファンタジー",
-      "SF・ファンタジー",
+      "SF",
+      "ファンタジー",
       "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
     ],
     "setting": [
       "異世界"
     ],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
-    "motif": [],
+    "motif": [
+      "転生"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "derived",
@@ -52,19 +83,20 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345"
     },
     "primary_genre": {
-      "rule_id": "genre.official-fantasy-plus-explicit-world-signal",
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
       ],
       "matched_terms": [
+        "未来",
         "異世界",
         "転生"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "SF/ファンタジー",
         "ドラマ/青春"
@@ -72,7 +104,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "異世界": [
@@ -82,10 +114,24 @@
         },
         "theme": {
           "友情・仲間": [
+            "友情",
             "仲間"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345"
     }

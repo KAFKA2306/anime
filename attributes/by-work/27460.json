@@ -1,8 +1,23 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27460",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27460",
   "attribute_fetched_at": "2026-07-25T10:36:17.176Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "銀魂オンシアター2D バラガキ篇",
+    "synopsis": "銀魂オンシアター2D バラガキ篇 空知英秋(集英社ジャンプコミックス刊) コメディ・ギャグ バトル・アクション ドラマ・青春 怪異・妖怪 犯罪・警察 鬼 警察",
+    "staff_text": "原作:空知英秋(集英社ジャンプコミックス刊)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2023,
+    "source": "legacy-derived",
+    "sha256": "3488d42e4007486d4e856874babc73114de85841d5609ddac0713aed62a97457"
+  },
   "official_genres": [
     "コメディ/ギャグ",
     "アクション/バトル",
@@ -12,10 +27,14 @@
   "original_credit": "空知英秋(集英社ジャンプコミックス刊)",
   "source_origin": "漫画",
   "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "コメディ・ギャグ",
     "バトル・アクション",
     "ドラマ・青春",
+    "現代ファンタジー",
+    "成長・挑戦",
     "怪異・妖怪",
     "犯罪・警察"
   ],
@@ -28,14 +47,20 @@
       "バトル・アクション",
       "ドラマ・青春"
     ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
     "setting": [],
-    "theme": [],
+    "theme": [
+      "成長・挑戦"
+    ],
     "motif": [
       "怪異・妖怪",
       "犯罪・警察"
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -53,7 +78,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27460"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "コメディ/ギャグ",
         "アクション/バトル",
@@ -63,7 +88,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27460"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "コメディ/ギャグ",
         "アクション/バトル",
@@ -72,16 +97,28 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27460"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
-        "theme": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
         "motif": {
           "怪異・妖怪": [
+            "怪異",
+            "妖怪",
             "鬼"
           ],
           "犯罪・警察": [
-            "警察"
+            "警察",
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "怪異"
           ]
         }
       },

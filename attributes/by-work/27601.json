@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27601",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27601",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "チェリまほサマフェス",
+    "synopsis": "チェリまほサマフェス 豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊) 2.5次元舞台 魔法",
+    "staff_text": "原作:豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "71d43c7b9069b7a21d3c2552abad326b01928ef5fe5f60093387c9fc2ca61e46"
+  },
   "official_genres": [
     "2.5次元舞台"
   ],
@@ -10,8 +23,14 @@
   "original_credit": "豊田悠 「30歳まで童貞だと魔法使いになれるらしい」(掲載「ガンガンpixiv」スクウェア・エニックス刊)",
   "source_origin": "漫画",
   "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "2.5次元舞台",
+    "ファンタジー",
+    "現代ファンタジー",
     "魔法"
   ],
   "ontology_facets": {
@@ -19,7 +38,11 @@
       "漫画"
     ],
     "genre": [
-      "2.5次元舞台"
+      "2.5次元舞台",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
     ],
     "setting": [],
     "theme": [],
@@ -30,6 +53,7 @@
       "2.5次元舞台"
     ]
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -46,7 +70,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27601"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "2.5次元舞台"
       ],
@@ -54,19 +78,24 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27601"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "2.5次元舞台"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27601"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
             "魔法"
           ]
         }

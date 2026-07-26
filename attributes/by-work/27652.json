@@ -1,8 +1,21 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27652",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27652",
   "attribute_fetched_at": "2026-07-25T10:36:27.399Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "MANKAI MOVIE『A3!』~AUTUMN & WINTER~",
+    "synopsis": "MANKAI MOVIE『A3!』~AUTUMN & WINTER~ MANKAI STAGE『A3!』 ドラマ・青春 友情・仲間 絆",
+    "staff_text": "原作:MANKAI STAGE『A3!』",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2022,
+    "source": "legacy-derived",
+    "sha256": "c5838cb8ea859db0d05a12f617bb01348543d9924168a15690f366871fde9c39"
+  },
   "official_genres": [
     "ドラマ/青春"
   ],
@@ -10,22 +23,35 @@
   "original_credit": "MANKAI STAGE『A3!』",
   "source_origin": null,
   "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "ドラマ・青春",
-    "友情・仲間"
+    "SF",
+    "友情・仲間",
+    "成長・挑戦",
+    "人工知能"
   ],
   "ontology_facets": {
     "source": [],
     "genre": [
-      "ドラマ・青春"
+      "ドラマ・青春",
+      "SF"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [
-      "友情・仲間"
+      "友情・仲間",
+      "成長・挑戦"
     ],
-    "motif": [],
+    "motif": [
+      "人工知能"
+    ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -40,7 +66,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27652"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "ドラマ/青春"
       ],
@@ -48,22 +74,32 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27652"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "ドラマ/青春"
       ],
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27652"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {
           "友情・仲間": [
+            "友情",
+            "仲間",
             "絆"
+          ],
+          "成長・挑戦": [
+            "青春"
           ]
         },
-        "motif": {}
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27652"
     }

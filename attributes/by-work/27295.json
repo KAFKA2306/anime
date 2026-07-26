@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27295",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27295",
   "attribute_fetched_at": "2026-07-25T10:57:37.747Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "殺し屋さん",
+    "synopsis": "殺し屋さん 「殺し屋さん」タマちく.(双葉社 漫画アクション) バトル・アクション ホラー・サスペンス・ミステリー 犯罪・警察 警察 刑事",
+    "staff_text": "原作:「殺し屋さん」タマちく.(双葉社 漫画アクション)",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2013,
+    "source": "legacy-derived",
+    "sha256": "1334e201316661ee52a7f52ada989aeff6a64dd716e355dd49ecea49a2bafe8c"
+  },
   "official_genres": [
     "アクション/バトル",
     "ホラー/サスペンス/推理"
@@ -11,6 +25,8 @@
   "original_credit": "「殺し屋さん」タマちく.(双葉社 漫画アクション)",
   "source_origin": "漫画",
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
     "ホラー・サスペンス・ミステリー",
@@ -24,6 +40,7 @@
       "バトル・アクション",
       "ホラー・サスペンス・ミステリー"
     ],
+    "subgenre": [],
     "setting": [],
     "theme": [],
     "motif": [
@@ -31,6 +48,7 @@
     ],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "verified",
     "primary_genre": "verified",
@@ -47,7 +65,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27295"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -56,7 +74,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27295"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "ホラー/サスペンス/推理"
@@ -64,16 +82,18 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27295"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {},
         "theme": {},
         "motif": {
           "犯罪・警察": [
             "警察",
-            "刑事"
+            "刑事",
+            "犯罪"
           ]
-        }
+        },
+        "subgenre": {}
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27295"
     }

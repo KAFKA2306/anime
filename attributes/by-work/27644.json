@@ -1,8 +1,22 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
   "work_id": "27644",
   "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27644",
   "attribute_fetched_at": "2026-07-25T10:36:15.580Z",
+  "cache_status": "legacy-cache-reused",
+  "official_snapshot": {
+    "title": "『キン肉マン』完璧超人始祖編",
+    "synopsis": "『キン肉マン』完璧超人始祖編 ゆでたまご(集英社『週刊プレイボーイ』『週プレNEWS』連載中) バトル・アクション コメディ・ギャグ 宇宙 友情・仲間 音楽・アイドル サバイバル 友情 仲間 アイドル",
+    "staff_text": "原作:ゆでたまご(集英社『週刊プレイボーイ』『週プレNEWS』連載中)",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2024,
+    "source": "legacy-derived",
+    "sha256": "a26c4ae3f6cff2f66055c692f2916f5411b48c003afd64ada23456f656eb21a2"
+  },
   "official_genres": [
     "アクション/バトル",
     "コメディ/ギャグ"
@@ -11,9 +25,15 @@
   "original_credit": "ゆでたまご(集英社『週刊プレイボーイ』『週プレNEWS』連載中)",
   "source_origin": null,
   "primary_genre": "バトル・アクション",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
   "canonical_tags": [
     "バトル・アクション",
+    "SF",
     "コメディ・ギャグ",
+    "スペースオペラ",
     "宇宙",
     "友情・仲間",
     "音楽・アイドル",
@@ -23,7 +43,11 @@
     "source": [],
     "genre": [
       "バトル・アクション",
+      "SF",
       "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
     ],
     "setting": [
       "宇宙"
@@ -36,6 +60,7 @@
     "motif": [],
     "format": []
   },
+  "classification_status": "classified",
   "attribute_confidence": {
     "source_origin": "unknown",
     "primary_genre": "verified",
@@ -50,7 +75,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27644"
     },
     "primary_genre": {
-      "rule_id": "genre.first-official-genre",
+      "rule_id": "genre.first-official-non-speculative",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -59,7 +84,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27644"
     },
     "canonical_tags": {
-      "rule_id": "tags.official-plus-ontology-v1",
+      "rule_id": "tags.official-plus-ontology-v2",
       "official_genres": [
         "アクション/バトル",
         "コメディ/ギャグ"
@@ -67,7 +92,7 @@
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27644"
     },
     "ontology_facets": {
-      "rule_id": "ontology.keyword-plus-official-metadata-v1",
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
       "matched_terms": {
         "setting": {
           "宇宙": [
@@ -80,13 +105,19 @@
             "仲間"
           ],
           "音楽・アイドル": [
+            "音楽",
             "アイドル"
           ],
           "サバイバル": [
             "サバイバル"
           ]
         },
-        "motif": {}
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
       },
       "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27644"
     }
