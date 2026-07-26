@@ -1,0 +1,76 @@
+name: Audit retag run
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-retag-run.yml'
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Keep one active retag run and record status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics
+          gh api \
+            "repos/${GITHUB_REPOSITORY}/actions/workflows/retag-ontology-v2.yml/runs?per_page=20" \
+            > /tmp/runs-before.json
+
+          mapfile -t ACTIVE_IDS < <(
+            jq -r '[.workflow_runs[] | select(.status == "queued" or .status == "in_progress")] | sort_by(.created_at) | .[].id' \
+              /tmp/runs-before.json
+          )
+
+          if (( ${#ACTIVE_IDS[@]} > 1 )); then
+            KEEP_ID="${ACTIVE_IDS[0]}"
+            for RUN_ID in "${ACTIVE_IDS[@]:1}"; do
+              echo "Cancelling duplicate active retag run ${RUN_ID}; keeping ${KEEP_ID}."
+              gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${RUN_ID}/cancel"
+            done
+            sleep 5
+          fi
+
+          gh api \
+            "repos/${GITHUB_REPOSITORY}/actions/workflows/retag-ontology-v2.yml/runs?per_page=20" \
+            > /tmp/runs-after.json
+
+          jq '{
+            audited_at: (now | todateiso8601),
+            workflow: "retag-ontology-v2.yml",
+            runs: [.workflow_runs[] | {
+              id,
+              run_number,
+              event,
+              display_title,
+              head_sha,
+              status,
+              conclusion,
+              created_at,
+              updated_at,
+              html_url
+            }]
+          }' /tmp/runs-after.json > diagnostics/retag-workflow-status.json
+
+      - name: Commit workflow audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diagnostics/retag-workflow-status.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Record ontology retag workflow status'
+          git push
