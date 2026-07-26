@@ -1,6 +1,10 @@
 name: Offline retag all years
 
 on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/retag-all-years.trigger'
   issues:
     types: [opened]
   workflow_dispatch:
@@ -16,14 +20,17 @@ concurrency:
 jobs:
   retag:
     if: >-
+      github.event_name == 'pull_request' ||
       github.event_name == 'workflow_dispatch' ||
       github.event.issue.title == '[automation] retag all years ontology v2'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      TARGET_BRANCH: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -74,7 +81,7 @@ jobs:
             exit 0
           fi
           git commit -m 'Regenerate all catalogue years with ontology v2'
-          git push origin HEAD:main
+          git push origin HEAD:"$TARGET_BRANCH"
 
       - name: Close trigger issue
         if: github.event_name == 'issues'
