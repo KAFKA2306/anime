@@ -1,0 +1,85 @@
+project:
+  id: kafka:anime
+  name: anime
+  repository: https://github.com/KAFKA2306/anime
+  pages: https://kafka2306.github.io/anime/
+  version: 0.1.0
+  updated: 2026-07-30
+  core_ontology: https://raw.githubusercontent.com/KAFKA2306/know/main/ontology/causal-evidence-core.yaml
+  schema: https://raw.githubusercontent.com/KAFKA2306/know/main/ontology/project.schema.json
+
+purpose:
+  problem: Acquire, normalize, classify, audit, and publish year-based anime catalog data without inferring unsupported attributes from titles or presentation order.
+  intended_decisions: [accept_record, reject_record, classification_confirmed, classification_review_required, publish, abort_update]
+  success_conditions:
+    - Official year tags, work IDs, titles, counters, and details remain source-traceable.
+    - Official metadata and normalized ontology facets are stored separately.
+    - Classification rules, evidence terms, confidence, and review status are retained.
+    - A failed acquisition never replaces the last validated dataset.
+  falsification_conditions:
+    - Work counts differ from the official counter.
+    - A title alone is used to assert source origin, genre, or exclusion criteria.
+    - A compound official genre is silently treated as a single normalized leaf class.
+    - Missing or partial source data is published as complete.
+
+scope:
+  included: [official year tags, work catalog, official counters, official work details, normalized genre and attribute facets, evidence records, browser-local recommendation state]
+  excluded: [inference from title alone, server-side personal profile storage, unsupported plot or source-origin assertions]
+  temporal: Catalog snapshots, source retrieval time, production year, and year-tag membership are explicit.
+  abstraction_level: Auditable catalog acquisition, classification ontology, and static publication.
+
+competency_questions:
+  - Which official source and snapshot support each work and counter?
+  - Which attributes are official metadata and which are normalized classifications?
+  - Which rule, source text, and detected evidence produced each tag?
+  - Which classifications are confirmed, low-confidence, or pending review?
+  - Did the acquisition complete atomically and preserve prior validated data on failure?
+
+domain_mapping:
+  System: AnimeCatalogPublicationSystem
+  State: [source snapshot state, catalog completeness state, classification state, publication state, browser preference state]
+  Action: [discover year tag, acquire page, enrich details, rebuild cache, classify work, validate dataset, publish site]
+  Process: [official API paging, official detail retrieval, cache reuse, deterministic classification, hash generation, atomic promotion]
+  Observation: [official JSON response, official detail snapshot, work counter, source text, browser click event]
+  Model: [attribute rule set, genre normalization, recommendation ranking, preference exclusion profile]
+  Requirement: [official-source traceability, count completeness, stable work identity, evidence-backed classification, cache integrity, atomic update]
+  Claim: [year membership, official title, official counter, source origin, primary genre, canonical tag, recommendation eligibility]
+  Evidence: [source URL, official snapshot, SHA-256, rule ID, detected term, manifest, validation diagnostic]
+  Decision: [accept_record, reject_record, classification_confirmed, classification_review_required, publish, abort_update]
+
+claims_and_evidence:
+  assertion_types: [ObservedFact, ReportedFact, CalculatedValue, ModelEstimate, RequirementAssertion, DecisionAssertion]
+  required_evidence:
+    OfficialCatalogFact: [official endpoint or page, work ID, retrieval time, source snapshot]
+    NormalizedAttribute: [rule ID, official genre or source text, detected term, confidence, classification status]
+    PublishedDataset: [manifest, year hashes, official count reconciliation, validation pass]
+  unknown_policy: Unsupported attributes remain empty or review-required; absence of evidence is not a negative classification.
+
+decision_rules:
+  - id: catalog-record-acceptance
+    when: Required identifiers and official values are valid and the work belongs to the exact official year tag.
+    result: accept_record
+  - id: classification-confirmation
+    when: A deterministic rule has explicit source evidence and passes ontology constraints.
+    result: classification_confirmed
+  - id: classification-insufficient-evidence
+    when: Evidence is absent, ambiguous, conflicting, or below the configured threshold.
+    result: classification_review_required
+  - id: atomic-publication
+    when: All pages complete, counts reconcile, hashes validate, and attribute checks pass.
+    result: publish
+  - id: acquisition-failure
+    when: HTTP, JSON, paging, count, continuity, hash, or ontology validation fails.
+    result: abort_update
+
+provenance:
+  sources: [dアニメストア official year-tag page, WS000106 responses, official work-detail pages, retained source snapshots]
+  generated_artifacts: [year-tags.json, by-year JSON, works.json, likes TSV, manifest.json, attribute caches, Pages assets]
+  agents: [acquisition scripts, Playwright, classification rules, validators, GitHub Actions, browser]
+  lineage: Work IDs connect official responses, snapshots, normalized facets, rule evidence, manifests, and published cards.
+
+validation:
+  structural: Required fields, types, unique work IDs, page counts, year continuity, and content hashes.
+  semantic: Official versus normalized values, leaf genre separation, allowed facets, confidence, and review state.
+  evidence: Source URLs, raw snapshots, rule IDs, detected terms, and snapshot hashes.
+  publication: Atomic data promotion, test suite, static build, GitHub Pages endpoint, and public artifact checks.
