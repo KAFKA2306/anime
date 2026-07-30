@@ -58,6 +58,21 @@ SFは宇宙、人工知能、ロボット、未来、時間移動、電脳など
 
 各属性レコードには`attribute_confidence`、`classification_status`、`attribute_evidence`を保存し、使用したルール、公式ジャンル、検出語、公式URLを追跡可能にします。未知の属性は推測で埋めず、空配列または要確認状態として保持します。
 
+## 因果・証拠プロジェクトオントロジー
+
+[`ontology/project.yaml`](ontology/project.yaml) は、既存の属性オントロジーを置換するものではありません。属性オントロジーが作品の原作・ジャンル・設定・テーマ・モチーフを記述する分野語彙であるのに対し、プロジェクトオントロジーは取得から公開までを次の共通構造で記述します。
+
+```text
+AnimeCatalogPublicationSystem
+  -> tag discovery / acquisition / enrichment / classification
+  -> official observations and retained snapshots
+  -> catalog and normalized-attribute claims
+  -> source, rule, confidence, hash and manifest evidence
+  -> accept / review-required / publish / abort-update decisions
+```
+
+公式値、正規化分類、計算値、推薦順位、要求、公開判定は異なる assertion type として保持します。根拠不足は否定ではなく、空配列または `classification_review_required` として扱います。
+
 ## キャッシュ優先・低負荷ポリシー
 
 属性キャッシュは単なる計算結果ではなく、再分類に必要な公式スナップショットを保存します。
