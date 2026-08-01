@@ -1,152 +1,105 @@
-# anime
+# anime — dアニメストア公開情報の年別ブラウザ
 
-`dアニメストア`の公開カタログを一次情報として、公式年別タグに属する作品、作品名、気になる登録数、監査可能な作品属性を取得・検証・公開するプロジェクトです。
+**公開サイト:** https://kafka2306.github.io/anime/
 
-## 公開ページ
+このプロジェクトは、dアニメストアの公開カタログをもとに、年別作品一覧、作品名、気になる登録数、原作・ジャンル・設定などの監査可能な属性を取得・整理・公開します。
 
-- [年別アニメ作品ブラウザ（GitHub Pages）](https://kafka2306.github.io/anime/)
+作品名だけから属性を推測せず、公式の公開情報、保存したスナップショット、明示的な分類ルールを使います。
 
-## データの正
+## できること
 
-作品一覧と数値は、dアニメストアの公開JSONレスポンス`WS000106`を正とします。
+- 年ごとの作品一覧を表示
+- 作品名やタグで検索
+- 気になる登録数による年度内ランキング
+- 原作系統、主ジャンル、設定、テーマ、モチーフを表示
+- SFとファンタジーを別の属性として分類
+- クリック履歴を使ったブラウザ内の簡易推薦
+- 取得元、分類根拠、信頼度、ハッシュを監査
 
-- 年とタグID: 公式年別タグ選択ページの完全一致リンク
-- 作品ID: `workList[].workId`
-- 作品名: `workList[].workInfo.workTitle`
-- 気になる登録数: `workList[].workInfo.favoriteCount`
-- マイリスト数: `workList[].workInfo.myListCount`
-- 公称作品数: `data.maxCount`
+## データの正本
 
-DOM上の画像alt、カード本文、掲載順から作品名や登録数を推定しません。Playwrightは年タグの発見と公式作品詳細の属性取得にのみ使用し、各年の作品取得は公式JSONを直接ページングします。
+作品一覧と公式カウンターは、dアニメストアの公開JSONレスポンス`WS000106`を基準にします。
 
-## 生成データ
+- 年とタグID — 公式年別タグ選択ページの完全一致リンク
+- 作品ID — `workList[].workId`
+- 作品名 — `workList[].workInfo.workTitle`
+- 気になる登録数 — `workList[].workInfo.favoriteCount`
+- マイリスト数 — `workList[].workInfo.myListCount`
+- 公称作品数 — `data.maxCount`
 
-- `data/source/year-tags.json`: 公式タグ選択ページから発見した年とタグID
-- `data/by-year/YYYY.json`: 各年タグに属する全作品、公式カウンター、属性
-- `data/works.json`: `work_id`を主キーとして統合した正規作品一覧
-- `data/likes/YYYY.tsv`: 公式`favoriteCount`から生成した並び替え用データ
-- `data/manifest.json`: 年数、作品数、取得元、完全性、各年の内容ハッシュ、属性スキーマ
-- `attributes/by-work/<work_id>.json`: 公式作品詳細から作成した監査・再分類可能な属性キャッシュ
+DOM上の表示順、画像alt、カード本文から作品数値を推定しません。
 
-最新の件数は`data/manifest.json`を正とします。
+## 主な生成データ
 
-## 属性オントロジー v2
+| ファイル | 内容 |
+| --- | --- |
+| `data/source/year-tags.json` | 公式ページから取得した年とタグID |
+| `data/by-year/YYYY.json` | 年ごとの全作品と公式カウンター |
+| `data/works.json` | 作品IDを主キーに統合した作品一覧 |
+| `data/likes/YYYY.tsv` | 気になる登録数の並び替え用データ |
+| `data/manifest.json` | 件数、取得元、完全性、内容ハッシュ |
+| `attributes/by-work/<work_id>.json` | 作品ごとの公式スナップショットと属性 |
 
-属性は公式ジャンル、公式作品詳細の原作表記、あらすじから、決定論的なルールで付与します。作品名だけを根拠に原作種別や除外条件を推定しません。
+最新の取得件数は`data/manifest.json`を正とします。
 
-### SFとファンタジーの分離
+## 属性の考え方
 
-dアニメストアの公式ジャンル`SF/ファンタジー`は、出典メタデータ`official_genres`にはそのまま保存します。一方、検索・表示・推薦に使う正規属性では次の独立した葉分類へ分解します。
+### 原作系統
 
-- `speculative_genres`: `SF`、`ファンタジー`の0〜2要素
-- `primary_genre`: 主となる分類。`SF`、`ファンタジー`、`異世界・ハイファンタジー`、`クロスジャンル`など
-- `canonical_tags`: `SF・ファンタジー`という複合タグは使用しない
-- 根拠不足: `スペキュレーティブ判定保留`として明示し、推測で二択しない
+- Web小説
+- 漫画
+- ライトノベル・小説
+- ゲーム
+- ビジュアルノベル
+- オリジナル
 
-SFは宇宙、人工知能、ロボット、未来、時間移動、電脳など、ファンタジーは魔法、異世界、王国、騎士、精霊、ドラゴンなどの明示的な語を独立に評価します。両方の根拠がある場合は両方の葉タグを保持します。
+### 主なファセット
 
-### ファセット
+- `genre` — SF、ファンタジー、異世界・ハイファンタジーなど
+- `subgenre` — スペースオペラ、ロボットSF、サイバーパンクなど
+- `setting` — 異世界、学園、宇宙、近未来、現代日本など
+- `theme` — 成長、家族、恋愛、政治、サバイバルなど
+- `motif` — 魔法、ロボット、怪異、人工知能、VRなど
+- `format` — ショート、舞台、ライブ・ラジオなど
 
-- `source_origin`: Web小説、漫画、ライトノベル・小説、ゲーム、ビジュアルノベル、オリジナル
-- `ontology_facets.source`: 原作系統
-- `ontology_facets.genre`: 主ジャンル、SF／ファンタジーの葉分類、公式ジャンルの正規化値
-- `ontology_facets.subgenre`: 異世界ファンタジー、スペースオペラ、ロボットSF、サイバーパンク、時間SFなど
-- `ontology_facets.setting`: 異世界、学園、宇宙、近未来、現代日本、歴史・時代劇、終末・ディストピア、職場、田舎・地方
-- `ontology_facets.theme`: 友情・仲間、成長・挑戦、家族、恋愛、音楽・アイドル、料理・グルメ、推理・謎解き、政治・戦略、サバイバル、職業・仕事、復讐、戦争、旅・冒険など
-- `ontology_facets.motif`: 魔法、ロボット・メカ、怪獣、怪異・妖怪、犯罪・警察、医療、ゲーム世界、時間移動、超能力、人工知能、電脳・VRなど
-- `ontology_facets.format`: ショート、2.5次元舞台、ライブ・ラジオ・その他
+公式ジャンル`SF/ファンタジー`は出典値として保存し、検索用の正規属性ではSFとファンタジーを独立に判定します。根拠不足は無理に埋めず、空配列または要確認状態にします。
 
-各属性レコードには`attribute_confidence`、`classification_status`、`attribute_evidence`を保存し、使用したルール、公式ジャンル、検出語、公式URLを追跡可能にします。未知の属性は推測で埋めず、空配列または要確認状態として保持します。
+機械可読な取得・分類・公開の定義は[`ontology/project.yaml`](ontology/project.yaml)にあります。
 
-## 因果・証拠プロジェクトオントロジー
+## 推薦と嗜好除外
 
-[`ontology/project.yaml`](ontology/project.yaml) は、既存の属性オントロジーを置換するものではありません。属性オントロジーが作品の原作・ジャンル・設定・テーマ・モチーフを記述する分野語彙であるのに対し、プロジェクトオントロジーは取得から公開までを次の共通構造で記述します。
+`HOT RECOMMEND`は、現在表示している年度の気になる登録数と、同じブラウザ内のクリック履歴を組み合わせます。履歴は`localStorage`へ保存し、外部へ送信しません。
 
-```text
-AnimeCatalogPublicationSystem
-  -> tag discovery / acquisition / enrichment / classification
-  -> official observations and retained snapshots
-  -> catalog and normalized-attribute claims
-  -> source, rule, confidence, hash and manifest evidence
-  -> accept / review-required / publish / abort-update decisions
-```
-
-公式値、正規化分類、計算値、推薦順位、要求、公開判定は異なる assertion type として保持します。根拠不足は否定ではなく、空配列または `classification_review_required` として扱います。
-
-## キャッシュ優先・低負荷ポリシー
-
-属性キャッシュは単なる計算結果ではなく、再分類に必要な公式スナップショットを保存します。
-
-- `official_snapshot.title`
-- `official_snapshot.synopsis`
-- `official_snapshot.staff_text`
-- `official_snapshot.official_genres`
-- `official_snapshot.production_year`
-- `official_snapshot.sha256`
-- `official_snapshot.source`
-
-通常のタグ体系変更では`npm run attributes:rebuild-cache`を実行し、ローカルキャッシュだけから全属性を再計算します。この処理のdアニメストア向けネットワークリクエストは0件です。
-
-`attributes:enrich`もキャッシュ優先です。
-
-1. 完全スナップショットがあれば再利用して再分類
-2. 旧形式キャッシュがあれば、既存の原作表記・タグ根拠・検出語を再利用
-3. キャッシュが存在しない作品だけ公式詳細へアクセス
-4. `DANIME_ENRICH_BACKFILL_RAW=1`を明示した場合のみ、旧形式キャッシュの原文スナップショットを一度だけ補完
-5. ネットワーク要求数が予算を超えた場合は実行を中止
-
-取得時は同時実行数を既定1、作品間隔を既定1.8秒とし、画像・動画・フォント・スタイルシートを取得しません。2025年の既存307作品は、一度だけ原文スナップショットを補完した後、以後のオントロジー更新ではキャッシュを再利用します。
-
-## 表示・推薦
-
-公開ページではカードごとに次を簡易表示します。
-
-- 気になる登録数と年度内順位
-- 原作系統、主ジャンル、正規タグ、オントロジーファセット
-- 作品名またはタグによる検索
-- タグクリックによる年度内ランキング
-
-`HOT RECOMMEND`は、現在表示している年度の作品に対して、気になる登録数とブラウザ内のクリック履歴を組み合わせて順位付けします。クリック履歴は`localStorage`の`kafka2306-anime-click-history-v1`へ最大100作品分保存し、サーバーや外部サービスへ送信しません。画面上から履歴をリセットできます。
-
-嗜好除外は次のいずれかに一致した作品へ適用します。
+次のいずれかに一致する作品は嗜好除外の対象です。
 
 - 原作: `Web小説（なろう・カクヨム系）`
 - 主ジャンル: `異世界・ハイファンタジー`
 - 正規タグ: `バトル・アクション`
 
-## 取得フロー
+## 取得・更新の流れ
 
-1. 公式タグ選択ページから、表示が`YYYY年`と完全一致するリンクだけを抽出します。
-2. 各タグについて公式`/animestore/rest/WS000106`を一定間隔で順次取得します。
-3. `data.maxCount`に達するまで固定ページサイズでページングします。
-4. 作品ID、作品名、気になる登録数、マイリスト数、画像URLなどを厳格に検証します。
-5. 年内の一意な作品ID数を公式`maxCount`と照合します。
-6. 公式作品詳細または既存キャッシュから原作表記、公式ジャンル、あらすじ、製作年を読み、属性オントロジーを生成します。
-7. 安定項目から年別SHA-256を生成し、manifestと年別ファイルの一致を検証します。
-8. 全年度の取得と検証が成功した場合だけ、ステージング領域を`data/`へ原子的に昇格します。
+```text
+年タグを公式ページから取得
+  → 公開JSONをページング
+  → 件数・ID・値を検証
+  → 公式詳細または既存キャッシュから属性を生成
+  → SHA-256とmanifestを検証
+  → 全年度が成功した場合だけdata/を更新
+  → GitHub Pagesへ公開
+```
 
-取得途中でHTTPエラー、JSON破損、ページング停止、件数不一致が発生した場合、既存の検証済み`data/`は保持されます。
+途中でHTTPエラー、JSON破損、ページング停止、件数不一致が起きた場合は、既存の検証済みデータを保持します。
 
-## 防御策
+## 低負荷・キャッシュ優先
 
-- キャッシュ優先の再分類
-- ネットワーク要求数の明示的な上限
-- 低い同時実行数とリクエスト間隔
-- 不要リソースの遮断
-- 408、425、429、5xxに対する指数バックオフ付き再試行
-- 応答の`resultCd`、`selfLink`、タグIDの一致確認
-- ページ内`count`と`workList.length`の一致確認
-- ページングが進まない場合の即時失敗
-- 年タグの連続性確認
-- 総所属件数の異常減少ガード
-- 年内重複、空年度、タイトル欠損、公式カウンター欠損の検出
-- 公式値から生成した`data/likes/YYYY.tsv`との一致検証
-- 属性値、根拠URL、原文スナップショットハッシュの保存
-- `SF・ファンタジー`複合正規タグの残存検査
+- 既存の公式スナップショットを優先利用
+- 通常の分類変更ではネットワーク要求なしで再分類
+- 同時実行数と要求間隔を制限
+- 画像、動画、フォント、CSSなど不要な取得を遮断
+- 408、425、429、5xxを指数バックオフで再試行
+- ネットワーク要求数が予算を超えた場合は中止
 
-## 差分監査
-
-取得診断には、年度別の追加・削除作品ID、タイトル変更数、気になる登録数変更数を記録します。属性診断には、年度別のタグ付与率、SF件数、ファンタジー件数、クロスジャンル件数、要確認件数、完全スナップショット件数を記録します。
+各サイトの利用規約と権利を優先してください。
 
 ## ローカル実行
 
@@ -160,56 +113,14 @@ npm run attributes:verify
 npm run validate
 ```
 
-特定年度だけ公式応答を診断する場合:
+特定年度だけ取得を診断する場合:
 
 ```bash
 DANIME_YEAR=2025 npm run acquire
 ```
 
-2025年の旧形式キャッシュだけ原文スナップショットを一度補完する場合:
+## 注意
 
-```bash
-DANIME_ENRICH_YEAR=2025 \
-DANIME_ENRICH_BACKFILL_RAW=1 \
-DANIME_ENRICH_CONCURRENCY=1 \
-DANIME_ENRICH_RATE_LIMIT_MS=1800 \
-DANIME_ENRICH_NETWORK_BUDGET=307 \
-npm run attributes:enrich
-```
+このプロジェクトはdアニメストア公式によるものではありません。掲載情報は取得時点の公開情報であり、配信状況や公式分類の最新状態は公式サイトを確認してください。
 
-明示的な強制再取得は通常運用では使用しません。
-
-```bash
-DANIME_ENRICH_YEAR=2025 DANIME_ENRICH_REFRESH=1 npm run attributes:enrich
-```
-
-主な環境変数:
-
-```text
-DANIME_RATE_LIMIT_MS=1200
-DANIME_API_PAGE_SIZE=20
-DANIME_MAX_RETRIES=5
-DANIME_REQUEST_TIMEOUT_MS=45000
-DANIME_MAX_TOTAL_DROP_RATIO=0.10
-DANIME_ENRICH_CONCURRENCY=1
-DANIME_ENRICH_RATE_LIMIT_MS=1800
-DANIME_ENRICH_NETWORK_BUDGET=100
-DANIME_ENRICH_BACKFILL_RAW=0
-```
-
-## CI更新
-
-通常のカタログ更新は全検証に成功し、公式データに差分がある場合だけ更新をコミットします。オントロジーv2移行ワークフローは、全キャッシュをオフライン再分類し、2025年の原文スナップショットだけを一度補完してから、100%カバレッジとSF／ファンタジー分離を検証します。生成データだけのコミットでは移行ワークフローを再起動しません。
-
-## 取得範囲
-
-- 取得元は`https://animestore.docomo.ne.jp`の公開カタログ情報のみ
-- ログイン、動画データ、ユーザー情報、レビューは取得しない
-- 画像自体は複製せず、公式画像URLだけを保存する
-- 配信状況や作品情報の最終確認は公式ページを参照する
-
-## 一次情報
-
-- 年別タグ選択: `https://animestore.docomo.ne.jp/animestore/tag_sel_pc`
-- 公式作品一覧JSON: `https://animestore.docomo.ne.jp/animestore/rest/WS000106`
-- dアニメストア利用規約: `https://animestore.docomo.ne.jp/animestore/CF/acceptable_use_policy_pc`
+**README最終監査:** 2026-08-01
