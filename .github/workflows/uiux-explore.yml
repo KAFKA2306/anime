@@ -1,0 +1,29 @@
+name: Validate shareable anime explorer
+on:
+  pull_request:
+    paths:
+      - "explore/**"
+      - ".github/workflows/uiux-explore.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.18.0"
+      - run: node --check explore/explore.js
+      - name: Validate URL, history, focus and a11y contracts
+        run: |
+          grep -q "params\|URLSearchParams" explore/explore.js
+          grep -q "popstate" explore/explore.js
+          grep -q "localStorage" explore/explore.js
+          grep -q "state.limit+=PAGE" explore/explore.js
+          grep -q "#results').focus" explore/explore.js
+          grep -q 'id="error".*role="alert"' explore/index.html
+          grep -q 'aria-live="polite"' explore/index.html
+          grep -q 'min-height:44px' explore/explore.css
+          grep -q 'prefers-reduced-motion' explore/explore.css
