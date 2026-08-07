@@ -11,6 +11,10 @@ on:
       - tag-ranking.css
       - tag-ranking.js
       - data/**
+      - scripts/build-catalog-api.mjs
+      - tests/catalog-api.test.mjs
+      - docs/catalog-api.md
+      - package.json
       - .github/workflows/pages.yml
   pull_request:
     paths:
@@ -20,6 +24,10 @@ on:
       - tag-ranking.css
       - tag-ranking.js
       - data/**
+      - scripts/build-catalog-api.mjs
+      - tests/catalog-api.test.mjs
+      - docs/catalog-api.md
+      - package.json
       - .github/workflows/pages.yml
   workflow_dispatch:
 
@@ -33,11 +41,17 @@ concurrency:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate static application
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate static application and data
         run: |
           set -euo pipefail
           test -s index.html
@@ -46,11 +60,19 @@ jobs:
           test -s tag-ranking.css
           test -s tag-ranking.js
           test -s data/manifest.json
+          test -s data/works.json
           test -d data/by-year
           test -s data/likes/2024.tsv
           node --check app.js
           node --check tag-ranking.js
+          node scripts/validate-data.mjs
+          node --test tests/catalog-api.test.mjs
+          node scripts/build-catalog-api.mjs
           python -m json.tool data/manifest.json > /dev/null
+          python -m json.tool api/v1/manifest.json > /dev/null
+          python -m json.tool api/v1/works.json > /dev/null
+          python -m json.tool api/v1/facets.json > /dev/null
+          test "$(node -p "JSON.parse(require('fs').readFileSync('api/v1/manifest.json')).counts.works")" = "$(node -p "JSON.parse(require('fs').readFileSync('data/manifest.json')).canonical_work_count")"
           grep -F '2026-07-25-all-years-tags-1' index.html
           grep -F 'tag-ranking.css' index.html
           grep -F 'tag-ranking.js' index.html
@@ -78,12 +100,21 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf _site
-          mkdir -p _site/data/by-year _site/data/likes
+          mkdir -p _site/data/by-year _site/data/likes _site/api
           cp index.html styles.css app.js tag-ranking.css tag-ranking.js _site/
           cp data/manifest.json _site/data/
           cp data/by-year/*.json _site/data/by-year/
           cp data/likes/*.tsv _site/data/likes/
+          cp -R api/v1 _site/api/
           touch _site/.nojekyll
+
+      - name: Upload API audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: anime-catalog-api-v1
+          path: api/v1
+          retention-days: 30
+          if-no-files-found: error
 
       - name: Publish the configured gh-pages source
         if: github.event_name != 'pull_request'
