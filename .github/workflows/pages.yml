@@ -53,7 +53,7 @@ jobs:
 
       - name: Validate static application and data
         run: |
-          set -euo pipefail
+          set -euxo pipefail
           test -s index.html
           test -s styles.css
           test -s app.js
