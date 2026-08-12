@@ -14,6 +14,7 @@
     "api:build": "node scripts/build-catalog-api.mjs",
     "api:verify": "node --test tests/catalog-api.test.mjs && npm run api:build",
     "validate": "node scripts/validate-data.mjs",
+    "verify:ratchet": "node scripts/verify-repository-ratchet.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
