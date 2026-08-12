@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 22
-      - run: npm ci
+      - run: npm install --no-package-lock
       - name: Verify canonical repository flow
         run: npm run verify:ratchet
       - name: Run existing tests
@@ -27,5 +27,6 @@ jobs:
         run: npm run validate
       - name: Verify clean checkout
         run: |
+          rm -rf node_modules
           git status --porcelain --untracked-files=all
           test -z "$(git status --porcelain --untracked-files=all)"
