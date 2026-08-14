@@ -1,54 +1,83 @@
 # anime — dアニメストア公開情報の年別ブラウザ
 
-**「SF/ファンタジー」と公式に一括りにされていても、このデータベースでは同じ属性にはしない。**
+**「SF/ファンタジー」と公式に一括りにされていても、探すときまで同じ属性にする必要はない。**
 
-作品名や大きなカテゴリだけで分類すると、「公式が何を公開したか」と「検索のためにどう解釈したか」が混ざります。このプロジェクトでは、公式値を出典として残したまま、SFとファンタジー、原作系統、設定、テーマ、モチーフを根拠付きの別属性として扱います。
+`anime` は、dアニメストアの公開カタログを保存しながら、**公式が公開した値と、検索のために追加した分類を分けたまま年別に作品を探せるブラウザ**です。
 
-**公開サイト:** https://kafka2306.github.io/anime/
+- 公開サイト: https://kafka2306.github.io/anime/
 
-このプロジェクトは、dアニメストアの公開カタログをもとに、年別作品一覧、作品名、気になる登録数、原作・ジャンル・設定などの監査可能な属性を取得・整理・公開します。
+## Vision
 
-作品名だけから属性を推測せず、公式の公開情報、保存したスナップショット、明示的な分類ルールを使います。
+アニメ探しを「大きな公式カテゴリから一覧を眺める」体験から、**原作・ジャンル・設定・テーマ・モチーフを横断して、自分が見たい作品へ理由付きで辿れる探索**へ変えます。
 
-## できること
+同時に、検索しやすくするための分類が、公式の事実へすり替わらないことを重視します。
 
-- 年ごとの作品一覧を表示
-- 作品名やタグで検索
-- 気になる登録数による年度内ランキング
-- 原作系統、主ジャンル、設定、テーマ、モチーフを表示
-- SFとファンタジーを別の属性として分類
-- クリック履歴を使ったブラウザ内の簡易推薦
-- 取得元、分類根拠、信頼度、ハッシュを監査
+## Design philosophy
 
-## データの正本
+- **Official observation and derived facet stay separate.** dアニメストアの値と独自分類を同じ属性として保存しない。
+- **Title is not evidence.** 作品名だけからSF、異世界、AI等を推測しない。
+- **Empty is better than invented.** 根拠不足のfacetは空配列 / review-requiredとして残す。
+- **Snapshot before reclassification.** 保存済み公式snapshotを基準に、分類ruleだけをnetworkなしで再実行できる。
+- **Acquisition is fail-close.** HTTP error、JSON破損、paging停止、件数不一致で既存verified dataを上書きしない。
+- **Recommendation stays local.** click historyはbrowser `localStorage`だけに置き、外部へ送らない。
+- **Source load stays bounded.** cache優先・request budget・backoffで取得元へ不要な負荷をかけない。
 
-作品一覧と公式カウンターは、dアニメストアの公開JSONレスポンス`WS000106`を基準にします。
+## Why / 差別化
 
-- 年とタグID — 公式年別タグ選択ページの完全一致リンク
-- 作品ID — `workList[].workId`
-- 作品名 — `workList[].workInfo.workTitle`
-- 気になる登録数 — `workList[].workInfo.favoriteCount`
-- マイリスト数 — `workList[].workInfo.myListCount`
-- 公称作品数 — `data.maxCount`
+一般的なanime catalogでは、「公式genre」と「サイト独自tag」が同じfilterに見えることがあります。本repoは、**作品を探しやすくする解釈を追加しながら、それが公式情報ではないことを機械的に追跡できる**点を中心にします。
 
-DOM上の表示順、画像alt、カード本文から作品数値を推定しません。
+特に公式値 `SF/ファンタジー` はsource observationとして保持し、検索facetではSFとファンタジーを独立に扱います。検索性のために公式情報を書き換えません。
 
-## 主な生成データ
+## User journey
 
-| ファイル | 内容 |
-| --- | --- |
-| `data/source/year-tags.json` | 公式ページから取得した年とタグID |
-| `data/by-year/YYYY.json` | 年ごとの全作品と公式カウンター |
-| `data/works.json` | 作品IDを主キーに統合した作品一覧 |
-| `data/likes/YYYY.tsv` | 気になる登録数の並び替え用データ |
-| `data/manifest.json` | 件数、取得元、完全性、内容ハッシュ |
-| `attributes/by-work/<work_id>.json` | 作品ごとの公式スナップショットと属性 |
+```text
+年度を選ぶ
+  → title / facetで絞る
+  → official observationとderived facetを読む
+  → 気になる登録数等を同年度内で比較
+  → 必要ならsource/provenanceを確認
+  → 視聴先の最新情報は公式siteで確認
+```
 
-最新の取得件数は`data/manifest.json`を正とします。
+## What you can do
 
-## 属性の考え方
+- 年別作品一覧
+- title / tag search
+- 気になる登録数による年度内ranking
+- 原作系統 / genre / setting / theme / motif表示
+- SFとfantasyを独立facetとして探索
+- local click historyを使う簡易recommendation
+- source / classification rationale / confidence / hash audit
 
-### 原作系統
+## Canonical source
+
+作品一覧と公式counterは、dアニメストアの公開JSON response `WS000106` を基準にします。
+
+- year / tag ID — official year-tag pageのexact link
+- work ID — `workList[].workId`
+- title — `workList[].workInfo.workTitle`
+- favorite count — `workList[].workInfo.favoriteCount`
+- my list count — `workList[].workInfo.myListCount`
+- advertised count — `data.maxCount`
+
+DOMの表示順・image alt・card textから公式counterを推定しません。
+
+## Canonical data
+
+| path | role |
+|---|---|
+| `data/source/year-tags.json` | official year/tag mapping |
+| `data/by-year/YYYY.json` | yearly official observations |
+| `data/works.json` | Work ID based merged catalog |
+| `data/likes/YYYY.tsv` | favorite-count ordering |
+| `data/manifest.json` | count / source / completeness / content hash |
+| `attributes/by-work/<work_id>.json` | official snapshot + derived facets |
+
+最新件数は`data/manifest.json`を正とします。
+
+## Facet model
+
+原作系統例:
 
 - Web小説
 - 漫画
@@ -57,55 +86,58 @@ DOM上の表示順、画像alt、カード本文から作品数値を推定し�
 - ビジュアルノベル
 - オリジナル
 
-### 主なファセット
+主なfacet:
 
-- `genre` — SF、ファンタジー、異世界・ハイファンタジーなど
-- `subgenre` — スペースオペラ、ロボットSF、サイバーパンクなど
-- `setting` — 異世界、学園、宇宙、近未来、現代日本など
-- `theme` — 成長、家族、恋愛、政治、サバイバルなど
-- `motif` — 魔法、ロボット、怪異、人工知能、VRなど
-- `format` — ショート、舞台、ライブ・ラジオなど
+- `genre`
+- `subgenre`
+- `setting`
+- `theme`
+- `motif`
+- `format`
 
-公式ジャンル`SF/ファンタジー`は出典値として保存し、検索用の正規属性ではSFとファンタジーを独立に判定します。根拠不足は無理に埋めず、空配列または要確認状態にします。
+公式genreとderived facetは別layerです。
 
-機械可読な取得・分類・公開の定義は[`ontology/project.yaml`](ontology/project.yaml)にあります。
+Machine-readable contract: [`ontology/project.yaml`](ontology/project.yaml)
 
-## 推薦と嗜好除外
+## Recommendation / preference boundary
 
-`HOT RECOMMEND`は、現在表示している年度の気になる登録数と、同じブラウザ内のクリック履歴を組み合わせます。履歴は`localStorage`へ保存し、外部へ送信しません。
+`HOT RECOMMEND`は現在年度のfavorite countと同browserのclick historyを組み合わせます。履歴は`localStorage`のみです。
 
-次のいずれかに一致する作品は嗜好除外の対象です。
+現行の嗜好除外例:
 
-- 原作: `Web小説（なろう・カクヨム系）`
-- 主ジャンル: `異世界・ハイファンタジー`
-- 正規タグ: `バトル・アクション`
+- source: `Web小説（なろう・カクヨム系）`
+- primary genre: `異世界・ハイファンタジー`
+- normalized tag: `バトル・アクション`
 
-## 取得・更新の流れ
+これは公式な作品評価ではなく、個人向けfiltering ruleです。
+
+## Acquisition flow
 
 ```text
-年タグを公式ページから取得
-  → 公開JSONをページング
-  → 件数・ID・値を検証
-  → 公式詳細または既存キャッシュから属性を生成
-  → SHA-256とmanifestを検証
-  → 全年度が成功した場合だけdata/を更新
-  → GitHub Pagesへ公開
+official year tags
+  → public JSON paging
+  → count / ID / value verification
+  → official detail or verified cache
+  → derived attributes
+  → SHA-256 / manifest validation
+  → atomic data update
+  → Pages
 ```
 
-途中でHTTPエラー、JSON破損、ページング停止、件数不一致が起きた場合は、既存の検証済みデータを保持します。
+途中failure時はverified dataを保持します。
 
-## 低負荷・キャッシュ優先
+## Low-load collection
 
-- 既存の公式スナップショットを優先利用
-- 通常の分類変更ではネットワーク要求なしで再分類
-- 同時実行数と要求間隔を制限
-- 画像、動画、フォント、CSSなど不要な取得を遮断
-- 408、425、429、5xxを指数バックオフで再試行
-- ネットワーク要求数が予算を超えた場合は中止
+- official snapshot cache優先
+- classification-only changeではnetwork不要
+- bounded concurrency / request interval
+- image / video / font / CSS等の不要fetchを遮断
+- 408 / 425 / 429 / 5xxをbackoff retry
+- request budget超過時は停止
 
-各サイトの利用規約と権利を優先してください。
+取得元のterms / rightsを優先します。
 
-## ローカル実行
+## Local verification
 
 ```bash
 npm install
@@ -117,14 +149,18 @@ npm run attributes:verify
 npm run validate
 ```
 
-特定年度だけ取得を診断する場合:
+Specific year diagnostic:
 
 ```bash
 DANIME_YEAR=2025 npm run acquire
 ```
 
-## 注意
+## Done
 
-このプロジェクトはdアニメストア公式によるものではありません。掲載情報は取得時点の公開情報であり、配信状況や公式分類の最新状態は公式サイトを確認してください。
+成功指標は分類tag数や収録作品数ではありません。
 
-**README最終監査:** 2026-08-01
+**利用者が作品を細かく探せる一方で、「これは公式が公開した値」「これは検索のための派生分類」と区別して判断できること**をDoneとします。
+
+## Notice
+
+本projectはdアニメストア公式によるものではありません。掲載情報は取得時点の公開情報です。最新の配信状況・公式分類は公式siteを確認してください。
