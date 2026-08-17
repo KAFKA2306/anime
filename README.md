@@ -1,5 +1,9 @@
 # anime — dアニメストア公開情報の年別ブラウザ
 
+[![Deploy GitHub Pages](https://github.com/KAFKA2306/anime/actions/workflows/pages.yml/badge.svg)](https://github.com/KAFKA2306/anime/actions/workflows/pages.yml)
+[![Verify live GitHub Pages](https://github.com/KAFKA2306/anime/actions/workflows/live-pages-smoke.yml/badge.svg)](https://github.com/KAFKA2306/anime/actions/workflows/live-pages-smoke.yml)
+[![Validate shareable anime explorer](https://github.com/KAFKA2306/anime/actions/workflows/uiux-explore.yml/badge.svg)](https://github.com/KAFKA2306/anime/actions/workflows/uiux-explore.yml)
+
 **「SF/ファンタジー」と公式に一括りにされていても、探すときまで同じ属性にする必要はない。**
 
 `anime` は、dアニメストアの公開カタログを保存しながら、**公式が公開した値と、検索のために追加した分類を分けたまま年別に作品を探せるブラウザ**です。
