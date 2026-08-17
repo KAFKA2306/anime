@@ -1,0 +1,132 @@
+{
+  "schema_version": "2.0.0",
+  "year": 1962,
+  "source_tag_id": "T0014688",
+  "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014688",
+  "generated_at": "2026-07-25T10:26:48.893Z",
+  "declared_count": 1,
+  "official_json_count": 1,
+  "count": 1,
+  "content_sha256": "27d2e44e077346aab8573595b9e1debf980960d557016479dbe7d48fac65be3c",
+  "works": [
+    {
+      "work_id": "24069",
+      "title": "手塚治虫実験アニメーション作品集",
+      "detail_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069",
+      "image_url": "https://cs1.animestore.docomo.ne.jp/anime/2/40/69/sC50YQ/24069_1_2.png?1594274456000",
+      "favorite_count": 1766,
+      "my_list_count": 1714,
+      "work_type_list": [
+        "anime"
+      ],
+      "work_icons": [],
+      "vod_type": "svod",
+      "age_limit_type": "0",
+      "extraction_method": "official-json-direct",
+      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014688",
+      "title_source": "official-json",
+      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014688",
+      "count_source": "official-json",
+      "count_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014688",
+      "extraction_sources": [
+        "official-json"
+      ],
+      "year": 1962,
+      "source_tag_id": "T0014688",
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014688",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069",
+      "attribute_fetched_at": "2026-07-25T10:43:44.975Z",
+      "official_genres": [
+        "ショート"
+      ],
+      "production_year": 1962,
+      "original_credit": null,
+      "source_origin": null,
+      "primary_genre": "ショート",
+      "canonical_tags": [
+        "ショート",
+        "SF",
+        "スペースオペラ",
+        "宇宙"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "ショート",
+          "SF"
+        ],
+        "subgenre": [
+          "スペースオペラ"
+        ],
+        "setting": [
+          "宇宙"
+        ],
+        "theme": [],
+        "motif": [],
+        "format": [
+          "ショート"
+        ]
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "verified",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.no-evidence",
+          "matched_terms": [],
+          "evidence_text": null,
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069"
+        },
+        "primary_genre": {
+          "rule_id": "genre.first-official-non-speculative",
+          "official_genres": [
+            "ショート"
+          ],
+          "matched_terms": [],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v2",
+          "official_genres": [
+            "ショート"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
+          "matched_terms": {
+            "setting": {
+              "宇宙": [
+                "宇宙"
+              ]
+            },
+            "theme": {},
+            "motif": {},
+            "subgenre": {
+              "スペースオペラ": [
+                "宇宙"
+              ]
+            }
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24069"
+        }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "not-applicable",
+      "classification_status": "classified"
+    }
+  ],
+  "attribute_coverage": {
+    "enriched_count": 1,
+    "total_count": 1,
+    "coverage_ratio": 1,
+    "ontology_version": "2.0.0"
+  }
+}

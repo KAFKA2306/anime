@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0.0",
+  "year": 1963,
+  "source_tag_id": "T0014799",
+  "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014799",
+  "generated_at": "2026-07-25T10:26:48.893Z",
+  "declared_count": 1,
+  "official_json_count": 1,
+  "count": 1,
+  "content_sha256": "2edbe2249ba4206dbe68767259d36946189acfd825e7d4f42063a000ae4a008f",
+  "works": [
+    {
+      "work_id": "24079",
+      "title": "鉄腕アトム (1963)",
+      "detail_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079",
+      "image_url": "https://cs1.animestore.docomo.ne.jp/anime/2/40/79/717Ujg/24079_1_2.png?1596072918000",
+      "favorite_count": 2671,
+      "my_list_count": 3061,
+      "work_type_list": [
+        "anime"
+      ],
+      "work_icons": [],
+      "vod_type": "svod",
+      "age_limit_type": "0",
+      "extraction_method": "official-json-direct",
+      "extraction_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014799",
+      "title_source": "official-json",
+      "title_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014799",
+      "count_source": "official-json",
+      "count_source_url": "https://animestore.docomo.ne.jp/animestore/rest/WS000106?length=20&mainKeyVisualSize=2&tagId=T0014799",
+      "extraction_sources": [
+        "official-json"
+      ],
+      "year": 1963,
+      "source_tag_id": "T0014799",
+      "source_tag_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014799",
+      "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079",
+      "attribute_fetched_at": "2026-07-25T10:43:34.889Z",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ"
+      ],
+      "production_year": 1963,
+      "original_credit": null,
+      "source_origin": null,
+      "primary_genre": "SF",
+      "canonical_tags": [
+        "SF",
+        "ロボット・メカ",
+        "ロボットSF"
+      ],
+      "ontology_facets": {
+        "source": [],
+        "genre": [
+          "SF",
+          "ロボット・メカ"
+        ],
+        "subgenre": [
+          "ロボットSF"
+        ],
+        "setting": [],
+        "theme": [],
+        "motif": [
+          "ロボット・メカ"
+        ],
+        "format": []
+      },
+      "attribute_confidence": {
+        "source_origin": "unknown",
+        "primary_genre": "derived",
+        "canonical_tags": "derived",
+        "ontology_facets": "derived"
+      },
+      "attribute_evidence": {
+        "source_origin": {
+          "rule_id": "origin.no-evidence",
+          "matched_terms": [],
+          "evidence_text": null,
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079"
+        },
+        "primary_genre": {
+          "rule_id": "genre.sf-signal-dominant",
+          "official_genres": [
+            "SF/ファンタジー",
+            "ロボット/メカ"
+          ],
+          "matched_terms": [
+            "ロボット",
+            "メカ"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079"
+        },
+        "canonical_tags": {
+          "rule_id": "tags.official-plus-ontology-v2",
+          "official_genres": [
+            "SF/ファンタジー",
+            "ロボット/メカ"
+          ],
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079"
+        },
+        "ontology_facets": {
+          "rule_id": "ontology.keyword-plus-official-metadata-v2",
+          "matched_terms": {
+            "setting": {},
+            "theme": {},
+            "motif": {
+              "ロボット・メカ": [
+                "ロボット",
+                "メカ"
+              ]
+            },
+            "subgenre": {
+              "ロボットSF": [
+                "ロボット"
+              ]
+            }
+          },
+          "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24079"
+        }
+      },
+      "ontology_version": "2.0.0",
+      "cache_status": "full-snapshot-reused",
+      "speculative_genres": [
+        "SF"
+      ],
+      "speculative_genre_status": "classified",
+      "classification_status": "classified"
+    }
+  ],
+  "attribute_coverage": {
+    "enriched_count": 1,
+    "total_count": 1,
+    "coverage_ratio": 1,
+    "ontology_version": "2.0.0"
+  }
+}
