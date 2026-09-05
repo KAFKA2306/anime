@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ATTRIBUTE_SCHEMA_VERSION, ONTOLOGY_VERSION } from './lib/ontology.mjs';
 
@@ -21,9 +21,10 @@ function selectAttributes(record) {
     .map((field) => [field, record[field]]));
 }
 
-async function loadAttributeMap() {
+async function loadAttributeMap(canonicalIds) {
   const files = await readdir(ATTRIBUTE_DIR).catch(() => []);
   const map = new Map();
+  let prunedCount = 0;
   for (const filename of files.filter((name) => /^[A-Za-z0-9_-]+\.json$/u.test(name)).sort()) {
     const record = await readJson(path.join(ATTRIBUTE_DIR, filename));
     if (!record.work_id || filename !== `${record.work_id}.json`) {
@@ -35,13 +36,22 @@ async function loadAttributeMap() {
     if (!record.attribute_source_url?.startsWith('https://animestore.docomo.ne.jp/')) {
       throw new Error(`Attribute record ${record.work_id} lacks an official source URL.`);
     }
-    map.set(String(record.work_id), record);
+    const workId = String(record.work_id);
+    if (!canonicalIds.has(workId)) {
+      await unlink(path.join(ATTRIBUTE_DIR, filename));
+      prunedCount += 1;
+      continue;
+    }
+    map.set(workId, record);
   }
-  return map;
+  return { map, prunedCount };
 }
 
 async function main() {
-  const attributes = await loadAttributeMap();
+  const worksPath = path.join(DATA_DIR, 'works.json');
+  const works = await readJson(worksPath);
+  const canonicalIds = new Set(works.map((work) => String(work.work_id)));
+  const { map: attributes, prunedCount } = await loadAttributeMap(canonicalIds);
   const yearDir = path.join(DATA_DIR, 'by-year');
   const yearFiles = (await readdir(yearDir)).filter((name) => /^\d{4}\.json$/u.test(name)).sort();
   let appliedMembershipCount = 0;
@@ -68,8 +78,6 @@ async function main() {
     await writeJson(file, payload);
   }
 
-  const worksPath = path.join(DATA_DIR, 'works.json');
-  const works = await readJson(worksPath);
   let appliedCanonicalCount = 0;
   const enrichedWorks = works.map((work) => {
     const record = attributes.get(String(work.work_id));
@@ -106,6 +114,7 @@ async function main() {
   };
   await writeJson(manifestPath, manifest);
 
+  if (prunedCount) console.log(`Pruned ${prunedCount} stale attribute cache record(s) absent from the canonical catalogue.`);
   console.log(
     `Applied ${attributes.size} ontology ${ONTOLOGY_VERSION} records to ${appliedCanonicalCount} canonical works ` +
     `and ${appliedMembershipCount} year memberships.`,
