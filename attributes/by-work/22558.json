@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22558",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22558",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "チア男子!!",
+    "synopsis": "人を応援することで主役になれる、世界で唯一のスポーツがある──。チアリーディングに青春をかける、ちょっとワケアリだけど、キュートな男子大学生たちの物語、それが『チア男子!!』。柔道でザセツした坂東晴希は、幼馴染の橋本一馬に誘われて、前代未聞の男子チアリーディングチーム「BREAKERS」を結成する。集まってきたのは、理屈っぽい溝口、大食いのトン、お調子者の関西人・弦とイチロー、そしてチア経験者の美青年・翔という個性派揃い。“壊したい”何かをもつ男たちの、新たな挑戦が始まる......!",
+    "staff_text": "原作:朝井リョウ「チア男子!!」(集英社文庫)/監督:吉村 愛/シリーズ構成:吉田玲子/キャラクターデザイン原案:浅田弘幸/キャラクターデザイン・総作画監督:鶴田 眸/サブキャラクターデザイン・総作画監督:小倉典子/アクション作画監督:谷津美弥子/プロップデザイン:佐久間康子/美術監督:保木いずみ+加藤 浩(ととにゃん)/色彩設計:歌川律子/撮影・3D:織田頼信/編集:池田康隆/2DW・特殊効果:立花美紀、徳丸仁志/音響監督:木村絵理子/音楽:TAKAROT/音楽制作:ランティス/オープニング主題歌:ラックライフ「初めの一歩」/エンディング主題歌:BREAKERS「LIMIT BREAKERS」/アニメーション制作:ブレインズ・ベース/製作:チア男子!!製作委員会",
+    "official_genres": [
+      "ドラマ/青春",
+      "スポーツ/競技"
+    ],
+    "production_year": 2016,
+    "source": "network",
+    "sha256": "efa77ba873d866b75c08fdded72732417e1901e8f8caa9a5f826cd4018648c5d"
+  },
+  "official_genres": [
+    "ドラマ/青春",
+    "スポーツ/競技"
+  ],
+  "production_year": 2016,
+  "original_credit": "朝井リョウ「チア男子!!」(集英社文庫)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "スポーツ・競技",
+    "学園",
+    "成長・挑戦",
+    "スポーツ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ドラマ・青春",
+      "スポーツ・競技"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "成長・挑戦",
+      "スポーツ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "朝井リョウ「チア男子!!」(集英社文庫)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22558"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春",
+        "スポーツ/競技"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22558"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春",
+        "スポーツ/競技"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22558"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "挑戦",
+            "青春"
+          ],
+          "スポーツ": [
+            "スポーツ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22558"
+    }
+  }
+}

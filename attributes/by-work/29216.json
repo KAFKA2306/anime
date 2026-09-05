@@ -1,0 +1,119 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29216",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29216",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "アニコミ「女体化した僕を騎士様達がねらってます 4th」",
+    "synopsis": "女体化事件から1年が経ち、アルトはロイドとリューンの2人と恋人になり共同生活を始めた。「女体化の呪い」は未だに発動してしまう事があるものの、国際大学の研究職として勤務しながら穏やかな生活を送っていたアルト。そんなある日、アルトの家族が誘拐事件に巻き込まれ......。呪いを解くための関係から進展し恋人になった3人と、家族の絆の物語をお楽しみください!※この作品にはTL要素及びBL要素が含まれます",
+    "staff_text": "原作:祈みさき/漫画原作:やかん/監督・編集:葛齋旭也/音響監督:えのもとたかひろ/音響効果:中島勝大(スワラ・プロ)/音響制作担当:福留彩/音響制作:スタジオマウス/アニメーション制作:サチムラユキ、いとひろ3/5/制作:RentAnime/製作:株式会社パピレス",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "569019ff239ae036530d41b4b99b700ee5b594fb7662bd9662ed4abb5ad5fce2"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2026,
+  "original_credit": "祈みさき",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ファンタジー",
+    "ミステリー",
+    "学園",
+    "友情・仲間",
+    "家族",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "家族"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "祈みさき",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29216"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29216"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29216"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "絆"
+          ],
+          "家族": [
+            "家族"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "呪い"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29216"
+    }
+  }
+}

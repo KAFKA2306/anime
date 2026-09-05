@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29201",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29201",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "『最終楽章 響け!ユーフォニアム』前編",
+    "synopsis": "ついにシリーズ完結!!!この軌跡が、次の曲になる――吹奏楽にかける高校生の青春を10年にわたり描いてきた『響け!ユーフォニアム』シリーズ。2024年のTV放送にて感動の最終回を迎えた『響け!ユーフォニアム3』が、2026年、ついに完結作となる“最終楽章”として劇場に登場する。『最終楽章』は、10年間、京都アニメーションの制作チームを率いてきた石原立也が総監督を、そして共にシリーズの要を担ってきた小川太一が監督を務める。京都アニメーションによる本編カットのブラッシュアップはもちろんのこと、花田十輝がシナリオを新たに執筆し、新作シーンも多数追加。TVシリーズでは描かれなかった演奏シーンも盛り込んだ、『最終楽章』の名に相応しい劇場作品をスタッフ一丸となって届ける。10年の軌跡――その先へ。アニメ『響け!ユーフォニアム』集大成となる最後の1年の幕が上がる。",
+    "staff_text": "原作:武田綾乃(宝島社文庫『響け!ユーフォニアム 北宇治高校吹奏楽部、決意の最終楽章』)/監督:小川太一/総監督:石原立也/脚本:花田十輝/キャラクターデザイン:池田晶子、池田和美/総作画監督:池田和美/楽器設定:髙橋博行/楽器作画監督:太田稔、丸木宣明/美術監督:篠原睦雄/色彩設計:竹田明代/撮影監督:髙尾一也/3D監督:山本倫/音響監督:鶴岡陽太/音楽:松田彬人/音楽制作:ランティス、ハートカンパニー/音楽協力:洗足学園音楽大学/演奏協力:プログレッシブ!ウインド・オーケストラ/吹奏楽監修:大和田雅洋/アニメーション制作:京都アニメーション/製作:『響け!』製作委員会2024/配給:松竹",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "21629ab3d2a8866aff956f14682b502756822e8cdd72cf74f48950b0303819f6"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": "武田綾乃(宝島社文庫『響け!ユーフォニアム 北宇治高校吹奏楽部、決意の最終楽章』)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "武田綾乃(宝島社文庫『響け!ユーフォニアム 北宇治高校吹奏楽部、決意の最終楽章』)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29201"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29201"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29201"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29201"
+    }
+  }
+}

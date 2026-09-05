@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29200",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29200",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "銀河鉄道の夜",
+    "synopsis": "病気の母と暮らし、帰らない父を待つ少年ジョバンニ。星祭りの夜、丘の上で一人空を見上げていたジョバンニのもとへ、鉄道が到着する。乗り込むとそこには親友カムパネルラがいた。2人は永遠の友情を確認するかのように旅立つが、やがて別れのときが訪れる。",
+    "staff_text": "監督:杉井ギサブロー/原作:宮沢賢治/原案:ますむら・ひろし/プロデューサー:原正人、田代敦巳/脚本:別役実/アニメーション監督:前田庸生/美術:馬郡美保子/設定デザイン:児玉喬夫/作画:江口摩吏介、猿山二郎/撮影:小山信夫/音楽:細野晴臣/編集:古川雅士/効果:柏原満/録音:林昌平/音響:田代敦巳/アシスタント・プロデューサー:藤田健、はしもとなおと/企画:伊藤正昭、山下健一郎/助監督:はしもとなおと",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 1985,
+    "source": "network",
+    "sha256": "7508f8f01852d98ce4b66be2aaa4437d1e71e440ae38f02e41691338185db5fa"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 1985,
+  "original_credit": "宮沢賢治",
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ドラマ・青春",
+    "スペースオペラ",
+    "宇宙",
+    "友情・仲間",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "友情・仲間",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "宮沢賢治",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29200"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "銀河"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29200"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29200"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "銀河"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ],
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "銀河"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29200"
+    }
+  }
+}

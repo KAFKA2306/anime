@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29177",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29177",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "パンの赤ちゃん",
+    "synopsis": "人が寝静まった、深夜のパン屋。冷蔵庫で静かに寝かされているパンの生地、通称「パンの赤ちゃん」。実は、こっそり起きて集まり、おしゃべりしたり、掃除したり、喧嘩したり。まだ焼かれる前の「生地」だからこそ、変化でき、無限の可能性がある。無知で、臆病で、時に勇敢なパンの赤ちゃんたちによる、日常の大冒険です。",
+    "staff_text": "原作:CHOCOLATE Inc./原案・絵コンテ:市川晴華/キャラクターデザイン:ファーマンりき/撮影/照明:宮崎佑介/美術デザイナー:滝口奈々恵/アニメーター:小長谷陸人、小林玄、野口隼人、根間笑花/アニメーターアシスタント:酒井彩衣/人形制作:原田脩平、古谷晃一/制作協力:ドワーフスタジオ(AOI Pro.)/オフライン編集:須田悠斗、緒方竜/音楽:Takao Ogi/音響効果:山谷尚人/ミキサー:小西真之/音響会社:dugout/カラリスト:金田大/オンライン編集:大野由加里/編集スタジオ:ソニーPCL株式会社/パンの赤ちゃんエンディングソング:『we are エケチャン!』歌唱作詞作曲:Mashinomi 編曲:maigoishi/エンディング映像制作:CHOCOLATE Inc./プロデューサー:小橋美友、佐藤千秋、川上翔子/企画・脚本・演出・監督:市川晴華/制作:CHOCOLATE Inc./製作:パンの赤ちゃん製作委員会",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "fe30be81b406dc50527560f8931f4276185d493378efe9f0356dec51a418bf1f"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "CHOCOLATE Inc.",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "子育て",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "子育て",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "CHOCOLATE Inc.",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29177"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29177"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29177"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "子育て": [
+            "赤ちゃん"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29177"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29170",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29170",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "鼠小僧次郎吉",
+    "synopsis": "江戸八百八町が夜の闇に包まれると屋根裏でガサゴソとする奴が現れる。大富豪から富をいただき貧しい庶民にばら撒く義賊、ご存じ鼠小僧次郎吉。夫に先立たれ、小さな我が子と辛い日々を送る町人お鈴。そんなお鈴を利用して鼠小僧の正体を暴こうとする梵字安五郎と長五郎。罪を憎んで人を憎まず、経験と勘で捕物名人と謳われる岡っ引き勘右衛門。江戸の街を舞台に繰り広げられる哀愁を誘う人間ドラマ。映画監督山中貞雄はそんな夢をみている...。",
+    "staff_text": "原作:大佛次郎 「鼠小僧次郎吉 江戸の巻」より/監督:りんたろう/プロデューサー:丸山正雄,真木太郎,Emmanuel-Alain RAYNAL,Pierre BAUSSARON/製作会社:スタジオM2/脚本:山中貞雄/音楽:本多俊之/その他スタッフ:大友克洋,兼森義則",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2023,
+    "source": "network",
+    "sha256": "5ac3f0d34022f1aeb1d5c68c282c39b0f807d08ea0c8b00df6a45d8c93519d01"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2023,
+  "original_credit": "大佛次郎 「鼠小僧次郎吉 江戸の巻」より",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "歴史・時代劇"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "大佛次郎 「鼠小僧次郎吉 江戸の巻」より",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29170"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29170"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29170"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "江戸"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29170"
+    }
+  }
+}

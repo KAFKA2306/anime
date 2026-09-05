@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29153",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29153",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "舞台「かげきしょうじょ!!」初日10/18公演【全景配信】",
+    "synopsis": "【初日2023年10月18日公演の全景配信になります。】大正時代に創立され、未婚の女性だけで作り上げる美しく華やかな舞台で、世代を超えて人々の心を魅了する「紅華歌劇団」。その人材を育成する「紅華歌劇音楽学校」に、高い倍率をくぐり抜け入学してきた第100期生たち。“オスカル様”に憧れる、スター性を秘めた天真爛漫な少女、渡辺さらさ。夢も友達も、すべてに無関心な元・国民的アイドル、奈良田愛。首席で合格した、根っからの紅華オタクの委員長、杉本紗和。元娘役の祖母と母に続いて入学した、プロ意識の高い努力家、星野薫。抜群の歌唱力を持つが、自分に自信がない気弱な少女、山田彩子。双子揃っての入学を果たした、沢田千夏・千秋姉妹。何もかもがバラバラな少女たちの、希望と葛藤に満ちた熱き音楽学校生活が今、幕を開ける──!!",
+    "staff_text": "原作:斉木久美子「かげきしょうじょ!!」(白泉社「メロディ」連載)/脚本:鈴木智晴(劇団東京都鈴木区)/演出:キムラ真(ナイスコンプレックス)/音楽:斉藤恒芳",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2023,
+    "source": "network",
+    "sha256": "0f0612c6e7fad06f8e774b9c8a59198501eefa5a2bb7524e82aadb2a0852f659"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2023,
+  "original_credit": "斉木久美子「かげきしょうじょ!!」(白泉社「メロディ」連載)",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "学園",
+    "歴史・時代劇",
+    "家族",
+    "音楽・アイドル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園",
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "家族",
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "斉木久美子「かげきしょうじょ!!」(白泉社「メロディ」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29153"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29153"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29153"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ],
+          "歴史・時代劇": [
+            "大正"
+          ]
+        },
+        "theme": {
+          "家族": [
+            "姉妹"
+          ],
+          "音楽・アイドル": [
+            "音楽",
+            "アイドル"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29153"
+    }
+  }
+}

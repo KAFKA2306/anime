@@ -1,0 +1,107 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29144",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29144",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "渡くんの××が崩壊寸前",
+    "synopsis": "渡直人は、妹の鈴白と叔母の家で暮らす高校2年生。両親を亡くしてから、恋愛も部活もバイトもせず友だち付き合いも断って、妹を最優先に生活していた直人。だがある日、幼なじみの館花紗月が転校してきて、直人の平穏な日常は一変する。紗月はかつて、直人と一緒に育てていた畑を突然めちゃくちゃにした〝畑荒らし〟だった! 紗月の起こした波紋は、直人を巡る人間関係に嵐を巻き起こし、崩壊へ向かって暴走していく......!?",
+    "staff_text": "原作:鳴見なる「渡くんの××が崩壊寸前」(講談社「月刊ヤングマガジン」所載)/監督:直谷たかし/副監督:浅見松雄/シリーズ構成・脚本:髙橋龍也/脚本:山田哲弥、直谷たかし/キャラクターデザイン/総作画監督:安田祥子/衣装デザイン:鈴木ののか/プロップデザイン:山崎千絵/総作画監督:安田祥子、小美戸幸代、小林利充、扇多恵子/CGディレクター:池田裕行/色彩設計:堀内里奈/美術監督:小崎弘貴/撮影監督:工藤竜馬/編集:榎田美咲/音響制作:ダックスプロダクション/音響監督:平光琢也/音楽:村松健/アニメーション制作:Staple Entertainment/製作:渡くんの××が崩壊寸前製作委員会/オープニングテーマ:『ユイカ』 「ゆうれいになりたい」/エンディングテーマ:PEDRO 「愛愛愛愛愛」",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "93129a4c0a6bfee304547f1c3e7d07bc265dc719ab3b6649add1e3ab9f5c9abe"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2025,
+  "original_credit": "鳴見なる「渡くんの××が崩壊寸前」(講談社「月刊ヤングマガジン」所載)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "学園",
+    "恋愛",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "マガジン",
+        "ヤングマガジン"
+      ],
+      "evidence_text": "鳴見なる「渡くんの××が崩壊寸前」(講談社「月刊ヤングマガジン」所載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29144"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29144"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29144"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校",
+            "部活"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "恋愛"
+          ],
+          "旅・冒険": [
+            "巡る"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29144"
+    }
+  }
+}

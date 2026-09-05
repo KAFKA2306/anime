@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29065",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29065",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "化け猫あんずちゃん",
+    "synopsis": "雷の鳴る豪雨の中。お寺の和尚さんは段ボールの中で鳴いている子猫をみつける。その子猫は「あんず」と名付けられ、それは大切に育てられた。時は流れ、あんずちゃんはいつしか人間のように暮らす「化け猫」になっていた。そんなあんずちゃんの元へ、親子ゲンカの末ずっと行方知れずだった和尚さんの息子・哲也が11歳の娘「かりん」を連れて帰ってくる。しかしまた和尚さんとケンカし、彼女を置いて去ってしまう。大人の前ではいつも “いい子”のかりんだが、お世話を頼まれたあんずちゃんは、猫かぶりだと知り、次第にめんどくさくなっていく。かりんは哲也が別れ際に言った「母さんの命日に戻ってくるから」という言葉を信じて待ち続けるも、一向に帰ってこない。母親のお墓に手を合わせたいというささやかな望みさえ叶わないかりんは、あんずにお願いをする。「母さんに会わせて」たった一つの願いから、地獄をも巻き込んだ土俵際の逃走劇が始まるんだニャ。",
+    "staff_text": "監督:久野遥子、山下敦弘/脚本:いまおかしんじ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "51f97140380adcb40f83faed9ecf4115c4cff4f39a856f6f8d2f5eb17e3a6206"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29065"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29065"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29065"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "親子"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29065"
+    }
+  }
+}

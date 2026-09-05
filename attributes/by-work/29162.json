@@ -1,0 +1,103 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29162",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29162",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "人狼 JIN-ROH",
+    "synopsis": "首都、東京。その強引な経済政策は、失業者と凶悪犯罪を急増させた。政府は反政府勢力掌握の為、首都圏に限り治安部隊を設置した。通称「首都警」と呼ばれる治安部隊は、加速拡大した。ところが、反政府勢力は、立法措置により非合法化し地下組織の道を辿った。そして地下組織は首都警との市街戦を繰り返した。世論は強大な武力で対抗する「首都警」を非難の的とし、結果、「首都警」は孤立を一層深めていった・・・。青年、伏一貴は、反政府鎮圧部隊「首都警」の一員である。伏はこれまで、闘争本能のみで生きる一匹の〝狼〟の様に人間としての一切の感情を切り捨て、自分を律してきた。しかし、或るとき、伏は潜伏する地下組織の追跡で、衝撃的な事件に遭遇してしまう。そして、この事件がきっかけで、彼は、彼自身の〝内なる世界〟に変化が芽生え始めた。更にその後、ひとりの女、雨宮圭との出逢いが、彼を思わぬ方向に導いてしまう。運命のように惹かれあい、そして・・・。",
+    "staff_text": "原作・脚本:押井守/監督:沖浦啓之/演出:神山健治/キャラクターデザイン:沖浦啓之・西尾鉄也/副作画監督:井上俊之/美術監督:小倉宏昌/美術設定:渡部隆/銃器設定:黄瀬和哉/車輌設定:平松禎史/色彩設定:片山由美子/撮影監督:白石久男/編集:掛須秀一/音楽:溝口肇/音響監督:若林和弘/制作担当:堀川憲司/プロデューサー:杉田敦・寺川英和/エグゼクティブプロデューサー:渡辺繁・石川光久/製作:バンダイビジュアル・ProductionI.G 他",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2000,
+    "source": "network",
+    "sha256": "9c0ffc0a03acf8abb9445d29a5336398bfd888afbbbdb6a741f08149b796a01d"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2000,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "ミステリー",
+    "現代日本",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [],
+    "motif": [
+      "犯罪・警察"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29162"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29162"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29162"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "犯罪・警察": [
+            "犯罪"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29162"
+    }
+  }
+}

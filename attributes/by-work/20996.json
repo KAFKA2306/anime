@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "20996",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20996",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "テイルズ オブ ゼスティリア ザ クロス",
+    "synopsis": "人の目には見えない霊的な存在「天族(てんぞく)」に囲まれて育った人間の青年・スレイ。「かつて、人間の誰もが天族の姿を見ることができた」という伝承を信じる彼は、古代の謎を解明し、人と天族がともに生きる世界を実現したいという夢を抱いていた。ある日、生まれて初めて訪れた人間の都で妙な事件に巻き込まれたスレイは、なりゆきから石に突き刺さる聖剣を引き抜き、世界の災厄を払う「導師」となる。重き使命を刻み込む胸の中、人と天族の共存という夢はより熱さを増し——仲間とともに、「導師」は大冒険の旅路への一歩を、今、踏み出す。",
+    "staff_text": "原作:バンダイナムコエンターテインメント/キャラクター原案:いのまたむつみ・藤島康介・奥村大悟・岩本 稔/監督:外崎春雄/キャラクターデザイン:松島 晃/脚本:ufotable/撮影監督:寺尾優一/3D監督:西脇一樹/美術監督:金 玟芝/色彩設計:大前祐子/編集:神野 学/音楽:桜庭 統・椎名 豪/オープニング主題歌:FLOW/エンディング主題歌:fhána/制作プロデューサー:近藤 光/アニメーション制作:ufotable",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "network",
+    "sha256": "984f72c9eef57ecb261df6bdc389831ae4f63902d199bad5bfff0cfd244663cb"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2016,
+  "original_credit": "バンダイナムコエンターテインメント",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
+    "友情・仲間",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "バンダイナムコエンターテインメント",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20996"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20996"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20996"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "旅・冒険": [
+            "旅",
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20996"
+    }
+  }
+}

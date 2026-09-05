@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29138",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29138",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "装甲騎兵ボトムズ 幻影篇",
+    "synopsis": "ゴウトの提案で銀婚式を迎えたバニラとココナは、キリコをとの再会を期待して思い出の地を巡る旅に出る。かつてと変わらぬAT戦に熱狂するウドの街のバトリング会場。クメンの一夜限りの「ファンタムクラブ」には歌姫姿のココナやかつての常連たち...。そして今も砂嵐が吹き荒れる惑星サンサにはキリコの姿があった。あらたな戦いの中でキリコが見る世界とは―。",
+    "staff_text": "企画・製作:サンライズ/原案:矢立 肇/原作:高橋良輔/シリーズ構成:五武冬史/キャラクターデザイン:塩山紀生/メカニカルデザイン:大河原邦男/総作画監督:竹内一義/美術監督:野村正信/CGIディレクター:畑田裕之/編集:瀬山武司/音響監督:浦上靖夫/音楽:乾 裕樹/効果:庄司正弘(フィズサウンド)/音楽:前嶋康明、乾 裕樹/監督:高橋良輔/プロデューサー:塚田廷式、大河原 健/アニメーション制作協力:アンサースタジオ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 2010,
+    "source": "network",
+    "sha256": "7d1f806f544d7e910205080a3c286aa11d93e25e0451d936b75f1dda3f6aefd3"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ",
+    "戦争/ミリタリー"
+  ],
+  "production_year": 2010,
+  "original_credit": "矢立 肇",
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ロボット・メカ",
+    "戦争・ミリタリー",
+    "宇宙",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ロボット・メカ",
+      "戦争・ミリタリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "矢立 肇",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29138"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "戦争/ミリタリー"
+      ],
+      "matched_terms": [
+        "惑星"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29138"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "戦争/ミリタリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29138"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "惑星"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "旅",
+            "巡る"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29138"
+    }
+  }
+}

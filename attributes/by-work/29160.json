@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29160",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29160",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "魔法少女猫たると",
+    "synopsis": "伝説の大地ガナーシュ。数千年もの間魔力による王政を司っていたキンカ族に対し、妖かしの術を操るビョウ族は反乱の兵を上げ、王家の殲滅を計る。キンカの族長マーター王は、王家再興を生まれて間もない姫に託し、密かに脱出させたという。絶大な魔力を持つというキンカの姫の消息を知る者は、誰もいない。",
+    "staff_text": "原作:介 錯(「魔法少女猫たると」)/監督:須永 司/シリーズ構成:植田浩二+高寺彰彦/キャラクターデザイン:数井浩子/美術監督:渋谷幸弘/音響監督:亀山俊樹/音楽:七瀬 光/制作:TNK+マッドハウス/製作:バンダイビジュアル+電通",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2001,
+    "source": "network",
+    "sha256": "589c090fa896d8f61e57908998327b0a45cf9605c7fbe488e8d14eb7190179ff"
+  },
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2001,
+  "original_credit": "介 錯(「魔法少女猫たると」)",
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "現代ファンタジー",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "介 錯(「魔法少女猫たると」)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29160"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "魔法"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29160"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29160"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29160"
+    }
+  }
+}

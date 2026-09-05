@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29025",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29025",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "姫様ご用心",
+    "synopsis": "姫子はふつうの高校生。...だったはずが、ひょんなことから王冠を手に入れてしまい、お姫様になってしまいます。王冠を返してほしい本物の「お姫様」ナーナや、王冠を盗もうと狙う泥棒・レスリーとカレンにつきまとわれて、平穏だった(と本人は思っている)日常生活は、遥か彼方に過ぎ去るのでした...。",
+    "staff_text": "原作:ノーマッド、高柳滋仁/監督:高柳滋仁/キャラクター原案:みつえ/キャラクターデザイン・総作画監督:古賀 誠/小物設定:春日井浩之/美術監督:福田和矢/色彩設計:梅崎ひろこ/撮影監督:森本由美子/編集:肥田 文/音響監督:岩浪美和/音響効果:山田 稔/音楽:原田勝通/音楽製作:ランティス/アニメーション制作:ノーマッド/製作:バンダイビジュアル",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2006,
+    "source": "network",
+    "sha256": "9f11d471d5e4628668b57273056ebd337363f80cd4cfee9ebb6011386425f2f6"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2006,
+  "original_credit": "ノーマッド、高柳滋仁",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "スペキュレーティブ判定保留",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ノーマッド、高柳滋仁",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29025"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29025"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29025"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29025"
+    }
+  }
+}

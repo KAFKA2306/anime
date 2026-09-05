@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "24768",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24768",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "RE-MAIN(リメイン)",
+    "synopsis": "中学3年の冬、水球の全国大会で優勝した清水みなとはその帰宅途中、交通事故に遭い昏睡状態となってしまう。203日後、ようやく目覚めたものの、彼は中学3年間の記憶を失っていた。水球から離れ、気持ちも新たに山南高校へ入学したみなとだったが、ひとつの約束をキッカケにそこで出会った仲間たちと水球を始めることになる。しかし、弱小水球部には様々な困難が待ち受けていて......。",
+    "staff_text": "原作:西田征史・バンダイナムコアーツ・MAPPA/総監督・シリーズ構成・脚本・音響監督:西田征史/監督:松田 清/キャラクター原案:付藤加青浬/キャラクターデザイン:田中志穂/エフェクトアニメーション:村松尚雄/美術設定・美術監督:森川 篤/撮影監督:朴 孝圭/色彩設計:田辺香奈/編集:定松 剛/音楽:うたたね歌菜(TaWaRa)/制作:MAPPA",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2021,
+    "source": "network",
+    "sha256": "2c9926f98602319605b5d08d6b4ebe514a192e403cde3dc94f3f12140bb377f8"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "ドラマ/青春"
+  ],
+  "production_year": 2021,
+  "original_credit": "西田征史・バンダイナムコアーツ・MAPPA",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF",
+    "ドラマ・青春",
+    "スポ根",
+    "学園",
+    "友情・仲間",
+    "スポーツ",
+    "人工知能"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スポ根"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "スポーツ"
+    ],
+    "motif": [
+      "人工知能"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "西田征史・バンダイナムコアーツ・MAPPA",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24768"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24768"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24768"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "スポーツ": [
+            "大会",
+            "全国大会"
+          ]
+        },
+        "motif": {
+          "人工知能": [
+            "AI"
+          ]
+        },
+        "subgenre": {
+          "スポ根": [
+            "全国大会"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24768"
+    }
+  }
+}

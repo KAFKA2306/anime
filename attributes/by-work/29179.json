@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29179",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29179",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "映像版 りんごりんごりんごりんごりんごりんご",
+    "synopsis": "「あるひ りんごが ころんと おちた」ではじまるりんごの大冒険のおはなし。かえるに出会い、ブランコに乗り、穴に落ち...楽しいリズムと絵で赤ちゃんにもわかりやすい映像作品です。この作品は絵本「りんごりんごりんごりんごりんごりんご(作:安西水丸 刊行:主婦の友社)」を映像化しました。",
+    "staff_text": "制作:大日本印刷株式会社",
+    "official_genres": [
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "d71c2c4adcdcbc3bfbba75228d0ae3071b48bdb7d0f80d3e0f37009855d85dfd"
+  },
+  "official_genres": [
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "子育て",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "子育て",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29179"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29179"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29179"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "子育て": [
+            "赤ちゃん"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29179"
+    }
+  }
+}

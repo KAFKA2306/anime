@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29199",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29199",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "OVA「カメレオン」",
+    "synopsis": "伝説の成り上がりヤンキーギャグ登場!オレ、矢沢栄作、高校デビューの新米ヤンキーだ!ハッキリ言って、チビでケンカも弱(よえ)ーけど、はったりと要領を武器に、のし上がってやンぜ。まずは、名を売って有名どころの仲間入りヨ!オレのビッグなサクセスストーリー、バシッと見てくれよナ!!",
+    "staff_text": "原作:加瀬あつし/脚本:四辻たかお/監督:橋本光夫、又野弘道、牛草健/キャラクターデザイン:越智信次、山崎展義、岡迫亘弘/音楽:高田三郎",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1992,
+    "source": "network",
+    "sha256": "cc5e561cdf104de8a436f37120dea8161aecde9a34a5e68ae211da044df80048"
+  },
+  "official_genres": [
+    "コメディ/ギャグ"
+  ],
+  "production_year": 1992,
+  "original_credit": "加瀬あつし",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "学園",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "加瀬あつし",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29199"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29199"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29199"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29199"
+    }
+  }
+}

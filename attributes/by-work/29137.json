@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29137",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29137",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "装甲騎兵ボトムズ 再編集版",
+    "synopsis": "人気リアルロボットアニメ「装甲騎兵ボトムズ」から全52話のエピソードを4部構成に再編集した作品。TVシリーズの監督である高橋良輔の手による大胆な再構成、新たに制作されたジオラマを撮影した実写版オープニングや谷口守泰の作画による新オープニング&塩山紀生の作画による新エンディングなども注目。",
+    "staff_text": "原作・監督・構成:高橋良輔/キャラクターデザイン・オープニング:塩山紀生/メカニカルデザイン:大河原邦男/脚本:五武冬史、吉川惣司、鳥海尽三/音楽:乾 裕樹",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ロボット/メカ",
+      "戦争/ミリタリー"
+    ],
+    "production_year": 1986,
+    "source": "network",
+    "sha256": "41974e416e121456ecffc415c4f8a2d222f6a1b84ba27549a15eb01cf51925e4"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ロボット/メカ",
+    "戦争/ミリタリー"
+  ],
+  "production_year": 1986,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ロボット・メカ",
+    "戦争・ミリタリー",
+    "ロボットSF"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ロボット・メカ",
+      "戦争・ミリタリー"
+    ],
+    "subgenre": [
+      "ロボットSF"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "ロボット・メカ"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29137"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "戦争/ミリタリー"
+      ],
+      "matched_terms": [
+        "ロボット"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29137"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ロボット/メカ",
+        "戦争/ミリタリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29137"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29137"
+    }
+  }
+}

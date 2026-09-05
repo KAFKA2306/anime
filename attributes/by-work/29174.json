@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29174",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29174",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版 忍たま乱太郎 ドクタケ忍者隊最強の軍師",
+    "synopsis": "タソガレドキ忍者・諸泉尊奈門との決闘に向かった後、消息を絶ってしまった土井先生― 山田先生と六年生による土井先生の捜索が始まる中、担任不在の一年は組では、タソガレドキ忍軍の忍び組頭・雑渡昆奈門と、尊奈門が教壇に立つことに!そんな中、きり丸は偶然、土井先生が置かれた状況を知ってしまうのだった。一方、土井先生捜索中の六年生の前に突如現れたのは、ドクタケ忍者隊の冷徹な軍師・天鬼。その顔は、土井先生と瓜二つで― 忍たま達に立ちはだかる最強の敵を前に、今、強き「絆」が試される。果たして乱太郎、きり丸、しんべヱたちは、土井先生を取り戻すことができるのか―!?",
+    "staff_text": "原作:「落第忍者乱太郎」尼子騒兵衛(朝日新聞出版刊)/テレビアニメシリーズ「忍たま乱太郎」/「小説 落第忍者乱太郎 ドクタケ忍者隊 最強の軍師」(原作・イラスト:尼子騒兵衛/小説:阪口和久/朝日新聞出版刊)/監督:藤森雅也/脚本:阪口和久/音楽:馬飼野康二/キャラクターデザイン:新山恵美子/副監督:根岸宏樹/アクション作画監督:関根昌之/美術監督:川口正明(アトリエローク07)/撮影監督:林コージロー(グラフィニカ)/色彩設計:村田恵里子(グラフィニカ)/編集:坂本雅紀(森田編集室)/音響監督:大熊昭/音響効果:庄司雅弘/音響制作:AUDIO PLANNING U/アニメーション制作:亜細亜堂/主題歌:「ありがとう心から」/テーマ曲:「勇気100%」なにわ男子(ストームレーベルズ)",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "a4d5eb396fb316ab6deebc6c317ccf645c8cecb72055c1b119d2543b44ac7f27"
+  },
+  "official_genres": [
+    "コメディ/ギャグ",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2024,
+  "original_credit": "「落第忍者乱太郎」尼子騒兵衛(朝日新聞出版刊)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "キッズ・ファミリー",
+    "友情・仲間",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "「落第忍者乱太郎」尼子騒兵衛(朝日新聞出版刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29174"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29174"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29174"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "絆"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29174"
+    }
+  }
+}

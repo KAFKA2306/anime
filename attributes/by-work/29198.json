@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29198",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29198",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ガールズ&パンツァー/ガールズ&パンツァー 劇場版 PKG特典OVA",
+    "synopsis": "2026年10月9日、最新作『ガールズ&パンツァー 最終章』第5話劇場上映を記念して、TVアニメBlu-ray全6巻と『劇場版』Blu-ray全1巻に収録されたOVAを期間限定配信!戦車乙女たちの知られざる日常が垣間見える、スペシャルストーリー!",
+    "staff_text": "監督:水島 努/アニメーション制作:アクタス ほか",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2012,
+    "source": "network",
+    "sha256": "cc84ad4395fc101dbe3749b1aa8bf5fb86b04c5c15e3cb88c676d09844386a9a"
+  },
+  "official_genres": [
+    "戦争/ミリタリー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2012,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "戦争・ミリタリー",
+    "ドラマ・青春"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "戦争・ミリタリー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29198"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "戦争/ミリタリー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29198"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "戦争/ミリタリー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29198"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29198"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "28909",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28909",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "2.5次元ダンスライブ「ツキウタ。」ステージ第15幕「SCHOOL REVOLUTION 月野学園物語 -百年アオハル-」ver.WHITE",
+    "synopsis": "「一緒に青春しようぜ!」―――ここは私立月野学園高等部。放課後に幼馴染の卯月 新と談笑しながらも、部活と受験勉強の両立に追われる皐月 葵。引退試合を終えた弓道部部長・葉月 陽から次期部長に指名されて戸惑う長月 夜。それぞれが悩み、迷いながらも精一杯それぞれの「青春」を謳歌する中、最大の行事『月野祭』を控えて、学園内には準備期間からお祭りムードが漂っていた。ずっとこんな毎日が続けばいいのに、卒業の日はだんだん近づいていて......。こんな if-もしかしたら-のアオハルもいいんじゃない?",
+    "staff_text": "原作:ムービック/脚本:錦織伊代(アイデアフラッド)/井川 軋/キャラクター原案:「ツキウタ。」シリーズ:じく 「infinit0」シリーズ:さいのすけ/演出:野元準也/衣裳:西田さゆり/ヘアメイク:成谷充未/企画・制作:ムービック/サンライズプロモーション",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "3b32b709a60db631bce41481ac756eddac01d1250bd3877224126854760d7ae7"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2025,
+  "original_credit": "ムービック",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "学園",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ムービック",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28909"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28909"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28909"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園",
+            "部活"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28909"
+    }
+  }
+}

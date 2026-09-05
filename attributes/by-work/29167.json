@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29167",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29167",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "PEANUTS スヌーピー -ショートアニメ-",
+    "synopsis": "",
+    "staff_text": "原作:チャールズ・M・シュルツ/プロデューサー:アレクシ・ラヴィラ/エグゼクティブ・プロデューサー:ダミアン・レヴィ/制作:ノルマール・アニメーション/共同制作:フランス・テレビジョン",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2014,
+    "source": "network",
+    "sha256": "a322b76b9c9e824a0efa2377416d52f5efdc315c6d2276ae42e205fbbbe3c04c"
+  },
+  "official_genres": [
+    "ショート",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2014,
+  "original_credit": "チャールズ・M・シュルツ",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "日常・ほのぼの"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "チャールズ・M・シュルツ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29167"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29167"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29167"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29167"
+    }
+  }
+}

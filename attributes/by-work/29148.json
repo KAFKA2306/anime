@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29148",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29148",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ルミナスウィッチーズ5th LIVE~Continue to Miracle~(バックステージ映像)",
+    "synopsis": "2026年2月1日にところざわサクラタウンで開催された、ルミナスウィッチーズによる5thワンマンライブ!",
+    "staff_text": "制作:水野大輔(レイライン)、舘薫乃、谷本大樹、藤原 彩、加藤雅俊/運営:網代卓哉(DISK GARAGE)/舞台監督:山中賢治(Blanc Create)/沖原 大(Blanc Create)/照明:鹿野慎二郎(MOSH)/PAエンジニア:中島七知雄(SRTechPlanning)/マニピュレーター:須賀勇介(Command S)/美術:磯山誠(千葉共立)/映像:森田良紀(YMORI inc.)、向井崇人/映像機材:菅原進吾/配信映像監督:森田良紀(YMORI inc.)",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "f355702cb4bf2665ff98a4d180e61ea58dba1e3d99deae48ef53f054a8ba2f0a"
+  },
+  "official_genres": [
+    "ライブ/ラジオ/etc."
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ライブ・ラジオ・その他"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ライブ・ラジオ・その他"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ライブ・ラジオ・その他"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29148"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29148"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29148"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29148"
+    }
+  }
+}

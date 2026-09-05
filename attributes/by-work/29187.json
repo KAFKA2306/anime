@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29187",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29187",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "えほんライトアニメシリーズ(東急エージェンシー)",
+    "synopsis": "えほんの絵柄がそのまま動いてアニメに!原作絵本の絵柄をライトアニメ®の手法を用いて人の手で丁寧に映像化し、原作絵が魅力的なえほんの世界観を崩さずにアニメ化したシリーズです。楽しいおはなし、笑えるおはなし、学べるおはなし、赤ちゃん向けのおはなしなど、たくさんのすばらしいえほんの世界に出会えます。",
+    "staff_text": "制作:大日本印刷株式会社",
+    "official_genres": [
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "900b7bf617b54249120a5d62488b5a4aa523d2ec5438a8e1b5f421d9529d5cca"
+  },
+  "official_genres": [
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "子育て"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "子育て"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29187"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29187"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29187"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "子育て": [
+            "赤ちゃん"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29187"
+    }
+  }
+}

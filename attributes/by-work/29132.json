@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29132",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29132",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "デザート キャッチ!ティニピン",
+    "synopsis": "デザートタウンでは、かわいいデザートティニピンたちがスイーツを作って、楽しく暮らしていました。でも、ある日突然、マジックシュガーボールが消えてしまい大パニック!「シュガーベリーパクト」をローミーに渡さなくちゃ!ロイヤルティニピンのシャリンピン、ポワンピン、プヨンピンたちはハーモニータウンへ出発!ローミーとハチュピン、そして新しいロイヤルティニピンたちは力を合わせて、散り散りになってしまったデザートティニピンたちを助けるためにがんばります。にぎやかでかわいいローミーたちのあたらしい物語が始まるよ!",
+    "staff_text": "",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2023,
+    "source": "network",
+    "sha256": "195bb6af5fd1eab38f18ded12215200b9324925fb2361ce5d56b7e8c31aa6f76"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2023,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "スペキュレーティブ判定保留"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29132"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29132"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29132"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29132"
+    }
+  }
+}

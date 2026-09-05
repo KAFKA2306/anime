@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29173",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29173",
+  "attribute_fetched_at": "2026-09-05T10:46:37.160Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "平日深呼吸。",
+    "synopsis": "アニメ専門チャンネルAT-Xがおくる大人のための映像企画『おとなはみんな疲れています-シリーズ』より。忙しい毎日から離れて、平日にふらっとでかけて、自然に触れてみる。そんなゆったりと過ごす時間を持てたら、きっと豊かな気持ちになれるはず。澄んだ空気の中で深呼吸したような気分になれる、やさしい時間-何気ない日々の楽しさをお届けする新感覚のナチュラル系自然派番組。懐かしい景色、ほっとする時間、...あわただしく過ぎゆく日々の中で、ほんの一瞬、自分を取り戻せたら―あなたの日常に心地よい「深呼吸」の時間をお届けします。ドローンで撮影した関東各地の絶景もお楽しみください。製作年:2019年~2026年",
+    "staff_text": "企画・総合演出・チーフプロデューサー:山崎明日香/撮影:三浦貴広(1~10話)餅原信一郎(11~38話)伊東尚輝(39~40話)餅原信一郎(41~64話)/ディレクター:佐藤るはち(1~4話) 辰巳洋平(5~8話)ヨシダマリ(9~10話)石川智徹(11~30話)柏木学(31~64話)/協力:マウスプロモーション/製作著作:AT-X",
+    "official_genres": [
+      "ライブ/ラジオ/etc."
+    ],
+    "production_year": 2019,
+    "source": "network",
+    "sha256": "a808f309f73b3854add8fb3ce4bb47ff4be3205f81027ec6ecf1fb8a4442b296"
+  },
+  "official_genres": [
+    "ライブ/ラジオ/etc."
+  ],
+  "production_year": 2019,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ライブ・ラジオ・その他",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ライブ・ラジオ・その他"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ライブ・ラジオ・その他"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ライブ・ラジオ・その他"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29173"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29173"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ライブ/ラジオ/etc."
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29173"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29173"
+    }
+  }
+}
