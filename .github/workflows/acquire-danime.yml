@@ -1,6 +1,16 @@
 name: Acquire dAnime year catalogue
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/acquire-danime.mjs
+      - scripts/stabilize-generated-data.mjs
+      - scripts/apply-attributes.mjs
+      - scripts/enrich-official-details.mjs
+      - scripts/verify-attribute-coverage.mjs
+      - .github/workflows/acquire-danime.yml
   workflow_dispatch:
     inputs:
       year:
