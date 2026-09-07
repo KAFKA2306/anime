@@ -1,0 +1,107 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29219",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219",
+  "attribute_fetched_at": "2026-09-07T23:00:22.569Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ベン・トー",
+    "synopsis": "ビンボー高校生・佐藤洋(さとう よう)はある日ふらりと入ったスーパーで、半額になった弁当を見つける。それに手を伸ばした瞬間、彼は嵐のような「何か」に巻き込まれ、気づいた時には床に倒れていた。そこは半額弁当をめぐり熾烈なバトルロワイヤルが繰り広げられる戦場だったのだ! その不可思議な戦いに魅(み)せられた佐藤は、そこに居合わせていた同級生・白粉花(おしろい はな)とともに半額弁当の奪取を試みるが、突如現れた美女、「氷結の魔女」に完膚(かんぷ)なきまでに叩きのめされる。そして、その美女が佐藤に告げた言葉は...。第5回スーパーダッシュ小説新人賞・大賞作家の新境地、庶民派学園シリアス・ギャグアクション、開幕!",
+    "staff_text": "原作者:アサウラ (集英社スーパーダッシュ文庫刊・『スーパーダッシュ&ゴー!』連載)/出版社:集英社/監督:板垣 伸/脚本:板垣伸、ふでやすかずゆき、山田由香、岸本みゆき、ヤスカワショウゴ/アニメーション制作会社:david production/製作:HP同好会/イラスト:柴乃 櫂人/企画:渡辺 直樹、上村 豊彦、福場 一義、沖浦 泰斗/エグゼクティブプロデューサー:足立 聡史/プロデューサー:高野 貴志、兼光 一博、石黒 達也、梶田 浩司/シリーズ構成:ふでやすかずゆき/構成・デザインワークス:板垣 伸/キャラクターデザイン:平田 雄三/プロップデザイン:岩畑 剛一、森木 靖泰/美術設定:長澤 順子/総作画監督:平田 雄三、杉本 功/美術監督:海野 よしみ/色彩設計:大西峰代/撮影監督:山田 和弘/3Dディレクター:平 将人/編集:廣瀬 清志/音響監督:明田川 仁/録音調整:安齋 歩/音響効果:中野 勝博/音楽:岩崎 琢/音楽プロデューサー:髙取 昌史/音楽制作:ポニーキャニオン/アニメーションプロデューサー:笠間 寿高",
+    "official_genres": [
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2011,
+    "source": "network",
+    "sha256": "42aa2d8fd47a22f5e8da55bbca990f25b8a41fa19baec0597db7d1ae33a1d9e2"
+  },
+  "official_genres": [
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2011,
+  "original_credit": null,
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "学園",
+    "戦争"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "戦争"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園",
+            "高校"
+          ]
+        },
+        "theme": {
+          "戦争": [
+            "戦場"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219"
+    }
+  }
+}
