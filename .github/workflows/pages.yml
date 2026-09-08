@@ -10,6 +10,7 @@ on:
       - app.js
       - tag-ranking.css
       - tag-ranking.js
+      - explore/**
       - data/**
       - scripts/build-catalog-api.mjs
       - tests/catalog-api.test.mjs
@@ -23,6 +24,7 @@ on:
       - app.js
       - tag-ranking.css
       - tag-ranking.js
+      - explore/**
       - data/**
       - scripts/build-catalog-api.mjs
       - tests/catalog-api.test.mjs
@@ -59,12 +61,16 @@ jobs:
           test -s app.js
           test -s tag-ranking.css
           test -s tag-ranking.js
+          test -s explore/index.html
+          test -s explore/explore.css
+          test -s explore/explore.js
           test -s data/manifest.json
           test -s data/works.json
           test -d data/by-year
           test -s data/likes/2024.tsv
           node --check app.js
           node --check tag-ranking.js
+          node --check explore/explore.js
           node scripts/validate-data.mjs
           node --test tests/catalog-api.test.mjs
           node scripts/build-catalog-api.mjs
@@ -102,6 +108,7 @@ jobs:
           rm -rf _site
           mkdir -p _site/data/by-year _site/data/likes _site/api
           cp index.html styles.css app.js tag-ranking.css tag-ranking.js _site/
+          cp -R explore _site/explore
           cp data/manifest.json _site/data/
           cp data/by-year/*.json _site/data/by-year/
           cp data/likes/*.tsv _site/data/likes/
