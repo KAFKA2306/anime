@@ -10,6 +10,7 @@ on:
       - app.js
       - tag-ranking.css
       - tag-ranking.js
+      - explore/**
       - data/**
       - .github/workflows/pages.yml
       - .github/workflows/live-pages-smoke.yml
@@ -65,6 +66,13 @@ jobs:
           grep -F 'tag-ranking.js' "$tmp/index.html"
 
           curl --fail --silent --show-error --location \
+            "$base/explore/?smoke=${GITHUB_SHA}" -o "$tmp/explore.html"
+          grep -F '年度・作品名・タグから候補を絞り、気になる作品を公式ページで確かめられます。' "$tmp/explore.html"
+          grep -F 'href="#filters">作品を探す</a>' "$tmp/explore.html"
+          grep -F 'id="filters"' "$tmp/explore.html"
+          grep -F 'id="results"' "$tmp/explore.html"
+
+          curl --fail --silent --show-error --location \
             "$base/styles.css?smoke=${GITHUB_SHA}" -o "$tmp/styles.css"
           grep -F -- '--lavender:' "$tmp/styles.css"
           grep -F -- '--rose:' "$tmp/styles.css"
@@ -98,7 +106,7 @@ jobs:
             "$base/data/manifest.json?smoke=${GITHUB_SHA}" -o "$tmp/manifest.json"
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
-          echo "Live Pages smoke test passed: $base/?year=2026 build=${expected_build}"
+          echo "Live Pages smoke test passed: $base/?year=2026 and $base/explore/"
 
       - name: Record verified deployment
         env:
@@ -122,6 +130,7 @@ jobs:
             "checks": [
               "production HTML exact build marker",
               "2026 year/search/grid/filter/mobile controls",
+              "Explore first-action journey at /anime/explore/",
               "wrapped multi-line card tags",
               "no per-card horizontal tag scrolling",
               "app.js and tag-ranking.js syntax and feature markers",
