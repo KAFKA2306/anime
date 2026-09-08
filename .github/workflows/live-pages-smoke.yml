@@ -41,18 +41,22 @@ jobs:
         run: |
           set -euo pipefail
           base="https://kafka2306.github.io/anime"
-          expected_build="2026-07-25-all-years-tags-1"
+          raw_base="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/gh-pages"
           tmp="$(mktemp -d)"
 
           matched=false
           for attempt in $(seq 1 36); do
             curl --fail --silent --show-error --location \
+              "$raw_base/index.html?smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/expected-index.html"
+            curl --fail --silent --show-error --location \
               "$base/?year=2026&smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/index.html"
-            if grep -Fq "$expected_build" "$tmp/index.html"; then
+            expected_sha="$(sha256sum "$tmp/expected-index.html" | cut -d' ' -f1)"
+            live_sha="$(sha256sum "$tmp/index.html" | cut -d' ' -f1)"
+            if [[ "$expected_sha" == "$live_sha" ]]; then
               matched=true
               break
             fi
-            echo "Live site has not propagated ${expected_build} yet (attempt ${attempt})."
+            echo "Live site has not propagated the current gh-pages index yet (attempt ${attempt})."
             sleep 10
           done
           test "$matched" = true
@@ -122,13 +126,12 @@ jobs:
           {
             "status": "passed",
             "site": "https://kafka2306.github.io/anime/?year=2026",
-            "build": "2026-07-25-all-years-tags-1",
             "deployed_source_commit": "${deployed_source_commit}",
             "verification_workflow_commit": "${GITHUB_SHA}",
             "verified_at": "${verified_at}",
             "workflow_run": "${run_url}",
             "checks": [
-              "production HTML exact build marker",
+              "production HTML matches current gh-pages index bytes",
               "2026 year/search/grid/filter/mobile controls",
               "Explore first-action journey at /anime/explore/",
               "wrapped multi-line card tags",
