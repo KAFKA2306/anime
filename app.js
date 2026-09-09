@@ -27,12 +27,7 @@ const elements = {
 const STORAGE_KEY = 'kafka2306-anime-click-history-v1';
 const HISTORY_LIMIT = 100;
 const RECOMMENDATION_LIMIT = 6;
-
-const preferenceProfile = {
-  origin: 'Web小説（なろう・カクヨム系）',
-  genre: '異世界・ハイファンタジー',
-  tag: 'バトル・アクション',
-};
+const RECOMMENDATION_PROFILE = document.documentElement.dataset.recommendationProfile || 'kafka';
 
 const metadataKeys = {
   origin: ['source_origin', 'origin_root', 'original_source', '原作ルーツ'],
@@ -49,6 +44,8 @@ const state = {
   favoritesAvailableCount: 0,
   favoritesSource: 'none',
   clickHistory: loadClickHistory(),
+  baselineRecommendations: new Map(),
+  baselineProfile: null,
 };
 
 function formatNumber(value) {
@@ -130,19 +127,6 @@ function hasPreferenceMetadata(work) {
   );
 }
 
-function matchesPreferenceExclusion(work) {
-  const origin = normalizeText(firstValue(work, metadataKeys.origin));
-  const genre = normalizeText(firstValue(work, metadataKeys.genre));
-  const tags = unique([
-    ...toArray(firstValue(work, metadataKeys.tags)),
-    ...ontologyFacetValues(work),
-  ]).map(normalizeText);
-
-  return origin === normalizeText(preferenceProfile.origin)
-    || genre === normalizeText(preferenceProfile.genre)
-    || tags.includes(normalizeText(preferenceProfile.tag));
-}
-
 function hasFavoritesCount(work) {
   return work.favorite_count !== null
     && work.favorite_count !== undefined
@@ -193,17 +177,21 @@ function renderMetadataNotice() {
       ? '互換TSVの気になる登録数'
       : '気になる登録数';
   const favoritesNote = state.favoritesAvailableCount
-    ? ` ${countSource}を${formatNumber(state.favoritesAvailableCount)}作品で利用できます。`
+    ? ' ' + countSource + 'を' + formatNumber(state.favoritesAvailableCount) + '作品で利用できます。'
     : ' この年度には気になる登録数データがありません。';
 
-  if (state.metadataAvailable) {
+  if (state.baselineProfile) {
     elements.preferenceToggle.disabled = false;
-    elements.metadataNotice.textContent = `属性オントロジーを検出しました。除外条件は「いずれかに一致」で適用されます。${favoritesNote}`;
+    const matched = state.baselineProfile.training?.matched_ratings || 0;
+    elements.metadataNotice.textContent = '評価済み' + formatNumber(matched)
+      + '作品のontology facetから学習したモデルを利用できます。作品名別の補正は使いません。'
+      + favoritesNote;
     return;
   }
 
   elements.preferenceToggle.disabled = true;
-  elements.metadataNotice.textContent = `現在の取得データには属性オントロジーが未収録のため、嗜好除外は保留しています。作品名だけから推定除外はしません。${favoritesNote}`;
+  elements.metadataNotice.textContent = 'この年度の学習済み推薦データがないため、閲覧履歴と人気度のfallbackを使います。'
+    + favoritesNote;
 }
 
 function compareFavorites(a, b, direction) {
@@ -235,13 +223,10 @@ function sortedWorks(works) {
 
 function filteredWorks() {
   const query = normalizeText(elements.searchInput.value);
-  const applyPreference = elements.preferenceToggle.checked && state.metadataAvailable;
 
   return state.works.filter((work) => {
-    const searchable = `${normalizeTitle(work.title)} ${workTags(work, 20).join(' ')}`;
-    const matchesSearch = !query || normalizeText(searchable).includes(query);
-    const excluded = applyPreference && matchesPreferenceExclusion(work);
-    return matchesSearch && !excluded;
+    const searchable = normalizeTitle(work.title) + ' ' + workTags(work, 20).join(' ');
+    return !query || normalizeText(searchable).includes(query);
   });
 }
 
@@ -329,8 +314,10 @@ function buildPreferenceWeights() {
 }
 
 function recommendationCandidates() {
-  const applyPreference = elements.preferenceToggle.checked && state.metadataAvailable;
-  const candidates = state.works.filter((work) => !(applyPreference && matchesPreferenceExclusion(work)));
+  const baselineEnabled = elements.preferenceToggle.checked && state.baselineRecommendations.size > 0;
+  const candidates = baselineEnabled
+    ? state.works.filter((work) => state.baselineRecommendations.has(String(work.work_id)))
+    : state.works;
   const preferenceWeights = buildPreferenceWeights();
   const maxPopularity = Math.max(1, ...candidates.map((work) => (
     hasFavoritesCount(work) ? Math.log1p(Number(work.favorite_count)) : 0
@@ -349,16 +336,27 @@ function recommendationCandidates() {
       : 0;
     const priorClicks = historyById.get(String(work.work_id))?.count || 0;
     const exploration = priorClicks ? -Math.min(1.5, priorClicks * 0.35) : 0.35;
-    const score = (affinity * 2.5) + (popularity * 2) + exploration;
+    const baseline = state.baselineRecommendations.get(String(work.work_id));
+    const score = baselineEnabled && baseline
+      ? (Number(baseline.score) * 10) + (affinity * 1.25) + exploration
+      : (affinity * 2.5) + (popularity * 2) + exploration;
+    const baselineFeature = baseline?.top_positive_features?.[0]?.feature || '';
+    const baselineLabel = baselineFeature.includes(':')
+      ? baselineFeature.split(':').slice(1).join(':')
+      : baselineFeature;
     const reason = shared.length
-      ? `閲覧傾向「${shared[0].tag}」と一致`
-      : hasFavoritesCount(work)
-        ? `気になる登録 ${formatNumber(work.favorite_count)}件`
-        : '未閲覧作品から選出';
+      ? '閲覧傾向「' + shared[0].tag + '」と一致'
+      : baselineLabel
+        ? '学習済み嗜好「' + baselineLabel + '」と一致'
+        : baseline
+          ? '学習済み嗜好モデル 適合度 ' + Math.round(Number(baseline.score) * 100) + '%'
+          : hasFavoritesCount(work)
+            ? '気になる登録 ' + formatNumber(work.favorite_count) + '件'
+            : '未閲覧作品から選出';
     return { work, score, reason };
   }).sort((a, b) => b.score - a.score
     || compareFavorites(a.work, b.work, -1)
-    || normalizeTitle(a.work.title).localeCompare(normalizeTitle(b.work.title), 'ja'));
+    || String(a.work.work_id).localeCompare(String(b.work.work_id)));
 }
 
 function renderTagChips(container, tags) {
@@ -431,9 +429,15 @@ function renderRecommendations() {
   const ranks = buildFavoritesRanks();
   const recommendations = recommendationCandidates().slice(0, RECOMMENDATION_LIMIT);
   const totalClicks = state.clickHistory.reduce((sum, entry) => sum + Number(entry.count), 0);
-  elements.recommendationStatus.textContent = totalClicks
-    ? 'このブラウザのクリック履歴と作品オントロジーを照合して順位付けしています。履歴は外部送信しません。'
-    : 'クリック履歴がないため、現在は「気になる登録数」を中心に表示しています。';
+  if (state.baselineProfile && elements.preferenceToggle.checked) {
+    const matched = state.baselineProfile.training?.matched_ratings || 0;
+    elements.recommendationStatus.textContent = '評価済み' + formatNumber(matched)
+      + '作品から学習したfacetモデルをbaselineにし、このブラウザの閲覧履歴だけを追加補正しています。';
+  } else if (totalClicks) {
+    elements.recommendationStatus.textContent = '学習済みbaselineを使わず、このブラウザのクリック履歴と作品オントロジーで順位付けしています。';
+  } else {
+    elements.recommendationStatus.textContent = '学習済みbaselineとクリック履歴がないため、現在は気になる登録数を中心に表示しています。';
+  }
   elements.recommendationGrid.replaceChildren(...recommendations.map(({ work, reason }) => (
     createWorkCard(work, ranks, { reason, recommendation: true })
   )));
@@ -443,17 +447,13 @@ function renderRecommendations() {
 function renderWorks() {
   const sorted = sortedWorks(filteredWorks());
   const ranks = buildFavoritesRanks();
-  const excludedCount = state.metadataAvailable && elements.preferenceToggle.checked
-    ? state.works.filter(matchesPreferenceExclusion).length
-    : 0;
 
   elements.workGrid.replaceChildren();
   elements.emptyState.hidden = sorted.length !== 0;
   elements.visibleCount.textContent = formatNumber(sorted.length);
   elements.resultSummary.textContent = [
-    `${formatNumber(sorted.length)} / ${formatNumber(state.works.length)}件表示`,
-    `登録数データ ${formatNumber(state.favoritesAvailableCount)}件`,
-    excludedCount ? `嗜好除外 ${formatNumber(excludedCount)}件` : '',
+    formatNumber(sorted.length) + ' / ' + formatNumber(state.works.length) + '件表示',
+    '登録数データ ' + formatNumber(state.favoritesAvailableCount) + '件',
   ].filter(Boolean).join('・');
 
   const fragment = document.createDocumentFragment();
@@ -461,6 +461,30 @@ function renderWorks() {
   elements.workGrid.append(fragment);
   renderRecommendations();
   syncUrl();
+}
+
+async function loadBaselineRecommendations(year) {
+  state.baselineRecommendations = new Map();
+  state.baselineProfile = null;
+  try {
+    const response = await fetch('./data/recommendations/' + RECOMMENDATION_PROFILE + '/' + year + '.json', { cache: 'no-cache' });
+    if (!response.ok) return;
+    const payload = await response.json();
+    const recommendations = Array.isArray(payload.recommendations) ? payload.recommendations : [];
+    state.baselineRecommendations = new Map(
+      recommendations
+        .filter((entry) => entry && entry.work_id && Number.isFinite(Number(entry.score)))
+        .map((entry) => [String(entry.work_id), entry]),
+    );
+    state.baselineProfile = {
+      profile_id: payload.profile_id || RECOMMENDATION_PROFILE,
+      model_version: payload.model_version || null,
+      training: payload.training || {},
+    };
+  } catch {
+    state.baselineRecommendations = new Map();
+    state.baselineProfile = null;
+  }
 }
 
 async function loadLegacyFavorites(year) {
@@ -521,6 +545,7 @@ async function loadYear(year) {
     state.favoritesSource = hasEmbeddedCounts ? 'official-json' : 'legacy-tsv';
     state.favoritesAvailableCount = state.works.filter(hasFavoritesCount).length;
     state.metadataAvailable = state.works.some(hasPreferenceMetadata);
+    await loadBaselineRecommendations(state.currentYear);
     elements.sourceLink.href = payload.source_url || state.manifest?.source?.tag_selector_url || '#';
     renderMetadataNotice();
     renderWorks();
@@ -528,6 +553,8 @@ async function loadYear(year) {
     state.works = [];
     state.favoritesAvailableCount = 0;
     state.favoritesSource = 'none';
+    state.baselineRecommendations = new Map();
+    state.baselineProfile = null;
     elements.visibleCount.textContent = '0';
     elements.resultSummary.textContent = '';
     elements.recommendationSection.hidden = true;

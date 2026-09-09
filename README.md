@@ -105,15 +105,32 @@ Machine-readable contract: [`ontology/project.yaml`](ontology/project.yaml)
 
 ## Recommendation / preference boundary
 
-`HOT RECOMMEND`は現在年度のfavorite countと同browserのclick historyを組み合わせます。履歴は`localStorage`のみです。
+推薦は、**作品名や年度ごとの手作業ルールではなく、評価済みwork_idからontology facetの重みを学習**して生成します。
 
-現行の嗜好除外例:
+入力:
 
-- source: `Web小説（なろう・カクヨム系）`
-- primary genre: `異世界・ハイファンタジー`
-- normalized tag: `バトル・アクション`
+- `preferences/*.json` — `work_id` と1〜5評価だけを保持
+- `data/by-year/YYYY.json` — current canonical catalogue
+- `ontology_facets` — source / genre / subgenre / setting / theme / motif / format
 
-これは公式な作品評価ではなく、個人向けfiltering ruleです。
+生成:
+
+```text
+ratings by work_id
+  → facet feature extraction
+  → positive / negative support learning
+  → deterministic preference model
+  → every current work is scored
+  → optional browser-local click adjustment
+```
+
+`favorite_count` は最大5%の補助priorに制限し、人気だけで嗜好適合作品を追い越しにくくします。 `needs-review` の分類はconfidenceを下げて扱います。
+
+生成物は `data/recommendations/<profile>/` にbuild時生成し、source manifest hash、profile hash、positive / negative feature provenanceを保持します。作品名別overrideは持ちません。
+
+同一のcatalog snapshotとratingsからは同一model / rankingを再生成できます。新しいwork_idが追加されても、ontology facetが存在すればコード変更なしでscore対象になります。
+
+ブラウザのclick historyは従来どおり `localStorage` のみに保存し、学習済みbaselineへの一時的な追加補正として使います。
 
 ## Acquisition flow
 

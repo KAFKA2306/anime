@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-recommendation-profile="kafka">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -72,11 +72,10 @@
 
         <div class="preference-box">
           <div>
-            <p class="preference-box__title">嗜好除外プロファイル</p>
-            <p class="preference-box__description">次の属性のいずれかに一致する作品を除外します。</p>
-            <div class="chips preference-chips" aria-label="除外条件"><span>原作：Web小説（なろう・カクヨム系）</span><span>主ジャンル：異世界・ハイファンタジー</span><span>正規タグ：バトル・アクション</span></div>
-          </div>
-          <label class="toggle"><input id="preferenceToggle" type="checkbox" checked><span>除外を適用</span></label>
+            <p class="preference-box__title">学習済み嗜好モデル</p>
+            <p class="preference-box__description">評価済みwork_idのontology facetから重みを学習し、新作も同じ基準で自動採点します。</p>
+            <div class="chips preference-chips" aria-label="推薦モデル"><span>評価履歴 → facet学習 → 新作自動採点</span></div>
+          <label class="toggle"><input id="preferenceToggle" type="checkbox" checked><span>学習モデルを適用</span></label>
         </div>
         <p id="metadataNotice" class="notice" role="status"></p>
       </div>
@@ -84,7 +83,7 @@
 
     <section id="recommendations" class="recommendations" aria-labelledby="recommendationTitle" hidden>
       <div class="recommendations__head">
-        <div><p class="eyebrow">このブラウザの閲覧履歴</p><h2 id="recommendationTitle">閲覧履歴に近い作品</h2><p id="recommendationStatus" class="recommendations__description"></p></div>
+        <div><p class="eyebrow">評価履歴 + このブラウザの閲覧履歴</p><h2 id="recommendationTitle">あなた向けレコメンド</h2><p id="recommendationStatus" class="recommendations__description"></p></div>
         <button id="resetHistoryButton" class="secondary-button" type="button">閲覧履歴をリセット</button>
       </div>
       <div id="historySummary" class="history-summary" aria-live="polite"></div>
