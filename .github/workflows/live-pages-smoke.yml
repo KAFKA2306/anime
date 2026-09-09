@@ -127,7 +127,7 @@ jobs:
           curl --fail --silent --show-error --location \
             "$base/data/recommendations/kafka/2026.json?smoke=${GITHUB_SHA}" -o "$tmp/recommendations-2026.json"
           python -m json.tool "$tmp/recommendations-2026.json" >/dev/null
-          node -e "const p=require('./' + process.argv[1]); if(p.profile_id!=='kafka'||!Array.isArray(p.recommendations)||p.recommendations.length===0) process.exit(1)" "$tmp/recommendations-2026.json"
+          node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if(p.profile_id!=='kafka'||!Array.isArray(p.recommendations)||p.recommendations.length===0) process.exit(1)" "$tmp/recommendations-2026.json"
 
           echo "Live Pages smoke test passed: $base/?year=2026 and learned recommendations"
 
