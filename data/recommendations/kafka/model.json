@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "model_version": "1.0.0",
+  "profile_id": "kafka",
+  "rating_scale": {
+    "min": 1,
+    "neutral": 3,
+    "max": 5
+  },
+  "training": {
+    "requested_ratings": 10,
+    "matched_ratings": 10,
+    "rated_work_ids": [
+      "10768",
+      "11479",
+      "23004",
+      "26312",
+      "26315",
+      "26744",
+      "27002",
+      "27567",
+      "27589",
+      "27747"
+    ],
+    "neutral_work_ids": [],
+    "missing_work_ids": []
+  },
+  "algorithm": {
+    "feature_space": [
+      "source",
+      "genre",
+      "subgenre",
+      "setting",
+      "theme",
+      "motif",
+      "format"
+    ],
+    "rating_signal": "piecewise-linear around neutral",
+    "per_work_normalization": "abs(signal) * classification_confidence / sqrt(feature_count)",
+    "feature_shrinkage": "support / (support + 1)",
+    "feature_weight_normalization": "max_abs",
+    "review_required_confidence": 0.6,
+    "popularity_weight": 0.05
+  },
+  "source": {
+    "manifest_generated_at": "2026-09-07T22:51:57.424Z",
+    "manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9",
+    "catalog_work_count": 7527
+  },
+  "features": [
+    {
+      "feature": "theme:成長・挑戦",
+      "weight": 1,
+      "positive_support": 7,
+      "negative_support": 0,
+      "positive_mass": 2.99035,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:ドラマ・青春",
+      "weight": 0.855777,
+      "positive_support": 6,
+      "negative_support": 0,
+      "positive_mass": 2.612385,
+      "negative_mass": 0
+    },
+    {
+      "feature": "setting:学園",
+      "weight": 0.399282,
+      "positive_support": 4,
+      "negative_support": 0,
+      "positive_mass": 1.305929,
+      "negative_mass": 0
+    },
+    {
+      "feature": "source:漫画",
+      "weight": 0.255134,
+      "positive_support": 3,
+      "negative_support": 0,
+      "positive_mass": 0.890097,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:スペキュレーティブ判定保留",
+      "weight": 0.246089,
+      "positive_support": 3,
+      "negative_support": 0,
+      "positive_mass": 0.858542,
+      "negative_mass": 0
+    },
+    {
+      "feature": "theme:音楽・アイドル",
+      "weight": 0.201151,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.789482,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:SF",
+      "weight": 0.186382,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.731518,
+      "negative_mass": 0
+    },
+    {
+      "feature": "setting:宇宙",
+      "weight": 0.186382,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.731518,
+      "negative_mass": 0
+    },
+    {
+      "feature": "subgenre:スペースオペラ",
+      "weight": 0.186382,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.731518,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:ホラー・サスペンス・ミステリー",
+      "weight": 0.150349,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.590097,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:恋愛・ラブコメ",
+      "weight": 0.150349,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.590097,
+      "negative_mass": 0
+    },
+    {
+      "feature": "subgenre:ラブコメ",
+      "weight": 0.150349,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.590097,
+      "negative_mass": 0
+    },
+    {
+      "feature": "theme:恋愛",
+      "weight": 0.150349,
+      "positive_support": 2,
+      "negative_support": 0,
+      "positive_mass": 0.590097,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:ファンタジー",
+      "weight": 0.072226,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.377964,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:ロボット・メカ",
+      "weight": 0.067561,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.353553,
+      "negative_mass": 0
+    },
+    {
+      "feature": "genre:日常・ほのぼの",
+      "weight": 0.067561,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.353553,
+      "negative_mass": 0
+    },
+    {
+      "feature": "motif:ロボット・メカ",
+      "weight": 0.067561,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.353553,
+      "negative_mass": 0
+    },
+    {
+      "feature": "subgenre:ロボットSF",
+      "weight": 0.067561,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.353553,
+      "negative_mass": 0
+    },
+    {
+      "feature": "theme:癒やし",
+      "weight": 0.067561,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.353553,
+      "negative_mass": 0
+    },
+    {
+      "feature": "theme:友情・仲間",
+      "weight": 0.057327,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.3,
+      "negative_mass": 0
+    },
+    {
+      "feature": "source:ライトノベル・小説",
+      "weight": 0.047773,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.25,
+      "negative_mass": 0
+    },
+    {
+      "feature": "theme:職業・仕事",
+      "weight": 0.040537,
+      "positive_support": 1,
+      "negative_support": 0,
+      "positive_mass": 0.212132,
+      "negative_mass": 0
+    }
+  ]
+}

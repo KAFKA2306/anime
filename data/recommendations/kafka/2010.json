@@ -1,0 +1,3483 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 2010,
+  "source": {
+    "source_tag_id": "T0004822",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004822",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "95058f0d75bf057c4b50a5a2940f7897ac1f043ab85d431c9cf39f20411b5822",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 156,
+  "recommendations": [
+    {
+      "work_id": "21567",
+      "score": 0.976542,
+      "preference_score": 0.980274,
+      "popularity_prior": 0.045282,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    },
+    {
+      "work_id": "21980",
+      "score": 0.975356,
+      "preference_score": 0.980861,
+      "popularity_prior": 0.043538,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 2
+    },
+    {
+      "work_id": "10129",
+      "score": 0.962013,
+      "preference_score": 0.966682,
+      "popularity_prior": 0.043665,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 3
+    },
+    {
+      "work_id": "20329",
+      "score": 0.960419,
+      "preference_score": 0.959833,
+      "popularity_prior": 0.048577,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "theme:音楽・アイドル",
+          "contribution": 0.201151
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 4
+    },
+    {
+      "work_id": "11201",
+      "score": 0.959843,
+      "preference_score": 0.961845,
+      "popularity_prior": 0.04609,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 5
+    },
+    {
+      "work_id": "20333",
+      "score": 0.956026,
+      "preference_score": 0.953712,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 6
+    },
+    {
+      "work_id": "10009",
+      "score": 0.953552,
+      "preference_score": 0.952778,
+      "popularity_prior": 0.048413,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "source:ライトノベル・小説",
+          "contribution": 0.047773
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 7
+    },
+    {
+      "work_id": "21767",
+      "score": 0.949613,
+      "preference_score": 0.961369,
+      "popularity_prior": 0.036313,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 8
+    },
+    {
+      "work_id": "20324",
+      "score": 0.946479,
+      "preference_score": 0.952997,
+      "popularity_prior": 0.041131,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 9
+    },
+    {
+      "work_id": "20903",
+      "score": 0.946225,
+      "preference_score": 0.95043,
+      "popularity_prior": 0.043316,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 10
+    },
+    {
+      "work_id": "28768",
+      "score": 0.941361,
+      "preference_score": 0.95615,
+      "popularity_prior": 0.033019,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 11
+    },
+    {
+      "work_id": "10096",
+      "score": 0.937827,
+      "preference_score": 0.947039,
+      "popularity_prior": 0.03814,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 12
+    },
+    {
+      "work_id": "24127",
+      "score": 0.937696,
+      "preference_score": 0.941787,
+      "popularity_prior": 0.042999,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 13
+    },
+    {
+      "work_id": "11199",
+      "score": 0.936874,
+      "preference_score": 0.944026,
+      "popularity_prior": 0.040049,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 14
+    },
+    {
+      "work_id": "10085",
+      "score": 0.936265,
+      "preference_score": 0.941787,
+      "popularity_prior": 0.041568,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 15
+    },
+    {
+      "work_id": "10097",
+      "score": 0.934416,
+      "preference_score": 0.947039,
+      "popularity_prior": 0.03473,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 16
+    },
+    {
+      "work_id": "11548",
+      "score": 0.93423,
+      "preference_score": 0.939877,
+      "popularity_prior": 0.041347,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 17
+    },
+    {
+      "work_id": "10482",
+      "score": 0.934182,
+      "preference_score": 0.948521,
+      "popularity_prior": 0.033087,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 18
+    },
+    {
+      "work_id": "10483",
+      "score": 0.933151,
+      "preference_score": 0.947039,
+      "popularity_prior": 0.033464,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 19
+    },
+    {
+      "work_id": "11198",
+      "score": 0.929231,
+      "preference_score": 0.934631,
+      "popularity_prior": 0.041331,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "theme:音楽・アイドル",
+          "contribution": 0.201151
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 20
+    },
+    {
+      "work_id": "23244",
+      "score": 0.912314,
+      "preference_score": 0.913829,
+      "popularity_prior": 0.044177,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 21
+    },
+    {
+      "work_id": "22749",
+      "score": 0.905321,
+      "preference_score": 0.906037,
+      "popularity_prior": 0.044586,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 22
+    },
+    {
+      "work_id": "27730",
+      "score": 0.903987,
+      "preference_score": 0.928687,
+      "popularity_prior": 0.021734,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 23
+    },
+    {
+      "work_id": "24364",
+      "score": 0.902906,
+      "preference_score": 0.908129,
+      "popularity_prior": 0.040184,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 24
+    },
+    {
+      "work_id": "23600",
+      "score": 0.896174,
+      "preference_score": 0.898833,
+      "popularity_prior": 0.042283,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.513466
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 25
+    },
+    {
+      "work_id": "24948",
+      "score": 0.892998,
+      "preference_score": 0.898833,
+      "popularity_prior": 0.039107,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.513466
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 26
+    },
+    {
+      "work_id": "20953",
+      "score": 0.892299,
+      "preference_score": 0.898833,
+      "popularity_prior": 0.038408,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.513466
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 27
+    },
+    {
+      "work_id": "20621",
+      "score": 0.887585,
+      "preference_score": 0.888693,
+      "popularity_prior": 0.043326,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 28
+    },
+    {
+      "work_id": "25951",
+      "score": 0.882099,
+      "preference_score": 0.892958,
+      "popularity_prior": 0.033789,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 29
+    },
+    {
+      "work_id": "11211",
+      "score": 0.872174,
+      "preference_score": 0.868947,
+      "popularity_prior": 0.046674,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.513466
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 30
+    },
+    {
+      "work_id": "23256",
+      "score": 0.871992,
+      "preference_score": 0.883524,
+      "popularity_prior": 0.032644,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 31
+    },
+    {
+      "work_id": "28492",
+      "score": 0.865514,
+      "preference_score": 0.890798,
+      "popularity_prior": 0.019256,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 32
+    },
+    {
+      "work_id": "28242",
+      "score": 0.862332,
+      "preference_score": 0.868947,
+      "popularity_prior": 0.036832,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.513466
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 33
+    },
+    {
+      "work_id": "10011",
+      "score": 0.860712,
+      "preference_score": 0.855972,
+      "popularity_prior": 0.047539,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 34
+    },
+    {
+      "work_id": "20146",
+      "score": 0.845766,
+      "preference_score": 0.848304,
+      "popularity_prior": 0.039877,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 35
+    },
+    {
+      "work_id": "24531",
+      "score": 0.838478,
+      "preference_score": 0.849675,
+      "popularity_prior": 0.031287,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 36
+    },
+    {
+      "work_id": "11287",
+      "score": 0.817343,
+      "preference_score": 0.815201,
+      "popularity_prior": 0.042903,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 37
+    },
+    {
+      "work_id": "10965",
+      "score": 0.81667,
+      "preference_score": 0.816824,
+      "popularity_prior": 0.040687,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 38
+    },
+    {
+      "work_id": "28704",
+      "score": 0.813152,
+      "preference_score": 0.819868,
+      "popularity_prior": 0.034278,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 39
+    },
+    {
+      "work_id": "11041",
+      "score": 0.801826,
+      "preference_score": 0.794768,
+      "popularity_prior": 0.046796,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 40
+    },
+    {
+      "work_id": "23609",
+      "score": 0.801661,
+      "preference_score": 0.808089,
+      "popularity_prior": 0.033976,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 41
+    },
+    {
+      "work_id": "20271",
+      "score": 0.788317,
+      "preference_score": 0.781682,
+      "popularity_prior": 0.045719,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 42
+    },
+    {
+      "work_id": "10642",
+      "score": 0.778242,
+      "preference_score": 0.769401,
+      "popularity_prior": 0.047311,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "source:ライトノベル・小説",
+          "contribution": 0.047773
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 43
+    },
+    {
+      "work_id": "10671",
+      "score": 0.776313,
+      "preference_score": 0.774167,
+      "popularity_prior": 0.040854,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "theme:音楽・アイドル",
+          "contribution": 0.201151
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 44
+    },
+    {
+      "work_id": "10670",
+      "score": 0.774707,
+      "preference_score": 0.771667,
+      "popularity_prior": 0.041624,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 45
+    },
+    {
+      "work_id": "10472",
+      "score": 0.763256,
+      "preference_score": 0.756925,
+      "popularity_prior": 0.044177,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 46
+    },
+    {
+      "work_id": "23255",
+      "score": 0.74696,
+      "preference_score": 0.742551,
+      "popularity_prior": 0.041537,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 47
+    },
+    {
+      "work_id": "10109",
+      "score": 0.742615,
+      "preference_score": 0.73388,
+      "popularity_prior": 0.045429,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 48
+    },
+    {
+      "work_id": "10500",
+      "score": 0.734192,
+      "preference_score": 0.733058,
+      "popularity_prior": 0.037787,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 49
+    },
+    {
+      "work_id": "23217",
+      "score": 0.729613,
+      "preference_score": 0.724528,
+      "popularity_prior": 0.041311,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 50
+    },
+    {
+      "work_id": "10219",
+      "score": 0.722056,
+      "preference_score": 0.716185,
+      "popularity_prior": 0.041681,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 51
+    },
+    {
+      "work_id": "10560",
+      "score": 0.714229,
+      "preference_score": 0.717693,
+      "popularity_prior": 0.032421,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 52
+    },
+    {
+      "work_id": "21439",
+      "score": 0.712329,
+      "preference_score": 0.708394,
+      "popularity_prior": 0.039355,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 53
+    },
+    {
+      "work_id": "10516",
+      "score": 0.711925,
+      "preference_score": 0.707361,
+      "popularity_prior": 0.039933,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.239569
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.090209
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.090209
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.090209
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 54
+    },
+    {
+      "work_id": "10827",
+      "score": 0.711418,
+      "preference_score": 0.717693,
+      "popularity_prior": 0.02961,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 55
+    },
+    {
+      "work_id": "21472",
+      "score": 0.710365,
+      "preference_score": 0.703682,
+      "popularity_prior": 0.041868,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 56
+    },
+    {
+      "work_id": "10153",
+      "score": 0.706097,
+      "preference_score": 0.698534,
+      "popularity_prior": 0.04249,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 57
+    },
+    {
+      "work_id": "10984",
+      "score": 0.70605,
+      "preference_score": 0.695179,
+      "popularity_prior": 0.045629,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 58
+    },
+    {
+      "work_id": "10127",
+      "score": 0.705365,
+      "preference_score": 0.696677,
+      "popularity_prior": 0.043521,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 59
+    },
+    {
+      "work_id": "10116",
+      "score": 0.703586,
+      "preference_score": 0.695179,
+      "popularity_prior": 0.043166,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 60
+    },
+    {
+      "work_id": "10855",
+      "score": 0.702639,
+      "preference_score": 0.698195,
+      "popularity_prior": 0.039353,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 61
+    },
+    {
+      "work_id": "10828",
+      "score": 0.698385,
+      "preference_score": 0.703461,
+      "popularity_prior": 0.030097,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 62
+    },
+    {
+      "work_id": "23951",
+      "score": 0.697837,
+      "preference_score": 0.703461,
+      "popularity_prior": 0.029549,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 63
+    },
+    {
+      "work_id": "10845",
+      "score": 0.697568,
+      "preference_score": 0.691192,
+      "popularity_prior": 0.040936,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.239569
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.090209
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.090209
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.090209
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 64
+    },
+    {
+      "work_id": "10531",
+      "score": 0.697432,
+      "preference_score": 0.685947,
+      "popularity_prior": 0.045783,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 65
+    },
+    {
+      "work_id": "28348",
+      "score": 0.69345,
+      "preference_score": 0.685947,
+      "popularity_prior": 0.041801,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 66
+    },
+    {
+      "work_id": "27159",
+      "score": 0.689995,
+      "preference_score": 0.690318,
+      "popularity_prior": 0.034193,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 67
+    },
+    {
+      "work_id": "10719",
+      "score": 0.688658,
+      "preference_score": 0.684455,
+      "popularity_prior": 0.038426,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "source:ライトノベル・小説",
+          "contribution": 0.047773
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 68
+    },
+    {
+      "work_id": "10145",
+      "score": 0.686306,
+      "preference_score": 0.685947,
+      "popularity_prior": 0.034657,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 69
+    },
+    {
+      "work_id": "10322",
+      "score": 0.686252,
+      "preference_score": 0.678793,
+      "popularity_prior": 0.041399,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "source:ライトノベル・小説",
+          "contribution": 0.047773
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 70
+    },
+    {
+      "work_id": "25357",
+      "score": 0.686129,
+      "preference_score": 0.687612,
+      "popularity_prior": 0.032898,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 71
+    },
+    {
+      "work_id": "24157",
+      "score": 0.683648,
+      "preference_score": 0.680272,
+      "popularity_prior": 0.03739,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 72
+    },
+    {
+      "work_id": "23185",
+      "score": 0.674652,
+      "preference_score": 0.662973,
+      "popularity_prior": 0.044828,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 73
+    },
+    {
+      "work_id": "22563",
+      "score": 0.671407,
+      "preference_score": 0.661657,
+      "popularity_prior": 0.042833,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.239569
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 74
+    },
+    {
+      "work_id": "10523",
+      "score": 0.670701,
+      "preference_score": 0.662973,
+      "popularity_prior": 0.040877,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 75
+    },
+    {
+      "work_id": "20631",
+      "score": 0.669022,
+      "preference_score": 0.659771,
+      "popularity_prior": 0.04224,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 76
+    },
+    {
+      "work_id": "10108",
+      "score": 0.667823,
+      "preference_score": 0.653077,
+      "popularity_prior": 0.0474,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 77
+    },
+    {
+      "work_id": "11592",
+      "score": 0.666878,
+      "preference_score": 0.66143,
+      "popularity_prior": 0.03852,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 78
+    },
+    {
+      "work_id": "22632",
+      "score": 0.66632,
+      "preference_score": 0.662973,
+      "popularity_prior": 0.036495,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 79
+    },
+    {
+      "work_id": "23531",
+      "score": 0.658203,
+      "preference_score": 0.664812,
+      "popularity_prior": 0.026632,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 80
+    },
+    {
+      "work_id": "20963",
+      "score": 0.653006,
+      "preference_score": 0.642884,
+      "popularity_prior": 0.042266,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 81
+    },
+    {
+      "work_id": "21098",
+      "score": 0.651818,
+      "preference_score": 0.641259,
+      "popularity_prior": 0.042622,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.239569
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 82
+    },
+    {
+      "work_id": "29138",
+      "score": 0.647933,
+      "preference_score": 0.65068,
+      "popularity_prior": 0.029786,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 83
+    },
+    {
+      "work_id": "10876",
+      "score": 0.645646,
+      "preference_score": 0.628926,
+      "popularity_prior": 0.048167,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 84
+    },
+    {
+      "work_id": "10404",
+      "score": 0.645054,
+      "preference_score": 0.632096,
+      "popularity_prior": 0.044563,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 85
+    },
+    {
+      "work_id": "20712",
+      "score": 0.640643,
+      "preference_score": 0.632096,
+      "popularity_prior": 0.040151,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 86
+    },
+    {
+      "work_id": "20267",
+      "score": 0.639303,
+      "preference_score": 0.632096,
+      "popularity_prior": 0.038811,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 87
+    },
+    {
+      "work_id": "10688",
+      "score": 0.638887,
+      "preference_score": 0.63081,
+      "popularity_prior": 0.039618,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 88
+    },
+    {
+      "work_id": "10501",
+      "score": 0.63874,
+      "preference_score": 0.634696,
+      "popularity_prior": 0.035778,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 89
+    },
+    {
+      "work_id": "10074",
+      "score": 0.638548,
+      "preference_score": 0.625144,
+      "popularity_prior": 0.044661,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 90
+    },
+    {
+      "work_id": "10147",
+      "score": 0.635341,
+      "preference_score": 0.625144,
+      "popularity_prior": 0.041455,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:恋愛・ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "subgenre:ラブコメ",
+          "contribution": 0.150349
+        },
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 91
+    },
+    {
+      "work_id": "11154",
+      "score": 0.631067,
+      "preference_score": 0.622608,
+      "popularity_prior": 0.039589,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 92
+    },
+    {
+      "work_id": "27282",
+      "score": 0.629693,
+      "preference_score": 0.623092,
+      "popularity_prior": 0.037755,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.15308
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.034396
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 93
+    },
+    {
+      "work_id": "20629",
+      "score": 0.622505,
+      "preference_score": 0.610901,
+      "popularity_prior": 0.04215,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.15308
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 94
+    },
+    {
+      "work_id": "10128",
+      "score": 0.621235,
+      "preference_score": 0.609781,
+      "popularity_prior": 0.041943,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 95
+    },
+    {
+      "work_id": "21034",
+      "score": 0.620586,
+      "preference_score": 0.608713,
+      "popularity_prior": 0.042309,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 96
+    },
+    {
+      "work_id": "10142",
+      "score": 0.619318,
+      "preference_score": 0.608964,
+      "popularity_prior": 0.040802,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 97
+    },
+    {
+      "work_id": "11331",
+      "score": 0.61716,
+      "preference_score": 0.601565,
+      "popularity_prior": 0.045673,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.090209
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 98
+    },
+    {
+      "work_id": "24907",
+      "score": 0.616151,
+      "preference_score": 0.608964,
+      "popularity_prior": 0.037635,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 99
+    },
+    {
+      "work_id": "24716",
+      "score": 0.612517,
+      "preference_score": 0.603294,
+      "popularity_prior": 0.039388,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 100
+    },
+    {
+      "work_id": "23978",
+      "score": 0.612042,
+      "preference_score": 0.601565,
+      "popularity_prior": 0.040555,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.090209
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 101
+    },
+    {
+      "work_id": "28549",
+      "score": 0.607624,
+      "preference_score": 0.608535,
+      "popularity_prior": 0.029515,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 102
+    },
+    {
+      "work_id": "28550",
+      "score": 0.606983,
+      "preference_score": 0.608535,
+      "popularity_prior": 0.028874,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 103
+    },
+    {
+      "work_id": "22619",
+      "score": 0.606002,
+      "preference_score": 0.594524,
+      "popularity_prior": 0.041204,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 104
+    },
+    {
+      "work_id": "28014",
+      "score": 0.605374,
+      "preference_score": 0.599523,
+      "popularity_prior": 0.035827,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.15308
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 105
+    },
+    {
+      "work_id": "10701",
+      "score": 0.603079,
+      "preference_score": 0.594524,
+      "popularity_prior": 0.038281,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 106
+    },
+    {
+      "work_id": "25358",
+      "score": 0.599925,
+      "preference_score": 0.599523,
+      "popularity_prior": 0.030379,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.15308
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 107
+    },
+    {
+      "work_id": "10354",
+      "score": 0.59689,
+      "preference_score": 0.584749,
+      "popularity_prior": 0.041379,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 108
+    },
+    {
+      "work_id": "22327",
+      "score": 0.595869,
+      "preference_score": 0.580012,
+      "popularity_prior": 0.044857,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 109
+    },
+    {
+      "work_id": "10728",
+      "score": 0.591174,
+      "preference_score": 0.579066,
+      "popularity_prior": 0.041062,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 110
+    },
+    {
+      "work_id": "22819",
+      "score": 0.588525,
+      "preference_score": 0.584941,
+      "popularity_prior": 0.032831,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.040537
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 111
+    },
+    {
+      "work_id": "10610",
+      "score": 0.585685,
+      "preference_score": 0.569442,
+      "popularity_prior": 0.044716,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 112
+    },
+    {
+      "work_id": "23345",
+      "score": 0.583328,
+      "preference_score": 0.577671,
+      "popularity_prior": 0.03454,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 113
+    },
+    {
+      "work_id": "24950",
+      "score": 0.58248,
+      "preference_score": 0.579066,
+      "popularity_prior": 0.032368,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 114
+    },
+    {
+      "work_id": "24895",
+      "score": 0.580463,
+      "preference_score": 0.577671,
+      "popularity_prior": 0.031676,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 115
+    },
+    {
+      "work_id": "22217",
+      "score": 0.577024,
+      "preference_score": 0.567848,
+      "popularity_prior": 0.037569,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.034396
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 116
+    },
+    {
+      "work_id": "28141",
+      "score": 0.576119,
+      "preference_score": 0.577489,
+      "popularity_prior": 0.027504,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "source:漫画",
+          "contribution": 0.255134
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 117
+    },
+    {
+      "work_id": "29074",
+      "score": 0.574056,
+      "preference_score": 0.56076,
+      "popularity_prior": 0.041335,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.034396
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 118
+    },
+    {
+      "work_id": "24147",
+      "score": 0.573734,
+      "preference_score": 0.573922,
+      "popularity_prior": 0.028508,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.024322
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 119
+    },
+    {
+      "work_id": "22061",
+      "score": 0.573698,
+      "preference_score": 0.56359,
+      "popularity_prior": 0.038288,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 120
+    },
+    {
+      "work_id": "22060",
+      "score": 0.573198,
+      "preference_score": 0.56359,
+      "popularity_prior": 0.037788,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 121
+    },
+    {
+      "work_id": "10051",
+      "score": 0.566451,
+      "preference_score": 0.550498,
+      "popularity_prior": 0.043478,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 122
+    },
+    {
+      "work_id": "28979",
+      "score": 0.563311,
+      "preference_score": 0.571671,
+      "popularity_prior": 0.020223,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 123
+    },
+    {
+      "work_id": "23846",
+      "score": 0.56222,
+      "preference_score": 0.555145,
+      "popularity_prior": 0.034832,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 124
+    },
+    {
+      "work_id": "25381",
+      "score": 0.561125,
+      "preference_score": 0.555145,
+      "popularity_prior": 0.033737,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 125
+    },
+    {
+      "work_id": "10092",
+      "score": 0.557292,
+      "preference_score": 0.540162,
+      "popularity_prior": 0.044138,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "source:ライトノベル・小説",
+          "contribution": 0.047773
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 126
+    },
+    {
+      "work_id": "22631",
+      "score": 0.556299,
+      "preference_score": 0.550498,
+      "popularity_prior": 0.033326,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 127
+    },
+    {
+      "work_id": "10446",
+      "score": 0.552847,
+      "preference_score": 0.545198,
+      "popularity_prior": 0.03491,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 128
+    },
+    {
+      "work_id": "22505",
+      "score": 0.551127,
+      "preference_score": 0.538229,
+      "popularity_prior": 0.03981,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 129
+    },
+    {
+      "work_id": "11091",
+      "score": 0.547162,
+      "preference_score": 0.538229,
+      "popularity_prior": 0.035844,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 130
+    },
+    {
+      "work_id": "10315",
+      "score": 0.545819,
+      "preference_score": 0.534299,
+      "popularity_prior": 0.038235,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 131
+    },
+    {
+      "work_id": "29005",
+      "score": 0.545334,
+      "preference_score": 0.558244,
+      "popularity_prior": 0.015002,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 132
+    },
+    {
+      "work_id": "11554",
+      "score": 0.538426,
+      "preference_score": 0.5221,
+      "popularity_prior": 0.042431,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 133
+    },
+    {
+      "work_id": "21666",
+      "score": 0.534441,
+      "preference_score": 0.520463,
+      "popularity_prior": 0.040002,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 134
+    },
+    {
+      "work_id": "22971",
+      "score": 0.532584,
+      "preference_score": 0.515197,
+      "popularity_prior": 0.043147,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 135
+    },
+    {
+      "work_id": "24403",
+      "score": 0.532532,
+      "preference_score": 0.5221,
+      "popularity_prior": 0.036537,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 136
+    },
+    {
+      "work_id": "26925",
+      "score": 0.530513,
+      "preference_score": 0.530365,
+      "popularity_prior": 0.026666,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 137
+    },
+    {
+      "work_id": "10218",
+      "score": 0.520821,
+      "preference_score": 0.515197,
+      "popularity_prior": 0.031384,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 138
+    },
+    {
+      "work_id": "10569",
+      "score": 0.513236,
+      "preference_score": 0.5,
+      "popularity_prior": 0.038236,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 139
+    },
+    {
+      "work_id": "27643",
+      "score": 0.513137,
+      "preference_score": 0.5,
+      "popularity_prior": 0.038137,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 140
+    },
+    {
+      "work_id": "10314",
+      "score": 0.511294,
+      "preference_score": 0.5,
+      "popularity_prior": 0.036294,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 141
+    },
+    {
+      "work_id": "27344",
+      "score": 0.510663,
+      "preference_score": 0.5,
+      "popularity_prior": 0.035663,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 142
+    },
+    {
+      "work_id": "21428",
+      "score": 0.510462,
+      "preference_score": 0.5,
+      "popularity_prior": 0.035462,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 143
+    },
+    {
+      "work_id": "27539",
+      "score": 0.510111,
+      "preference_score": 0.5,
+      "popularity_prior": 0.035111,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 144
+    },
+    {
+      "work_id": "10506",
+      "score": 0.508724,
+      "preference_score": 0.5,
+      "popularity_prior": 0.033724,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 145
+    },
+    {
+      "work_id": "22630",
+      "score": 0.508631,
+      "preference_score": 0.5,
+      "popularity_prior": 0.033631,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 146
+    },
+    {
+      "work_id": "10568",
+      "score": 0.508568,
+      "preference_score": 0.5,
+      "popularity_prior": 0.033568,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 147
+    },
+    {
+      "work_id": "10505",
+      "score": 0.508159,
+      "preference_score": 0.5,
+      "popularity_prior": 0.033159,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 148
+    },
+    {
+      "work_id": "10989",
+      "score": 0.508057,
+      "preference_score": 0.5,
+      "popularity_prior": 0.033057,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 149
+    },
+    {
+      "work_id": "10489",
+      "score": 0.505507,
+      "preference_score": 0.5,
+      "popularity_prior": 0.030507,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 150
+    },
+    {
+      "work_id": "27991",
+      "score": 0.504777,
+      "preference_score": 0.5,
+      "popularity_prior": 0.029777,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 151
+    },
+    {
+      "work_id": "23433",
+      "score": 0.504627,
+      "preference_score": 0.5,
+      "popularity_prior": 0.029627,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 152
+    },
+    {
+      "work_id": "28953",
+      "score": 0.504004,
+      "preference_score": 0.5,
+      "popularity_prior": 0.029004,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 153
+    },
+    {
+      "work_id": "23434",
+      "score": 0.503802,
+      "preference_score": 0.5,
+      "popularity_prior": 0.028802,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 154
+    },
+    {
+      "work_id": "10447",
+      "score": 0.50297,
+      "preference_score": 0.5,
+      "popularity_prior": 0.02797,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 155
+    },
+    {
+      "work_id": "26119",
+      "score": 0.49579,
+      "preference_score": 0.5,
+      "popularity_prior": 0.02079,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 156
+    }
+  ]
+}

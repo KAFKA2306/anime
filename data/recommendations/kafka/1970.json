@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1970,
+  "source": {
+    "source_tag_id": "T0004864",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004864",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "358ecfcac5fde641c966c782ce2a9b9bc5674533b66b9e1db3d7f6264aaf386f",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 8,
+  "recommendations": [
+    {
+      "work_id": "23325",
+      "score": 0.944748,
+      "preference_score": 0.953712,
+      "popularity_prior": 0.038721,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    },
+    {
+      "work_id": "23326",
+      "score": 0.943993,
+      "preference_score": 0.953712,
+      "popularity_prior": 0.037967,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        },
+        {
+          "feature": "setting:学園",
+          "contribution": 0.399282
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 2
+    },
+    {
+      "work_id": "23327",
+      "score": 0.932728,
+      "preference_score": 0.941787,
+      "popularity_prior": 0.038031,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 3
+    },
+    {
+      "work_id": "23322",
+      "score": 0.931719,
+      "preference_score": 0.941787,
+      "popularity_prior": 0.037021,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 4
+    },
+    {
+      "work_id": "23323",
+      "score": 0.931625,
+      "preference_score": 0.941787,
+      "popularity_prior": 0.036928,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 5
+    },
+    {
+      "work_id": "24086",
+      "score": 0.725484,
+      "preference_score": 0.724814,
+      "popularity_prior": 0.03691,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 6
+    },
+    {
+      "work_id": "23290",
+      "score": 0.579286,
+      "preference_score": 0.56359,
+      "popularity_prior": 0.043875,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 7
+    },
+    {
+      "work_id": "23395",
+      "score": 0.525,
+      "preference_score": 0.5,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 8
+    }
+  ]
+}

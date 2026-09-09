@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1967,
+  "source": {
+    "source_tag_id": "T0004850",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0004850",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "ad12a8cd08122206bb240c67f5accd529f5559e2773741d4b41af16333a3fb71",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 5,
+  "recommendations": [
+    {
+      "work_id": "24030",
+      "score": 0.89429,
+      "preference_score": 0.892958,
+      "popularity_prior": 0.045979,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    },
+    {
+      "work_id": "21272",
+      "score": 0.839415,
+      "preference_score": 0.834589,
+      "popularity_prior": 0.046556,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 2
+    },
+    {
+      "work_id": "24041",
+      "score": 0.58588,
+      "preference_score": 0.564738,
+      "popularity_prior": 0.049379,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ホラー・サスペンス・ミステリー",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 3
+    },
+    {
+      "work_id": "10917",
+      "score": 0.576261,
+      "preference_score": 0.553959,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 4
+    },
+    {
+      "work_id": "11455",
+      "score": 0.541403,
+      "preference_score": 0.524803,
+      "popularity_prior": 0.042841,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.057327
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 5
+    }
+  ]
+}

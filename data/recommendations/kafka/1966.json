@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1966,
+  "source": {
+    "source_tag_id": "T0011240",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0011240",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "b361aad90e7b05b67b83a37b968915cdb831f6d6ed9cd18eab5b0dca6c5a4952",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 2,
+  "recommendations": [
+    {
+      "work_id": "24071",
+      "score": 0.766005,
+      "preference_score": 0.754263,
+      "popularity_prior": 0.049455,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 0.6
+        },
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 1
+    },
+    {
+      "work_id": "24072",
+      "score": 0.589455,
+      "preference_score": 0.567848,
+      "popularity_prior": 0.05,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:友情・仲間",
+          "contribution": 0.034396
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 2
+    }
+  ]
+}

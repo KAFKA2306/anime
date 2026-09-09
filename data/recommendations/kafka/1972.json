@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1972,
+  "source": {
+    "source_tag_id": "T0007303",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0007303",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "a5e8dc77b9bfabbd5184a7d1ca72556ae65ac34d63e23862638cccd9f652d7d4",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 7,
+  "recommendations": [
+    {
+      "work_id": "23360",
+      "score": 0.884922,
+      "preference_score": 0.891316,
+      "popularity_prior": 0.038172,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:成長・挑戦",
+          "contribution": 1
+        },
+        {
+          "feature": "genre:ドラマ・青春",
+          "contribution": 0.855777
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    },
+    {
+      "work_id": "10893",
+      "score": 0.650327,
+      "preference_score": 0.636255,
+      "popularity_prior": 0.045885,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 2
+    },
+    {
+      "work_id": "23485",
+      "score": 0.614097,
+      "preference_score": 0.608964,
+      "popularity_prior": 0.035581,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 3
+    },
+    {
+      "work_id": "10718",
+      "score": 0.605694,
+      "preference_score": 0.584941,
+      "popularity_prior": 0.05,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "genre:日常・ほのぼの",
+          "contribution": 0.040537
+        },
+        {
+          "feature": "theme:癒やし",
+          "contribution": 0.040537
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 4
+    },
+    {
+      "work_id": "10368",
+      "score": 0.594365,
+      "preference_score": 0.577671,
+      "popularity_prior": 0.045577,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 5
+    },
+    {
+      "work_id": "26263",
+      "score": 0.593745,
+      "preference_score": 0.577671,
+      "popularity_prior": 0.044958,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 6
+    },
+    {
+      "work_id": "20237",
+      "score": 0.581843,
+      "preference_score": 0.564738,
+      "popularity_prior": 0.045342,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "theme:恋愛",
+          "contribution": 0.150349
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 7
+    }
+  ]
+}

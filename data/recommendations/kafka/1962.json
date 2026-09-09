@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1962,
+  "source": {
+    "source_tag_id": "T0014688",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014688",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "c0db1d45dc0133e82a4c2961c0442be55e51e870018f0d9bca608682a09f54e3",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 1,
+  "recommendations": [
+    {
+      "work_id": "24069",
+      "score": 0.695256,
+      "preference_score": 0.679216,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    }
+  ]
+}

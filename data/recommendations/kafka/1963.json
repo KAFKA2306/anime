@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1963,
+  "source": {
+    "source_tag_id": "T0014799",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014799",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "06fe4e27f6cf2a35e4a54eda5ff6c9579c36648507b196f545681caae8a3dab1",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 1,
+  "recommendations": [
+    {
+      "work_id": "24079",
+      "score": 0.6598,
+      "preference_score": 0.641895,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "motif:ロボット・メカ",
+          "contribution": 0.067561
+        },
+        {
+          "feature": "subgenre:ロボットSF",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    }
+  ]
+}

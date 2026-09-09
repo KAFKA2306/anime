@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1964,
+  "source": {
+    "source_tag_id": "T0014746",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0014746",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "3888d454894d15993d8967d8efd1ed2745107715a55e330bc9a32410777145d9",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 1,
+  "recommendations": [
+    {
+      "work_id": "24080",
+      "score": 0.703696,
+      "preference_score": 0.688101,
+      "popularity_prior": 0.05,
+      "classification_confidence": 1,
+      "top_positive_features": [
+        {
+          "feature": "genre:SF",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "setting:宇宙",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "subgenre:スペースオペラ",
+          "contribution": 0.186382
+        },
+        {
+          "feature": "genre:ファンタジー",
+          "contribution": 0.072226
+        },
+        {
+          "feature": "genre:ロボット・メカ",
+          "contribution": 0.067561
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "classified",
+      "rank": 1
+    }
+  ]
+}

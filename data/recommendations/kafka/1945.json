@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "kafka",
+  "model_version": "1.0.0",
+  "year": 1945,
+  "source": {
+    "source_tag_id": "T0015540",
+    "source_url": "https://animestore.docomo.ne.jp/animestore/tag_pc?tagId=T0015540",
+    "source_generated_at": "2026-09-07T22:51:57.424Z",
+    "source_content_sha256": "7fde74c1e9d377a4e6baf5e62f1d521c5c65555224f61669060f78b7217d316d",
+    "model_manifest_sha256": "2a439f02d33247830f892887792d639184466f70cc6c2819ce625185b4bbf261",
+    "model_profile_sha256": "514ed4a3880f6161321fa2c2b5e319f6554964e9357038537ed2d0ca92ff01a9"
+  },
+  "training": {
+    "matched_ratings": 10,
+    "missing_work_ids": []
+  },
+  "recommendation_count": 1,
+  "recommendations": [
+    {
+      "work_id": "24515",
+      "score": 0.571167,
+      "preference_score": 0.548597,
+      "popularity_prior": 0.05,
+      "classification_confidence": 0.6,
+      "top_positive_features": [
+        {
+          "feature": "genre:スペキュレーティブ判定保留",
+          "contribution": 0.147653
+        },
+        {
+          "feature": "theme:職業・仕事",
+          "contribution": 0.024322
+        }
+      ],
+      "top_negative_features": [],
+      "classification_status": "needs-review",
+      "rank": 1
+    }
+  ]
+}
