@@ -12,6 +12,12 @@ on:
       - tag-ranking.js
       - explore/**
       - data/**
+      - preferences/**
+      - scripts/lib/recommendation-model.mjs
+      - scripts/build-preference-model.mjs
+      - scripts/build-recommendations.mjs
+      - scripts/verify-recommendations.mjs
+      - tests/recommendation-model.test.mjs
       - .github/workflows/pages.yml
       - .github/workflows/live-pages-smoke.yml
   workflow_dispatch:
@@ -38,6 +44,8 @@ jobs:
 
       - name: Verify production HTML and wrapped tag assets
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           base="https://kafka2306.github.io/anime"
@@ -46,6 +54,12 @@ jobs:
 
           matched=false
           for attempt in $(seq 1 36); do
+            deployment_message="$(gh api "repos/${GITHUB_REPOSITORY}/commits/gh-pages" --jq '.commit.message' 2>/dev/null || true)"
+            if [[ "$deployment_message" != "Deploy ${GITHUB_SHA}" ]]; then
+              echo "gh-pages has not deployed ${GITHUB_SHA} yet (attempt ${attempt})."
+              sleep 10
+              continue
+            fi
             curl --fail --silent --show-error --location \
               "$raw_base/index.html?smoke=${GITHUB_SHA}-${attempt}" -o "$tmp/expected-index.html"
             curl --fail --silent --show-error --location \
@@ -110,7 +124,12 @@ jobs:
             "$base/data/manifest.json?smoke=${GITHUB_SHA}" -o "$tmp/manifest.json"
           python -m json.tool "$tmp/manifest.json" >/dev/null
 
-          echo "Live Pages smoke test passed: $base/?year=2026 and $base/explore/"
+          curl --fail --silent --show-error --location \
+            "$base/data/recommendations/kafka/2026.json?smoke=${GITHUB_SHA}" -o "$tmp/recommendations-2026.json"
+          python -m json.tool "$tmp/recommendations-2026.json" >/dev/null
+          node -e "const p=require('./' + process.argv[1]); if(p.profile_id!=='kafka'||!Array.isArray(p.recommendations)||p.recommendations.length===0) process.exit(1)" "$tmp/recommendations-2026.json"
+
+          echo "Live Pages smoke test passed: $base/?year=2026 and learned recommendations"
 
       - name: Record verified deployment
         env:

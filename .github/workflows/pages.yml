@@ -12,6 +12,12 @@ on:
       - tag-ranking.js
       - explore/**
       - data/**
+      - preferences/**
+      - scripts/lib/recommendation-model.mjs
+      - scripts/build-preference-model.mjs
+      - scripts/build-recommendations.mjs
+      - scripts/verify-recommendations.mjs
+      - tests/recommendation-model.test.mjs
       - scripts/build-catalog-api.mjs
       - tests/catalog-api.test.mjs
       - docs/catalog-api.md
@@ -26,6 +32,12 @@ on:
       - tag-ranking.js
       - explore/**
       - data/**
+      - preferences/**
+      - scripts/lib/recommendation-model.mjs
+      - scripts/build-preference-model.mjs
+      - scripts/build-recommendations.mjs
+      - scripts/verify-recommendations.mjs
+      - tests/recommendation-model.test.mjs
       - scripts/build-catalog-api.mjs
       - tests/catalog-api.test.mjs
       - docs/catalog-api.md
@@ -72,6 +84,12 @@ jobs:
           node --check tag-ranking.js
           node --check explore/explore.js
           node scripts/validate-data.mjs
+          node --test tests/recommendation-model.test.mjs
+          node scripts/build-preference-model.mjs
+          node scripts/build-recommendations.mjs
+          node scripts/verify-recommendations.mjs
+          python -m json.tool data/recommendations/kafka/model.json > /dev/null
+          python -m json.tool data/recommendations/kafka/2026.json > /dev/null
           node --test tests/catalog-api.test.mjs
           node scripts/build-catalog-api.mjs
           python -m json.tool data/manifest.json > /dev/null
@@ -85,6 +103,8 @@ jobs:
           grep -F 'id="activeFilterBar"' index.html
           grep -F 'id="mobileStatusText"' index.html
           grep -F 'class="work-card__link"' index.html
+          grep -F '学習済み嗜好モデル' index.html
+          grep -F 'loadBaselineRecommendations' app.js
           grep -F -- '--lavender:' styles.css
           grep -F -- '--rose:' styles.css
           grep -F -- '--mint:' styles.css
@@ -106,12 +126,13 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf _site
-          mkdir -p _site/data/by-year _site/data/likes _site/api
+          mkdir -p _site/data/by-year _site/data/likes _site/data/recommendations _site/api
           cp index.html styles.css app.js tag-ranking.css tag-ranking.js _site/
           cp -R explore _site/explore
           cp data/manifest.json _site/data/
           cp data/by-year/*.json _site/data/by-year/
           cp data/likes/*.tsv _site/data/likes/
+          cp -R data/recommendations/. _site/data/recommendations/
           cp -R api/v1 _site/api/
           touch _site/.nojekyll
 
