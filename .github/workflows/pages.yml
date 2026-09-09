@@ -23,6 +23,7 @@ on:
       - docs/catalog-api.md
       - package.json
       - .github/workflows/pages.yml
+      - .github/workflows/live-pages-smoke.yml
   pull_request:
     paths:
       - index.html
@@ -43,6 +44,7 @@ on:
       - docs/catalog-api.md
       - package.json
       - .github/workflows/pages.yml
+      - .github/workflows/live-pages-smoke.yml
   workflow_dispatch:
 
 permissions:
