@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29209",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29209",
+  "attribute_fetched_at": "2026-09-14T23:18:42.594Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ミュージカル『PandoraHearts』",
+    "synopsis": "四大公爵家ベザリウス家の次期当主・オズ=ベザリウスは、15歳の成人の儀の最中に何者かに襲われ、身に覚えのない罪により闇の監獄「アヴィス」に堕とされてしまう。行く当てのない暗闇のなか、オズは過去の記憶を失った少女アリスと出会い、契約を交わすことでアヴィスから脱出。しかしそこは、成人の儀から10年後の世界だった。シャロン=レインズワースやザークシーズ=ブレイクと再会したオズは、レイヴンと名乗る青年と共に、アリスの記憶探しの旅に出ることになり――己の罪と100年前の惨劇を巡り、運命の歯車が回り出す。",
+    "staff_text": "原作:望月淳(「Gファンタジーコミックス」スクウェア・エニックス刊)/脚本・演出:山崎彬/作詞:高橋亜子/音楽:富貴晴美",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "4a056678e9ae0d533a7791cab4bb91d1b315bb1e7714630460b8c1c6bd07622c"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2025,
+  "original_credit": "望月淳(「Gファンタジーコミックス」スクウェア・エニックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "望月淳(「Gファンタジーコミックス」スクウェア・エニックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29209"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29209"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29209"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29209"
+    }
+  }
+}

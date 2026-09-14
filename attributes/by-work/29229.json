@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29229",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29229",
+  "attribute_fetched_at": "2026-09-14T23:18:42.594Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "小学館絵本アニメ劇場",
+    "synopsis": "",
+    "staff_text": "",
+    "official_genres": [
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2023,
+    "source": "network",
+    "sha256": "d4d678cf926f0e85dcb21e50d2f261c730409d6f2b7368dd5db8d88b71eeae11"
+  },
+  "official_genres": [
+    "ショート",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2023,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.no-evidence",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29229"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29229"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29229"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29229"
+    }
+  }
+}

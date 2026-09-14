@@ -1,0 +1,107 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29220",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29220",
+  "attribute_fetched_at": "2026-09-14T23:18:42.594Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "君主様に胸やけ",
+    "synopsis": "主人公・アリアは若くしてローゼンベルク帝国皇太子の護衛隊長を務めるキャリアウーマン。主君である皇太子・ユリウスはその富と権力に加え、誰もが認めざるを得ない容姿を持ち合わせていたが、残念なことに性格がゴミであった。日々振り回されうんざりするアリア。しかし案外ユリウスの方は、アリアと一緒にいたいだけだったりして......?神ビジュ皇太子VS社畜女騎士、尊い主従ケンカップル爆誕!",
+    "staff_text": "原作・原案:奥田たすく/制作:SORAJIMA/監督:水野智史/音響監督:サイトウユウ/音響効果:佐々木淳一/録音調整:稲垣聡/音楽:Morrigan(WAVE)/制作統括:高橋和也/エグゼクティブプロデューサー:澤村直道/制作プロダクション:Imagica Infos/Imageworks Studio/提供:大日本印刷株式会社/emole株式会社",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "bb7cdf277506a5d695d2ee5e25508333e4d398af1f4e9d503312852bd67deff9"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ",
+    "ショート"
+  ],
+  "production_year": 2025,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "ショート",
+    "スペースオペラ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ファンタジー",
+      "恋愛・ラブコメ",
+      "ショート"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29220"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "matched_terms": [
+        "騎士"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29220"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29220"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29220"
+    }
+  }
+}
