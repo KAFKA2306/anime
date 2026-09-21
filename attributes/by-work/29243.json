@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29243",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29243",
+  "attribute_fetched_at": "2026-09-21T23:27:56.902Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "夢色パティシエール",
+    "synopsis": "中学生の天野いちごは、ケーキを食べるのが大好きな女の子。何の取柄もなく、将来の夢も持てずに毎日を過ごしていたが、製菓の名門校・聖マリー学園講師のアンリ先生との出会いをきっかけに「スイーツでみんなを幸せにしたい!」という夢を見つける。夢を実現するために、聖マリー学園に転入したいちごは、伝説のスイーツ精霊(スピリッツ)と出会うことになるのだが―。調理の腕はまだまだだけど、お菓子作りへの情熱は人一倍。仲間と共に地道な努力を重ねながら、一歩ずつ「パティシエールになりたい!」という夢への階段を登っていく。集英社の少女漫画誌『りぼん』に連載された、松本夏実の同名コミックをTVアニメ化。作品中に出てくるスイーツの監修は、実際の有名パティシエ・青木定治、パティシエール・渡辺恭子の両氏が担当している。",
+    "staff_text": "原作者:松本夏実(集英社「りぼん」連載)/出版社:集英社/監督:鈴木行/脚本:影山由美、成田良美、大場小ゆり、山下憲一/アニメーション制作会社:スタジオ雲雀/製作:スタジオぴえろ/シリーズ構成:山田隆司/キャラクターデザイン:秋山由樹子/音響監督:たなかかずや/監修:青木定治(パティスリー・サダハル・アオキ・パリ オーナーシェフ)/協力:社団法人 日本洋菓子協会連合会",
+    "official_genres": [
+      "ドラマ/青春",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2009,
+    "source": "network",
+    "sha256": "cb04d2afd6eb107a97063f1f217ca151fc0318e344bde89122ab78de7c1f7ed2"
+  },
+  "official_genres": [
+    "ドラマ/青春",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2009,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "学園",
+    "友情・仲間",
+    "料理・グルメ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "料理・グルメ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29243"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29243"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29243"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "料理・グルメ": [
+            "菓子"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29243"
+    }
+  }
+}

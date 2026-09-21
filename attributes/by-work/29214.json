@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29214",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29214",
+  "attribute_fetched_at": "2026-09-21T23:27:56.902Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "鬼公子炎魔",
+    "synopsis": "永井豪原作の漫画が、アダルトタッチのデザインでリメイクされたOVA作品。炎が化生した炎魔(えんま)の使命は、魔界より逃げ出した「魔」を狩ること。そのために、パートナーである雪鬼姫(ゆきひめ)、情報収集担当のカパエルと共に人間界で探偵をしていた。そして今日も、炎魔探偵事務所に依頼主がやって来る...。",
+    "staff_text": "企画:ダイナミック企画/原作:永井 豪/監督:神戸 守/シリーズ構成・脚本:吉岡たかを/キャラクターデザイン:小丸敏之/魔物デザイン:田中 良/美術設定:青木智由紀/美術監督:荒井和浩/色彩設計:原田幸子/撮影監督:高橋圭祐/編集:瀬山武司/音響監督:清水勝則/音響効果:西村睦弘/音楽:小西香葉、近藤由紀夫/音響制作:ザック・プロモーション/アニメーション制作:ブレインズ・ベース/製作:バンダイビジュアル",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2006,
+    "source": "network",
+    "sha256": "50aa451b481fe8fb19ee8397b87b14ef883c6f3b11c7ac492dec4793052ffd9f"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2006,
+  "original_credit": "永井 豪",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
+    "推理・謎解き",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "永井 豪",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29214"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29214"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29214"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "探偵"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29214"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29215",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215",
+  "attribute_fetched_at": "2026-09-21T23:27:56.902Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "緋色の欠片",
+    "synopsis": "春日珠紀は、両親の海外転勤を機に祖母の家に呼ばれ一緒に暮らすことになる。珠紀が村に呼ばれた本当の理由は、先祖代々続く「玉依姫」の使命として、鬼斬丸という刀の封印をすることだった。そこに珠紀を守る宿命を背負った守護者と呼ばれる少年たちが現れ、珠紀は彼らに支えられ、玉依姫としての使命に目覚めていく...。 ※第14話以降は『緋色の欠片 第二章』です。",
+    "staff_text": "原作:アイデアファクトリー・デザインファクトリー/監督:ボブ白旗/シリーズ構成:中村能子/キャラクター原案:カズキヨネ/キャラクターデザイン・総作画監督:恩田尚之/クリーチャーデザイン:植田 均/プロップデザイン:小坂 知/色彩設計:大須賀隆純/美術監督:清水順子/撮影監督:川口正幸/編集:松村正宏/音楽:七瀬 光/音響監督:平光琢也/音響効果:出雲範子/音響制作:ダックスプロダクション/アニメーション制作:スタジオディーン",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2012,
+    "source": "network",
+    "sha256": "4dcb702aca7950c1dad1dc6f42a7c84b878d92961f9ac8ff83c2f5c9bdbe3b06"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2012,
+  "original_credit": "アイデアファクトリー・デザインファクトリー",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "スペキュレーティブ判定保留",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "アイデアファクトリー・デザインファクトリー",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215"
+    }
+  }
+}

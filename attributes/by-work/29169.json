@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29169",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29169",
+  "attribute_fetched_at": "2026-09-21T23:27:56.902Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "LINE OFFLINE サラリーマン",
+    "synopsis": "仕事は出来るが、どこか抜けた所があるムーン係長。無口だけど人情深いブラウン係長。社長の息子でナルシストなジェームズ課長に、ダイエットとリバウンドを繰り返すコニー。今日もLINEコーポレーションでは、個性的な仲間が働いている。日常生活や会社の中でよく見かける出来事、そして予想外の事件が起こって、今日もあなたを笑わせます!",
+    "staff_text": "企画:舛田淳、安齋進/原案協力:金大錫、兼保圭介/監督:田上キミノリ/キャラクターデザイナー:Groove Mogi/CGディレクター:小林由八、佐藤雄太郎/編集:東京現像所/アニメーションプロデューサー:西山宗弘/音響監督:渡辺淳/音楽:末廣健一郎/アニメーション制作:小学館ミュージック&デジタル エンタテイメント/プロデューサー:神宮字真/制作:小学館集英社プロダクション/製作:LINE OFFLINE",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "ショート"
+    ],
+    "production_year": 2013,
+    "source": "network",
+    "sha256": "306f8cc6685a327c5bfdd326ae2a4cb4d4605d114d4dac38f9f94a88753443b6"
+  },
+  "official_genres": [
+    "コメディ/ギャグ",
+    "ショート"
+  ],
+  "production_year": 2013,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "ショート",
+    "ミステリー",
+    "職場",
+    "友情・仲間",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "ショート"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "職場"
+    ],
+    "theme": [
+      "友情・仲間",
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29169"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29169"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29169"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "職場": [
+            "会社"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29169"
+    }
+  }
+}
