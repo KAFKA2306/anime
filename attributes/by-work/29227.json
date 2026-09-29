@@ -1,0 +1,134 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29227",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227",
+  "attribute_fetched_at": "2026-09-29T00:32:52.218Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "転生貴族、鑑定スキルで成り上がる 第3期",
+    "synopsis": "人の能力やステータスを見抜くことが出来る“鑑定スキル”を持って異世界に転生したアルス・ローベント。ミーシアン継承戦争での功績を認められ、カナレ郡長へと就任したアルスは、新しい仲間を迎え、新生ローベント家としての体制を整えていた。そんな中、バサマークと同盟を結んだサイツ州からの巨大な軍勢がカナレに襲いかかる。それぞれの想いを胸に、次なる敵との戦いが始まる――。新たな仲間たちとともに激動の新章へ突入!",
+    "staff_text": "原作:未来人 A『転生貴族、鑑定スキルで成り上がる~弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた~』(講談社「K ラノベブックス」刊)/キャラクター原案:jimmy/漫画:井上菜摘(講談社「マガジンポケット」連載)/監督:加戸誉夫/副監督:松島弘明/シリーズ構成:大東大介 /キャラクターデザイン:八尋裕子/サブキャラクターデザイン:山岡信一・原 千遥/色彩設計:田中美穂/美術監督:橋詰良子(クリープ)/撮影監督:山越康司/編集:野川 仁/音楽:夢見クジラ/音響監督:亀山俊樹/アニメーション制作:GeyeG Pictures",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "16da7433b3886b17d323ce1a1220c4dc0b8678dee5f486f766a07d736a221b92"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "未来人 A『転生貴族、鑑定スキルで成り上がる~弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた~』(講談社「K ラノベブックス」刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "ドラマ・青春",
+    "異世界ファンタジー",
+    "異世界",
+    "友情・仲間",
+    "戦争",
+    "転生"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "友情・仲間",
+      "戦争"
+    ],
+    "motif": [
+      "転生"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ブックス"
+      ],
+      "evidence_text": "未来人 A『転生貴族、鑑定スキルで成り上がる~弱小領地を受け継いだので、優秀な人材を増やしていたら、最強領地になってた~』(講談社「K ラノベブックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "異世界",
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "転生"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転生"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227"
+    }
+  }
+}

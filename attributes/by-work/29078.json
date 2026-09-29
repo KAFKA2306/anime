@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29078",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29078",
+  "attribute_fetched_at": "2026-09-29T00:32:52.218Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "おわっタヌキ",
+    "synopsis": "",
+    "staff_text": "監督:いくピソ・ゆうピソ/脚本:いくピソ・ゆうピソ/デザイン:いくピソ/アニメーション:ゆうピソ/BGM:Audiostock/効果音:Audiostock",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "9fb69e6992c79b939db15d571a423b190918664edf0f94741b7e782b3dea3263"
+  },
+  "official_genres": [
+    "ショート",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "日常・ほのぼの"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29078"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29078"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29078"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29078"
+    }
+  }
+}
