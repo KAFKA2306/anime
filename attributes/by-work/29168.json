@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29168",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29168",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "北極百貨店のコンシェルジュさん",
+    "synopsis": "新人コンシェルジュとして秋乃が働き始めた「北極百貨店」は、来店されるお客様が全て動物という不思議な百貨店。一人前のコンシェルジュとなるべく、フロアマネージャーや先輩コンシェルジュに見守られながら日々奮闘する秋乃の前には、あらゆるお悩みを抱えたお客様が現れます。中でも<絶滅種>である“V.I.A”(ベリー・インポータント・アニマル)のお客様は一癖も二癖もある個性派ぞろい。長年連れ添う妻を喜ばせたいワライフクロウ、父親に贈るプレゼントを探すウミベミンク、恋人へのプロポーズに思い悩むニホンオオカミ・・・、自分のため、誰かのため、様々な理由で「北極百貨店」を訪れるお客様の想いに寄り添うために、秋乃は今日も元気に店内を駆け回ります。",
+    "staff_text": "原作:西村ツチカ『北極百貨店のコンシェルジュさん』(小学館「ビッグコミックススペシャル」刊)/監督:板津匡覧/脚本:大島里美/キャラクターデザイン・作画監督:森田千誉/コンセプトカラーデザイン:広瀬いづみ/美術監督:立田一郎[スタジオ風雅]/動画検査:野上麻衣子/撮影監督:田中宏侍/編集:植松淳一/音響監督:菊田浩巳/音楽:tofubeats/アニメーション制作:Production I.G/配給:アニプレックス",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2023,
+    "source": "network",
+    "sha256": "de8dccdc3028633d809ab5c854368e4badf5f7b212d57c460fb923eb437316d5"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2023,
+  "original_credit": "西村ツチカ『北極百貨店のコンシェルジュさん』(小学館「ビッグコミックススペシャル」刊)",
+  "source_origin": "漫画",
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "スペキュレーティブ判定保留"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "コメディ・ギャグ",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック",
+        "ビッグコミック"
+      ],
+      "evidence_text": "西村ツチカ『北極百貨店のコンシェルジュさん』(小学館「ビッグコミックススペシャル」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29168"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29168"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29168"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29168"
+    }
+  }
+}

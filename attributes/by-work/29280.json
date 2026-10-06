@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29280",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29280",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ポップパップポルターズ",
+    "synopsis": "気鋭のミニチュアクリエイター・Mozuが贈る「のぞきたくなる」ミニチュアアニメ!驚くほどリアルでどこか愛らしいミニチュアの世界が、コマ撮りアニメになって動き出す!監督を務めるのは、新進気鋭のミニチュアクリエイター、Mozu。日常風景を再現した精緻なミニチュア作品がSNSで話題となり、メディアでも大きな反響を呼びました。また、学生時代に全て一人で制作したコマ撮りアニメ「故障中」がアジア最大の映画祭「Digicon6」JAPAN Youth部門最優秀賞を受賞するなど、国内外からの注目を集める作家です。リモコンの位置が変わっている気がする、お菓子がいつの間にかなくなっている...?実は、やんちゃないたずらオバケの仕業かも...これは、とある家の壁の中に暮らしている小さなオバケの三兄弟、ポップ・パップ・ポルタのくすっと笑えてちょっとふしぎな物語。",
+    "staff_text": "原作・アニメーション制作:MOZU STUDIOS/監督・ミニチュア制作:Mozu/脚本:Mozu / Yuuka/アートディレクター・キャラクターデザイン:Yuuka/キャラクター立体造形:吉井宏/撮影:根岸祐太/音響監督:小沼則義/音楽:スキャット後藤/企画制作:シンエイ動画",
+    "official_genres": [
+      "日常/ほのぼの",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "e336a084e2f051a17a3c7b08d56394303eb3e84bfa8a2f9e22b4bec80d5a1273"
+  },
+  "official_genres": [
+    "日常/ほのぼの",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "コメディ・ギャグ",
+    "家族",
+    "料理・グルメ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの",
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "家族",
+      "料理・グルメ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29280"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29280"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "日常/ほのぼの",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29280"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "兄弟"
+          ],
+          "料理・グルメ": [
+            "菓子"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29280"
+    }
+  }
+}

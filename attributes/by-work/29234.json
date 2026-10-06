@@ -1,0 +1,106 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29234",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29234",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "傷だらけ聖女より報復をこめて Season2",
+    "synopsis": "“欠陥聖女”と蔑まれ、信じていた親友アリアンにも裏切られたルーア。彼女は“痛みを返す力”を駆使して、第二王子スウェンとともに復讐の道を歩み始める。そして舞台は王国の祭典――生誕祭。“薔薇姫”に選ばれたルーアは、再びアリアンと対峙することになる。やがて浮かび上がるのは、彼女自身の過去へと繋がる謎。家族の死にまつわる真実へと、自ら踏み込んでいく――「受けた痛みは、痛みで返す」揺らぐ過去と現在のなかで、ルーアは何を選ぶのか......!",
+    "staff_text": "原案:編乃肌/制作:SORAJIMA/監督:深瀬沙哉/音響監督:今泉 雄一/音響制作:ダックスプロダクション/音響効果:野崎 博樹、小林 亜依里/音楽:onoken/制作統括:高橋 和也/アニメーション制作:Imagica Infos / Imageworks Studio/製作:「傷だらけ聖女2」製作委員会、AnimationID",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "eab18b30da4a9570608cb0d6e76dee6b22480b44e58c98c512a6c3a1dc6e3d4a"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2026,
+  "original_credit": "編乃肌",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ファンタジー",
+    "家族",
+    "復讐",
+    "時間移動"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ファンタジー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "家族",
+      "復讐"
+    ],
+    "motif": [
+      "時間移動"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "編乃肌",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29234"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29234"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29234"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "家族"
+          ],
+          "復讐": [
+            "復讐",
+            "報復"
+          ]
+        },
+        "motif": {
+          "時間移動": [
+            "過去へ"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29234"
+    }
+  }
+}

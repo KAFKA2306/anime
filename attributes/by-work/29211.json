@@ -1,0 +1,122 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29211",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29211",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "舞台「幻想水滸伝-門の紋章戦争篇-」",
+    "synopsis": "生と死を司る紋章“ソウルイーター”を巡る運命の戦い。後世において、人はこの物語を“門の紋章戦争”と呼ぶ...。太陽暦446年。トラン湖周辺を支配する大国「赤月帝国」で内乱 “継承戦争” が勃発。内乱は当初、正統な帝位継承者であるバルバロッサ・ルーグナーが劣勢だったが、テオ・マクドールら帝国六将軍と軍師レオン・シルバーバーグの活躍で逆転勝利。帝位の座を取り戻すことに成功する。さらにその翌年には、北方の外敵であった都市同盟勢力を撃退。バルバロッサは人々に“黄金皇帝”と崇められ、称えられた。だがそれから数年後...。皇帝バルバロッサは宮廷魔術師ウィンディに魅了され、政治を顧みなくなってしまう。その結果、軍部や宮廷内で汚職が氾濫し、赤月帝国は急激に崩壊の一途をたどっていた。そんなある日、ひとりの少年が皇帝との初めての謁見を迎えていた。かの大将軍テオ・マクドールの息子である。その瞳は未来への希望に満ち溢れていたのだが...。彼がこの時代を変える礎になることを、まだ誰も知らない...。",
+    "staff_text": "原作:「幻想水滸伝」(KONAMI)/脚本・演出:中屋敷法仁/制作:ゴーチ・ブラザーズ/協力:株式会社コナミデジタルエンタテインメント/企画制作・プロデュース:4cu(Frontier Works Inc.)/主催:舞台「幻想水滸伝」製作委員会",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "cb258a61af4d682855a6ca3537a0bf14d51a21f0ff30abbb7a0d02bf8b2fff51"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2025,
+  "original_credit": "「幻想水滸伝」(KONAMI)",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "SF",
+    "ファンタジー",
+    "スペースオペラ",
+    "政治・戦略",
+    "戦争",
+    "旅・冒険",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [],
+    "theme": [
+      "政治・戦略",
+      "戦争",
+      "旅・冒険"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "「幻想水滸伝」(KONAMI)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29211"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29211"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29211"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "政治・戦略": [
+            "政治"
+          ],
+          "戦争": [
+            "戦争"
+          ],
+          "旅・冒険": [
+            "巡る"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔術"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29211"
+    }
+  }
+}

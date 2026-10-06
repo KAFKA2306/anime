@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "11581",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11581",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ ブレイヴ",
+    "synopsis": "TVアニメの第3シリーズ。ダンは『熱い戦いをしたい! もっと強い奴と戦いたい!!』という拭えない渇望感に苦しんでいた。そこに現れたまゐからのバトルが出来る時代に一緒に来て欲しいとの願いにダンは二つ返事で自ら飛び込んでいく。ダンの新たな戦いの舞台は、異界魔族に侵食された未来の地球。そこで再会したカザン長官から危機に瀕している人類を救って欲しいと未来を託される。新しいバトルフィールド、バトルフォーム、キースピリット。そして新たな力、ブレイヴ! 伝説の男、激突王ダンの新たな戦いが始まった...。",
+    "staff_text": "企画:サンライズ/原作:矢立 肇/監督:西森 章/シリーズ構成:冨岡淳広/キャラクター原案:剛田チーズ/キャラクターデザイン:湯本佳典、石川てつや/スピリットデザイン:石垣純哉、今石 進、丸山 浩/メカニックデザイン:やまだたかひろ/CGディレクター:井上喜一郎/CGプロデューサー:柴田英樹/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/編集:渡辺直樹/音楽:瀬川英史/音響監督:藤野貞義/ゲームデザイナー:マイケル・エリオット/チーフプロデューサー:宝田寿也(メ~テレ)、尾崎雅之(サンライズ)/制作:メ~テレ、サンライズ、ADK/アニメーション制作:サンライズ",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2010,
+    "source": "network",
+    "sha256": "9d5a8c317f1e8646bd9a659b8d50a92ac8d737869a9fed92191d8a3bbad5eb95"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2010,
+  "original_credit": "矢立 肇",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "矢立 肇",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11581"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11581"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11581"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11581"
+    }
+  }
+}

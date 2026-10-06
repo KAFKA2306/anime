@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29208",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "アオのハコ Season2",
+    "synopsis": "毎朝一番に会いたい人がいる――中高一貫のスポーツ強豪校・栄明高校男子バドミントン部の猪股大喜は、毎日、朝練で顔を合わせる女子バスケットボール部のエースで一つ上の先輩、鹿野千夏に恋をする。ある日、千夏が親の海外転勤に伴い、猪股家に居候することになり、二人の距離は朝練仲間から一変。部活に恋に勉強に、大喜にとって忘れられない、新しい季節がはじまる――",
+    "staff_text": "原作:三浦糀/監督:酒向大輔/キャラクターデザイン・総作画監督:谷野美穂/シリーズ構成・脚本:柿原優子/色彩設計:今野成美/美術監督:石田杏里/撮影監督:川下裕樹/編集:岡崎由美佳/音響監督:明田川仁/音楽:大間々昂/クリエイティブアドバイザー:モギシンゴ/企画プロデュース:UNLIMITED PRODUCE by TMS/アニメーション制作:エレクトリックサーカス",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "e0f930e4e837f8bafdd8c04c9dd6b90d246c872f8f58085479971671ac5b7f00"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "三浦糀",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "スポ根",
+    "学園",
+    "友情・仲間",
+    "スポーツ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "スポ根"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "スポーツ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "三浦糀",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校",
+            "部活"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "スポーツ": [
+            "スポーツ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スポ根": [
+            "強豪校"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208"
+    }
+  }
+}

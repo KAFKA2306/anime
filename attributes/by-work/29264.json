@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29264",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29264",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ゆるゆる図鑑",
+    "synopsis": "“ゆるゆる4コマでだれでも楽しめる”Gakken の大人気図鑑シリーズが、ついにTVアニメ化!大人から子どもまで、だれでも楽しく生き物の特徴や生態に触れられる!生き物たちの意外な一面や豆知識など、思わず「へぇ!」となるヒミツがいっぱい!こわいものもかわいいタッチで気軽に楽しめる、 新感覚アニメをお楽しみください!!",
+    "staff_text": "監督:阿部圭造/シリーズ構成:水野智史/音響監督:三浦妙子/音響効果:櫻井陽子/音楽:田村雄太(Yuta Tamura) /音響制作:アルディ/制作統括:高橋和也/アニメーション制作:Imagica Infos / Imageworks Studio",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "f5fb71b3d6fd973ab3551bec770b3974ff8785643409e81269d903f406922f0b"
+  },
+  "official_genres": [
+    "日常/ほのぼの",
+    "ショート"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "ショート"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの",
+      "ショート"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29264"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "日常/ほのぼの",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29264"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "日常/ほのぼの",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29264"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29264"
+    }
+  }
+}

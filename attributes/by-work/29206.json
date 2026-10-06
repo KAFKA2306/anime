@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29206",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29206",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "「花より男子」(1997)",
+    "synopsis": "ステージで踊る日を夢見るつくしは、まだ見習い研究生。雑用ばかりに追われる毎日だ。あるとき、つくしは誤って司の頭の上にパンツを落とし、怒らせてしまう。それを、類がうまくそらしてくれたせいで助かったつくしは、類のことを意識するようになる。そんな時、事故で桜子が大ケガ!司は代役を選ぶため、つくしに踊らせてみるが、つくしはうまく踊ることができなかった...。より練習にうちこむつくし。その励みになっているのは、類の姿だった。ところがつくしは、類と静がキスしているのを見てしまう...!希望を失ったつくしがステージから去ろうとすると、ふいにピアノの音が聞こえてきた。類だ。おずおずと踊り出したつくしの体を、司が支える。...そして、みんなが見守るステージの上には、スポットライトをあびて輝くつくしの姿があったのだった。",
+    "staff_text": "原作:神尾 葉子/監督:山内 重保/脚本:影山 由美",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 1997,
+    "source": "network",
+    "sha256": "1fcaede10e2331106f4cee795101fb517619a2fa3cc2298324350ebada155e68"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 1997,
+  "original_credit": "神尾 葉子",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "神尾 葉子",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29206"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29206"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29206"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29206"
+    }
+  }
+}

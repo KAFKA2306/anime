@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29269",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "#ゾンビさがしてます",
+    "synopsis": "「これは人違い......いや、ゾンビ違い」人類の9割が謎の感染症に感染・死亡した“あかいひ”から13年、生き延びた人々は都市を離れ隔離された村で暮らしていた。壊滅前の記憶がない新世代のアキは、かつて村を出て行った父親を探すため、幼馴染のナツキ、ハルと共に村を抜け出す。村から出ると、どこもかしこもゾンビだらけ。それでも初めて感じる“外の世界”は、広大で、新鮮で、美しい!道中出会ったユウ、サクラも加わって、少年少女の過酷で楽しい新生活がはじまる——『三ツ星カラーズ』『ひとりぼっちの〇〇生活』のカツヲが描く、ゾンビだらけの“非”日常系エンターテインメント!",
+    "staff_text": "原作:カツヲ「#ゾンビさがしてます」(KADOKAWA刊)/監督:宇根信也/助監督:鈴木恭兵/シリーズ構成・脚本:山下憲一、伊丹あき/キャラクターデザイン:下地なるみ/美術監督:武藤正敏/色彩設計:勝田綾太、山本真希/撮影監督:坂井慎太郎/3DCG監督:佐藤淳也/編集:中葉由美子/音楽:東大路憲太/音響監督:立石弥生/アニメーション制作:スタジオコメット/製作:ゾンます製作委員会/オープニングテーマ:すりぃ「ラキラキ」/エンディングテーマ:cadode「ソフトアポカリプス」",
+    "official_genres": [
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "f87854c6c7985ba7b660cbcfd9460c63a815edc9759a00d8cbc382605aa79a3a"
+  },
+  "official_genres": [
+    "アクション/バトル",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": "カツヲ「#ゾンビさがしてます」(KADOKAWA刊)",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "田舎・地方"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "田舎・地方"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "カツヲ「#ゾンビさがしてます」(KADOKAWA刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "田舎・地方": [
+            "村で暮ら"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269"
+    }
+  }
+}

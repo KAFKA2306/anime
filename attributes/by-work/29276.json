@@ -1,0 +1,124 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29276",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "マジカル★エクスプローラー",
+    "synopsis": "伝説の美少女ゲーム『マジカル★エクスプローラー』俺が転生したのは、チート能力でヒロインに囲まれる主人公――ではなく、その横で愛想笑いを浮かべる不遇な友人キャラ・瀧音幸助だった...!原作ゲーム内では目立たず、報われず、最後まで脇役。だが俺には、このゲームを隅々までやり込んだ前世の知識がある!!さらに、この友人キャラには隠れ設定“世界最高峰の魔力量”があり、主人公すら凌駕できるポテンシャルも...?この世界で出会った憧れのヒロイン達をハッピーエンドに導くため、友人キャラの幸助がこの世界で奮闘する――!",
+    "staff_text": "原作:入栖(株式会社KADOKAWA 角川スニーカー文庫刊)/キャラクター原案:神奈月昇/コミック:緋賀ゆかり(株式会社KADOKAWA「ヤングエースUP」連載)/監督:大橋一輝/シリーズ構成:関根聡子/キャラクターデザイン:木宮亮介/プロップデザイン:渡邉八恵子・山田有慶/モンスターデザイン:細田直人/エフェクトデザイン:矢向宏志/美術監督:横山勇生/色彩設計:村田恵里子/撮影監督:桑原真也/3Dディレクター:坂口遥佳/特殊効果・2Dワークス:大西景子/編集:後藤正浩/音響監督:明田川 仁/音響効果:和田俊也/音楽:末廣健一郎/制作統括:岩佐 岳/アニメーションプロデューサー:加藤晋一朗/アニメーション制作:WHITE FOX",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "cc7c93c71bb768de4068f4a94267ad32281b4c9cbdff588b149e9bb32b3c20b1"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "入栖(株式会社KADOKAWA 角川スニーカー文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "ドラマ・青春",
+    "異世界ファンタジー",
+    "異世界",
+    "ゲーム世界",
+    "転生"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [],
+    "motif": [
+      "ゲーム世界",
+      "転生"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "入栖(株式会社KADOKAWA 角川スニーカー文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "転生"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "ゲーム世界": [
+            "ゲーム内"
+          ],
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "転生"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276"
+    }
+  }
+}

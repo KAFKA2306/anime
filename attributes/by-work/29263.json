@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29263",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29263",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "PSYREN -サイレン-",
+    "synopsis": "高校一年生・夜科アゲハは、ある日、公衆電話に放置されていた“赤いテレホンカード”を拾う。数日後、同じテレホンカードを持っていた幼馴染みの同級生・雨宮桜子が姿を消す。アゲハは彼女を捜すため、全国規模で起こっている連続“神隠し”失踪事件の黒幕と噂される「秘密結社サイレン」へとアクセスする。そして、命を懸けたゲームが始まってしまった─",
+    "staff_text": "原作:岩代俊明(集英社刊)/監督:小野勝巳/シリーズ構成:吉田伸/キャラクターデザイン:大熊白/音楽:大間々昂・斎木達彦・兼松衆/アニメーション制作:サテライト",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "08a481fc60fe5339ee8f5da5e89b6e88c9987fb48395add01307ea13c22e6ad0"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": "岩代俊明(集英社刊)",
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "岩代俊明(集英社刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29263"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29263"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29263"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29263"
+    }
+  }
+}

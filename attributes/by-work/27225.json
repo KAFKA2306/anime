@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "27225",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27225",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "NIGHT HEAD 2041",
+    "synopsis": "人間の脳は容量70%を使用していないといわれている。人間の持つ不思議な力は、この部分に秘められていると考えられている。その使用されることのない脳の70%はこう呼ばれることがある――『NIGHT HEAD(ナイトヘッド)』ある森の中。二人の男が目を覚ます。超能力を持つがゆえに社会から疎外され、15年もの間、超能力研究所に隔離されて育った兄弟――霧原直人・直也。彼らは、自分たちが外に出られたということは、かつて研究所所長・御厨恭二朗に言われた、能力者が受け入れられる社会が到来したということだと、希望に胸を膨らませる。しかし、外の世界は、精神エネルギーの存在は完全否定され、超能力はもとより、超常現象を扱った書物や映像などの創作物すらも思想統制された2041年の東京だった。そんな物理主義を掲げる国家の安寧のため危険思想を取り締まる、国家保安本部。その精鋭たる特務部隊に、二人の男の姿があった。幼くして両親に棄てられ、保安隊に預けられた兄弟――黒木タクヤ・ユウヤ。超常現象を偽物と信じ、思想犯罪者を追う日々に疑問のない彼らは、ある日、作戦行動中に、謎の少女・双海翔子に出会う。「結界は破られた」タクヤ・ユウヤは、翔子のその言葉に導かれるように、居場所を求めて放浪する直人・直也に邂逅する。逃げる者と追う者――運命に翻弄される二組の兄弟の物語が、今、始まる――",
+    "staff_text": "原作:飯田譲治/監督:平川孝充/構成・脚本:飯田譲治/キャラクターデザイン原案:大暮維人/コンセプトアート:富安健一郎/BGコンセプトアーティスト:白田真人/MattePaintディレクター:大西穣/美術・設定:坂本竜/美術ボード:ビック・スタジオ/色彩設計:中尾総子/撮影監督:高橋和彦/編集:齋藤朱里/音響監督:明田川仁/音楽:やまだ豊/アニメーションプロデューサー:井出和哉/アニメーション制作:白組/制作:NIGHT HEAD 2041 製作委員会",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2021,
+    "source": "network",
+    "sha256": "124360812f6db98766db4a15ba2bc670f7745676b8ba3002679ff5ebf92ed254"
+  },
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2021,
+  "original_credit": "飯田譲治",
+  "source_origin": null,
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "スペキュレーティブ判定保留",
+    "現代日本",
+    "家族",
+    "政治・戦略",
+    "犯罪・警察",
+    "超能力"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [
+      "家族",
+      "政治・戦略"
+    ],
+    "motif": [
+      "犯罪・警察",
+      "超能力"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "unknown",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "飯田譲治",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27225"
+    },
+    "primary_genre": {
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27225"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27225"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {
+          "家族": [
+            "兄弟"
+          ],
+          "政治・戦略": [
+            "国家"
+          ]
+        },
+        "motif": {
+          "犯罪・警察": [
+            "犯罪"
+          ],
+          "超能力": [
+            "超能力"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27225"
+    }
+  }
+}

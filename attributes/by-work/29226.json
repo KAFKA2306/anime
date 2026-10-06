@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29226",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29226",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+    "synopsis": "平凡な大学院生から乙女ゲームのモブ悪役令嬢に転生してしまったピア。ゲームのクライマックスに待ち受けているのは、卒業パーティーでの《 断罪イベント 》そこで婚約破棄と国外追放を言い渡されるのが、ピアの運命!「愛する人に嫌われるくらいなら......」すっかり弱気になったピアは、宰相令息のルーファスに婚約解消を申し出る。ところが、逆にルーファスのプライドに火をつけてしまった!「私が本当に婚約破棄するか賭けようか?」ピアの行く手にある追放フラグを、ルーファスがどんどんへし折っていく!!?最弱悪役令嬢×最強婚約者の“運命の賭け”がもたらす結末(エンディング)はーー?",
+    "staff_text": "原作:小田ヒロ「弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった」(ビーズログ文庫/KADOKAWA刊)/キャラクター原案:Tsubasa.v/漫画:村田あじ/監督:中西伸彰/シリーズ構成:福田裕子/キャラクターデザイン:崔 炫植/プロップデザイン:白﨑詩織/美術設定:堺 駿介/美術監督:荒井和浩/色設計:藤井 瞳/撮影監督:則友邦仁/編集:上野勇輔/音響監督:明田川 仁/音楽:日向 萌、濱田菜月/音楽制作:KADOKAWA/アニメーション制作:寿門堂/製作:弱気MAX製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "c4c9945176937a083c0b330c4f62eca42dc4304e3bb4fd41b0ba345553687501"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2026,
+  "original_credit": "小田ヒロ「弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった」(ビーズログ文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "異世界",
+    "学園",
+    "恋愛",
+    "転生"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界",
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [
+      "転生"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "小田ヒロ「弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった」(ビーズログ文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29226"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "転生"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29226"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29226"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "転生"
+          ],
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "婚約"
+          ]
+        },
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "転生"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29226"
+    }
+  }
+}

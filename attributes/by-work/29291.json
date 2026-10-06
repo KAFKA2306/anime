@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29291",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29291",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "アイカツ!×プリパラ THE MOVIE -出会いのキセキ!-",
+    "synopsis": "大空あかりと真中らぁら。それぞれの世界で輝く二人のアイドルが、なぜか突然同じステージに! 『アイカツ!』と『プリパラ』。本来交わるはずがなかった二つの世界に訪れたキセキの出会い! 合同ライブフェスで夢のコラボレーションを楽しむスターライト学園とパラ宿のアイドルたちだったが、いつの間にか外の世界が大変な事に......!? ワクワクとキラキラを詰め込んだ最高のステージ! み~んなトモダチ、み~んなアイドルなアイドルカツドウがここに開演!",
+    "staff_text": "アイカツ!原作:BN Pictures/プリパラ原作:タカラトミーアーツ/シンソフィア/アイカツ!原案:バンダイ/監督:大川貴大/シナリオ:土屋理敬/キャラクターデザイン:やぐちひろこ・原将治/スーパーバイザー:木村隆一・森脇真琴/総作画監督:秋津達哉/CGディレクター:乙部善弘/色彩設計:大塚眞純/美術監督:小松奈津子・田尻健一/撮影監督:大神洋一/編集:新居和弘/音響監督:菊田浩巳/音楽:滝澤俊輔(TRYTONELABO)/3DCG:タツノコプロ/企画・制作:BN Pictures/配給:バンダイナムコピクチャーズ/エイベックス・ピクチャーズ",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "799d7a2c686598d3fd04cb32a1c037fbb51d4f4b457c401dade4db94d46fa0be"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園",
+    "音楽・アイドル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29291"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29291"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29291"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "音楽・アイドル": [
+            "アイドル"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29291"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22596",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22596",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ 覇王",
+    "synopsis": "TVアニメの第4シリーズ。両親が国際バトスピ協会に招聘されたため、親友のデンジロウ博士に預けられることになったバトスピ好きの中学1年生、陽昇ハジメ。そして覇王カード「英雄龍ロード・ドラゴン」を手に入れたハジメは、大泉兄弟や棚志テガマルたちと出会い、様々な戦いを繰り広げて強さに磨きをかけていく...。",
+    "staff_text": "企画:サンライズ/原作:矢立 肇/監督:渡辺正樹/シリーズ構成:冨岡淳広/キャラクターデザイン:ヒラタリョウ/設定協力:石田智子/スピリットデザイン:今石 進、丸山 浩/メカニックデザイン:やまだたかひろ/CGディレクター:井上喜一郎/CGプロデューサー:柴田英樹/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/編集:渡辺直樹/音楽:瀬川英史/音響監督:藤野貞義/ゲームデザイナー:マイケル エリオット/チーフプロデューサー:宝田寿也(メ~テレ)、尾崎雅之(サンライズ)/プロデューサー:福嶋更一郎(メ~テレ)、若鍋竜太(サンライズ)/制作:メ~テレ、サンライズ、ADK/アニメーション制作:サンライズ",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2011,
+    "source": "network",
+    "sha256": "acb6bf57cea5e9a19f76ce0f7eddc3732a18c063c26fb1b81a960d0c516c1acc"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2011,
+  "original_credit": "矢立 肇",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ファンタジー",
+    "キッズ・ファミリー",
+    "家族"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "家族"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "矢立 肇",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22596"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22596"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22596"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "家族": [
+            "兄弟"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22596"
+    }
+  }
+}

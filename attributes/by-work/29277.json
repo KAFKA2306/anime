@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29277",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29277",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "シルバニアファミリー フレアのカラフル・エブリデイ",
+    "synopsis": "物語の舞台は世界のどこかにある”シルバニア村”。ほがらかでみんなと過ごすのが大すきなショコラウサギの女の子「フレア」と、頭脳明晰でやさしいペルシャネコの女の子「ライラ」、元気いっぱいで忍者に憧れているくるみリスの男の子「ラルフ」の3にんや、赤ちゃんたちが村の中や森の中、ゆうえんちなどで大活躍します!シルバニアファミリーの世界で起こるさまざまな出来事を通して、夢や希望をたいせつにする主人公フレアと個性豊かなシルバニアの仲間たちによる心温まるお話をお届けします。",
+    "staff_text": "原作/企画:エポック社/シリーズ構成:河原真明/脚本:松田千里/絵コンテ:古谷 渓一郎 (スワロウテイルズ)/3DCG ディレクター:成田麻華/音楽:野中“まさ”雄一/音響監督:児玉拓己/音響制作:HEAD OFF/演技事務:後藤慎人(青二プロダクション)/制作:LandQ Studios/監督:河原真明/プロデューサー:佐々木 塁、金井康則/オーガナイザー:奥田良博/製作:エポック社/製作総指揮:小野田和央",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "1ba217795ba4124f9e22b2d6c45213944616c534482cc18c043f57858f0617e4"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "キッズ/ファミリー",
+    "ショート"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "ショート",
+    "スペキュレーティブ判定保留",
+    "友情・仲間",
+    "子育て"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー",
+      "ショート",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "友情・仲間",
+      "子育て"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29277"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29277"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29277"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "子育て": [
+            "赤ちゃん"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29277"
+    }
+  }
+}

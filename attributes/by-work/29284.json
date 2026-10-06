@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29284",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29284",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "新テニスの王子様 U-17 WORLD CUP 決勝メンバー決定戦",
+    "synopsis": "『新テニスの王子様 U-17 WORLD CUP』シリーズ第3弾!大会クライマックスへ向け、頂点への挑戦権(チケット)を懸けた戦い!!U-17 WORLD CUP(アンダーセブンティーンワールドカップ)――激闘の末、最強チーム・ドイツを下し、遂に世界の頂点へ王手をかけたリョーマたち日本代表。スペイン代表との決勝戦を控え、「日本代表チームの強さは試合の中で成長していくことにあり」と見た三船監督が下した決断は、出場権をかけた「決勝メンバー決定戦」の開催。これまでチームメイトとして戦ってきた男たち同士の、プライドと情熱をぶつけ合う、熱き戦いが始まる――!",
+    "staff_text": "原作:許斐 剛『新テニスの王子様』(集英社ジャンプコミックス刊)/監督:徳本善信/キャラクターデザイン・総作画監督:石井明治/シリーズ構成:広田光毅/色彩設計:津守裕子/色彩設計補:末繁明佳/美術監督:一瀬あかね、田尻健一/背景:ARTE MUKUO/美術設定:イノセユキエ、青木智由紀/CGディレクター:平川典史/撮影監督:中村雄太/撮影:Assez Finaud Fabric./編集:平木大輔/音響監督:松岡裕紀/音楽:玉木千尋/音響制作:神南スタジオ/キャスティング協力:ネルケプランニング/オープニングテーマ:「Walls And Bridges」青酢 (FEEL MEE UNIT)/エンディングテーマ:「金環蝕 phenomenal」跡部景吾&忍足侑士 (FEEL MEE UNIT)/アニメーション制作:M.S.C/制作:NAS/製作:新テニスの王子様プロジェクト",
+    "official_genres": [
+      "スポーツ/競技"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "9d86b07e49196e5e193b0bb304277d14f4e795ec26a89f001998fc4180827aae"
+  },
+  "official_genres": [
+    "スポーツ/競技"
+  ],
+  "production_year": 2026,
+  "original_credit": "許斐 剛『新テニスの王子様』(集英社ジャンプコミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ファンタジー",
+    "成長・挑戦",
+    "スポーツ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "スポーツ・競技",
+      "ファンタジー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "成長・挑戦",
+      "スポーツ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "許斐 剛『新テニスの王子様』(集英社ジャンプコミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29284"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29284"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29284"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "成長",
+            "挑戦"
+          ],
+          "スポーツ": [
+            "大会"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29284"
+    }
+  }
+}

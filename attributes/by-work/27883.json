@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "27883",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27883",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "前橋ウィッチーズ",
+    "synopsis": "地元(まえばし)で魔女ってエモエモじゃない!? 群馬県前橋市。高校1年生・赤城(あかぎ)ユイナの”普通にまぁ”な物足りない日常は......「じゃあ君、魔女になってみてよ」謎のカエル、ケロッペの登場で一変! 部屋のクローゼットは不思議な空間に繋がっていて――新里(にいさと)アズ「アンタには魔女になる本気度が足りない!」北原(きたはら)キョウカ「......喧嘩はやめて、お客さんの願い叶えない?」三俣(みつまた)チョコ「夢が見れるって素敵だよ! ハピハピチョコちゃんだよ!」上泉(かみいずみ)マイ「私、長いものには巻かれろタイプなの♪」うん、5人だとなんか楽しいことが起きる気がする!! 最高に刺激的な魔女、私たち前橋ウィッチーズが、あなたの願いを叶えます。赤城ユイナ「ここは、あなただけのお花屋さん。心の奥にある、あなたのお花、咲かせる場所」歌って踊る、魔法の花屋、ミラクルに本日開店!",
+    "staff_text": "監督:山元 隼一/シリーズ構成/脚本:吉田 恵里香/キャラクターデザイン原案:ユウ イナミ/キャラクターデザイン:立花 希望/衣装デザイン/スタイリスト:相澤 樹/アイテムデザイン:板垣 徳宏/コンセプトデザイン:林 絢雯・迫 健太郎/プロップデザイン:川井 康弘/ウィッチバースデザイン:今津 良樹/カラースクリプト:加藤 オズワルド/色彩設計:忽那 亜実/美術監督:阿久澤 奈緒子/美術デザイン:瀬理 実穂・真村 躍・児玉 徹郎/CGディレクター:児玉 徹郎/CGモデルディレクター:高橋 将太郎/撮影監督:藤田 賢治/編集:長坂 智樹/音響監督:長崎 行男/音響効果:野崎 博樹/録音調整:森田 祐一/音楽:羽深 由理",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "aa870fd167ad2cedf5069fa4c6784531b8dcd0202987f41b18b9962843efcfd5"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "ドラマ・青春",
+    "現代ファンタジー",
+    "学園",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ファンタジー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27883"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [
+        "魔法"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27883"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27883"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27883"
+    }
+  }
+}

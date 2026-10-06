@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22591",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22591",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ ダブルドライブ",
+    "synopsis": "TVアニメの第8シリーズ。全てのバトルスピリッツの始まりの世界、スピリッツワールド。かつて恐るべき邪神皇がスピリッツワールドを崩壊の危機におとしいれた時、時の勇者たちは十二神皇の力をもってその悪の力を封印した。それから長い時を経て、今再び、邪神皇を復活させんとする悪しき者が現れた......。「十二神皇に選ばれし勇者たちよ、共に世界を救ってください――」 バトスピ大好き少年の茂上駿太は、ある日、カードに導かれて異世界「スピリッツワールド」に召喚されてしまう。駿太を召喚した巫女のエトは、邪神皇の復活によるスピリッツワールド滅亡の危機を訴える。それを阻止するには、再び十二神皇の力を集結させなくてはならないという。駿太はエトに導かれ、同じく別世界から召喚された少年、ヨク・アルバトロサと共に世界に散った十二神皇を探す旅に出る。果たして彼らは世界を救うことができるのか!? 少年たちの冒険が、今始まる!",
+    "staff_text": "監督:杉島邦久/シリーズ構成:長谷川勝己/メインキャラクター原案:岩本直輝/アニメーションキャラクターデザイン:湯本佳典/制作:BN Pictures",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2016,
+    "source": "network",
+    "sha256": "c5c12c33bc6154b02f4cfad40d33b26173e8a8263d5dc326e4bb5bb5fa16f6e0"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2016,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ファンタジー",
+    "キッズ・ファミリー",
+    "異世界ファンタジー",
+    "異世界",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22591"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22591"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22591"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "召喚"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "旅",
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "召喚"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22591"
+    }
+  }
+}

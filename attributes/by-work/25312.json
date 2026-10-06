@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "25312",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25312",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツミラージュ",
+    "synopsis": "モーブの蜂起から2年。ヴィザルガ=異界王とのバトルを経て「異界グラン・ロロ」に降り立ったガレット・レヴォ。そこは、ガレットの価値観を大きく変える場所であった。たどり着いた「白の世界」で、ガレットは一人の青年と出会う。一方、モーブを導く指導者として立ち上がったヴァルト・パークスは、空中要塞を使い、統一政府をけん制。統一政府とモーブの対立は一触即発の緊張状態を続けていた。ガレットは、異界見聞録が示す未来を変えることができるのか。運命の歯車は回り続け、ついに世界は変革の時を迎える。",
+    "staff_text": "監督:渡辺正樹/脚本:冨岡淳広/キャラクターデザイン:稲吉智重・稲吉朝子/メカニックデザイン:西村 聡/コンセプトデザイン:石川てつや/スピリットデザイン:石垣純哉・今石 進・寺島慎也・ヒラタリョウ・森木靖泰/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/編集:渡辺直樹/音楽:瀬川英史/音響監督:藤野貞義/企画・制作:BN Pictures",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "network",
+    "sha256": "ec436005b9a6ecf6d43ca098d7c16f68cb7c20848805519c3624b4dce12caa2b"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2021,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25312"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25312"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25312"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25312"
+    }
+  }
+}

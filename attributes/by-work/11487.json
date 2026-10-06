@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "11487",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11487",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ 少年激覇ダン",
+    "synopsis": "TVアニメの第2シリーズ。馬神弾(バシン ダン)は、トレーディングカードゲーム「バトルスピリッツ」の大会での優勝を夢見る少年カードバトラー。ある日、チャンピオンシップで出会った不思議な女の子を追いかけていくと、突然、異界王が支配する「異界 グラン・ロロ」へ飛ばされてしまう。そこは、バトルスピリッツによるカードバトルこそが至高の戦いとされる世界だった。同じように異界へ集められた、コアの光主(ひかりぬし)と呼ばれる少年達と、異界王が差し向ける様々な敵と激しいカードバトルを繰り広げていく...。",
+    "staff_text": "企画:サンライズ/原作:矢立 肇/監督:西森 章/シリーズ構成:冨岡淳広/キャラクター原案:剛田チーズ/キャラクターデザイン:湯本佳典/スピリットデザイン:石垣純哉、今石 進、丸山 浩、ヒラタ リョウ/メカニックデザイン:やまだたかひろ/CGディレクター:井上喜一郎/CGプロデューサー:柴田英樹/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/編集:渡辺直樹/音楽:瀬川英史/音響監督:藤野貞義/ゲームデザイナー:マイケル・エリオット/制作:メ~テレ、サンライズ、ADK/アニメーション制作:サンライズ",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2009,
+    "source": "network",
+    "sha256": "edfefc9b61947847661fd4fbc1d96de32bb0583a89cb48ab2a22e1bfddb0aec2"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2009,
+  "original_credit": "矢立 肇",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "キッズ・ファミリー",
+    "スポーツ"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "スポーツ"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "矢立 肇",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11487"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11487"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11487"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "スポーツ": [
+            "大会"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11487"
+    }
+  }
+}

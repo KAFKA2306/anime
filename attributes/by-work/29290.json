@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29290",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "B型H系",
+    "synopsis": "誰もがうらやむ美少女高校生。彼女が“初体験”の相手に選んだのは、どこにでもいそうなごく平凡な男の子・・・!?ここぞというときにアガってしまい、これまでに男性とつきあった経験のない山田。しかし、エッチへの興味は人一倍!いつも妄想を繰り広げていた彼女は、書店で転びそうになったところを、同じ高校に通う平凡な少年・小須田崇に助けられる。そして「男気があるが、やり慣れてなさそうで手頃そう」という理由で、彼を初体験の相手に決める山田だが!?性の知識は豊富なものの、経験ゼロな山田の行動は、大胆を通り越して暴走気味。図書館でいきなり自分のブラジャーをみせて小須田に迫ったり、はたまた彼と2人きりになると、途端に初体験の様子を妄想したり・・・。空回りしながらも奮闘する山田は、小須田を落とすことができるのか!?",
+    "staff_text": "原作:さんりようこ(集英社ヤングジャンプ コミックスDIGITAL刊)/監督:山本裕介/シリーズ構成:西園悟/脚本:ふでやすかずゆき・与口奈津江/キャラクターデザイン:八尋裕子/ゲストキャラクターデザイン:阿部智之/セットデザイン:中村嘉博/MONOデザイン:渋谷一彦/美術監督:ミキミチヨ/色彩設計:谷本千絵/撮影監督:長牛豊/編集:後藤正浩/録音演出:塩谷翼/音楽:Elements Garden(藤田淳平、藤間仁)/アニメーション制作:ハルフィルムメーカー",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2010,
+    "source": "network",
+    "sha256": "3e30f2796377d64caceece2d641af9665777434aaad0830df272a50c32d1610c"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2010,
+  "original_credit": "さんりようこ(集英社ヤングジャンプ コミックスDIGITAL刊)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック",
+        "ヤングジャンプ"
+      ],
+      "evidence_text": "さんりようこ(集英社ヤングジャンプ コミックスDIGITAL刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290"
+    }
+  }
+}

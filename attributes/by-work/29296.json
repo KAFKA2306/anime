@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29296",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29296",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "パンどろぼう",
+    "synopsis": "まちのパンやからとびだすひとつのかげ。パンがパンをかついでにげていく!?パンがだいすきなおおどろぼう。パンどろぼうだ!!あっちへサササッ こっちへサササッ。せかいいちおいしいパンをさがしもとめ パンどろぼうは きょうもパンやへしのびこむ!",
+    "staff_text": "原作:柴田ケイコ「パンどろぼう」シリーズ(KADOKAWA刊)/監督:京極尚彦/副監督:山城智恵/構成:望月真里子(サテライト)/キャラクターデザイン:みやこまこ/リードアニメーター:竹中真吾、原夕佳、袖山麻美、富田恵美(WITSTUDIO)/色彩設計:松谷早苗、堀越智子/色彩設計補佐:曽我早紀子 (RIC)/美術監督:中村千恵子/美術:スタジオ心/撮影監督:清水まさお/撮影:牧野真人、ライトフット/編集:藤本理子(岡安プロモーション)/音楽:藤澤慶昌/音響監督:小沼則義/音響効果:古谷友二(スワラ・プロ)/音響制作:ビットグルーヴプロモーション/アニメーションプロデューサー:増谷大輔/アニメーション制作:シンエイ動画",
+    "official_genres": [
+      "日常/ほのぼの",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "b271f7bac96c5c5d9fc5075464d2c4f3c435b6af5f5c230a31c0e4d05699e3ec"
+  },
+  "official_genres": [
+    "日常/ほのぼの",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2026,
+  "original_credit": "柴田ケイコ「パンどろぼう」シリーズ(KADOKAWA刊)",
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "柴田ケイコ「パンどろぼう」シリーズ(KADOKAWA刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29296"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "日常/ほのぼの",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29296"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "日常/ほのぼの",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29296"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29296"
+    }
+  }
+}

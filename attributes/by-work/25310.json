@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "25310",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25310",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ サーガブレイヴ",
+    "synopsis": "西暦2661年、地球。人類と魔族の統一政府による統治が続く中、新たな組織が不穏な胎動を始めていた。そのひずみは各地に広がり、かつて馬神弾と共に世界を救うために戦った仲間たちにも届きだしていた...。馬神弾が地球を救い、光となってから10年。果たして〝平和〟はもたらされたのか、それとも。バトルスピリッツは新たな歴史を刻み始める。",
+    "staff_text": "監督:渡辺正樹/脚本:冨岡淳広/キャラクター原案:剛田チーズ/キャラクターデザイン:湯本佳典・石川てつや/スピリットデザイン:石垣純哉・今石 進・寺島慎也・ヒラタリョウ・丸山 浩・小野和寛/プロップデザイン:ヒラタリョウ/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/音楽:瀬川英史/音響監督:藤野貞義",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2019,
+    "source": "network",
+    "sha256": "b2e8ecd4cc79a91a491c5ddee9c26b84fd29cee8ab84f493ec5e9bc19b64ad3f"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2019,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "キッズ・ファミリー",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25310"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25310"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25310"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25310"
+    }
+  }
+}

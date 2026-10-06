@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29233",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "テムパル~アイテムの力~",
+    "synopsis": "世界中で20億人がプレイする大人気VRゲーム〈SATISFY〉。ゲーム内で得た富や名声が現実にも影響を及ぼすこの世界で、 長嶺 巧は「グリード」として、冴えない日々からの人生逆転を狙っていた。ある日、グリードは高難度クエストの果てに、レジェンダリー・アイテムを入手し、伝説の鍛冶職人〈ファグマの末裔〉へと転職。レベルはマイナス、裸同然の状態からの再スタートとなるが......。「強いアイテムが手に入らないなら、作ればいい!」強欲で打算的、それでいて妙な根気と情の深さを持つグリードが、アイテム制作の力を武器に、〈SATISFY〉を大きく揺るがしていく。持たざる者が伝説を作る、成り上がりファンタジー、開幕!!",
+    "staff_text": "原作・作画:Team Argo/脚色:Monohumbug(REDICE STUDIO)/小説:Saenal(MAYA&MARU)/監督:河野亜矢子/シリーズ構成:猪原健太/キャラクターデザイン:谷川亮介/音響監督:岩浪美和/音楽:藤澤慶昌/音楽制作:ポニーキャニオン/プロデュース:EGG FIRM/アニメーション制作:J.C.STAFF",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "661651c00f5dcdd79de3b471a48f74a82f38dea37abdd846eb457d058ce186dd"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "バトル・アクション",
+    "職業・仕事",
+    "ゲーム世界",
+    "電脳・VR"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "SF",
+      "バトル・アクション"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [
+      "ゲーム世界",
+      "電脳・VR"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "小説"
+      ],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "matched_terms": [
+        "VR"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "職人"
+          ]
+        },
+        "motif": {
+          "ゲーム世界": [
+            "ゲーム内"
+          ],
+          "電脳・VR": [
+            "VR"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233"
+    }
+  }
+}

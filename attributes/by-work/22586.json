@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22586",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22586",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ烈火魂<バーニングソウル>",
+    "synopsis": "TVアニメの第7シリーズ。近未来。バトルカードゲーム、“バトルスピリッツ(通称バトスピ)”は大人気を博し、一大ムーブメントを巻き起こしていた。バトラーたちが各地でバトルを繰り広げる、バトスピ戦国時代である。赤、青、黄、緑、白、紫の6色ある各属性デッキを操るライバルたちとの壮絶な死闘! それはまさに群雄割拠! バトルを通じて勝利を手にするためにぶつかる意地と意地! 芽生える友情! 果たしてこの戦国の天下を制するのはいったい誰だ!!",
+    "staff_text": "制作:BN Pictures/監督:杉島邦久/シリーズ構成:長谷川勝己/キャラクターデザイン原案:篠原健太/アニメーションキャラクターデザイン:湯本佳典/スピリットデザイン:石森 連、今石 進、津島直人、寺島慎也、ヒラタリョウ、丸山 浩、やまだたかひろ、湯本佳典/メカデザイン:津島直人/プロップデザイン:ヒラタリョウ/音楽:信澤 宣明",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2015,
+    "source": "network",
+    "sha256": "9cb20ed62a3002d931c152858181e711ef5283b5d3de951c3047bc5e87f34fc8"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2015,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF",
+    "キッズ・ファミリー",
+    "近未来",
+    "歴史・時代劇",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "近未来",
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22586"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22586"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22586"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "近未来": [
+            "近未来"
+          ],
+          "歴史・時代劇": [
+            "戦国"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22586"
+    }
+  }
+}

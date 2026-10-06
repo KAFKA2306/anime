@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22623",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22623",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "最強銀河究極ゼロ バトルスピリッツ",
+    "synopsis": "TVアニメの第6シリーズ。究極のこだわりを見せる超無敵カードクエスターレイと、レイの相棒でツッコミ大好きちびドラゴンムゲンが、宇宙の大パノラマへといざ出発! 強いカードを求めて戦いを繰り広げるカードクエスターと呼ばれる冒険者たちが、求めるものはただ一つ! 宇宙のどこかにあるという『究極のバトルスピリッツ』! レイは様々なアルティメットと属性を使いこなし、属性の色にあわせて変身する! 冒険の先にはどんな出会いが待っているのか!? そしてレイは究極のバトルスピリッツを手に入れる事が出来るのか!?",
+    "staff_text": "企画:サンライズ/原作:矢立 肇/監督:渡辺正樹/シリーズ構成:冨岡淳広/キャラクターデザイン:石川てつや/スピリットデザイン:今石 進、丸山 浩、石垣純哉、ヒラタ リョウ/メカニックデザイン:やまだ たかひろ/CGディレクター:井上喜一郎/CGプロデューサー:柴田英樹/音楽:瀬川英史/音響監督:藤野貞義/ゲームデザイナー:マイケル エリオット/アニメーション制作:サンライズ/制作:メ~テレ、サンライズ、ADK",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2013,
+    "source": "network",
+    "sha256": "c3d7e582a85b78c7ac0c4c02c43e01f9b713dee17d0cdd03de9fe3e5ce3cebd6"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2013,
+  "original_credit": "矢立 肇",
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "SF",
+    "ファンタジー",
+    "キッズ・ファミリー",
+    "スペースオペラ",
+    "宇宙",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "SF",
+      "ファンタジー",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "矢立 肇",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22623"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22623"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22623"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙",
+            "銀河"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙",
+            "銀河"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22623"
+    }
+  }
+}

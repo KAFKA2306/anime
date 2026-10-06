@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29225",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "FX戦士くるみちゃん",
+    "synopsis": "念願のFX(外国為替証拠金取引)デビューを果した大学生・福賀くるみ。その理由は、亡き母がFXで溶かした2000万円を取り戻すため。「2000万円くらい、簡単に取り返せるようになってやる!」そう誓った彼女が飛び込んだ先は、一瞬で天国にも地獄にもひっくり返る世界。含み損、ロスカット、止まらない鼓動......。それでも買いたい、売りたい、稼ぎたい!萌智子、芽吹、やす子――クセ強なFX戦士たちも加わり、相場はますますヒートアップ!チャートに一喜一憂する、かわいくてちょっぴり(!?)危険なマネーゲーム。くるみたちは、この荒れ狂う世界を生き残れるのか――!?",
+    "staff_text": "原作:でむにゃん・作画:炭酸だいすき(MFコミックス フラッパーシリーズ/KADOKAWA刊)/監督:小川優樹/助監督:松島慎太郎(魚雷映蔵)/シリーズ構成・脚本:猪原健太/キャラクターデザイン:植田和幸/サブキャラクターデザイン:横松雄馬、藤田紗葵/美術監督:小林嵩弥(草薙)/色彩設計:小山知子(FINECOLORs)/撮影監督:仲道 隆/編集:丹 彩子/音響監督:濱野高年/音響効果:中島勝大/音楽:伊賀拓郎/FX監修:FXVTuber リオン/アニメーション制作:パッショーネ/オープニングテーマ:「FX戦士くるみちゃん」福賀くるみ(CV:鈴木愛奈)/エンディングテーマ:「$・¥・€」福賀くるみ(CV:鈴木愛奈)",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "a7cb545fb56d5db4dec5b90ab95519e5b4d1c4ce1cb63cf54852d0cb33bb1a51"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "でむにゃん・作画:炭酸だいすき(MFコミックス フラッパーシリーズ",
+  "source_origin": "漫画",
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "学園",
+    "サバイバル"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "サバイバル"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "でむにゃん・作画:炭酸だいすき(MFコミックス フラッパーシリーズ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "サバイバル": [
+            "生き残"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225"
+    }
+  }
+}

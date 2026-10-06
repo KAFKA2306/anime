@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "25311",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25311",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "バトルスピリッツ 赫盟のガレット",
+    "synopsis": "人類と魔族が共存の道を歩みだしてから数世紀。地球は『人類』でもなく『魔族』でもない新たな種を生み出した。紫の血――人々は自らと違う紫の血を持つ第3の種族を『モーブ』と名付け恐怖し、疑い、隔離した。それは新たな争いの火種だった。異色の血がもたらすものは、人類と魔族に対する福音か、それとも災いか。世界に革命が起こる。",
+    "staff_text": "監督:渡辺正樹/脚本:冨岡淳広/キャラクターデザイン:稲吉智重・稲吉朝子/スピリットデザイン:石垣純哉・今石 進・寺島慎也・ヒラタリョウ・丸山 浩・森木靖泰・やまだだかひろ/メカニックデザイン:西村 聡/美術監督:中村典史/色彩設計:柴田亜紀子/撮影監督:貞松寿幸/音楽:瀬川英史/音響監督:藤野貞義",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2020,
+    "source": "network",
+    "sha256": "508f5f271fa869ae8d8409b53f1542d231e26a75c186b2d7eca0f2bef26a05e1"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2020,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25311"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25311"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25311"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25311"
+    }
+  }
+}

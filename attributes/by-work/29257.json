@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29257",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29257",
+  "attribute_fetched_at": "2026-10-06T01:27:55.851Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "転生ゴブリンだけど質問ある?",
+    "synopsis": "部下からの信頼が厚いサラリーマン・八神彰は車道に飛び出した子供を庇って絶命した...はずだったが、異種族 “ゴブリン”に転生していた。ゴブリンの寿命はわずか 7 日。しかし、転生時に与えられたスキル【人間80年】によって、先立っていくゴブリンから数々のスキルを受け継いでいく。 そんなアキラのもとへ魔族やエルフ、更にはドラゴンなども集まってきて...“ゴブリン”が巻き起こす最強無双ファンタジー、ここに開幕!",
+    "staff_text": "原作:三木なずな/漫画:荒木 宰(集英社/となりのヤングジャンプ『転生ゴブリンだけど質問ある?』)/監督:河原龍太/シリーズ構成脚本:百瀬祐一郎/キャラクターデザイン:齊田博之/美術監督:細田舞華/色彩設計:清田直美/撮影監督:松井 士/編集:岡 祐司/音響監督:森下広人/音楽:タケノコ少年/音楽制作:インクストゥエンター/アニメーション制作:BAKKKA",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "9d5f940445ae5b3677c4c24ddb58b6c5971a13f5acf3445aecaac095b19d1bab"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2026,
+  "original_credit": "三木なずな",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "バトル・アクション",
+    "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "異世界",
+    "転生"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "バトル・アクション",
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [],
+    "motif": [
+      "転生"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "三木なずな",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29257"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "転生",
+        "エルフ",
+        "ドラゴン"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29257"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29257"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "転生"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "転生": [
+            "転生"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "転生"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29257"
+    }
+  }
+}
