@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29307",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29307",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "タヌキとキツネ",
+    "synopsis": "昔むかし、あるところに、タヌキとキツネがおりました。どんな時でもマイペース、食べることと遊ぶことがだいすきなタヌキ。そんなタヌキにいつもちょっかいを出している、すなおになれないキツネ。そして、ときどき2匹のところに遊びにくるウサギやクマ、オコジョや龍、ピヨピヨにぎやかなトリたちに、無口だけれど優しいオオカミ。たくさんのおともだちにかこまれた、楽しい日々の物語、はじまりはじまり。",
+    "staff_text": "原作:アタモト「タヌキとキツネ」(フロンティアワークス/リラクトコミックス刊)/監督:日野トミー/脚本:木原梨花/アニメーション制作:アカツキメディアスタジオ",
+    "official_genres": [
+      "日常/ほのぼの",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "5f82f278faa9216ed45c5f5624f73439658855ebf5e061b50d65e4535b9673be"
+  },
+  "official_genres": [
+    "日常/ほのぼの",
+    "ショート"
+  ],
+  "production_year": 2026,
+  "original_credit": "アタモト「タヌキとキツネ」(フロンティアワークス",
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "ショート"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの",
+      "ショート"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "アタモト「タヌキとキツネ」(フロンティアワークス",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29307"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "日常/ほのぼの",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29307"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "日常/ほのぼの",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29307"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29307"
+    }
+  }
+}

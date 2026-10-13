@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29303",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29303",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "百妖譜 第3期京師篇",
+    "synopsis": "はるか昔の中国。妖怪専門の医者・桃夭は、失った「百妖譜」を探すため、小坊主の磨牙、灰狐のグングン、容姿端麗の大蛇・柳公子と旅をしながら、各地で妖を救っていた。彼女は手首の金の鈴を響かせ、患者の心の声を聴きながら治療を行っていく。そこに垣間見えたのは、「生きていたい」「誰かと共にいたい」という純粋かつ切実な願いだった。出会いと別れを繰り返しながら霊医・桃夭は彼らの傷を癒していく。百の妖怪と、百の心を知るための旅が、再び始まるー",
+    "staff_text": "原作:裟椤双樹(シャールオシュアンシュー)/総監督:董易(ドン・イー)/アニメーション制作:絵夢動画/【日本語吹き替え版】演出:安藤直子/翻訳:本多由枝、林真子/音響制作:東北新社/日本版製作:フジテレビジョン、bilibili",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "c821c3d4a652736a54ea644af2a29a03a9e3e519eb464dec5d5b74d3aa6396de"
+  },
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2026,
+  "original_credit": "裟椤双樹(シャールオシュアンシュー)",
+  "source_origin": null,
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "スペキュレーティブ判定保留",
+    "旅・冒険",
+    "怪異・妖怪",
+    "医療"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [
+      "怪異・妖怪",
+      "医療"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "unknown",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "裟椤双樹(シャールオシュアンシュー)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29303"
+    },
+    "primary_genre": {
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29303"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29303"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪"
+          ],
+          "医療": [
+            "医者"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29303"
+    }
+  }
+}

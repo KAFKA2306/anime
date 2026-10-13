@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29302",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29302",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ホタルの嫁入り",
+    "synopsis": "愛が重すぎる殺し屋×余命わずかな令嬢の狂愛ストーリー 女は家の財産とされた時代―― 名家に生まれ美貌に恵まれるも、余命わずかと言われている伯爵家の令嬢・桐ヶ谷紗都子。そんな彼女の夢は名家に嫁ぎ、父の誇りになること。しかしある夜、何者かの企てによって連れ去られてしまう。絶体絶命の場面に居合わせた殺し屋・後藤進平に「私たち結婚しましょう。私と一緒になれば全てが手に入ります。」と咄嗟の嘘をつく紗都子。「運命の相手だ」と紗都子を狂愛する進平と 自らの使命と進平への想いの間で揺れる紗都子の 一途で許されぬ愛のかたち。",
+    "staff_text": "原作:橘オレコ「ホタルの嫁入り」(小学館「マンガワンコミックス」刊)/監督:亀井隆広/脚本:柿原優子/キャラクターデザイン:愛敬由紀子/ビジュアルディレクター:ソエジマヤスフミ/音楽:NOGRID/美術監督:本田 こうへい/色彩設計:中村 絢郁/編集:髙橋 歩/音響監督:山口 貴之/オープニング・テーマ:iri「Period」/エンディング・テーマ:TOOBOE 「夢心地」/アニメーション制作:david production/制作:アニメ「ホタルの嫁入り」製作委員会",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "b475a03d9955e3d189a88cd146a9acaa1cd4b9ff6a6c7e8dd65e3e3e0e8a53fe"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2026,
+  "original_credit": "橘オレコ「ホタルの嫁入り」(小学館「マンガワンコミックス」刊)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック",
+        "マンガ"
+      ],
+      "evidence_text": "橘オレコ「ホタルの嫁入り」(小学館「マンガワンコミックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29302"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29302"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29302"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "結婚"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29302"
+    }
+  }
+}

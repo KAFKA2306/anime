@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29266",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29266",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "探偵はもう、死んでいる。Season2",
+    "synopsis": "「君、私の助手になってよ」巻き込まれ体質の少年・君塚君彦は、上空一万メートルを飛ぶ飛行機の中、《世界の敵》と戦う《名探偵》の少女・シエスタの助手となった。それから二人は、三年にもわたって世界中を飛び回り、目も眩むような冒険劇を繰り広げ、そして激闘の果てに――死に別れた。シエスタの死から一年。一人生き残ってしまった君塚の元に、依頼人を名乗る少女・夏凪渚が現れる。彼女の依頼を受けて再び助手となった君塚は、やがて《名探偵》の死の真相に辿り着いた――。しかし、その真相に触れて、君塚たちは知っていく。完全無欠の名探偵が犯したミスを。《名探偵》の遺志を継ぐことの真の意味を。探偵はもう、死んでいる。死の真相も明かされた。でも、エピローグにはまだ早い",
+    "staff_text": "原作:二語十/キャラクター原案:うみぼうず(株式会社KADOKAWA/MF文庫J刊)/監督:栗原 学/シリーズ構成・脚本:赤尾でこ/キャラクターデザイン:伊藤陽祐/美術監督・美術設定:宮田遥可/色彩設計:西 詠仔/CG監督:佃 将太/CGIプロデューサー:飯島 哲/撮影監督:板倉あゆみ、山本雄介/オフライン編集:吉武将人/アニメーションプロデューサー:星野 雄大朗、安田 裕一/音楽:40mP、ゆうゆ/音響監督:阿部信行/音響効果:鈴木 潤一朗/OPテーマ:心梅「この心臓に花束を」/EDテーマ:カグラナナ「白昼夢」/アニメーション制作:ENGI",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "4cf8394d62ef883228124fa9bb66e009f6dc4d792b6a6c42a744b17ebe1c9aaa"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2026,
+  "original_credit": "二語十",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "恋愛・ラブコメ",
+    "ミステリー",
+    "推理・謎解き",
+    "サバイバル",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "推理・謎解き",
+      "サバイバル",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "二語十",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29266"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29266"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29266"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "推理・謎解き": [
+            "探偵",
+            "真相"
+          ],
+          "サバイバル": [
+            "生き残"
+          ],
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "探偵"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29266"
+    }
+  }
+}

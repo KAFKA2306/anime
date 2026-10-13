@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29265",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29265",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "アオアシ Season2",
+    "synopsis": "舞台はプレミアリーグへ―― ついにAチーム編開幕!アシトの成長が加速する!!愛媛県から単身上京し、Jリーグ有数のクラブ「東京シティ・エスペリオン」のユースチームに入団した青井葦人。幾度も挫折を味わいながらも、俯瞰の視野<イーグルアイ>を武器に成長していく。そしてついに、BチームからAチームへと昇格を果たした。「ユース最高傑作」と呼ばれる栗林や圧倒的なフィジカルを持つ阿久津たちが属する最強のAチーム。Bチームとは明らかに次元の違うスピード・テクニック・発想力・強靭さ―...アシトは全てに練習初日から圧倒され、洗礼を受ける。日本最高峰の高校世代リーグ「プレミアリーグ」を舞台に、強豪が立ち並ぶ過酷な戦いの中で、アシトはどのような進化を遂げるのか―...",
+    "staff_text": "原作:小林有吾「アオアシ」(小学館「ビッグスピリッツコミックス」刊)/監督:横山和基/シリーズ構成:横谷昌宏/サッカー監修:飯塚健司/キャラクターデザイン/総作画監督:中武学・田口麻美・山中純子/アクション作画監督:興村忠美・窪敏/美術設定:重川優輝/美術監督:桧垣仁希/色彩設計:宮脇裕美/CG監督:岩田海斗/撮影監督:田沢二郎/編集:吉武将人/音響監督:はたしょう二/音楽:横山克/アニメーション制作:トムス・エンタテインメント",
+    "official_genres": [
+      "スポーツ/競技",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "ef50ea23e969ee8e482eb0a12e7c3a2a6d08ef9ae18d948fbadb8b2d019c046f"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "小林有吾「アオアシ」(小学館「ビッグスピリッツコミックス」刊)",
+  "source_origin": "漫画",
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "ドラマ・青春",
+    "学園",
+    "現代日本",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "スポーツ・競技",
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園",
+      "現代日本"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "小林有吾「アオアシ」(小学館「ビッグスピリッツコミックス」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29265"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29265"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29265"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ],
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "成長"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29265"
+    }
+  }
+}

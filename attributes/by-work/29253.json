@@ -1,0 +1,107 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29253",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29253",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "Battle Spirits [Re] 絶界の空",
+    "synopsis": "幕末、日の本――長きにわたり、国を治めてきた幕府を倒し、世を変えようとする者たちが現れた、時代。バトルスピリッツの世界にも変革が起きていた。古より、バトスピは武士と呼ばれる者たちのみが、己の命を賭けて行うもの。神聖なる戦場、界放領域(かいほうりょういき)には武士のみが立ち入ることを許され、敗れた者は、必ず命を差し出さなければならない掟であった。だが、新たなカードが生まれ、新たな戦い方が生まれた。これにより、誰もが界放領域でのバトルを行えるようになった。しかも、新たなバトルでは、敗れても命を差し出す必要はなかった。武士のバトルは「エターナル」、誰もが戦えるものは「スタンダード」と呼ばれた。衛戸(えど)の町でスタンダードのバトスピを学ぶ少年、馬神空(ばしんくう)。強さに憧れる彼は、ある日、旅の武士と出会う。武士の名は戯絶(あじゃら ぜつ)。「人斬り絶」と呼ばれ、倒幕派の者たちから追われる身であった。絶と出会い、戦いの渦中に身を置くこととなる空。そこで、彼が見るものとは? 絶が旅をつづける理由とは?",
+    "staff_text": "原作・制作:BN Pictures/監督・ストーリー・キャラクター原案:工藤昌史/シリーズ構成:根元歳三/キャラクターデザイン:小金丸篤美、村上真紀、西村貴世/サブキャラクターデザイン:HARIBOTE、オダサガ秀登、鈴木幸江/スピリットデザイン:一芒、七原しえ/ゲストスピリットデザイン:ヒラタリョウ、今石進、石垣純哉、森木靖泰、倉持キョーリュー、寺島慎也、満田晴穂、石森連、丸山浩、やまだたかひろ、黒銀/美術監督:権瓶岳斗/色彩設計:ながさか暁/撮影監督:貞松寿幸/CGディレクター:明石茂瑛、長嶋晋平/バトルコーディネーター:有澤寛/編集:齋藤朱里/音楽:瀬川英史/音響監督:藤野貞義/オープニング・テーマ:JAM Project「Here we are!」/エンディング・テーマ: 秘めごと「パルス」/製作:バンダイナムコピクチャーズ・バンダイ",
+    "official_genres": [
+      "スポーツ/競技",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "404c4a2cec5fe9b403f6e002fc5192028823683d1dee4e9287468f302512e43e"
+  },
+  "official_genres": [
+    "スポーツ/競技",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "スポーツ・競技",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "スポーツ・競技",
+    "キッズ・ファミリー",
+    "歴史・時代劇",
+    "戦争",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スポーツ・競技",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "歴史・時代劇"
+    ],
+    "theme": [
+      "戦争",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29253"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29253"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "スポーツ/競技",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29253"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "歴史・時代劇": [
+            "幕末"
+          ]
+        },
+        "theme": {
+          "戦争": [
+            "戦場"
+          ],
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29253"
+    }
+  }
+}

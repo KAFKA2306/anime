@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29278",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29278",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "忍たま乱太郎 第27シリーズ",
+    "synopsis": "ときは戦国時代。先祖代々、ヒラ忍者の家に生まれた乱太郎は、一流の忍者になってほしいという両親の期待を胸に、忍術学園に入学。そこには堺の豪商の息子・しんべヱや、戦で親を亡くしながらもたくましく生きるきり丸がいた。忍術学園の生徒は忍者のたまご、『忍たま』と呼ばれる。忍術学園には、ナゾの天才忍者だった学園長をはじめ、ユニークな先生や上級生、ちょっと手ごわい「くの一教室」の女の子たちや忍犬ヘムヘムなどがいて、とってもにぎやか!乱太郎たち三人組は、授業も試験も失敗ばかり、いつもなぜかロクでもないことになってしまう。立派な忍者になるには、まだまだ遠い道のりだけど、忍たまの毎日は、あかるく・たのしく・ゆかい、なのだ!",
+    "staff_text": "原作:尼子騒兵衛(「落第忍者乱太郎」より)/監督:河内日出夫/シリーズ構成:浦沢義雄/音楽:馬飼野康二/キャラクターデザイン:新山恵美子/美術監督:本山景子/撮影監督:佐々木和宏/音響監督:大熊昭/アニメーションプロデューサー:松山竜一郎/アニメーション制作:亜細亜堂/オープニングテーマ:「勇気100%」歌:ジュニア Boys 作詞:松井五郎 作曲:馬飼野康二/エンディングテーマ:「やんちゃなヒーロー」歌:Hey! Say! 7 作詞:松井五郎 作曲:馬飼野康二 編曲:佐々木博史",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2019,
+    "source": "network",
+    "sha256": "5935a374d41a6b91809ff1110c0911345c9ec1de5b3025a429a85631f0d246b9"
+  },
+  "official_genres": [
+    "コメディ/ギャグ",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2019,
+  "original_credit": "尼子騒兵衛(「落第忍者乱太郎」より)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "キッズ・ファミリー",
+    "学園",
+    "歴史・時代劇"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園",
+      "歴史・時代劇"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "尼子騒兵衛(「落第忍者乱太郎」より)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29278"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29278"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29278"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ],
+          "歴史・時代劇": [
+            "戦国"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29278"
+    }
+  }
+}

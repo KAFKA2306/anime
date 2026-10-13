@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29230",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29230",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす【オンエア版】",
+    "synopsis": "もしマウスカーソルで現実を操作出来たら?ある日、授業中に自分のマウスカーソルが画面外に飛び出ている事に気付いたオタクの拓海。慌てながら隣の席に座っている幼馴染の萌音に確認するも、相手にしてもらえず...。実際に自分で操作出来る事を知った拓海は自分にしか見えないマウスカーソルを駆使して萌音の服の隙間にマウスカーソルを潜り込ませてカチカチとクリックを連打すると───!?日本初(多分)の新ジャンル『オタクに優しくないギャルをマウスカーソルでカチカチする』系ラブコメ開幕!",
+    "staff_text": "原作:おくまろ/監督:則座誠/シリーズ構成:黒崎エーヨ/キャラクターデザイン:みなキャワあかピv/総作画監督:ハリマス/美術監督:チャン・ド・キム・ファン/美術設定:チャン・ド・キム・ファン/色彩設計:サイトウ/撮影監督:コジマシンタロウ/編集:新海コウキ/音響監督:雨桑みくも/音響制作:スタジオマウス/エンディングテーマ:Maware Isogavva『MOUSE DRIVE』/アニメーション制作:studio HōKIBOSHI/製作:彗星社",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "91bf7e810174d90b31f0a8dad4b0f47a07224f1adc27628398e5abf4a14d5f64"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ショート"
+  ],
+  "production_year": 2026,
+  "original_credit": "おくまろ",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ショート",
+    "ラブコメ",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ショート"
+    ],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "おくまろ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29230"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29230"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29230"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29230"
+    }
+  }
+}

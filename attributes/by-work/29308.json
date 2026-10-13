@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29308",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29308",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ぷにるんず ぷに4",
+    "synopsis": "ぷにるんず......それは、ぷにっとやわらかい『ぷしぎ』ないきもの。みんな、ぷにぷにされるのが大すき。にんげんたちがいるせかい、ぷにるんずがすむ ぷにランド、すべてがカチコチな カチコチランド――、3つのばしょをいったり、きたりしながら、まいにち楽しく ぷにっとくらしています。そんなぷにるんずが、ぷにランドに学校をつくりました。その名も、『ぷにスクール』!みんなで先生や生徒になって授業をしたり、遠足にいったり、学校の七ぷしぎをしらべたり、大運動会をしたり、大そうじをしたり――。さらには、あたらしいぷにともも登場し、ぷにるんずオールスターが大集合!これまで以上に ぷにっと にぎやかな毎日がはじまります。",
+    "staff_text": "原作:タカラトミー/監督:春日森春木/シリーズ構成:市川十億衛門/キャラクターデザイン:一石小百合/音楽:小畑貴裕/音響監督:小沼則義/音響制作・スタジオ:IMAGICA EMS/制作:OLM Digital/製作:ぷにるんず4ぷにじぇくと",
+    "official_genres": [
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "e3538344065ebb2c7f0753d3485556072dbfd2045ae02d9fff8fbda57867e268"
+  },
+  "official_genres": [
+    "ショート",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2026,
+  "original_credit": "タカラトミー",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "キッズ・ファミリー",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "タカラトミー",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29308"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29308"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29308"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29308"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29237",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29237",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "エルフ・17",
+    "synopsis": "銀河帝国始まって以来の大奇人・マスカット皇子が帝国の行く末を案じ、戦闘能力が桁外れの光翅族(エルフ)の美少女・ルウと、自ら開発したパワードスーツを身にまとった全身兵器のK・Kの二人をお供に、人々の迷惑もおかまいなしに諸国行脚の隠密旅行に出かけた! この3人が繰り広げる銀河大珍道中の行く手には、メカあり!ギャグあり!アクションあり!1985年~1988年に「月刊コミコミ」(白泉社刊)にて連載された、山本貴嗣の痛快SF冒険漫画を、1987年にOVA化。",
+    "staff_text": "原作:山本貴嗣(白泉社)/脚本:富田祐弘/監督・絵コンテ・演出:坂田純一/アニメーション制作:J.C.STAFF",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 1987,
+    "source": "network",
+    "sha256": "ce04c90a68bd05d5728649ee5d5255b7126a428f404d6d5984da9283f55e78fc"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 1987,
+  "original_credit": "山本貴嗣(白泉社)",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "SF",
+    "ファンタジー",
+    "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "スペースオペラ",
+    "宇宙",
+    "旅・冒険",
+    "ロボット・メカ",
+    "軍事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "SF",
+      "ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [
+      "ロボット・メカ",
+      "軍事"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "山本貴嗣(白泉社)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29237"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "銀河",
+        "メカ",
+        "エルフ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29237"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29237"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "銀河"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "旅",
+            "冒険"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "メカ"
+          ],
+          "軍事": [
+            "兵器"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "銀河",
+            "帝国"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29237"
+    }
+  }
+}

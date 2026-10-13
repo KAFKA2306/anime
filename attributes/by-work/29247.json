@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29247",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29247",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪【オンエア版】",
+    "synopsis": "人間や妖怪など様々な種族が共存する現代......。マンションの管理人を務めるさとるはある日、入居者で密かに心惹かれていた雪女の深冬を怒らせてしまう。仲直りしたい一心で『妖怪との意思疎通を容易にする』という謎の指輪を使ったところ、なぜか超積極的になった深冬に迫られてしまう。人付き合いが苦手な未亡人の雪女と彼女を支えたいと願う人間の青年。指輪の力で幾度も体を重ね合うその果てに二人を待つものは......。",
+    "staff_text": "原作:ぷぅ崎ぷぅ奈/監督:古賀一臣/シリーズ構成:黒崎エーヨ/キャラクターデザイン:みなキャワあかピv/総作画監督:西田美弥子/美術監督:チャン・ド・キム・ファン/美術設定:チャン・ド・キム・ファン/色彩設計:桺澤千佳/撮影監督:鳳凰院修羅苦羅/編集:新海コウキ/音響監督:雨桑みくも/音響制作:スタジオマウス/アニメーション制作:studio HōKIBOSHI/製作:彗星社",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "404dc114eda78b42c2e4b9e03179d8e323859e97532c026400ec6d1f6e40ae05"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ショート",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2026,
+  "original_credit": "ぷぅ崎ぷぅ奈",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ショート",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ショート",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ぷぅ崎ぷぅ奈",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29247"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29247"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29247"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪",
+            "呪い"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "現代"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29247"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29283",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29283",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "塩対応の佐藤さんが俺にだけ甘い",
+    "synopsis": "クラス中の高嶺の花、佐藤こはる。誰にも笑顔を見せない、通称“塩対応の佐藤さん”。でもある日、同じクラスの押尾颯太が、実家が営むカフェで見た佐藤さんの姿は......スイーツの写真を撮るため奮闘する、隙だらけの姿で!?本当は人見知りで不器用なだけの佐藤さんと、そんな佐藤さんのことが好きな押尾君。二人の距離は、スイーツとカメラをきっかけに、少しずつ縮まっていく。世界で一番甘い両片想いに、きっとあなたもとろけてしまう――。不器用な二人が織りなす“甘くてしょっぱい”青春ラブコメディ!",
+    "staff_text": "原作:猿渡かざみ『塩対応の佐藤さんが俺にだけ甘い』(小学館「ガガガ文庫」刊)/キャラクター原案:Aちき/監督:吉村文宏/シリーズ構成:あおしまたかし/キャラクターデザイン:奥嶋大介/音楽:成田 旬/制作:手塚プロダクション",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "6d77c5aa212f4ae07d1f59e1dc710ca488bf3bea64cdc58da5640213c5520916"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "猿渡かざみ『塩対応の佐藤さんが俺にだけ甘い』(小学館「ガガガ文庫」刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "ラブコメ",
+    "成長・挑戦",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦",
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "猿渡かざみ『塩対応の佐藤さんが俺にだけ甘い』(小学館「ガガガ文庫」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29283"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29283"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29283"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ],
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29283"
+    }
+  }
+}

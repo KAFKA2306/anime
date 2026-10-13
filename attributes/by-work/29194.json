@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29194",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29194",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ガールズ&パンツァー もっとらぶらぶ作戦です!",
+    "synopsis": "こんなに青春しているなんて、まるで女子高生みたい――!?『ガールズ&パンツァー』の大人気スピンオフコミック『ガールズ&パンツァー もっとらぶらぶ作戦です!』(著者:弐尉マルコ)がついにアニメ化!大洗女子チームをはじめ、戦車道にトコトン邁進する学生たち(や周囲の愉快な人々)の知られざる日常と学園同士の交流にググっとフォーカス!監督に下田正美(『ゼーガペイン』シリーズ 他)、シリーズ構成・脚本に木村暢(『コードギアス 奪還のロゼ』 他)を迎え、アニメーション制作はP.A.WORKS(『SHIROBAKO』 他)とアクタス(『ガールズ&パンツァー』 他)が共同で担当!わちゃっとにぎやか、にっこり爽やか。彼女たちをもっと好きになる、一大作戦の始まりです!",
+    "staff_text": "原作:「ガールズ&パンツァー」シリーズ/コミックス:弐尉マルコ「ガールズ&パンツァー もっとらぶらぶ作戦です!」(MF コミックス アライブシリーズ/KADOKAWA刊)/監督:下田正美/副監督(シリーズディレクター):臼井貴彦/シリーズ構成・脚本:木村 暢/キャラクター原案:島田フミカネ、杉本 功/キャラクター原案協力:野上武志/キャラクターデザイン:杉本 功/総作画監督:川面恒介、秋山有希、水野紗世、岩岡優子/3DCG 監督:市川元成/色彩設計:原田幸子/美術監督:朝倉大智/撮影監督:児玉純也/編集:吉武将人/音楽:浜口史郎/音響監督:山口貴之/音響効果:小山恭正/録音調整:齋藤 栞/アニメーション制作:P.A.WORKS×アクタス/製作:「ガールズ&パンツァー もっとらぶらぶ作戦です!」製作委員会",
+    "official_genres": [
+      "戦争/ミリタリー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "91072aa74229ec1d5495fb6d61dacc1e93e627e41c5cc309ad5f0f30baa7047e"
+  },
+  "official_genres": [
+    "戦争/ミリタリー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "「ガールズ&パンツァー」シリーズ",
+  "source_origin": null,
+  "primary_genre": "戦争・ミリタリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "戦争・ミリタリー",
+    "ドラマ・青春",
+    "学園",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "戦争・ミリタリー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "「ガールズ&パンツァー」シリーズ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29194"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "戦争/ミリタリー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29194"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "戦争/ミリタリー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29194"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29194"
+    }
+  }
+}

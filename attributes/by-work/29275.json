@@ -1,0 +1,121 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29275",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29275",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "「ブラッククローバー」2nd Season",
+    "synopsis": "クローバーの五枚目の葉には、悪魔が棲む――。魔法がすべての世界で、ただ一人魔力を持たないアスタ。彼が手にしたのは、あらゆる魔法を打ち消す“反(アンチ)魔法”だった。そして今、冥府の悪魔の力を宿すスペード王国の支配者「漆黒の三極性(ダークトライアド)」が、世界を蹂躙し始める。侵略は時を追って勢いを増し、ハート王国では女王ロロペチカが、そしてクローバー王国では魔法騎士団団長のヤミとヴァンジャンスまでもが連れ去られてしまう。すべてを取り戻すため、アスタは「真なる悪魔の力」を手にする禁忌に踏み込む!",
+    "staff_text": "原作:『ブラッククローバー』田畠裕基(集英社ジャンプコミックス刊)/監督:種村綾隆/シリーズ構成:大知慶一郎/キャラクターデザイン:竹田逸子/サブキャラクターデザイン:徳永久美子/プロップデザイン:髙橋恒星/美術監督:前田有紀/色彩設計:篠原愛子/撮影監督:野澤圭輔/編集:髙橋 歩/音楽:関 美奈子/音響監督:髙桑 一/アニメーション制作:スタジオぴえろ",
+    "official_genres": [
+      "SF/ファンタジー",
+      "アクション/バトル"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "dfadb471c527f0a4ce7d0ff854e1b065717ab7e0138d478eef0d602c65ed9452"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "アクション/バトル"
+  ],
+  "production_year": 2026,
+  "original_credit": "『ブラッククローバー』田畠裕基(集英社ジャンプコミックス刊)",
+  "source_origin": "漫画",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "バトル・アクション",
+    "現代ファンタジー",
+    "戦争",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "ファンタジー",
+      "バトル・アクション"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [],
+    "theme": [
+      "戦争"
+    ],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "コミックス",
+        "コミック"
+      ],
+      "evidence_text": "『ブラッククローバー』田畠裕基(集英社ジャンプコミックス刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29275"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "matched_terms": [
+        "魔法",
+        "王国",
+        "騎士",
+        "悪魔"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29275"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "アクション/バトル"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29275"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "戦争": [
+            "侵略"
+          ]
+        },
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29275"
+    }
+  }
+}

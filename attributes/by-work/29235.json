@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29235",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29235",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "帝都物語",
+    "synopsis": "平将門の怨霊により帝都破壊を目論む魔人・加藤保憲とその野望を阻止すべく立ち向う人々との攻防を描いた超ベストセラー「帝都物語」。オカルト、スペクタクル、エロティシズム溢れたサイキック大河小説として多くの熱狂的なファンに支持され、'87年度日本SF大賞を受賞、過去三度にわたって実写映画化され('88年、'89年「帝都大戦」、'95年「帝都物語外伝」)、そのたびに大きな話題を呼んだ。「魔都篇」「震災篇」「龍動篇」「菩薩篇」の4部構成で'91~'92年に製作されたOVAシリーズでは、シリーズ監督りんたろうをはじめとする強力スタッフにより緻密に、そしてスピーディーに展開。魔人・加藤保憲と、この邪道に立ち向かう陰陽師の平井保昌、東洋最高の魔術<奇門遁甲>で迎え撃つ賀茂、そして平将門に遣わされた運命の巫女・恵子らとの壮絶な死闘をはじめ、加藤がつけ狙う辰宮一家の隠された秘密までが描かれる。シリーズ監督には、「銀河鉄道999」「幻魔大戦」などで知られる鬼才・りんたろう、脚本に「ファイブスター物語」「銀河英雄伝説」の遠藤明範、キャラクターデザインには「新世紀エヴァンゲリオン」など絶大な人気を誇る摩砂雪をはじめとする実力派スタッフを迎え、デジタルでは味わえないセル画アニメーションならではの迫力の映像が展開される。主人公・加藤保憲を、実写映画でも加藤役を演じ、強烈なキャラクターで話題となった嶋田久作が担当。彼が生み出す悪のヒロイズムも、見所の一つ。",
+    "staff_text": "原作:荒俣宏(角川文庫刊)/企画:一瀬隆重/プロデューサー:高橋尚子、丸山正雄/シリーズ監督:りんたろう/監督:(#1)片山一良、(#2)千明孝一、(#3)久米一成、(#4)池田成/脚本:遠藤明範/キャラクターデザイン:摩砂雪/作画監督:(#1)沙那芭美智、(#2)橋本浩一、(#3)岸田隆宏、(#4)アオタカズマ/美術監督:金子英俊/撮影監督:石川欣一/音楽:KAZZ TOYAMA/音響監督:三間雅文/音響制作:マジックカプセル/編集:尾形治敏、虫プロ/設定:高林久弥/制作協力:マッドハウス/製作:東映ビデオ、オズ",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 1991,
+    "source": "network",
+    "sha256": "afd3e2f9421b9d7b7e1cacfbd5faa95cd870b61c0cd4e5b665d0af4db04a28fc"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "SF/ファンタジー"
+  ],
+  "production_year": 1991,
+  "original_credit": "荒俣宏(角川文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "クロスジャンル",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "クロスジャンル",
+    "SF",
+    "ファンタジー",
+    "ホラー・サスペンス・ミステリー",
+    "スペースオペラ",
+    "宇宙",
+    "魔法",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "クロスジャンル",
+      "SF",
+      "ファンタジー",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法",
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "荒俣宏(角川文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29235"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-fantasy-balanced",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "銀河",
+        "魔術"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29235"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29235"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "銀河"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔術"
+          ],
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "銀河"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29235"
+    }
+  }
+}

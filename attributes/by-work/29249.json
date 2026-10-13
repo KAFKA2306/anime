@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29249",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29249",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "『彼女の友達』ミニアニメ劇場",
+    "synopsis": "『彼女の友達』に登場するキャラクターたちが可愛いSDキャラになって様々な物語を展開!本編とはまた変わったドタバタコメディをお楽しみください。",
+    "staff_text": "原作:じゅら『彼女の友達』(講談社「ヤンマガWeb」連載)/監督:暴徒/音響監督:西山寛基/音楽:えんどうちひろ/音響制作:スタジオマウス/録音:五反田篤/録音助手:吉田陵人、川和浩之/音響制作担当:与那覇彩/アニメーション制作:株式会社リアルアキバ・コミュニケーションズ/企画:ウェイブ/プロデュース:デレギュラ",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ショート"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "bd599d1bf6e54236af671af3d32887733b579f9df78bf53b812e21d451275b93"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ショート"
+  ],
+  "production_year": 2026,
+  "original_credit": "じゅら『彼女の友達』(講談社「ヤンマガWeb」連載)",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ショート"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ショート"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "じゅら『彼女の友達』(講談社「ヤンマガWeb」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29249"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29249"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ショート"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29249"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29249"
+    }
+  }
+}

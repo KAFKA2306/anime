@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29299",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29299",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "てつりょー!meet with 鉄道むすめ",
+    "synopsis": "日常を飛び出して、どこかに旅に出掛けたい。そう思ったことは何度もあった。将来何になりたいのかもわからない日々。でもいつか、夢中になれるものを見つけたい。新しい日々のはじまりに沸き立つキャンパスの中で、みさきに手を差し伸べたのは、鉄道旅行同好会 (通称:てつりょー会)の面々。線路を通して広がっていく世界に、みさきの胸は高鳴りだす!20周年を迎える『鉄道むすめ』たちが働く世界を、てつりょー会が「トキメキ」を探しに旅をしていく。",
+    "staff_text": "原作:トミーテック/監督:星野美鈴/脚本・シリーズ構成:皐月彩/キャラクターデザイン:橋本尚典/音響監督:立石弥生/音楽:高尾奏之介/アニメーション制作:イーストフィッシュスタジオ/原作協力:森田季節",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "01add336d2a2cf440c1d19e900b3ae2d506fe34daff2330e3cf718432134cba2"
+  },
+  "official_genres": [
+    "ショート",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": "トミーテック",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "日常・ほのぼの",
+    "職業・仕事",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "職業・仕事",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "トミーテック",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29299"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29299"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29299"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "働く"
+          ],
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29299"
+    }
+  }
+}

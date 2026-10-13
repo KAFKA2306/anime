@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29238",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29238",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "HEN",
+    "synopsis": "原作・奥浩哉の人気コミックのOVA。爆乳美少女・ちずる&ロリコン美少女・あずみが繰り広げる、ちょっとHで変な学園ラブコメディ! そして次第にヘンになっていくあずみ。 あずみに恋をしてしまったちずる。ヒートアップしていく二人のあぶな~い関係はもう誰も止められない!",
+    "staff_text": "原作:奥浩哉/監督:鈴木大司/アニメーション制作:グループ・タック/監修:梅津泰臣/脚本:関島眞頼/キャラクターデザイン:梅津泰臣/作画監督:なかじまちゅうじ/美術監督:柴田千賀子/製作:東映ビデオ 東北新社",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 1997,
+    "source": "network",
+    "sha256": "7fa7421f7042f3d3c5cce4293fb9135961c749e42c46840b70f4d86626281f85"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 1997,
+  "original_credit": "奥浩哉",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ドラマ・青春",
+    "ラブコメ",
+    "学園",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ラブコメ"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "奥浩哉",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29238"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29238"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29238"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "ラブコメ"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29238"
+    }
+  }
+}

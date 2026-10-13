@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29245",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29245",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ダークサモナーとデキている【オンエア版】",
+    "synopsis": "クソ真面目な神官・ロニのパーティーに新しく加入してきたのは、悪魔の力を使う美しきダークサモナーのアモナ。聖と邪、人間と亜人。反発しあい犬猿の仲にあると思われた2人だったが、パーティー加入初日に朝チュンしてしまい...!?秘密の関係を抱えたまま、クセの強いパーティーメンバーと、召喚悪魔インプたちと共に旅は続く!背徳とときめきが交錯する。亜人女子×神官男子のファンタジー・ケンカップルラブコメ、開幕!",
+    "staff_text": "原作:車王/監督:宮嶋星矢/シリーズ構成/脚本:宮嶋星矢/キャラクターデザイン:佐々木貴宏/音響監督:大寺文彦/総作画監督:佐々木貴宏/美術監督:山本陽一朗/色彩設計:浦 大器 (デファー)/撮影監督:大図 佑/編集:早島 苫/プロデューサー:青木泰寛 橋口幸太/アニメーション制作:AtoriE/アニメーション制作協力:Nyan Pollution-ω-",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "f7e5352505b88d2cde2d6f526c3184edf1715d63b1b1f4dfcda1fa455ee99bf5"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2026,
+  "original_credit": "車王",
+  "source_origin": null,
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "異世界ファンタジー",
+    "ラブコメ",
+    "異世界",
+    "恋愛",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "ラブコメ"
+    ],
+    "setting": [
+      "異世界"
+    ],
+    "theme": [
+      "恋愛",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "車王",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29245"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "召喚",
+        "悪魔"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29245"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29245"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "召喚"
+          ]
+        },
+        "theme": {
+          "恋愛": [
+            "ラブコメ"
+          ],
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "異世界ファンタジー": [
+            "召喚"
+          ],
+          "ラブコメ": [
+            "ラブコメ"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29245"
+    }
+  }
+}

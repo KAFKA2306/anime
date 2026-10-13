@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "26825",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "百妖譜(日本語吹替版)",
+    "synopsis": "はるか昔の中国。妖怪専門の医者・桃夭は小坊主・磨牙と旅をしながら、各地で妖を救っていた。彼女は手首の金の鈴を響かせ、患者の心の声を聴きながら治療を行っていく。そこに垣間見えたのは、「生きていたい」「誰かと共にいたい」という純粋かつ切実な願いだった。出会いと別れを繰り返しながら霊医・桃夭は彼らの傷を癒していく。これは、百の妖怪と、百の心を知るための旅ー",
+    "staff_text": "原作:裟椤双樹/監督:董易/脚本:春日幽鈴/総演出監督:ソ・ギョンロク/総作画監督:クォン・ウンギョン/美術監督:イ・ボンリョル/音楽:薄彩生/アニメーション制作:絵夢動画/日本語吹き替え版演出:安藤直子/翻訳:本多由枝、林真子、小澤桐/録音・調整:吉本晋/音響制作:東北新社/日本語吹き替え版制作:フジテレビジョン",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2020,
+    "source": "network",
+    "sha256": "734d93e9515d4888277e4c5ad43fbb13dced2edb6c3197af372a5bedf3d54ff0"
+  },
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2020,
+  "original_credit": "裟椤双樹",
+  "source_origin": null,
+  "primary_genre": "スペキュレーティブ判定保留",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "スペキュレーティブ判定保留",
+    "旅・冒険",
+    "怪異・妖怪",
+    "医療"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [
+      "怪異・妖怪",
+      "医療"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "unknown",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "裟椤双樹",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825"
+    },
+    "primary_genre": {
+      "rule_id": "genre.speculative-official-bucket-without-leaf-evidence",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "妖怪"
+          ],
+          "医療": [
+            "医者"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825"
+    }
+  }
+}

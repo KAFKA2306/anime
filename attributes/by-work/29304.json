@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29304",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29304",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ゆうさんち!from 遊ハち",
+    "synopsis": "「でかいはち」体長40センチあるずんぐりむっくり生物「はち」。大人しいはちやワガママなはち。休日のオッサンみてぇなヤツ。芸術が爆発している子など個性豊かなはち達がこれまた個性的な人間と出会うことで織り成される日常物語。「店番のスピス」とあるコンビニを舞台に、常連客のお兄さんと謎の魚・ぴすちゃんの交流を描くコメディ。梅雨のある日、コンビニの店先でぴすちゃんと出会ったお兄さんは、しゃべらず動かず、表情も変えずただ店先に吊るされているぴすちゃんが気になり、時折様子を伺うようになっていた。「嗚呼、たぬきはもうだめです」捕食対象のネズミやカマキリに負けたり、ドローンで連れ去られたり、仕事がしんどい人間の家に貸し出させられたり...。ポンコツたぬき達のゆるくて弱くて不思議なお話。たぬきはもうだめです。さいなら。",
+    "staff_text": "原作:遊ハち「でかいはち」「店番のスピス」 「嗚呼、たぬきはもうだめです」/監督・シリーズ構成:ラレコ、きのしたがく/制作スタジオ:ファンワークス/制作:フジテレビ",
+    "official_genres": [
+      "ショート",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "5b800736792e06c33fa01a0d82f87ec96ecddc70bd6db9c61c73af8ef0ee0e35"
+  },
+  "official_genres": [
+    "ショート",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": "遊ハち「でかいはち」「店番のスピス」 「嗚呼、たぬきはもうだめです」",
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "日常・ほのぼの",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "遊ハち「でかいはち」「店番のスピス」 「嗚呼、たぬきはもうだめです」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29304"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29304"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29304"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29304"
+    }
+  }
+}

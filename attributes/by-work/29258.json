@@ -1,0 +1,133 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29258",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29258",
+  "attribute_fetched_at": "2026-10-13T02:11:33.659Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "信者ゼロの女神サマと始める異世界攻略",
+    "synopsis": "生粋のゲーマーである高校生・高月マコトは、合宿帰りの事故でクラスメイトと共に異世界へ転移してしまう。しかし、マコトにだけチート能力が与えられず、最弱の“魔法使い見習い”として異世界を生き抜くことに。そんなマコトの前に、信者ゼロのマイナー女神・ノアが現れる。必死の勧誘を受け一人目の信者になるも、女神ノアには秘密があるようで......!?攻略難度は最上級。常識破りの方法で女神と最強に至る異世界攻略ファンタジー、開幕!",
+    "staff_text": "原作:大崎アイル(オーバーラップ文庫刊)/原作コミック:しろいはくと(「コミックガルド」連載)/キャラクター原案:Tam-U/監督:福島利規/シリーズ構成・脚本:待田堂子/キャラクターデザイン:伊藤憲子/サブキャラクターデザイン:田中 穣/モンスターデザイン:長森佳容/プロップデザイン:西村千春/総作画監督:伊藤憲子・田中 穣・長森佳容/CGディレクター:菊地信明/色彩設計:中村千穂・大場将生/美術監督:河合泰利/撮影監督:海切歩(スタジオトゥインクル)/編集:安達貴大(Imagica EMS)/音響制作:ダックスプロダクション/音響監督:森下広人/音楽:AstroNoteS/アニメーション制作:HORNETS/製作:信者ゼロ製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "2a572f14a5ffb6d3319e3a40bf87c3af64daf6be67c0c0f81689766d61e453f6"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2026,
+  "original_credit": "大崎アイル(オーバーラップ文庫刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "異世界・ハイファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "異世界・ハイファンタジー",
+    "ファンタジー",
+    "コメディ・ギャグ",
+    "異世界ファンタジー",
+    "現代ファンタジー",
+    "異世界",
+    "学園",
+    "魔法"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "異世界・ハイファンタジー",
+      "ファンタジー",
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [
+      "異世界ファンタジー",
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "異世界",
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "大崎アイル(オーバーラップ文庫刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29258"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-plus-explicit-world-signal",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [
+        "魔法",
+        "異世界",
+        "転移"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29258"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29258"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "異世界": [
+            "異世界",
+            "転移"
+          ],
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔法"
+          ]
+        },
+        "subgenre": {
+          "異世界ファンタジー": [
+            "異世界",
+            "転移"
+          ],
+          "現代ファンタジー": [
+            "魔法"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29258"
+    }
+  }
+}
