@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29141",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29141",
+  "attribute_fetched_at": "2026-10-19T23:53:28.901Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ミュージカル「忍たま乱太郎」六年生単独ライブ KT Zepp Yokohama 夏の陣~再燃~",
+    "synopsis": "00 オープニング/01 不死身の忍者/02 ニンジャスピリッツ/03 共闘~闇を駆け抜けろ~/04 ごめんね、コーちゃん/05 不運の忍者/06 勝利は我らに/07 STOMP THE WORLD/08 ゲームコーナー/09 ココロ!ヤイバ!/10 疾風/11 真言/12 百錬成鋼/13 桜咲く空の下へ/14 僕らの歌/15 Family",
+    "staff_text": "原作:尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」/演出:反橋宗一郎/振付:LUI(横尾瑠偉)/殺陣指導:小笠原竜哉",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "9949f7744692ec4cd0ed0771bac343a963ffac51900bd270603ab7091c2da8c0"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2024,
+  "original_credit": "尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "尼子騒兵衛 著「落第忍者乱太郎」よりアニメーション「忍たま乱太郎」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29141"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29141"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29141"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29141"
+    }
+  }
+}

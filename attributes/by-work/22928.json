@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "22928",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22928",
+  "attribute_fetched_at": "2026-10-19T23:53:28.901Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "さばげぶっ!",
+    "synopsis": "主人公・園川モモカは転校してきた梧桐学園高校でなぜかサバゲ部に入ることに。しかしその部員たちは部長の鳳美煌を筆頭に、一癖も二癖もあるメンバーばかりだった! ギャグ満載で贈るなんでもありの女子高ライフが、今始まる!",
+    "staff_text": "原作:松本ひで吉(講談社「なかよし」連載)/監督:太田雅彦/副監督:大隈孝晴/シリーズ構成:あおしまたかし/キャラクターデザイン・総作画監督:工藤昌史/総作画監督:桜井正明・一居一平・伊部由起子/美術監督:河合泰利/色彩設計:阿部みゆき/撮影監督:後藤健男/編集:小野寺絵美/音楽:三澤康広/音響監督:えびなやすのり/アニメーション制作:studioぴえろ+/製作:「さばげぶっ!」製作委員会 他",
+    "official_genres": [
+      "コメディ/ギャグ"
+    ],
+    "production_year": 2014,
+    "source": "network",
+    "sha256": "601449beaa0bf34e715ebd45b571df413ba55027800f0c488000773136cdc1c5"
+  },
+  "official_genres": [
+    "コメディ/ギャグ"
+  ],
+  "production_year": 2014,
+  "original_credit": "松本ひで吉(講談社「なかよし」連載)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "松本ひで吉(講談社「なかよし」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22928"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22928"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22928"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園",
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22928"
+    }
+  }
+}

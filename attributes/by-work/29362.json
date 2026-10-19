@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29362",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29362",
+  "attribute_fetched_at": "2026-10-19T23:53:28.901Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "百姓貴族 3rd Season",
+    "synopsis": "マンガ家になるまでの七年間、北海道で実家の酪農・畑作業に従事していた荒川弘。年中無休で働き、牛を飼い、野菜を作り、クマに怯え、エゾシマリスに翻弄されるというハードな日常を送っていた......。日本の酪農・農業の苦しい現実を捉えつつも、汗水垂らして働く大人(時々コドモ)の、笑いたっぷり、パワーもたっぷりなカッコ良い生き様に刮目せよ!!",
+    "staff_text": "原作:荒川弘(新書館「ウィングス」連載)/監督・脚本:澤田裕太郎/演出:松村麻郁、千野早百合/キャラクターデザイン・作画監督・作画:まつもとあやね/作画:わたべりか、あり、スズキハルカ/背景作画:あり/制作協力:吉岡怜央、はるのはな、笹之池真凜/編集・撮影:澤田裕太郎、はるのはな、ピタチョーク/制作監修:新海岳人/音楽:SPECTRICK/録音・調整・EED:小菅学、多田聡 (AEXEA INC.)、岡部直紀/エンディングアニメーション:やまだみのり/アニメーション制作:Pie in the sky/主題歌:「寵愛族」/歌:Sanetii/作詞・作曲:sanetii/農業監修:一般社団法人 全国農業協同組合中央会/製作:『百姓貴族』製作委員会",
+    "official_genres": [
+      "コメディ/ギャグ",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "df29df01a03be8eef7fcadd4bad2459298ba9f36acae2af3f6f0db140326f3b0"
+  },
+  "official_genres": [
+    "コメディ/ギャグ",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": "荒川弘(新書館「ウィングス」連載)",
+  "source_origin": null,
+  "primary_genre": "コメディ・ギャグ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "コメディ・ギャグ",
+    "日常・ほのぼの",
+    "職業・仕事"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "コメディ・ギャグ",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "職業・仕事"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "荒川弘(新書館「ウィングス」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29362"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29362"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "コメディ/ギャグ",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29362"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "職業・仕事": [
+            "働く"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29362"
+    }
+  }
+}

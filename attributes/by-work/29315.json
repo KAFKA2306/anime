@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29315",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29315",
+  "attribute_fetched_at": "2026-10-19T23:53:28.901Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "マゼンチュ",
+    "synopsis": "食べものたちが通う学校、マゼンチュハイスクール。いつかおいしいお寿司になることを夢見る、酢飯の高校生“スメ”。マグロの“アカミ”やアボカドの“Abo”など、個性豊かな寿司ネタの仲間たちと“混ざり合い”ながら、友情や恋愛、ライバルとの競い合いを経験し、少しずつ成長していく。果たしてスメは、憧れのお寿司になることができるのか——!?",
+    "staff_text": "原作:エビ/監督・脚本:高瀬 裕介/プロデューサー:川瀬 紗世/アニメーション制作:スタジオななほし/音響制作:dugout/音楽制作:愛印/企画プロデュース:TORCH",
+    "official_genres": [
+      "キッズ/ファミリー",
+      "日常/ほのぼの"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "653828ea4bbde327f7bf1ee61314c9f2999dbdaf3f7c601320dd31cafd84a648"
+  },
+  "official_genres": [
+    "キッズ/ファミリー",
+    "日常/ほのぼの"
+  ],
+  "production_year": 2026,
+  "original_credit": "エビ",
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "日常・ほのぼの",
+    "学園",
+    "友情・仲間",
+    "成長・挑戦",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー",
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "成長・挑戦",
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "エビ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29315"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "キッズ/ファミリー",
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29315"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "キッズ/ファミリー",
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29315"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校",
+            "高校"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情",
+            "仲間"
+          ],
+          "成長・挑戦": [
+            "成長"
+          ],
+          "恋愛": [
+            "恋愛"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29315"
+    }
+  }
+}

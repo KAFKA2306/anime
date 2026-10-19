@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29306",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29306",
+  "attribute_fetched_at": "2026-10-19T23:53:28.901Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "恐怖コレクター",
+    "synopsis": "ただのウワサと思われていた“都市伝説”が次々と現実になっていく...。赤いフードをかぶった少年・千野フシギは、具現化した都市伝説を自身の手帳に回収するため、各地を旅している。その目的は、都市伝説を具現化する少女・ヒミツを捕まえること。フシギは、相棒の人面犬・ジミーとともに次々に巻き起こる怪奇現象に挑みながら、ヒミツへと迫っていく。果たして、少年少女の追走劇の行く末は−。",
+    "staff_text": "原作:佐東みどり・鶴田法男/キャラクター原案:よん/監督・シリーズ構成:稲葉友紀/キャラクターデザイン:吉川佳織/美術監督・撮影監督:井上歩美/色彩設計:梁取春花/音楽:甲田雅人/音響監督:郡司哲也/アニメーションプロデューサー:斉藤友紀/アニメーション制作:studioぱれっと/制作:NHKエンタープライズ/制作・著作:NHK/オープニングテーマ:「カゲボウシ」作詞・作曲・歌 スガ シカオ",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "db8f8321b5f7b01b2e47ce4eafddb1991cede09be0a5952d65dbe236f11f8527"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": "佐東みどり・鶴田法男",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "佐東みどり・鶴田法男",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29306"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29306"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29306"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29306"
+    }
+  }
+}
