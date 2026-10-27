@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29239",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29239",
+  "attribute_fetched_at": "2026-10-27T00:04:18.554Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "真奈美&ナミ スプライト",
+    "synopsis": "真奈美はごく普通の女子高生。でも真奈美にはたった一つだけ秘密がありました。なんと、彼女は二重人格だったのです......。",
+    "staff_text": "原作:有村しのぶ(少年画報社刊「ヤングキング」連載)/企画:戸田利吉郎/プロデューサー:嶋津毅彦/阿部倫久/制作プロデューサー:堀江敏明/脚本:瀬野鎧努/監督:山口武志/キャラクターデザイン・作画監督:和田崇/美術監督:廣瀬義憲/音響監督:高橋秀雄/アニメーション制作:J.C.スタッフ",
+    "official_genres": [
+      "恋愛/ラブコメ",
+      "ドラマ/青春"
+    ],
+    "production_year": 1997,
+    "source": "network",
+    "sha256": "65dec69863694a59cf61f4a0442f23e39cad8d2211e9d82466460146e5b7028f"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ",
+    "ドラマ/青春"
+  ],
+  "production_year": 1997,
+  "original_credit": "有村しのぶ(少年画報社刊「ヤングキング」連載)",
+  "source_origin": null,
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ",
+    "ドラマ・青春"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "恋愛・ラブコメ",
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "有村しのぶ(少年画報社刊「ヤングキング」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29239"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29239"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29239"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29239"
+    }
+  }
+}

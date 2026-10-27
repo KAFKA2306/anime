@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29242",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29242",
+  "attribute_fetched_at": "2026-10-27T00:04:18.554Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ヴァンパイヤー戦争",
+    "synopsis": "SFにミステリーに評論にと、多岐にわたり活躍する作家・笠井潔のベストセラー伝奇アクションを、1991年にOVA化。製作に際し、アニメ界のベストスタッフが集結した。ヴァンパイヤー伝説、CIAとKGBの闘い、そして幻のムー大陸伝説から宇宙をつかさどる善神と悪神をめぐる戦争へと壮大なスケールで展開する、エンターテインメントの要素が全て詰まったSF伝奇アクション大作。不死の血を持つ美少女キキを巻き込んで、ダーティ・ヒーロー九鬼鴻三郎と、強大な敵との全面戦争が始まる!",
+    "staff_text": "監督:竹之内和久/原作:笠井潔/脚本:星山博之",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1991,
+    "source": "network",
+    "sha256": "2944d8f79a36485494183e14041147652c6af19b79e44a5be2805d73074fc593"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 1991,
+  "original_credit": "笠井潔",
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ホラー・サスペンス・ミステリー",
+    "スペースオペラ",
+    "宇宙",
+    "戦争",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "戦争"
+    ],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "笠井潔",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29242"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [
+        "宇宙"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29242"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29242"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙"
+          ]
+        },
+        "theme": {
+          "戦争": [
+            "戦争"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29242"
+    }
+  }
+}

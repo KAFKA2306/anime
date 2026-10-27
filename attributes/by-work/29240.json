@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29240",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29240",
+  "attribute_fetched_at": "2026-10-27T00:04:18.554Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "教科書にないッ!",
+    "synopsis": "ひょんなことから綾という少女に気に入られてしまったお気楽教師・大楽。しかし彼女の父親は、なんとヤクザの親分さん! 娘の純潔を守るよう銃で脅され、始めたのは、何故だかアブナイ同居生活......。 バレれば懲戒免職、純潔を守り切らなきゃ命がヤバイ、後がない! しかも16才のピチピチした綾の肉体を目の前にして下半身は爆発寸前! 教師の立場を守りつつ、あまつさえ同僚の五月先生との恋をゴールインさせたい大楽に、明日はあるのか!?",
+    "staff_text": "原作:岡田和人(秋田書店刊「ヤングチャンピオン」連載)/監督・脚本:大庭秀昭/企画:高橋尚子/プロデューサー:嶋津毅彦 三浦亨 隈部昌一/キャラクターデザイン・総作画監督:山田正樹/作画監督:徳田悦郎/美術監督:田村盛揮/音響監督:三間雅文/音楽:勝又隆一/アニメーション制作:A.I.C./製作:東映ビデオ",
+    "official_genres": [
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 1998,
+    "source": "network",
+    "sha256": "fab8811429757ac278bbc02e27fd0f53f8988f055d46bdcc94439e6ab094e6c6"
+  },
+  "official_genres": [
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 1998,
+  "original_credit": "岡田和人(秋田書店刊「ヤングチャンピオン」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "恋愛・ラブコメ",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "恋愛・ラブコメ"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "チャンピオン"
+      ],
+      "evidence_text": "岡田和人(秋田書店刊「ヤングチャンピオン」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29240"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29240"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29240"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29240"
+    }
+  }
+}
