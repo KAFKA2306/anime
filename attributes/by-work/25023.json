@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "25023",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25023",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "月とライカと吸血姫",
+    "synopsis": "人類史上初の宇宙飛行士は、吸血鬼の少女だった――世界大戦の終結後、世界を二分する超大国、東のツィルニトラ共和国連邦、西のアーナック連合王国は、その領土的野心を宇宙へと向けた。両国は熾烈な開発競争を繰り広げ、そして今――東歴1960年。共和国連邦最高指導者ゲルギエフは、成功すれば人類初の快挙となる有人宇宙飛行計画『ミェチタ(夢)計画』を発令する。そんな折、宇宙飛行士候補生の補欠、レフ・レプスは、ある極秘任務を命じられる。『ノスフェラトゥ計画』――有人飛行に先立つ実験として吸血鬼を飛ばす計画――その実験体、イリナ・ルミネスクを24時間監視し、訓練で鍛えろというのだ。レフとイリナ、人間と吸血鬼、監視役と実験体――種族の壁や国家のエゴに翻弄されながらも、宇宙への純粋な想いを共有し、2人は共に宇宙を目指すこととなる。",
+    "staff_text": "原作:牧野圭祐(小学館「ガガガ文庫」刊)/キャラクター原案:かれい/監督:横山彰利/シリーズ構成:牧野圭祐/キャラクターデザイン:加藤裕美/助監督:川口太詩/美術監督:金子雄司/美術デザイン:平澤晃弘/プロップデザイン:岩畑剛一、鈴木典孝、ARVO-DESIGN/色彩設計:松山愛子/撮影監督:今泉秀樹/編集:廣瀬清志/音響監督:濱野高年/音楽:光田康典/アニメーション制作:アルボアニメーション/製作:「月とライカと吸血姫」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2021,
+    "source": "network",
+    "sha256": "5ba250e319bf8bf4b2fdc27539b875fcfb5d4d0371d049355562b9b6e56316e6"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2021,
+  "original_credit": "牧野圭祐(小学館「ガガガ文庫」刊)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "クロスジャンル",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "クロスジャンル",
+    "SF",
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "スペースオペラ",
+    "宇宙",
+    "政治・戦略",
+    "怪異・妖怪",
+    "吸血鬼"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "クロスジャンル",
+      "SF",
+      "ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [
+      "宇宙"
+    ],
+    "theme": [
+      "政治・戦略"
+    ],
+    "motif": [
+      "怪異・妖怪",
+      "吸血鬼"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "牧野圭祐(小学館「ガガガ文庫」刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25023"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-fantasy-balanced",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "宇宙",
+        "王国"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25023"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25023"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "宇宙": [
+            "宇宙"
+          ]
+        },
+        "theme": {
+          "政治・戦略": [
+            "国家",
+            "領土"
+          ]
+        },
+        "motif": {
+          "怪異・妖怪": [
+            "鬼"
+          ],
+          "吸血鬼": [
+            "吸血鬼"
+          ]
+        },
+        "subgenre": {
+          "スペースオペラ": [
+            "宇宙"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25023"
+    }
+  }
+}

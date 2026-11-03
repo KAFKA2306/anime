@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29374",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29374",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」第三章 痛覚残留",
+    "synopsis": "――はい。とても......とても痛いです。わたし、泣いてしまいそうで―― 繁華街で起こった殺人事件。被害者は四肢を引きちぎられていた......。犯人探しをする橙子、依頼を受けた式、別ルートから事件にふみこんでしまう黒桐。やがて判明する事件の全容とは?",
+    "staff_text": "原作:奈須きのこ「空の境界」(講談社ノベルス)/監督:小船井充/キャラクター原案:武内崇/キャラクターデザイン・作画監督:須藤友徳/小船井充/脚本:平松正樹(ufotable)/音楽:梶浦由記/美術監督:小倉一男/撮影監督:寺尾優一・松田成志/3D監督:中村慎太郎/色彩設計:千葉絵美/音響監督:岩浪美和/制作デスク:鈴木龍/制作プロデューサー:近藤光/アニメーション制作:ufotable/配給:アニプレックス/製作:劇場版「空の境界」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2008,
+    "source": "network",
+    "sha256": "1e8794558bb231497d4e373fab9b4cc9e3db44d2002131abe7d9f1509a0df8cc"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2008,
+  "original_credit": "奈須きのこ「空の境界」(講談社ノベルス)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ミステリー"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "奈須きのこ「空の境界」(講談社ノベルス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29374"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29374"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29374"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29374"
+    }
+  }
+}

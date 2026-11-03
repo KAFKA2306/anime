@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29370",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29370",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "マーズ・エクスプレス(字幕版)",
+    "synopsis": "ときは23世紀――西暦2200年。地球での仕事を終え、活動拠点である火星に戻ってきた私立探偵アリーヌ。「行方不明になっている大学生の娘を探してほしい」という男の依頼を受けて、アンドロイドの相棒カルロスと共に捜索を開始する。調査の過程で火星の首都ノクティスの暗部に足を踏み入れて行く二人を待ち受けていたのは、腐敗した街の裏側、強大な権力を持つ企業の陰謀、そして人間とロボットが共存する社会の根幹を揺るがす事態だった。 © Everybody on Deck - Je Suis Bien Content - EV.L prod - Plume Finance - France 3 Cinéma - Shine Conseils - Gebeka Films – Amopix",
+    "staff_text": "監督:ジェレミー・ペラン",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "bb4c8013acc2ec4bad750e600c11e10e08af54809529b17ee3c95dfce11d1c9a"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ホラー・サスペンス・ミステリー",
+    "ロボットSF",
+    "ミステリー",
+    "学園",
+    "推理・謎解き",
+    "職業・仕事",
+    "ロボット・メカ",
+    "人工知能"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "ロボットSF",
+      "ミステリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "推理・謎解き",
+      "職業・仕事"
+    ],
+    "motif": [
+      "ロボット・メカ",
+      "人工知能"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29370"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [
+        "アンドロイド",
+        "ロボット"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29370"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29370"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "大学"
+          ]
+        },
+        "theme": {
+          "推理・謎解き": [
+            "探偵"
+          ],
+          "職業・仕事": [
+            "仕事"
+          ]
+        },
+        "motif": {
+          "ロボット・メカ": [
+            "ロボット"
+          ],
+          "人工知能": [
+            "アンドロイド"
+          ]
+        },
+        "subgenre": {
+          "ロボットSF": [
+            "ロボット"
+          ],
+          "ミステリー": [
+            "探偵"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29370"
+    }
+  }
+}

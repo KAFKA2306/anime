@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29377",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29377",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」第六章 忘却録音",
+    "synopsis": "「泣いて謝ったって、絶対に許さないんだから──!」おそらくは請け負う内容に「不可能」という言葉ほど似つかわしくないであろう「伽藍の堂」に舞い込んだ、とある依頼。それは黒桐幹也の妹である鮮花に託された。内容は自身が通う礼園女学院での不可解な出来事。犯人は妖精、だという。果たして鮮花はその勝ち気さ故に、師である魔術師こと蒼崎橙子から「修行」と命じられ「調査」のために冬休みの閑散とした学園へ。しかし、悔しいかな妖精を視る力を持たぬ彼女の為に用意された「秘密兵器」とは、なんと――――憎っくき恋敵(?)の両儀式。",
+    "staff_text": "原作:奈須きのこ「空の境界」(講談社ノベルス)/監督:三浦貴博/キャラクター原案:武内崇/キャラクターデザイン・作画監督:須藤友徳/小笠原篤/脚本:平松正樹(ufotable)/音楽:梶浦由記/美術監督:衛藤功二/撮影監督:寺尾優一・松田成志/3D監督:中村慎太郎/色彩設計:千葉絵美/音響監督:岩浪美和/制作デスク:鈴木龍/制作プロデューサー:近藤光/アニメーション制作:ufotable/配給:アニプレックス/製作:劇場版「空の境界」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2008,
+    "source": "network",
+    "sha256": "438e2fc3cae725253161cf98cb7cbf5c5d0714514a6cb16369f9320e4053af37"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2008,
+  "original_credit": "奈須きのこ「空の境界」(講談社ノベルス)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "ホラー・サスペンス・ミステリー",
+    "学園",
+    "魔法",
+    "軍事"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ファンタジー",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [
+      "魔法",
+      "軍事"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "奈須きのこ「空の境界」(講談社ノベルス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29377"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [
+        "魔術",
+        "妖精"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29377"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29377"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学園"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "魔法": [
+            "魔術"
+          ],
+          "軍事": [
+            "兵器"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29377"
+    }
+  }
+}

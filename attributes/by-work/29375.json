@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29375",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29375",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」第四章 伽藍の洞",
+    "synopsis": "「私は、弱い私を殺す。おまえなんかに――――――両儀式は渡さない」1996年の冬。その夜、ある病院にひとりの少女が運び込まれた。彼女の名は両儀式。長時間に及ぶ緊急治療により、かろうじて一命は取り留めたものの......その瞳が開かれることはなかった。やがて二年の時が過ぎた。彼女は目覚めることなく、漆黒の髪の毛だけが伸び、静かに深く眠り続けていた―――",
+    "staff_text": "原作:奈須きのこ「空の境界」(講談社ノベルス)/監督:滝口禎一/キャラクター原案:武内崇/キャラクターデザイン・作画監督:須藤友徳/滝口禎一/脚本:平松正樹(ufotable)/音楽:梶浦由記/美術監督:海老沢一男/撮影監督:寺尾優一・松田成志/3D監督:中村慎太郎/色彩設計:千葉絵美/音響監督:岩浪美和/制作デスク:鈴木龍/制作プロデューサー:近藤光/アニメーション制作:ufotable/配給:アニプレックス/製作:劇場版「空の境界」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2008,
+    "source": "network",
+    "sha256": "6bdb95bb68786b7e923b6926b477da136cfca59f5bf5f171bc898b5e5bd9edda"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2008,
+  "original_credit": "奈須きのこ「空の境界」(講談社ノベルス)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "医療"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "医療"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "奈須きのこ「空の境界」(講談社ノベルス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29375"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29375"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29375"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "医療": [
+            "病院"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29375"
+    }
+  }
+}

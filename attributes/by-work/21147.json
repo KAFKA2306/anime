@@ -1,0 +1,122 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "21147",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21147",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "装神少女まとい",
+    "synopsis": "西暦2016年――。釜谷市にある「天万神社」で、巫女のアルバイトをしていた中学2年生、皇(すめらぎ)まとい。幼少の頃に母と生き別れになった彼女は、父方の祖父母の家に長年預けられており、三ヶ月前からようやく父である伸吾とふたりで暮らし始めた。そんな境遇からか、まといは平凡で穏やかな日常に憧れていた。まといの親友で、バイト仲間である草薙(くさなぎ)ゆまは、「天万神社」の神主一族に生まれた次期巫女候補であった。彼女は、一族が悪霊を払うための「退魔行」を先祖代々行っていたことを知り、まといを誘って「退魔行」にまつわる儀式「神懸りの儀」にチャレンジしようとする。学校が終わり、いつものように神社へと向かったふたりであったが、そこで荒らされた境内と、傷つき倒れたゆまの両親に遭遇する。さらに、刑事である伸吾が捜査を行っていた怪事件の重要参考人で、どこか正気でない雰囲気を纏った男の姿もあった。暴れる男を抑えようと、ゆまは咄嗟に「神懸りの儀」を執り行ったのだが、異変が生じたのはゆまの方ではなく――。平凡で普通の生活を求めていた少女に与えられたのは、神を纏って悪霊を払う能力!? 皇まとい、誰にも邪魔されない穏やかな日々を取り戻すため、退魔活動(タイカツ)に励みます!",
+    "staff_text": "監督:迫井政行/シリーズ構成・脚本:黒田洋介/キャラクターデザイン・総作画監督:戸田麻衣/設定交渉:白土晴一/イメージボード:コレサワシゲユキ、灯夢/プロップデザイン:岩畑剛一、鈴木典孝/美術監督:高峯義人/美術設定:青木薫/色彩設計:佐藤美由紀/特殊効果:荒畑歩美/3Dディレクター・モデリング:相馬洋/撮影監督:染谷和正/編集:後藤正浩/音響監督:山口貴之/音響制作:HALF H・P STUDIO/音楽:加藤達也/音楽制作:ランティス/プロデュース:インフィニット/アニメーション制作:WHITE FOX",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2016,
+    "source": "network",
+    "sha256": "fbeae3fed26c5afaa1f132aea409f8d64afc6014596e22f7ed15d070a0e02911"
+  },
+  "official_genres": [
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2016,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ドラマ・青春",
+    "ミステリー",
+    "学園",
+    "友情・仲間",
+    "癒やし",
+    "犯罪・警察"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "友情・仲間",
+      "癒やし"
+    ],
+    "motif": [
+      "犯罪・警察"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21147"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21147"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21147"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "学校"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ],
+          "癒やし": [
+            "穏やかな日々"
+          ]
+        },
+        "motif": {
+          "犯罪・警察": [
+            "刑事",
+            "捜査"
+          ]
+        },
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21147"
+    }
+  }
+}

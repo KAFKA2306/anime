@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29378",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29378",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」第七章 殺人考察(後)",
+    "synopsis": "「殺人と殺戮は違うんだ。覚えてる、コクトー? 人は、一生に一人しか人間を殺せないって」心の底から「特別」になりたかった。その願いが選択を誤らせた。否、あえて過ちへと導かれた。当時、それは最高にして唯一の方法だと信じて疑わなかったのだから。それは4年前のこと。1995年。彼と彼女は出逢う。翌1996年、彼女は眠りに堕ちる。しかし、仄暗く芽生えた思いは、人知れず育まれ続けていた。その二年後の1998年。彼女は目覚め、新たな時を刻み出す。同時に、彼女を得る為の思惑も人知れず蠢いて............今、4年後の1999年。彼女をとらえる全ての仕掛けは破綻した、はず、だった。しかし、歯車は狂い出す。4年ぶりに繰り返される通り魔殺人。夜ごと行われる人殺しは、彼女の内に潜む殺人衝動と、もう何処にもいない「織」を否応なく思い出させていた。殺している、のは果たして「誰」だろう。だからこそ、再び彼女は夜の街を徘徊し。それゆえに、彼は彼女のために夜を往く。殺人と殺戮の違い、特別である事と普通である事の違い、狂気と正気の違い、その正誤ではなく己の在りようだけが大切だったはずなのに、比べる事に囚われて――――――。望んだのは、とても当たり前に大切な人と当たり前に生きていく、それだけの事なのに。その事をないがしろにした故の咎を、負う。",
+    "staff_text": "原作:奈須きのこ「空の境界」(講談社ノベルス)/監督:瀧沢進介/キャラクター原案:武内崇/キャラクターデザイン・作画監督:須藤友徳・高橋タクロヲ・小船井充/脚本:平松正樹(ufotable)/音楽:梶浦由記/美術監督:衛藤功二/撮影監督:寺尾優一・松田成志/3D監督:中村慎太郎/色彩設計:千葉絵美/音響監督:岩浪美和/制作デスク:鈴木龍/制作プロデューサー:近藤光/アニメーション制作:ufotable/配給:アニプレックス/製作:劇場版「空の境界」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2009,
+    "source": "network",
+    "sha256": "bcb155b91c53feca9e84d8449b5a06408a8991033aa831ebdccaa94169794a59"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2009,
+  "original_credit": "奈須きのこ「空の境界」(講談社ノベルス)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "奈須きのこ「空の境界」(講談社ノベルス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29378"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29378"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29378"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29378"
+    }
+  }
+}

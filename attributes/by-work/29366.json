@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29366",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29366",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ふれる",
+    "synopsis": "同じ島で育った幼馴染、秋と諒と優太。東京・高田馬場で共同生活を始めた三人は20歳になった現在でも親友同士。それは島から連れてきた不思議な生き物「ふれる」が持つテレパシーにも似た力で趣味も性格も違う彼らを結び付けていたからだ。お互いの身体に触れ合えば心の声が聴こえてくる-それは誰にも知られていない三人だけの秘密。しかし、ある事件がきっかけとなり、秋、諒、優太は、「ふれる」の力を通じて伝えたはずの心の声が聴こえないことに気づく。「ふれる」に隠されたもう一つの力が徐々に明らかになるにつれ、三人の友情は大きく揺れ動いていく-",
+    "staff_text": "監督:長井龍雪/脚本:岡田麿里/キャラクターデザイン・総作画監督:田中将賀/音楽:横山 克・TeddyLoid/監督助手:森山博幸/プロップデザイン:髙田 晃/美術設定:塩澤良憲・榊枝利行(アートチーム・コンボイ)/美術監督:小柏弥生/色彩設計:中島和子/撮影監督:佐久間悠也/CGディレクター:渡邉啓太(サブリメイション)/編集:西山 茂/音響監督:明田川仁/制作:CloverWorks/製作幹事:アニプレックス・STORY inc./配給:東宝・アニプレックス",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ドラマ/青春"
+    ],
+    "production_year": 2024,
+    "source": "network",
+    "sha256": "b7066df54e45724f0b27ffdd7bf07a707e08f8f4e95533072e3c59b4f634c5ed"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ドラマ/青春"
+  ],
+  "production_year": 2024,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
+    "現代日本",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29366"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29366"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29366"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "現代日本": [
+            "東京"
+          ]
+        },
+        "theme": {
+          "友情・仲間": [
+            "友情"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29366"
+    }
+  }
+}

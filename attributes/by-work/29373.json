@@ -1,0 +1,106 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29373",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29373",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」第二章 殺人考察(前)",
+    "synopsis": "私は、おまえを犯したい。春、着物姿の君を見つけた。声をかけた。怪訝そうに返された。やがて君は、ほんの少しだけ僕と言葉を交わすようになる。けれど、君には誰とも共有できない秘密があった―――それは、抑えきれない破壊衝動。これは高校生だったころ、16歳の両儀式と黒桐幹也が出会う物語。あえて他者と交わろうとしない式にどうしようもなく惹かれた幹也は、なにかと関わろうとする。それが恋とも気付かずに。やがて、わずかではあるが同じ空間を共有するようになった彼らは、そのとき確かに平穏だった・・・・・・街では連続猟奇殺人事件が起こっていたけれど。そんなある日、幹也は式の内に存在する、もうひとりの織という人格と出会う。肯定の式と否定の織。相反する、けれど同じ思考と嗜好を持つ一人のシキは、幹也という訪問者に徐々に乱されていく。かくして、幹也はひとつの予感を胸に抱く。夜毎、猟奇殺人を繰り返しているのは誰、か。けれど予感を肯定することなんて、最初(はな)っからできなくて、己が見てきたその姿を信じることしか出来なくて、でも、だからこそ真実を確かめたくて、彼は密かに決意する―――けれど、この考察が真実にたどり着くのは、3年後。両儀の家の跡取りたる条件、知られざるシキたちの関係、血だまりに佇む少女、いつのまにか導かれていた運命、式と幹也の軌跡の幕開けが描かれる第二章「殺人考察(前)」。",
+    "staff_text": "原作:奈須きのこ「空の境界」(講談社ノベルス)/監督:野中卓也/キャラクター原案:武内崇/キャラクターデザイン・作画監督:須藤友徳/高橋タクロヲ/脚本:平松正樹(ufotable)/音楽:梶浦由記/美術監督:池信孝/撮影監督:寺尾優一・松田成志/3D監督:中村慎太郎/色彩設計:千葉絵美/音響監督:岩浪美和/制作デスク:鈴木龍/制作プロデューサー:近藤光/アニメーション制作:ufotable/配給:アニプレックス/製作:劇場版「空の境界」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2007,
+    "source": "network",
+    "sha256": "9a436608f3be693565dd258274cfad73072ac9b5415be5e5216a7ae9048d48dc"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2007,
+  "original_credit": "奈須きのこ「空の境界」(講談社ノベルス)",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ミステリー",
+    "学園"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "ノベル"
+      ],
+      "evidence_text": "奈須きのこ「空の境界」(講談社ノベルス)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29373"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29373"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29373"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {},
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29373"
+    }
+  }
+}

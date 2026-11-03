@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29289",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29289",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "あづあやかし",
+    "synopsis": "人の心に潜む欲望、執着、そして狂気。歪んだ感情が形を得たとき、名もなき「妖」が生まれる。あらゆる姿に変じる謎の青年は、人に取り憑いた妖の正体を映す鏡の妖怪・雲外鏡とともに現代社会を巡り、その性質を見破って「諱」を与え、封印していく。愛、承認欲求、自己犠牲、正義、妄想――誰の心にも潜みうる闇を、皮肉と怪異で鮮やかに暴き出す新感覚・妖怪風刺アニメ。果たして謎の青年の正体は――。",
+    "staff_text": "原作・監督:藍風くじら/脚本家:藍風くじら、山﨑世理",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "SF/ファンタジー"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "0fa5238ea87846ad1174593e6e216318ec0659c556213a4c8d39fa7aaae736b3"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "SF/ファンタジー"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "現代ファンタジー",
+    "現代日本",
+    "怪異・妖怪"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "現代ファンタジー"
+    ],
+    "setting": [
+      "現代日本"
+    ],
+    "theme": [],
+    "motif": [
+      "怪異・妖怪"
+    ],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29289"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29289"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29289"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "現代日本": [
+            "現代社会"
+          ]
+        },
+        "theme": {},
+        "motif": {
+          "怪異・妖怪": [
+            "怪異",
+            "妖怪"
+          ]
+        },
+        "subgenre": {
+          "現代ファンタジー": [
+            "現代",
+            "怪異"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29289"
+    }
+  }
+}

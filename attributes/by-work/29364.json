@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29364",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29364",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "たまごっち! ~ハッピーハーモニー編~",
+    "synopsis": "たまカフェにホームステイすることになった、メロディランド出身の天才バイオリニスト・メロディっちやたまごっち星で大流行の「たまもり」が得意なもりりっちも加わって、まめっちたちの日常はさらにドキドキ・ワクワクがいっぱい!",
+    "staff_text": "監督:志村錠児/シリーズ構成:松井亜弥/製作:TeamたまごっちTV/アニメーション制作:OLM",
+    "official_genres": [
+      "SF/ファンタジー",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2010,
+    "source": "network",
+    "sha256": "fbffa2ac3b7f4f3e06886dd1d9439120142b6ec5544a21af240a3b71b39df234"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2010,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "キッズ・ファミリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "キッズ・ファミリー",
+    "スペキュレーティブ判定保留"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "キッズ・ファミリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "verified",
+    "ontology_facets": "verified"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29364"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29364"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29364"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29364"
+    }
+  }
+}

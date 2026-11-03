@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29360",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29360",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "『Dancing☆Starプリキュア』The Stage 3",
+    "synopsis": "デスパレードの幹部【ロザリアード】を浄化し、日常を取り戻した楽たち。【プリキュア】として平和を守りながら、夢であるダンスの全国大会に向けて、猛特訓の日々を送っていた。そんなある日、楽と颯斗はピエロのような外見の青年【クラウン】と出会う。クラウンは、世界中の人を幸せにしたくて、旅しているのだという。全国大会当日、楽たちは優勝候補の日輪高校の顧問【室井一帆】とチームのキャプテン【朝吹太踊(あさぶき たいよう)】に出会う。楽と太踊はすぐに意気投合するが、どうやら二人は過去に会ったことがあるようで...?その時、会場に闇のリズムが響き渡り、【イビルダンサー】が現れる。「ステラブレス、レッツダンスハイ!」最大の困難を前に、心のリズムを合わせ戦うプリキュアたち!『鳴り響け、5つの光のリズム!Dancing☆Starプリキュア!』最終章、開幕!",
+    "staff_text": "原作:東堂いづみ/スーパーバイザー:鷲尾 天(東映アニメーション)/キャラクターデザイン:川村敏江/脚本・演出:ほさかよう",
+    "official_genres": [
+      "2.5次元舞台"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "73dd90a8ae7feb1ea98f79514d0008cf204ce37b0b051207e48d85e5c590bcce"
+  },
+  "official_genres": [
+    "2.5次元舞台"
+  ],
+  "production_year": 2025,
+  "original_credit": "東堂いづみ",
+  "source_origin": null,
+  "primary_genre": "2.5次元舞台",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "2.5次元舞台",
+    "スポ根",
+    "学園",
+    "スポーツ",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "2.5次元舞台"
+    ],
+    "subgenre": [
+      "スポ根"
+    ],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "スポーツ",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": [
+      "2.5次元舞台"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "東堂いづみ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29360"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29360"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "2.5次元舞台"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29360"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "スポーツ": [
+            "大会",
+            "全国大会"
+          ],
+          "旅・冒険": [
+            "旅"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スポ根": [
+            "全国大会"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29360"
+    }
+  }
+}

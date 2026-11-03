@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29396",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29396",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "おとぎストーリー 天使のしっぽ",
+    "synopsis": "人気アニメの第1期TVシリーズ。動物が大好きで心優しいが、とにかくツイていない青年、睦悟郎。そんな彼の前に突如、「守護天使」と名乗る可愛い女の子たちが現われた。実は守護天使たちは、かつて青年が過去に飼っていたペットたちの生まれ変わりだったのだ。はてさて、どんな生活が待ち受けていることやら...。",
+    "staff_text": "企画:有栖川ケイ/原作・シリーズ構成:六月十三/脚本:岡田麿里/キャラクターデザイン・総作画監督:小林多加志/設定:牧ひろあき/美術監督:菅原清二/色彩設定:小峰久美子/音響プロデュース:本田保則/音響監督:吉田知弘/音響制作:アーツプロ/音楽プロデュース:井上俊次/音楽制作:ランティス/制作プロデュース:木村健吾/アニメーション制作:東京キッズ/監督:越智一裕/制作:ワンダーファーム/製作:「天使のしっぽ」プロジェクト 他",
+    "official_genres": [
+      "SF/ファンタジー",
+      "恋愛/ラブコメ"
+    ],
+    "production_year": 2001,
+    "source": "network",
+    "sha256": "bc0ebe7e278f457e1ab0ed952a34ac054930709f55ca03e184e317be9a32bacb"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "恋愛/ラブコメ"
+  ],
+  "production_year": 2001,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ファンタジー",
+  "speculative_genres": [
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "ファンタジー",
+    "恋愛・ラブコメ",
+    "転生"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ファンタジー",
+      "恋愛・ラブコメ"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [
+      "転生"
+    ],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29396"
+    },
+    "primary_genre": {
+      "rule_id": "genre.fantasy-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "matched_terms": [
+        "天使"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29396"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "恋愛/ラブコメ"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29396"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {
+          "転生": [
+            "生まれ変わ"
+          ]
+        },
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29396"
+    }
+  }
+}

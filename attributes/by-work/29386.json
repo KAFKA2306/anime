@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29386",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29386",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "総集編 薬屋のひとりごと",
+    "synopsis": "毒と薬に異常な執着を持つ少女・猫猫が様々な難事件を解決していく姿を描く、大人気小説を原作とした大人気アニメ「薬屋のひとりごと」の総集編。",
+    "staff_text": "原作:日向夏(ヒーロー文庫/イマジカインフォス刊)/キャラクター原案:しのとうこ/監督:長沼範裕(第1期)/筆坂明規(第2期)/シリーズ構成:長沼範裕/キャラクターデザイン:中谷友紀子/美術監督:髙尾克己(ARED)/ 色彩設計:相田美里/ CGIディレクター:永井 有/撮影監督:鈴木麻予(T2 studio)/編集:今井大介/ 音響監督:はた しょう二(サウンドチームドンファン)/音楽:神前 暁・Kevin Penkin・桶狭間ありさ/アニメーション制作:TOHO animation STUDIO×OLM/製作:「薬屋のひとりごと」製作委員会",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "51c03a9964ee992f5562ab6468d04543ae40b20eeedddc5bd26bc63bc89bffff"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": "日向夏(ヒーロー文庫",
+  "source_origin": "ライトノベル・小説",
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "ミステリー"
+  ],
+  "ontology_facets": {
+    "source": [
+      "ライトノベル・小説"
+    ],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-novel",
+      "matched_terms": [
+        "文庫"
+      ],
+      "evidence_text": "日向夏(ヒーロー文庫",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29386"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29386"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29386"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29386"
+    }
+  }
+}

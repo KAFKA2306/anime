@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29380",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29380",
+  "attribute_fetched_at": "2026-11-03T02:31:27.134Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "劇場版「空の境界」未来福音",
+    "synopsis": "よう、追いついたぜ、爆弾魔 1998年8月3日、猛暑の盛り。倉密メルカを追って、両儀式は現れた。「――よう。追いついたぜ、爆弾魔」その直後、式は爆発に巻き込まれる。彼には『未来を予見する力』があった。同じ夏。礼園女学院の生徒・瀬尾静音はひょんなことから、黒桐幹也に出会う。無条件に自分の言葉を信じてくれた幹也に、淡い恋心を抱いた静音。静音は、幹也に長年培ってきた悩みを打ち明ける。「わたし、未来が視えるんです」それから数年後、また暑い夏がやってきた。瓶倉光溜は雇い主の依頼で、その娘の未那と共に、「未来が視える」占い師の元を訪ねる――。未来を視る者たちがつくり出す舞台は、多くの主役たちによって回っていく。幸せ(未来)は、キミ(現在)の側に。",
+    "staff_text": "原作:奈須きのこ/監督:須藤友徳/キャラクター原案:武内 崇/脚本:桧山彬(ufotable)/脚本制作:ufotable/キャラクターデザイン・作画監督:須藤友徳・菊池隼也/美術監督:池 信孝・衛藤功二・海老沢一男/色彩設計:千葉絵美/撮影監督:寺尾優一/音楽:梶浦由記/主題歌:Kalafina/音響監督:岩浪美和/アニメーション制作:ufotable/製作:劇場版「空の境界」製作委員会/配給:アニプレックス",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2013,
+    "source": "network",
+    "sha256": "8d59d29e5719b56cba13967d31b6fc2216430ac6b1403ce7d8238f96c1a205a9"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2013,
+  "original_credit": "奈須きのこ",
+  "source_origin": null,
+  "primary_genre": "SF",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "SF",
+    "ホラー・サスペンス・ミステリー",
+    "恋愛"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "SF",
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "恋愛"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "奈須きのこ",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29380"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-signal-dominant",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [
+        "未来"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29380"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29380"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "恋愛": [
+            "恋心"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29380"
+    }
+  }
+}
