@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29368",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29368",
+  "attribute_fetched_at": "2026-11-10T02:54:32.232Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ザ・スカルキング",
+    "synopsis": "ガイコツだけのふしぎな世界「スカルワールド」。そこには、金の王冠を持つスカルキングが治める「スカル帝国」と、それをねらう「スカルパラダイス」の2つの国がありました。でもこの世界、ただのバトルじゃ終わらない。いたずら好きな仲間たちのせいで、毎日が大さわぎ!トラブルだらけのドタバタ展開に、思わず笑ってしまうこと間違いなし。笑いとぼうけんがいっぱいの、にぎやかで楽しいスカルワールド。今日はどんなハプニングが待っているのかな。",
+    "staff_text": "製作:アニジャック/制作:イ・ビョンジュン、 イ・ムニョン、リュ・ジェヨン/監督:イ・ジョンウ",
+    "official_genres": [
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "045ec541e82ca69ee915da328ec09a78f2e471b6ff7bff163f0becbb7ee0b946"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 2026,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペースオペラ",
+    "友情・仲間"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー"
+    ],
+    "subgenre": [
+      "スペースオペラ"
+    ],
+    "setting": [],
+    "theme": [
+      "友情・仲間"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29368"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29368"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29368"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "友情・仲間": [
+            "仲間"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "スペースオペラ": [
+            "帝国"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29368"
+    }
+  }
+}

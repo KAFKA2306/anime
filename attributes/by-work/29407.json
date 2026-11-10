@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29407",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29407",
+  "attribute_fetched_at": "2026-11-10T02:54:32.232Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "映画「羅小黒戦記2 ぼくらが望む未来」",
+    "synopsis": "居場所(たいせつなもの)を守るため——再び、冒険へ 師匠・ムゲンと共に小さな村で穏やかな日々を過ごしていたシャオヘイ。それから2年後、とある会館への襲撃事件が、長きにわたり保たれていた妖精の世界の平和を脅かす。妖精会館からもたらされた任務により、シャオヘイとムゲンは引き離され、二人の運命は大きく揺らぎ始める。次々と現れる脅威に立ち向かう中、シャオヘイは姉弟子・ルーイエと共に、真実を求めて新たな冒険へと旅立つ。降りかかる突然の試練、そして、思いもよらぬ敵を前に、シャオヘイは大きな選択を迫られる——。",
+    "staff_text": "監督:木頭(MTJJ)、顧傑/副監督:周達煒、程暁榕、李根、鄭立剛/総作画監督:馮志爽/美術監督:呂屹峰、浩客/3D監督:周冠旭/撮影監督:梁爽/音楽:孫玉鏡/プロデューサー:叢芳氷、曹紫建/制作会社:北京寒木春華動画技術有限公司/配給:アニプレックス/協力:面白映画/<日本語吹替版>音響監督:岩浪美和/音響制作:グロービジョン",
+    "official_genres": [
+      "SF/ファンタジー"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "5028aba5c692696d089086d98b55390c4246226839765bf25329a8f1d45017c6"
+  },
+  "official_genres": [
+    "SF/ファンタジー"
+  ],
+  "production_year": 2025,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "クロスジャンル",
+  "speculative_genres": [
+    "SF",
+    "ファンタジー"
+  ],
+  "speculative_genre_status": "classified",
+  "canonical_tags": [
+    "クロスジャンル",
+    "SF",
+    "ファンタジー",
+    "ミステリー",
+    "癒やし",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "クロスジャンル",
+      "SF",
+      "ファンタジー"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "癒やし",
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "derived",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29407"
+    },
+    "primary_genre": {
+      "rule_id": "genre.sf-fantasy-balanced",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "matched_terms": [
+        "未来",
+        "妖精"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29407"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29407"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "癒やし": [
+            "穏やかな日々"
+          ],
+          "旅・冒険": [
+            "旅",
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29407"
+    }
+  }
+}

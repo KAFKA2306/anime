@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29355",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29355",
+  "attribute_fetched_at": "2026-11-10T02:54:32.232Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "サイコダイバー 魔性菩薩",
+    "synopsis": "サイコダイバー、それは特殊な装置を使い人の精神に潜り込み、記憶操作や精神治療を行うプロフェッショナル。フリーの超一流ダイバー、毒島。そんな彼に来た依頼は、アイドル歌手、叶 雪のマインドコントロールを解くこと。しかし、想像を絶する強大な力の前にダイブに失敗。雪の背後に隠された謎の力の存在を感じる毒島だったが、そんな時、雪のマネージャー京子が何者かに殺害され、自らも命を狙われる......。",
+    "staff_text": "原作:夢枕 獏「魔性菩薩(上)(下)」(祥伝社刊)/エクゼクティブ・プロデューサー:山本又一朗/プロデューサー:丸山正雄、高橋尚子、坂本雅憲/脚本:川村俊明、浦畑達彦/キャラクターデザイン・作画監督:古賀誠 /監督:神戸 守/音楽:平間あきひこ、SORMA、TA-1/主題歌:「THE END」岩男潤子/音楽制作協力:BMGジャパン/アニメーション制作:マッドハウス/スタジオジュニオ/製作:東映ビデオ、フィルムリンク・インターナショナル、グッドヒルヴィジョン",
+    "official_genres": [
+      "SF/ファンタジー",
+      "ホラー/サスペンス/推理"
+    ],
+    "production_year": 1997,
+    "source": "network",
+    "sha256": "734d177f81138ee2f1702525bb4286a5b38a22fffb5b9d22a29f4a94290995de"
+  },
+  "official_genres": [
+    "SF/ファンタジー",
+    "ホラー/サスペンス/推理"
+  ],
+  "production_year": 1997,
+  "original_credit": "夢枕 獏「魔性菩薩(上)(下)」(祥伝社刊)",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "needs-review",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "スペキュレーティブ判定保留",
+    "音楽・アイドル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "スペキュレーティブ判定保留"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "needs-review",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "夢枕 獏「魔性菩薩(上)(下)」(祥伝社刊)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29355"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29355"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "SF/ファンタジー",
+        "ホラー/サスペンス/推理"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29355"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "音楽・アイドル": [
+            "アイドル",
+            "歌手"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29355"
+    }
+  }
+}

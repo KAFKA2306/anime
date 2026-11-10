@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29387",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29387",
+  "attribute_fetched_at": "2026-11-10T02:54:32.232Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "光が死んだ夏",
+    "synopsis": "とある集落で幼い頃からずっと一緒に育ってきた同い年のよしきと光 照りつける太陽 耳にこびりつくクマゼミの声 帰り道に食べるアイス 他愛もないことで笑い合ういつもと変わらない夏のある日「......お前、やっぱ光ちゃうやろ」半年前、山で行方不明になった光は一週間後ふらりと帰ってきた 声も姿も光に見えるモノその中に蠢いていたのは――「光はもうおらんのや......それやったら」友人の姿をした〝ナニカ〟と歩みだす、“いつもと変わらない”日常だが、時を同じくして奇怪な事件が集落を襲い始める未知の〝ナニカ〟へ墜ちていく青春ホラー物語の幕が、今、上がる――",
+    "staff_text": "原作:モクモクれん(KADOKAWA「ヤングエースUP」連載)/監督・シリーズ構成:竹下良平/キャラクターデザイン・総作画監督:高橋裕一/ドロドロアニメーター:平岡政展/プロップデザイン:應地隆之介/サブキャラクターデザイン:渡辺舞、西願宏子、長澤翔子/美術設定:多田周平、高橋武之、曽野由大/美術監督:本田こうへい/色彩設計:中野尚美/色彩設計補佐:越田侑子/3D監督:中野祥典/撮影監督:前田智大/2Dデザイン:永良雄亮、津江優里/編集:木村佳史子/音響演出:笠松広司/音響制作:dugout/音楽:梅林太郎/オープニング主題歌:Vaundy「再会」/エンディング主題歌:TOOBOE「あなたはかいぶつ」/アニメーション制作:CygamesPictures",
+    "official_genres": [
+      "ホラー/サスペンス/推理",
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "41a7f163bc68e5ab382ff2d21b3ddba7d925ef8b5767841c15757e7e96dcd04d"
+  },
+  "official_genres": [
+    "ホラー/サスペンス/推理",
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": "モクモクれん(KADOKAWA「ヤングエースUP」連載)",
+  "source_origin": null,
+  "primary_genre": "ホラー・サスペンス・ミステリー",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ホラー・サスペンス・ミステリー",
+    "ドラマ・青春",
+    "ミステリー",
+    "成長・挑戦"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ホラー・サスペンス・ミステリー",
+      "ドラマ・青春"
+    ],
+    "subgenre": [
+      "ミステリー"
+    ],
+    "setting": [],
+    "theme": [
+      "成長・挑戦"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "モクモクれん(KADOKAWA「ヤングエースUP」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29387"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29387"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ホラー/サスペンス/推理",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29387"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "成長・挑戦": [
+            "青春"
+          ]
+        },
+        "motif": {},
+        "subgenre": {
+          "ミステリー": [
+            "事件"
+          ]
+        }
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29387"
+    }
+  }
+}
