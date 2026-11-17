@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29385",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29385",
+  "attribute_fetched_at": "2026-11-17T03:06:01.560Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "シナぷしゅ",
+    "synopsis": "",
+    "staff_text": "製作著作:テレビ東京",
+    "official_genres": [
+      "ショート",
+      "キッズ/ファミリー"
+    ],
+    "production_year": 2021,
+    "source": "network",
+    "sha256": "0af8fe40b4087ab8048f76ac54f3e2317601a27bbac1a24298adbe71a1d729f8"
+  },
+  "official_genres": [
+    "ショート",
+    "キッズ/ファミリー"
+  ],
+  "production_year": 2021,
+  "original_credit": null,
+  "source_origin": null,
+  "primary_genre": "ショート",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ショート",
+    "キッズ・ファミリー"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ショート",
+      "キッズ・ファミリー"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [],
+    "motif": [],
+    "format": [
+      "ショート"
+    ]
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": null,
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29385"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29385"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ショート",
+        "キッズ/ファミリー"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29385"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {},
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29385"
+    }
+  }
+}

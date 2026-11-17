@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29389",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29389",
+  "attribute_fetched_at": "2026-11-17T03:06:01.560Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "映画 おでかけ子ザメ とかいのおともだち",
+    "synopsis": "八魚駅前にやってきた子ザメちゃんは、ベンチで悲しそうにうつむく女の子・そらに出会う。都会の高校に転校することになったと話すそらは、ひとりぼっちになってしまうかもしれないと落ち込んでいた。楽しい都会の様子が載っている雑誌を見ながら、きっと都会でも新しいお友達ができると元気づける子ザメちゃん。そらと別れ、歩き出した子ザメちゃんの目に、キラキラした都会のポスターが飛び込んでくる。そのとき子ザメちゃんの上をサメの形をした雲が通り過ぎていく。そしてその雲に誘われるように、子ザメちゃんは都会へ向かう電車に乗り込むのだった。輝くネオン、人々が行き交うスクランブル交差点、たくさん人たちが揺られる満員電車。“とかい“を舞台に子ザメちゃんの小さな大冒険が始まる!",
+    "staff_text": "原作:ペンギンボックス(「おでかけ子ザメ」/KADOKAWA「キトラ」刊)/監督:熊野千尋/コンテ・演出:熊野千尋/脚本:長嶋宏明/キャラクターデザイン:竹内あゆみ/色彩設計:西詠仔/美術監督:北島雅代/撮影監督:佐々木明美/音響監督:小泉紀介/編集:小口理菜/音響効果:武藤晶子/音響制作:dugout/音楽:藤澤慶昌/主題歌:「where you come from」ロザリーナ(Sony Music Labels)/アニメーション制作:ENGI/配給:角川ANIMATION/製作:KADOKAWA",
+    "official_genres": [
+      "日常/ほのぼの"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "8048a7b6cd935458a807ede5f1ad1cc68e8cf3d3f0eb853ecddd18138d17d416"
+  },
+  "official_genres": [
+    "日常/ほのぼの"
+  ],
+  "production_year": 2025,
+  "original_credit": "ペンギンボックス(「おでかけ子ザメ」",
+  "source_origin": null,
+  "primary_genre": "日常・ほのぼの",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "日常・ほのぼの",
+    "学園",
+    "旅・冒険"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "日常・ほのぼの"
+    ],
+    "subgenre": [],
+    "setting": [
+      "学園"
+    ],
+    "theme": [
+      "旅・冒険"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "ペンギンボックス(「おでかけ子ザメ」",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29389"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "日常/ほのぼの"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29389"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "日常/ほのぼの"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29389"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {
+          "学園": [
+            "高校"
+          ]
+        },
+        "theme": {
+          "旅・冒険": [
+            "冒険"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29389"
+    }
+  }
+}

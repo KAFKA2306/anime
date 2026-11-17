@@ -1,0 +1,93 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29401",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29401",
+  "attribute_fetched_at": "2026-11-17T03:06:01.560Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "「アイドリッシュセブン FirstBEAT! 劇場総集編」【後編】",
+    "synopsis": "「小鳥遊事務所」に集められ「IDOLiSH7(アイドリッシュセブン)」として芸能界への第一歩を踏み出した7人。アイドルとしての未知の可能性を秘め、寮での共同生活とアイドル活動をスタートした彼らだったが、それぞれの夢や目的の違いから、綻びが広がってしまう。一方、「IDOLiSH7」より先にデビューし、ファンに対しては常に完璧なステージを見せる「八乙女事務所」の大人気3人組アイドルグループ「TRIGGER(トリガー)」も、ステージを降りれば事務所の方針と自分たちの信念との間で揺れ動いていた。華やかだが、時に厳しいアイドルの世界を舞台に、彼らは未来を夢見ながら、頂点を目指す――!",
+    "staff_text": "原作:バンダイナムコエンターテインメント / 都志見文太/監督:別所誠人/シリーズ構成:関根アユミ/スーパーバイザー:あおきえい/キャラクター原案:種村有菜/アニメーションキャラクターデザイン:深川可純/総作画監督:猪股雅美・サトウミチオ/美術監督:高橋麻穂/色彩設計:篠原真理子/2Dデザイン:高橋清太(FUETE)/撮影監督:津田涼介/CGディレクター:ヨシダ.ミキ/3Dワークス:井口光隆/編集:右山章太/音楽:加藤達也/音楽プロデュース:ランティス/音響監督:濱野高年/劇場総集編監修:別所誠人/劇場総集編構成:アイナナ製作委員会/劇場総集編オフライン編集:小西夏生(qooop)/アニメーション制作:TROYCA/製作:アイナナ製作委員会/配給:バンダイナムコフィルムワークス",
+    "official_genres": [
+      "ドラマ/青春"
+    ],
+    "production_year": 2025,
+    "source": "network",
+    "sha256": "cf2bf5406877c783c2f9e74a3959188e870302cd6b7a93161ab5834ecbf77006"
+  },
+  "official_genres": [
+    "ドラマ/青春"
+  ],
+  "production_year": 2025,
+  "original_credit": "バンダイナムコエンターテインメント",
+  "source_origin": null,
+  "primary_genre": "ドラマ・青春",
+  "speculative_genres": [
+    "SF"
+  ],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "ドラマ・青春",
+    "SF",
+    "音楽・アイドル"
+  ],
+  "ontology_facets": {
+    "source": [],
+    "genre": [
+      "ドラマ・青春",
+      "SF"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "音楽・アイドル"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "unknown",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.unclassified-credit",
+      "matched_terms": [],
+      "evidence_text": "バンダイナムコエンターテインメント",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29401"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29401"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29401"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "音楽・アイドル": [
+            "アイドル"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29401"
+    }
+  }
+}

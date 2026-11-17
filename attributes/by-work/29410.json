@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "ontology_version": "2.0.0",
+  "work_id": "29410",
+  "attribute_source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29410",
+  "attribute_fetched_at": "2026-11-17T03:06:01.560Z",
+  "cache_status": "network-fetched",
+  "official_snapshot": {
+    "title": "ホテル・インヒューマンズ アフレコアフタートーク",
+    "synopsis": "そのホテルの...「お客様は殺し屋様」。最高のホテルには条件がある。「極上の食事」、「至高の癒やし」、「魅惑の娯楽」...そして、“最新の武器手配”、“安心の身元詐称”、“完璧な死体処理”――!?死の境界線で 、決して『NOと告げない』二人のコンシェルジュ、生朗と沙羅が応える殺し屋達の願いとは――いざ、鮮烈のキリング・ホテル・ドラマ...開幕!",
+    "staff_text": "原作:田島 青(小学館「サンデーうぇぶり」連載)/監督:アミノテツロ/シリーズ構成:米村正二/キャラクターデザイン:藤崎真吾/プロップデザイン:きむらひでふみ/美術監督:海野よしみ/美術設定:長澤順子/色彩設計:村口冬仁/撮影監督:貞松寿幸/編集:今井大介/音響監督・整音:山田 陽/音楽:小春(チャラン・ポ・ランタン)/音楽制作:テレビ東京ミュージック/アニメーション制作:ブリッジ/アイル",
+    "official_genres": [
+      "アクション/バトル",
+      "ドラマ/青春"
+    ],
+    "production_year": 2026,
+    "source": "network",
+    "sha256": "1858964155400eca14c9d190f7da78d28bbb955677fc699776fe207efeb34768"
+  },
+  "official_genres": [
+    "アクション/バトル",
+    "ドラマ/青春"
+  ],
+  "production_year": 2026,
+  "original_credit": "田島 青(小学館「サンデーうぇぶり」連載)",
+  "source_origin": "漫画",
+  "primary_genre": "バトル・アクション",
+  "speculative_genres": [],
+  "speculative_genre_status": "not-applicable",
+  "canonical_tags": [
+    "バトル・アクション",
+    "ドラマ・青春",
+    "癒やし"
+  ],
+  "ontology_facets": {
+    "source": [
+      "漫画"
+    ],
+    "genre": [
+      "バトル・アクション",
+      "ドラマ・青春"
+    ],
+    "subgenre": [],
+    "setting": [],
+    "theme": [
+      "癒やし"
+    ],
+    "motif": [],
+    "format": []
+  },
+  "classification_status": "classified",
+  "attribute_confidence": {
+    "source_origin": "verified",
+    "primary_genre": "verified",
+    "canonical_tags": "derived",
+    "ontology_facets": "derived"
+  },
+  "attribute_evidence": {
+    "source_origin": {
+      "rule_id": "origin.publication-credit-manga",
+      "matched_terms": [
+        "サンデー"
+      ],
+      "evidence_text": "田島 青(小学館「サンデーうぇぶり」連載)",
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29410"
+    },
+    "primary_genre": {
+      "rule_id": "genre.first-official-non-speculative",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "matched_terms": [],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29410"
+    },
+    "canonical_tags": {
+      "rule_id": "tags.official-plus-ontology-v2",
+      "official_genres": [
+        "アクション/バトル",
+        "ドラマ/青春"
+      ],
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29410"
+    },
+    "ontology_facets": {
+      "rule_id": "ontology.keyword-plus-official-metadata-v2",
+      "matched_terms": {
+        "setting": {},
+        "theme": {
+          "癒やし": [
+            "癒やし"
+          ]
+        },
+        "motif": {},
+        "subgenre": {}
+      },
+      "source_url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29410"
+    }
+  }
+}
